@@ -865,7 +865,8 @@ cc_display_monitor_dbus_new (GVariant *variant,
 typedef enum _CcDisplayLayoutMode
 {
   CC_DISPLAY_LAYOUT_MODE_LOGICAL = 1,
-  CC_DISPLAY_LAYOUT_MODE_PHYSICAL = 2
+  CC_DISPLAY_LAYOUT_MODE_PHYSICAL = 2,
+  CC_DISPLAY_LAYOUT_MODE_GLOBAL_UI_LOGICAL = 3
 } CcDisplayLayoutMode;
 
 typedef enum _CcDisplayConfigMethod
@@ -893,6 +894,8 @@ struct _CcDisplayConfigDBus
   gboolean supports_changing_layout_mode;
   gboolean global_scale_required;
   CcDisplayLayoutMode layout_mode;
+  gint legacy_ui_scale;
+  char *renderer;
 
   GList *monitors;
   CcDisplayMonitorDBus *primary;
@@ -1061,6 +1064,9 @@ cc_display_config_dbus_equal (CcDisplayConfig *pself,
   g_return_val_if_fail (pself, FALSE);
   g_return_val_if_fail (pother, FALSE);
 
+  if (self->layout_mode != other->layout_mode)
+    return FALSE;
+
   cc_display_config_dbus_ensure_non_offset_coords (self);
   cc_display_config_dbus_ensure_non_offset_coords (other);
 
@@ -1206,7 +1212,52 @@ cc_display_config_dbus_is_layout_logical (CcDisplayConfig *pself)
 {
   CcDisplayConfigDBus *self = CC_DISPLAY_CONFIG_DBUS (pself);
 
-  return self->layout_mode == CC_DISPLAY_LAYOUT_MODE_LOGICAL;
+  return self->layout_mode == CC_DISPLAY_LAYOUT_MODE_LOGICAL ||
+         self->layout_mode == CC_DISPLAY_LAYOUT_MODE_GLOBAL_UI_LOGICAL;
+}
+
+static void
+cc_display_config_dbus_set_layout_logical (CcDisplayConfig *pself,
+                                           gboolean         logical)
+{
+  CcDisplayConfigDBus *self = CC_DISPLAY_CONFIG_DBUS (pself);
+
+  if (!self->supports_changing_layout_mode)
+    return;
+
+  if (!logical)
+    {
+      self->layout_mode = CC_DISPLAY_LAYOUT_MODE_PHYSICAL;
+      return;
+    }
+
+  if (g_str_equal (self->renderer, "native") || g_str_equal (self->renderer, "kms"))
+    self->layout_mode = CC_DISPLAY_LAYOUT_MODE_LOGICAL;
+  else if (g_str_equal (self->renderer, "xrandr"))
+    self->layout_mode = CC_DISPLAY_LAYOUT_MODE_GLOBAL_UI_LOGICAL;
+  else
+    g_return_if_reached ();
+}
+
+static gboolean
+cc_display_config_dbus_layout_use_ui_scale (CcDisplayConfig *pself)
+{
+  CcDisplayConfigDBus *self = CC_DISPLAY_CONFIG_DBUS (pself);
+  return self->layout_mode == CC_DISPLAY_LAYOUT_MODE_GLOBAL_UI_LOGICAL;
+}
+
+static gint
+cc_display_config_dbus_get_legacy_ui_scale (CcDisplayConfig *pself)
+{
+  CcDisplayConfigDBus *self = CC_DISPLAY_CONFIG_DBUS (pself);
+  return self->legacy_ui_scale;
+}
+
+static const char *
+cc_display_config_dbus_get_renderer (CcDisplayConfig *pself)
+{
+  CcDisplayConfigDBus *self = CC_DISPLAY_CONFIG_DBUS (pself);
+  return self->renderer;
 }
 
 static gboolean
@@ -1592,12 +1643,20 @@ cc_display_config_dbus_constructed (GObject *object)
         {
           g_variant_get (v, "b", &self->global_scale_required);
         }
+      else if (g_str_equal (s, "legacy-ui-scaling-factor"))
+        {
+          g_variant_get (v, "i", &self->legacy_ui_scale);
+        }
+      else if (g_str_equal (s, "renderer"))
+        {
+          g_variant_get (v, "s", &self->renderer);
+        }
       else if (g_str_equal (s, "layout-mode"))
         {
           guint32 u = 0;
           g_variant_get (v, "u", &u);
           if (u >= CC_DISPLAY_LAYOUT_MODE_LOGICAL &&
-              u <= CC_DISPLAY_LAYOUT_MODE_PHYSICAL)
+              u <= CC_DISPLAY_LAYOUT_MODE_GLOBAL_UI_LOGICAL)
             self->layout_mode = u;
         }
     }
@@ -1678,6 +1737,7 @@ cc_display_config_dbus_finalize (GObject *object)
   g_clear_pointer (&self->monitors, g_list_free);
   g_clear_pointer (&self->logical_monitors, g_hash_table_destroy);
   g_clear_pointer (&self->clone_modes, g_list_free);
+  g_clear_pointer (&self->renderer, g_free);
 
   G_OBJECT_CLASS (cc_display_config_dbus_parent_class)->finalize (object);
 }
@@ -1702,10 +1762,14 @@ cc_display_config_dbus_class_init (CcDisplayConfigDBusClass *klass)
   parent_class->set_cloning = cc_display_config_dbus_set_cloning;
   parent_class->get_cloning_modes = cc_display_config_dbus_get_cloning_modes;
   parent_class->is_layout_logical = cc_display_config_dbus_is_layout_logical;
+  parent_class->set_layout_logical = cc_display_config_dbus_set_layout_logical;
   parent_class->is_scaled_mode_valid = cc_display_config_dbus_is_scaled_mode_valid;
   parent_class->set_minimum_size = cc_display_config_dbus_set_minimum_size;
   parent_class->get_panel_orientation_managed =
     cc_display_config_dbus_get_panel_orientation_managed;
+  parent_class->layout_use_ui_scale = cc_display_config_dbus_layout_use_ui_scale;
+  parent_class->get_legacy_ui_scale = cc_display_config_dbus_get_legacy_ui_scale;
+  parent_class->get_renderer = cc_display_config_dbus_get_renderer;
 
   pspec = g_param_spec_variant ("state",
                                 "GVariant",
@@ -1766,6 +1830,26 @@ logical_monitor_is_rotated (CcDisplayLogicalMonitor *lm)
     }
 }
 
+static double
+get_maximum_scale (CcDisplayConfig *config)
+{
+  GList *outputs, *l;
+  double max_scale = 1.0;
+  outputs = cc_display_config_get_monitors (config);
+
+  for (l = outputs; l; l = l->next)
+    {
+      CcDisplayMonitor *output = l->data;
+
+      if (!cc_display_monitor_is_useful (output))
+        continue;
+
+      max_scale = MAX (max_scale, cc_display_monitor_get_scale (output));
+    }
+
+  return max_scale;
+}
+
 static int
 logical_monitor_width (CcDisplayLogicalMonitor *lm)
 {
@@ -1784,6 +1868,11 @@ logical_monitor_width (CcDisplayLogicalMonitor *lm)
 
   if (monitor->config->layout_mode == CC_DISPLAY_LAYOUT_MODE_LOGICAL)
     return round (width / lm->scale);
+  if (monitor->config->layout_mode == CC_DISPLAY_LAYOUT_MODE_GLOBAL_UI_LOGICAL)
+    {
+      double max_scale = get_maximum_scale(CC_DISPLAY_CONFIG (monitor->config));
+      return round ((width * ceil (max_scale)) / lm->scale);
+    }
   else
     return width;
 }

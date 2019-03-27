@@ -52,6 +52,8 @@ struct _CcDisplaySettings
   GtkWidget        *scale_bbox;
   GtkWidget        *scale_buttons_row;
   GtkWidget        *scale_combo_row;
+  GtkWidget        *scale_fractional_row;
+  GtkWidget        *scale_fractional_switch;
   GtkWidget        *underscanning_row;
   GtkWidget        *underscanning_switch;
 };
@@ -73,7 +75,6 @@ static GParamSpec *props[PROP_LAST];
 static void on_scale_btn_active_changed_cb (GtkWidget         *widget,
                                             GParamSpec        *pspec,
                                             CcDisplaySettings *self);
-
 
 static gboolean
 should_show_rotation (CcDisplaySettings *self)
@@ -247,6 +248,7 @@ cc_display_settings_rebuild_ui (CcDisplaySettings *self)
       gtk_widget_set_visible (self->resolution_row, FALSE);
       gtk_widget_set_visible (self->scale_combo_row, FALSE);
       gtk_widget_set_visible (self->scale_buttons_row, FALSE);
+      gtk_widget_set_visible (self->scale_fractional_row, FALSE);
       gtk_widget_set_visible (self->underscanning_row, FALSE);
 
       return G_SOURCE_REMOVE;
@@ -444,6 +446,10 @@ cc_display_settings_rebuild_ui (CcDisplaySettings *self)
     gtk_widget_set_visible (self->scale_combo_row, TRUE);
   else
     gtk_widget_set_visible (self->scale_buttons_row, scales->len > 1);
+
+  gtk_widget_set_visible (self->scale_fractional_row, TRUE);
+  gtk_switch_set_active (GTK_SWITCH (self->scale_fractional_switch),
+                         cc_display_config_get_fractional_scaling (self->config));
 
   gtk_widget_set_visible (self->underscanning_row,
                           cc_display_monitor_supports_underscanning (self->selected_output) &&
@@ -711,6 +717,8 @@ cc_display_settings_class_init (CcDisplaySettingsClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcDisplaySettings, scale_bbox);
   gtk_widget_class_bind_template_child (widget_class, CcDisplaySettings, scale_buttons_row);
   gtk_widget_class_bind_template_child (widget_class, CcDisplaySettings, scale_combo_row);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplaySettings, scale_fractional_row);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplaySettings, scale_fractional_switch);
   gtk_widget_class_bind_template_child (widget_class, CcDisplaySettings, underscanning_row);
   gtk_widget_class_bind_template_child (widget_class, CcDisplaySettings, underscanning_switch);
 
@@ -722,9 +730,27 @@ cc_display_settings_class_init (CcDisplaySettingsClass *klass)
 }
 
 static void
+on_scale_fractional_toggled (CcDisplaySettings *self)
+{
+  gboolean active;
+
+  active = gtk_switch_get_active (GTK_SWITCH (self->scale_fractional_switch));
+
+  if (self->config)
+    cc_display_config_set_fractional_scaling (self->config, active);
+
+  g_signal_emit_by_name (G_OBJECT (self), "updated", self->selected_output);
+}
+
+static void
 cc_display_settings_init (CcDisplaySettings *self)
 {
   gtk_widget_init_template (GTK_WIDGET (self));
+
+  g_signal_connect_object (self->scale_fractional_switch,
+                           "notify::active",
+                           G_CALLBACK (on_scale_fractional_toggled),
+                           self, G_CONNECT_SWAPPED);
 
   gtk_list_box_set_header_func (GTK_LIST_BOX (self),
                                 cc_list_box_update_header_func,

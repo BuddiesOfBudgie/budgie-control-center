@@ -154,6 +154,8 @@ struct _CcDisplayConfigClass
                                  gboolean          clone);
   GList*   (*get_cloning_modes) (CcDisplayConfig  *self);
   gboolean (*is_layout_logical) (CcDisplayConfig  *self);
+  void     (*set_layout_logical) (CcDisplayConfig  *self,
+                                 gboolean          enabled);
   void     (*set_minimum_size)  (CcDisplayConfig  *self,
                                  int               width,
                                  int               height);
@@ -161,6 +163,9 @@ struct _CcDisplayConfigClass
                                     CcDisplayMode    *mode,
                                     double            scale);
   gboolean (* get_panel_orientation_managed) (CcDisplayConfig    *self);
+  gboolean (*layout_use_ui_scale) (CcDisplayConfig  *self);
+  gint     (*get_legacy_ui_scale) (CcDisplayConfig  *self);
+  const char * (*get_renderer)    (CcDisplayConfig  *self);
 };
 
 
@@ -181,6 +186,8 @@ void              cc_display_config_set_mode_on_all_outputs (CcDisplayConfig *co
                                                              CcDisplayMode   *mode);
 
 gboolean          cc_display_config_is_layout_logical       (CcDisplayConfig    *self);
+void              cc_display_config_set_layout_logical      (CcDisplayConfig    *self,
+                                                             gboolean            logical);
 void              cc_display_config_set_minimum_size        (CcDisplayConfig    *self,
                                                              int                 width,
                                                              int                 height);
@@ -189,6 +196,14 @@ gboolean          cc_display_config_is_scaled_mode_valid    (CcDisplayConfig    
                                                              double              scale);
 gboolean          cc_display_config_get_panel_orientation_managed
                                                             (CcDisplayConfig    *self);
+gboolean          cc_display_config_layout_use_ui_scale     (CcDisplayConfig    *self);
+gint              cc_display_config_get_legacy_ui_scale     (CcDisplayConfig    *self);
+const char*       cc_display_config_get_renderer            (CcDisplayConfig    *self);
+
+double            cc_display_config_get_maximum_scaling     (CcDisplayConfig    *self);
+void              cc_display_config_set_fractional_scaling  (CcDisplayConfig    *self,
+                                                             gboolean            enabled);
+gboolean          cc_display_config_get_fractional_scaling  (CcDisplayConfig    *self);
 
 const char*       cc_display_monitor_get_display_name       (CcDisplayMonitor   *monitor);
 gboolean          cc_display_monitor_is_active              (CcDisplayMonitor   *monitor);
