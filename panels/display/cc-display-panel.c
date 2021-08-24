@@ -475,6 +475,7 @@ static void
 cc_display_panel_dispose (GObject *object)
 {
   CcDisplayPanel *self = CC_DISPLAY_PANEL (object);
+  GtkWidget *toplevel = cc_shell_get_toplevel (cc_panel_get_shell (CC_PANEL (self)));
 
   reset_titlebar (CC_DISPLAY_PANEL (object));
 
@@ -496,6 +497,8 @@ cc_display_panel_dispose (GObject *object)
   g_clear_object (&self->shell_proxy);
 
   g_clear_pointer ((GtkWidget **) &self->night_light_dialog, gtk_widget_destroy);
+
+  g_signal_handlers_disconnect_by_data (toplevel, self);
 
   G_OBJECT_CLASS (cc_display_panel_parent_class)->dispose (object);
 }
@@ -669,10 +672,24 @@ on_primary_display_selected_index_changed_cb (CcDisplayPanel *panel)
 }
 
 static void
+on_toplevel_folded (CcDisplayPanel *panel, GParamSpec *pspec, GtkWidget *toplevel)
+{
+  gboolean folded;
+
+  g_object_get (toplevel, "folded", &folded, NULL);
+  cc_display_settings_refresh_layout (panel->settings, folded);
+}
+
+static void
 cc_display_panel_constructed (GObject *object)
 {
+  GtkWidget *toplevel = cc_shell_get_toplevel (cc_panel_get_shell (CC_PANEL (object)));
+
   g_signal_connect_object (cc_panel_get_shell (CC_PANEL (object)), "notify::active-panel",
                            G_CALLBACK (active_panel_changed), object, G_CONNECT_SWAPPED);
+
+  g_signal_connect_swapped (toplevel, "notify::folded", G_CALLBACK (on_toplevel_folded), object);
+  on_toplevel_folded (CC_DISPLAY_PANEL (object), NULL, toplevel);
 
   G_OBJECT_CLASS (cc_display_panel_parent_class)->constructed (object);
 }
