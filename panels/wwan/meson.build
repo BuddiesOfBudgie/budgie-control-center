@@ -2,7 +2,7 @@ gcr_dep = [dependency('gcr-3')]
 
 deps = common_deps + network_manager_deps + gcr_dep + [polkit_gobject_dep]
 panels_list += cappletname
-desktop = 'gnome-@0@-panel.desktop'.format(cappletname)
+desktop = 'budgie-@0@-panel.desktop'.format(cappletname)
 
 desktop_in = configure_file(
           input : desktop + '.in.in',

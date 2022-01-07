@@ -1,6 +1,6 @@
 panels_list += cappletname
 
-desktop = 'gnome-@0@-panel.desktop'.format(cappletname)
+desktop = 'budgie-@0@-panel.desktop'.format(cappletname)
 desktop_in = configure_file(
   input: desktop + '.in.in',
   output: desktop + '.in',

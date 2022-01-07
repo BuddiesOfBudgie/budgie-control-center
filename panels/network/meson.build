@@ -16,7 +16,7 @@ panel_names = [
 panels_list += panel_names
 
 foreach name: panel_names
-  desktop = 'gnome-' + name + '-panel.desktop'
+  desktop = 'budgie-' + name + '-panel.desktop'
 
   desktop_in = configure_file(
     input: desktop + '.in.in',
