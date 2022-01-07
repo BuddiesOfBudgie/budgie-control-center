@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Online Accounts
 Comment=Connect to your online accounts and decide what to use them for
-Exec=gnome-control-center online-accounts
+Exec=budgie-control-center online-accounts
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=goa-panel
 Terminal=false
@@ -9,11 +9,7 @@ Type=Application
 NoDisplay=true
 StartupNotify=true
 Categories=GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-AccountSettings;
-OnlyShowIn=GNOME;Unity;
-X-GNOME-Bugzilla-Bugzilla=GNOME
-X-GNOME-Bugzilla-Product=gnome-control-center
-X-GNOME-Bugzilla-Component=Online Accounts
-X-GNOME-Bugzilla-Version=@VERSION@
+OnlyShowIn=Budgie
 # Translators: Search terms to find the Online Accounts panel.
 # Do NOT translate or localize the semicolons!
 # The list MUST also end with a semicolon!
