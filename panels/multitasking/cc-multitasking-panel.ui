@@ -244,6 +244,8 @@
                     </child>
                   </object>
                 </child>
+              </object>
+            </child>
           </object>
         </child>
       </object>
