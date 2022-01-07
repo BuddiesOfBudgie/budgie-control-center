@@ -294,7 +294,6 @@ configure_file(
 
 summary({
   'Documentation': get_option('documentation'),
-  'Tests': get_option('tests'),
   'Tracing': enable_tracing,
   'Optimized': control_center_optimized,
 })
