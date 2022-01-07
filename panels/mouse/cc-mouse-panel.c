@@ -42,6 +42,7 @@ struct _CcMousePanel
   GtkFrame          *mouse_frame;
   GtkListBox        *mouse_listbox;
   GtkSwitch         *mouse_natural_scrolling_switch;
+  GtkComboBox       *mouse_acceleration_profile_box;
   GtkScale          *mouse_speed_scale;
   CcMouseTest       *mouse_test;
   GtkBox            *primary_button_box;
@@ -226,6 +227,10 @@ setup_dialog (CcMousePanel *self)
   button = self->primary_button_left;
   self->left_gesture = gtk_gesture_multi_press_new (GTK_WIDGET (button));
   handle_secondary_button (self, button, self->left_gesture);
+
+  g_settings_bind (self->mouse_settings, "accel-profile",
+       self->mouse_acceleration_profile_box, "active-id",
+       G_SETTINGS_BIND_DEFAULT);
 
   g_settings_bind (self->mouse_settings, "natural-scroll",
        self->mouse_natural_scrolling_switch, "active",
@@ -421,6 +426,7 @@ cc_mouse_panel_class_init (CcMousePanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, mouse_frame);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, mouse_listbox);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, mouse_natural_scrolling_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcMousePanel, mouse_acceleration_profile_box);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, mouse_speed_scale);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, mouse_test);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, primary_button_box);
