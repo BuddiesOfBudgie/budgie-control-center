@@ -14,7 +14,7 @@ configure_file(
   configuration : service_conf
 )
 
-desktop = 'gnome-control-center.desktop'
+desktop = 'budgie-control-center.desktop'
 
 desktop_in = configure_file(
           input : desktop + '.in.in',

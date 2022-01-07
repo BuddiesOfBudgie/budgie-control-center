@@ -1,4 +1,4 @@
-appdata = 'gnome-control-center.appdata.xml'
+appdata = 'budgie-control-center.appdata.xml'
 
 i18n.merge_file(
   appdata,
