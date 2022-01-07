@@ -47,34 +47,6 @@
                       <class name="content"/>
                     </style>
 
-                    <!-- Hot Corner -->
-                    <child>
-                      <object class="CcMultitaskingRow">
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="activatable-widget">hot_corner_switch</property>
-                        <property name="title" translatable="yes">_Hot Corner</property>
-                        <property name="subtitle" translatable="yes">Touch the top-left corner to open the Activities Overview.</property>
-                        <property name="use_underline">True</property>
-                        <child>
-                          <object class="GtkSwitch" id="hot_corner_switch">
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="valign">center</property>
-                          </object>
-                        </child>
-                        <child type="artwork">
-                          <object class="GtkImage">
-                            <property name="visible">True</property>
-                            <property name="hexpand">True</property>
-                            <property name="halign">center</property>
-                            <property name="margin">18</property>
-                            <property name="resource">/org/gnome/control-center/multitasking/assets/hot-corner.svg</property>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
-
                     <!-- Active Screen Edges -->
                     <child>
                       <object class="CcMultitaskingRow">
@@ -270,77 +242,8 @@
                         </child>
                       </object>
                     </child>
-
                   </object>
                 </child>
-
-                <!-- Application Switching -->
-                <child>
-                  <object class="GtkLabel">
-                    <property name="visible">true</property>
-                    <property name="can-focus">true</property>
-                    <property name="label" translatable="yes">Application Switching</property>
-                    <property name="xalign">0.0</property>
-                    <attributes>
-                      <attribute name="weight" value="bold" />
-                    </attributes>
-                  </object>
-                </child>
-
-                <child>
-                  <object class="GtkListBox">
-                    <property name="visible">true</property>
-                    <property name="can-focus">true</property>
-                    <property name="selection-mode">none</property>
-                    <property name="margin-bottom">18</property>
-
-                    <style>
-                      <class name="content"/>
-                    </style>
-
-                    <!-- All Workspaces -->
-                    <child>
-                      <object class="CcMultitaskingRow">
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="activatable-widget">all_workspaces_radio</property>
-                        <property name="title" translatable="yes">Include applications from all _workspaces</property>
-                        <property name="use_underline">True</property>
-                        <child type="prefix">
-                          <object class="GtkRadioButton" id="all_workspaces_radio">
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="valign">center</property>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
-
-                    <!-- Current Workspace -->
-                    <child>
-                      <object class="CcMultitaskingRow">
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="activatable-widget">current_workspace_radio</property>
-                        <property name="title" translatable="yes">Include applications from the _current workspace only</property>
-                        <property name="use_underline">True</property>
-                        <child type="prefix">
-                          <object class="GtkRadioButton" id="current_workspace_radio">
-                            <property name="visible">True</property>
-                            <property name="can_focus">True</property>
-                            <property name="valign">center</property>
-                            <property name="group">all_workspaces_radio</property>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
-
-                  </object>
-                </child>
-
-              </object>
-            </child>
-
           </object>
         </child>
       </object>

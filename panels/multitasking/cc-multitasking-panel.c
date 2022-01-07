@@ -29,16 +29,12 @@ struct _CcMultitaskingPanel
 {
   CcPanel          parent_instance;
 
-  GSettings       *interface_settings;
   GSettings       *mutter_settings;
-  GSettings       *shell_settings;
   GSettings       *wm_settings;
 
   GtkSwitch       *active_screen_edges_switch;
-  GtkToggleButton *current_workspace_radio;
   GtkToggleButton *dynamic_workspaces_radio;
   GtkToggleButton *fixed_workspaces_radio;
-  GtkSwitch       *hot_corner_switch;
   GtkSpinButton   *number_of_workspaces_spin;
   GtkToggleButton *workspaces_primary_display_radio;
   GtkToggleButton *workspaces_span_displays_radio;
@@ -53,9 +49,7 @@ cc_multitasking_panel_finalize (GObject *object)
 {
   CcMultitaskingPanel *self = (CcMultitaskingPanel *)object;
 
-  g_clear_object (&self->interface_settings);
   g_clear_object (&self->mutter_settings);
-  g_clear_object (&self->shell_settings);
   g_clear_object (&self->wm_settings);
 
   G_OBJECT_CLASS (cc_multitasking_panel_parent_class)->finalize (object);
@@ -74,10 +68,8 @@ cc_multitasking_panel_class_init (CcMultitaskingPanelClass *klass)
   gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/multitasking/cc-multitasking-panel.ui");
 
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, active_screen_edges_switch);
-  gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, current_workspace_radio);
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, dynamic_workspaces_radio);
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, fixed_workspaces_radio);
-  gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, hot_corner_switch);
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, number_of_workspaces_spin);
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, workspaces_primary_display_radio);
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, workspaces_span_displays_radio);
@@ -89,13 +81,6 @@ cc_multitasking_panel_init (CcMultitaskingPanel *self)
   g_resources_register (cc_multitasking_get_resource ());
 
   gtk_widget_init_template (GTK_WIDGET (self));
-
-  self->interface_settings = g_settings_new ("org.gnome.desktop.interface");
-  g_settings_bind (self->interface_settings,
-                   "enable-hot-corners",
-                   self->hot_corner_switch,
-                   "active",
-                   G_SETTINGS_BIND_DEFAULT);
 
   self->mutter_settings = g_settings_new ("org.gnome.mutter");
 
@@ -131,16 +116,5 @@ cc_multitasking_panel_init (CcMultitaskingPanel *self)
                    "num-workspaces",
                    self->number_of_workspaces_spin,
                    "value",
-                   G_SETTINGS_BIND_DEFAULT);
-
-  self->shell_settings = g_settings_new ("org.gnome.shell.app-switcher");
-
-  if (g_settings_get_boolean (self->shell_settings, "current-workspace-only"))
-    gtk_toggle_button_set_active (self->current_workspace_radio, TRUE);
-
-  g_settings_bind (self->shell_settings,
-                   "current-workspace-only",
-                   self->current_workspace_radio,
-                   "active",
                    G_SETTINGS_BIND_DEFAULT);
 }
