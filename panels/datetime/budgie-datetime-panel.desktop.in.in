@@ -3,7 +3,7 @@ Name=Date & Time
 Comment=Change the date and time, including time zone
 Exec=budgie-control-center datetime
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=preferences-system-time
+Icon=budgie-preferences-system-time
 Terminal=false
 Type=Application
 NoDisplay=true
