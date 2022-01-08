@@ -10,12 +10,12 @@ icon_sizes = [
 
 foreach icon_size: icon_sizes
   install_data(
-    join_paths(icon_size, 'preferences-color.png'),
+    join_paths(icon_size, 'budgie-preferences-color.png'),
     install_dir: join_paths(control_center_icondir, 'hicolor', icon_size, 'apps')
   )
 endforeach
 
 install_data(
-  'scalable/preferences-color.svg',
+  'scalable/budgie-preferences-color.svg',
   install_dir: join_paths(control_center_icondir, 'hicolor', 'scalable', 'apps')
 )
