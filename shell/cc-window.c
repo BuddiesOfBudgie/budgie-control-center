@@ -47,7 +47,7 @@
 
 #define MOUSE_BACK_BUTTON 8
 
-#define DEFAULT_WINDOW_ICON_NAME "gnome-control-center"
+#define DEFAULT_WINDOW_ICON_NAME "budgie-control-center"
 
 struct _CcWindow
 {
@@ -876,7 +876,7 @@ cc_window_class_init (CcWindowClass *klass)
                                                         CC_TYPE_SHELL_MODEL,
                                                         G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY | G_PARAM_STATIC_STRINGS));
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/ControlCenter/gtk/cc-window.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/org/buddiesofbudgie/ControlCenter/gtk/cc-window.ui");
 
   gtk_widget_class_bind_template_child (widget_class, CcWindow, back_revealer);
   gtk_widget_class_bind_template_child (widget_class, CcWindow, development_warning_dialog);
@@ -916,7 +916,7 @@ cc_window_init (CcWindow *self)
 
   gtk_widget_add_events (GTK_WIDGET (self), GDK_BUTTON_RELEASE_MASK);
 
-  self->settings = g_settings_new ("org.gnome.ControlCenter");
+  self->settings = g_settings_new ("org.buddiesofbudgie.ControlCenter");
   self->custom_widgets = g_ptr_array_new_with_free_func ((GDestroyNotify) g_object_unref);
   self->previous_panels = g_queue_new ();
   self->previous_list_view = cc_panel_list_get_view (self->panel_list);

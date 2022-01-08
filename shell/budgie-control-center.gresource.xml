@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/gnome/ControlCenter/gtk">
+  <gresource prefix="/org/buddiesofbudgie/ControlCenter/gtk">
     <file preprocess="xml-stripblanks">cc-panel-list.ui</file>
     <file preprocess="xml-stripblanks">cc-window.ui</file>
     <file preprocess="xml-stripblanks">help-overlay.ui</file>
@@ -8,7 +8,7 @@
   </gresource>
 
   <!-- Panel icons -->
-  <gresource prefix="/org/gnome/ControlCenter">
+  <gresource prefix="/org/buddiesofbudgie/ControlCenter">
     <file preprocess="xml-stripblanks">icons/multitasking-symbolic.svg</file>
     <file>style.css</file>
   </gresource>

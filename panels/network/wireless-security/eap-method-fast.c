@@ -269,7 +269,7 @@ eap_method_fast_class_init (EAPMethodFASTClass *klass)
 {
         GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
-	gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/ControlCenter/network/eap-method-fast.ui");
+	gtk_widget_class_set_template_from_resource (widget_class, "/org/buddiesofbudgie/ControlCenter/network/eap-method-fast.ui");
 
 	gtk_widget_class_bind_template_child (widget_class, EAPMethodFAST, anon_identity_entry);
 	gtk_widget_class_bind_template_child (widget_class, EAPMethodFAST, anon_identity_label);

@@ -4,7 +4,7 @@ subdir('completions')
 service_conf = configuration_data()
 service_conf.set('bindir', control_center_bindir)
 
-service = 'org.gnome.ControlCenter.service'
+service = 'org.buddiesofbudgie.ControlCenter.service'
 
 configure_file(
           input : service + '.in',
@@ -35,7 +35,7 @@ i18n.merge_file(
 cflags = ['-DGNOMELOCALEDIR="@0@"'.format(control_center_localedir)]
 
 
-# Common sources between gnome-control-center and
+# Common sources between budgie-control-center and
 # libtestshell.
 common_sources = files(
   'cc-application.c',
@@ -102,7 +102,7 @@ libshell_dep = declare_dependency(
 
 
 ########################
-# gnome-control-center #
+# budgie-control-center #
 ########################
 
 shell_sources = common_sources + files('main.c')
@@ -171,6 +171,6 @@ libtestshell_deps = common_deps + [ libwidgets_dep, libtestshell_dep ]
 
 
 install_data (
-  'org.gnome.ControlCenter.gschema.xml',
+  'org.buddiesofbudgie.ControlCenter.gschema.xml',
   install_dir : control_center_schemadir
 )

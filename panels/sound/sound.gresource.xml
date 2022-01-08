@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/gnome/control-center/sound">
+  <gresource prefix="/org/buddiesofbudgie/control-center/sound">
     <file preprocess="xml-stripblanks">cc-alert-chooser.ui</file>
     <file preprocess="xml-stripblanks">cc-balance-slider.ui</file>
     <file preprocess="xml-stripblanks">cc-device-combo-box.ui</file>
@@ -14,7 +14,7 @@
     <file preprocess="xml-stripblanks">cc-subwoofer-slider.ui</file>
     <file preprocess="xml-stripblanks">cc-volume-slider.ui</file>
   </gresource>
-  <gresource prefix="/org/gnome/ControlCenter/icons/scalable/devices">
+  <gresource prefix="/org/buddiesofbudgie/ControlCenter/icons/scalable/devices">
     <file alias="audio-speaker-center-back.svg">icons/audio-speaker-center-back.svg</file>
     <file alias="audio-speaker-center-back-testing.svg">icons/audio-speaker-center-back-testing.svg</file>
     <file alias="audio-speaker-center.svg">icons/audio-speaker-center.svg</file>

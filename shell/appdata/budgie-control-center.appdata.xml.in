@@ -15,7 +15,7 @@
   <url type="translate">https://wiki.gnome.org/TranslationProject</url>
   <update_contact>admin@buddiesofbudgie.org</update_contact>
   <project_group>GNOME</project_group>
-  <launchable type="desktop-id">gnome-control-center.desktop</launchable>
+  <launchable type="desktop-id">budgie-control-center.desktop</launchable>
   <developer_name>BuddiesOfBudgie</developer_name>
   <compulsory_for_desktop>GNOME</compulsory_for_desktop>
   <kudos>
@@ -25,7 +25,7 @@
     <kudo>SearchProvider</kudo>
     <kudo>UserDocs</kudo>
   </kudos>
-  <translation type="gettext">gnome-control-center-2.0</translation>
+  <translation type="gettext">budgie-control-center-2.0</translation>
   <custom>
     <value key="Purism::form_factor">workstation</value>
     <value key="Purism::form_factor">mobile</value>
