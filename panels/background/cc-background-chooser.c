@@ -107,7 +107,7 @@ create_widget_func (gpointer model_item,
   image = gtk_image_new_from_gicon (G_ICON (pixbuf), GTK_ICON_SIZE_DIALOG);
   gtk_widget_show (image);
 
-  icon = gtk_image_new_from_icon_name("slideshow-emblem", GTK_ICON_SIZE_BUTTON);
+  icon = gtk_image_new_from_icon_name("budgie-slideshow-emblem", GTK_ICON_SIZE_BUTTON);
   gtk_image_set_pixel_size (GTK_IMAGE (icon), 16);
   gtk_widget_set_margin_start (icon, 8);
   gtk_widget_set_margin_end (icon, 8);
@@ -116,7 +116,7 @@ create_widget_func (gpointer model_item,
   gtk_widget_set_halign (icon, GTK_ALIGN_END);
   gtk_widget_set_valign (icon, GTK_ALIGN_END);
   gtk_widget_set_visible (icon, cc_background_item_changes_with_time (item));
-  gtk_style_context_add_class (gtk_widget_get_style_context (icon), "slideshow-emblem");
+  gtk_style_context_add_class (gtk_widget_get_style_context (icon), "budgie-slideshow-emblem");
 
 
   if (BG_IS_RECENT_SOURCE (source))

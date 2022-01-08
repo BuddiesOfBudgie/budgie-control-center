@@ -76,7 +76,7 @@ static gchar *
 get_save_path (void)
 {
   return g_build_filename (g_get_user_config_dir (),
-                           "gnome-control-center",
+                           "budgie-control-center",
                            "backgrounds",
                            "last-edited.xml",
                            NULL);
@@ -140,7 +140,7 @@ create_save_dir (void)
   g_autofree char *path = NULL;
 
   path = g_build_filename (g_get_user_config_dir (),
-			   "gnome-control-center",
+			   "budgie-control-center",
 			   "backgrounds",
 			   NULL);
   if (g_mkdir_with_parents (path, USER_DIR_MODE) < 0)

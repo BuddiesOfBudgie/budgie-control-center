@@ -60,13 +60,13 @@ struct {
 static gchar *
 get_colors_path (void)
 {
-  return g_build_filename (g_get_user_config_dir (), "gnome-control-center", "backgrounds", "colors.ini", NULL);
+  return g_build_filename (g_get_user_config_dir (), "budgie-control-center", "backgrounds", "colors.ini", NULL);
 }
 
 static char *
 get_colors_dir (void)
 {
-  return g_build_filename (g_get_user_config_dir (), "gnome-control-center", "backgrounds", NULL);
+  return g_build_filename (g_get_user_config_dir (), "budgie-control-center", "backgrounds", NULL);
 }
 
 static void
@@ -86,7 +86,7 @@ bg_colors_source_add_color (BgColorsSource               *self,
   /* It does have a URI, it's "none" */
 
   g_object_set (G_OBJECT (item),
-                "uri", "file:///" DATADIR "/gnome-control-center/pixmaps/noise-texture-light.png",
+                "uri", "file:///" DATADIR "/budgie-control-center/pixmaps/noise-texture-light.png",
                 "primary-color", color,
                 "secondary-color", color,
                 "shading", G_DESKTOP_BACKGROUND_SHADING_SOLID,
