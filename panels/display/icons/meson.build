@@ -7,12 +7,12 @@ icon_sizes = [
 
 foreach icon_size: icon_sizes
   install_data(
-    join_paths(icon_size, 'preferences-desktop-display.png'),
+    join_paths(icon_size, 'budgie-preferences-desktop-display.png'),
     install_dir: join_paths(control_center_icondir, 'hicolor', icon_size, 'apps')
   )
 endforeach
 
 install_data(
-  'scalable/preferences-desktop-display.svg',
+  'scalable/budgie-preferences-desktop-display.svg',
   install_dir: join_paths(control_center_icondir, 'hicolor', 'scalable', 'apps')
 )

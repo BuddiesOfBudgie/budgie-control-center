@@ -3,7 +3,7 @@ Name=Displays
 Comment=Choose how to use connected monitors and projectors
 Exec=budgie-control-center display
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=preferences-desktop-display
+Icon=budgie-preferences-desktop-display
 Terminal=false
 Type=Application
 NoDisplay=true
