@@ -3,7 +3,7 @@ Name=Online Accounts
 Comment=Connect to your online accounts and decide what to use them for
 Exec=budgie-control-center online-accounts
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=goa-panel
+Icon=boa-panel
 Terminal=false
 Type=Application
 NoDisplay=true

@@ -9,7 +9,7 @@ icon_sizes = [
 
 foreach icon_size: icon_sizes
   install_data(
-    join_paths(icon_size, 'goa-panel.png'),
+    join_paths(icon_size, 'boa-panel.png'),
     install_dir: join_paths(control_center_icondir, 'hicolor', icon_size, 'apps')
   )
 endforeach
