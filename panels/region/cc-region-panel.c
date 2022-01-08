@@ -127,7 +127,7 @@ get_needs_restart_file (void)
         g_autofree gchar *path = NULL;
 
         path = g_build_filename (g_get_user_runtime_dir (),
-                                 "gnome-control-center-region-needs-restart",
+                                 "budgie-control-center-region-needs-restart",
                                  NULL);
         return g_file_new_for_path (path);
 }

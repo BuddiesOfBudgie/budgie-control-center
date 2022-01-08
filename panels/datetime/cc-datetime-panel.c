@@ -932,11 +932,11 @@ setup_datetime_dialog (CcDateTimePanel *self)
   /* Big time buttons */
   provider = gtk_css_provider_new ();
   gtk_css_provider_load_from_data (GTK_CSS_PROVIDER (provider),
-                                   ".gnome-control-center-datetime-setup-time>spinbutton,\n"
-                                   ".gnome-control-center-datetime-setup-time>label {\n"
+                                   ".budgie-control-center-datetime-setup-time>spinbutton,\n"
+                                   ".budgie-control-center-datetime-setup-time>label {\n"
                                    "    font-size: 250%;\n"
                                    "}\n"
-                                   ".gnome-control-center-datetime-setup-time>spinbutton>entry {\n"
+                                   ".budgie-control-center-datetime-setup-time>spinbutton>entry {\n"
                                    "    padding: 8px 13px;\n"
                                    "}", -1, NULL);
   screen = gdk_screen_get_default ();

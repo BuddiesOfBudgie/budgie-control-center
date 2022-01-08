@@ -812,7 +812,7 @@ gcm_prefs_calib_upload_cb (CcColorPanel *prefs)
     }
 
   /* setup the session */
-  session = soup_session_new_with_options (SOUP_SESSION_USER_AGENT, "gnome-control-center",
+  session = soup_session_new_with_options (SOUP_SESSION_USER_AGENT, "budgie-control-center",
                                            SOUP_SESSION_TIMEOUT, 5000,
                                            NULL);
   if (session == NULL)

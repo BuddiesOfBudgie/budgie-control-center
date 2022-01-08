@@ -48,7 +48,7 @@ load_keyfiles (CcTabletToolMap *map)
 	g_autoptr(GError) tools_error = NULL;
 	g_autofree gchar *dir = NULL;
 
-	dir = g_build_filename (g_get_user_cache_dir (), "gnome-control-center", "wacom", NULL);
+	dir = g_build_filename (g_get_user_cache_dir (), "budgie-control-center", "wacom", NULL);
 
 	if (g_mkdir_with_parents (dir, 0700) < 0) {
 		g_warning ("Could not create directory '%s', expect stylus mapping oddities: %m", dir);

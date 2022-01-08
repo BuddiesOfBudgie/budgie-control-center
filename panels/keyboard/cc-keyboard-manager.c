@@ -544,7 +544,7 @@ reload_sections (CcKeyboardManager *self)
       g_autofree gchar *dir_path = NULL;
       const gchar *name;
 
-      dir_path = g_build_filename (data_dirs[i], "gnome-control-center", "keybindings", NULL);
+      dir_path = g_build_filename (data_dirs[i], "budgie-control-center", "keybindings", NULL);
 
       dir = g_dir_open (dir_path, 0, NULL);
       if (!dir)

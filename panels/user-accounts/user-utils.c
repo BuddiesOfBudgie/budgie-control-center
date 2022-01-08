@@ -703,7 +703,7 @@ set_user_icon_data (ActUser   *user,
         g_autoptr(GOutputStream) stream = NULL;
         g_autoptr(GError) error = NULL;
 
-        path = g_build_filename (g_get_tmp_dir (), "gnome-control-center-user-icon-XXXXXX", NULL);
+        path = g_build_filename (g_get_tmp_dir (), "budgie-control-center-user-icon-XXXXXX", NULL);
         fd = g_mkstemp (path);
 
         if (fd == -1) {

@@ -59,8 +59,8 @@ print_renderer_deps = [
 ]
 
 executable(
-  'gnome-control-center-print-renderer',
-  'gnome-control-center-print-renderer.c',
+  'budgie-control-center-print-renderer',
+  'budgie-control-center-print-renderer.c',
   include_directories: [ top_inc ],
   dependencies: [ print_renderer_deps ],
   c_args: cflags,
