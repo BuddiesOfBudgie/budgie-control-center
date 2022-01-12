@@ -272,7 +272,7 @@ void
 cc_remote_login_set_enabled (GCancellable *cancellable,
                              GtkSwitch    *gtkswitch)
 {
-  gchar *command[] = { "pkexec", LIBEXECDIR "/cc-remote-login-helper", NULL,
+  gchar *command[] = { "pkexec", LIBEXECDIR "/budgie-cc-remote-login-helper", NULL,
       NULL };
   g_autoptr(GError) error = NULL;
   GPid pid;
@@ -302,5 +302,5 @@ cc_remote_login_set_enabled (GCancellable *cancellable,
   g_child_watch_add (pid, child_watch_func, callback_data);
 
   if (error)
-    g_error ("Error running cc-remote-login-helper: %s", error->message);
+    g_error ("Error running budgie-cc-remote-login-helper: %s", error->message);
 }

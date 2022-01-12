@@ -20,7 +20,7 @@ i18n.merge_file(
 polkit_conf = configuration_data()
 polkit_conf.set('libexecdir', control_center_libexecdir)
 
-polkit = 'org.gnome.controlcenter.remote-login-helper.policy'
+polkit = 'org.buddiesofbudgie.controlcenter.remote-login-helper.policy'
 
 polkit_in = configure_file(
   input: polkit + '.in.in',
@@ -93,7 +93,7 @@ deps = [
 ]
 
 executable(
-  name,
+  'budgie-' + name,
   name + '.c',
   include_directories: top_inc,
   dependencies: deps,
