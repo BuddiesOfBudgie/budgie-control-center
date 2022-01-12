@@ -3,7 +3,7 @@ Name=Multitasking
 Comment=Manage preferences for productivity and multitasking
 Exec=budgie-control-center multitasking
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=org.gnome.Settings-multitasking-symbolic
+Icon=org.buddiesofbudgie.Settings-multitasking-symbolic
 Terminal=false
 Type=Application
 NoDisplay=true
