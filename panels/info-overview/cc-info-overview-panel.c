@@ -908,7 +908,7 @@ setup_os_logo (CcInfoOverviewPanel *panel)
 
   dark = use_dark_theme (panel);
   if (logo_name == NULL)
-    logo_name = g_strdup ("gnome-logo");
+    logo_name = g_strdup ("budgie-desktop");
 
   array = g_ptr_array_new_with_free_func (g_free);
   if (dark)
