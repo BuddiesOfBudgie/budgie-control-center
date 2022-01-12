@@ -269,10 +269,10 @@ desktop_conf.set('VERSION', meson.project_version())
 po_dir = join_paths(meson.source_root(), 'po')
 its_dir = join_paths(meson.source_root(), 'gettext')
 
-install_subdir(
-  'gettext',
-  install_dir: control_center_datadir
-)
+#install_subdir(
+#  'gettext',
+#  install_dir: control_center_datadir
+#)
 
 top_inc = include_directories('.')
 shell_inc = include_directories('shell')
