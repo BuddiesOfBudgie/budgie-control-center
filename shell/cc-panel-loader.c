@@ -253,7 +253,7 @@ cc_panel_loader_fill_model (CcShellModel *model)
       g_autofree gchar *desktop_name = NULL;
       gint category;
 
-      desktop_name = g_strconcat ("gnome-", panels_vtable[i].name, "-panel.desktop", NULL);
+      desktop_name = g_strconcat ("budgie-", panels_vtable[i].name, "-panel.desktop", NULL);
       app = g_desktop_app_info_new (desktop_name);
 
       if (!app)
