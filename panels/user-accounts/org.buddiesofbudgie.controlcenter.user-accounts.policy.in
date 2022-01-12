@@ -4,10 +4,10 @@
  "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
 
 <policyconfig>
-  <vendor>The GNOME Project</vendor>
-  <vendor_url>http://www.gnome.org/</vendor_url>
+  <vendor>BuddieOfBudgie</vendor>
+  <vendor_url>http://www.buddiesofbudgie.org/</vendor_url>
 
-  <action id="org.gnome.controlcenter.user-accounts.administration">
+  <action id="org.buddiesofbudgie.controlcenter.user-accounts.administration">
     <description>Manage user accounts</description>
     <message>Authentication is required to change user data</message>
     <defaults>

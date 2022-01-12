@@ -61,7 +61,7 @@
 #include "cc-util.h"
 #include "list-box-helper.h"
 
-#define USER_ACCOUNTS_PERMISSION "org.gnome.controlcenter.user-accounts.administration"
+#define USER_ACCOUNTS_PERMISSION "org.buddiesofbudgie.controlcenter.user-accounts.administration"
 
 struct _CcUserPanel {
         CcPanel parent_instance;
