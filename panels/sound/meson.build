@@ -106,5 +106,5 @@ sound_data = files(
 
 install_data(
   sound_data,
-  install_dir: join_paths(control_center_datadir, 'sounds', 'gnome', 'default', 'alerts')
+  install_dir: join_paths(control_center_datadir, 'sounds', 'budgie', 'default', 'alerts')
 )

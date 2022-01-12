@@ -58,7 +58,7 @@ get_sound_path (const gchar *name)
   g_autofree gchar *filename = NULL;
 
   filename = g_strdup_printf ("%s.ogg", name);
-  return g_build_filename (SOUND_DATA_DIR, "gnome", "default", "alerts", filename, NULL);
+  return g_build_filename (SOUND_DATA_DIR, "budgie", "default", "alerts", filename, NULL);
 }
 
 static gchar *
