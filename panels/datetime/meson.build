@@ -17,7 +17,7 @@ i18n.merge_file(
   install_dir: control_center_desktopdir
 )
 
-polkit = 'org.gnome.controlcenter.@0@.policy'.format(cappletname)
+polkit = 'org.buddiesofbudgie.controlcenter.@0@.policy'.format(cappletname)
 
 i18n.merge_file(
   polkit,

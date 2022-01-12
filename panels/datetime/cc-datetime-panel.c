@@ -52,7 +52,7 @@ enum {
   CITY_NUM_COLS
 };
 
-#define DATETIME_PERMISSION "org.gnome.controlcenter.datetime.configure"
+#define DATETIME_PERMISSION "org.buddiesofbudgie.controlcenter.datetime.configure"
 #define DATETIME_TZ_PERMISSION "org.freedesktop.timedate1.set-timezone"
 #define LOCATION_SETTINGS "org.gnome.system.location"
 #define LOCATION_ENABLED "enabled"
