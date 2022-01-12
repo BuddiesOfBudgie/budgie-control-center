@@ -430,7 +430,7 @@ get_system_facesdirs (void)
 
         data_dirs = g_get_system_data_dirs ();
         for (i = 0; data_dirs[i] != NULL; i++) {
-                char *path = g_build_filename (data_dirs[i], "pixmaps", "faces", NULL);
+                char *path = g_build_filename (data_dirs[i], "pixmaps", "budgie-faces", NULL);
                 g_ptr_array_add (facesdirs, path);
         }
         g_ptr_array_add (facesdirs, NULL);

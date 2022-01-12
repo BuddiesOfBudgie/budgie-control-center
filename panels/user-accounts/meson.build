@@ -62,7 +62,7 @@ legacy_image_data = files(
   'data/faces/legacy/yellow-rose.jpg',
 )
 
-image_dir = join_paths(control_center_datadir, 'pixmaps', 'faces')
+image_dir = join_paths(control_center_datadir, 'pixmaps', 'budgie-faces')
 
 install_data(
   image_data,
