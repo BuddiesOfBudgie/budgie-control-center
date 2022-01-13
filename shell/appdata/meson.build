@@ -1,7 +1,6 @@
 appdata = 'budgie-control-center.appdata.xml'
 
 i18n.merge_file(
-  appdata,
   input: appdata + '.in',
   output: appdata,
   po_dir: po_dir,
