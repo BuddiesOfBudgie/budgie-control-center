@@ -68,6 +68,6 @@ executable(
 )
 
 install_data(
-  [ 'budgie-desktop-text.svg', 'budgie-desktop-text-dark.svg' ],
-  install_dir: join_paths(control_center_datadir, 'icons')
+  [ 'budgie-logo.png' ],
+  install_dir: join_paths(control_center_datadir, 'pixmaps')
 )

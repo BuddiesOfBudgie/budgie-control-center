@@ -908,12 +908,12 @@ setup_os_logo (CcInfoOverviewPanel *panel)
 
   dark = use_dark_theme (panel);
   if (logo_name == NULL)
-    logo_name = g_strdup ("budgie-desktop");
+    logo_name = g_strdup ("budgie-logo");
 
   array = g_ptr_array_new_with_free_func (g_free);
   if (dark)
-    g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-text-dark", logo_name));
-  g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-text", logo_name));
+    g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor-dark", logo_name));
+  g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor", logo_name));
   if (dark)
     g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-dark", logo_name));
   g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s", logo_name));
