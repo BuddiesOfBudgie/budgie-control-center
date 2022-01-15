@@ -450,7 +450,7 @@ eap_method_tls_class_init (EAPMethodTLSClass *klass)
 
 	object_class->dispose = eap_method_tls_dispose;
 
-	gtk_widget_class_set_template_from_resource (widget_class, "/org/buddiesofbudgie/ControlCenter/network/eap-method-tls.ui");
+	gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/ControlCenter/network/eap-method-tls.ui");
 
 	gtk_widget_class_bind_template_child (widget_class, EAPMethodTLS, ca_cert_button);
 	gtk_widget_class_bind_template_child (widget_class, EAPMethodTLS, ca_cert_label);

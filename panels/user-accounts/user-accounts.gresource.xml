@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/buddiesofbudgie/control-center/user-accounts">
+  <gresource prefix="/org/gnome/control-center/user-accounts">
     <file preprocess="xml-stripblanks">cc-add-user-dialog.ui</file>
     <file preprocess="xml-stripblanks">cc-avatar-chooser.ui</file>
     <file preprocess="xml-stripblanks">cc-carousel.ui</file>
@@ -14,7 +14,7 @@
     <file alias="cc-fingerprint-dialog.css">data/cc-fingerprint-dialog.css</file>
   </gresource>
 
-  <gresource prefix="/org/buddiesofbudgie/ControlCenter/icons/scalable/status">
+  <gresource prefix="/org/gnome/ControlCenter/icons/scalable/status">
     <file preprocess="xml-stripblanks" alias="fingerprint-detection-complete-symbolic.svg">data/icons/fingerprint-detection-complete-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="fingerprint-detection-symbolic.svg">data/icons/fingerprint-detection-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="fingerprint-detection-warning-symbolic.svg">data/icons/fingerprint-detection-warning-symbolic.svg</file>
