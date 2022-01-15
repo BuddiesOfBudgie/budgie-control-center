@@ -37,6 +37,7 @@
 #include "cc-night-light-page.h"
 #include "cc-display-resources.h"
 #include "cc-display-settings.h"
+#include "cc-util.h"
 
 /* The minimum supported size for the panel
  * Note that WIDTH is assumed to be the larger size and we accept portrait
@@ -71,6 +72,21 @@ struct _CcDisplayPanel
 
   CcDisplayArrangement *arrangement;
   CcDisplaySettings    *settings;
+
+  GSettings     *lock_settings;
+  GSettings     *notification_settings;
+  GSettings     *privacy_settings;
+  GSettings     *session_settings;
+  GCancellable  *cancellable;
+
+  GtkSwitch     *automatic_screen_lock_switch;
+  GtkComboBox   *blank_screen_combo;
+  GtkComboBox   *lock_after_combo;
+  GtkListBox    *lock_list_box;
+  GtkSwitch     *show_notifications_switch;
+  GtkSwitch     *usb_protection_switch;
+  GDBusProxy    *usb_proxy;
+  GtkListBoxRow *usb_protection_row;
 
   guint           focus_id;
 
@@ -465,11 +481,16 @@ cc_display_panel_dispose (GObject *object)
       self->focus_id = 0;
       monitor_labeler_hide (CC_DISPLAY_PANEL (object));
     }
+  g_cancellable_cancel (self->cancellable);
 
   g_clear_object (&self->manager);
   g_clear_object (&self->current_config);
   g_clear_object (&self->up_client);
-
+  g_clear_object (&self->cancellable);
+  g_clear_object (&self->lock_settings);
+  g_clear_object (&self->notification_settings);
+  g_clear_object (&self->session_settings);
+  g_clear_object (&self->usb_proxy);
   g_clear_object (&self->shell_proxy);
 
   g_clear_pointer ((GtkWidget **) &self->night_light_dialog, gtk_widget_destroy);
@@ -669,47 +690,191 @@ cc_display_panel_get_title_widget (CcPanel *panel)
 }
 
 static void
-cc_display_panel_class_init (CcDisplayPanelClass *klass)
+on_lock_combo_changed_cb (GtkWidget   *widget,
+                          CcDisplayPanel *self)
 {
-  GObjectClass *object_class = G_OBJECT_CLASS (klass);
-  CcPanelClass *panel_class = CC_PANEL_CLASS (klass);
-  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
+  GtkTreeIter iter;
+  GtkTreeModel *model;
+  guint delay;
+  gboolean ret;
 
-  g_type_ensure (CC_TYPE_NIGHT_LIGHT_PAGE);
+  ret = gtk_combo_box_get_active_iter (GTK_COMBO_BOX (widget), &iter);
+  if (!ret)
+    return;
 
-  panel_class->get_help_uri = cc_display_panel_get_help_uri;
-  panel_class->get_title_widget = cc_display_panel_get_title_widget;
+  model = gtk_combo_box_get_model (GTK_COMBO_BOX (widget));
+  gtk_tree_model_get (model, &iter,
+                      1, &delay,
+                      -1);
+  g_settings_set (self->lock_settings, "lock-delay", "u", delay);
+}
 
-  object_class->constructed = cc_display_panel_constructed;
-  object_class->dispose = cc_display_panel_dispose;
+static void
+set_lock_value_for_combo (GtkComboBox *combo_box,
+                          CcDisplayPanel *self)
+{
+  GtkTreeIter iter;
+  GtkTreeModel *model;
+  guint value;
+  gint value_tmp, value_prev;
+  gboolean ret;
+  guint i;
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/display/cc-display-panel.ui");
+  model = gtk_combo_box_get_model (combo_box);
+  ret = gtk_tree_model_get_iter_first (model, &iter);
+  if (!ret)
+    return;
 
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, arrangement_frame);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, arrangement_bin);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_switcher_frame);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_join);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_mirror);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_single);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, current_output_label);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, display_settings_frame);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, multi_selection_box);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, night_light_page);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_enabled_switch);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_combo);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_stack);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_two_buttonbox);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_two_first);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_two_second);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, primary_display_row);
-  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, stack_switcher);
+  value_prev = 0;
+  i = 0;
 
-  gtk_widget_class_bind_template_callback (widget_class, on_config_type_toggled_cb);
-  gtk_widget_class_bind_template_callback (widget_class, on_night_light_list_box_row_activated_cb);
-  gtk_widget_class_bind_template_callback (widget_class, on_output_enabled_active_changed_cb);
-  gtk_widget_class_bind_template_callback (widget_class, on_output_selection_combo_changed_cb);
-  gtk_widget_class_bind_template_callback (widget_class, on_output_selection_two_toggled_cb);
-  gtk_widget_class_bind_template_callback (widget_class, on_primary_display_selected_index_changed_cb);
+  g_settings_get (self->lock_settings, "lock-delay", "u", &value);
+  do
+    {
+      gtk_tree_model_get (model,
+                          &iter,
+                          1, &value_tmp,
+                          -1);
+      if (value == value_tmp ||
+          (value_tmp > value_prev && value < value_tmp))
+        {
+          gtk_combo_box_set_active_iter (combo_box, &iter);
+          return;
+        }
+      value_prev = value_tmp;
+      i++;
+    }
+  while (gtk_tree_model_iter_next (model, &iter));
+
+  gtk_combo_box_set_active (combo_box, i - 1);
+}
+
+static void
+set_blank_screen_delay_value (CcDisplayPanel *self,
+                              gint         value)
+{
+  g_autoptr(GtkTreeIter) insert = NULL;
+  g_autofree gchar *text = NULL;
+  GtkTreeIter iter;
+  GtkTreeIter new;
+  GtkTreeModel *model;
+  gint value_tmp;
+  gint value_last = 0;
+  gboolean ret;
+
+  /* get entry */
+  model = gtk_combo_box_get_model (self->blank_screen_combo);
+  ret = gtk_tree_model_get_iter_first (model, &iter);
+  if (!ret)
+    return;
+
+  /* try to make the UI match the setting */
+  do
+    {
+      gtk_tree_model_get (model,
+                          &iter,
+                          1, &value_tmp,
+                          -1);
+      if (value_tmp == value)
+        {
+          gtk_combo_box_set_active_iter (self->blank_screen_combo, &iter);
+          return;
+        }
+
+      /* Insert before if the next value is larger or the value is lower
+       * again (i.e. "Never" is zero and last). */
+      if (!insert && (value_tmp > value || value_last > value_tmp))
+        insert = gtk_tree_iter_copy (&iter);
+
+      value_last = value_tmp;
+    } while (gtk_tree_model_iter_next (model, &iter));
+
+  /* The value is not listed, so add it at the best point (or the end). */
+  gtk_list_store_insert_before (GTK_LIST_STORE (model), &new, insert);
+
+  text = cc_util_time_to_string_text (value * 1000);
+  gtk_list_store_set (GTK_LIST_STORE (model), &new,
+                      0, text,
+                      1, value,
+                      -1);
+  gtk_combo_box_set_active_iter (self->blank_screen_combo, &new);
+}
+
+static void
+on_blank_screen_delay_changed_cb (GtkWidget   *widget,
+                                  CcDisplayPanel *self)
+{
+  GtkTreeIter iter;
+  GtkTreeModel *model;
+  gint value;
+  gboolean ret;
+
+  /* no selection */
+  ret = gtk_combo_box_get_active_iter (GTK_COMBO_BOX (widget), &iter);
+  if (!ret)
+    return;
+
+  /* get entry */
+  model = gtk_combo_box_get_model (GTK_COMBO_BOX(widget));
+  gtk_tree_model_get (model, &iter,
+                      1, &value,
+                      -1);
+
+  /* set both keys */
+  g_settings_set_uint (self->session_settings, "idle-delay", value);
+}
+
+static void
+on_usb_protection_properties_changed_cb (GDBusProxy  *usb_proxy,
+                                         GVariant    *changed_properties,
+                                         GStrv        invalidated_properties,
+                                         CcDisplayPanel *self)
+{
+  gboolean available = FALSE;
+
+  if (self->usb_proxy)
+    {
+      g_autoptr(GVariant) variant = NULL;
+
+      variant = g_dbus_proxy_get_cached_property (self->usb_proxy, "Available");
+      if (variant != NULL)
+        available = g_variant_get_boolean (variant);
+    }
+
+  /* Show the USB protection row only if the required daemon is up and running */
+  gtk_widget_set_visible (GTK_WIDGET (self->usb_protection_row), available);
+}
+
+static void
+on_usb_protection_param_ready (GObject      *source_object,
+                               GAsyncResult *res,
+                               gpointer      user_data)
+{
+  g_autoptr(GError) error = NULL;
+  CcDisplayPanel *self;
+  GDBusProxy *proxy;
+
+  self = user_data;
+  proxy = g_dbus_proxy_new_for_bus_finish (res, &error);
+  if (error)
+    {
+      if (!g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED))
+        {
+          g_warning ("Failed to connect to SettingsDaemon.UsbProtection: %s",
+                     error->message);
+        }
+
+      gtk_widget_hide (GTK_WIDGET (self->usb_protection_row));
+      return;
+    }
+  self->usb_proxy = proxy;
+
+  g_signal_connect_object (self->usb_proxy,
+                           "g-properties-changed",
+                           G_CALLBACK (on_usb_protection_properties_changed_cb),
+                           self,
+                           0);
+  on_usb_protection_properties_changed_cb (self->usb_proxy, NULL, NULL, self);
 }
 
 static void
@@ -1167,6 +1332,17 @@ cc_display_panel_init (CcDisplayPanel *self)
 
   gtk_widget_init_template (GTK_WIDGET (self));
 
+  gtk_list_box_set_header_func (self->lock_list_box,
+                                cc_list_box_update_header_func,
+                                NULL, NULL);
+
+  self->cancellable = g_cancellable_new ();
+
+  self->lock_settings = g_settings_new ("org.gnome.desktop.screensaver");
+  self->privacy_settings = g_settings_new ("org.gnome.desktop.privacy");
+  self->notification_settings = g_settings_new ("org.gnome.desktop.notifications");
+  self->session_settings = g_settings_new ("org.gnome.desktop.session");
+
   self->arrangement = cc_display_arrangement_new (NULL);
 
   gtk_widget_show (GTK_WIDGET (self->arrangement));
@@ -1179,6 +1355,46 @@ cc_display_panel_init (CcDisplayPanel *self)
   g_signal_connect_object (self->arrangement, "notify::selected-output",
 			   G_CALLBACK (on_arrangement_selected_ouptut_changed_cb), self,
 			   G_CONNECT_SWAPPED);
+
+  g_settings_bind (self->lock_settings,
+                   "lock-enabled",
+                   self->automatic_screen_lock_switch,
+                   "active",
+                   G_SETTINGS_BIND_DEFAULT);
+
+  g_settings_bind (self->lock_settings,
+                   "lock-enabled",
+                   self->lock_after_combo,
+                   "sensitive",
+                   G_SETTINGS_BIND_GET);
+
+  set_lock_value_for_combo (self->lock_after_combo, self);
+
+  g_settings_bind (self->notification_settings,
+                   "show-in-lock-screen",
+                   self->show_notifications_switch,
+                   "active",
+                   G_SETTINGS_BIND_DEFAULT);
+
+  guint value;
+  value = g_settings_get_uint (self->session_settings, "idle-delay");
+  set_blank_screen_delay_value (self, value);
+
+  g_settings_bind (self->privacy_settings,
+                   "usb-protection",
+                   self->usb_protection_switch,
+                   "active",
+                   G_SETTINGS_BIND_DEFAULT);
+
+  g_dbus_proxy_new_for_bus (G_BUS_TYPE_SESSION,
+                            G_DBUS_PROXY_FLAGS_NONE,
+                            NULL,
+                            "org.gnome.SettingsDaemon.UsbProtection",
+                            "/org/gnome/SettingsDaemon/UsbProtection",
+                            "org.gnome.SettingsDaemon.UsbProtection",
+                            self->cancellable,
+                            on_usb_protection_param_ready,
+                            self);
 
   self->settings = cc_display_settings_new ();
   gtk_widget_show (GTK_WIDGET (self->settings));
@@ -1239,4 +1455,57 @@ cc_display_panel_init (CcDisplayPanel *self)
   gtk_style_context_add_provider_for_screen (gdk_screen_get_default (),
                                              GTK_STYLE_PROVIDER (provider),
                                              GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+}
+
+static void
+cc_display_panel_class_init (CcDisplayPanelClass *klass)
+{
+  GObjectClass *object_class = G_OBJECT_CLASS (klass);
+  CcPanelClass *panel_class = CC_PANEL_CLASS (klass);
+  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
+
+  g_type_ensure (CC_TYPE_NIGHT_LIGHT_PAGE);
+
+  panel_class->get_help_uri = cc_display_panel_get_help_uri;
+  panel_class->get_title_widget = cc_display_panel_get_title_widget;
+
+  object_class->constructed = cc_display_panel_constructed;
+  object_class->dispose = cc_display_panel_dispose;
+
+  gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/display/cc-display-panel.ui");
+
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, arrangement_frame);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, arrangement_bin);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_switcher_frame);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_join);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_mirror);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_single);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, current_output_label);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, display_settings_frame);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, multi_selection_box);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, night_light_page);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_enabled_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_combo);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_stack);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_two_buttonbox);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_two_first);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_two_second);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, primary_display_row);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, stack_switcher);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, automatic_screen_lock_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, blank_screen_combo);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, lock_after_combo);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, lock_list_box);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, show_notifications_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, usb_protection_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, usb_protection_row);
+
+  gtk_widget_class_bind_template_callback (widget_class, on_config_type_toggled_cb);
+  gtk_widget_class_bind_template_callback (widget_class, on_night_light_list_box_row_activated_cb);
+  gtk_widget_class_bind_template_callback (widget_class, on_output_enabled_active_changed_cb);
+  gtk_widget_class_bind_template_callback (widget_class, on_output_selection_combo_changed_cb);
+  gtk_widget_class_bind_template_callback (widget_class, on_output_selection_two_toggled_cb);
+  gtk_widget_class_bind_template_callback (widget_class, on_primary_display_selected_index_changed_cb);
+  gtk_widget_class_bind_template_callback (widget_class, on_blank_screen_delay_changed_cb);
+  gtk_widget_class_bind_template_callback (widget_class, on_lock_combo_changed_cb);
 }
