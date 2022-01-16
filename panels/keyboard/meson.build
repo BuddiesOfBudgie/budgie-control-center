@@ -23,7 +23,7 @@ pc_conf.set('datadir', control_center_datadir)
 pc_conf.set('PACKAGE', meson.project_name())
 pc_conf.set('VERSION', meson.project_version())
 
-pc = 'gnome-keybindings.pc'
+pc = 'budgie-keybindings.pc'
 
 configure_file(
   input: pc + '.in',
