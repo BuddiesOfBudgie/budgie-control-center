@@ -451,6 +451,14 @@ cc_display_settings_rebuild_ui (CcDisplaySettings *self)
   gtk_switch_set_active (GTK_SWITCH (self->scale_fractional_switch),
                          cc_display_config_get_fractional_scaling (self->config));
 
+  GSettingsSchema * mutter_x11_scaling_options = g_settings_schema_source_lookup(g_settings_schema_source_get_default(), "org.gnome.mutter.x11", FALSE); // Fractional scaling in Mutter only applies to Manjaro and Ubuntu
+  gtk_switch_set_active (GTK_SWITCH (self->scale_fractional_switch), cc_display_config_get_fractional_scaling (self->config));
+  gtk_widget_set_visible(self->scale_fractional_row, mutter_x11_scaling_options != NULL);
+
+  if (mutter_x11_scaling_options != NULL) {
+    g_settings_schema_unref(mutter_x11_scaling_options);
+  }
+
   gtk_widget_set_visible (self->underscanning_row,
                           cc_display_monitor_supports_underscanning (self->selected_output) &&
                           !cc_display_config_is_cloning (self->config));
