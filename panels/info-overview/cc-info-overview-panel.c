@@ -59,7 +59,7 @@ struct _CcInfoOverviewPanel
   GtkEntry        *device_name_entry;
   GtkWidget       *rename_button;
   CcListRow       *disk_row;
-  CcListRow       *gnome_version_row;
+  CcListRow       *budgie_version_row;
   CcListRow       *graphics_row;
   GtkListBox      *hardware_box;
   CcListRow       *hardware_model_row;
@@ -79,20 +79,14 @@ struct _CcInfoOverviewPanel
 
 typedef struct
 {
-  char *major;
-  char *minor;
-  char *distributor;
-  char *date;
+  char *str;
   char **current;
 } VersionData;
 
 static void
 version_data_free (VersionData *data)
 {
-  g_free (data->major);
-  g_free (data->minor);
-  g_free (data->distributor);
-  g_free (data->date);
+  g_free (data->str);
   g_free (data);
 }
 
@@ -109,14 +103,8 @@ version_start_element_handler (GMarkupParseContext      *ctx,
                                GError                  **error)
 {
   VersionData *data = user_data;
-  if (g_str_equal (element_name, "platform"))
-    data->current = &data->major;
-  else if (g_str_equal (element_name, "minor"))
-    data->current = &data->minor;
-  else if (g_str_equal (element_name, "distributor"))
-    data->current = &data->distributor;
-  else if (g_str_equal (element_name, "date"))
-    data->current = &data->date;
+  if (g_str_equal (element_name, "str"))
+    data->current = &data->str;
   else
     data->current = NULL;
 }
@@ -150,9 +138,7 @@ version_text_handler (GMarkupParseContext *ctx,
 }
 
 static gboolean
-load_gnome_version (char **version,
-                    char **distributor,
-                    char **date)
+load_budgie_version (char **version)
 {
   GMarkupParser version_parser = {
     version_start_element_handler,
@@ -167,7 +153,7 @@ load_gnome_version (char **version,
   gsize length;
   g_autoptr(VersionData) data = NULL;
 
-  if (!g_file_get_contents (DATADIR "/gnome/gnome-version.xml",
+  if (!g_file_get_contents (DATADIR "/budgie/budgie-version.xml",
                             &contents,
                             &length,
                             &error))
@@ -183,11 +169,7 @@ load_gnome_version (char **version,
   else
     {
       if (version != NULL)
-        *version = g_strdup_printf ("%s.%s", data->major, data->minor);
-      if (distributor != NULL)
-        *distributor = g_strdup (data->distributor);
-      if (date != NULL)
-        *date = g_strdup (data->date);
+        *version = g_strdup_printf ("%s", data->str);
 
       return TRUE;
     }
@@ -729,7 +711,7 @@ get_windowing_system (void)
 static void
 info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
 {
-  g_autofree gchar *gnome_version = NULL;
+  g_autofree gchar *budgie_version = NULL;
   glibtop_mem mem;
   const glibtop_sysinfo *info;
   g_autofree char *memory_text = NULL;
@@ -738,8 +720,8 @@ info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
   g_autofree char *os_name_text = NULL;
   g_autofree gchar *graphics_hardware_string = NULL;
 
-  if (load_gnome_version (&gnome_version, NULL, NULL))
-    cc_list_row_set_secondary_label (self->gnome_version_row, gnome_version);
+  if (load_budgie_version (&budgie_version))
+    cc_list_row_set_secondary_label (self->budgie_version_row, budgie_version);
 
   cc_list_row_set_secondary_label (self->windowing_system_row, get_windowing_system ());
 
@@ -932,7 +914,7 @@ cc_info_overview_panel_class_init (CcInfoOverviewPanelClass *klass)
 
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, device_name_entry);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, disk_row);
-  gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, gnome_version_row);
+  gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, budgie_version_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, graphics_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, hardware_box);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, hardware_model_row);

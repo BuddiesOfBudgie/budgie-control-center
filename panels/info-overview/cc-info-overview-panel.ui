@@ -124,6 +124,16 @@
                       <class name="content" />
                     </style>
 
+                    <!-- Budgie Version -->
+                    <child>
+                      <object class="CcListRow" id="budgie_version_row">
+                        <property name="visible">True</property>
+                        <property name="activatable">False</property>
+                        <property name="title" translatable="no">Budgie Version</property>
+                        <property name="secondary-label">3.0</property>
+                      </object>
+                    </child>
+
                     <!-- OS Name -->
                     <child>
                       <object class="CcListRow" id="os_name_row">
@@ -140,16 +150,6 @@
                         <property name="visible">True</property>
                         <property name="activatable">False</property>
                         <property name="title" translatable="yes">OS Type</property>
-                      </object>
-                    </child>
-
-                    <!-- GNOME Version -->
-                    <child>
-                      <object class="CcListRow" id="gnome_version_row">
-                        <property name="visible">True</property>
-                        <property name="activatable">False</property>
-                        <property name="title" translatable="yes">GNOME Version</property>
-                        <property name="secondary-label">3.0</property>
                       </object>
                     </child>
 
