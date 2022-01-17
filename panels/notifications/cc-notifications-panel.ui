@@ -29,7 +29,7 @@
                     <property name="hexpand">True</property>
                     <child>
                       <object class="GtkListBox" id="options_listbox">
-                        <property name="visible">True</property>
+                        <property name="visible">False</property>
                         <property name="can_focus">False</property>
                         <property name="hexpand">True</property>
                         <property name="selection_mode">none</property>
