@@ -37,6 +37,7 @@ typedef struct
   gchar *description;
   CcXkbOption *options;
   gchar *default_option;
+  gchar *nodefault_option;
 } CcXkbModifier;
 
 #define CC_TYPE_XKB_MODIFIER_DIALOG (cc_xkb_modifier_dialog_get_type())

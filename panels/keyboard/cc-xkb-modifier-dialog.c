@@ -30,7 +30,7 @@ struct _CcXkbModifierDialog
   GtkDialog       parent_instance;
 
   GtkLabel       *description_label;
-  GtkSwitch      *enabled_switch;
+  GtkSwitch      *default_switch;
   GtkListBox     *listbox;
   GtkListBox     *switch_listbox;
   HdyActionRow   *switch_row;
@@ -53,9 +53,9 @@ get_xkb_option_from_name (const CcXkbModifier *modifier, const gchar* name)
   const CcXkbOption *options = modifier->options;
   int i;
 
-  for (i = 0; options[i].label && options[i].xkb_option; i++)
+  for (i = 0; options[i].label; i++)
     {
-      if (g_str_equal (name, options[i].xkb_option))
+      if (g_strcmp0 (name, options[i].xkb_option) == 0)
         return &options[i];
     }
 
@@ -83,9 +83,9 @@ static void
 update_active_radio (CcXkbModifierDialog *self)
 {
   g_auto(GStrv) options = NULL;
-  GtkRadioButton *rightalt_radio;
-  const CcXkbOption *default_option;
+  GtkRadioButton *none_radio;
   guint i;
+  gboolean have_nodefault_option = FALSE;
 
   options = g_settings_get_strv (self->input_source_settings, "xkb-options");
 
@@ -96,26 +96,28 @@ update_active_radio (CcXkbModifierDialog *self)
       if (!g_str_has_prefix (options[i], self->modifier->prefix))
         continue;
 
+      if (g_strcmp0 (options[i], self->modifier->nodefault_option) == 0)
+        have_nodefault_option = TRUE;
+
       radio = get_radio_button_from_xkb_option_name (self, options[i]);
 
       if (!radio)
         continue;
 
       gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio), TRUE);
-      gtk_switch_set_active (self->enabled_switch, TRUE);
+      gtk_switch_set_active (self->default_switch, FALSE);
       return;
     }
 
-  if (self->modifier->default_option != NULL)
+  if (have_nodefault_option)
     {
-      default_option = get_xkb_option_from_name(self->modifier, self->modifier->default_option);
-      rightalt_radio = get_radio_button_from_xkb_option_name (self, default_option->xkb_option);
-      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (rightalt_radio), TRUE);
-      gtk_switch_set_active (self->enabled_switch, TRUE);
+      none_radio = get_radio_button_from_xkb_option_name (self, self->modifier->nodefault_option);
+      gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (none_radio), TRUE);
+      gtk_switch_set_active (self->default_switch, FALSE);
     }
   else
     {
-      gtk_switch_set_active (self->enabled_switch, FALSE);
+      gtk_switch_set_active (self->default_switch, TRUE);
     }
 }
 
@@ -127,6 +129,12 @@ set_xkb_option (CcXkbModifierDialog *self,
   g_auto(GStrv) options = NULL;
   gboolean found;
   guint i;
+  gboolean add_nodefault;
+
+  add_nodefault = xkb_option != self->modifier->default_option
+               && xkb_option != self->modifier->nodefault_option
+               && xkb_option != NULL
+               && self->modifier->nodefault_option != NULL;
 
   /* Either replace the existing "<modifier>:" option in the string
    * array, or add the option at the end
@@ -139,6 +147,8 @@ set_xkb_option (CcXkbModifierDialog *self,
     {
       if (g_str_has_prefix (options[i], self->modifier->prefix))
         {
+          if (!found && add_nodefault)
+            g_ptr_array_add (array, self->modifier->nodefault_option);
           if (!found && xkb_option != NULL)
             g_ptr_array_add (array, xkb_option);
           found = TRUE;
@@ -149,6 +159,8 @@ set_xkb_option (CcXkbModifierDialog *self,
         }
     }
 
+  if (!found && add_nodefault)
+    g_ptr_array_add (array, self->modifier->nodefault_option);
   if (!found && xkb_option != NULL)
     g_ptr_array_add (array, xkb_option);
 
@@ -168,7 +180,7 @@ on_active_radio_changed_cb (CcXkbModifierDialog *self,
   if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (radio)))
     return;
 
-  if (!gtk_switch_get_state (self->enabled_switch))
+  if (gtk_switch_get_state (self->default_switch))
     return;
 
   xkb_option = (gchar *)g_object_get_data (G_OBJECT (radio), "xkb-option");
@@ -183,17 +195,17 @@ on_xkb_options_changed_cb (CcXkbModifierDialog *self)
 }
 
 static gboolean
-enable_switch_changed_cb (GtkSwitch *widget,
-                          gboolean   state,
-                          gpointer   user_data)
+default_switch_changed_cb (GtkSwitch *widget,
+                           gboolean   state,
+                           gpointer   user_data)
 {
   CcXkbModifierDialog *self = user_data;
   gchar *xkb_option;
   GSList *l;
 
-  gtk_widget_set_sensitive (GTK_WIDGET (self->listbox), state);
+  gtk_widget_set_sensitive (GTK_WIDGET (self->listbox), !state);
 
-  if (state)
+  if (!state)
     {
       for (l = self->radio_group; l != NULL; l = l->next)
         {
@@ -234,12 +246,12 @@ cc_xkb_modifier_dialog_class_init (CcXkbModifierDialogClass *klass)
   gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/keyboard/cc-xkb-modifier-dialog.ui");
 
   gtk_widget_class_bind_template_child (widget_class, CcXkbModifierDialog, description_label);
-  gtk_widget_class_bind_template_child (widget_class, CcXkbModifierDialog, enabled_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcXkbModifierDialog, default_switch);
   gtk_widget_class_bind_template_child (widget_class, CcXkbModifierDialog, listbox);
   gtk_widget_class_bind_template_child (widget_class, CcXkbModifierDialog, switch_listbox);
   gtk_widget_class_bind_template_child (widget_class, CcXkbModifierDialog, switch_row);
 
-  gtk_widget_class_bind_template_callback (widget_class, enable_switch_changed_cb);
+  gtk_widget_class_bind_template_callback (widget_class, default_switch_changed_cb);
 }
 
 static void
@@ -249,7 +261,7 @@ add_radio_buttons (CcXkbModifierDialog *self)
   CcXkbOption *options = self->modifier->options;
   int i;
 
-  for (i = 0; options[i].label && options[i].xkb_option; i++)
+  for (i = 0; options[i].label != NULL; i++)
     {
       row = g_object_new (GTK_TYPE_LIST_BOX_ROW,
                           "visible", TRUE,
@@ -319,12 +331,10 @@ cc_xkb_modifier_dialog_new (GSettings *input_settings,
 
   self->modifier = modifier;
   gtk_window_set_title (GTK_WINDOW (self), gettext (modifier->title));
-  hdy_preferences_row_set_title (HDY_PREFERENCES_ROW (self->switch_row), gettext (modifier->title));
   gtk_label_set_markup (self->description_label, gettext (modifier->description));
-  gtk_widget_set_visible (GTK_WIDGET (self->switch_listbox), modifier->default_option == NULL);
   add_radio_buttons (self);
   update_active_radio (self);
-  gtk_widget_set_sensitive (GTK_WIDGET (self->listbox), gtk_switch_get_state (self->enabled_switch));
+  gtk_widget_set_sensitive (GTK_WIDGET (self->listbox), !gtk_switch_get_state (self->default_switch));
 
   return self;
 }
@@ -338,6 +348,7 @@ xcb_modifier_transform_binding_to_label (GValue   *value,
   const CcXkbOption *entry = NULL;
   const char **items;
   guint i;
+  gboolean have_nodefault_option = FALSE;
 
   items = g_variant_get_strv (variant, NULL);
 
@@ -346,19 +357,18 @@ xcb_modifier_transform_binding_to_label (GValue   *value,
       entry = get_xkb_option_from_name (modifier, items[i]);
       if (entry != NULL)
         break;
+
+      if (g_strcmp0 (items[i], modifier->nodefault_option) == 0)
+       have_nodefault_option = TRUE;
     }
 
-  if (entry == NULL && modifier->default_option == NULL)
-    {
-      g_value_set_string (value, _("Disabled"));
-      return TRUE;
-    }
+  if (entry != NULL)
+    g_value_set_string (value,
+                        g_dpgettext2 (NULL, "keyboard key", entry->label));
+  if (entry == NULL && have_nodefault_option)
+    g_value_set_string (value, _("None"));
   else if (entry == NULL)
-    {
-      entry = get_xkb_option_from_name(modifier, modifier->default_option);
-    }
+    g_value_set_string (value, _("Layout default"));
 
-  g_value_set_string (value,
-                      g_dpgettext2 (NULL, "keyboard key", entry->label));
   return TRUE;
 }
