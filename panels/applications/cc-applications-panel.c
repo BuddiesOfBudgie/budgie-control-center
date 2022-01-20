@@ -168,6 +168,13 @@ snap_store_is_installed (void)
   return path != NULL;
 }
 
+static gboolean
+solus_sc_is_installed (void)
+{
+  g_autofree gchar *path = g_find_program_in_path("solus-sc");
+  return path != NULL;
+}
+
 /* Callbacks */
 
 static gboolean
@@ -187,8 +194,13 @@ open_software_cb (CcApplicationsPanel *self)
 {
   const gchar *argv[] = { "gnome-software", "--details", "appid", NULL };
 
-  if (!gnome_software_is_installed ())
+  if (!gnome_software_is_installed() && snap_store_is_installed()) {
     argv[0] = "snap-store";
+  } else if (!gnome_software_is_installed() && solus_sc_is_installed()) {
+    argv[0] = "solus-sc";
+    argv[1] = "--update-view";
+    argv[2] = NULL;
+  }
 
   if (self->current_app_id == NULL)
     argv[1] = NULL;
@@ -1677,7 +1689,7 @@ update_panel (CcApplicationsPanel *self,
 
   gtk_label_set_label (self->title_label, g_app_info_get_display_name (info));
   gtk_stack_set_visible_child (self->stack, GTK_WIDGET (self->settings_box));
-  gtk_widget_set_visible (GTK_WIDGET (self->header_button), gnome_software_is_installed () || snap_store_is_installed ());
+  gtk_widget_set_visible (GTK_WIDGET (self->header_button), gnome_software_is_installed() || snap_store_is_installed() || solus_sc_is_installed());
 
   g_clear_pointer (&self->current_app_id, g_free);
   g_clear_pointer (&self->current_portal_app_id, g_free);
@@ -2063,7 +2075,7 @@ cc_applications_panel_init (CcApplicationsPanel *self)
 
   gtk_widget_init_template (GTK_WIDGET (self));
 
-  gtk_widget_set_visible (GTK_WIDGET (self->install_button), gnome_software_is_installed () || snap_store_is_installed ());
+  gtk_widget_set_visible (GTK_WIDGET (self->install_button), gnome_software_is_installed() || snap_store_is_installed() || solus_sc_is_installed());
 
   provider = GTK_STYLE_PROVIDER (gtk_css_provider_new ());
   gtk_css_provider_load_from_resource (GTK_CSS_PROVIDER (provider),
