@@ -454,7 +454,7 @@
                                         <property name="valign">center</property>
                                         <property name="entry_text_column">0</property>
                                         <property name="model">blank_screen_model</property>
-                                        <signal name="changed" handler="on_blank_screen_delay_changed_cb" object="CcLockPanel" swapped="no" />
+                                        <signal name="changed" handler="on_blank_screen_delay_changed_cb" object="CcDisplayPanel" swapped="no" />
                                     </object>
                                     </child>
                                 </object>
@@ -492,7 +492,7 @@
                                         <property name="valign">center</property>
                                         <property name="entry_text_column">0</property>
                                         <property name="model">lock_after_model</property>
-                                        <signal name="changed" handler="on_lock_combo_changed_cb" object="CcLockPanel" swapped="no" />
+                                        <signal name="changed" handler="on_lock_combo_changed_cb" object="CcDisplayPanel" swapped="no" />
                                     </object>
                                     </child>
                                 </object>
