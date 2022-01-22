@@ -501,7 +501,7 @@
                                 <!-- Show Notifications row -->
                                 <child>
                                 <object class="HdyActionRow">
-                                    <property name="visible">true</property>
+                                    <property name="visible">false</property>
                                     <property name="title" translatable="yes">Show _Notifications on Lock Screen</property>
                                     <property name="activatable-widget">show_notifications_switch</property>
                                     <property name="use-underline">true</property>
