@@ -502,10 +502,12 @@ reload_sections (CcKeyboardManager *self)
 {
   GHashTable *loaded_files;
   GDir *dir;
-  gchar *default_wm_keybindings[] = { "Mutter", "GNOME Shell", NULL };
+  gchar *default_wm_keybindings[] = { "Mutter", NULL };
+  // in GCC 'GNOME Shell' wm_keybinding was also read - in budgie we can ignore these
   g_auto(GStrv) wm_keybindings = NULL;
   const gchar * const * data_dirs;
   guint i;
+  guint pass;
 
   /* Clear previous models and hash tables */
   gtk_list_store_clear (GTK_LIST_STORE (self->sections_store));
@@ -544,31 +546,43 @@ reload_sections (CcKeyboardManager *self)
       g_autofree gchar *dir_path = NULL;
       const gchar *name;
 
-      dir_path = g_build_filename (data_dirs[i], "budgie-control-center", "keybindings", NULL);
-
-      dir = g_dir_open (dir_path, 0, NULL);
-      if (!dir)
-        continue;
-
-      for (name = g_dir_read_name (dir) ; name ; name = g_dir_read_name (dir))
+      for (pass = 0; pass < 2; pass++)
+      {
+        if (pass == 0)
         {
-          g_autofree gchar *path = NULL;
-
-          if (g_str_has_suffix (name, ".xml") == FALSE)
-            continue;
-
-          if (g_hash_table_lookup (loaded_files, name) != NULL)
-            {
-              g_debug ("Not loading %s, it was already loaded from another directory", name);
-              continue;
-            }
-
-          g_hash_table_insert (loaded_files, g_strdup (name), GINT_TO_POINTER (1));
-          path = g_build_filename (dir_path, name, NULL);
-          append_sections_from_file (self, path, data_dirs[i], wm_keybindings);
+          dir_path = g_build_filename (data_dirs[i], "budgie-control-center", "keybindings", NULL);
+        }
+        else
+        {
+          // Mutter package installs keybindings in gnome-control-center so we need to
+          // read these as well
+          dir_path = g_build_filename (data_dirs[i], "gnome-control-center", "keybindings", NULL);
         }
 
-      g_dir_close (dir);
+        dir = g_dir_open (dir_path, 0, NULL);
+        if (!dir)
+          continue;
+
+        for (name = g_dir_read_name (dir) ; name ; name = g_dir_read_name (dir))
+          {
+            g_autofree gchar *path = NULL;
+
+            if (g_str_has_suffix (name, ".xml") == FALSE)
+              continue;
+
+            if (g_hash_table_lookup (loaded_files, name) != NULL)
+              {
+                g_debug ("Not loading %s, it was already loaded from another directory", name);
+                continue;
+              }
+
+            g_hash_table_insert (loaded_files, g_strdup (name), GINT_TO_POINTER (1));
+            path = g_build_filename (dir_path, name, NULL);
+            append_sections_from_file (self, path, data_dirs[i], wm_keybindings);
+          }
+
+        g_dir_close (dir);
+      }
     }
 
   g_hash_table_destroy (loaded_files);
