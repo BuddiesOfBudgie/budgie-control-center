@@ -39,6 +39,7 @@ xml_files = [
   '01-launchers.xml',
   '01-screenshot.xml',
   '01-system.xml',
+  '01-raven.xml',
   '50-accessibility.xml'
 ]
 
