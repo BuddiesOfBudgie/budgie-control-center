@@ -216,7 +216,7 @@
                 </style>
                 <signal name="row-activated" handler="wwan_advanced_settings_activated_cb" swapped="yes" />
 
-                <!-- Accesss Point Settings -->
+                <!-- Access Point Settings -->
                 <child>
                   <object class="CcListRow" id="apn_settings_row">
                     <property name="visible">1</property>

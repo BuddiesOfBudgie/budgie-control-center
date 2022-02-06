@@ -44,9 +44,9 @@
 
                 <para>When run without arguments, the shell displays the
                 <firstterm>overview</firstterm>, which shows all available
-                configuration panels. The overview allows to open individual
-                panels by clicking on them. It also has a search entry
-                to find panels by searching keywords.</para>
+                configuration panels. The overview allows the opening of
+                individual panels by clicking on them. It also has a search
+                entry to find panels by searching keywords.</para>
 
                 <para>It is also possible to specify a panel name
                 as commandline argument to go directly to that panel.
@@ -280,7 +280,7 @@
                                 shows all user accounts that exist on the
                                 computer and allows to change them in some
                                 ways, such as changing the user name, password
-                                or permissions. It also allows to create
+                                or permissions. It also allows one to create
                                 or remove accounts.</para>
                                 <para>Some operations in this panel require
                                 privileges.</para></listitem>
