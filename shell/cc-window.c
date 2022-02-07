@@ -276,7 +276,7 @@ update_list_title (CcWindow *self)
       break;
 
     case CC_PANEL_LIST_MAIN:
-      title = g_strdup (_("Settings"));
+      title = g_strdup (_("Budgie Control Center"));
       break;
 
     case CC_PANEL_LIST_WIDGET:
@@ -935,7 +935,7 @@ cc_window_new (GtkApplication *application,
   return g_object_new (CC_TYPE_WINDOW,
                        "application", application,
                        "resizable", TRUE,
-                       "title", _("Settings"),
+                       "title", _("Budgie Control Center"),
                        "icon-name", DEFAULT_WINDOW_ICON_NAME,
                        "window-position", GTK_WIN_POS_CENTER,
                        "show-menubar", FALSE,
