@@ -185,6 +185,9 @@ on_gesture_press (GtkGestureMultiPress *gesture,
   source = gdk_event_get_source_device ((GdkEvent *) event);
   gdk_event_free (event);
 
+  if (gdk_device_get_source (source) == GDK_SOURCE_TOUCHSCREEN)
+    return;
+
   /* Check matching device if a device was provided */
   if (area->device && area->device != source)
     {
