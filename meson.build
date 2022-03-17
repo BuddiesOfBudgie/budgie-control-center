@@ -25,6 +25,9 @@ host_is_linux_not_s390 = host_is_linux and not host_machine.cpu().contains('s390
 
 cc = meson.get_compiler('c')
 
+# post install script
+meson.add_install_script('scripts/mesonPostInstall.sh')
+
 # Tracing
 enable_tracing = get_option('tracing')
 
@@ -277,8 +280,7 @@ its_dir = join_paths(meson.source_root(), 'gettext')
 top_inc = include_directories('.')
 shell_inc = include_directories('shell')
 
-subdir('build-aux')
-subdir('data/icons')
+subdir('data')
 subdir('po')
 subdir('panels')
 subdir('shell')
