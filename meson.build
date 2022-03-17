@@ -286,7 +286,7 @@ subdir('panels')
 subdir('shell')
 
 if get_option('documentation')
-  subdir('man')
+  subdir('data/man')
 endif
 
 configure_file(

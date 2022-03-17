@@ -1,2 +1,1 @@
 subdir('icons')
-subdir('man')
