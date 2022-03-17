@@ -71,3 +71,5 @@ install_data(
   [ 'budgie-logo.png' ],
   install_dir: join_paths(control_center_datadir, 'pixmaps')
 )
+
+subdir('icons')

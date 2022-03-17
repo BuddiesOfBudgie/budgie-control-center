@@ -107,3 +107,8 @@ install_data(
   sound_data,
   install_dir: join_paths(control_center_datadir, 'sounds', 'budgie', 'default', 'alerts')
 )
+
+install_data(
+  'icons/org.buddiesofbudgie.Settings-sound-symbolic.svg',
+  install_dir: join_paths(control_center_icondir, 'hicolor', 'scalable', 'apps')
+)
