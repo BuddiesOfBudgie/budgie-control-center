@@ -97,6 +97,8 @@ cflags += [
   '-DGNOME_DESKTOP_USE_UNSTABLE_API'
 ]
 
+subdir('icons')
+
 if gnome_desktop_dep.version().version_compare('>=3.35.4')
   cflags += '-DGNOME_DESKTOP_BG_API_BREAK'
 endif
