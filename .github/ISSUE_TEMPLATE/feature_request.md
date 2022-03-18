@@ -5,7 +5,7 @@ about: Suggest a new feature or other enhancement.
 
 ### Current budgie-control-center version
 <!-- Version name of budgie-control-center, i.e. 0.2.0 OR specific git commit.
-To provide the exact version of your installation, run: budgie-comtrol-center --version -->
+To provide the exact version of your installation, run: budgie-control-center --version -->
 
 
 ### Use-cases
