@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-control-center/"
 "issues\n"
 "POT-Creation-Date: 2021-09-09 16:10+0000\n"
-"PO-Revision-Date: 2021-09-17 19:25+0200\n"
+"PO-Revision-Date: 2022-03-22 17:54+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
 "Language-Team: Tot en òc\n"
 "Language: oc\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-DamnedLies-Scope: partial\n"
 "X-Project-Style: gnome\n"
 
@@ -8690,7 +8690,7 @@ msgstr "SIM %d"
 
 #: panels/wwan/cc-wwan-panel.ui:101
 msgid "No WWAN Adapter Found"
-msgstr "Cap d'adaptatorWWAN pas trobat"
+msgstr "Cap d'adaptator WWAN pas trobat"
 
 #: panels/wwan/cc-wwan-panel.ui:112
 msgid "Make sure you have a Wireless Wan/Cellular device"
