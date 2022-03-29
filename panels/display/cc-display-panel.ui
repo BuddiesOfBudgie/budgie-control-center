@@ -73,6 +73,19 @@
                         <property name="orientation">vertical</property>
                         <property name="spacing">32</property>
                         <child>
+                          <object class="HdyPreferencesGroup" id="display_settings_disabled_group">
+                            <property name="visible">False</property>
+                            <child>
+                              <object class="HdyStatusPage">
+                                <property name="visible">True</property>
+                                <property name="vexpand">True</property>
+                                <property name="icon-name">computer-symbolic</property>
+                                <property name="title" translatable="yes">Display Settings Disabled</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
                           <object class="GtkFrame" id="config_type_switcher_frame">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
@@ -258,7 +271,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkFrame">
+                          <object class="GtkFrame" id="output_frame">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <property name="label_xalign">0</property>

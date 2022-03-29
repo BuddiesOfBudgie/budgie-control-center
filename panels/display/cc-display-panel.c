@@ -106,6 +106,8 @@ struct _CcDisplayPanel
 
   GListStore     *primary_display_list;
   GtkListStore   *output_selection_list;
+  GtkWidget      *output_frame;
+  GtkWidget      *display_settings_disabled_group;
 
   GtkWidget      *arrangement_frame;
   GtkAlignment   *arrangement_bin;
@@ -947,6 +949,14 @@ rebuild_ui (CcDisplayPanel *panel)
   GList *outputs, *l;
   CcDisplayConfigType type;
 
+  if (!cc_display_config_manager_get_apply_allowed (panel->manager))
+    {
+      gtk_widget_set_visible (panel->display_settings_disabled_group, TRUE);
+      gtk_widget_set_visible (panel->config_type_switcher_frame, FALSE);
+      gtk_widget_set_visible (panel->arrangement_frame, FALSE);
+      return;
+    }
+
   panel->rebuilding_counter++;
 
   g_list_store_remove_all (panel->primary_display_list);
@@ -957,6 +967,8 @@ rebuild_ui (CcDisplayPanel *panel)
       panel->rebuilding_counter--;
       return;
     }
+
+  gtk_widget_set_visible (panel->display_settings_disabled_group, FALSE);
 
   n_active_outputs = 0;
   n_usable_outputs = 0;
@@ -1093,7 +1105,7 @@ reset_current_config (CcDisplayPanel *panel)
 
   if (!current)
     return;
-  
+
   cc_display_config_set_minimum_size (current, MINIMUM_WIDTH, MINIMUM_HEIGHT);
   panel->current_config = current;
 
@@ -1482,8 +1494,10 @@ cc_display_panel_class_init (CcDisplayPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, config_type_single);
   gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, current_output_label);
   gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, display_settings_frame);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, display_settings_disabled_group);
   gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, multi_selection_box);
   gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, night_light_page);
+  gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_frame);
   gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_enabled_switch);
   gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_combo);
   gtk_widget_class_bind_template_child (widget_class, CcDisplayPanel, output_selection_stack);
