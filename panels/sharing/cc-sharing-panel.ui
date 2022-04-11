@@ -427,9 +427,30 @@
                     <property name="visible">True</property>
                     <property name="title" translatable="yes">Device Name</property>
                     <child>
-                      <object class="GtkLabel" id="remote_desktop_device_name_label">
+                      <object class="GtkBox">
                         <property name="visible">True</property>
-                        <property name="selectable">True</property>
+                        <property name="spacing">10</property>
+                        <child>
+                          <object class="GtkLabel" id="remote_desktop_device_name_label">
+                            <property name="visible">True</property>
+                            <property name="selectable">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="remote_desktop_device_name_copy">
+                            <property name="visible">True</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="flat"/>
+                            </style>
+                            <child>
+                              <object class="GtkImage">
+                                <property name="visible">True</property>
+                                <property name="icon-name">edit-copy-symbolic</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -439,9 +460,30 @@
                     <property name="visible">True</property>
                     <property name="title" translatable="yes">Remote Desktop Address</property>
                     <child>
-                      <object class="GtkLabel" id="remote_desktop_address_label">
+                      <object class="GtkBox">
                         <property name="visible">True</property>
-                        <property name="selectable">True</property>
+                        <property name="spacing">10</property>
+                        <child>
+                          <object class="GtkLabel" id="remote_desktop_address_label">
+                            <property name="visible">True</property>
+                            <property name="selectable">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="remote_desktop_address_copy">
+                            <property name="visible">True</property>
+                            <property name="valign">center</property>
+                            <style>
+                              <class name="flat"/>
+                            </style>
+                            <child>
+                              <object class="GtkImage">
+                                <property name="visible">True</property>
+                                <property name="icon-name">edit-copy-symbolic</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -466,6 +508,21 @@
                         <property name="valign">center</property>
                       </object>
                     </child>
+                    <child>
+                      <object class="GtkButton" id="remote_desktop_username_copy">
+                        <property name="visible">True</property>
+                        <property name="valign">center</property>
+                        <style>
+                          <class name="flat"/>
+                        </style>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="visible">True</property>
+                            <property name="icon-name">edit-copy-symbolic</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
                   </object>
                 </child>
 
@@ -482,6 +539,21 @@
                         <property name="invisible_char">●</property>
                         <property name="invisible_char_set">True</property>
                         <property name="input_purpose">password</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkButton" id="remote_desktop_password_copy">
+                        <property name="visible">True</property>
+                        <property name="valign">center</property>
+                        <style>
+                          <class name="flat"/>
+                        </style>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="visible">True</property>
+                            <property name="icon-name">edit-copy-symbolic</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
