@@ -1,6 +1,5 @@
-gcr_dep = [dependency('gcr-3')]
 
-deps = common_deps + network_manager_deps + gcr_dep + [polkit_gobject_dep]
+deps = common_deps + network_manager_deps + [gcr_dep, polkit_gobject_dep]
 panels_list += cappletname
 desktop = 'budgie-@0@-panel.desktop'.format(cappletname)
 

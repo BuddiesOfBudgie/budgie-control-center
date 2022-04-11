@@ -558,6 +558,34 @@
                 <property name="label" translatable="yes">The encryption fingerprint can be seen in connecting clients and should be identical</property>
               </object>
             </child>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="orientation">horizontal</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="vexpand">True</property>
+                <style>
+                  <class name="tls-cert-verification" />
+                </style>
+                <child>
+                  <object class="GtkLabel" id="remote_desktop_fingerprint_left">
+                    <property name="visible">True</property>
+                    <style>
+                      <class name="tls-cert-fingerprint" />
+                    </style>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="remote_desktop_fingerprint_right">
+                    <property name="visible">True</property>
+                    <style>
+                      <class name="tls-cert-fingerprint" />
+                    </style>
+                  </object>
+                </child>
+              </object>
+            </child>
           </object>
         </child>
       </object>
