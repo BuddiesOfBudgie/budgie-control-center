@@ -42,6 +42,7 @@ sources = files(
   'cc-sharing-networks.c',
   'cc-sharing-switch.c',
   'cc-gnome-remote-desktop.c',
+  'cc-tls-certificate.c',
   'file-share-properties.c',
 )
 
@@ -74,12 +75,17 @@ cflags += [
 ]
 
 libsecret_dep = dependency('libsecret-1')
+gnutls_dep = dependency('gnutls')
 
 panels_libs += static_library(
   cappletname,
   sources: sources,
   include_directories: [ top_inc, common_inc ],
-  dependencies: [common_deps, libsecret_dep],
+  dependencies: [
+    common_deps,
+    libsecret_dep,
+    gnutls_dep,
+  ],
   c_args: cflags
 )
 
