@@ -259,6 +259,12 @@ config_h.set('HAVE_WACOM', host_is_linux_not_s390,
 config_h.set('BUILD_THUNDERBOLT', host_is_linux_not_s390,
              description: 'Define to 1 to build the Thunderbolt panel')
 
+# Dark-mode Distributor Logo for Fedora
+dark_mode_distributor_logo = get_option('dark_mode_distributor_logo')
+if dark_mode_distributor_logo != ''
+  config_h.set_quoted('DARK_MODE_DISTRIBUTOR_LOGO', dark_mode_distributor_logo, description: 'Define to absolute path of distributor logo for use in dark mode')
+endif
+
 gnome = import('gnome')
 i18n = import('i18n')
 pkg = import('pkgconfig')

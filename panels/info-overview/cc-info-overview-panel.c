@@ -952,22 +952,29 @@ use_dark_theme (CcInfoOverviewPanel *panel)
 static void
 setup_os_logo (CcInfoOverviewPanel *panel)
 {
+  gboolean dark;
+  dark = use_dark_theme (panel);
+#ifdef DARK_MODE_DISTRIBUTOR_LOGO
+  if (dark) {
+    gtk_image_set_from_file (panel->os_logo, DARK_MODE_DISTRIBUTOR_LOGO);
+    return;
+  }
+#endif
   g_autofree char *logo_name = g_get_os_info ("LOGO");
   g_autoptr(GPtrArray) array = NULL;
   g_autoptr(GIcon) icon = NULL;
-  gboolean dark;
 
-  dark = use_dark_theme (panel);
   if (logo_name == NULL)
     logo_name = g_strdup ("budgie-logo");
 
   array = g_ptr_array_new_with_free_func (g_free);
-  if (dark)
+
+  if (dark) {
     g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor-dark", logo_name));
-  g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor", logo_name));
-  if (dark)
+    g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor", logo_name));
     g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-dark", logo_name));
-  g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s", logo_name));
+    g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s", logo_name));
+  }
 
   icon = g_themed_icon_new_from_names ((char **) array->pdata, array->len);
   gtk_image_set_from_gicon (panel->os_logo, icon, 256);
