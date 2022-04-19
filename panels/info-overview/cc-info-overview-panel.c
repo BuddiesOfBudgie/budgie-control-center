@@ -902,10 +902,11 @@ setup_os_logo (CcInfoOverviewPanel *panel)
 
   if (dark) {
     g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor-dark", logo_name));
-    g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor", logo_name));
     g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-dark", logo_name));
-    g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s", logo_name));
   }
+
+  g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor", logo_name));
+  g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s", logo_name));
 
   icon = g_themed_icon_new_from_names ((char **) array->pdata, array->len);
   gtk_image_set_from_gicon (panel->os_logo, icon, 256);
