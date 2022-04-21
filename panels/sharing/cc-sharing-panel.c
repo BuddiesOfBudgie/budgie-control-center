@@ -1133,7 +1133,12 @@ remote_desktop_credentials_changed (CcSharingPanel *self)
 static gboolean
 is_remote_desktop_enabled (CcSharingPanel *self)
 {
-  return cc_is_service_active (REMOTE_DESKTOP_SERVICE, G_BUS_TYPE_SESSION);
+  g_autoptr(GSettings) rdp_settings = NULL;
+
+  rdp_settings = g_settings_new (GNOME_REMOTE_DESKTOP_RDP_SCHEMA_ID);
+
+  return cc_is_service_active (REMOTE_DESKTOP_SERVICE, G_BUS_TYPE_SESSION) &&
+         g_settings_get_boolean (rdp_settings, "enable");
 }
 
 static void
