@@ -36,6 +36,21 @@ cc_grd_rdp_credentials_get_schema (void)
   return &grd_rdp_credentials_schema;
 }
 
+const SecretSchema *
+cc_grd_vnc_password_get_schema (void)
+{
+  static const SecretSchema grd_vnc_password_schema = {
+    .name = "org.gnome.RemoteDesktop.VncPassword",
+    .flags = SECRET_SCHEMA_NONE,
+    .attributes = {
+      { "password", SECRET_SCHEMA_ATTRIBUTE_STRING },
+      { "NULL", 0 },
+    },
+  };
+
+  return &grd_vnc_password_schema;
+}
+
 void
 cc_grd_store_rdp_credentials (const gchar  *username,
                               const gchar  *password,
@@ -122,3 +137,47 @@ cc_grd_lookup_rdp_password (GCancellable *cancellable)
 
   return password;
 }
+
+static void
+on_password_stored (GObject      *source,
+                    GAsyncResult *result,
+                    gpointer      user_data)
+{
+  GError *error = NULL;
+
+  if (!secret_password_store_finish (result, &error))
+    {
+      if (!g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED))
+        {
+          g_warning ("Failed to store VNC password: %s", error->message);
+        }
+      g_error_free (error);
+    }
+}
+
+void
+cc_grd_store_vnc_password (const gchar *password, GCancellable *cancellable)
+{
+  secret_password_store (CC_GRD_VNC_PASSWORD_SCHEMA,
+                         SECRET_COLLECTION_DEFAULT,
+                         "GNOME Remote Desktop VNC password",
+                         password,
+                         cancellable, on_password_stored, NULL,
+                         NULL);
+}
+
+gchar *
+cc_grd_lookup_vnc_password (GCancellable *cancellable)
+{
+  g_autoptr(GError) error = NULL;
+  g_autofree gchar *password = NULL;
+
+  password = secret_password_lookup_sync (CC_GRD_VNC_PASSWORD_SCHEMA,
+                                          cancellable, &error,
+                                          NULL);
+  if (error)
+    g_warning ("Failed to get password: %s", error->message);
+
+  return g_steal_pointer (&password);
+}
+

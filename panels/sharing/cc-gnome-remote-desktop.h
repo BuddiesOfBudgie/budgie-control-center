@@ -26,11 +26,19 @@ G_BEGIN_DECLS
 const SecretSchema * cc_grd_rdp_credentials_get_schema (void);
 #define CC_GRD_RDP_CREDENTIALS_SCHEMA cc_grd_rdp_credentials_get_schema ()
 
+const SecretSchema * cc_grd_vnc_password_get_schema (void);
+#define CC_GRD_VNC_PASSWORD_SCHEMA cc_grd_vnc_password_get_schema ()
+
 void cc_grd_store_rdp_credentials (const gchar  *username,
                                    const gchar  *password,
                                    GCancellable *cancellable);
 
 gchar * cc_grd_lookup_rdp_username (GCancellable *cancellable);
 gchar * cc_grd_lookup_rdp_password (GCancellable *cancellable);
+
+void cc_grd_store_vnc_password (const gchar  *password,
+                                GCancellable *cancellable);
+
+gchar * cc_grd_lookup_vnc_password (GCancellable *cancellable);
 
 G_END_DECLS

@@ -53,6 +53,7 @@ static GtkWidget *cc_sharing_panel_new_media_sharing_row (const char     *uri_or
 #define FILE_SHARING_SCHEMA_ID "org.gnome.desktop.file-sharing"
 #define GNOME_REMOTE_DESKTOP_SCHEMA_ID "org.gnome.desktop.remote-desktop"
 #define GNOME_REMOTE_DESKTOP_RDP_SCHEMA_ID "org.gnome.desktop.remote-desktop.rdp"
+#define GNOME_REMOTE_DESKTOP_VNC_SCHEMA_ID "org.gnome.desktop.remote-desktop.vnc"
 
 #define REMOTE_DESKTOP_STORE_CREDENTIALS_TIMEOUT_S 1
 
@@ -93,8 +94,13 @@ struct _CcSharingPanel
   GtkWidget *remote_desktop_device_name_copy;
   GtkWidget *remote_desktop_address_label;
   GtkWidget *remote_desktop_address_copy;
+  GtkWidget *remote_desktop_vnc_address_label;
+  GtkWidget *remote_desktop_vnc_address_copy;
   GtkWidget *remote_desktop_row;
   GtkWidget *remote_desktop_switch;
+  GtkWidget *remote_desktop_vnc_check;
+  GtkWidget *remote_desktop_vnc_authentication_password;
+  GtkWidget *remote_desktop_vnc_authentication_prompt;
   GtkWidget *remote_desktop_verify_encryption;
   GtkWidget *remote_desktop_fingerprint_dialog;
   GtkWidget *remote_desktop_fingerprint_left;
@@ -257,6 +263,50 @@ remote_desktop_show_encryption_fingerprint (CcSharingPanel *self)
 }
 
 static void
+store_remote_desktop_vnc_credentials (CcSharingPanel *self)
+{
+  const char *password;
+
+  if (!gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->remote_desktop_vnc_check)))
+    return;
+
+  password = gtk_entry_get_text (GTK_ENTRY (self->remote_desktop_password_entry));
+  if (!password)
+    return;
+
+  cc_grd_store_vnc_password (password, cc_panel_get_cancellable (CC_PANEL (self)));
+}
+
+static void
+on_remote_desktop_authentication (CcSharingPanel *self,
+                                  GtkWidget      *model_button)
+{
+  g_autoptr (GSettings) vnc_settings = NULL;
+  GtkWidget *other = NULL;
+
+  vnc_settings = g_settings_new (GNOME_REMOTE_DESKTOP_VNC_SCHEMA_ID);
+
+  if (model_button == self->remote_desktop_vnc_authentication_password)
+    {
+      other = self->remote_desktop_vnc_authentication_prompt;
+      g_settings_set_string (vnc_settings, "auth-method", "password");
+      store_remote_desktop_vnc_credentials (self);
+    }
+  else if (model_button == self->remote_desktop_vnc_authentication_prompt)
+    {
+      other = self->remote_desktop_vnc_authentication_password;
+      g_settings_set_string (vnc_settings, "auth-method", "prompt");
+    }
+  else
+    {
+      g_assert_not_reached ();
+    }
+
+  g_object_set (model_button, "active", TRUE, NULL);
+  g_object_set (other, "active", FALSE, NULL);
+}
+
+static void
 cc_sharing_panel_class_init (CcSharingPanelClass *klass)
 {
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
@@ -290,6 +340,11 @@ cc_sharing_panel_class_init (CcSharingPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_login_switch);
   gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_dialog);
   gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_vnc_check);
+  gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_vnc_authentication_prompt);
+  gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_vnc_authentication_password);
+  gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_vnc_address_label);
+  gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_vnc_address_copy);
   gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_control_switch);
   gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_username_entry);
   gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, remote_desktop_username_copy);
@@ -307,6 +362,8 @@ cc_sharing_panel_class_init (CcSharingPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcSharingPanel, shared_folders_listbox);
 
   gtk_widget_class_bind_template_callback (widget_class, remote_desktop_show_encryption_fingerprint);
+  gtk_widget_class_bind_template_callback (widget_class, on_remote_desktop_authentication);
+  gtk_widget_class_bind_template_callback (widget_class, store_remote_desktop_vnc_credentials);
 
   g_type_ensure (CC_TYPE_HOSTNAME_ENTRY);
 }
@@ -320,6 +377,8 @@ cc_sharing_panel_run_dialog (CcSharingPanel *self,
   /* ensure labels with the hostname are updated if the hostname has changed */
   cc_sharing_panel_setup_label_with_hostname (self,
                                               self->remote_desktop_address_label);
+  cc_sharing_panel_setup_label_with_hostname (self,
+                                              self->remote_desktop_vnc_address_label);
   cc_sharing_panel_setup_label_with_hostname (self, self->remote_login_label);
   cc_sharing_panel_setup_label_with_hostname (self,
                                               self->personal_file_sharing_label);
@@ -789,6 +848,10 @@ cc_sharing_panel_setup_label (CcSharingPanel *self,
     {
       text = g_strdup_printf ("ms-rd://%s", hostname);
     }
+  else if (label == self->remote_desktop_vnc_address_label)
+    {
+      text = g_strdup_printf ("vnc://%s", hostname);
+    }
   else
     g_assert_not_reached ();
 
@@ -1047,6 +1110,8 @@ store_remote_desktop_credentials_timeout (gpointer user_data)
       cc_grd_store_rdp_credentials (username, password,
                                     cc_panel_get_cancellable (CC_PANEL (self)));
     }
+
+  store_remote_desktop_vnc_credentials (self);
 
   self->remote_desktop_store_credentials_id = 0;
 
@@ -1400,14 +1465,19 @@ cc_sharing_panel_setup_remote_desktop_dialog (CcSharingPanel *self)
   const gchar *username = NULL;
   const gchar *password = NULL;
   g_autoptr(GSettings) rdp_settings = NULL;
+  g_autoptr(GSettings) vnc_settings = NULL;
   g_autofree char *hostname = NULL;
+  g_autofree char *vnc_auth_method = NULL;
+  g_autofree char *vnc_password = NULL;
 
   cc_sharing_panel_bind_switch_to_label (self, self->remote_desktop_switch,
                                          self->remote_desktop_row);
 
   cc_sharing_panel_setup_label_with_hostname (self, self->remote_desktop_address_label);
+  cc_sharing_panel_setup_label_with_hostname (self, self->remote_desktop_vnc_address_label);
 
   rdp_settings = g_settings_new (GNOME_REMOTE_DESKTOP_RDP_SCHEMA_ID);
+  vnc_settings = g_settings_new (GNOME_REMOTE_DESKTOP_VNC_SCHEMA_ID);
 
   g_settings_bind (rdp_settings,
                    "view-only",
@@ -1418,16 +1488,53 @@ cc_sharing_panel_setup_remote_desktop_dialog (CcSharingPanel *self)
                           self->remote_control_switch, "sensitive",
                           G_BINDING_SYNC_CREATE);
 
+  g_settings_bind (vnc_settings,
+                   "enable",
+                   self->remote_desktop_vnc_check,
+                   "active",
+                   G_SETTINGS_BIND_DEFAULT);
+  g_settings_bind (vnc_settings,
+                   "view-only",
+                   self->remote_control_switch,
+                   "active",
+                   G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_INVERT_BOOLEAN);
+
+  vnc_auth_method = g_settings_get_string (vnc_settings, "auth-method");
+
+  if (g_strcmp0 (vnc_auth_method, "prompt") == 0)
+    g_object_set (self->remote_desktop_vnc_authentication_prompt, "active", TRUE, NULL);
+  else if (g_strcmp0 (vnc_auth_method, "password") == 0)
+    g_object_set (self->remote_desktop_vnc_authentication_password, "active", TRUE, NULL);
+
   hostname = get_hostname ();
   gtk_label_set_label (GTK_LABEL (self->remote_desktop_device_name_label),
                        hostname);
 
   username = cc_grd_lookup_rdp_username (cc_panel_get_cancellable (CC_PANEL (self)));
   password = cc_grd_lookup_rdp_password (cc_panel_get_cancellable (CC_PANEL (self)));
+
+  if (g_settings_get_boolean (vnc_settings, "enable"))
+    {
+      /* Re-use the VNC password if previously set */
+      vnc_password = cc_grd_lookup_vnc_password (cc_panel_get_cancellable (CC_PANEL (self)));
+      if (vnc_password && *vnc_password != '\0')
+        password = vnc_password;
+    }
+
   if (username != NULL)
     gtk_entry_set_text (GTK_ENTRY (self->remote_desktop_username_entry), username);
   if (password != NULL)
     gtk_entry_set_text (GTK_ENTRY (self->remote_desktop_password_entry), password);
+
+  if (vnc_password)
+    {
+      cc_grd_store_rdp_credentials (username, password,
+                                    cc_panel_get_cancellable (CC_PANEL (self)));
+    }
+  else
+    {
+      store_remote_desktop_vnc_credentials (self);
+    }
 
   g_signal_connect_swapped (self->remote_desktop_username_entry,
                             "notify::text",
@@ -1451,6 +1558,9 @@ cc_sharing_panel_setup_remote_desktop_dialog (CcSharingPanel *self)
   g_signal_connect (self->remote_desktop_address_copy,
                     "clicked", G_CALLBACK (on_copy_clicked_label),
                     self->remote_desktop_address_label);
+  g_signal_connect (self->remote_desktop_vnc_address_copy,
+                    "clicked", G_CALLBACK (on_copy_clicked_label),
+                    self->remote_desktop_vnc_address_label);
   g_signal_connect (self->remote_desktop_username_copy,
                     "clicked", G_CALLBACK (on_copy_clicked_entry),
                     self->remote_desktop_username_entry);
