@@ -203,6 +203,8 @@ const char*       cc_display_config_get_renderer            (CcDisplayConfig    
 double            cc_display_config_get_maximum_scaling     (CcDisplayConfig    *self);
 void              cc_display_config_set_fractional_scaling  (CcDisplayConfig    *self,
                                                              gboolean            enabled);
+gboolean          cc_has_fractional_key                     ();
+
 gboolean          cc_display_config_get_fractional_scaling  (CcDisplayConfig    *self);
 
 const char*       cc_display_monitor_get_display_name       (CcDisplayMonitor   *monitor);
