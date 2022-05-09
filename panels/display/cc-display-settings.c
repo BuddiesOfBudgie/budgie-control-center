@@ -56,6 +56,9 @@ struct _CcDisplaySettings
   GtkWidget        *scale_fractional_switch;
   GtkWidget        *underscanning_row;
   GtkWidget        *underscanning_switch;
+
+  GSettings        *lock_settings;
+  GSettings        *lockdown_settings;
 };
 
 typedef struct _CcDisplaySettings CcDisplaySettings;
@@ -451,13 +454,8 @@ cc_display_settings_rebuild_ui (CcDisplaySettings *self)
   gtk_switch_set_active (GTK_SWITCH (self->scale_fractional_switch),
                          cc_display_config_get_fractional_scaling (self->config));
 
-  GSettingsSchema * mutter_x11_scaling_options = g_settings_schema_source_lookup(g_settings_schema_source_get_default(), "org.gnome.mutter.x11", FALSE); // Fractional scaling in Mutter only applies to Manjaro and Ubuntu
   gtk_switch_set_active (GTK_SWITCH (self->scale_fractional_switch), cc_display_config_get_fractional_scaling (self->config));
-  gtk_widget_set_visible(self->scale_fractional_row, mutter_x11_scaling_options != NULL);
-
-  if (mutter_x11_scaling_options != NULL) {
-    g_settings_schema_unref(mutter_x11_scaling_options);
-  }
+  gtk_widget_set_visible(self->scale_fractional_row, cc_has_fractional_key());
 
   gtk_widget_set_visible (self->underscanning_row,
                           cc_display_monitor_supports_underscanning (self->selected_output) &&
@@ -676,6 +674,9 @@ cc_display_settings_finalize (GObject *object)
     g_source_remove (self->idle_udpate_id);
   self->idle_udpate_id = 0;
 
+  g_clear_object (&self->lockdown_settings);
+  g_clear_object (&self->lock_settings);
+
   G_OBJECT_CLASS (cc_display_settings_parent_class)->finalize (object);
 }
 
@@ -745,7 +746,19 @@ on_scale_fractional_toggled (CcDisplaySettings *self)
   active = gtk_switch_get_active (GTK_SWITCH (self->scale_fractional_switch));
 
   if (self->config)
-    cc_display_config_set_fractional_scaling (self->config, active);
+    {
+      cc_display_config_set_fractional_scaling (self->config, active);
+
+      if (active)
+        {
+          g_settings_set_boolean (self->lock_settings, "lock-enabled", FALSE);
+        }
+
+      if (cc_has_fractional_key())
+        {
+          g_settings_set_boolean (self->lockdown_settings, "disable-lock-screen", active);
+        }
+    }
 
   g_signal_emit_by_name (G_OBJECT (self), "updated", self->selected_output);
 }
@@ -787,6 +800,8 @@ cc_display_settings_init (CcDisplaySettings *self)
                                  G_LIST_MODEL (self->scale_list),
                                  (HdyComboRowGetNameFunc) hdy_value_object_dup_string,
                                  NULL, NULL);
+  self->lock_settings = g_settings_new ("org.gnome.desktop.screensaver");
+  self->lockdown_settings = g_settings_new ("org.gnome.desktop.lockdown");
 
   self->updating = FALSE;
 }

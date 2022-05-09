@@ -884,6 +884,7 @@ set_current_output (CcDisplayPanel   *panel,
 {
   GtkTreeIter iter;
   gboolean changed;
+  gboolean lockdown;
 
   /* Note, this function is also called if the internal UI needs updating after a rebuild. */
   changed = (output != panel->current_output);
@@ -935,6 +936,12 @@ set_current_output (CcDisplayPanel   *panel,
     {
       cc_display_settings_set_selected_output (panel->settings, panel->current_output);
       cc_display_arrangement_set_selected_output (panel->arrangement, panel->current_output);
+
+      if (cc_has_fractional_key())
+        {
+          lockdown=cc_display_config_get_fractional_scaling (panel->current_config);
+          gtk_widget_set_sensitive(panel->automatic_screen_lock_switch, !lockdown);
+        }
     }
 
   panel->rebuilding_counter--;
