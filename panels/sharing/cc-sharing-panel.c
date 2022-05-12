@@ -30,6 +30,7 @@
 #include "cc-sharing-networks.h"
 #include "cc-sharing-switch.h"
 #include "cc-gnome-remote-desktop.h"
+#include "cc-systemd-service.h"
 #include "org.gnome.SettingsDaemon.Sharing.h"
 
 #ifdef GDK_WINDOWING_WAYLAND
@@ -45,6 +46,8 @@ static GtkWidget *cc_sharing_panel_new_media_sharing_row (const char     *uri_or
 #define FILE_SHARING_SCHEMA_ID "org.gnome.desktop.file-sharing"
 #define GNOME_REMOTE_DESKTOP_SCHEMA_ID "org.gnome.desktop.remote-desktop"
 #define GNOME_REMOTE_DESKTOP_VNC_SCHEMA_ID "org.gnome.desktop.remote-desktop.vnc"
+#define REMOTE_DESKTOP_SERVICE "gnome-remote-desktop.service"
+
 
 typedef enum
 {
@@ -1010,12 +1013,72 @@ on_vnc_password_entry_notify_text (CcSharingPanel *self)
   cc_grd_store_vnc_password (gtk_entry_get_text (GTK_ENTRY (self->remote_control_password_entry)), cc_panel_get_cancellable (CC_PANEL (self)));
 }
 
+static gboolean
+is_remote_desktop_enabled (CcSharingPanel *self)
+{
+  g_autoptr(GSettings) vnc_settings = NULL;
+
+  vnc_settings = g_settings_new (GNOME_REMOTE_DESKTOP_VNC_SCHEMA_ID);
+
+  return cc_is_service_active (REMOTE_DESKTOP_SERVICE, G_BUS_TYPE_SESSION) &&
+         g_settings_get_boolean (vnc_settings, "enable");
+}
+
+
+static void
+enable_gnome_remote_desktop_service (CcSharingPanel *self)
+{
+  g_autoptr(GError) error = NULL;
+
+  if (is_remote_desktop_enabled (self))
+    return;
+
+  if (!cc_enable_service (REMOTE_DESKTOP_SERVICE,
+                          G_BUS_TYPE_SESSION,
+                          &error))
+    g_warning ("Failed to enable remote desktop service: %s", error->message);
+}
+
+
+static void
+disable_gnome_remote_desktop_service (CcSharingPanel *self)
+{
+  g_autoptr(GError) error = NULL;
+
+  if (!cc_disable_service (REMOTE_DESKTOP_SERVICE,
+                           G_BUS_TYPE_SESSION,
+                           &error))
+    g_warning ("Failed to enable remote desktop service: %s", error->message);
+}
+
+static void
+enable_gnome_remote_desktop (CcSharingPanel *self)
+{
+  enable_gnome_remote_desktop_service (self);
+}
+
+static void
+on_remote_desktop_state_changed (GtkWidget      *widget,
+                                 GParamSpec     *pspec,
+                                 CcSharingPanel *self)
+{
+  g_autoptr(GSettings) vnc_settings = NULL;
+  gboolean switch_active = gtk_switch_get_active (GTK_SWITCH (widget));
+
+  if (switch_active)
+    enable_gnome_remote_desktop (self);
+  else
+    disable_gnome_remote_desktop_service (self);
+
+  vnc_settings = g_settings_new (GNOME_REMOTE_DESKTOP_VNC_SCHEMA_ID);
+  g_settings_set_boolean(vnc_settings, "enable", switch_active);
+}
+
 static void
 cc_sharing_panel_setup_screen_sharing_dialog_gnome_remote_desktop (CcSharingPanel *self)
 {
   g_autofree gchar *password = NULL;
   g_autoptr(GSettings) vnc_settings = NULL;
-  GtkWidget *networks, *w;
 
   cc_sharing_panel_bind_switch_to_widgets (self->require_password_radiobutton, self->password_grid, NULL);
 
@@ -1086,16 +1149,27 @@ cc_sharing_panel_setup_screen_sharing_dialog_gnome_remote_desktop (CcSharingPane
                            self,
                            G_CONNECT_SWAPPED);
 
-  networks = cc_sharing_networks_new (self->sharing_proxy, "gnome-remote-desktop");
-  gtk_box_pack_end (GTK_BOX (self->remote_control_box), networks, TRUE, TRUE, 0);
-  gtk_widget_show (networks);
+  self->screen_sharing_switch = GTK_WIDGET (g_object_new (GTK_TYPE_SWITCH,
+				   "visible",TRUE, "state", FALSE, "valign", GTK_ALIGN_CENTER,
+				   NULL));
+  gtk_widget_show(self->screen_sharing_switch);
+  gtk_header_bar_pack_start (GTK_HEADER_BAR (self->screen_sharing_headerbar), self->screen_sharing_switch);
 
-  w = cc_sharing_switch_new (networks);
-  gtk_header_bar_pack_start (GTK_HEADER_BAR (self->screen_sharing_headerbar), w);
-  self->screen_sharing_switch = w;
+  g_object_bind_property (self->screen_sharing_switch, "state",
+                          self->remote_control_checkbutton, "sensitive",
+                          G_BINDING_SYNC_CREATE);
 
-  cc_sharing_panel_bind_networks_to_label (self, networks,
-                                           self->screen_sharing_row);
+  g_signal_connect (self->screen_sharing_switch, "notify::state",
+                    G_CALLBACK (on_remote_desktop_state_changed), self);
+
+  cc_sharing_panel_bind_switch_to_label (self, self->screen_sharing_switch,
+                                          self->screen_sharing_row);
+
+  if (is_remote_desktop_enabled (self))
+    {
+      gtk_switch_set_active (GTK_SWITCH (self->screen_sharing_switch),
+                             TRUE);
+    }
 }
 
 static void
