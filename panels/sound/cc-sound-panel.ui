@@ -35,6 +35,48 @@
                     <property name="visible">True</property>
                   </object>
                 </child>
+                <!-- Over-Amplification -->
+                <child>
+                  <object class="GtkListBox" id="budgie_output_listbox">
+                    <property name="visible">False</property>
+                    <property name="selection_mode">none</property>
+                    <child>
+                      <object class="HdyPreferencesRow">
+                        <property name="visible">true</property>
+                        <property name="activatable">0</property>
+                        <child>
+                          <object class="CcVolumeSlider" id="output_volume_slider_budgie">
+                            <property name="visible">True</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <property name="margin_end">12</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="HdyActionRow">
+                        <property name="visible">true</property>
+                        <property name="title" translatable="yes">Over-Amplification</property>
+                        <property name="subtitle" translatable="yes">Allows raising the volume above 100%. This can result in a loss of audio quality; it is better to increase application volume settings, if possible.</property>
+                        <property name="subtitle-lines">6</property>
+                        <property name="activatable-widget">allow_amplify_switch</property>
+                        <property name="use-underline">true</property>
+                        <child>
+                          <object class="GtkSwitch" id="allow_amplify_switch">
+                            <property name="visible">true</property>
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <style>
+                      <class name="content"/>
+                    </style>
+                  </object>
+                </child>
+
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
