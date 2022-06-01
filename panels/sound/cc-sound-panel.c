@@ -65,9 +65,6 @@ struct _CcSoundPanel
   CcProfileComboBox *output_profile_combo_box;
   GtkListBoxRow     *output_profile_row;
   CcVolumeSlider    *output_volume_slider;
-  CcVolumeSlider    *output_volume_slider_budgie;
-  GtkWidget         *allow_amplify_switch;
-  GtkWidget         *budgie_output_frame;
   CcStreamListBox   *stream_list_box;
   GtkListBoxRow     *subwoofer_row;
   CcSubwooferSlider *subwoofer_slider;
@@ -84,15 +81,13 @@ enum
   PROP_PARAMETERS
 };
 
-#define KEY_SOUNDS_SCHEMA "com.solus-project.budgie-raven"
+#define KEY_SOUNDS_SCHEMA "org.gnome.desktop.sound"
 
 static void
 allow_amplified_changed_cb (CcSoundPanel *self)
 {
   cc_volume_slider_set_is_amplified (self->output_volume_slider,
-                                     g_settings_get_boolean (self->sound_settings, "allow-volume-overdrive"));
-  cc_volume_slider_set_is_amplified (self->output_volume_slider_budgie,
-                                     g_settings_get_boolean (self->sound_settings, "allow-volume-overdrive"));
+                                     g_settings_get_boolean (self->sound_settings, "allow-volume-above-100-percent"));
 }
 
 static void
@@ -103,7 +98,6 @@ set_output_stream (CcSoundPanel   *self,
   gboolean can_fade = FALSE, has_lfe = FALSE;
 
   cc_volume_slider_set_stream (self->output_volume_slider, stream, CC_STREAM_TYPE_OUTPUT);
-  cc_volume_slider_set_stream (self->output_volume_slider_budgie, stream, CC_STREAM_TYPE_OUTPUT);
   cc_level_bar_set_stream (self->output_level_bar, stream, CC_STREAM_TYPE_OUTPUT);
 
   if (stream != NULL)
@@ -265,9 +259,6 @@ cc_sound_panel_class_init (CcSoundPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, output_profile_combo_box);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, output_profile_row);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, output_volume_slider);
-  gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, output_volume_slider_budgie);
-  gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, allow_amplify_switch);
-  gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, budgie_output_frame);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, stream_list_box);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, subwoofer_row);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, subwoofer_slider);
@@ -296,17 +287,11 @@ cc_sound_panel_init (CcSoundPanel *self)
 
   self->sound_settings = g_settings_new (KEY_SOUNDS_SCHEMA);
   g_signal_connect_object (self->sound_settings,
-                           "changed::allow-volume-overdrive",
+                           "changed::allow-volume-above-100-percent",
                            G_CALLBACK (allow_amplified_changed_cb),
                            self,
                            G_CONNECT_SWAPPED);
   allow_amplified_changed_cb (self);
-
-  gtk_widget_set_visible(self->budgie_output_frame, TRUE);
-  gtk_widget_set_visible(GTK_WIDGET (self->output_volume_slider), FALSE);
-  g_settings_bind (self->sound_settings, "allow-volume-overdrive",
-                    self->allow_amplify_switch, "active", G_SETTINGS_BIND_DEFAULT);
-
 
   self->mixer_control = gvc_mixer_control_new ("GNOME Settings");
   gvc_mixer_control_open (self->mixer_control);
@@ -314,7 +299,6 @@ cc_sound_panel_init (CcSoundPanel *self)
   cc_stream_list_box_set_mixer_control (self->stream_list_box, self->mixer_control);
   cc_volume_slider_set_mixer_control (self->input_volume_slider, self->mixer_control);
   cc_volume_slider_set_mixer_control (self->output_volume_slider, self->mixer_control);
-  cc_volume_slider_set_mixer_control (self->output_volume_slider_budgie, self->mixer_control);
   cc_subwoofer_slider_set_mixer_control (self->subwoofer_slider, self->mixer_control);
   cc_device_combo_box_set_mixer_control (self->input_device_combo_box, self->mixer_control, FALSE);
   cc_device_combo_box_set_mixer_control (self->output_device_combo_box, self->mixer_control, TRUE);
