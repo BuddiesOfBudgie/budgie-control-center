@@ -248,6 +248,7 @@ on_file_chooser_selection_changed_cb (GtkFileChooser               *chooser,
       g_autofree gchar *mime_type = NULL;
       g_autoptr(GFile) file = NULL;
       GtkWidget *preview;
+      GError *error = NULL;
 
       preview = gtk_file_chooser_get_preview_widget (chooser);
 
@@ -263,9 +264,23 @@ on_file_chooser_selection_changed_cb (GtkFileChooser               *chooser,
 
       if (mime_type)
         {
+#if defined(GNOME_DESKTOP_PLATFORM_VERSION) && GNOME_DESKTOP_PLATFORM_VERSION >= 43
+          pixbuf = gnome_desktop_thumbnail_factory_generate_thumbnail (thumbnail_factory,
+                                                                       uri,
+                                                                       mime_type,
+                                                                       NULL,
+                                                                       &error);
+
+          if (error)
+            {
+              g_warning("could not general thumbnail %s (%s) %s\n", uri, mime_type, error->message);
+              g_clear_error(&error);
+            }
+#else
           pixbuf = gnome_desktop_thumbnail_factory_generate_thumbnail (thumbnail_factory,
                                                                        uri,
                                                                        mime_type);
+#endif
         }
 
       gtk_dialog_set_response_sensitive (GTK_DIALOG (chooser),
