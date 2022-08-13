@@ -16,15 +16,15 @@ touch budgie-control-center.po
 #for file in `find src -not -path '*/gvc/*' -name "*.c" -or -name "*.vala"`; do
 for file in `find . -name "*.c"`; do
     if [[ `grep -F "_(\"" $file` ]]; then
-        echo $file
         do_gettext $file --keyword=_ --add-comments
     fi
 done
 
 for file in `find . -name "*.ui"`; do
     if [[ `grep -F "translatable=\"yes\"" $file` ]]; then
+        echo $file
         do_intltool gettext/glade $file
-        do_gettext ${file}.h --add-comments --keyword=N_:1
+        do_gettext ${file}.h --add-comments --keyword=N_:1 --keyword=C_:2
         rm $file.h
     fi
 done
