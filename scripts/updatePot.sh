@@ -22,7 +22,6 @@ done
 
 for file in `find . -name "*.ui"`; do
     if [[ `grep -F "translatable=\"yes\"" $file` ]]; then
-        echo $file
         do_intltool gettext/glade $file
         do_gettext ${file}.h --add-comments --keyword=N_:1 --keyword=C_:2
         rm $file.h
@@ -35,6 +34,10 @@ for file in `find . -name "*.in"`; do
         do_gettext ${file}.h --add-comments --keyword=N_:1
         rm $file.h
     fi
+done
+
+for file in `find . -name "*.desktop*.in"`; do
+    do_gettext ${file} --add-comments
 done
 
 mv budgie-control-center.po po/budgie-control-center.pot
