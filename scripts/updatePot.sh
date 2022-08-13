@@ -17,7 +17,7 @@ touch budgie-control-center.po
 for file in `find . -name "*.c"`; do
     if [[ `grep -F "_(\"" $file` ]]; then
         echo $file
-        do_gettext $file --add-comments
+        do_gettext $file --keyword=_ --add-comments
     fi
 done
 
