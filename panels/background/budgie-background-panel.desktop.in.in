@@ -3,7 +3,7 @@ Name=Background
 Comment=Change your background image to a wallpaper or photo
 Exec=budgie-control-center background
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=preferences-desktop-wallpaper
+Icon=org.buddiesofbudgie.Settings-appearance-symbolic
 Terminal=false
 Type=Application
 NoDisplay=true

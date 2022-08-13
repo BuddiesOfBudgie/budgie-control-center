@@ -39,7 +39,6 @@ struct _CcPowerProfileRow
   GtkLabel       *title_label;
 
   CcPowerProfile power_profile;
-  char *performance_inhibited;
 };
 
 G_DEFINE_TYPE (CcPowerProfileRow, cc_power_profile_row, GTK_TYPE_LIST_BOX_ROW)
@@ -50,46 +49,6 @@ enum {
 };
 
 static guint signals[N_SIGNALS];
-
-static const char *
-get_performance_inhibited_text (const char *inhibited)
-{
-  if (!inhibited || *inhibited == '\0')
-    return NULL;
-
-  if (g_str_equal (inhibited, "lap-detected"))
-    return _("Lap detected: performance mode unavailable");
-  if (g_str_equal (inhibited, "high-operating-temperature"))
-    return _("High hardware temperature: performance mode unavailable");
-  return _("Performance mode unavailable");
-}
-
-static void
-performance_profile_set_inhibited (CcPowerProfileRow *self,
-                                   const char        *performance_inhibited)
-{
-  const char *text;
-  gboolean inhibited = FALSE;
-
-  if (self->power_profile != CC_POWER_PROFILE_PERFORMANCE)
-    return;
-
-  gtk_style_context_remove_class (gtk_widget_get_style_context (GTK_WIDGET (self->subtitle_label)),
-                                  GTK_STYLE_CLASS_DIM_LABEL);
-  gtk_style_context_remove_class (gtk_widget_get_style_context (GTK_WIDGET (self->subtitle_label)),
-                                  GTK_STYLE_CLASS_ERROR);
-
-  text = get_performance_inhibited_text (performance_inhibited);
-  if (text)
-    inhibited = TRUE;
-  else
-    text = _("High performance and power usage.");
-  gtk_label_set_text (GTK_LABEL (self->subtitle_label), text);
-
-  gtk_style_context_add_class (gtk_widget_get_style_context (GTK_WIDGET (self->subtitle_label)),
-                               inhibited ? GTK_STYLE_CLASS_ERROR : GTK_STYLE_CLASS_DIM_LABEL);
-  gtk_widget_set_sensitive (GTK_WIDGET (self), !inhibited);
-}
 
 static void
 cc_power_profile_row_button_toggled_cb (CcPowerProfileRow *self)
@@ -148,17 +107,6 @@ cc_power_profile_row_set_active (CcPowerProfileRow *self,
   g_return_if_fail (CC_IS_POWER_PROFILE_ROW (self));
 
   gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (self->button), active);
-}
-
-void
-cc_power_profile_row_set_performance_inhibited (CcPowerProfileRow *self,
-                                                const char        *performance_inhibited)
-{
-  g_return_if_fail (CC_IS_POWER_PROFILE_ROW (self));
-
-  g_clear_pointer (&self->performance_inhibited, g_free);
-  self->performance_inhibited = g_strdup (performance_inhibited);
-  performance_profile_set_inhibited (self, self->performance_inhibited);
 }
 
 gboolean

@@ -35,98 +35,48 @@
                     <property name="visible">True</property>
                   </object>
                 </child>
+                <!-- Over-Amplification -->
                 <child>
-                  <object class="GtkFrame" id="budgie_output_frame">
+                  <object class="GtkListBox" id="budgie_output_listbox">
                     <property name="visible">False</property>
-                <child>
-                  <object class="GtkListBox" id="budgie_output_box">
-                    <property name="visible">True</property>
                     <property name="selection_mode">none</property>
                     <child>
-                      <object class="GtkListBoxRow">
-                        <property name="width_request">100</property>
-                        <property name="height_request">80</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
+                      <object class="HdyPreferencesRow">
+                        <property name="visible">true</property>
+                        <property name="activatable">0</property>
                         <child>
                           <object class="CcVolumeSlider" id="output_volume_slider_budgie">
                             <property name="visible">True</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <property name="margin_end">12</property>
                           </object>
                         </child>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkListBoxRow">
-                        <property name="width_request">100</property>
-                        <property name="height_request">80</property>
-                        <property name="visible">True</property>
-                        <property name="can_focus">True</property>
+                      <object class="HdyActionRow">
+                        <property name="visible">true</property>
+                        <property name="title" translatable="yes">Over-Amplification</property>
+                        <property name="subtitle" translatable="yes">Allows raising the volume above 100%. This can result in a loss of audio quality; it is better to increase application volume settings, if possible.</property>
+                        <property name="subtitle-lines">6</property>
+                        <property name="activatable-widget">allow_amplify_switch</property>
+                        <property name="use-underline">true</property>
                         <child>
-                          <object class="GtkGrid">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="margin_left">20</property>
-                            <property name="margin_right">20</property>
-                            <property name="margin_top">10</property>
-                            <property name="margin_bottom">10</property>
-                            <property name="row_spacing">2</property>
-                            <property name="column_spacing">16</property>
-                            <child>
-                              <object class="GtkLabel" id="allow_amplify_label">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="halign">start</property>
-                                <property name="valign">center</property>
-                                <property name="label" translatable="yes">Over-Amplification</property>
-                                <property name="mnemonic-widget">allow_amplify_switch</property>
-                                <attributes>
-                                  <attribute name="weight" value="bold"/>
-                                </attributes>
-                              </object>
-                              <packing>
-                                <property name="left_attach">0</property>
-                                <property name="top_attach">0</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkSwitch" id="allow_amplify_switch">
-                                <property name="visible">True</property>
-                                <property name="can_focus">True</property>
-                                <property name="halign">end</property>
-                                <property name="valign">center</property>
-                              </object>
-                              <packing>
-                                <property name="left_attach">1</property>
-                                <property name="top_attach">0</property>
-                                <property name="height">2</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkLabel" id="allow_amplify_desc">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Allows raising the volume above 100%. This can result in a loss of audio quality; it is better to increase application volume settings, if possible.</property>
-                                <property name="wrap">True</property>
-                                <attributes>
-                                  <attribute name="scale" value="0.9"/>
-                                </attributes>
-                                <style>
-                                  <class name="dim-label"/>
-                                </style>
-                              </object>
-                              <packing>
-                                <property name="left_attach">0</property>
-                                <property name="top_attach">1</property>
-                              </packing>
-                            </child>
+                          <object class="GtkSwitch" id="allow_amplify_switch">
+                            <property name="visible">true</property>
+                            <property name="halign">end</property>
+                            <property name="valign">center</property>
                           </object>
                         </child>
                       </object>
                     </child>
+                    <style>
+                      <class name="content"/>
+                    </style>
                   </object>
                 </child>
-                </object>
-                </child>
+
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>

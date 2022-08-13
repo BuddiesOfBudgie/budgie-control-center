@@ -179,7 +179,7 @@ deps = common_deps + [
   krb_dep,
   m_dep,
   polkit_gobject_dep,
-  dependency('pwquality', version: '>= 1.2.2')
+  pwquality_dep,
 ]
 
 if enable_cheese
@@ -203,3 +203,5 @@ panels_libs += static_library(
   dependencies: deps,
   c_args: cflags
 )
+
+subdir('icons')

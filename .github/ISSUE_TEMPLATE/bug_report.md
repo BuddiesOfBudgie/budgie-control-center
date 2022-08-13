@@ -13,7 +13,7 @@ in English, i.e. `LC_ALL=C LANG=C`. If your issue is a *crash*, include a stack 
 
 ## Budgie version
 <!-- Version name of budgie-control-center, i.e. 0.2.0 OR specific git commit.
-To provide the exact version of your installation, run: budgie-comtrol-center --version -->
+To provide the exact version of your installation, run: budgie-control-center --version -->
 
 
 ## Operating system

@@ -3,7 +3,7 @@ Name=Network
 Comment=Control how you connect to the Internet
 Exec=budgie-control-center network
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=network-workgroup
+Icon=org.buddiesofbudgie.Settings-network-symbolic
 Terminal=false
 Type=Application
 NoDisplay=true

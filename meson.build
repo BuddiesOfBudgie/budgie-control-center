@@ -1,6 +1,6 @@
 project(
   'budgie-control-center', 'c',
-        version : '0.3.0',
+        version : '1.1.0',
         license : 'GPL2+',
   meson_version : '>= 0.53.0'
 )
@@ -25,15 +25,13 @@ host_is_linux_not_s390 = host_is_linux and not host_machine.cpu().contains('s390
 
 cc = meson.get_compiler('c')
 
+# post install script
+meson.add_install_script('scripts/mesonPostInstall.sh')
+
 # Tracing
 enable_tracing = get_option('tracing')
 
 config_h = configuration_data()
-
-py = import('python')
-python = py.find_installation('python3')
-
-config_h.set_quoted('TEST_NM_PYTHON', python.path())
 
 # defines
 set_defines = [
@@ -121,13 +119,12 @@ accounts_dep = dependency('accountsservice', version: '>= 0.6.39')
 colord_dep = dependency('colord', version: '>= 0.1.34')
 gdk_pixbuf_dep = dependency('gdk-pixbuf-2.0', version: '>= 2.23.0')
 gio_dep = dependency('gio-2.0')
-glib_dep = dependency('glib-2.0', version: '>= 2.68.0')
+glib_dep = dependency('glib-2.0', version: '>= 2.70.0')
 gnome_desktop_dep = dependency('gnome-desktop-3.0', version: '>= 3.33.4')
 gnome_settings_dep = dependency('gnome-settings-daemon', version: '>= 3.27.90')
 goa_dep = dependency('goa-1.0', version: goa_req_version)
-gsettings_desktop_dep = dependency('gsettings-desktop-schemas', version: '>= 40.alpha')
+gsettings_desktop_dep = dependency('gsettings-desktop-schemas', version: '>= 42.alpha')
 libxml_dep = dependency('libxml-2.0')
-polkit_gobject_dep = dependency('polkit-gobject-1', version: '>= 0.105')
 pulse_dep = dependency('libpulse', version: pulse_req_version)
 pulse_mainloop_dep = dependency('libpulse-mainloop-glib', version: pulse_req_version)
 upower_glib_dep = dependency('upower-glib', version: '>= 0.99.8')
@@ -135,6 +132,8 @@ gudev_dep = dependency('gudev-1.0', version: '>= 232')
 x11_dep = dependency('x11')
 xi_dep = dependency('xi', version: '>= 1.2')
 epoxy_dep = dependency('epoxy')
+gcr_dep = dependency('gcr-base-3')
+pwquality_dep = dependency('pwquality', version: '>= 1.2.2')
 
 m_dep = cc.find_library('m')
 
@@ -147,6 +146,15 @@ common_deps = [
   dependency('gthread-2.0'),
   dependency('gtk+-3.0', version: '>= 3.22.20')
 ]
+
+polkit_gobject_dep = dependency('polkit-gobject-1', version: '>= 0.103')
+# Also verify that polkit ITS files exist:
+# https://gitlab.gnome.org/GNOME/gnome-control-center/-/issues/491
+polkit_files = [ 'gettext/its/polkit.its', 'gettext/its/polkit.loc' ]
+foreach polkit_file: polkit_files
+  r = run_command('build-aux/meson/find_xdg_file.py', polkit_file)
+  assert(r.returncode() == 0, 'ITS support missing from polkit, please upgrade or contact your distribution')
+endforeach
 
 # Check for CUPS 1.4 or newer
 cups_dep = dependency('cups', version : '>= 1.4', required: false)
@@ -259,6 +267,12 @@ config_h.set('HAVE_WACOM', host_is_linux_not_s390,
 config_h.set('BUILD_THUNDERBOLT', host_is_linux_not_s390,
              description: 'Define to 1 to build the Thunderbolt panel')
 
+# Dark-mode Distributor Logo for Fedora
+dark_mode_distributor_logo = get_option('dark_mode_distributor_logo')
+if dark_mode_distributor_logo != ''
+  config_h.set_quoted('DARK_MODE_DISTRIBUTOR_LOGO', dark_mode_distributor_logo, description: 'Define to absolute path of distributor logo for use in dark mode')
+endif
+
 gnome = import('gnome')
 i18n = import('i18n')
 pkg = import('pkgconfig')
@@ -277,14 +291,13 @@ its_dir = join_paths(meson.source_root(), 'gettext')
 top_inc = include_directories('.')
 shell_inc = include_directories('shell')
 
-subdir('build-aux')
-subdir('data/icons')
+subdir('data')
 subdir('po')
 subdir('panels')
 subdir('shell')
 
 if get_option('documentation')
-  subdir('man')
+  subdir('data/man')
 endif
 
 configure_file(

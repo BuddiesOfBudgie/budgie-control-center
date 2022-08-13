@@ -112,6 +112,11 @@ get_ap_security_string (NMAccessPoint *ap)
                         g_string_append_printf (str, "%s, ", _("Enhanced Open"));
 		}
 #endif
+#if NM_CHECK_VERSION(1,26,0)
+		else if (rsn_flags & NM_802_11_AP_SEC_KEY_MGMT_OWE_TM) {
+                        /* Connected to open OWE-TM network. */
+		}
+#endif
 		else
 #endif
 		{
@@ -297,7 +302,9 @@ connect_details_page (CEPageDetails *self)
         gtk_widget_set_visible (GTK_WIDGET (self->speed_heading_label), speed_label != NULL);
         gtk_widget_set_visible (GTK_WIDGET (self->speed_label), speed_label != NULL);
 
-        hw_address = nm_device_get_hw_address (self->device);
+        if (self->device)
+            hw_address = nm_device_get_hw_address (self->device);
+
         gtk_label_set_label (self->mac_label, hw_address);
         gtk_widget_set_visible (GTK_WIDGET (self->mac_heading_label), hw_address != NULL);
         gtk_widget_set_visible (GTK_WIDGET (self->mac_label), hw_address != NULL);

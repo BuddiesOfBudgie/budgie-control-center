@@ -3,7 +3,7 @@ Name=Thunderbolt
 Comment=Manage Thunderbolt devices
 Exec=budgie-control-center thunderbolt
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=thunderbolt
+Icon=org.buddiesofbudgie.Settings-thunderbolt-symbolic
 Terminal=false
 Type=Application
 NoDisplay=true

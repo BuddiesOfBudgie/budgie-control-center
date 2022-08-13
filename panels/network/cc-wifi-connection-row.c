@@ -37,6 +37,7 @@ struct _CcWifiConnectionRow
   GtkSpinner      *connecting_spinner;
   GtkImage        *encrypted_icon;
   GtkLabel        *name_label;
+  GtkButton       *options_button;
   GtkImage        *strength_icon;
 };
 
@@ -59,7 +60,8 @@ typedef enum
   NM_AP_SEC_WPA,
   NM_AP_SEC_WPA2,
   NM_AP_SEC_SAE,
-  NM_AP_SEC_OWE
+  NM_AP_SEC_OWE,
+  NM_AP_SEC_OWE_TM
 } NMAccessPointSecurity;
 
 G_DEFINE_TYPE (CcWifiConnectionRow, cc_wifi_connection_row, GTK_TYPE_LIST_BOX_ROW)
@@ -108,6 +110,12 @@ get_access_point_security (NMAccessPoint *ap)
   else if (rsn_flags & NM_802_11_AP_SEC_KEY_MGMT_OWE)
     {
       type = NM_AP_SEC_OWE;
+    }
+#endif
+#if NM_CHECK_VERSION(1,26,0)
+  else if (rsn_flags & NM_802_11_AP_SEC_KEY_MGMT_OWE_TM)
+    {
+      type = NM_AP_SEC_OWE_TM;
     }
 #endif
   else
@@ -212,9 +220,12 @@ update_ui (CcWifiConnectionRow *self)
     }
   else
     {
+      g_autofree char *title_escaped = NULL;
+
       ssid = nm_access_point_get_ssid (best_ap);
       title = nm_utils_ssid_to_utf8 (g_bytes_get_data (ssid, NULL), g_bytes_get_size (ssid));
-      gtk_label_set_text (self->name_label, title);
+      title_escaped = g_markup_escape_text (title, -1);
+      gtk_label_set_text (self->name_label, title_escaped);
     }
 
   if (active_connection)
@@ -250,8 +261,9 @@ update_ui (CcWifiConnectionRow *self)
     }
 
   gtk_widget_set_visible (GTK_WIDGET (self->active_label), active);
+  gtk_widget_set_visible (GTK_WIDGET (self->options_button), active || connecting);
 
-  if (security != NM_AP_SEC_UNKNOWN && security != NM_AP_SEC_NONE && security != NM_AP_SEC_OWE)
+  if (security != NM_AP_SEC_UNKNOWN && security != NM_AP_SEC_NONE && security != NM_AP_SEC_OWE && security != NM_AP_SEC_OWE_TM)
     {
       const gchar *icon_path;
 
@@ -456,6 +468,7 @@ cc_wifi_connection_row_class_init (CcWifiConnectionRowClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcWifiConnectionRow, checkbutton);
   gtk_widget_class_bind_template_child (widget_class, CcWifiConnectionRow, connecting_spinner);
   gtk_widget_class_bind_template_child (widget_class, CcWifiConnectionRow, encrypted_icon);
+  gtk_widget_class_bind_template_child (widget_class, CcWifiConnectionRow, options_button);
   gtk_widget_class_bind_template_child (widget_class, CcWifiConnectionRow, name_label);
   gtk_widget_class_bind_template_child (widget_class, CcWifiConnectionRow, strength_icon);
 

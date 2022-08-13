@@ -37,14 +37,15 @@ prettify_info (const char *info)
   int   i;
   static const ReplaceStrings rs[] = {
     { "Mesa DRI ", ""},
-    { "Intel[(]R[)]", "Intel\302\256"},
-    { "Core[(]TM[)]", "Core\342\204\242"},
-    { "Atom[(]TM[)]", "Atom\342\204\242"},
-    { "Gallium .* on (AMD .*)", "\\1"},
-    { "(AMD .*) [(].*", "\\1"},
-    { "(AMD [A-Z])(.*)", "\\1\\L\\2\\E"},
-    { "AMD", "AMD\302\256"},
+    { "[(]R[)]", "\302\256"},
+    { "[(](tm|TM)[)]", "\342\204\242"},
+    { "(ATI|EPYC|AMD FX|Radeon|Ryzen|Threadripper|GeForce RTX) ", "\\1\342\204\242 "},
+    { "Gallium \\d+\\.\\d+ on (.*)", "\\1"},
+    { " CPU| Processor| \\S+-Core| @ \\d+\\.\\d+GHz", ""},
+    { " x86|/MMX|/SSE2|/PCIe", ""},
+    { " [(][^)]*(DRM|MESA|LLVM)[^)]*[)]?", ""},
     { "Graphics Controller", "Graphics"},
+    { ".*llvmpipe.*", "Software Rendering"},
   };
 
   if (*info == '\0')

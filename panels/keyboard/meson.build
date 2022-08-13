@@ -16,29 +16,13 @@ i18n.merge_file(
   install_dir: control_center_desktopdir
 )
 
-pc_conf = configuration_data()
-pc_conf.set('prefix', control_center_prefix)
-pc_conf.set('datarootdir', control_center_datadir)
-pc_conf.set('datadir', control_center_datadir)
-pc_conf.set('PACKAGE', meson.project_name())
-pc_conf.set('VERSION', meson.project_version())
-
-pc = 'budgie-keybindings.pc'
-
-configure_file(
-  input: pc + '.in',
-  output: pc,
-  install: true,
-  install_dir: join_paths(control_center_datadir, 'pkgconfig'),
-  configuration: pc_conf
-)
-
 xml_files = [
   '00-multimedia.xml',
   '01-input-sources.xml',
   '01-launchers.xml',
   '01-screenshot.xml',
   '01-system.xml',
+  '01-raven.xml',
   '50-accessibility.xml'
 ]
 
@@ -103,3 +87,5 @@ panels_libs += static_library(
   dependencies: deps,
   c_args: cflags
 )
+
+subdir('icons')

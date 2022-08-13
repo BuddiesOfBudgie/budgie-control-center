@@ -22,6 +22,21 @@
 #include "cc-gnome-remote-desktop.h"
 
 const SecretSchema *
+cc_grd_rdp_credentials_get_schema (void)
+{
+  static const SecretSchema grd_rdp_credentials_schema = {
+    .name = "org.gnome.RemoteDesktop.RdpCredentials",
+    .flags = SECRET_SCHEMA_NONE,
+    .attributes = {
+      { "credentials", SECRET_SCHEMA_ATTRIBUTE_STRING },
+      { "NULL", 0 },
+    },
+  };
+
+  return &grd_rdp_credentials_schema;
+}
+
+const SecretSchema *
 cc_grd_vnc_password_get_schema (void)
 {
   static const SecretSchema grd_vnc_password_schema = {
@@ -36,86 +51,91 @@ cc_grd_vnc_password_get_schema (void)
   return &grd_vnc_password_schema;
 }
 
-gboolean
-cc_grd_get_is_auth_method_prompt (GValue   *value,
-                                  GVariant *variant,
-                                  gpointer  user_data)
+void
+cc_grd_store_rdp_credentials (const gchar  *username,
+                              const gchar  *password,
+                              GCancellable *cancellable)
 {
-  const char * auth_method;
+  GVariantBuilder builder;
+  char *credentials;
 
-  auth_method = g_variant_get_string (variant, NULL);
+  g_variant_builder_init (&builder, G_VARIANT_TYPE ("a{sv}"));
+  g_variant_builder_add (&builder, "{sv}", "username", g_variant_new_string (username));
+  g_variant_builder_add (&builder, "{sv}", "password", g_variant_new_string (password));
+  credentials = g_variant_print (g_variant_builder_end (&builder), TRUE);
 
-  if (g_strcmp0 (auth_method, "prompt") == 0)
-    {
-      g_value_set_boolean (value, TRUE);
-    }
-  else if (g_strcmp0 (auth_method, "password") == 0)
-    {
-      g_value_set_boolean (value, FALSE);
-    }
-  else
-    {
-      g_warning ("Unhandled VNC auth method %s", auth_method);
-      g_value_set_boolean (value, FALSE);
-    }
+  secret_password_store_sync (CC_GRD_RDP_CREDENTIALS_SCHEMA,
+                              SECRET_COLLECTION_DEFAULT,
+                              "GNOME Remote Desktop RDP credentials",
+                              credentials,
+                              NULL, NULL,
+                              NULL);
 
-  return TRUE;
+  g_free (credentials);
 }
 
-GVariant *
-cc_grd_set_is_auth_method_prompt (const GValue       *value,
-                                  const GVariantType *type,
-                                  gpointer            user_data)
+gchar *
+cc_grd_lookup_rdp_username (GCancellable *cancellable)
 {
-  char *auth_method;
+  g_autoptr(GError) error = NULL;
+  gchar *username = NULL;
+  g_autofree gchar *secret;
+  GVariant *variant = NULL;
 
-  if (g_value_get_boolean (value))
-    auth_method = "prompt";
-  else
-    auth_method = "password";
+  secret = secret_password_lookup_sync (CC_GRD_RDP_CREDENTIALS_SCHEMA,
+                                          cancellable, &error,
+                                          NULL);
+  if (error) {
+    g_warning ("Failed to get username: %s", error->message);
+    return NULL;
+  }
 
-  return g_variant_new_string (auth_method);
+  if (secret == NULL) {
+      g_debug ("No RDP credentials available");
+      return NULL;
+  }
+
+  variant = g_variant_parse (NULL, secret, NULL, NULL, &error);
+  if (variant == NULL) {
+    g_warning ("Invalid credentials format in the keyring: %s", error->message);
+    return NULL;
+  }
+
+  g_variant_lookup (variant, "username", "&s", &username);
+
+  return username;
 }
 
-gboolean
-cc_grd_get_is_auth_method_password (GValue   *value,
-                                    GVariant *variant,
-                                    gpointer  user_data)
+gchar *
+cc_grd_lookup_rdp_password (GCancellable *cancellable)
 {
-  const char *auth_method;
+  g_autoptr(GError) error = NULL;
+  g_autofree gchar *secret;
+  gchar *password = NULL;
+  GVariant *variant = NULL;
 
-  auth_method = g_variant_get_string (variant, NULL);
+  secret = secret_password_lookup_sync (CC_GRD_RDP_CREDENTIALS_SCHEMA,
+                                          cancellable, &error,
+                                          NULL);
+  if (error) {
+    g_warning ("Failed to get password: %s", error->message);
+    return NULL;
+  }
 
-  if (g_strcmp0 (auth_method, "prompt") == 0)
-    {
-      g_value_set_boolean (value, FALSE);
-    }
-  else if (g_strcmp0 (auth_method, "password") == 0)
-    {
-      g_value_set_boolean (value, TRUE);
-    }
-  else
-    {
-      g_warning ("Unhandled VNC auth method %s", auth_method);
-      g_value_set_boolean (value, FALSE);
-    }
+  if (secret == NULL) {
+      g_debug ("No RDP credentials available");
+      return NULL;
+  }
 
-  return TRUE;
-}
+  variant = g_variant_parse (NULL, secret, NULL, NULL, &error);
+  if (variant == NULL) {
+    g_warning ("Invalid credentials format in the keyring: %s", error->message);
+    return NULL;
+  }
 
-GVariant *
-cc_grd_set_is_auth_method_password (const GValue       *value,
-                                    const GVariantType *type,
-                                    gpointer            user_data)
-{
-  char *auth_method;
+  g_variant_lookup (variant, "password", "&s", &password);
 
-  if (g_value_get_boolean (value))
-    auth_method = "password";
-  else
-    auth_method = "prompt";
-
-  return g_variant_new_string (auth_method);
+  return password;
 }
 
 static void
@@ -160,3 +180,4 @@ cc_grd_lookup_vnc_password (GCancellable *cancellable)
 
   return g_steal_pointer (&password);
 }
+

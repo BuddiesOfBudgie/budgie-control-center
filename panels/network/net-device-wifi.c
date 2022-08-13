@@ -376,7 +376,13 @@ device_off_switch_changed_cb (NetDeviceWifi *self)
                 return;
 
         active = gtk_switch_get_active (self->device_off_switch);
-        nm_client_wireless_set_enabled (self->client, active);
+        nm_client_dbus_set_property (self->client,
+                                     NM_DBUS_PATH,
+                                     NM_DBUS_INTERFACE,
+                                     "WirelessEnabled",
+                                     g_variant_new_boolean (active),
+                                     -1,
+                                     NULL, NULL, NULL);
         if (!active)
                 disable_scan_timeout (self);
         gtk_widget_set_sensitive (GTK_WIDGET (self->connect_hidden_button), active);
@@ -737,7 +743,7 @@ stop_shared_connection (NetDeviceWifi *self)
 
                 devices = nm_active_connection_get_devices (c);
                 if (devices && devices->pdata[0] == self->device) {
-                        nm_client_deactivate_connection (self->client, c, NULL, NULL);
+                        nm_client_deactivate_connection_async (self->client, c, NULL, NULL, NULL);
                         found = TRUE;
                         break;
                 }

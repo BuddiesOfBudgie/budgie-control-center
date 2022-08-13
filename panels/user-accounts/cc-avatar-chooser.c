@@ -168,6 +168,7 @@ update_preview (GtkFileChooser               *chooser,
                 GnomeDesktopThumbnailFactory *thumb_factory)
 {
         g_autofree gchar *uri = NULL;
+        GError *error = NULL;
 
         uri = gtk_file_chooser_get_uri (chooser);
 
@@ -192,9 +193,21 @@ update_preview (GtkFileChooser               *chooser,
                 }
 
                 if (mime_type) {
+#if defined(GNOME_DESKTOP_PLATFORM_VERSION) && GNOME_DESKTOP_PLATFORM_VERSION >= 43
+                        pixbuf = gnome_desktop_thumbnail_factory_generate_thumbnail (thumb_factory,
+                                                                                     uri,
+                                                                                     mime_type,
+                                                                                     NULL,
+                                                                                     &error);
+                       if (error) {
+                                g_warning("could not general thumbnail %s (%s) %s\n", uri, mime_type, error->message);
+                                g_clear_error(&error);
+                       }
+#else
                         pixbuf = gnome_desktop_thumbnail_factory_generate_thumbnail (thumb_factory,
                                                                                      uri,
                                                                                      mime_type);
+#endif
                 }
 
                 gtk_dialog_set_response_sensitive (GTK_DIALOG (chooser),

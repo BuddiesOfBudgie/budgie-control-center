@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<KeyListEntries group="system" schema="com.solus-project.budgie-wm" name="Raven">
+
+	<KeyListEntry name="toggle-raven" description="Raven Applets"/>
+
+	<KeyListEntry name="toggle-notifications" description="Raven Notifications"/>
+
+	<KeyListEntry name="clear-notifications" description="Clear Notifications"/>
+
+</KeyListEntries>
+

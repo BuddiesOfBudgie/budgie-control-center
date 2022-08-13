@@ -35,6 +35,8 @@ struct _CcDisplaySettings
   GtkDrawingArea    object;
 
   gboolean          updating;
+  gboolean          num_scales;
+  gboolean          folded;
   guint             idle_udpate_id;
 
   gboolean          has_accelerometer;
@@ -56,6 +58,9 @@ struct _CcDisplaySettings
   GtkWidget        *scale_fractional_switch;
   GtkWidget        *underscanning_row;
   GtkWidget        *underscanning_switch;
+
+  GSettings        *lock_settings;
+  GSettings        *lockdown_settings;
 };
 
 typedef struct _CcDisplaySettings CcDisplaySettings;
@@ -338,9 +343,7 @@ cc_display_settings_rebuild_ui (CcDisplaySettings *self)
             hdy_combo_row_set_selected_index (HDY_COMBO_ROW (self->refresh_rate_row), new);
         }
 
-      /* Show if we have more than one frequency to choose from. */
-      gtk_widget_set_visible (self->refresh_rate_row,
-                              g_list_model_get_n_items (G_LIST_MODEL (self->refresh_rate_list)) > 1);
+      gtk_widget_set_visible (self->refresh_rate_row, TRUE);
     }
   else
     {
@@ -395,69 +398,56 @@ cc_display_settings_rebuild_ui (CcDisplaySettings *self)
   /* Scale row is usually shown. */
   gtk_container_foreach (GTK_CONTAINER (self->scale_bbox), (GtkCallback) gtk_widget_destroy, NULL);
   g_list_store_remove_all (self->scale_list);
-  gtk_widget_set_visible (self->scale_buttons_row, FALSE);
-  gtk_widget_set_visible (self->scale_combo_row, FALSE);
   scales = cc_display_mode_get_supported_scales (current_mode);
+  self->num_scales = scales->len;
   for (i = 0; i < scales->len; i++)
     {
       g_autofree gchar *scale_str = NULL;
+      g_autoptr(HdyValueObject) value_object = NULL;
       double scale = g_array_index (scales, double, i);
+      GtkWidget *scale_btn;
       gboolean is_selected;
 
+      /* ComboRow */
       scale_str = make_scale_string (scale);
       is_selected = G_APPROX_VALUE (cc_display_monitor_get_scale (self->selected_output),
                                     scale, DBL_EPSILON);
 
-      if (scales->len > MAX_SCALE_BUTTONS)
-        {
-          g_autoptr(HdyValueObject) value_object = NULL;
+      value_object = hdy_value_object_new_collect (G_TYPE_STRING, scale_str);
+      g_list_store_append (self->scale_list, value_object);
+      g_object_set_data_full (G_OBJECT (value_object), "scale",
+                              g_memdup2 (&scale, sizeof (double)), g_free);
+      if (is_selected)
+        hdy_combo_row_set_selected_index (HDY_COMBO_ROW (self->scale_combo_row),
+                                          g_list_model_get_n_items (G_LIST_MODEL (self->scale_list)) - 1);
 
-          value_object = hdy_value_object_new_collect (G_TYPE_STRING, scale_str);
-          g_list_store_append (self->scale_list, value_object);
-          g_object_set_data_full (G_OBJECT (value_object), "scale",
-                                  g_memdup2 (&scale, sizeof (double)), g_free);
-          if (is_selected)
-            hdy_combo_row_set_selected_index (HDY_COMBO_ROW (self->scale_combo_row),
-                                              g_list_model_get_n_items (G_LIST_MODEL (self->scale_list)) - 1);
-        }
-      else
-        {
-          GtkWidget *scale_btn = gtk_radio_button_new_with_label_from_widget (group, scale_str);
-          g_object_set_data_full (G_OBJECT (scale_btn), "scale",
-                                  g_memdup2 (&scale, sizeof (double)), g_free);
+      /* ButtonBox */
+      scale_btn = gtk_radio_button_new_with_label_from_widget (group, scale_str);
+      g_object_set_data_full (G_OBJECT (scale_btn), "scale",
+                              g_memdup2 (&scale, sizeof (double)), g_free);
 
-          if (!group)
-            group = GTK_RADIO_BUTTON (scale_btn);
-          gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (scale_btn), FALSE);
-          gtk_widget_show (scale_btn);
-          gtk_container_add (GTK_CONTAINER (self->scale_bbox), scale_btn);
-          /* Set active before connecting the signal */
-          if (is_selected)
-            gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (scale_btn), TRUE);
+      if (!group)
+        group = GTK_RADIO_BUTTON (scale_btn);
+      gtk_toggle_button_set_mode (GTK_TOGGLE_BUTTON (scale_btn), FALSE);
+      gtk_widget_show (scale_btn);
+      gtk_container_add (GTK_CONTAINER (self->scale_bbox), scale_btn);
+      /* Set active before connecting the signal */
+      if (is_selected)
+        gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (scale_btn), TRUE);
 
-          g_signal_connect_object (scale_btn,
-                                   "notify::active",
-                                   G_CALLBACK (on_scale_btn_active_changed_cb),
-                                   self, 0);
-        }
+      g_signal_connect_object (scale_btn,
+                               "notify::active",
+                               G_CALLBACK (on_scale_btn_active_changed_cb),
+                               self, 0);
     }
-
-  if (scales->len > MAX_SCALE_BUTTONS)
-    gtk_widget_set_visible (self->scale_combo_row, TRUE);
-  else
-    gtk_widget_set_visible (self->scale_buttons_row, scales->len > 1);
+  cc_display_settings_refresh_layout (self, self->folded);
 
   gtk_widget_set_visible (self->scale_fractional_row, TRUE);
   gtk_switch_set_active (GTK_SWITCH (self->scale_fractional_switch),
                          cc_display_config_get_fractional_scaling (self->config));
 
-  GSettingsSchema * mutter_x11_scaling_options = g_settings_schema_source_lookup(g_settings_schema_source_get_default(), "org.gnome.mutter.x11", FALSE); // Fractional scaling in Mutter only applies to Manjaro and Ubuntu
   gtk_switch_set_active (GTK_SWITCH (self->scale_fractional_switch), cc_display_config_get_fractional_scaling (self->config));
-  gtk_widget_set_visible(self->scale_fractional_row, mutter_x11_scaling_options != NULL);
-
-  if (mutter_x11_scaling_options != NULL) {
-    g_settings_schema_unref(mutter_x11_scaling_options);
-  }
+  gtk_widget_set_visible(self->scale_fractional_row, cc_has_fractional_key());
 
   gtk_widget_set_visible (self->underscanning_row,
                           cc_display_monitor_supports_underscanning (self->selected_output) &&
@@ -676,6 +666,9 @@ cc_display_settings_finalize (GObject *object)
     g_source_remove (self->idle_udpate_id);
   self->idle_udpate_id = 0;
 
+  g_clear_object (&self->lockdown_settings);
+  g_clear_object (&self->lock_settings);
+
   G_OBJECT_CLASS (cc_display_settings_parent_class)->finalize (object);
 }
 
@@ -745,7 +738,19 @@ on_scale_fractional_toggled (CcDisplaySettings *self)
   active = gtk_switch_get_active (GTK_SWITCH (self->scale_fractional_switch));
 
   if (self->config)
-    cc_display_config_set_fractional_scaling (self->config, active);
+    {
+      cc_display_config_set_fractional_scaling (self->config, active);
+
+      if (active)
+        {
+          g_settings_set_boolean (self->lock_settings, "lock-enabled", FALSE);
+        }
+
+      if (cc_has_fractional_key())
+        {
+          g_settings_set_boolean (self->lockdown_settings, "disable-lock-screen", active);
+        }
+    }
 
   g_signal_emit_by_name (G_OBJECT (self), "updated", self->selected_output);
 }
@@ -787,6 +792,8 @@ cc_display_settings_init (CcDisplaySettings *self)
                                  G_LIST_MODEL (self->scale_list),
                                  (HdyComboRowGetNameFunc) hdy_value_object_dup_string,
                                  NULL, NULL);
+  self->lock_settings = g_settings_new ("org.gnome.desktop.screensaver");
+  self->lockdown_settings = g_settings_new ("org.gnome.desktop.lockdown");
 
   self->updating = FALSE;
 }
@@ -877,3 +884,15 @@ cc_display_settings_set_selected_output (CcDisplaySettings *self,
   g_object_notify_by_pspec (G_OBJECT (self), props[PROP_SELECTED_OUTPUT]);
 }
 
+void
+cc_display_settings_refresh_layout (CcDisplaySettings *self,
+                                    gboolean           folded)
+{
+  gboolean use_combo;
+
+  self->folded = folded;
+  use_combo = self->num_scales > MAX_SCALE_BUTTONS || (self->num_scales > 2 && folded);
+
+  gtk_widget_set_visible (self->scale_combo_row, use_combo);
+  gtk_widget_set_visible (self->scale_buttons_row, self->num_scales > 1 && !use_combo);
+}

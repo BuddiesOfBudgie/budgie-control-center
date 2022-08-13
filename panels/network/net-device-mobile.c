@@ -131,7 +131,7 @@ network_combo_changed_cb (NetDeviceMobile *self)
         g_debug ("try to switch to connection %s", object_path);
         connection = (NMConnection*) nm_client_get_connection_by_path (self->client, object_path);
         if (connection != NULL) {
-                nm_device_disconnect (self->device, NULL, NULL);
+                nm_device_disconnect_async (self->device, NULL, NULL, NULL);
                 nm_client_activate_connection_async (self->client,
                                                      connection,
                                                      self->device, NULL, NULL,
@@ -505,7 +505,7 @@ device_off_switch_changed_cb (NetDeviceMobile *self)
                 for (i = 0; acs && i < acs->len; i++) {
                         a = (NMActiveConnection*)acs->pdata[i];
                         if (strcmp (nm_active_connection_get_uuid (a), uuid) == 0) {
-                                nm_client_deactivate_connection (self->client, a, NULL, NULL);
+                                nm_client_deactivate_connection_async (self->client, a, NULL, NULL, NULL);
                                 break;
                         }
                 }

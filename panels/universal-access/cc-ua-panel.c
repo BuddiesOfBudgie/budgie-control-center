@@ -45,8 +45,12 @@
 #define HIGH_CONTRAST_THEME     "HighContrast"
 
 /* shell settings */
-#define A11Y_SETTINGS               "org.gnome.desktop.a11y"
+#define A11Y_SETTINGS                "org.gnome.desktop.a11y"
 #define KEY_ALWAYS_SHOW_STATUS       "always-show-universal-access-status"
+
+/* a11y interface settings */
+#define A11Y_INTERFACE_SETTINGS      "org.gnome.desktop.a11y.interface"
+#define KEY_HIGH_CONTRAST            "high-contrast"
 
 /* interface settings */
 #define INTERFACE_SETTINGS           "org.gnome.desktop.interface"
@@ -150,6 +154,7 @@ struct _CcUaPanel
 
   GSettings *wm_settings;
   GSettings *a11y_settings;
+  GSettings *a11y_interface_settings;
   GSettings *interface_settings;
   GSettings *kb_settings;
   GSettings *mouse_settings;
@@ -170,6 +175,7 @@ cc_ua_panel_dispose (GObject *object)
 
   g_clear_object (&self->wm_settings);
   g_clear_object (&self->a11y_settings);
+  g_clear_object (&self->a11y_interface_settings);
   g_clear_object (&self->interface_settings);
   g_clear_object (&self->kb_settings);
   g_clear_object (&self->mouse_settings);
@@ -285,11 +291,9 @@ get_contrast_mapping (GValue   *value,
                       GVariant *variant,
                       gpointer  user_data)
 {
-  const char *theme;
   gboolean hc;
 
-  theme = g_variant_get_string (variant, NULL);
-  hc = (g_strcmp0 (theme, HIGH_CONTRAST_THEME) == 0);
+  hc = g_variant_get_boolean (variant);
   g_value_set_boolean (value, hc);
 
   return TRUE;
@@ -302,12 +306,11 @@ set_contrast_mapping (const GValue       *value,
 {
   gboolean hc;
   CcUaPanel *self = user_data;
-  GVariant *ret = NULL;
 
   hc = g_value_get_boolean (value);
   if (hc)
     {
-      ret = g_variant_new_string (HIGH_CONTRAST_THEME);
+      g_settings_set_string (self->interface_settings, KEY_GTK_THEME, HIGH_CONTRAST_THEME);
       g_settings_set_string (self->interface_settings, KEY_ICON_THEME, HIGH_CONTRAST_THEME);
 
       g_settings_set_string (self->wm_settings, KEY_WM_THEME, HIGH_CONTRAST_THEME);
@@ -320,7 +323,7 @@ set_contrast_mapping (const GValue       *value,
       g_settings_reset (self->wm_settings, KEY_WM_THEME);
     }
 
-  return ret;
+  return g_variant_new_boolean (hc);
 }
 
 static gboolean
@@ -525,7 +528,7 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
   g_signal_connect_object (self->seeing_listbox, "row-activated",
                            G_CALLBACK (activate_row), self, G_CONNECT_SWAPPED);
 
-  g_settings_bind_with_mapping (self->interface_settings, KEY_GTK_THEME,
+  g_settings_bind_with_mapping (self->a11y_interface_settings, KEY_HIGH_CONTRAST,
                                 self->highcontrast_enable_switch,
                                 "active", G_SETTINGS_BIND_DEFAULT,
                                 get_contrast_mapping,
@@ -715,6 +718,7 @@ cc_ua_panel_init (CcUaPanel *self)
   gtk_widget_init_template (GTK_WIDGET (self));
 
   self->interface_settings = g_settings_new (INTERFACE_SETTINGS);
+  self->a11y_interface_settings = g_settings_new (A11Y_INTERFACE_SETTINGS);
   self->a11y_settings = g_settings_new (A11Y_SETTINGS);
   self->wm_settings = g_settings_new (WM_SETTINGS);
   self->kb_settings = g_settings_new (KEYBOARD_SETTINGS);

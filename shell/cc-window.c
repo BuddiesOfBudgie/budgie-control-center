@@ -81,7 +81,13 @@ struct _CcWindow
   CcPanel *active_panel;
   GSettings *settings;
 
+  gboolean folded;
+
   CcPanelListView previous_list_view;
+
+  gint current_width;
+  gint current_height;
+  gboolean is_maximized;
 };
 
 static void     cc_shell_iface_init         (CcShellInterface      *iface);
@@ -93,10 +99,38 @@ enum
 {
   PROP_0,
   PROP_ACTIVE_PANEL,
-  PROP_MODEL
+  PROP_MODEL,
+  PROP_FOLDED,
 };
 
 /* Auxiliary methods */
+static void
+store_window_state (CcWindow *self)
+{
+  g_settings_set (self->settings,
+                 "window-state",
+                 "(iib)",
+                 self->current_width,
+                 self->current_height,
+                 self->is_maximized);
+}
+
+static void
+load_window_state (CcWindow *self)
+{
+  g_settings_get (self->settings,
+                 "window-state",
+                 "(iib)",
+                 &self->current_width,
+                 &self->current_height,
+                 &self->is_maximized);
+
+  if (self->current_width != -1 && self->current_height != -1)
+    gtk_window_set_default_size (GTK_WINDOW (self), self->current_width, self->current_height);
+  if (self->is_maximized)
+    gtk_window_maximize (GTK_WINDOW (self));
+}
+
 static gboolean
 in_flatpak_sandbox (void)
 {
@@ -276,7 +310,7 @@ update_list_title (CcWindow *self)
       break;
 
     case CC_PANEL_LIST_MAIN:
-      title = g_strdup (_("Settings"));
+      title = g_strdup (_("Budgie Control Center"));
       break;
 
     case CC_PANEL_LIST_WIDGET:
@@ -676,6 +710,39 @@ on_development_warning_dialog_responded_cb (CcWindow *self)
   gtk_widget_hide (GTK_WIDGET (self->development_warning_dialog));
 }
 
+static void
+on_window_size_allocate (GtkWidget     *widget,
+                         GtkAllocation *allocation)
+{
+  CcWindow *self = CC_WINDOW (widget);
+
+  GTK_WIDGET_CLASS (cc_window_parent_class)->size_allocate (widget, allocation);
+
+  if (!self->is_maximized)
+    gtk_window_get_size (GTK_WINDOW (widget), &self->current_width, &self->current_height);
+}
+
+static gboolean
+on_window_state_event (GtkWidget           *widget,
+                       GdkEventWindowState *event)
+{
+  CcWindow *self = CC_WINDOW (widget);
+
+  self->is_maximized = (event->new_window_state & GDK_WINDOW_STATE_MAXIMIZED) != 0;
+
+  return GTK_WIDGET_CLASS (cc_window_parent_class)->window_state_event (widget, event);
+}
+
+static void
+on_window_destroy (GtkWidget *widget)
+{
+  CcWindow *self = CC_WINDOW (widget);
+
+  store_window_state (self);
+
+  GTK_WIDGET_CLASS (cc_window_parent_class)->destroy (widget);
+}
+
 /* CcShell implementation */
 static gboolean
 cc_window_set_active_panel_from_id (CcShell      *shell,
@@ -766,6 +833,10 @@ cc_window_get_property (GObject    *object,
       g_value_set_object (value, self->store);
       break;
 
+    case PROP_FOLDED:
+      g_value_set_boolean (value, self->folded);
+      break;
+
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
     }
@@ -790,6 +861,10 @@ cc_window_set_property (GObject      *object,
       self->store = g_value_dup_object (value);
       break;
 
+    case PROP_FOLDED:
+      self->folded = g_value_get_boolean (value);
+      break;
+
     default:
       G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
     }
@@ -800,6 +875,8 @@ cc_window_constructed (GObject *object)
 {
   CcWindow *self = CC_WINDOW (object);
   g_autofree char *id = NULL;
+
+  load_window_state (self);
 
   /* Add the panels */
   setup_model (self);
@@ -816,6 +893,20 @@ cc_window_constructed (GObject *object)
                             "notify::view",
                             G_CALLBACK (update_headerbar_buttons),
                             self);
+
+  g_signal_connect (self,
+                    "size-allocate",
+                    G_CALLBACK (on_window_size_allocate),
+                    NULL);
+
+  g_signal_connect (self,
+                    "window-state-event",
+                    G_CALLBACK (on_window_state_event),
+                    NULL);
+  g_signal_connect (self,
+                    "destroy",
+                    G_CALLBACK (on_window_destroy),
+                    NULL);
 
   update_headerbar_buttons (self);
   show_sidebar (self);
@@ -876,6 +967,14 @@ cc_window_class_init (CcWindowClass *klass)
                                                         CC_TYPE_SHELL_MODEL,
                                                         G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY | G_PARAM_STATIC_STRINGS));
 
+  g_object_class_install_property (object_class,
+                                   PROP_FOLDED,
+                                   g_param_spec_boolean ("folded",
+                                                         "Folded",
+                                                         "Whether the window is foled",
+                                                         FALSE,
+                                                         G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS));
+
   gtk_widget_class_set_template_from_resource (widget_class, "/org/buddiesofbudgie/ControlCenter/gtk/cc-window.ui");
 
   gtk_widget_class_bind_template_child (widget_class, CcWindow, back_revealer);
@@ -921,6 +1020,12 @@ cc_window_init (CcWindow *self)
   self->previous_panels = g_queue_new ();
   self->previous_list_view = cc_panel_list_get_view (self->panel_list);
 
+  g_object_bind_property (self->main_leaflet,
+                          "folded",
+                          self,
+                          "folded",
+                          G_BINDING_SYNC_CREATE);
+
   /* Add a custom CSS class on development builds */
   if (in_flatpak_sandbox ())
     gtk_style_context_add_class (gtk_widget_get_style_context (GTK_WIDGET (self)), "devel");
@@ -935,7 +1040,7 @@ cc_window_new (GtkApplication *application,
   return g_object_new (CC_TYPE_WINDOW,
                        "application", application,
                        "resizable", TRUE,
-                       "title", _("Settings"),
+                       "title", _("Budgie Control Center"),
                        "icon-name", DEFAULT_WINDOW_ICON_NAME,
                        "window-position", GTK_WIN_POS_CENTER,
                        "show-menubar", FALSE,

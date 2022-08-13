@@ -38,6 +38,7 @@
 #include <glibtop/mem.h>
 #include <glibtop/sysinfo.h>
 #include <udisks/udisks.h>
+#include <gudev/gudev.h>
 
 #include <gdk/gdk.h>
 
@@ -247,7 +248,7 @@ get_renderer_from_helper (const char **env)
       return NULL;
     }
 
-  if (!g_spawn_check_exit_status (status, NULL))
+  if (!g_spawn_check_wait_status (status, NULL))
     return NULL;
 
   if (renderer == NULL || *renderer == '\0')
@@ -593,10 +594,12 @@ get_cpu_info (const glibtop_sysinfo *info)
 
       count = GPOINTER_TO_INT (value);
       cleanedup = info_cleanup ((const char *) key);
+      if (cpu->len != 0)
+        g_string_append_printf (cpu, " ");
       if (count > 1)
-        g_string_append_printf (cpu, "%s \303\227 %d ", cleanedup, count);
+        g_string_append_printf (cpu, "%s \303\227 %d", cleanedup, count);
       else
-        g_string_append_printf (cpu, "%s ", cleanedup);
+        g_string_append_printf (cpu, "%s", cleanedup);
     }
 
   return g_strdup (cpu->str);
@@ -708,6 +711,39 @@ get_windowing_system (void)
   return C_("Windowing system (Wayland, X11, or Unknown)", "Unknown");
 }
 
+static guint64
+get_ram_size_libgtop (void)
+{
+  glibtop_mem mem;
+
+  glibtop_get_mem (&mem);
+  return mem.total;
+}
+
+static guint64
+get_ram_size_dmi (void)
+{
+  g_autoptr(GUdevClient) client = NULL;
+  g_autoptr(GUdevDevice) dmi = NULL;
+  const gchar * const subsystems[] = {"dmi", NULL };
+  guint64 ram_total = 0;
+  guint64 num_ram;
+  guint i;
+
+  client = g_udev_client_new (subsystems);
+  dmi = g_udev_client_query_by_sysfs_path (client, "/sys/devices/virtual/dmi/id");
+  if (!dmi)
+    return 0;
+  num_ram = g_udev_device_get_property_as_uint64 (dmi, "MEMORY_ARRAY_NUM_DEVICES");
+  for (i = 0; i < num_ram ; i++) {
+    g_autofree char *prop = NULL;
+
+    prop = g_strdup_printf ("MEMORY_DEVICE_%d_SIZE", i);
+    ram_total += g_udev_device_get_property_as_uint64 (dmi, prop);
+  }
+  return ram_total;
+}
+
 static void
 info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
 {
@@ -719,6 +755,7 @@ info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
   g_autofree char *os_type_text = NULL;
   g_autofree char *os_name_text = NULL;
   g_autofree gchar *graphics_hardware_string = NULL;
+  guint64 ram_size;
 
   if (load_budgie_version (&budgie_version))
     cc_list_row_set_secondary_label (self->budgie_version_row, budgie_version);
@@ -727,8 +764,10 @@ info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
 
   get_hardware_model (self);
 
-  glibtop_get_mem (&mem);
-  memory_text = g_format_size_full (mem.total, G_FORMAT_SIZE_IEC_UNITS);
+  ram_size = get_ram_size_dmi ();
+  if (ram_size == 0)
+    ram_size = get_ram_size_libgtop ();
+  memory_text = g_format_size_full (ram_size, G_FORMAT_SIZE_IEC_UNITS);
   cc_list_row_set_secondary_label (self->memory_row, memory_text);
 
   info = glibtop_get_sysinfo ();
@@ -819,6 +858,38 @@ on_device_name_entry_changed (CcInfoOverviewPanel *self)
 }
 
 static void
+update_device_name (CcInfoOverviewPanel *self)
+{
+  const gchar *hostname;
+
+  /* We simply change the CcHostnameEntry text. CcHostnameEntry
+   * listens to changes and updates hostname on change.
+   */
+  hostname = gtk_entry_get_text (self->device_name_entry);
+  gtk_entry_set_text (GTK_ENTRY (self->hostname_entry), hostname);
+}
+
+static void
+on_hostname_editor_dialog_response_cb (GtkDialog           *dialog,
+                                       gint                 response,
+                                       CcInfoOverviewPanel *self)
+{
+  if (response == GTK_RESPONSE_APPLY)
+    {
+      update_device_name (self);
+    }
+
+  gtk_window_close (GTK_WINDOW (dialog));
+}
+
+static void
+on_device_name_entry_activated_cb (CcInfoOverviewPanel *self)
+{
+  update_device_name (self);
+  gtk_window_close (GTK_WINDOW (self->hostname_editor));
+}
+
+static void
 open_hostname_edit_dialog (CcInfoOverviewPanel *self)
 {
   GtkWindow *toplevel;
@@ -883,21 +954,29 @@ use_dark_theme (CcInfoOverviewPanel *panel)
 static void
 setup_os_logo (CcInfoOverviewPanel *panel)
 {
+  gboolean dark;
+  dark = use_dark_theme (panel);
+#ifdef DARK_MODE_DISTRIBUTOR_LOGO
+  if (dark) {
+    gtk_image_set_from_file (panel->os_logo, DARK_MODE_DISTRIBUTOR_LOGO);
+    return;
+  }
+#endif
   g_autofree char *logo_name = g_get_os_info ("LOGO");
   g_autoptr(GPtrArray) array = NULL;
   g_autoptr(GIcon) icon = NULL;
-  gboolean dark;
 
-  dark = use_dark_theme (panel);
   if (logo_name == NULL)
     logo_name = g_strdup ("budgie-logo");
 
   array = g_ptr_array_new_with_free_func (g_free);
-  if (dark)
+
+  if (dark) {
     g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor-dark", logo_name));
-  g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor", logo_name));
-  if (dark)
     g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-dark", logo_name));
+  }
+
+  g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s-flavor", logo_name));
   g_ptr_array_add (array, (gpointer) g_strdup_printf ("%s", logo_name));
 
   icon = g_themed_icon_new_from_names ((char **) array->pdata, array->len);
@@ -934,6 +1013,8 @@ cc_info_overview_panel_class_init (CcInfoOverviewPanelClass *klass)
 
   gtk_widget_class_bind_template_callback (widget_class, cc_info_panel_row_activated_cb);
   gtk_widget_class_bind_template_callback (widget_class, on_device_name_entry_changed);
+  gtk_widget_class_bind_template_callback (widget_class, on_device_name_entry_activated_cb);
+  gtk_widget_class_bind_template_callback (widget_class, on_hostname_editor_dialog_response_cb);
 
   g_type_ensure (CC_TYPE_LIST_ROW);
   g_type_ensure (CC_TYPE_HOSTNAME_ENTRY);

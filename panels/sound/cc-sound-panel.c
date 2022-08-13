@@ -67,7 +67,7 @@ struct _CcSoundPanel
   CcVolumeSlider    *output_volume_slider;
   CcVolumeSlider    *output_volume_slider_budgie;
   GtkWidget         *allow_amplify_switch;
-  GtkWidget         *budgie_output_frame;
+  GtkListBox        *budgie_output_listbox;
   CcStreamListBox   *stream_list_box;
   GtkListBoxRow     *subwoofer_row;
   CcSubwooferSlider *subwoofer_slider;
@@ -89,8 +89,6 @@ enum
 static void
 allow_amplified_changed_cb (CcSoundPanel *self)
 {
-  cc_volume_slider_set_is_amplified (self->output_volume_slider,
-                                     g_settings_get_boolean (self->sound_settings, "allow-volume-overdrive"));
   cc_volume_slider_set_is_amplified (self->output_volume_slider_budgie,
                                      g_settings_get_boolean (self->sound_settings, "allow-volume-overdrive"));
 }
@@ -267,7 +265,7 @@ cc_sound_panel_class_init (CcSoundPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, output_volume_slider);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, output_volume_slider_budgie);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, allow_amplify_switch);
-  gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, budgie_output_frame);
+  gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, budgie_output_listbox);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, stream_list_box);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, subwoofer_row);
   gtk_widget_class_bind_template_child (widget_class, CcSoundPanel, subwoofer_slider);
@@ -302,11 +300,10 @@ cc_sound_panel_init (CcSoundPanel *self)
                            G_CONNECT_SWAPPED);
   allow_amplified_changed_cb (self);
 
-  gtk_widget_set_visible(self->budgie_output_frame, TRUE);
+  gtk_widget_set_visible(self->budgie_output_listbox, TRUE);
   gtk_widget_set_visible(GTK_WIDGET (self->output_volume_slider), FALSE);
   g_settings_bind (self->sound_settings, "allow-volume-overdrive",
                     self->allow_amplify_switch, "active", G_SETTINGS_BIND_DEFAULT);
-
 
   self->mixer_control = gvc_mixer_control_new ("GNOME Settings");
   gvc_mixer_control_open (self->mixer_control);
