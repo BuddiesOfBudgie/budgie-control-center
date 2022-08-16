@@ -40,4 +40,8 @@ for file in `find . -name "*.desktop*.in"`; do
     do_gettext ${file} --add-comments
 done
 
+for file in `find . -name "*.xml.in"`; do
+    do_gettext ${file} --add-comments --its=./gettext/its/gnome-keybindings.its
+done
+
 mv budgie-control-center.po po/budgie-control-center.pot
