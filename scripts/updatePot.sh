@@ -16,7 +16,7 @@ touch budgie-control-center.po
 #for file in `find src -not -path '*/gvc/*' -name "*.c" -or -name "*.vala"`; do
 for file in `find . -name "*.c"`; do
     if [[ `grep -F "_(\"" $file` ]]; then
-        do_gettext $file --keyword=_ --add-comments
+        do_gettext $file --keyword=_ --keyword=N_ --keyword=C_:1c,2 --keyword=NC_:1c,2 --keyword=gettext --keyword=ngettext:1,2 --keyword=g_dngettext:2,3 --add-comments
     fi
 done
 
