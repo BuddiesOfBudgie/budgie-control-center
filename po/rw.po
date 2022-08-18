@@ -1408,6 +1408,7 @@ msgid_plural ""
 "Testing the new settings. If you don't respond in %d seconds the previous "
 "settings will be restored."
 msgstr[0] "i Gishya Amagenamiterere in ISEGONDA i Ibanjirije Amagenamiterere"
+msgstr[1] "i Gishya Amagenamiterere in ISEGONDA i Ibanjirije Amagenamiterere"
 
 #: ../capplets/display/main.c:638
 msgid "Keep Resolution"
@@ -1614,6 +1615,10 @@ msgid_plural ""
 msgstr[0] ""
 "Intego- nyuguti Byahiswemo ni Akadomo Binini Na Gicurasi Ubwoko Kuri "
 "Gukoresha i ni Guhitamo a Ingano Gitoya"
+msgstr[1] ""
+"Intego- nyuguti Byahiswemo ni Akadomo Binini Na Gicurasi Ubwoko Kuri "
+"Gukoresha i ni Guhitamo a Ingano Gitoya"
+
 
 #: ../capplets/font/main.c:505
 #, fuzzy, c-format
@@ -1628,6 +1633,10 @@ msgid_plural ""
 msgstr[0] ""
 "Intego- nyuguti Byahiswemo ni Akadomo Binini Na Gicurasi Ubwoko Kuri "
 "Gukoresha i ni Guhitamo a Gitoya Intego- nyuguti"
+msgstr[1] ""
+"Intego- nyuguti Byahiswemo ni Akadomo Binini Na Gicurasi Ubwoko Kuri "
+"Gukoresha i ni Guhitamo a Gitoya Intego- nyuguti"
+
 
 #: ../capplets/keybindings/eggcellrendererkeys.c:21
 msgid "New accelerator..."
@@ -3598,6 +3607,7 @@ msgstr "/a"
 msgid "%d minute until the next break"
 msgid_plural "%d minutes until the next break"
 msgstr[0] "%dUMUNOTA i Komeza>> itandukanya"
+msgstr[1] "%dUMUNOTA i Komeza>> itandukanya"
 
 #: ../typing-break/drwright.c:499
 #, fuzzy

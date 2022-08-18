@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+
+[o:buddiesofbudgie:p:budgie-control-center:r:budgie-control-centerpot]
+file_filter  = po/<lang>.po
+minimum_perc = 46
+source_file  = po/budgie-control-center.pot
+source_lang = en
+type         = PO
+

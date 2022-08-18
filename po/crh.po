@@ -2204,6 +2204,7 @@ msgstr "Tünevin"
 msgid "%i day ago"
 msgid_plural "%i days ago"
 msgstr[0] "%i kün evvel"
+msgstr[1] "%i kün evvel"
 
 #. Translators: network device speed
 #: ../panels/network/connection-editor/ce-page-details.c:155
@@ -3852,12 +3853,14 @@ msgstr "Bilinmegen vaqıt"
 msgid "%i minute"
 msgid_plural "%i minutes"
 msgstr[0] "%i daqqa"
+msgstr[1] "%i daqqa"
 
 #: ../panels/power/cc-power-panel.c:202
 #, c-format
 msgid "%i hour"
 msgid_plural "%i hours"
 msgstr[0] "%i saat"
+msgstr[1] "%i saat"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -3871,11 +3874,13 @@ msgstr "%i %s %i %s"
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "saat"
+msgstr[1] "saat"
 
 #: ../panels/power/cc-power-panel.c:212
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "daqqa"
+msgstr[1] "daqqa"
 
 # tr
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
@@ -4378,6 +4383,7 @@ msgstr "Mevcut yazıcı bulunmuyor"
 msgid "%u active"
 msgid_plural "%u active"
 msgstr[0] "%u etkin"
+msgstr[1] "%u etkin"
 
 # tr
 #. Translators: Addition of the new printer failed.
@@ -5509,6 +5515,7 @@ msgstr "_Profil:"
 msgid "%u Output"
 msgid_plural "%u Outputs"
 msgstr[0] "%u Çıkış"
+msgstr[1] "%u Çıkış"
 
 # tr
 #. translators:
@@ -5518,6 +5525,7 @@ msgstr[0] "%u Çıkış"
 msgid "%u Input"
 msgid_plural "%u Inputs"
 msgstr[0] "%u Giriş"
+msgstr[1] "%u Giriş"
 
 # tr
 #: ../panels/sound/gvc/gvc-mixer-control.c:2373
@@ -7689,6 +7697,10 @@ msgstr "Tercihler;Ayarlar;"
 #~ "Saylanğan hurufat %d noqta büyükliginde olıp bu bilgisayarnıñ effektiv "
 #~ "qullanıluvını qıyınlaştırabilir.  %d büyükliginden daha kiçik bir ölçü "
 #~ "saylavıñız tevsiye etile."
+#~ msgstr[1] ""
+#~ "Saylanğan hurufat %d noqta büyükliginde olıp bu bilgisayarnıñ effektiv "
+#~ "qullanıluvını qıyınlaştırabilir.  %d büyükliginden daha kiçik bir ölçü "
+#~ "saylavıñız tevsiye etile."
 
 #~ msgid ""
 #~ "The font selected is %d point large, and may make it difficult to "
@@ -7702,6 +7714,11 @@ msgstr "Tercihler;Ayarlar;"
 #~ "Saylanğan hurufat %d noqta büyükliginde olıp bu bilgisayarnıñ tesirli "
 #~ "qullanıluvını qıyınlaştırabilir. Daha kiçik ölçüdeki bir hurufat "
 #~ "saylavıñız tevsiye etile."
+#~ msgstr[1] ""
+#~ "Saylanğan hurufat %d noqta büyükliginde olıp bu bilgisayarnıñ tesirli "
+#~ "qullanıluvını qıyınlaştırabilir. Daha kiçik ölçüdeki bir hurufat "
+#~ "saylavıñız tevsiye etile."
+
 
 # tr
 #~ msgid "Use previous font"
@@ -7979,6 +7996,7 @@ msgstr "Tercihler;Ayarlar;"
 #~ msgid "pixel"
 #~ msgid_plural "pixels"
 #~ msgstr[0] "piksel"
+#~ msgstr[1] "piksel"
 
 #~ msgid ""
 #~ "<b>%s</b>\n"
@@ -8697,6 +8715,7 @@ msgstr "Tercihler;Ayarlar;"
 #~ msgid "%d minute until the next break"
 #~ msgid_plural "%d minutes until the next break"
 #~ msgstr[0] "Sonraki molaya kadar %d dakika kaldı"
+#~ msgstr[1] "Sonraki molaya kadar %d dakika kaldı"
 
 #~ msgid "Take a break now (next in less than one minute)"
 #~ msgstr "Şimdi bir ara ber (soñrakisi bir daqqadan az soñra)"
@@ -9022,6 +9041,9 @@ msgstr "Tercihler;Ayarlar;"
 #~ "Testing the new settings. If you don't respond in %d seconds the previous "
 #~ "settings will be restored."
 #~ msgstr[0] ""
+#~ "Yañı ayarlar sınala. Eger %d saniye içerisinde cevap bermeseñiz evelki "
+#~ "ayarlar keri tiklenecek."
+#~ msgstr[1] ""
 #~ "Yañı ayarlar sınala. Eger %d saniye içerisinde cevap bermeseñiz evelki "
 #~ "ayarlar keri tiklenecek."
 
@@ -9356,14 +9378,17 @@ msgstr "Tercihler;Ayarlar;"
 #~ msgid "%i year"
 #~ msgid_plural "%i years"
 #~ msgstr[0] "%i yıl"
+#~ msgstr[1] "%i yıl"
 
 #~ msgid "%i month"
 #~ msgid_plural "%i months"
 #~ msgstr[0] "%i ay"
+#~ msgstr[1] "%i ay"
 
 #~ msgid "%i week"
 #~ msgid_plural "%i weeks"
 #~ msgstr[0] "%i hafta"
+#~ msgstr[1] "%i hafta"
 
 #~ msgid "Less than 1 week"
 #~ msgstr "1 haftadan az"

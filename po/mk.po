@@ -397,27 +397,6 @@ msgstr "Не можам да го отстранам автоматски дод
 msgid "No profile"
 msgstr "Нема профил"
 
-#: ../panels/color/cc-color-panel.c:1358
-#, c-format
-msgid "%i year"
-msgid_plural "%i years"
-msgstr[0] "%i година"
-msgstr[1] "%i години"
-
-#: ../panels/color/cc-color-panel.c:1369
-#, c-format
-msgid "%i month"
-msgid_plural "%i months"
-msgstr[0] "%i месец"
-msgstr[1] "%i месеци"
-
-#: ../panels/color/cc-color-panel.c:1380
-#, c-format
-msgid "%i week"
-msgid_plural "%i weeks"
-msgstr[0] "%i недела"
-msgstr[1] "%i недели"
-
 #. fallback
 #: ../panels/color/cc-color-panel.c:1387
 #, c-format
@@ -685,12 +664,6 @@ msgstr ":"
 #: ../panels/datetime/datetime.ui.h:4
 msgid "AM/PM"
 msgstr "AM/PM"
-
-#: ../panels/datetime/datetime.ui.h:5
-#| msgid "pixel"
-#| msgid_plural "pixels"
-msgid "April"
-msgstr "Април"
 
 #: ../panels/datetime/datetime.ui.h:6
 msgid "August"
@@ -2228,40 +2201,12 @@ msgstr "Избери сметка"
 msgid "Unknown time"
 msgstr "Непознат тип"
 
-#: ../panels/power/cc-power-panel.c:166
-#, c-format
-#| msgid "minutes"
-msgid "%i minute"
-msgid_plural "%i minutes"
-msgstr[0] "%i минута"
-msgstr[1] "%i минути"
-
-#: ../panels/power/cc-power-panel.c:178
-#, c-format
-msgid "%i hour"
-msgid_plural "%i hours"
-msgstr[0] "%i час"
-msgstr[1] "%i часа"
-
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
 #: ../panels/power/cc-power-panel.c:186
 #, c-format
 msgid "%i %s %i %s"
 msgstr "%i %s %i %s"
-
-#: ../panels/power/cc-power-panel.c:187
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "час"
-msgstr[1] "часа"
-
-#: ../panels/power/cc-power-panel.c:188
-#| msgid "minutes"
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "минута"
-msgstr[1] "минути"
 
 #: ../panels/power/cc-power-panel.c:265
 #| msgctxt "Sound event"
@@ -2488,15 +2433,6 @@ msgstr "Ниво на боја за печатење"
 #: ../panels/printers/cc-printers-panel.c:870
 msgid "Supply Level"
 msgstr "Количина во залиха"
-
-#. Translators: there is n active print jobs on this printer
-#: ../panels/printers/cc-printers-panel.c:885
-#: ../panels/printers/cc-printers-panel.c:1271
-#, c-format
-msgid "%u active"
-msgid_plural "%u active"
-msgstr[0] "%u активно"
-msgstr[1] "%u активни"
 
 #. Translators: There are no printers available (none is configured or CUPS is not running)
 #: ../panels/printers/cc-printers-panel.c:990
@@ -3228,24 +3164,6 @@ msgstr "Непојачано"
 #| msgid "_Mobile:"
 msgid "_Profile:"
 msgstr "_Профил:"
-
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../panels/sound/gvc-mixer-control.c:1094
-#, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u излез"
-msgstr[1] "%u излеза"
-
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../panels/sound/gvc-mixer-control.c:1104
-#, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u влез"
-msgstr[1] "%u влеза"
 
 #: ../panels/sound/gvc-mixer-control.c:1402
 #| msgid "Test Sound"
@@ -4905,40 +4823,6 @@ msgstr "Сите поставувања"
 #~ "Изберете која опција за пристапност да биде вклучена кога ќе се најавите"
 #~ msgid "Font may be too large"
 #~ msgstr "Фонтот можеби е преголем"
-#~ msgid ""
-#~ "The font selected is %d point large, and may make it difficult to "
-#~ "effectively use the computer.  It is recommended that you select a size "
-#~ "smaller than %d."
-#~ msgid_plural ""
-#~ "The font selected is %d points large, and may make it difficult to "
-#~ "effectively use the computer. It is recommended that you select a size "
-#~ "smaller than %d."
-#~ msgstr[0] ""
-#~ "Избраниот фонт е поголем за %d точкa, и може да го отежни користењето на "
-#~ "овој компјутер.  Препорачливо е да изберете големина помала од %d."
-#~ msgstr[1] ""
-#~ "Избраниот фонт е поголем за %d точки, и може да го отежни користењето на "
-#~ "овој компјутер.  Препорачливо е да изберете големина помала од %d."
-#~ "The font selected is %d point large, and may make it difficult to "
-#~ "effectively use the computer.  It is recommended that you select a "
-#~ "smaller sized font."
-#~ msgid ""
-#~ "The font selected is %d point large, and may make it difficult to "
-#~ "effectively use the computer.  It is recommended that you select a "
-#~ "smaller sized font."
-#~ msgid_plural ""
-#~ "The font selected is %d points large, and may make it difficult to "
-#~ "effectively use the computer. It is recommended that you select a smaller "
-#~ "sized font."
-#~ msgstr[0] ""
-#~ "Избраниот фонт е поголем за %d точкa, и може да го отежни користењето на "
-#~ "овој компјутер.  Препорачливо е да изберете помала големина."
-#~ msgstr[1] ""
-#~ "Избраниот фонт е поголем за %d точки, и може да го отежни користењето на "
-#~ "овој компјутер.  Препорачливо е да изберете помала големина."
-#~ msgstr[2] ""
-#~ "Избраниот фонт е поголем за %d точки, и може да го отежни користењето на "
-#~ "овој компјутер.  Препорачливо е да изберете помала големина."
 #~ msgid "Use previous font"
 #~ msgstr "Користи го претходниот фонт"
 #~ msgid "Use selected font"
@@ -5919,12 +5803,6 @@ msgstr "Сите поставувања"
 #~ msgstr "/_Преференци"
 #~ msgid "/_About"
 #~ msgstr "/_За"
-#~ msgid "/_Take a Break"
-#~ msgstr "/_Направи пауза"
-#~ msgid "%d minute until the next break"
-#~ msgid_plural "%d minutes until the next break"
-#~ msgstr[0] "%d минута до следната пауза"
-#~ msgstr[1] "%d минута до следната пауза"
 #~ msgid "Less than one minute until the next break"
 #~ msgstr "Помалку од една минута до следната пауза"
 #~ msgid ""
