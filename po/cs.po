@@ -1264,6 +1264,7 @@ msgid_plural "%d hours"
 msgstr[0] "%d hodiny"
 msgstr[1] "%d hodin"
 msgstr[2] "%d hodin"
+msgstr[3] "%d hodin"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
 #: panels/common/cc-util.c:166 panels/power/cc-power-panel.c:973
@@ -1273,6 +1274,7 @@ msgid_plural "%d minutes"
 msgstr[0] "%d minuty"
 msgstr[1] "%d minut"
 msgstr[2] "%d minut"
+msgstr[3] "%d minut"
 
 #: panels/common/cc-util.c:167
 #, c-format
@@ -1281,6 +1283,7 @@ msgid_plural "%d seconds"
 msgstr[0] "%d sekundy"
 msgstr[1] "%d sekund"
 msgstr[2] "%d sekund"
+msgstr[3] "%d sekund"
 
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
@@ -2288,6 +2291,7 @@ msgid_plural "%d modified"
 msgstr[0] "%d změněná"
 msgstr[1] "%d změněné"
 msgstr[2] "%d změněných"
+msgstr[3] "%d změněných"
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:428
 msgid "Reset All Shortcuts?"
@@ -3140,6 +3144,7 @@ msgid_plural "%i days ago"
 msgstr[0] "před %i dnem"
 msgstr[1] "před %i dny"
 msgstr[2] "před %i dny"
+msgstr[3] "před %i dny"
 
 #: panels/network/connection-editor/ce-page-details.c:293
 #, c-format
@@ -4596,6 +4601,7 @@ msgid_plural "%i minutes"
 msgstr[0] "%i minuta"
 msgstr[1] "%i minuty"
 msgstr[2] "%i minut"
+msgstr[3] "%i minut"
 
 #: panels/power/cc-battery-row.c:92
 #, c-format
@@ -4604,6 +4610,7 @@ msgid_plural "%i hours"
 msgstr[0] "%i hodina"
 msgstr[1] "%i hodiny"
 msgstr[2] "%i hodin"
+msgstr[3] "%i hodin"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -4618,6 +4625,7 @@ msgid_plural "hours"
 msgstr[0] "hodina"
 msgstr[1] "hodiny"
 msgstr[2] "hodin"
+msgstr[3] "hodin"
 
 #: panels/power/cc-battery-row.c:100
 msgid "minute"
@@ -4625,6 +4633,7 @@ msgid_plural "minutes"
 msgstr[0] "minuta"
 msgstr[1] "minuty"
 msgstr[2] "minut"
+msgstr[3] "minut"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -5260,6 +5269,7 @@ msgid_plural "%u Jobs Require Authentication"
 msgstr[0] "%u úloha vyžaduje ověření"
 msgstr[1] "%u úlohy vyžadují ověření"
 msgstr[2] "%u úloh vyžaduje ověření"
+msgstr[3] "%u úloh vyžaduje ověření"
 
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:401
@@ -5507,6 +5517,7 @@ msgid_plural "%u Jobs"
 msgstr[0] "%u úloha"
 msgstr[1] "%u úlohy"
 msgstr[2] "%u úloh"
+msgstr[3] "%u úloh"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -6384,6 +6395,7 @@ msgid_plural "Depends on %u other devices"
 msgstr[0] "Závisí na dalším zařízení"
 msgstr[1] "Závisí na dalších %u zařízeních"
 msgstr[2] "Závisí na dalších %u zařízeních"
+msgstr[3] "Závisí na dalších %u zařízeních"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
@@ -6741,6 +6753,7 @@ msgid_plural "%d pixels"
 msgstr[0] "%d pixel"
 msgstr[1] "%d pixely"
 msgstr[2] "%d pixelů"
+msgstr[3] "%d pixelů"
 
 #: panels/universal-access/cc-ua-panel.ui:55
 msgid "_Always Show Accessibility Menu"
@@ -8506,6 +8519,7 @@ msgid_plural "Wrong password entered. You have %1$u tries left"
 msgstr[0] "Bylo zadáno nesprávné heslo. Zbývá vám %1$u pokus."
 msgstr[1] "Bylo zadáno nesprávné heslo. Zbývají vám %1$u pokusy."
 msgstr[2] "Bylo zadáno nesprávné heslo. Zbývá vám %1$u pokusů."
+msgstr[3] "Bylo zadáno nesprávné heslo. Zbývá vám %1$u pokusů."
 
 #: panels/wwan/cc-wwan-device-page.c:174
 #, c-format
@@ -8514,6 +8528,7 @@ msgid_plural "You have %u tries left"
 msgstr[0] "Zbývá vám %u pokus"
 msgstr[1] "Zbývají vám %u pokusy"
 msgstr[2] "Zbývá vám %u pokusů"
+msgstr[3] "Zbývá vám %u pokusů"
 
 #: panels/wwan/cc-wwan-device-page.c:179
 msgid "Wrong password entered."
@@ -8909,6 +8924,7 @@ msgid_plural "%u Outputs"
 msgstr[0] "%u výstup"
 msgstr[1] "%u výstupy"
 msgstr[2] "%u výstupů"
+msgstr[3] "%u výstupů"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -8919,6 +8935,7 @@ msgid_plural "%u Inputs"
 msgstr[0] "%u vstup"
 msgstr[1] "%u vstupy"
 msgstr[2] "%u vstupů"
+msgstr[3] "%u vstupů"
 
 #: subprojects/gvc/gvc-mixer-control.c:2867
 msgid "System Sounds"

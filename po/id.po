@@ -1248,28 +1248,6 @@ msgstr "%e %b"
 msgid "%b %e, %Y"
 msgstr "%e %b %Y"
 
-#: panels/common/cc-util.c:165
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d jam"
-msgstr[1] "%d jam"
-
-#. Translators: Option for "Blank Screen" in "Power" panel
-#: panels/common/cc-util.c:166 panels/power/cc-power-panel.c:973
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d menit"
-msgstr[1] "%d menit"
-
-#: panels/common/cc-util.c:167
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d detik"
-msgstr[1] "%d detik"
-
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
 #, c-format
@@ -2264,13 +2242,6 @@ msgstr "Tombol Pintas"
 msgid "View and Customize Shortcuts"
 msgstr "Tampilkan dan Ubah Pintasan"
 
-#: panels/keyboard/cc-keyboard-shortcut-dialog.c:283
-#, c-format
-msgid "%d modified"
-msgid_plural "%d modified"
-msgstr[0] "%d diubah"
-msgstr[1] "%d diubah"
-
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:428
 msgid "Reset All Shortcuts?"
 msgstr "Atur Ulang Semua Pintasan?"
@@ -3107,13 +3078,6 @@ msgstr "Nihil"
 msgid "Never"
 msgstr "Tak pernah"
 
-#: panels/network/connection-editor/ce-page-details.c:166
-#: panels/network/net-device-ethernet.c:108
-#, c-format
-msgid "%i day ago"
-msgid_plural "%i days ago"
-msgstr[0] "%i hari yang lalu"
-msgstr[1] "%i hari yang lalu"
 
 #: panels/network/connection-editor/ce-page-details.c:293
 #, c-format
@@ -4554,19 +4518,6 @@ msgstr "Hapus Akun"
 msgid "Unknown time"
 msgstr "Waktu tak diketahui"
 
-#: panels/power/cc-battery-row.c:83
-#, c-format
-msgid "%i minute"
-msgid_plural "%i minutes"
-msgstr[0] "%i menit"
-msgstr[1] "%i menit"
-
-#: panels/power/cc-battery-row.c:92
-#, c-format
-msgid "%i hour"
-msgid_plural "%i hours"
-msgstr[0] "%i jam"
-msgstr[1] "%i jam"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -4574,18 +4525,6 @@ msgstr[1] "%i jam"
 #, c-format
 msgid "%i %s %i %s"
 msgstr "%i %s %i %s"
-
-#: panels/power/cc-battery-row.c:99
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "jam"
-msgstr[1] "jam"
-
-#: panels/power/cc-battery-row.c:100
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "menit"
-msgstr[1] "menit"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -5213,14 +5152,6 @@ msgctxt "print job"
 msgid "Completed"
 msgstr "Selesai"
 
-#. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
-#: panels/printers/pp-jobs-dialog.c:249
-#, c-format
-msgid "%u Job Requires Authentication"
-msgid_plural "%u Jobs Require Authentication"
-msgstr[0] "%u Tugas Memerlukan Autentikasi"
-msgstr[1] "%u Tugas Memerlukan Autentikasi"
-
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:401
 #, c-format
@@ -5458,14 +5389,6 @@ msgstr "Pabrikan"
 #: panels/printers/pp-printer-entry.c:523 panels/printers/printer-entry.ui:166
 msgid "No Active Jobs"
 msgstr "Tidak Ada Tugas Aktif"
-
-#. Translators: This is the label of the button that opens the Jobs Dialog.
-#: panels/printers/pp-printer-entry.c:528
-#, c-format
-msgid "%u Job"
-msgid_plural "%u Jobs"
-msgstr[0] "%u Tugas"
-msgstr[1] "%u Tugas"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -6330,13 +6253,6 @@ msgstr "Gagal mengotorisasi perangkat: "
 msgid "Failed to forget device: "
 msgstr "Gagal melupakan perangkat: "
 
-#: panels/thunderbolt/cc-bolt-device-dialog.c:491
-#, c-format
-msgid "Depends on %u other device"
-msgid_plural "Depends on %u other devices"
-msgstr[0] "Tergantung pada%u perangkat lain"
-msgstr[1] "Tergantung pada%u perangkat lain"
-
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
 msgstr "Nama:"
@@ -6683,13 +6599,6 @@ msgstr "Lebih Besar"
 msgctxt "cursor size"
 msgid "Largest"
 msgstr "Terbesar"
-
-#: panels/universal-access/cc-ua-panel.c:367
-#, c-format
-msgid "%d pixel"
-msgid_plural "%d pixels"
-msgstr[0] "%d piksel"
-msgstr[1] "%d piksel"
 
 #: panels/universal-access/cc-ua-panel.ui:55
 msgid "_Always Show Accessibility Menu"
@@ -8442,20 +8351,6 @@ msgstr "Harap berikan kode PUK untuk SIM %d"
 msgid "Enter PUK to unlock your SIM card"
 msgstr "Masukkan PUK untuk membuka kunci kartu SIM Anda"
 
-#: panels/wwan/cc-wwan-device-page.c:171
-#, c-format
-msgid "Wrong password entered. You have %1$u try left"
-msgid_plural "Wrong password entered. You have %1$u tries left"
-msgstr[0] "Kata sandi yang dimasukkan salah. Anda punya sisa %1$u percobaan"
-msgstr[1] "Kata sandi yang dimasukkan salah. Anda punya sisa %1$u percobaan"
-
-#: panels/wwan/cc-wwan-device-page.c:174
-#, c-format
-msgid "You have %u try left"
-msgid_plural "You have %u tries left"
-msgstr[0] "Anda punya sisa %u percobaan"
-msgstr[1] "Anda punya sisa %u percobaan"
-
 #: panels/wwan/cc-wwan-device-page.c:179
 msgid "Wrong password entered."
 msgstr "Kata sandi yang dimasukkan salah."
@@ -8843,24 +8738,6 @@ msgid ""
 msgstr ""
 "Apakah Pengaturan harus menampilkan peringatan saat menjalankan hasil bangun "
 "pengembangan (development build)."
-
-#. translators:
-#. * The number of sound outputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1907
-#, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u Keluaran"
-msgstr[1] "%u Keluaran"
-
-#. translators:
-#. * The number of sound inputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1917
-#, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u Masukan"
-msgstr[1] "%u Masukan"
 
 #: subprojects/gvc/gvc-mixer-control.c:2867
 msgid "System Sounds"

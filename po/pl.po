@@ -1265,6 +1265,8 @@ msgid_plural "%d hours"
 msgstr[0] "%d godzina"
 msgstr[1] "%d godziny"
 msgstr[2] "%d godzin"
+msgstr[3] "%d godzin"
+
 
 #. Translators: Option for "Blank Screen" in "Power" panel
 #: panels/common/cc-util.c:166 panels/power/cc-power-panel.c:973
@@ -1274,6 +1276,8 @@ msgid_plural "%d minutes"
 msgstr[0] "%d minuta"
 msgstr[1] "%d minuty"
 msgstr[2] "%d minut"
+msgstr[3] "%d minut"
+
 
 #: panels/common/cc-util.c:167
 #, c-format
@@ -1282,6 +1286,8 @@ msgid_plural "%d seconds"
 msgstr[0] "%d sekunda"
 msgstr[1] "%d sekundy"
 msgstr[2] "%d sekund"
+msgstr[3] "%d sekund"
+
 
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
@@ -2290,6 +2296,8 @@ msgid_plural "%d modified"
 msgstr[0] "%d zmodyfikowany"
 msgstr[1] "%d zmodyfikowane"
 msgstr[2] "%d zmodyfikowanych"
+msgstr[3] "%d zmodyfikowanych"
+
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:428
 msgid "Reset All Shortcuts?"
@@ -3139,6 +3147,7 @@ msgid_plural "%i days ago"
 msgstr[0] "%i dzień temu"
 msgstr[1] "%i dni temu"
 msgstr[2] "%i dni temu"
+msgstr[3] "%i dni temu"
 
 #: panels/network/connection-editor/ce-page-details.c:293
 #, c-format
@@ -4598,6 +4607,8 @@ msgid_plural "%i minutes"
 msgstr[0] "%i minuta"
 msgstr[1] "%i minuty"
 msgstr[2] "%i minut"
+msgstr[3] "%i minut"
+
 
 #: panels/power/cc-battery-row.c:92
 #, c-format
@@ -4606,6 +4617,7 @@ msgid_plural "%i hours"
 msgstr[0] "%i godzina"
 msgstr[1] "%i godziny"
 msgstr[2] "%i godzin"
+msgstr[3] "%i godzin"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -4620,6 +4632,7 @@ msgid_plural "hours"
 msgstr[0] "godzina"
 msgstr[1] "godziny"
 msgstr[2] "godzin"
+msgstr[3] "godzin"
 
 #: panels/power/cc-battery-row.c:100
 msgid "minute"
@@ -4627,6 +4640,7 @@ msgid_plural "minutes"
 msgstr[0] "minuta"
 msgstr[1] "minuty"
 msgstr[2] "minut"
+msgstr[3] "minut"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -5270,6 +5284,7 @@ msgid_plural "%u Jobs Require Authentication"
 msgstr[0] "%u zadanie wymaga uwierzytelnienia"
 msgstr[1] "%u zadania wymagają uwierzytelnienia"
 msgstr[2] "%u zadań wymaga uwierzytelnienia"
+msgstr[3] "%u zadań wymaga uwierzytelnienia"
 
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:401
@@ -5519,6 +5534,7 @@ msgid_plural "%u Jobs"
 msgstr[0] "%u zadanie"
 msgstr[1] "%u zadania"
 msgstr[2] "%u zadań"
+msgstr[3] "%u zadań"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -6395,6 +6411,7 @@ msgid_plural "Depends on %u other devices"
 msgstr[0] "Zależy od %u innego urządzenia"
 msgstr[1] "Zależy od %u innych urządzeń"
 msgstr[2] "Zależy od %u innych urządzeń"
+msgstr[3] "Zależy od %u innych urządzeń"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
@@ -6752,6 +6769,7 @@ msgid_plural "%d pixels"
 msgstr[0] "%d piksel"
 msgstr[1] "%d piksele"
 msgstr[2] "%d pikseli"
+msgstr[3] "%d pikseli"
 
 #: panels/universal-access/cc-ua-panel.ui:55
 msgid "_Always Show Accessibility Menu"
@@ -8518,6 +8536,7 @@ msgid_plural "Wrong password entered. You have %1$u tries left"
 msgstr[0] "Podano błędne hasło. Pozostała %1$u próba"
 msgstr[1] "Podano błędne hasło. Pozostały %1$u próby"
 msgstr[2] "Podano błędne hasło. Pozostało %1$u prób"
+msgstr[3] "Podano błędne hasło. Pozostało %1$u prób"
 
 #: panels/wwan/cc-wwan-device-page.c:174
 #, c-format
@@ -8526,6 +8545,7 @@ msgid_plural "You have %u tries left"
 msgstr[0] "Pozostała %u próba"
 msgstr[1] "Pozostały %u próby"
 msgstr[2] "Pozostało %u prób"
+msgstr[3] "Pozostało %u prób"
 
 #: panels/wwan/cc-wwan-device-page.c:179
 msgid "Wrong password entered."
@@ -8926,6 +8946,7 @@ msgid_plural "%u Outputs"
 msgstr[0] "%u wyjście"
 msgstr[1] "%u wyjścia"
 msgstr[2] "%u wyjść"
+msgstr[3] "%u wyjść"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -8936,6 +8957,7 @@ msgid_plural "%u Inputs"
 msgstr[0] "%u wejście"
 msgstr[1] "%u wejścia"
 msgstr[2] "%u wejść"
+msgstr[3] "%u wejść"
 
 #: subprojects/gvc/gvc-mixer-control.c:2867
 msgid "System Sounds"

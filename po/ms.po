@@ -1442,28 +1442,6 @@ msgstr "%e %b"
 msgid "%b %e, %Y"
 msgstr "%e %b, %Y"
 
-# msgstr[1] "minit"
-#: panels/common/cc-util.c:165
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d jam"
-msgstr[1] "%d jam"
-
-#: panels/common/cc-util.c:166
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d minit"
-msgstr[1] "%d minit"
-
-#: panels/common/cc-util.c:167
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d saat"
-msgstr[1] "%d saat"
-
 # msgstr[1] "%i jam"
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:172
@@ -3048,14 +3026,6 @@ msgstr "Tiada"
 msgid "Never"
 msgstr "Tidak sesekali"
 
-#: panels/network/connection-editor/ce-page-details.c:147
-#: panels/network/net-device-ethernet.c:108
-#, c-format
-msgid "%i day ago"
-msgid_plural "%i days ago"
-msgstr[0] "%i hari yang lalu"
-msgstr[1] "%i hari yang lalu"
-
 #: panels/network/connection-editor/ce-page-details.c:272
 #, c-format
 msgid "%d Mb/s (%1.1f GHz)"
@@ -4484,20 +4454,6 @@ msgstr "Buang Akaun"
 msgid "Unknown time"
 msgstr "Masa tidak diketahui"
 
-#: panels/power/cc-power-panel.c:340
-#, c-format
-msgid "%i minute"
-msgid_plural "%i minutes"
-msgstr[0] "%i minit"
-msgstr[1] "%i minit"
-
-# msgstr[1] "minit"
-#: panels/power/cc-power-panel.c:352
-#, c-format
-msgid "%i hour"
-msgid_plural "%i hours"
-msgstr[0] "%i jam"
-msgstr[1] "%i jam"
 
 # msgstr[1] "%i jam"
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
@@ -4507,18 +4463,6 @@ msgstr[1] "%i jam"
 msgid "%i %s %i %s"
 msgstr "%i %s %i %s"
 
-#: panels/power/cc-power-panel.c:361
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "jam"
-msgstr[1] "jam"
-
-# msgstr[1] "jam"
-#: panels/power/cc-power-panel.c:362
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "minit"
-msgstr[1] "minit"
 
 # msgstr[1] "minit"
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
@@ -5117,13 +5061,6 @@ msgctxt "print job"
 msgid "Completed"
 msgstr "Selesai"
 
-#. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
-#: panels/printers/pp-jobs-dialog.c:390
-#, c-format
-msgid "%u Job Requires Authentication"
-msgid_plural "%u Jobs Require Authentication"
-msgstr[0] "%u Kerja Memerlukan Pengesahihan"
-msgstr[1] "%u Kerja Memerlukan Pengesahihan"
 
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:613
@@ -5337,13 +5274,6 @@ msgstr "Pengeluar"
 msgid "No Active Jobs"
 msgstr "Tiada Kerja-Kerja Aktif"
 
-#. Translators: This is the label of the button that opens the Jobs Dialog.
-#: panels/printers/pp-printer-entry.c:602
-#, c-format
-msgid "%u Job"
-msgid_plural "%u Jobs"
-msgstr[0] "%u Kerja"
-msgstr[1] "%u Kerja"
 
 #. Translators: The printer is low on toner
 #: panels/printers/pp-printer-entry.c:757
@@ -6278,12 +6208,6 @@ msgstr "Gagal izinkan peranti: "
 msgid "Failed to forget device: "
 msgstr "Gagal melupakan peranti: "
 
-#: panels/thunderbolt/cc-bolt-device-dialog.c:491
-#, c-format
-msgid "Depends on %u other device"
-msgid_plural "Depends on %u other devices"
-msgstr[0] "Bergantung pada %u peranti lain"
-msgstr[1] "Bergantung pada %u peranti lain"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
@@ -6408,12 +6332,6 @@ msgctxt "cursor size"
 msgid "Largest"
 msgstr "Terbesar"
 
-#: panels/universal-access/cc-ua-panel.c:516
-#, c-format
-msgid "%d pixel"
-msgid_plural "%d pixels"
-msgstr[0] "%d piksel"
-msgstr[1] "%d piksel"
 
 #: panels/universal-access/cc-ua-panel.ui:78
 msgid "_Always Show Universal Access Menu"
@@ -8246,24 +8164,7 @@ msgstr ""
 "Sama ada Tetapan patut menunjukkan satu amaran ketika menjalankan binaan "
 "pembangunan."
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1883
-#, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u Output"
-msgstr[1] "%u Output"
 
-# msgstr[1] "%u Output"
-#. translators:
-#. * The number of sound inputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1893
-#, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u Input"
-msgstr[1] "%u Input"
 
 # msgstr[1] ""
 #: subprojects/gvc/gvc-mixer-control.c:2750
@@ -8663,11 +8564,6 @@ msgstr "Bunyi Sistem"
 #, fuzzy
 #~ msgid "No printers available"
 #~ msgstr "Tiada Latar Belakang Desktop"
-
-#, fuzzy
-#~ msgid "%u active"
-#~ msgid_plural "%u active"
-#~ msgstr[0] "Aktif"
 
 #, fuzzy
 #~ msgid "Pause Printing"
@@ -10060,12 +9956,6 @@ msgstr "Bunyi Sistem"
 
 #~ msgid "_Take a Break"
 #~ msgstr "_Rehat Sebentar"
-
-#, fuzzy
-#~ msgid "%d minute until the next break"
-#~ msgid_plural "%d minutes until the next break"
-#~ msgstr[0] "%d minit sampai rehat seterusnya"
-#~ msgstr[1] "%d minit sampai rehat seterusnya"
 
 #~ msgid "Less than one minute until the next break"
 #~ msgstr "Kurang drpd satu minit sehingga hentian berikutnya"

@@ -1254,27 +1254,6 @@ msgstr "%d %b"
 msgid "%b %e, %Y"
 msgstr "%e %b %Y"
 
-#: panels/common/cc-util.c:165
-#, c-format
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] "%d ora"
-msgstr[1] "%d ore"
-
-#: panels/common/cc-util.c:166
-#, c-format
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] "%d minuto"
-msgstr[1] "%d minuti"
-
-#: panels/common/cc-util.c:167
-#, c-format
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] "%d secondo"
-msgstr[1] "%d secondi"
-
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
 #, c-format
@@ -3021,14 +3000,6 @@ msgstr "Nessuna"
 msgid "Never"
 msgstr "Mai"
 
-#: panels/network/connection-editor/ce-page-details.c:164
-#: panels/network/net-device-ethernet.c:107
-#, c-format
-msgid "%i day ago"
-msgid_plural "%i days ago"
-msgstr[0] "%i giorno fa"
-msgstr[1] "%i giorni fa"
-
 #: panels/network/connection-editor/ce-page-details.c:291
 #, c-format
 msgid "%d Mb/s (%1.1f GHz)"
@@ -4471,19 +4442,6 @@ msgstr "Rimuovi account"
 msgid "Unknown time"
 msgstr "Tempo sconosciuto"
 
-#: panels/power/cc-battery-row.c:83
-#, c-format
-msgid "%i minute"
-msgid_plural "%i minutes"
-msgstr[0] "%i minuto"
-msgstr[1] "%i minuti"
-
-#: panels/power/cc-battery-row.c:92
-#, c-format
-msgid "%i hour"
-msgid_plural "%i hours"
-msgstr[0] "%i ora"
-msgstr[1] "%i ore"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -4492,17 +4450,6 @@ msgstr[1] "%i ore"
 msgid "%i %s %i %s"
 msgstr "%i %s e %i %s"
 
-#: panels/power/cc-battery-row.c:99
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "ora"
-msgstr[1] "ore"
-
-#: panels/power/cc-battery-row.c:100
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "minuto"
-msgstr[1] "minuti"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -5089,14 +5036,6 @@ msgctxt "print job"
 msgid "Completed"
 msgstr "Completato"
 
-#. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
-#: panels/printers/pp-jobs-dialog.c:249
-#, c-format
-msgid "%u Job Requires Authentication"
-msgid_plural "%u Jobs Require Authentication"
-msgstr[0] "%u lavoro richiede autenticazione"
-msgstr[1] "%u lavori richiedono autenticazione"
-
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:401
 #, c-format
@@ -5334,14 +5273,6 @@ msgstr "Produttore"
 #: panels/printers/pp-printer-entry.c:523 panels/printers/printer-entry.ui:166
 msgid "No Active Jobs"
 msgstr "Nessun lavoro attivo"
-
-#. Translators: This is the label of the button that opens the Jobs Dialog.
-#: panels/printers/pp-printer-entry.c:528
-#, c-format
-msgid "%u Job"
-msgid_plural "%u Jobs"
-msgstr[0] "%u lavoro"
-msgstr[1] "%u lavori"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -6215,13 +6146,6 @@ msgstr "Autorizzazione dispositivo non riuscita: "
 msgid "Failed to forget device: "
 msgstr "Errore nel dimenticare il dispositivo: "
 
-#: panels/thunderbolt/cc-bolt-device-dialog.c:491
-#, c-format
-msgid "Depends on %u other device"
-msgid_plural "Depends on %u other devices"
-msgstr[0] "Dipende da %u altro dispositivo"
-msgstr[1] "Dipende da %u altri dispositivi"
-
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
 msgstr "Nome:"
@@ -6573,13 +6497,6 @@ msgstr "Più grande"
 msgctxt "cursor size"
 msgid "Largest"
 msgstr "Il più grande"
-
-#: panels/universal-access/cc-ua-panel.c:364
-#, c-format
-msgid "%d pixel"
-msgid_plural "%d pixels"
-msgstr[0] "%d pixel"
-msgstr[1] "%d pixel"
 
 #: panels/universal-access/cc-ua-panel.ui:55
 msgid "_Always Show Accessibility Menu"
@@ -8298,24 +8215,6 @@ msgid ""
 msgstr ""
 "Indica se il programma debba mostrare un avviso quando viene eseguita una "
 "versione di sviluppo."
-
-#. translators:
-#. * The number of sound outputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1907
-#, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u uscita"
-msgstr[1] "%u uscite"
-
-#. translators:
-#. * The number of sound inputs on a particular device
-#: subprojects/gvc/gvc-mixer-control.c:1917
-#, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u ingresso"
-msgstr[1] "%u ingressi"
 
 #: subprojects/gvc/gvc-mixer-control.c:2867
 msgid "System Sounds"

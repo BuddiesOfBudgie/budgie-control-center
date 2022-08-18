@@ -1266,6 +1266,7 @@ msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d hora"
 msgstr[1] "%d horas"
+msgstr[2] "%d horas"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
 #: panels/common/cc-util.c:166 panels/power/cc-power-panel.c:973
@@ -1274,6 +1275,7 @@ msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d minuto"
 msgstr[1] "%d minutos"
+msgstr[2] "%d minutos"
 
 #: panels/common/cc-util.c:167
 #, c-format
@@ -1281,6 +1283,7 @@ msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d segundo"
 msgstr[1] "%d segundos"
+msgstr[2] "%d segundos"
 
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
@@ -2286,6 +2289,7 @@ msgid "%d modified"
 msgid_plural "%d modified"
 msgstr[0] "%d modificado"
 msgstr[1] "%d modificados"
+msgstr[2] "%d modificados"
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:428
 msgid "Reset All Shortcuts?"
@@ -3133,6 +3137,7 @@ msgid "%i day ago"
 msgid_plural "%i days ago"
 msgstr[0] "hace %i día"
 msgstr[1] "hace %i días"
+msgstr[2] "hace %i días"
 
 #: panels/network/connection-editor/ce-page-details.c:293
 #, c-format
@@ -4585,6 +4590,7 @@ msgid "%i minute"
 msgid_plural "%i minutes"
 msgstr[0] "%i minuto"
 msgstr[1] "%i minutos"
+msgstr[2] "%i minutos"
 
 #: panels/power/cc-battery-row.c:92
 #, c-format
@@ -4592,6 +4598,7 @@ msgid "%i hour"
 msgid_plural "%i hours"
 msgstr[0] "%i hora"
 msgstr[1] "%i horas"
+msgstr[2] "%i horas"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -4605,12 +4612,14 @@ msgid "hour"
 msgid_plural "hours"
 msgstr[0] "hora"
 msgstr[1] "horas"
+msgstr[2] "horas"
 
 #: panels/power/cc-battery-row.c:100
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "minuto"
 msgstr[1] "minutos"
+msgstr[2] "minutos"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -5247,6 +5256,7 @@ msgid "%u Job Requires Authentication"
 msgid_plural "%u Jobs Require Authentication"
 msgstr[0] "%u trabajo requiere autenticación"
 msgstr[1] "%u trabajos requieren autenticación"
+msgstr[2] "%u trabajos requieren autenticación"
 
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:401
@@ -5494,6 +5504,7 @@ msgid "%u Job"
 msgid_plural "%u Jobs"
 msgstr[0] "%u trabajo"
 msgstr[1] "%u trabajos"
+msgstr[2] "%u trabajos"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -6370,6 +6381,7 @@ msgid "Depends on %u other device"
 msgid_plural "Depends on %u other devices"
 msgstr[0] "Depende de %u otro dispositivo"
 msgstr[1] "Depende de %u otros dispositivos"
+msgstr[2] "Depende de %u otros dispositivos"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
@@ -6727,6 +6739,7 @@ msgid "%d pixel"
 msgid_plural "%d pixels"
 msgstr[0] "%d píxel"
 msgstr[1] "%d píxeles"
+msgstr[2] "%d píxeles"
 
 #: panels/universal-access/cc-ua-panel.ui:55
 msgid "_Always Show Accessibility Menu"
@@ -8489,6 +8502,7 @@ msgid "Wrong password entered. You have %1$u try left"
 msgid_plural "Wrong password entered. You have %1$u tries left"
 msgstr[0] "Contraseña introducida incorrecta. Le queda %1$u intento"
 msgstr[1] "Contraseña introducida incorrecta. Le quedan %1$u intentos"
+msgstr[2] "Contraseña introducida incorrecta. Le quedan %1$u intentos"
 
 #: panels/wwan/cc-wwan-device-page.c:174
 #, c-format
@@ -8496,6 +8510,7 @@ msgid "You have %u try left"
 msgid_plural "You have %u tries left"
 msgstr[0] "Le queda %u intento"
 msgstr[1] "Le quedan %u intentos"
+msgstr[2] "Le quedan %u intentos"
 
 #: panels/wwan/cc-wwan-device-page.c:179
 msgid "Wrong password entered."
@@ -8893,6 +8908,7 @@ msgid "%u Output"
 msgid_plural "%u Outputs"
 msgstr[0] "%u salida"
 msgstr[1] "%u salidas"
+msgstr[2] "%u salidas"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -8902,6 +8918,7 @@ msgid "%u Input"
 msgid_plural "%u Inputs"
 msgstr[0] "%u entrada"
 msgstr[1] "%u entradas"
+msgstr[2] "%u entradas"
 
 #: subprojects/gvc/gvc-mixer-control.c:2867
 msgid "System Sounds"
@@ -10404,6 +10421,7 @@ msgstr "Sonidos del sistema"
 #~ msgid_plural "%u active"
 #~ msgstr[0] "%u activo"
 #~ msgstr[1] "%u activos"
+#~ msgstr[2] "%u activos"
 
 #~| msgid "Add"
 #~ msgctxt "button"
@@ -11645,16 +11663,19 @@ msgstr "Sonidos del sistema"
 #~ msgid_plural "%i years"
 #~ msgstr[0] "%i año"
 #~ msgstr[1] "%i años"
+#~ msgstr[2] "%i años"
 
 #~ msgid "%i month"
 #~ msgid_plural "%i months"
 #~ msgstr[0] "%i mes"
 #~ msgstr[1] "%i meses"
+#~ msgstr[2] "%i meses"
 
 #~ msgid "%i week"
 #~ msgid_plural "%i weeks"
 #~ msgstr[0] "%i semana"
 #~ msgstr[1] "%i semanas"
+#~ msgstr[2] "%i semanas"
 
 #~ msgid "Less than 1 week"
 #~ msgstr "Menos de una semana"
@@ -13323,6 +13344,7 @@ msgstr "Sonidos del sistema"
 #~ msgid_plural "%d minutes until the next break"
 #~ msgstr[0] "%d minuto hasta su siguiente descanso"
 #~ msgstr[1] "%d minutos hasta su siguiente descanso"
+#~ msgstr[2] "%d minutos hasta su siguiente descanso"
 
 #~ msgid "Take a break now (next in less than one minute)"
 #~ msgstr "Descansar ahora (el siguiente en menos de un minuto)"
@@ -13752,6 +13774,10 @@ msgstr "Sonidos del sistema"
 #~ msgstr[1] ""
 #~ "La tipografía seleccionada es %d puntos de grande, y puede hacer difícil "
 #~ "usar el equipo. Se recomienda que seleccione un tamaño menor de %d."
+#~ msgstr[2] ""
+#~ "La tipografía seleccionada es %d puntos de grande, y puede hacer difícil "
+#~ "usar el equipo. Se recomienda que seleccione un tamaño menor de %d."
+
 
 #~ msgid ""
 #~ "The font selected is %d point large, and may make it difficult to "
@@ -13769,6 +13795,11 @@ msgstr "Sonidos del sistema"
 #~ "La tipografía seleccionada es %d puntos de grande, y puede hacer difícil "
 #~ "usar el equipo. Se recomienda que seleccione una tipografía de tamaño "
 #~ "menor."
+#~ msgstr[2] ""
+#~ "La tipografía seleccionada es %d puntos de grande, y puede hacer difícil "
+#~ "usar el equipo. Se recomienda que seleccione una tipografía de tamaño "
+#~ "menor."
+
 
 #~ msgid "Use previous font"
 #~ msgstr "Usar la tipografía anterior"

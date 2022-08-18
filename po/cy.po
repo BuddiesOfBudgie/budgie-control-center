@@ -780,6 +780,8 @@ msgid "pixel"
 msgid_plural "pixels"
 msgstr[0] "picsel"
 msgstr[1] "bicsel"
+msgstr[2] "bicsel"
+msgstr[3] "bicsel"
 
 #: ../capplets/common/activate-settings-daemon.c:18
 msgid ""
@@ -1290,6 +1292,14 @@ msgstr[0] ""
 msgstr[1] ""
 "Profi'r gosodiadau newydd. Os nad ydych chi'n ymateb o fewn %d eiliad caiff "
 "y gosodiadau blaenorol eu hadfer."
+msgstr[2] ""
+"Profi'r gosodiadau newydd. Os nad ydych chi'n ymateb o fewn %d eiliad caiff "
+"y gosodiadau blaenorol eu hadfer."
+msgstr[3] ""
+"Profi'r gosodiadau newydd. Os nad ydych chi'n ymateb o fewn %d eiliad caiff "
+"y gosodiadau blaenorol eu hadfer."
+
+
 
 #: ../capplets/display/main.c:638
 msgid "Keep Resolution"
@@ -1473,6 +1483,15 @@ msgstr[1] ""
 "Mae'r ffont a ddewiswyd yn %d bwynt o faint, a gall ei wneud yn anodd "
 "defnyddio'r cyfrifiadur yn effeithlon. Argymhellir eich bod chi'n dewis "
 "maint yn llai na %d."
+msgstr[2] ""
+"Mae'r ffont a ddewiswyd yn %d bwynt o faint, a gall ei wneud yn anodd "
+"defnyddio'r cyfrifiadur yn effeithlon. Argymhellir eich bod chi'n dewis "
+"maint yn llai na %d."
+msgstr[3] ""
+"Mae'r ffont a ddewiswyd yn %d bwynt o faint, a gall ei wneud yn anodd "
+"defnyddio'r cyfrifiadur yn effeithlon. Argymhellir eich bod chi'n dewis "
+"maint yn llai na %d."
+
 
 #: ../capplets/font/main.c:506
 #, c-format
@@ -1492,6 +1511,15 @@ msgstr[1] ""
 "Mae'r ffont a ddewiswyd yn %d bwynt o faint, a gall ei wneud yn anodd "
 "defnyddio'r cyfrifiadur yn effeithlon. Argymhellir eich bod chi'n dewis "
 "maint ffont llai."
+msgstr[2] ""
+"Mae'r ffont a ddewiswyd yn %d bwynt o faint, a gall ei wneud yn anodd "
+"defnyddio'r cyfrifiadur yn effeithlon. Argymhellir eich bod chi'n dewis "
+"maint ffont llai."
+msgstr[3] ""
+"Mae'r ffont a ddewiswyd yn %d bwynt o faint, a gall ei wneud yn anodd "
+"defnyddio'r cyfrifiadur yn effeithlon. Argymhellir eich bod chi'n dewis "
+"maint ffont llai."
+
 
 #: ../capplets/keybindings/eggcellrendererkeys.c:21
 msgid "New accelerator..."
@@ -1810,6 +1838,8 @@ msgid "%d milliseconds"
 msgid_plural "%d milliseconds"
 msgstr[0] "%d milfed eiliad"
 msgstr[1] "%d milfedau o eiliadau"
+msgstr[2] "%d milfedau o eiliadau"
+msgstr[3] "%d milfedau o eiliadau"
 
 #: ../capplets/mouse/gnome-mouse-properties.c:560
 msgid "Unknown Pointer"
@@ -3276,6 +3306,8 @@ msgid "%d minute until the next break"
 msgid_plural "%d minutes until the next break"
 msgstr[0] "%d munud tan y saib nesaf"
 msgstr[1] "%d funud tan y saib nesaf"
+msgstr[2] "%d funud tan y saib nesaf"
+msgstr[3] "%d funud tan y saib nesaf"
 
 #: ../typing-break/drwright.c:493
 msgid "Less than one minute until the next break"

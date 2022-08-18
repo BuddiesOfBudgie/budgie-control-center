@@ -1252,6 +1252,7 @@ msgstr "%e %b, %Y"
 msgid "%d hour"
 msgid_plural "%d hours"
 msgstr[0] "%d сағат"
+msgstr[1] "%d сағат"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
 #: panels/common/cc-util.c:166 panels/power/cc-power-panel.c:973
@@ -1259,12 +1260,14 @@ msgstr[0] "%d сағат"
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d минут"
+msgstr[1] "%d минут"
 
 #: panels/common/cc-util.c:167
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d секунд"
+msgstr[1] "%d секунд"
 
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
@@ -2272,6 +2275,7 @@ msgstr "Жарлықтарды қарау және баптау"
 msgid "%d modified"
 msgid_plural "%d modified"
 msgstr[0] "%d өзгертілген"
+msgstr[1] "%d өзгертілген"
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:428
 msgid "Reset All Shortcuts?"
@@ -3124,6 +3128,7 @@ msgstr "Ешқашан"
 msgid "%i day ago"
 msgid_plural "%i days ago"
 msgstr[0] "%i күн бұрын"
+msgstr[1] "%i күн бұрын"
 
 #: panels/network/connection-editor/ce-page-details.c:293
 #, c-format
@@ -4578,12 +4583,14 @@ msgstr "Уақыты белгісіз"
 msgid "%i minute"
 msgid_plural "%i minutes"
 msgstr[0] "%i минут"
+msgstr[1] "%i минут"
 
 #: panels/power/cc-battery-row.c:92
 #, c-format
 msgid "%i hour"
 msgid_plural "%i hours"
 msgstr[0] "%i сағат"
+msgstr[1] "%i сағат"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -4596,11 +4603,13 @@ msgstr "%i %s %i %s"
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "сағат"
+msgstr[1] "сағат"
 
 #: panels/power/cc-battery-row.c:100
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "минут"
+msgstr[1] "минут"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -5236,6 +5245,7 @@ msgstr "Аяқталған"
 msgid "%u Job Requires Authentication"
 msgid_plural "%u Jobs Require Authentication"
 msgstr[0] "%u тапсырма аутентификацияны талап етеді"
+msgstr[1] "%u тапсырма аутентификацияны талап етеді"
 
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:401
@@ -5483,6 +5493,7 @@ msgstr "Белсенді тапсырмалар жоқ"
 msgid "%u Job"
 msgid_plural "%u Jobs"
 msgstr[0] "%u тапсырма"
+msgstr[1] "%u тапсырма"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -6355,6 +6366,7 @@ msgstr "Құрылғыны ұмыту қатесі: "
 msgid "Depends on %u other device"
 msgid_plural "Depends on %u other devices"
 msgstr[0] "Басқа %u құрылғыға тәуелді"
+msgstr[1] "Басқа %u құрылғыға тәуелді"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
@@ -6710,6 +6722,7 @@ msgstr "Ең үлкен"
 msgid "%d pixel"
 msgid_plural "%d pixels"
 msgstr[0] "%d пиксель"
+msgstr[1] "%d пиксель"
 
 #: panels/universal-access/cc-ua-panel.ui:55
 msgid "_Always Show Accessibility Menu"
@@ -8478,12 +8491,14 @@ msgstr "SIM картаңыздың бұғаттауын шешу үшін PUK к
 msgid "Wrong password entered. You have %1$u try left"
 msgid_plural "Wrong password entered. You have %1$u tries left"
 msgstr[0] "Қате пароль енгізілген. Сізде %1$u қайталау талабы қалды"
+msgstr[1] "Қате пароль енгізілген. Сізде %1$u қайталау талабы қалды"
 
 #: panels/wwan/cc-wwan-device-page.c:174
 #, c-format
 msgid "You have %u try left"
 msgid_plural "You have %u tries left"
 msgstr[0] "Сізде %1$u қайталау талабы қалды"
+msgstr[1] "Сізде %1$u қайталау талабы қалды"
 
 #: panels/wwan/cc-wwan-device-page.c:179
 msgid "Wrong password entered."
@@ -8879,6 +8894,7 @@ msgstr ""
 msgid "%u Output"
 msgid_plural "%u Outputs"
 msgstr[0] "%u шығыс"
+msgstr[1] "%u шығыс"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -8887,6 +8903,7 @@ msgstr[0] "%u шығыс"
 msgid "%u Input"
 msgid_plural "%u Inputs"
 msgstr[0] "%u кіріс"
+msgstr[1] "%u кіріс"
 
 #: subprojects/gvc/gvc-mixer-control.c:2867
 msgid "System Sounds"
@@ -10097,10 +10114,6 @@ msgstr "Жүйелік дыбыстар"
 #~ msgid "Installing"
 #~ msgstr "Орнатылуда"
 
-#~ msgid "%u active"
-#~ msgid_plural "%u active"
-#~ msgstr[0] "%u белсенді"
-
 #~ msgid "Supply"
 #~ msgstr "Жаратылатын заттар"
 
@@ -10981,16 +10994,6 @@ msgstr "Жүйелік дыбыстар"
 #~ msgctxt "Power"
 #~ msgid "Bluetooth"
 #~ msgstr "Bluetooth"
-
-#, fuzzy
-#~ msgid "%i year"
-#~ msgid_plural "%i years"
-#~ msgstr[0] "Жыл:"
-
-#, fuzzy
-#~ msgid "%i month"
-#~ msgid_plural "%i months"
-#~ msgstr[0] "MONTH"
 
 #, fuzzy
 #~ msgid "English"

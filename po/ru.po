@@ -1271,6 +1271,7 @@ msgid_plural "%d hours"
 msgstr[0] "%d час"
 msgstr[1] "%d часа"
 msgstr[2] "%d часов"
+msgstr[3] "%d часов"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
 #: panels/common/cc-util.c:166 panels/power/cc-power-panel.c:973
@@ -1280,6 +1281,7 @@ msgid_plural "%d minutes"
 msgstr[0] "%d минута"
 msgstr[1] "%d минуты"
 msgstr[2] "%d минут"
+msgstr[3] "%d минут"
 
 # Блокировать экран после:
 #: panels/common/cc-util.c:167
@@ -1289,6 +1291,7 @@ msgid_plural "%d seconds"
 msgstr[0] "%d секунда"
 msgstr[1] "%d секунды"
 msgstr[2] "%d секунд"
+msgstr[3] "%d секунд"
 
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
@@ -2295,6 +2298,7 @@ msgid_plural "%d modified"
 msgstr[0] "%d изменена"
 msgstr[1] "%d изменены"
 msgstr[2] "%d изменено"
+msgstr[3] "%d изменено"
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:428
 msgid "Reset All Shortcuts?"
@@ -3161,6 +3165,7 @@ msgid_plural "%i days ago"
 msgstr[0] "%i день назад"
 msgstr[1] "%i дня назад"
 msgstr[2] "%i дней назад"
+msgstr[3] "%i дней назад"
 
 #: panels/network/connection-editor/ce-page-details.c:293
 #, c-format
@@ -4613,6 +4618,7 @@ msgid_plural "%i minutes"
 msgstr[0] "%i минута"
 msgstr[1] "%i минуты"
 msgstr[2] "%i минут"
+msgstr[3] "%i минут"
 
 #: panels/power/cc-battery-row.c:92
 #, c-format
@@ -4621,6 +4627,7 @@ msgid_plural "%i hours"
 msgstr[0] "%i час"
 msgstr[1] "%i часа"
 msgstr[2] "%i часов"
+msgstr[3] "%i часов"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -4635,6 +4642,7 @@ msgid_plural "hours"
 msgstr[0] "час"
 msgstr[1] "часа"
 msgstr[2] "часов"
+msgstr[3] "часов"
 
 #: panels/power/cc-battery-row.c:100
 msgid "minute"
@@ -4642,6 +4650,7 @@ msgid_plural "minutes"
 msgstr[0] "минута"
 msgstr[1] "минуты"
 msgstr[2] "минут"
+msgstr[3] "минут"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -5288,6 +5297,7 @@ msgid_plural "%u Jobs Require Authentication"
 msgstr[0] "%u задание требует аутентификацию"
 msgstr[1] "%u задания требуют аутентификацию"
 msgstr[2] "%u заданий требуют аутентификацию"
+msgstr[3] "%u заданий требуют аутентификацию"
 
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:401
@@ -5534,6 +5544,7 @@ msgid_plural "%u Jobs"
 msgstr[0] "%u задание"
 msgstr[1] "%u задания"
 msgstr[2] "%u заданий"
+msgstr[3] "%u заданий"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -6405,6 +6416,7 @@ msgid_plural "Depends on %u other devices"
 msgstr[0] "Зависит от %u другого устройства"
 msgstr[1] "Зависит от %u других устройств"
 msgstr[2] "Зависит от %u других устройств"
+msgstr[3] "Зависит от %u других устройств"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
@@ -6762,6 +6774,7 @@ msgid_plural "%d pixels"
 msgstr[0] "%d пиксель"
 msgstr[1] "%d пикселя"
 msgstr[2] "%d пикселей"
+msgstr[3] "%d пикселей"
 
 #: panels/universal-access/cc-ua-panel.ui:55
 msgid "_Always Show Accessibility Menu"
@@ -8535,6 +8548,7 @@ msgid_plural "Wrong password entered. You have %1$u tries left"
 msgstr[0] "Введён неверный код. У вас осталось %1$u попытка"
 msgstr[1] "Введён неверный код. У вас осталось %1$u попытки"
 msgstr[2] "Введён неверный код. У вас осталось %1$u попыток"
+msgstr[3] "Введён неверный код. У вас осталось %1$u попыток"
 
 #: panels/wwan/cc-wwan-device-page.c:221
 #, c-format
@@ -8543,6 +8557,7 @@ msgid_plural "You have %u tries left"
 msgstr[0] "У вас осталось %u попытка"
 msgstr[1] "У вас осталось %u попытки"
 msgstr[2] "У вас осталось %u попыток"
+msgstr[3] "У вас осталось %u попыток"
 
 #: panels/wwan/cc-wwan-device-page.c:226
 msgid "Wrong password entered."
@@ -8940,6 +8955,7 @@ msgid_plural "%u Outputs"
 msgstr[0] "%u выход"
 msgstr[1] "%u выхода"
 msgstr[2] "%u выходов"
+msgstr[3] "%u выходов"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -8950,6 +8966,7 @@ msgid_plural "%u Inputs"
 msgstr[0] "%u вход"
 msgstr[1] "%u входа"
 msgstr[2] "%u входов"
+msgstr[3] "%u входов"
 
 #: subprojects/gvc/gvc-mixer-control.c:2867
 msgid "System Sounds"

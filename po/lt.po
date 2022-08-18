@@ -1258,6 +1258,7 @@ msgid_plural "%d hours"
 msgstr[0] "%d valanda"
 msgstr[1] "%d valandos"
 msgstr[2] "%d valandų"
+msgstr[3] "%d valandų"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
 #: panels/common/cc-util.c:166 panels/power/cc-power-panel.c:973
@@ -1267,6 +1268,7 @@ msgid_plural "%d minutes"
 msgstr[0] "%d minutė"
 msgstr[1] "%d minutės"
 msgstr[2] "%d minučių"
+msgstr[3] "%d minučių"
 
 #: panels/common/cc-util.c:167
 #, c-format
@@ -1275,6 +1277,7 @@ msgid_plural "%d seconds"
 msgstr[0] "%d sekundę"
 msgstr[1] "%d sekundes"
 msgstr[2] "%d sekundžių"
+msgstr[3] "%d sekundžių"
 
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
@@ -2277,6 +2280,7 @@ msgid_plural "%d modified"
 msgstr[0] "%d pakeistas"
 msgstr[1] "%d pakeisti"
 msgstr[2] "%d pakeistų"
+msgstr[3] "%d pakeistų"
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:428
 msgid "Reset All Shortcuts?"
@@ -3124,6 +3128,7 @@ msgid_plural "%i days ago"
 msgstr[0] "Prieš %i dieną"
 msgstr[1] "Prieš %i dienas"
 msgstr[2] "Prieš %i dienų"
+msgstr[3] "Prieš %i dienų"
 
 #: panels/network/connection-editor/ce-page-details.c:293
 #, c-format
@@ -4572,6 +4577,7 @@ msgid_plural "%i minutes"
 msgstr[0] "%i minutė"
 msgstr[1] "%i minutės"
 msgstr[2] "%i minučių"
+msgstr[3] "%i minučių"
 
 #: panels/power/cc-battery-row.c:92
 #, c-format
@@ -4580,6 +4586,7 @@ msgid_plural "%i hours"
 msgstr[0] "%i valanda"
 msgstr[1] "%i valandos"
 msgstr[2] "%i valandų"
+msgstr[3] "%i valandų"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -4594,6 +4601,7 @@ msgid_plural "hours"
 msgstr[0] "valanda"
 msgstr[1] "valandos"
 msgstr[2] "valandų"
+msgstr[3] "valandų"
 
 #: panels/power/cc-battery-row.c:100
 msgid "minute"
@@ -4601,6 +4609,7 @@ msgid_plural "minutes"
 msgstr[0] "minutė"
 msgstr[1] "minutės"
 msgstr[2] "minučių"
+msgstr[3] "minučių"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -5235,6 +5244,7 @@ msgid_plural "%u Jobs Require Authentication"
 msgstr[0] "%u darbui reikia patvirtinti tapatybę"
 msgstr[1] "%u darbams reikia patvirtinti tapatybę"
 msgstr[2] "%u darbų reikia patvirtinti tapatybę"
+msgstr[3] "%u darbų reikia patvirtinti tapatybę"
 
 #. Translators: This is the printer name for which we are showing the active jobs
 #: panels/printers/pp-jobs-dialog.c:401
@@ -5483,6 +5493,7 @@ msgid_plural "%u Jobs"
 msgstr[0] "%u darbas"
 msgstr[1] "%u darbai"
 msgstr[2] "%u darbų"
+msgstr[3] "%u darbų"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -6357,6 +6368,7 @@ msgid_plural "Depends on %u other devices"
 msgstr[0] "Priklauso nuo %u kito įrenginio"
 msgstr[1] "Priklauso nuo %u kitų įrenginių"
 msgstr[2] "Priklauso nuo %u kitų įrenginių"
+msgstr[3] "Priklauso nuo %u kitų įrenginių"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui:109
 msgid "Name:"
@@ -6711,6 +6723,7 @@ msgid_plural "%d pixels"
 msgstr[0] "%d pikselis"
 msgstr[1] "%d pikseliai"
 msgstr[2] "%d pikselių"
+msgstr[3] "%d pikselių"
 
 #: panels/universal-access/cc-ua-panel.ui:55
 msgid "_Always Show Accessibility Menu"
@@ -8469,6 +8482,7 @@ msgid_plural "Wrong password entered. You have %1$u tries left"
 msgstr[0] "Įvestas blogas slaptažodis. Liko %1$u bandymas"
 msgstr[1] "Įvestas blogas slaptažodis. Liko %1$u bandymai"
 msgstr[2] "Įvestas blogas slaptažodis. Liko %1$u bandymų"
+msgstr[3] "Įvestas blogas slaptažodis. Liko %1$u bandymų"
 
 #: panels/wwan/cc-wwan-device-page.c:174
 #, c-format
@@ -8477,6 +8491,7 @@ msgid_plural "You have %u tries left"
 msgstr[0] "Liko %1$u bandymas"
 msgstr[1] "Liko %1$u bandymai"
 msgstr[2] "Liko %1$u bandymų"
+msgstr[3] "Liko %1$u bandymų"
 
 #: panels/wwan/cc-wwan-device-page.c:179
 msgid "Wrong password entered."
@@ -8870,6 +8885,7 @@ msgid_plural "%u Outputs"
 msgstr[0] "%u išvestis"
 msgstr[1] "%u išvestys"
 msgstr[2] "%u išvesčių"
+msgstr[3] "%u išvesčių"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -8880,6 +8896,7 @@ msgid_plural "%u Inputs"
 msgstr[0] "%u įvestis"
 msgstr[1] "%u įvestys"
 msgstr[2] "%u įvesčių"
+msgstr[3] "%u įvesčių"
 
 #: subprojects/gvc/gvc-mixer-control.c:2867
 msgid "System Sounds"
@@ -10225,12 +10242,6 @@ msgstr "Sistemos garsai"
 #~ msgctxt "printer state"
 #~ msgid "Installing"
 #~ msgstr "Diegiama"
-
-#~ msgid "%u active"
-#~ msgid_plural "%u active"
-#~ msgstr[0] "%u aktyvus"
-#~ msgstr[1] "%u aktyvūs"
-#~ msgstr[2] "%u aktyvių"
 
 #~ msgid "Supply"
 #~ msgstr "Tiekimas"
