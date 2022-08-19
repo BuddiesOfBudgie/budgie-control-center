@@ -5,6 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-16 21:28+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2022\n"
 "Language-Team: Portuguese (https://www.transifex.com/buddiesofbudgie/teams/129844/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -302,7 +303,7 @@ msgstr "Retrato invertido"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "Configuração automática"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:683
@@ -376,7 +377,7 @@ msgstr "Terminado"
 #. Translators: Clicking this button prioritizes printing of this print job
 #: panels/printers/pp-job-row.c:179
 msgid "Move this job to the top of the queue"
-msgstr ""
+msgstr "Mover este trabalho para o topo da fila"
 
 #. Translators: The found device is a JetDirect printer
 #: panels/printers/pp-host.c:478
@@ -1296,7 +1297,7 @@ msgstr "Nenhum"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:381
 msgid "Layout default"
-msgstr ""
+msgstr "Esquema predefinido"
 
 #: panels/keyboard/cc-keyboard-manager.c:486
 #: panels/keyboard/cc-keyboard-manager.c:494
@@ -1363,7 +1364,7 @@ msgstr ""
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "Nenhuma"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -3509,9 +3510,9 @@ msgstr "Requer um mínimo de 8 caracteres"
 #, c-format
 msgid "Must have a maximum of %d character"
 msgid_plural "Must have a maximum of %d characters"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Deve ter um máximo de %d carácter"
+msgstr[1] "Deve ter um máximo de %d caracteres"
+msgstr[2] "Deve ter um máximo de %d caracteres"
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
@@ -3602,27 +3603,27 @@ msgstr "Apenas 4G"
 
 #: panels/wwan/cc-wwan-device.c:997
 msgid "5G Only"
-msgstr ""
+msgstr "Apenas 5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G (Preferencial)"
 
 #: panels/wwan/cc-wwan-device.c:1009
 msgid "2G, 3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G, 4G (Preferencial), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1011
 msgid "2G, 3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G, 3G (Preferencial), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1013
 msgid "2G (Preferred), 3G, 4G, 5G"
-msgstr ""
+msgstr "2G (Preferencial), 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1022
 msgid "2G, 3G, 4G (Preferred)"
@@ -3642,51 +3643,51 @@ msgstr "2G, 3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1035
 msgid "3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 4G, 5G (Preferencial)"
 
 #: panels/wwan/cc-wwan-device.c:1037
 msgid "3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "3G, 4G (Preferencial), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1039
 msgid "3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "3G (Preferencial), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
-msgstr ""
+msgstr "3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 4G, 5G (Preferencial)"
 
 #: panels/wwan/cc-wwan-device.c:1050
 msgid "2G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 4G (Preferencial), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1052
 msgid "2G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G (Preferencial), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
-msgstr ""
+msgstr "2G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 5G (Preferencial)"
 
 #: panels/wwan/cc-wwan-device.c:1063
 msgid "2G, 3G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G (Preferencial), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1065
 msgid "2G (Preferred), 3G, 5G"
-msgstr ""
+msgstr "2G (Preferencial), 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
-msgstr ""
+msgstr "2G, 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1073
 msgid "3G, 4G (Preferred)"
@@ -3726,39 +3727,39 @@ msgstr "2G, 3G"
 
 #: panels/wwan/cc-wwan-device.c:1103
 msgid "2G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 5G (Preferencial)"
 
 #: panels/wwan/cc-wwan-device.c:1105
 msgid "2G (Preferred), 5G"
-msgstr ""
+msgstr "2G (Preferencial), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
-msgstr ""
+msgstr "2G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 5G (Preferencial)"
 
 #: panels/wwan/cc-wwan-device.c:1115
 msgid "3G (Preferred), 5G"
-msgstr ""
+msgstr "3G (Preferencial), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
-msgstr ""
+msgstr "3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
-msgstr ""
+msgstr "4G, 5G (Preferencial)"
 
 #: panels/wwan/cc-wwan-device.c:1125
 msgid "4G (Preferred), 5G"
-msgstr ""
+msgstr "4G (Preferencial), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
-msgstr ""
+msgstr "4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
@@ -3850,7 +3851,7 @@ msgstr "O código PIN deve ser um número de 4-8 dígitos"
 
 #: panels/wwan/cc-wwan-device-page.c:317
 msgid "Unlocking…"
-msgstr ""
+msgstr "A desbloquear…"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.c:230
 #: panels/wwan/cc-wwan-mode-dialog.ui.h:3
@@ -4167,7 +4168,7 @@ msgstr "Privacidade"
 #: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Centro de Controlo Budgie"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -4354,7 +4355,7 @@ msgstr "Instalar o ficheiro PPD…"
 
 #: panels/printers/authentication-dialog.ui.h:1
 msgid " "
-msgstr ""
+msgstr " "
 
 #: panels/printers/authentication-dialog.ui.h:3
 msgid "Authenticate"
@@ -4592,12 +4593,12 @@ msgstr "15 minutos"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:4
 msgid "20 minutes"
-msgstr ""
+msgstr "20 minutos"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:6
 msgid "25 minutes"
-msgstr ""
+msgstr "25 minutos"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4610,7 +4611,7 @@ msgstr "30 minutos"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:10
 msgid "45 minutes"
-msgstr ""
+msgstr "45 minutos"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4620,27 +4621,27 @@ msgstr ""
 #: panels/power/cc-power-panel.ui.h:12 panels/display/cc-display-panel.ui.h:38
 #: panels/usage/cc-usage-panel.ui.h:14
 msgid "1 hour"
-msgstr ""
+msgstr "1 hora"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:14
 msgid "80 minutes"
-msgstr ""
+msgstr "80 minutos"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:16
 msgid "90 minutes"
-msgstr ""
+msgstr "90 minutos"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:18
 msgid "100 minutes"
-msgstr ""
+msgstr "100 minutos"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:20
 msgid "2 hours"
-msgstr ""
+msgstr "2 horas"
 
 #: panels/power/cc-power-panel.ui.h:23
 msgid "Power Mode"
@@ -4950,7 +4951,7 @@ msgstr "LCD de gama de cores ampla (retro-iluminação RGB LED)"
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:34
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "Alta"
 
 #: panels/color/cc-color-panel.ui.h:54
 msgid "40 minutes"
@@ -4958,13 +4959,13 @@ msgstr "40 minutos"
 
 #: panels/color/cc-color-panel.ui.h:55
 msgid "Medium"
-msgstr ""
+msgstr "Médio"
 
 #: panels/color/cc-color-panel.ui.h:57
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:33
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:35
 msgid "Low"
-msgstr ""
+msgstr "Baixa"
 
 #: panels/color/cc-color-panel.ui.h:59
 msgid "Native to display"
@@ -5094,7 +5095,7 @@ msgstr "Volume do sistema"
 
 #: panels/sound/cc-sound-panel.ui.h:2
 msgid "Over-Amplification"
-msgstr ""
+msgstr "Sobre-amplificação"
 
 #: panels/sound/cc-sound-panel.ui.h:4
 #, no-c-format
@@ -5102,6 +5103,9 @@ msgid ""
 "Allows raising the volume above 100%. This can result in a loss of audio "
 "quality; it is better to increase application volume settings, if possible."
 msgstr ""
+"Permite aumentar o volume para lá dos 100%. Isto pode resultar numa perda da"
+" qualidade do áudio; é melhor aumentar o volume nas definições das "
+"aplicações, se tal for possível."
 
 #: panels/sound/cc-sound-panel.ui.h:5
 msgid "Volume Levels"
@@ -5153,7 +5157,7 @@ msgstr "Alerta sonoro"
 
 #: panels/display/cc-display-settings.ui.h:2
 msgid "Resolution"
-msgstr ""
+msgstr "Resolução"
 
 #: panels/display/cc-display-settings.ui.h:3
 msgid "Refresh Rate"
@@ -5165,17 +5169,19 @@ msgstr "Ajustar para TV"
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Scale"
-msgstr ""
+msgstr "Dimensionar"
 
 #: panels/display/cc-display-settings.ui.h:6
 msgid "Fractional Scaling"
-msgstr ""
+msgstr "Dimensionamento fracionado"
 
 #: panels/display/cc-display-settings.ui.h:7
 msgid ""
 "May increase power usage, lower speed, or reduce display sharpness.\n"
 "        Fractional scaling will disable the lock-screen."
 msgstr ""
+"Pode aumentar a utilização de energia, menor velocidade ou reduzir a nitidez do ecrã.\n"
+"         O dimensionamento fracionado desativará o ecrã de bloqueio."
 
 #. This cancels the redshift inhibit.
 #: panels/display/cc-night-light-page.ui.h:2
@@ -5255,7 +5261,7 @@ msgstr "Temperatura da cor"
 
 #: panels/display/cc-display-panel.ui.h:1
 msgid "Display Settings Disabled"
-msgstr ""
+msgstr "Definições de ecrã desativadas"
 
 #: panels/display/cc-display-panel.ui.h:2
 msgid "Single Display"
@@ -5347,13 +5353,13 @@ msgstr "Ecrãs"
 #. dialog.
 #: panels/display/cc-display-panel.ui.h:24
 msgid "Screen Turns Off"
-msgstr ""
+msgstr "O ecrã desliga-se em"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/display/cc-display-panel.ui.h:26
 msgid "30 seconds"
-msgstr ""
+msgstr "30 segundos"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5361,7 +5367,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:28
 #: panels/display/cc-display-panel.ui.h:40
 msgid "1 minute"
-msgstr ""
+msgstr "1 minuto"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5369,7 +5375,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:30
 #: panels/display/cc-display-panel.ui.h:42
 msgid "2 minutes"
-msgstr ""
+msgstr "2 minutos"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5377,7 +5383,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:32
 #: panels/display/cc-display-panel.ui.h:44
 msgid "3 minutes"
-msgstr ""
+msgstr "3 minutos"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5385,27 +5391,27 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:34
 #: panels/display/cc-display-panel.ui.h:48
 msgid "5 minutes"
-msgstr ""
+msgstr "5 minutos"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:46
 msgid "4 minutes"
-msgstr ""
+msgstr "4 minutos"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:50
 msgid "8 minutes"
-msgstr ""
+msgstr "8 minutos"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:52
 msgid "10 minutes"
-msgstr ""
+msgstr "10 minutos"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:54
 msgid "12 minutes"
-msgstr ""
+msgstr "12 minutos"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:1
 msgid "Input Sources"
@@ -5441,7 +5447,7 @@ msgstr "Ver e personalizar atalhos"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.ui.h:1
 msgid "Use layout default"
-msgstr ""
+msgstr "Usar o esquema predefinido"
 
 #: panels/keyboard/cc-input-chooser.ui.h:1
 msgid "Add an Input Source"
@@ -5911,11 +5917,11 @@ msgstr "_Espessura:"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "Fina"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "Espessa"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5953,11 +5959,11 @@ msgstr "_Contraste:"
 #. The contrast scale goes from Color to None (grayscale)
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:30
 msgid "Co_lor"
-msgstr ""
+msgstr "_Cor"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:32
 msgid "Full"
-msgstr ""
+msgstr "Completa"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:37
 msgid "Color Effects:"
@@ -6008,7 +6014,7 @@ msgstr "Atraso na a_ceitação:"
 #: panels/universal-access/cc-pointing-dialog.ui.h:5
 #: panels/universal-access/cc-pointing-dialog.ui.h:11
 msgid "Short"
-msgstr ""
+msgstr "Curta"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:10
 msgid "Slow keys typing delay"
@@ -6019,7 +6025,7 @@ msgstr "Atraso na escrita das teclas lentas"
 #: panels/universal-access/cc-pointing-dialog.ui.h:7
 #: panels/universal-access/cc-pointing-dialog.ui.h:12
 msgid "Long"
-msgstr ""
+msgstr "Longo"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:12
 msgid "Beep when a key is pr_essed"
@@ -6109,11 +6115,11 @@ msgstr "_Tolerância de movimento:"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "Pequena"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -6476,7 +6482,7 @@ msgstr "Partilha de _ficheiros"
 
 #: panels/sharing/cc-sharing-panel.ui.h:3
 msgid "Remote _Desktop"
-msgstr ""
+msgstr "Ambiente _de trabalho remoto"
 
 #: panels/sharing/cc-sharing-panel.ui.h:4
 msgid "_Media Sharing"
@@ -6504,38 +6510,42 @@ msgstr "Início de sessão remoto"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "Ambiente de trabalho remoto"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
 "Remote desktop allows viewing and controlling your desktop from another "
 "computer."
 msgstr ""
+"O ambiente de trabalho remoto permite visualizar e controlar o seu ambiente "
+"de trabalho a partir de outro computador."
 
 #: panels/sharing/cc-sharing-panel.ui.h:13
 msgid "Enable or disable remote desktop connections to this computer."
-msgstr ""
+msgstr "Ativar ou desativar as ligações remotas a este computador."
 
 #: panels/sharing/cc-sharing-panel.ui.h:14
 msgid "Enable Legacy VNC Protocol"
-msgstr ""
+msgstr "Ativar o protocolo VNC legado"
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
-msgstr ""
+msgstr "Controlo remoto"
 
 #: panels/sharing/cc-sharing-panel.ui.h:16
 msgid "Allows remote connections to control the screen."
-msgstr ""
+msgstr "Permite ligações remotas para controlar o ecrã."
 
 #: panels/sharing/cc-sharing-panel.ui.h:17
 msgid "How to Connect"
-msgstr ""
+msgstr "Como estabelecer ligação"
 
 #: panels/sharing/cc-sharing-panel.ui.h:18
 msgid ""
 "Connect to this computer using the device name or remote desktop address."
 msgstr ""
+"Ligar a este computador usando o nome do dispositivo ou o endereço remoto do"
+" ambiente de trabalho."
 
 #: panels/sharing/cc-sharing-panel.ui.h:19
 #: panels/info-overview/cc-info-overview-panel.ui.h:1
@@ -6544,37 +6554,41 @@ msgstr "Nome do dispositivo"
 
 #: panels/sharing/cc-sharing-panel.ui.h:20
 msgid "Remote Desktop Address"
-msgstr ""
+msgstr "Endereço do ambiente de trabalho remoto"
 
 #: panels/sharing/cc-sharing-panel.ui.h:21
 msgid "VNC Address"
-msgstr ""
+msgstr "Endereço VNC"
 
 #: panels/sharing/cc-sharing-panel.ui.h:22
 msgid "Authentication"
-msgstr ""
+msgstr "Autenticação"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
 msgstr ""
+"O nome de utilizador e a palavra-passe são necessários para se ligar a este "
+"computador."
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "Nome de utilizador"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
-msgstr ""
+msgstr "Verificar encriptação"
 
 #: panels/sharing/cc-sharing-panel.ui.h:27
 msgid "Encryption Fingerprint"
-msgstr ""
+msgstr "Impressão digital encriptada"
 
 #: panels/sharing/cc-sharing-panel.ui.h:28
 msgid ""
 "The encryption fingerprint can be seen in connecting clients and should be "
 "identical"
 msgstr ""
+"A impressão digital encriptada pode ser vista na ligação de clientes e deve "
+"ser idêntica"
 
 #: panels/sharing/cc-sharing-panel.ui.h:29
 msgid "Media Sharing"
@@ -6651,7 +6665,7 @@ msgstr ""
 
 #: panels/region/cc-format-chooser.ui.h:6
 msgid "Search locales…"
-msgstr ""
+msgstr "Procurar localizações…"
 
 #: panels/region/cc-format-chooser.ui.h:7
 msgid "Common Formats"
@@ -7193,7 +7207,7 @@ msgstr "Nome da rede"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Security type"
-msgstr ""
+msgstr "Tipo de segurança"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Turn Wi-Fi off"
@@ -7640,16 +7654,16 @@ msgstr "Notificações no ecrã b_loqueado"
 #. This is the per application switch for message tray usage.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:2
 msgid "_Notifications"
-msgstr ""
+msgstr "_Notificações"
 
 #. This is the setting to configure sounds associated with notifications.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:4
 msgid "Sound _Alerts"
-msgstr ""
+msgstr "_Alertas sonoros"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:5
 msgid "Notification _Popups"
-msgstr ""
+msgstr "_Notificações instantâneas"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:6
 msgid ""
@@ -7663,11 +7677,11 @@ msgstr ""
 #. screen.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:8
 msgid "Show Message _Content in Popups"
-msgstr ""
+msgstr "Ver o _conteúdo da mensagem como notificações instantâneas"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:10
 msgid "Show Message C_ontent on Lock Screen"
-msgstr ""
+msgstr "Ver o _conteúdo da mensagem no ecrã bloqueado"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:1
 msgid "_Web"
@@ -7781,19 +7795,19 @@ msgstr "Expiração de clique duplo"
 
 #: panels/mouse/cc-mouse-panel.ui.h:9
 msgid "Acceleration Profile"
-msgstr ""
+msgstr "Perfil de aceleração"
 
 #: panels/mouse/cc-mouse-panel.ui.h:10
 msgid "How the pointer moves when you move the mouse."
-msgstr ""
+msgstr "Como o cursor se move quando se move o rato."
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "Plano"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "Adaptável"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7897,62 +7911,62 @@ msgstr "_Eliminar os ficheiros temporários…"
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:16 panels/usage/cc-usage-panel.ui.h:34
 msgid "1 day"
-msgstr ""
+msgstr "1 dia"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:18
 msgid "2 days"
-msgstr ""
+msgstr "2 dias"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:20
 msgid "3 days"
-msgstr ""
+msgstr "3 dias"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:22
 msgid "4 days"
-msgstr ""
+msgstr "4 dias"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:24
 msgid "5 days"
-msgstr ""
+msgstr "5 dias"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:26
 msgid "6 days"
-msgstr ""
+msgstr "6 dias"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:28 panels/usage/cc-usage-panel.ui.h:36
 msgid "7 days"
-msgstr ""
+msgstr "7 dias"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:30
 msgid "14 days"
-msgstr ""
+msgstr "14 dias"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:32 panels/usage/cc-usage-panel.ui.h:38
 msgid "30 days"
-msgstr ""
+msgstr "30 dias"
 
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:40
 msgid "Forever"
-msgstr ""
+msgstr "Para sempre"
 
 #: panels/online-accounts/online-accounts.ui.h:2
 msgid "Connect to your data in the cloud"
@@ -7976,15 +7990,15 @@ msgstr "Sair"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "Painéis"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
-msgstr ""
+msgstr "Voltar ao painel anterior"
 
 #: shell/help-overlay.ui.h:6
 msgid "Cancel search"
-msgstr ""
+msgstr "Cancelar pesquisa"
 
 #: shell/cc-window.ui.h:2
 msgid "All Settings"
@@ -8488,19 +8502,19 @@ msgstr "Alternar para fonte de introdução anterior"
 
 #: panels/keyboard/01-raven.xml.in:2
 msgid "Raven"
-msgstr ""
+msgstr "Raven"
 
 #: panels/keyboard/01-raven.xml.in:4
 msgid "Raven Applets"
-msgstr ""
+msgstr "Mini aplicações Raven"
 
 #: panels/keyboard/01-raven.xml.in:6
 msgid "Raven Notifications"
-msgstr ""
+msgstr "Notificações do Raven"
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"
-msgstr ""
+msgstr "Limpar notificações"
 
 #: panels/keyboard/01-launchers.xml.in:2
 msgid "Launchers"
