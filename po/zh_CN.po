@@ -5,15 +5,16 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Gavin Zhao, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-16 21:28+0100\n"
+"POT-Creation-Date: 2022-08-21 20:07+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Gavin Zhao, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/buddiesofbudgie/teams/129844/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -300,7 +301,7 @@ msgstr "纵向倒转"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "自动配置"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:683
@@ -1263,7 +1264,7 @@ msgstr "无"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:381
 msgid "Layout default"
-msgstr ""
+msgstr "默认排版"
 
 #: panels/keyboard/cc-keyboard-manager.c:486
 #: panels/keyboard/cc-keyboard-manager.c:494
@@ -1327,7 +1328,7 @@ msgstr "备用字符键可用于输入其他字符。这些有时会作为第三
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "无"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -1429,7 +1430,7 @@ msgstr "重新设置快捷键可能影响您的自定义快捷键。此操作无
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:438
 #: panels/wwan/cc-wwan-device-page.c:190
 #: panels/printers/ppd-selection-dialog.ui.h:2
-#: panels/printers/authentication-dialog.ui.h:2
+#: panels/printers/authentication-dialog.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:8
 msgid "Cancel"
 msgstr "取消"
@@ -3418,7 +3419,7 @@ msgstr "至少包含 8 个字符"
 #, c-format
 msgid "Must have a maximum of %d character"
 msgid_plural "Must have a maximum of %d characters"
-msgstr[0] ""
+msgstr[0] "最多不超过%d个字符"
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
@@ -3504,7 +3505,7 @@ msgstr "仅 4G"
 
 #: panels/wwan/cc-wwan-device.c:997
 msgid "5G Only"
-msgstr ""
+msgstr "仅5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
@@ -3524,7 +3525,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
-msgstr ""
+msgstr "2G、3G、4G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1022
 msgid "2G, 3G, 4G (Preferred)"
@@ -3556,7 +3557,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
-msgstr ""
+msgstr "3G、4G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
@@ -3572,7 +3573,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
-msgstr ""
+msgstr "2G、4G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
@@ -3588,7 +3589,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
-msgstr ""
+msgstr "2G、3G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1073
 msgid "3G, 4G (Preferred)"
@@ -3636,7 +3637,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
-msgstr ""
+msgstr "2G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
@@ -3648,7 +3649,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
-msgstr ""
+msgstr "3G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
@@ -3660,7 +3661,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
-msgstr ""
+msgstr "4G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
@@ -3748,7 +3749,7 @@ msgstr "PIN 码应为 4 到 8 位数字"
 
 #: panels/wwan/cc-wwan-device-page.c:317
 msgid "Unlocking…"
-msgstr ""
+msgstr "解锁中……"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.c:230
 #: panels/wwan/cc-wwan-mode-dialog.ui.h:3
@@ -4058,7 +4059,7 @@ msgstr "隐私"
 #: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Budgie控制中心"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -4098,7 +4099,7 @@ msgid "Enter a network address or search for a printer"
 msgstr "输入网络地址或搜索打印机"
 
 #: panels/printers/new-printer-dialog.ui.h:11
-#: panels/printers/authentication-dialog.ui.h:6
+#: panels/printers/authentication-dialog.ui.h:5
 msgid "Authentication Required"
 msgstr "需要认证"
 
@@ -4109,7 +4110,7 @@ msgstr "输入用户名和密码以查看打印服务器上的打印机。"
 #. Translators: This is a username on a print server.
 #: panels/printers/new-printer-dialog.ui.h:13
 #: panels/printers/pp-jobs-dialog.ui.h:4
-#: panels/printers/authentication-dialog.ui.h:4
+#: panels/printers/authentication-dialog.ui.h:3
 #: panels/wwan/cc-wwan-apn-dialog.ui.h:7
 msgid "Username"
 msgstr "用户名"
@@ -4117,7 +4118,7 @@ msgstr "用户名"
 #. Translators: This is a password needed for printing.
 #: panels/printers/new-printer-dialog.ui.h:14
 #: panels/printers/pp-jobs-dialog.ui.h:6
-#: panels/printers/authentication-dialog.ui.h:5
+#: panels/printers/authentication-dialog.ui.h:4
 #: panels/user-accounts/cc-add-user-dialog.ui.h:9
 #: panels/sharing/cc-sharing-panel.ui.h:25 panels/network/network-wifi.ui.h:3
 #: panels/network/cc-wifi-hotspot-dialog.ui.h:3
@@ -4237,11 +4238,7 @@ msgstr "从数据库选择…"
 msgid "Install PPD File…"
 msgstr "安装 PPD 文件…"
 
-#: panels/printers/authentication-dialog.ui.h:1
-msgid " "
-msgstr ""
-
-#: panels/printers/authentication-dialog.ui.h:3
+#: panels/printers/authentication-dialog.ui.h:2
 msgid "Authenticate"
 msgstr "认证"
 
@@ -4467,12 +4464,12 @@ msgstr "15 分钟"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:4
 msgid "20 minutes"
-msgstr ""
+msgstr "20分钟"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:6
 msgid "25 minutes"
-msgstr ""
+msgstr "25分钟"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4485,7 +4482,7 @@ msgstr "30 分钟"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:10
 msgid "45 minutes"
-msgstr ""
+msgstr "45分钟"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4495,27 +4492,27 @@ msgstr ""
 #: panels/power/cc-power-panel.ui.h:12 panels/display/cc-display-panel.ui.h:38
 #: panels/usage/cc-usage-panel.ui.h:14
 msgid "1 hour"
-msgstr ""
+msgstr "1小时"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:14
 msgid "80 minutes"
-msgstr ""
+msgstr "80分钟"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:16
 msgid "90 minutes"
-msgstr ""
+msgstr "90分钟"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:18
 msgid "100 minutes"
-msgstr ""
+msgstr "100分钟"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:20
 msgid "2 hours"
-msgstr ""
+msgstr "2小时"
 
 #: panels/power/cc-power-panel.ui.h:23
 msgid "Power Mode"
@@ -4807,7 +4804,7 @@ msgstr "广色域 LCD（RGB LED 背光）"
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:34
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "高"
 
 #: panels/color/cc-color-panel.ui.h:54
 msgid "40 minutes"
@@ -4815,13 +4812,13 @@ msgstr "40 分钟"
 
 #: panels/color/cc-color-panel.ui.h:55
 msgid "Medium"
-msgstr ""
+msgstr "中"
 
 #: panels/color/cc-color-panel.ui.h:57
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:33
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:35
 msgid "Low"
-msgstr ""
+msgstr "低"
 
 #: panels/color/cc-color-panel.ui.h:59
 msgid "Native to display"
@@ -4957,7 +4954,7 @@ msgstr ""
 msgid ""
 "Allows raising the volume above 100%. This can result in a loss of audio "
 "quality; it is better to increase application volume settings, if possible."
-msgstr ""
+msgstr "允许将音量提升至超过100%。这可能会影响音质，因此建议尽可能调整应用程序音量而非系统音量。"
 
 #: panels/sound/cc-sound-panel.ui.h:5
 msgid "Volume Levels"
@@ -5009,7 +5006,7 @@ msgstr "警报声"
 
 #: panels/display/cc-display-settings.ui.h:2
 msgid "Resolution"
-msgstr ""
+msgstr "分辨率"
 
 #: panels/display/cc-display-settings.ui.h:3
 msgid "Refresh Rate"
@@ -5197,13 +5194,13 @@ msgstr "显示器"
 #. dialog.
 #: panels/display/cc-display-panel.ui.h:24
 msgid "Screen Turns Off"
-msgstr ""
+msgstr "立刻"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/display/cc-display-panel.ui.h:26
 msgid "30 seconds"
-msgstr ""
+msgstr "30秒"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5211,7 +5208,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:28
 #: panels/display/cc-display-panel.ui.h:40
 msgid "1 minute"
-msgstr ""
+msgstr "1分钟"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5219,7 +5216,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:30
 #: panels/display/cc-display-panel.ui.h:42
 msgid "2 minutes"
-msgstr ""
+msgstr "2分钟"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5227,7 +5224,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:32
 #: panels/display/cc-display-panel.ui.h:44
 msgid "3 minutes"
-msgstr ""
+msgstr "3分钟"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5235,27 +5232,27 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:34
 #: panels/display/cc-display-panel.ui.h:48
 msgid "5 minutes"
-msgstr ""
+msgstr "5分钟"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:46
 msgid "4 minutes"
-msgstr ""
+msgstr "4分钟"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:50
 msgid "8 minutes"
-msgstr ""
+msgstr "8分钟"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:52
 msgid "10 minutes"
-msgstr ""
+msgstr "10分钟"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:54
 msgid "12 minutes"
-msgstr ""
+msgstr "12分钟"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:1
 msgid "Input Sources"
@@ -5291,7 +5288,7 @@ msgstr "查看及自定义快捷键"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.ui.h:1
 msgid "Use layout default"
-msgstr ""
+msgstr "使用默认排版"
 
 #: panels/keyboard/cc-input-chooser.ui.h:1
 msgid "Add an Input Source"
@@ -7586,11 +7583,11 @@ msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "扁平"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "自适应"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7688,62 +7685,62 @@ msgstr "清除临时文件(_D)…"
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:16 panels/usage/cc-usage-panel.ui.h:34
 msgid "1 day"
-msgstr ""
+msgstr "1天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:18
 msgid "2 days"
-msgstr ""
+msgstr "2天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:20
 msgid "3 days"
-msgstr ""
+msgstr "3天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:22
 msgid "4 days"
-msgstr ""
+msgstr "4天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:24
 msgid "5 days"
-msgstr ""
+msgstr "5天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:26
 msgid "6 days"
-msgstr ""
+msgstr "6天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:28 panels/usage/cc-usage-panel.ui.h:36
 msgid "7 days"
-msgstr ""
+msgstr "7天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:30
 msgid "14 days"
-msgstr ""
+msgstr "14天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:32 panels/usage/cc-usage-panel.ui.h:38
 msgid "30 days"
-msgstr ""
+msgstr "30天"
 
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:40
 msgid "Forever"
-msgstr ""
+msgstr "永久"
 
 #: panels/online-accounts/online-accounts.ui.h:2
 msgid "Connect to your data in the cloud"
@@ -7767,15 +7764,15 @@ msgstr "退出"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "面板"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
-msgstr ""
+msgstr "回到上一个面板"
 
 #: shell/help-overlay.ui.h:6
 msgid "Cancel search"
-msgstr ""
+msgstr "取消搜索"
 
 #: shell/cc-window.ui.h:2
 msgid "All Settings"
@@ -8281,7 +8278,7 @@ msgstr ""
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"
-msgstr ""
+msgstr "清除消息"
 
 #: panels/keyboard/01-launchers.xml.in:2
 msgid "Launchers"

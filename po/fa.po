@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-16 21:28+0100\n"
+"POT-Creation-Date: 2022-08-21 20:07+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Persian (https://www.transifex.com/buddiesofbudgie/teams/129844/fa/)\n"
@@ -1452,7 +1452,7 @@ msgstr ""
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:438
 #: panels/wwan/cc-wwan-device-page.c:190
 #: panels/printers/ppd-selection-dialog.ui.h:2
-#: panels/printers/authentication-dialog.ui.h:2
+#: panels/printers/authentication-dialog.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:8
 msgid "Cancel"
 msgstr "لغو"
@@ -4167,7 +4167,7 @@ msgid "Enter a network address or search for a printer"
 msgstr "یک نشانی شبکه وارد کرده یا برای چاپگر جست‌وجو کنید"
 
 #: panels/printers/new-printer-dialog.ui.h:11
-#: panels/printers/authentication-dialog.ui.h:6
+#: panels/printers/authentication-dialog.ui.h:5
 msgid "Authentication Required"
 msgstr "تصدیق هویت لازم است"
 
@@ -4178,7 +4178,7 @@ msgstr "برای دیدن چاپگرهای روی کارساز چاپ، نام�
 #. Translators: This is a username on a print server.
 #: panels/printers/new-printer-dialog.ui.h:13
 #: panels/printers/pp-jobs-dialog.ui.h:4
-#: panels/printers/authentication-dialog.ui.h:4
+#: panels/printers/authentication-dialog.ui.h:3
 #: panels/wwan/cc-wwan-apn-dialog.ui.h:7
 msgid "Username"
 msgstr "نام کاربری"
@@ -4186,7 +4186,7 @@ msgstr "نام کاربری"
 #. Translators: This is a password needed for printing.
 #: panels/printers/new-printer-dialog.ui.h:14
 #: panels/printers/pp-jobs-dialog.ui.h:6
-#: panels/printers/authentication-dialog.ui.h:5
+#: panels/printers/authentication-dialog.ui.h:4
 #: panels/user-accounts/cc-add-user-dialog.ui.h:9
 #: panels/sharing/cc-sharing-panel.ui.h:25 panels/network/network-wifi.ui.h:3
 #: panels/network/cc-wifi-hotspot-dialog.ui.h:3
@@ -4306,11 +4306,7 @@ msgstr "انتخاب از پایگاه داده…"
 msgid "Install PPD File…"
 msgstr "نصب پروندهء PPD…"
 
-#: panels/printers/authentication-dialog.ui.h:1
-msgid " "
-msgstr ""
-
-#: panels/printers/authentication-dialog.ui.h:3
+#: panels/printers/authentication-dialog.ui.h:2
 msgid "Authenticate"
 msgstr "تصدیق هویت"
 

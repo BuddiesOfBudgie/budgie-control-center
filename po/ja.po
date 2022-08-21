@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-16 21:28+0100\n"
+"POT-Creation-Date: 2022-08-21 20:07+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/buddiesofbudgie/teams/129844/ja/)\n"
@@ -1429,7 +1429,7 @@ msgstr "ショートカットをリセットするとカスタムショートカ
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:438
 #: panels/wwan/cc-wwan-device-page.c:190
 #: panels/printers/ppd-selection-dialog.ui.h:2
-#: panels/printers/authentication-dialog.ui.h:2
+#: panels/printers/authentication-dialog.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:8
 msgid "Cancel"
 msgstr "キャンセル"
@@ -4101,7 +4101,7 @@ msgid "Enter a network address or search for a printer"
 msgstr "ネットワークアドレスを入力するかプリンターを検索してください"
 
 #: panels/printers/new-printer-dialog.ui.h:11
-#: panels/printers/authentication-dialog.ui.h:6
+#: panels/printers/authentication-dialog.ui.h:5
 msgid "Authentication Required"
 msgstr "認証が必要です"
 
@@ -4112,7 +4112,7 @@ msgstr "プリンターサーバーで利用可能なプリンターを表示す
 #. Translators: This is a username on a print server.
 #: panels/printers/new-printer-dialog.ui.h:13
 #: panels/printers/pp-jobs-dialog.ui.h:4
-#: panels/printers/authentication-dialog.ui.h:4
+#: panels/printers/authentication-dialog.ui.h:3
 #: panels/wwan/cc-wwan-apn-dialog.ui.h:7
 msgid "Username"
 msgstr "ユーザー名"
@@ -4120,7 +4120,7 @@ msgstr "ユーザー名"
 #. Translators: This is a password needed for printing.
 #: panels/printers/new-printer-dialog.ui.h:14
 #: panels/printers/pp-jobs-dialog.ui.h:6
-#: panels/printers/authentication-dialog.ui.h:5
+#: panels/printers/authentication-dialog.ui.h:4
 #: panels/user-accounts/cc-add-user-dialog.ui.h:9
 #: panels/sharing/cc-sharing-panel.ui.h:25 panels/network/network-wifi.ui.h:3
 #: panels/network/cc-wifi-hotspot-dialog.ui.h:3
@@ -4240,11 +4240,7 @@ msgstr "データベースから選択…"
 msgid "Install PPD File…"
 msgstr "PPD ファイルをインストール…"
 
-#: panels/printers/authentication-dialog.ui.h:1
-msgid " "
-msgstr ""
-
-#: panels/printers/authentication-dialog.ui.h:3
+#: panels/printers/authentication-dialog.ui.h:2
 msgid "Authenticate"
 msgstr "認証"
 
