@@ -8,7 +8,7 @@
     <property name="can_focus">False</property>
     <property name="hexpand">True</property>
     <property name="border_width">5</property>
-    <property name="title" translatable="yes"> </property>
+    <property name="title" translatable="no"> </property>
     <property name="resizable">False</property>
     <property name="modal">True</property>
     <property name="destroy_with_parent">True</property>
