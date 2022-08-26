@@ -1473,6 +1473,19 @@ pw_generate (void)
 }
 
 static void
+on_remote_control_switch_active_changed (CcSharingPanel *self)
+{
+  g_autoptr(GSettings) vnc_settings = NULL;
+  gboolean remote_control;
+
+  vnc_settings = g_settings_new (GNOME_REMOTE_DESKTOP_VNC_SCHEMA_ID);
+  remote_control = gtk_switch_get_active (GTK_SWITCH (self->remote_control_switch));
+
+  g_settings_set_boolean (vnc_settings, "view-only", remote_control != TRUE);
+}
+
+
+static void
 cc_sharing_panel_setup_remote_desktop_dialog (CcSharingPanel *self)
 {
   const gchar *username = NULL;
@@ -1511,6 +1524,9 @@ cc_sharing_panel_setup_remote_desktop_dialog (CcSharingPanel *self)
                    self->remote_control_switch,
                    "active",
                    G_SETTINGS_BIND_DEFAULT | G_SETTINGS_BIND_INVERT_BOOLEAN);
+  g_signal_connect_object (self->remote_control_switch, "notify::active",
+                           G_CALLBACK (on_remote_control_switch_active_changed),
+                           self, G_CONNECT_SWAPPED);
 
   vnc_auth_method = g_settings_get_string (vnc_settings, "auth-method");
 
