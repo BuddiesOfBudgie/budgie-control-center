@@ -5,7 +5,6 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
@@ -14,12 +13,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-21 20:07+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2022\n"
-"Language-Team: Portuguese (https://www.transifex.com/buddiesofbudgie/teams/129844/pt/)\n"
+"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Language-Team: Portuguese (Portugal) (https://www.transifex.com/buddiesofbudgie/teams/129844/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt\n"
+"Language: pt_PT\n"
 "Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: panels/printers/pp-options-dialog.c:87

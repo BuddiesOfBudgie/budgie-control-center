@@ -24,7 +24,7 @@ msgstr ""
 
 #: panels/printers/pp-options-dialog.c:87
 msgid "Two Sided"
-msgstr "Dos caras"
+msgstr "A doble cara"
 
 #: panels/printers/pp-options-dialog.c:88
 msgid "Paper Type"
