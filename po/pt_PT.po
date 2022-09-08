@@ -5,6 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-21 20:07+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2022\n"
 "Language-Team: Portuguese (Portugal) (https://www.transifex.com/buddiesofbudgie/teams/129844/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1511,7 +1512,7 @@ msgstr "A nova palavra-passe é demasiado simples"
 
 #: panels/user-accounts/run-passwd.c:504
 msgid "The old and new passwords are too similar"
-msgstr "As palavras-passe antiga e nova são demasiado semelhantes"
+msgstr "A palavra-passe antiga e a nova são demasiado semelhantes"
 
 #: panels/user-accounts/run-passwd.c:507
 msgid "The new password has already been used recently."
@@ -1523,15 +1524,15 @@ msgstr "A nova palavra-passe tem de conter caracteres numéricos ou especiais"
 
 #: panels/user-accounts/run-passwd.c:514
 msgid "The old and new passwords are the same"
-msgstr "As palavras-passe antiga e nova são idênticas"
+msgstr "A palavra-passe antiga e a nova são idênticas"
 
 #: panels/user-accounts/run-passwd.c:518
 msgid "Your password has been changed since you initially authenticated!"
-msgstr "A sua palavra-passe foi alterada após se ter autenticado!"
+msgstr "A sua palavra-passe foi alterada desde a sua autenticação inicial!"
 
 #: panels/user-accounts/run-passwd.c:522
 msgid "The new password does not contain enough different characters"
-msgstr "A nova palavra-passe não contém caracteres distintos suficientes"
+msgstr "A nova palavra-passe não contém caracteres diferentes suficientes"
 
 #: panels/user-accounts/run-passwd.c:526
 msgid "Unknown error"
@@ -1539,15 +1540,15 @@ msgstr "Erro desconhecido"
 
 #: panels/user-accounts/cc-password-dialog.c:125
 msgid "Please choose another password."
-msgstr "Por favor, selecione uma palavra-passe diferente."
+msgstr "Selecione uma palavra-passe diferente."
 
 #: panels/user-accounts/cc-password-dialog.c:134
 msgid "Please type your current password again."
-msgstr "Por favor, insira novamente a sua palavra-passe atual."
+msgstr "Introduza novamente a sua palavra-passe atual."
 
 #: panels/user-accounts/cc-password-dialog.c:140
 msgid "Password could not be changed"
-msgstr "Impossível alterar a palavra-passe"
+msgstr "Não foi possível alterar a palavra-passe"
 
 #: panels/user-accounts/cc-password-dialog.c:261
 #: panels/user-accounts/cc-add-user-dialog.c:661
@@ -1565,26 +1566,26 @@ msgstr "Procurar por mais imagens"
 
 #: panels/user-accounts/cc-realm-manager.c:303
 msgid "Cannot automatically join this type of domain"
-msgstr "Impossível ligar-se automaticamente a este tipo de domínio"
+msgstr "Não é possível aderir automaticamente a este tipo de domínio"
 
 #: panels/user-accounts/cc-realm-manager.c:306
 msgid "No such domain or realm found"
-msgstr "Domínio ou reino não encontrado"
+msgstr "Domínio ou realm não encontrado"
 
 #: panels/user-accounts/cc-realm-manager.c:712
 #: panels/user-accounts/cc-realm-manager.c:726
 #, c-format
 msgid "Cannot log in as %s at the %s domain"
-msgstr "Impossível iniciar sessão como %s no domínio %s"
+msgstr "Não é possível iniciar sessão como %s no domínio %s"
 
 #: panels/user-accounts/cc-realm-manager.c:718
 msgid "Invalid password, please try again"
-msgstr "Palavra-passe inválida, por favor, tente novamente"
+msgstr "Palavra-passe inválida. Tente novamente"
 
 #: panels/user-accounts/cc-realm-manager.c:731
 #, c-format
 msgid "Couldn’t connect to the %s domain: %s"
-msgstr "Impossível ligar-se ao domínio %s: %s"
+msgstr "Não foi possível ligar-se ao domínio %s: %s"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:236
 msgid "the device needs to be claimed to perform this action"
@@ -1671,7 +1672,7 @@ msgstr "Dedo desconhecido"
 #: panels/user-accounts/cc-fingerprint-dialog.c:837
 msgctxt "Fingerprint enroll state"
 msgid "Complete"
-msgstr "Feito"
+msgstr "Concluído"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:848
 msgid "Fingerprint device disconnected"
@@ -1884,9 +1885,7 @@ msgstr ""
 
 #: panels/user-accounts/user-utils.c:436
 msgid "Sorry, that user name isn’t available. Please try another."
-msgstr ""
-"Desculpe, este nome de utilizador não está disponível. Por favor, tente "
-"outro."
+msgstr "Lamentamos, este nome de utilizador não está disponível. Tente outro."
 
 #: panels/user-accounts/user-utils.c:478
 msgid "The username is too long."
@@ -1925,16 +1924,16 @@ msgid ""
 "That login name didn’t work.\n"
 "Please try again."
 msgstr ""
-"Este nome de inicio de sessão não funcionou.\n"
-"Por favor, tente novamente."
+"Este nome de acesso não funcionou.\n"
+"Tente novamente."
 
 #: panels/user-accounts/cc-add-user-dialog.c:1173
 msgid ""
 "That login password didn’t work.\n"
 "Please try again."
 msgstr ""
-"Esta palavra-passe de inicio de sessão não funcionou.\n"
-"Por favor, tente novamente."
+"Esta palavra-passe de acesso não funcionou.\n"
+"Tente novamente."
 
 #: panels/user-accounts/cc-add-user-dialog.c:1181
 msgid "Failed to log into domain"
@@ -3582,7 +3581,7 @@ msgstr "O dispositivo sem-fio não suporta o modo ponto de acesso"
 
 #: panels/network/cc-network-panel.c:686 panels/network/cc-wifi-panel.ui.h:12
 msgid "Oops, something has gone wrong. Please contact your software vendor."
-msgstr "Algo correu mal. Por favor, contacte o seu fornecedor do programa."
+msgstr "Algo correu mal. Contacte o seu fornecedor do programa."
 
 #: panels/network/cc-network-panel.c:692
 msgid "NetworkManager needs to be running."
@@ -4317,7 +4316,7 @@ msgstr "Nível da tinta"
 #. Translators: This is the message which follows the printer error.
 #: panels/printers/printer-entry.ui.h:13
 msgid "Please restart when the problem is resolved."
-msgstr "Por favor, reinicie quando o problema for solucionado."
+msgstr "Reinicie quando o problema for solucionado."
 
 #. Translators: This is the button which restarts the printer.
 #: panels/printers/printer-entry.ui.h:15
@@ -4449,7 +4448,7 @@ msgstr "Nenhuma caneta encontrada"
 
 #: panels/wacom/wacom-stylus-page.ui.h:7
 msgid "Please move your stylus to the proximity of the tablet to configure it"
-msgstr "Por favor, mova a sua caneta para perto do tablet para configurá-lo"
+msgstr "Mova a sua caneta para perto do tablet para configurá-lo"
 
 #: panels/wacom/wacom-stylus-page.ui.h:9
 msgid "Eraser Pressure Feel"
@@ -4554,8 +4553,8 @@ msgid ""
 "Please tap the target markers as they appear on screen to calibrate the "
 "tablet."
 msgstr ""
-"Por favor, toque nos marcadores alvo à medida que surgem no ecrã para "
-"calibrar o tablet."
+"Toque nos marcadores alvo à medida que surgem no ecrã para calibrar o "
+"tablet."
 
 #: panels/wacom/calibrator/calibrator.ui.h:3
 msgid "Mis-click detected, restarting…"
@@ -5727,8 +5726,8 @@ msgid ""
 "type their domain password here."
 msgstr ""
 "De forma a utilizar contas empresariais, este computador\n"
-"tem de ser adicionado ao domínio. Por favor, peça ao administrador\n"
-"da sua rede para inserir aqui a sua palavra-passe de domínio."
+"tem de ser adicionado ao domínio. Peça ao administrador\n"
+"da sua rede para introduzir aqui a sua palavra-passe de domínio."
 
 #: panels/user-accounts/data/join-dialog.ui.h:9
 #: panels/user-accounts/cc-add-user-dialog.ui.h:15
@@ -6587,7 +6586,7 @@ msgstr ""
 
 #: panels/sharing/cc-sharing-panel.ui.h:29
 msgid "Media Sharing"
-msgstr "Partilha de multimédia"
+msgstr "Partilha de ficheiros"
 
 #: panels/sharing/cc-sharing-panel.ui.h:30
 msgid "Share music, photos and videos over the network."
@@ -6607,7 +6606,7 @@ msgstr "_Requerer uma palavra-passe"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:1
 msgid "Select how media should be handled"
-msgstr "Selecione como gerir multimédia"
+msgstr "Selecionar como os ficheiros devem ser geridos"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:2
 msgid "CD _audio"
@@ -6632,7 +6631,7 @@ msgstr "_Aplicação"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:7
 msgid "_Other Media…"
-msgstr "_Outro multimédia…"
+msgstr "_Outro ficheiro…"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:8
 msgid "_Never prompt or start programs on media insertion"
@@ -6640,7 +6639,7 @@ msgstr "_Nunca questionar ou iniciar aplicações ao inserir um suporte"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:9
 msgid "Select how other media should be handled"
-msgstr "Selecione como gerir outros suportes"
+msgstr "Selecionar como os outros ficheiros devem ser geridos"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:10
 msgid "_Action:"
@@ -6772,7 +6771,7 @@ msgstr "Nome do SO"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:10
 msgid "OS Type"
-msgstr "Tipo do SO"
+msgstr "Tipo de SO"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
 msgid "Windowing System"
