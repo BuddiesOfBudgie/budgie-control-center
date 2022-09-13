@@ -5,6 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Виктор, 2022
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-21 20:07+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Виктор, 2022\n"
 "Language-Team: Russian (https://www.transifex.com/buddiesofbudgie/teams/129844/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +36,7 @@ msgstr "Источники бумаги"
 
 #: panels/printers/pp-options-dialog.c:90
 msgid "Output Tray"
-msgstr "Приёмный лоток"
+msgstr "Выходной лоток"
 
 #: panels/printers/pp-options-dialog.c:91
 msgctxt "printing option"
@@ -73,7 +74,7 @@ msgstr "Общие"
 #: panels/printers/pp-options-dialog.c:654
 msgctxt "Printer Option Group"
 msgid "Page Setup"
-msgstr "Параметры страницы"
+msgstr "Настройка страницы"
 
 #. Translators: "Installable Options" tab contains settings of presence of
 #. installed options (amount of RAM, duplex unit, etc.)
@@ -144,7 +145,7 @@ msgstr[3] "%u заданий"
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
 msgid "Clean print heads"
-msgstr "Очистка печатающих головок принтера"
+msgstr "Очистить печатающие головки принтера"
 
 #. Translators: The printer is low on toner
 #: panels/printers/pp-printer-entry.c:713
@@ -303,7 +304,7 @@ msgstr "Перевёрнутая портретная"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "Автоматическая конфигурация"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:683
@@ -377,7 +378,7 @@ msgstr "Выполнено"
 #. Translators: Clicking this button prioritizes printing of this print job
 #: panels/printers/pp-job-row.c:179
 msgid "Move this job to the top of the queue"
-msgstr ""
+msgstr "Переместите это задание в начало очереди"
 
 #. Translators: The found device is a JetDirect printer
 #: panels/printers/pp-host.c:478
@@ -604,7 +605,7 @@ msgstr "Вывод:"
 #. Keep ratio switch
 #: panels/wacom/cc-wacom-mapping-panel.c:257
 msgid "Keep aspect ratio (letterbox):"
-msgstr "Сохранять соотношение сторон:"
+msgstr "Сохранять соотношение сторон (letterbox):"
 
 #. Whole-desktop checkbox
 #: panels/wacom/cc-wacom-mapping-panel.c:268
@@ -622,7 +623,7 @@ msgstr "_Закрыть"
 
 #: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Test Your _Settings"
-msgstr "_Проверить параметры"
+msgstr "Проверить _настройки"
 
 #: panels/wacom/cc-wacom-panel.c:764 panels/wacom/wacom-stylus-page.ui.h:8
 msgid "Stylus"
@@ -1297,7 +1298,7 @@ msgstr "Нет"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:381
 msgid "Layout default"
-msgstr ""
+msgstr "Макет по умолчанию"
 
 #: panels/keyboard/cc-keyboard-manager.c:486
 #: panels/keyboard/cc-keyboard-manager.c:494
@@ -1366,7 +1367,7 @@ msgstr ""
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "Нет"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -2070,14 +2071,14 @@ msgstr "На прошлой неделе"
 #: panels/user-accounts/cc-login-history-dialog.c:86
 msgctxt "login history week label"
 msgid "%b %e"
-msgstr "%-d %b"
+msgstr "%e %b"
 
 #. Translators: This is a date format string in the style of "Feb 24, 2013",
 #. shown as the last day of a week on login history dialog.
 #: panels/user-accounts/cc-login-history-dialog.c:91
 msgctxt "login history week label"
 msgid "%b %e, %Y"
-msgstr "%-d %b %Y"
+msgstr "%e %b %Y"
 
 #. Translators: This indicates a week label on a login history.
 #. The first %s is the first day of a week, and the second %s the last day.
@@ -2216,7 +2217,7 @@ msgstr "Файловая система"
 #: panels/applications/cc-applications-panel.c:871
 #: panels/keyboard/01-launchers.xml.in:6
 msgid "Settings"
-msgstr "Параметры"
+msgstr "Настройки"
 
 #: panels/applications/cc-applications-panel.c:871
 msgid "Can change settings"
@@ -2536,12 +2537,12 @@ msgstr "Вчера"
 #. Translators: This is a date format string in the style of "Feb 24".
 #: panels/common/cc-util.c:138
 msgid "%b %e"
-msgstr "%-d %b"
+msgstr "%e %b"
 
 #. Translators: This is a date format string in the style of "Feb 24, 2013".
 #: panels/common/cc-util.c:143
 msgid "%b %e, %Y"
-msgstr "%-d %b %Y"
+msgstr "%e %b %Y"
 
 #: panels/common/cc-util.c:165
 #, c-format
@@ -2782,7 +2783,7 @@ msgid ""
 "(ascii) or 10/26 (hex)"
 msgstr ""
 "недействительный wep-ключ: ключ с неверной длиной %zu. Ключ должен быть "
-"длины 5/13 (ASCII) или 10/26 (HEX)"
+"длиной 5/13 (ASCII) или 10/26 (HEX)"
 
 #: panels/network/wireless-security/ws-wep-key.c:144
 msgid "invalid wep-key: passphrase must be non-empty"
@@ -2807,7 +2808,7 @@ msgstr "неизвестная ошибка проверки файла ЕАР-�
 
 #: panels/network/wireless-security/eap-method.c:397
 msgid "DER, PEM, or PKCS#12 private keys (*.der, *.pem, *.p12, *.key)"
-msgstr "DER, PEM, или приватные ключи PKCS#12 (*.der, *.pem, *.p12, *.key)"
+msgstr "Приватные ключи DER, PEM или PKCS#12 (*.der, *.pem, *.p12, *.key)"
 
 #: panels/network/wireless-security/eap-method.c:400
 msgid "DER or PEM certificates (*.der, *.pem, *.crt, *.cer)"
@@ -2837,12 +2838,12 @@ msgid ""
 "digits"
 msgstr ""
 "недействительный wpa-psk: ключ неверной длины %zu. Должен быть [8,63] байт "
-"или 64 шестнадцатеричных цифр"
+"или 64 шестнадцатеричных цифры"
 
 #: panels/network/wireless-security/ws-wpa-psk.c:86
 msgid "invalid wpa-psk: cannot interpret key with 64 bytes as hex"
 msgstr ""
-"недействительный wpa-psk: невозможно интерпретировать ключ с 64 байт как "
+"недействительный wpa-psk: невозможно интерпретировать ключ с 64 байтами как "
 "шестнадцатеричный"
 
 #: panels/network/wireless-security/wireless-security.c:71
@@ -2869,7 +2870,7 @@ msgstr "недействительный сертификат EAP-TLS CA: сер
 #: panels/network/wireless-security/eap-method-tls.c:129
 #, c-format
 msgid "invalid EAP-TLS private-key: %s"
-msgstr "недействительный секретный ключ EAP-TLS: %s"
+msgstr "недействительный приватный ключ EAP-TLS: %s"
 
 #: panels/network/wireless-security/eap-method-tls.c:139
 #, c-format
@@ -2878,7 +2879,7 @@ msgstr "недействительный пользовательский сер
 
 #: panels/network/wireless-security/eap-method-tls.c:272
 msgid "Unencrypted private keys are insecure"
-msgstr "Незашифрованные закрытые ключи являются небезопасными"
+msgstr "Незашифрованные приватные ключи являются небезопасными"
 
 #: panels/network/wireless-security/eap-method-tls.c:275
 msgid ""
@@ -3119,7 +3120,7 @@ msgstr "Не удалось зарегистрироваться в запрош
 #. TRANSLATORS: device status reason
 #: panels/network/panel-common.c:216
 msgid "PIN check failed"
-msgstr "Сбой проверки PIN"
+msgstr "Сбой проверки ПИН"
 
 #. TRANSLATORS: device status reason
 #: panels/network/panel-common.c:220
@@ -3154,7 +3155,7 @@ msgstr "Не вставлена SIM-карта"
 #. TRANSLATORS: device status reason
 #: panels/network/panel-common.c:244
 msgid "SIM Pin required"
-msgstr "Требуется SIM Pin"
+msgstr "Требуется ПИН SIM-карты"
 
 #. TRANSLATORS: device status reason
 #: panels/network/panel-common.c:248
@@ -3514,10 +3515,10 @@ msgstr "Должно содержать не менее 8 символов"
 #, c-format
 msgid "Must have a maximum of %d character"
 msgid_plural "Must have a maximum of %d characters"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "Должно содержать не более %d символа"
+msgstr[1] "Должно содержать не более %d символов"
+msgstr[2] "Должно содержать не более %d символов"
+msgstr[3] "Должно содержать не более %d символов"
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
@@ -3609,27 +3610,27 @@ msgstr "Только 4G"
 
 #: panels/wwan/cc-wwan-device.c:997
 msgid "5G Only"
-msgstr ""
+msgstr "Только 5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G (Предпочтительно)"
 
 #: panels/wwan/cc-wwan-device.c:1009
 msgid "2G, 3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G, 4G (Предпочтительно), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1011
 msgid "2G, 3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G, 3G (Предпочтительно), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1013
 msgid "2G (Preferred), 3G, 4G, 5G"
-msgstr ""
+msgstr "2G (Предпочтительно), 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1022
 msgid "2G, 3G, 4G (Preferred)"
@@ -3649,51 +3650,51 @@ msgstr "2G, 3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1035
 msgid "3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 4G, 5G (Предпочтительно)"
 
 #: panels/wwan/cc-wwan-device.c:1037
 msgid "3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "3G, 4G (Предпочтительно), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1039
 msgid "3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "3G (Предпочтительно), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
-msgstr ""
+msgstr "3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 4G, 5G (Предпочтительно)"
 
 #: panels/wwan/cc-wwan-device.c:1050
 msgid "2G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 4G (Предпочтительно), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1052
 msgid "2G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G (Предпочтительно), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
-msgstr ""
+msgstr "2G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 5G (Предпочтительно)"
 
 #: panels/wwan/cc-wwan-device.c:1063
 msgid "2G, 3G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G (Предпочтительно), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1065
 msgid "2G (Preferred), 3G, 5G"
-msgstr ""
+msgstr "2G (Предпочтительно), 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
-msgstr ""
+msgstr "2G, 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1073
 msgid "3G, 4G (Preferred)"
@@ -3733,39 +3734,39 @@ msgstr "2G, 3G"
 
 #: panels/wwan/cc-wwan-device.c:1103
 msgid "2G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 5G (Предпочтительно)"
 
 #: panels/wwan/cc-wwan-device.c:1105
 msgid "2G (Preferred), 5G"
-msgstr ""
+msgstr "2G (Предпочтительно), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
-msgstr ""
+msgstr "2G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 5G (Предпочтительно)"
 
 #: panels/wwan/cc-wwan-device.c:1115
 msgid "3G (Preferred), 5G"
-msgstr ""
+msgstr "3G (Предпочтительно), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
-msgstr ""
+msgstr "3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
-msgstr ""
+msgstr "4G, 5G (Предпочтительно)"
 
 #: panels/wwan/cc-wwan-device.c:1125
 msgid "4G (Preferred), 5G"
-msgstr ""
+msgstr "4G (Предпочтительно), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
-msgstr ""
+msgstr "4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
@@ -3799,7 +3800,7 @@ msgstr "SIM %d"
 
 #: panels/wwan/cc-wwan-device-page.c:188
 msgid "Unlock SIM card"
-msgstr "Разблокирование SIM-карты"
+msgstr "Разблокировать SIM-карту"
 
 #: panels/wwan/cc-wwan-device-page.c:189 panels/wwan/cc-wwan-device-page.c:237
 msgid "Unlock"
@@ -3808,26 +3809,26 @@ msgstr "Разблокировать"
 #: panels/wwan/cc-wwan-device-page.c:194
 #, c-format
 msgid "Please provide PIN code for SIM %d"
-msgstr "Пожалуйста, введите PIN код для SIM карты %d"
+msgstr "Пожалуйста, введите ПИН-код для SIM-карты %d"
 
 #: panels/wwan/cc-wwan-device-page.c:195
 msgid "Enter PIN to unlock your SIM card"
-msgstr "Введите PIN, чтобы разблокировать вашу SIM карту"
+msgstr "Введите ПИН, чтобы разблокировать вашу SIM-карту"
 
 #: panels/wwan/cc-wwan-device-page.c:199
 #, c-format
 msgid "Please provide PUK code for SIM %d"
-msgstr "Пожалуйста, предоставьте код PUK для SIM %d"
+msgstr "Пожалуйста, предоставьте PUK-код для SIM-карты %d"
 
 #: panels/wwan/cc-wwan-device-page.c:200
 msgid "Enter PUK to unlock your SIM card"
-msgstr "Введите PUK код, чтобы разблокировать вашу SIM карту"
+msgstr "Введите PUK, чтобы разблокировать вашу SIM-карту"
 
 #: panels/wwan/cc-wwan-device-page.c:218
 #, c-format
 msgid "Wrong password entered. You have %1$u try left"
 msgid_plural "Wrong password entered. You have %1$u tries left"
-msgstr[0] "Введён неверный код. У вас осталось %1$u попытка"
+msgstr[0] "Введён неверный код. У вас осталась %1$u попытка"
 msgstr[1] "Введён неверный код. У вас осталось %1$u попытки"
 msgstr[2] "Введён неверный код. У вас осталось %1$u попыток"
 msgstr[3] "Введён неверный код. У вас осталось %1$u попыток"
@@ -3836,7 +3837,7 @@ msgstr[3] "Введён неверный код. У вас осталось %1$u
 #, c-format
 msgid "You have %u try left"
 msgid_plural "You have %u tries left"
-msgstr[0] "У вас осталось %u попытка"
+msgstr[0] "У вас осталась %u попытка"
 msgstr[1] "У вас осталось %u попытки"
 msgstr[2] "У вас осталось %u попыток"
 msgstr[3] "У вас осталось %u попыток"
@@ -3851,15 +3852,15 @@ msgstr "Код PUK должен состоять из 8 цифр"
 
 #: panels/wwan/cc-wwan-device-page.c:295
 msgid "Enter New PIN"
-msgstr "Введите новый PIN"
+msgstr "Введите новый ПИН"
 
 #: panels/wwan/cc-wwan-device-page.c:299
 msgid "PIN code should be a 4-8 digit number"
-msgstr "Код PIN должен состоять из от 4 до 8 цифр"
+msgstr "ПИН-код должен состоять из 4-8 цифр"
 
 #: panels/wwan/cc-wwan-device-page.c:317
 msgid "Unlocking…"
-msgstr ""
+msgstr "Разблокировка…"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.c:230
 #: panels/wwan/cc-wwan-mode-dialog.ui.h:3
@@ -3882,12 +3883,12 @@ msgstr "<b>Ошибка:</b> Ошибка мобильного оборудов�
 #. Translators: This is the full date and time format used in 12-hour mode.
 #: panels/datetime/cc-datetime-panel.c:262
 msgid "%e %B %Y, %l:%M %p"
-msgstr "%-d %B %Y, %l∶%M %p"
+msgstr "%e %B %Y, %l∶%M %p"
 
 #. Translators: This is the full date and time format used in 24-hour mode.
 #: panels/datetime/cc-datetime-panel.c:267
 msgid "%e %B %Y, %R"
-msgstr "%-d %B %Y, %R"
+msgstr "%e %B %Y, %R"
 
 #. Translators: "city, country"
 #: panels/datetime/cc-datetime-panel.c:449
@@ -4090,7 +4091,7 @@ msgid ""
 "Sending reports of technical problems helps us improve %s. Reports are sent "
 "anonymously and are scrubbed of personal data. %s"
 msgstr ""
-"Отправка сообщения о технических проблемах помогает нам улучшить %s. Отчеты "
+"Отправка сообщения о технических проблемах помогает нам улучшать %s. Отчёты "
 "отправляются анонимно и не содержат персональных данных. %s"
 
 #: panels/usage/cc-usage-panel.c:154
@@ -4175,7 +4176,7 @@ msgstr "Конфиденциальность"
 #: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Центр управления Budgie"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -4517,7 +4518,7 @@ msgstr "Подключите или включите планшет Wacom"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:8
 msgid "Bluetooth Settings"
-msgstr "Параметры Bluetooth"
+msgstr "Настройки Bluetooth"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
@@ -4546,7 +4547,7 @@ msgstr "Калибровать…"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:15
 msgid "Adjust mouse settings"
-msgstr "Изменить параметры мыши"
+msgstr "Изменить настройки мыши"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:16
 msgid "Adjust display resolution"
@@ -4600,12 +4601,12 @@ msgstr "15 минут"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:4
 msgid "20 minutes"
-msgstr ""
+msgstr "20 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:6
 msgid "25 minutes"
-msgstr ""
+msgstr "25 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4618,7 +4619,7 @@ msgstr "30 минут"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:10
 msgid "45 minutes"
-msgstr ""
+msgstr "45 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4628,27 +4629,27 @@ msgstr ""
 #: panels/power/cc-power-panel.ui.h:12 panels/display/cc-display-panel.ui.h:38
 #: panels/usage/cc-usage-panel.ui.h:14
 msgid "1 hour"
-msgstr ""
+msgstr "1 час"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:14
 msgid "80 minutes"
-msgstr ""
+msgstr "80 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:16
 msgid "90 minutes"
-msgstr ""
+msgstr "90 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:18
 msgid "100 minutes"
-msgstr ""
+msgstr "100 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:20
 msgid "2 hours"
-msgstr ""
+msgstr "2 часа"
 
 #: panels/power/cc-power-panel.ui.h:23
 msgid "Power Mode"
@@ -4957,7 +4958,7 @@ msgstr "LCD с расширенной цветовой палитрой (RGB LED
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:34
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "Высокая"
 
 #: panels/color/cc-color-panel.ui.h:54
 msgid "40 minutes"
@@ -4965,13 +4966,13 @@ msgstr "40 минут"
 
 #: panels/color/cc-color-panel.ui.h:55
 msgid "Medium"
-msgstr ""
+msgstr "Средняя"
 
 #: panels/color/cc-color-panel.ui.h:57
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:33
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:35
 msgid "Low"
-msgstr ""
+msgstr "Низкая"
 
 #: panels/color/cc-color-panel.ui.h:59
 msgid "Native to display"
@@ -5100,7 +5101,7 @@ msgstr "Системная громкость"
 
 #: panels/sound/cc-sound-panel.ui.h:2
 msgid "Over-Amplification"
-msgstr ""
+msgstr "Увеличение максимальной громкости"
 
 #: panels/sound/cc-sound-panel.ui.h:4
 #, no-c-format
@@ -5108,6 +5109,8 @@ msgid ""
 "Allows raising the volume above 100%. This can result in a loss of audio "
 "quality; it is better to increase application volume settings, if possible."
 msgstr ""
+"Позволяет поднять громкость выше 100%. Это может привести к потере качества "
+"звука. По возможности лучше увеличивать громкость в настройках приложения."
 
 #: panels/sound/cc-sound-panel.ui.h:5
 msgid "Volume Levels"
@@ -5159,7 +5162,7 @@ msgstr "Звук уведомления"
 
 #: panels/display/cc-display-settings.ui.h:2
 msgid "Resolution"
-msgstr ""
+msgstr "Разрешение"
 
 #: panels/display/cc-display-settings.ui.h:3
 msgid "Refresh Rate"
@@ -5171,17 +5174,19 @@ msgstr "Отрегулировать для ТВ"
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Scale"
-msgstr ""
+msgstr "Масштаб"
 
 #: panels/display/cc-display-settings.ui.h:6
 msgid "Fractional Scaling"
-msgstr ""
+msgstr "Дробное масштабирование"
 
 #: panels/display/cc-display-settings.ui.h:7
 msgid ""
 "May increase power usage, lower speed, or reduce display sharpness.\n"
 "        Fractional scaling will disable the lock-screen."
 msgstr ""
+"Может увеличить энергопотребление, снизить скорость или уменьшить чёткость изображения.\n"
+"Дробное масштабирование отключит экран блокировки."
 
 #. This cancels the redshift inhibit.
 #: panels/display/cc-night-light-page.ui.h:2
@@ -5261,7 +5266,7 @@ msgstr "Цветовая температура"
 
 #: panels/display/cc-display-panel.ui.h:1
 msgid "Display Settings Disabled"
-msgstr ""
+msgstr "Настройки дисплея отключены"
 
 #: panels/display/cc-display-panel.ui.h:2
 msgid "Single Display"
@@ -5334,14 +5339,14 @@ msgstr "Показывать _уведомления на экране блок�
 
 #: panels/display/cc-display-panel.ui.h:18
 msgid "Forbid new _USB devices"
-msgstr "Запрещать новые USB _устройств"
+msgstr "Запрещать новые _USB-устройства"
 
 #: panels/display/cc-display-panel.ui.h:19
 msgid ""
 "Prevent new USB devices from interacting with the system when the screen is "
 "locked."
 msgstr ""
-"Предотвращать взаимодействие новых USB устройств с системой когда экран "
+"Предотвращать взаимодействие новых USB-устройств с системой когда экран "
 "заблокирован."
 
 #: panels/display/cc-display-panel.ui.h:20
@@ -5353,13 +5358,13 @@ msgstr "Дисплеи"
 #. dialog.
 #: panels/display/cc-display-panel.ui.h:24
 msgid "Screen Turns Off"
-msgstr ""
+msgstr "Выключение экрана"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/display/cc-display-panel.ui.h:26
 msgid "30 seconds"
-msgstr ""
+msgstr "30 секунд"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5367,7 +5372,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:28
 #: panels/display/cc-display-panel.ui.h:40
 msgid "1 minute"
-msgstr ""
+msgstr "1 минута"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5375,7 +5380,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:30
 #: panels/display/cc-display-panel.ui.h:42
 msgid "2 minutes"
-msgstr ""
+msgstr "2 минуты"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5383,7 +5388,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:32
 #: panels/display/cc-display-panel.ui.h:44
 msgid "3 minutes"
-msgstr ""
+msgstr "3 минуты"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5391,27 +5396,27 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:34
 #: panels/display/cc-display-panel.ui.h:48
 msgid "5 minutes"
-msgstr ""
+msgstr "5 минут"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:46
 msgid "4 minutes"
-msgstr ""
+msgstr "4 минуты"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:50
 msgid "8 minutes"
-msgstr ""
+msgstr "8 минут"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:52
 msgid "10 minutes"
-msgstr ""
+msgstr "10 минут"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:54
 msgid "12 minutes"
-msgstr ""
+msgstr "12 минут"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:1
 msgid "Input Sources"
@@ -5447,7 +5452,7 @@ msgstr "Просмотр и изменение комбинаций клавиш
 
 #: panels/keyboard/cc-xkb-modifier-dialog.ui.h:1
 msgid "Use layout default"
-msgstr ""
+msgstr "Использовать макет по умолчанию"
 
 #: panels/keyboard/cc-input-chooser.ui.h:1
 msgid "Add an Input Source"
@@ -5611,11 +5616,11 @@ msgstr "Вход по отпечатку"
 
 #: panels/user-accounts/cc-fingerprint-dialog.ui.h:18
 msgid "Fingerprint Enroll"
-msgstr "Ввод по отпечатка"
+msgstr "Регистрация по отпечатку"
 
 #: panels/user-accounts/cc-fingerprint-dialog.ui.h:19
 msgid "_Re-enroll this finger…"
-msgstr "_Сканируйте этот палец ещё раз…"
+msgstr "_Отсканируйте этот палец ещё раз…"
 
 #: panels/user-accounts/cc-user-panel.ui.h:1
 msgid "_Add User…"
@@ -5893,7 +5898,7 @@ msgstr "Курсор увеличителя находится по _центр�
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:13
 msgid "Magnifier cursor _pushes contents around"
-msgstr "Курсор увеличения перемещается по _области увеличения"
+msgstr "Курсор увеличителя перемещается по _области увеличения"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:14
 msgid "Magnifier cursor moves with _contents"
@@ -5913,11 +5918,11 @@ msgstr "_Толщина:"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "Тонко"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "Толсто"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5955,11 +5960,11 @@ msgstr "_Контрастность:"
 #. The contrast scale goes from Color to None (grayscale)
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:30
 msgid "Co_lor"
-msgstr ""
+msgstr "_Цвет"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:32
 msgid "Full"
-msgstr ""
+msgstr "Полный"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:37
 msgid "Color Effects:"
@@ -6007,7 +6012,7 @@ msgstr "За_держка принятия:"
 #: panels/universal-access/cc-pointing-dialog.ui.h:5
 #: panels/universal-access/cc-pointing-dialog.ui.h:11
 msgid "Short"
-msgstr ""
+msgstr "Короткая"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:10
 msgid "Slow keys typing delay"
@@ -6018,7 +6023,7 @@ msgstr "Задержка ввода «медленных» клавиш"
 #: panels/universal-access/cc-pointing-dialog.ui.h:7
 #: panels/universal-access/cc-pointing-dialog.ui.h:12
 msgid "Long"
-msgstr ""
+msgstr "Длинная"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:12
 msgid "Beep when a key is pr_essed"
@@ -6107,11 +6112,11 @@ msgstr "Двигательный _порог:"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "Маленький"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "Большой"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -6156,7 +6161,7 @@ msgstr "_Крупный текст"
 
 #: panels/universal-access/cc-ua-panel.ui.h:5
 msgid "Enable A_nimations"
-msgstr "Разрешить _Анимацию"
+msgstr "Разрешить _анимацию"
 
 #: panels/universal-access/cc-ua-panel.ui.h:6
 msgid "C_ursor Size"
@@ -6476,7 +6481,7 @@ msgstr "Общий доступ к _файлам"
 
 #: panels/sharing/cc-sharing-panel.ui.h:3
 msgid "Remote _Desktop"
-msgstr ""
+msgstr "Удалённый _рабочий стол"
 
 #: panels/sharing/cc-sharing-panel.ui.h:4
 msgid "_Media Sharing"
@@ -6504,38 +6509,44 @@ msgstr "Удалённая авторизация"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "Удалённый рабочий стол"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
 "Remote desktop allows viewing and controlling your desktop from another "
 "computer."
 msgstr ""
+"Удалённый рабочий стол позволяет просматривать и управлять своим рабочим "
+"столом с другого компьютера."
 
 #: panels/sharing/cc-sharing-panel.ui.h:13
 msgid "Enable or disable remote desktop connections to this computer."
 msgstr ""
+"Включите или отключите подключения удаленного рабочего стола к этому "
+"компьютеру."
 
 #: panels/sharing/cc-sharing-panel.ui.h:14
 msgid "Enable Legacy VNC Protocol"
-msgstr ""
+msgstr "Включить устаревший протокол VNC"
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
-msgstr ""
+msgstr "Удалённое управление"
 
 #: panels/sharing/cc-sharing-panel.ui.h:16
 msgid "Allows remote connections to control the screen."
-msgstr ""
+msgstr "Позволяет удаленным подключениям управлять экраном."
 
 #: panels/sharing/cc-sharing-panel.ui.h:17
 msgid "How to Connect"
-msgstr ""
+msgstr "Как подключиться"
 
 #: panels/sharing/cc-sharing-panel.ui.h:18
 msgid ""
 "Connect to this computer using the device name or remote desktop address."
 msgstr ""
+"Подключитесь к этому компьютеру, используя имя устройства или адрес "
+"удалённого рабочего стола."
 
 #: panels/sharing/cc-sharing-panel.ui.h:19
 #: panels/info-overview/cc-info-overview-panel.ui.h:1
@@ -6544,37 +6555,40 @@ msgstr "Имя устройства"
 
 #: panels/sharing/cc-sharing-panel.ui.h:20
 msgid "Remote Desktop Address"
-msgstr ""
+msgstr "Адрес удалённого рабочего стола"
 
 #: panels/sharing/cc-sharing-panel.ui.h:21
 msgid "VNC Address"
-msgstr ""
+msgstr "VNC-адрес"
 
 #: panels/sharing/cc-sharing-panel.ui.h:22
 msgid "Authentication"
-msgstr ""
+msgstr "Аутентификация"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
 msgstr ""
+"Для подключения к этому компьютеру необходимы имя пользователя и пароль."
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
-msgstr ""
+msgstr "Проверить шифрование"
 
 #: panels/sharing/cc-sharing-panel.ui.h:27
 msgid "Encryption Fingerprint"
-msgstr ""
+msgstr "Отпечаток шифрования"
 
 #: panels/sharing/cc-sharing-panel.ui.h:28
 msgid ""
 "The encryption fingerprint can be seen in connecting clients and should be "
 "identical"
 msgstr ""
+"Отпечаток шифрования можно увидеть при подключении клиентов, он должен быть "
+"идентичным"
 
 #: panels/sharing/cc-sharing-panel.ui.h:29
 msgid "Media Sharing"
@@ -6647,12 +6661,12 @@ msgid ""
 "Choose the format for numbers, dates and currencies. Changes take effect on "
 "next login."
 msgstr ""
-"Проверить форматирование чисел, дат и валют. Изменения вступят в силу при "
-"следующем входе."
+"Выберите формат чисел, дат и валют. Изменения вступят в силу при следующем "
+"входе."
 
 #: panels/region/cc-format-chooser.ui.h:6
 msgid "Search locales…"
-msgstr ""
+msgstr "Поиск регионов…"
 
 #: panels/region/cc-format-chooser.ui.h:7
 msgid "Common Formats"
@@ -6688,7 +6702,7 @@ msgstr "Язык"
 
 #: panels/region/cc-region-panel.ui.h:4
 msgid "The language used for text in windows and web pages."
-msgstr "Язык для использования в окнах и на веб-страницах."
+msgstr "Язык для использования в окнах и веб-страницах."
 
 #: panels/region/cc-region-panel.ui.h:6
 msgid "Restart the session for changes to take effect"
@@ -6708,7 +6722,7 @@ msgstr "_Форматы"
 
 #: panels/region/cc-region-panel.ui.h:11
 msgid "Login settings are used by all users when logging into the system"
-msgstr "Параметры входа в систему используются всеми пользователями"
+msgstr "Настройки входа в систему используются всеми пользователями"
 
 #: panels/region/cc-format-preview.ui.h:1
 msgid "Dates"
@@ -6980,7 +6994,7 @@ msgstr "_Версия PEAP"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:1
 msgid "1 (Default)"
-msgstr "1 (по умолчанию)"
+msgstr "1 (По умолчанию)"
 
 #: panels/network/wireless-security/ws-wep-key.ui.h:2
 msgid "Open System"
@@ -7190,7 +7204,7 @@ msgstr "Название сети"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Security type"
-msgstr ""
+msgstr "Тип безопасности"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Turn Wi-Fi off"
@@ -7210,7 +7224,7 @@ msgstr "_Известные сети Wi-Fi"
 
 #: panels/network/cc-wifi-panel.ui.h:1
 msgid "Airplane Mode"
-msgstr "Режим для авиаперелётов"
+msgstr "Авиарежим"
 
 #: panels/network/cc-wifi-panel.ui.h:2
 msgid "Disables Wi-Fi, Bluetooth and mobile broadband"
@@ -7343,7 +7357,7 @@ msgstr "Закрыть"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:4
 msgid "_Lock SIM with PIN"
-msgstr "_Заблокировать SIM с ПИН-кодом"
+msgstr "_Заблокировать SIM ПИН-кодом"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:5
 msgid "Change PIN"
@@ -7360,7 +7374,7 @@ msgstr "SIM отсутствует"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:2
 msgid "Insert a SIM card to use this modem"
-msgstr "Вставьте SIM карту для использования этого модема"
+msgstr "Вставьте SIM-карту для использования этого модема"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:3
 msgid "SIM Locked"
@@ -7404,7 +7418,7 @@ msgstr "_Блокировка SIM"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:15
 msgid "Lock SIM with PIN"
-msgstr "Заблокировать SIM карту PIN кодом"
+msgstr "Заблокировать SIM-карту ПИН-кодом"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:16
 msgid "M_odem Details"
@@ -7573,7 +7587,7 @@ msgstr "Автоматическое определение _даты и вре�
 
 #: panels/datetime/cc-datetime-panel.ui.h:20
 msgid "Requires internet access"
-msgstr "Требуется подключение к Интернету"
+msgstr "Требуется доступ в Интернет"
 
 #: panels/datetime/cc-datetime-panel.ui.h:21
 msgid "Date & _Time"
@@ -7639,34 +7653,34 @@ msgstr "Уведомления на экране _блокировки"
 #. This is the per application switch for message tray usage.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:2
 msgid "_Notifications"
-msgstr ""
+msgstr "_Уведомления"
 
 #. This is the setting to configure sounds associated with notifications.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:4
 msgid "Sound _Alerts"
-msgstr ""
+msgstr "Звуковые _оповещения"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:5
 msgid "Notification _Popups"
-msgstr ""
+msgstr "_Всплывающие уведомления"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:6
 msgid ""
 "Notifications will continue to appear in the notification list when popups "
 "are disabled."
 msgstr ""
-"При отключённых всплывающих уведомлениях, уведомления по-прежнему будут "
-"отображаться в списке уведомлений."
+"При отключённых всплывающих уведомлениях, уведомления продолжат отображаться"
+" в списке уведомлений."
 
 #. Popups here refers to message tray notifications in the middle of the
 #. screen.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:8
 msgid "Show Message _Content in Popups"
-msgstr ""
+msgstr "Показывать _содержимое сообщения во всплывающих уведомлениях"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:10
 msgid "Show Message C_ontent on Lock Screen"
-msgstr ""
+msgstr "Показывать со_держимое сообщения на экране блокировки"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:1
 msgid "_Web"
@@ -7750,7 +7764,7 @@ msgstr ""
 
 #: panels/thunderbolt/cc-bolt-panel.ui.h:4
 msgid "Only USB and Display Port devices can attach."
-msgstr "Возможно подключение только устройств USB и Display Port."
+msgstr "Можно подключать только устройства USB и Display Port."
 
 #: panels/thunderbolt/cc-bolt-panel.ui.h:5
 msgid "Pending Devices"
@@ -7782,19 +7796,19 @@ msgstr "Задержка двойного щелчка"
 
 #: panels/mouse/cc-mouse-panel.ui.h:9
 msgid "Acceleration Profile"
-msgstr ""
+msgstr "Профиль ускорения"
 
 #: panels/mouse/cc-mouse-panel.ui.h:10
 msgid "How the pointer moves when you move the mouse."
-msgstr ""
+msgstr "То, как движется указатель при перемещении мыши."
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "Единообразно"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "Адаптивно"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7855,7 +7869,7 @@ msgstr "История _файлов"
 
 #: panels/usage/cc-usage-panel.ui.h:4
 msgid "File _History Duration"
-msgstr "Продолжительность истории файлов"
+msgstr "Продолжительность _истории файлов"
 
 #: panels/usage/cc-usage-panel.ui.h:5
 msgid "_Clear History…"
@@ -7899,62 +7913,62 @@ msgstr "_Удалить временные файлы…"
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:16 panels/usage/cc-usage-panel.ui.h:34
 msgid "1 day"
-msgstr ""
+msgstr "1 день"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:18
 msgid "2 days"
-msgstr ""
+msgstr "2 дня"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:20
 msgid "3 days"
-msgstr ""
+msgstr "3 дня"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:22
 msgid "4 days"
-msgstr ""
+msgstr "4 дня"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:24
 msgid "5 days"
-msgstr ""
+msgstr "5 дней"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:26
 msgid "6 days"
-msgstr ""
+msgstr "6 дней"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:28 panels/usage/cc-usage-panel.ui.h:36
 msgid "7 days"
-msgstr ""
+msgstr "7 дней"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:30
 msgid "14 days"
-msgstr ""
+msgstr "14 дней"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:32 panels/usage/cc-usage-panel.ui.h:38
 msgid "30 days"
-msgstr ""
+msgstr "30 дней"
 
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:40
 msgid "Forever"
-msgstr ""
+msgstr "Никогда"
 
 #: panels/online-accounts/online-accounts.ui.h:2
 msgid "Connect to your data in the cloud"
@@ -7976,23 +7990,23 @@ msgstr "Удалить учётную запись"
 
 #: shell/help-overlay.ui.h:2
 msgid "Quit"
-msgstr ""
+msgstr "Выйти"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "Панели"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
-msgstr ""
+msgstr "Вернуться к предыдущей панели"
 
 #: shell/help-overlay.ui.h:6
 msgid "Cancel search"
-msgstr ""
+msgstr "Отменить поиск"
 
 #: shell/cc-window.ui.h:2
 msgid "All Settings"
-msgstr "Все параметры"
+msgstr "Все настройки"
 
 #: shell/cc-window.ui.h:4
 msgid "Primary Menu"
@@ -8008,7 +8022,7 @@ msgid ""
 "may experience incorrect system behavior, data loss, and other unexpected "
 "issues. "
 msgstr ""
-"Эта версия приложения Параметры должна использоваться только в целях "
+"Эта версия приложения Настройки должна использоваться только в целях "
 "разработки. Вы можете столкнуться с неправильным поведением системы, потерей"
 " данных и другими непредвиденными проблемами. "
 
@@ -8062,7 +8076,7 @@ msgstr "Электропитание"
 
 #: panels/power/budgie-power-panel.desktop.in.in:4
 msgid "View your battery status and change power saving settings"
-msgstr "Просмотр состояния батареи и изменение параметров энергосбережения"
+msgstr "Просмотр состояния батареи и изменение настроек энергосбережения"
 
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -8157,7 +8171,7 @@ msgstr ""
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
-"Комбинация;Рабочая;область;Окно;Изменение;размера;масштабирование;Контраст;Ввод;Источник;Блокировка;Том;"
+"Комбинация;Рабочая;область;Окно;Изменение;размера;Увеличение;Контраст;Ввод;Источник;Блокировка;Том;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
 msgid "Users"
@@ -8196,7 +8210,7 @@ msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
 msgstr ""
-"Клавиатура;Мышь;a11y;Специальные;возможности;Контрастность;Масштаб;Экран;Чтение;текст;шрифт;размер;AccessX;Залипающие;клавиши;Медленные;Отскакивающие;Мышь;Двойное;нажатие;Задержка;скорость;Помощь;Повтор;Мигающий;визуальный;слышимость;слух;аудио;набор;печать;"
+"Клавиатура;Мышь;a11y;Доступность;Универсальность;Контраст;Курсор;Звук;Увеличение;Экран;Чтение;большой;текст;шрифт;размер;AccessX;Залипание;Клавиши;Медленные;Отскакивающие;Мышь;Двойное;нажатие;Задержка;Скорость;Помощь;Повтор;Мигающий;визуальный;слышимость;слух;аудио;печать;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
 msgid "Multitasking"
@@ -8214,13 +8228,13 @@ msgstr "Многозадачность;Продуктивность;Фокус;�
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
 msgid "Control various application permissions and settings"
-msgstr "Управление различными разрешениями и настройками приложения"
+msgstr "Управление различными разрешениями и настройками приложений"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
 msgid "application;flatpak;permission;setting;"
-msgstr "приложение;flatpak;права;доступ;настройки;параметры;"
+msgstr "приложение;flatpak;права;доступ;разрешение;настройки;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
 msgid "Control what you want to share with others"
@@ -8445,7 +8459,7 @@ msgstr ""
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
 msgid "Preferences;Settings;"
-msgstr "Настройки;Параметры;"
+msgstr "Предпочтения;Настройки;"
 
 #: panels/keyboard/50-accessibility.xml.in:4
 msgid "Turn zoom on or off"
@@ -8489,19 +8503,19 @@ msgstr "Переключиться на предыдущий источник в
 
 #: panels/keyboard/01-raven.xml.in:2
 msgid "Raven"
-msgstr ""
+msgstr "Raven"
 
 #: panels/keyboard/01-raven.xml.in:4
 msgid "Raven Applets"
-msgstr ""
+msgstr "Апплеты Raven"
 
 #: panels/keyboard/01-raven.xml.in:6
 msgid "Raven Notifications"
-msgstr ""
+msgstr "Уведомления Raven"
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"
-msgstr ""
+msgstr "Очистить уведомления"
 
 #: panels/keyboard/01-launchers.xml.in:2
 msgid "Launchers"
@@ -8606,4 +8620,4 @@ msgstr "Завершить сеанс"
 
 #: panels/keyboard/01-system.xml.in:6
 msgid "Lock screen"
-msgstr "Заблокировать экран"
+msgstr "Блокировка экрана"
