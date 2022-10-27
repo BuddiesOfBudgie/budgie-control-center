@@ -284,6 +284,28 @@
                           </object>
                         </child>
                         <child>
+                          <object class="HdyActionRow" id="touchpad_click_method_row">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="activatable">false</property>
+                            <property name="title" translatable="yes">Click Method Profile</property>
+                            <property name="subtitle" translatable="yes">How different mouse clicks (e.g. left and right) are registered.</property>
+                            <child>
+                              <object class="GtkComboBoxText" id="touchpad_click_method_box">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="valign">center</property>
+                                <items>
+                                  <item id="default" translatable="yes">Hardware Default</item>
+                                  <item id="none" translatable="yes">None</item>
+                                  <item id="areas" translatable="yes">Pressed Area</item>
+                                  <item id="fingers" translatable="yes">Number of Fingers</item>
+                                </items>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
                           <object class="HdyActionRow" id="tap_to_click_row">
                             <property name="visible">False</property>
                             <property name="can_focus">True</property>
