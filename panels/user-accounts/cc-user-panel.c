@@ -67,7 +67,7 @@ struct _CcUserPanel {
         CcPanel parent_instance;
 
         ActUserManager *um;
-        GSettings *login_screen_settings;
+        //GSettings *login_screen_settings; GDM and GCC specific
 
         GtkBox          *accounts_box;
         GtkBox          *account_settings_box;
@@ -855,6 +855,7 @@ show_user (ActUser *user, CcUserPanel *self)
         g_autofree gchar *name = NULL;
         gboolean show, enable;
         ActUser *current;
+        CcFingerprintState state = CC_FINGERPRINT_STATE_NONE;
 
         self->selected_user = user;
 
@@ -899,11 +900,19 @@ show_user (ActUser *user, CcUserPanel *self)
         gtk_label_set_label (self->language_button_label, name);
 
         /* Fingerprint: show when self, local, enabled, and possible */
-        show = (act_user_get_uid (user) == getuid() &&
+        /*show = (act_user_get_uid (user) == getuid() &&
                 act_user_is_local_account (user) &&
                 (self->login_screen_settings &&
                  g_settings_get_boolean (self->login_screen_settings,
-                                         "enable-fingerprint-authentication")));
+                                         "enable-fingerprint-authentication")));*/
+
+        if (!self->fingerprint_manager) {
+                state = cc_fingerprint_manager_get_state (self->fingerprint_manager);
+        }
+
+        show = (act_user_get_uid (user) == getuid() &&
+                act_user_is_local_account (user) &&
+                state != CC_FINGERPRINT_STATE_NONE);
 
         if (show) {
                 if (!self->fingerprint_manager) {
@@ -1558,7 +1567,7 @@ cc_user_panel_init (CcUserPanel *self)
                                                    GTK_STYLE_PROVIDER (provider),
                                                    GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 
-        self->login_screen_settings = settings_or_null ("org.gnome.login-screen");
+        //self->login_screen_settings = settings_or_null ("c");
 
         self->avatar_chooser = cc_avatar_chooser_new (GTK_WIDGET (self->user_icon_button));
         setup_main_window (self);
@@ -1570,7 +1579,7 @@ cc_user_panel_dispose (GObject *object)
         CcUserPanel *self = CC_USER_PANEL (object);
 
         g_clear_object (&self->selected_user);
-        g_clear_object (&self->login_screen_settings);
+        //g_clear_object (&self->login_screen_settings);
         g_clear_pointer ((GtkWidget **)&self->language_chooser, gtk_widget_destroy);
         g_clear_object (&self->permission);
 
