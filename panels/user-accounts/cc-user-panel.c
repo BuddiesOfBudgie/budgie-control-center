@@ -855,7 +855,6 @@ show_user (ActUser *user, CcUserPanel *self)
         g_autofree gchar *name = NULL;
         gboolean show, enable;
         ActUser *current;
-        CcFingerprintState state = CC_FINGERPRINT_STATE_NONE;
 
         self->selected_user = user;
 
@@ -906,13 +905,8 @@ show_user (ActUser *user, CcUserPanel *self)
                  g_settings_get_boolean (self->login_screen_settings,
                                          "enable-fingerprint-authentication")));*/
 
-        if (!self->fingerprint_manager) {
-                state = cc_fingerprint_manager_get_state (self->fingerprint_manager);
-        }
-
         show = (act_user_get_uid (user) == getuid() &&
-                act_user_is_local_account (user) &&
-                state != CC_FINGERPRINT_STATE_NONE);
+                act_user_is_local_account (user));
 
         if (show) {
                 if (!self->fingerprint_manager) {
