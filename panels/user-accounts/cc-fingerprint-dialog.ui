@@ -323,6 +323,12 @@
                       </object>
                     </child>
                     <child>
+                      <object class="GtkLabel" id="fprintd_label">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="no"></property>
+                      </object>
+                    </child>
+                    <child>
                       <object class="GtkFlowBox" id="prints_gallery">
                         <style>
                           <class name="prints-gallery" />
