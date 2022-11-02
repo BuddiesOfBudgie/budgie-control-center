@@ -622,7 +622,7 @@ update_prints_store (CcFingerprintDialog *self)
 {
   ActUser *user;
   g_autofree gchar *pam_message = NULL;
-  g_autofree gchar *pam_exe = NULL;
+  gchar *pam_exe = NULL;
   /* TRANSLATORS: This is part of the translation 'Ensure fprintd has been enabled using your pam authorization module' */
   gchar *pam_exe_fallback = _("your pam authorization module");
   guint pam_exe_loop = 0;
