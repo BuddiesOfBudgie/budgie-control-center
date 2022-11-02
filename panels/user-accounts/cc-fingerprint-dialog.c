@@ -622,8 +622,9 @@ update_prints_store (CcFingerprintDialog *self)
 {
   ActUser *user;
   g_autofree gchar *pam_message = NULL;
-  gchar *pam_exe = NULL;
-  gchar *pam_exe_fallback = _("your pam authorisation module");
+  g_autofree gchar *pam_exe = NULL;
+  /* TRANSLATORS: This is part of the translation 'Ensure fprintd has been enabled using your pam authorization module' */
+  gchar *pam_exe_fallback = _("your pam authorization module");
   guint pam_exe_loop = 0;
 
   g_assert_true (CC_FPRINTD_IS_DEVICE (self->device));
@@ -646,6 +647,7 @@ update_prints_store (CcFingerprintDialog *self)
   for (guint loop = pam_exe_loop; loop <= N_VALID_PAM_AUTH_EXE; loop++) {
     if (g_find_program_in_path (PAM_AUTH_EXE[loop]) != NULL) {
       pam_exe = (gchar *)PAM_AUTH_EXE[loop];
+      break;
     }
   }
 
@@ -653,6 +655,7 @@ update_prints_store (CcFingerprintDialog *self)
     pam_exe = pam_exe_fallback;
   }
 
+  /* TRANSLATORS: fprintd does not have to be translated, the %s is the name of an executable that is calculated when the app is running */
   pam_message = g_strdup_printf (_("Ensure fprintd has been enabled using %s"), pam_exe);
   gtk_label_set_label ((GtkLabel*)self->fprintd_label, pam_message);
 }

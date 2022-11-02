@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 20:07+0100\n"
+"POT-Creation-Date: 2022-11-02 09:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1418,7 +1418,7 @@ msgstr ""
 #. * The device has been disabled
 #: panels/keyboard/keyboard-shortcuts.c:367
 #: panels/user-accounts/cc-user-panel.c:848
-#: panels/user-accounts/cc-user-panel.c:938
+#: panels/user-accounts/cc-user-panel.c:941
 #: panels/wwan/cc-wwan-device-page.c:479
 #: subprojects/gvc/gvc-mixer-control.c:1908
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:2
@@ -1516,145 +1516,156 @@ msgstr ""
 msgid "Couldn’t connect to the %s domain: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:236
+#: panels/user-accounts/cc-fingerprint-dialog.c:245
 msgid "the device needs to be claimed to perform this action"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:238
+#: panels/user-accounts/cc-fingerprint-dialog.c:247
 msgid "the device is already claimed by another process"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:240
+#: panels/user-accounts/cc-fingerprint-dialog.c:249
 msgid "you do not have permission to perform the action"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:242
+#: panels/user-accounts/cc-fingerprint-dialog.c:251
 msgid "no prints have been enrolled"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:251
+#: panels/user-accounts/cc-fingerprint-dialog.c:260
 msgid "Failed to communicate with the device during enrollment"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:255
+#: panels/user-accounts/cc-fingerprint-dialog.c:264
 msgid "Failed to communicate with the fingerprint reader"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:257
+#: panels/user-accounts/cc-fingerprint-dialog.c:266
 msgid "Failed to communicate with the fingerprint daemon"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:585
+#: panels/user-accounts/cc-fingerprint-dialog.c:594
 #, c-format
 msgid "Failed to list fingerprints: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:652
+#. TRANSLATORS: This is part of the translation 'Ensure fprintd has been enabled using your pam authorization module'
+#: panels/user-accounts/cc-fingerprint-dialog.c:627
+msgid "your pam authorization module"
+msgstr ""
+
+#. TRANSLATORS: fprintd does not have to be translated, the %s is the name of an executable that is calculated when the app is running
+#: panels/user-accounts/cc-fingerprint-dialog.c:659
+#, c-format
+msgid "Ensure fprintd has been enabled using %s"
+msgstr ""
+
+#: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
 msgid "Failed to delete saved fingerprints: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:683
+#: panels/user-accounts/cc-fingerprint-dialog.c:712
 msgid "Left thumb"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:685
+#: panels/user-accounts/cc-fingerprint-dialog.c:714
 msgid "Left middle finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:687
+#: panels/user-accounts/cc-fingerprint-dialog.c:716
 msgid "_Left index finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:689
+#: panels/user-accounts/cc-fingerprint-dialog.c:718
 msgid "Left ring finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:691
+#: panels/user-accounts/cc-fingerprint-dialog.c:720
 msgid "Left little finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:693
+#: panels/user-accounts/cc-fingerprint-dialog.c:722
 msgid "Right thumb"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:695
+#: panels/user-accounts/cc-fingerprint-dialog.c:724
 msgid "Right middle finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:697
+#: panels/user-accounts/cc-fingerprint-dialog.c:726
 msgid "_Right index finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:699
+#: panels/user-accounts/cc-fingerprint-dialog.c:728
 msgid "Right ring finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:701
+#: panels/user-accounts/cc-fingerprint-dialog.c:730
 msgid "Right little finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:703
+#: panels/user-accounts/cc-fingerprint-dialog.c:732
 msgid "Unknown Finger"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:837
+#: panels/user-accounts/cc-fingerprint-dialog.c:866
 msgctxt "Fingerprint enroll state"
 msgid "Complete"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:848
+#: panels/user-accounts/cc-fingerprint-dialog.c:877
 msgid "Fingerprint device disconnected"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:854
+#: panels/user-accounts/cc-fingerprint-dialog.c:883
 msgid "Fingerprint device storage is full"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:858
+#: panels/user-accounts/cc-fingerprint-dialog.c:887
 msgid "Failed to enroll new fingerprint"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:889
+#: panels/user-accounts/cc-fingerprint-dialog.c:918
 #, c-format
 msgid "Failed to start enrollment: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:897
+#: panels/user-accounts/cc-fingerprint-dialog.c:926
 msgctxt "Fingerprint enroll state"
 msgid "Failed to enroll new fingerprint"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:928
+#: panels/user-accounts/cc-fingerprint-dialog.c:957
 #, c-format
 msgid "Failed to stop enrollment: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:974
+#: panels/user-accounts/cc-fingerprint-dialog.c:1003
 msgid "Repeatedly lift and place your finger on the reader to enroll your fingerprint"
 msgstr ""
 
 #. TRANSLATORS: This is the label for the button to enroll a new finger
-#: panels/user-accounts/cc-fingerprint-dialog.c:1118
+#: panels/user-accounts/cc-fingerprint-dialog.c:1147
 msgid "Scan new fingerprint"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1157
+#: panels/user-accounts/cc-fingerprint-dialog.c:1186
 #, c-format
 msgid "Failed to release fingerprint device %s: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1229
+#: panels/user-accounts/cc-fingerprint-dialog.c:1258
 msgctxt "Fingerprint enroll state"
 msgid "Problem Reading Device"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1264
+#: panels/user-accounts/cc-fingerprint-dialog.c:1293
 #, c-format
 msgid "Failed to claim fingerprint device %s: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1413
+#: panels/user-accounts/cc-fingerprint-dialog.c:1442
 #, c-format
 msgid "Failed to get fingerprint devices: %s"
 msgstr ""
@@ -1750,16 +1761,16 @@ msgstr ""
 
 #. TRANSLATORS: Status of Parental Controls setup
 #: panels/user-accounts/cc-user-panel.c:846
-#: panels/user-accounts/cc-user-panel.c:935
+#: panels/user-accounts/cc-user-panel.c:938
 #: panels/wwan/cc-wwan-device-page.c:477
 msgid "Enabled"
 msgstr ""
 
-#: panels/user-accounts/cc-user-panel.c:1259
+#: panels/user-accounts/cc-user-panel.c:1262
 msgid "Failed to contact the accounts service"
 msgstr ""
 
-#: panels/user-accounts/cc-user-panel.c:1261
+#: panels/user-accounts/cc-user-panel.c:1264
 msgid "Please make sure that the AccountService is installed and enabled."
 msgstr ""
 
@@ -1767,24 +1778,24 @@ msgstr ""
 #. * We split the line in 2 here to "make it look good", as there's
 #. * no good way to do this in GTK+ for tooltips. See:
 #. * https://bugzilla.gnome.org/show_bug.cgi?id=657168
-#: panels/user-accounts/cc-user-panel.c:1293
+#: panels/user-accounts/cc-user-panel.c:1296
 msgid ""
 "To make changes,\n"
 "click the * icon first"
 msgstr ""
 
-#: panels/user-accounts/cc-user-panel.c:1366
+#: panels/user-accounts/cc-user-panel.c:1369
 msgid "Delete the selected user account"
 msgstr ""
 
-#: panels/user-accounts/cc-user-panel.c:1378
-#: panels/user-accounts/cc-user-panel.c:1489
+#: panels/user-accounts/cc-user-panel.c:1381
+#: panels/user-accounts/cc-user-panel.c:1492
 msgid ""
 "To delete the selected user account,\n"
 "click the * icon first"
 msgstr ""
 
-#: panels/user-accounts/cc-user-panel.c:1535
+#: panels/user-accounts/cc-user-panel.c:1538
 msgid "Unlock to Add Users and Change Settings"
 msgstr ""
 
@@ -2220,7 +2231,7 @@ msgstr ""
 msgid "Copy"
 msgstr ""
 
-#: panels/sharing/cc-sharing-panel.c:1702
+#: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
 msgid "Sharing"
 msgstr ""
@@ -4784,10 +4795,6 @@ msgstr ""
 
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Add Picture…"
-msgstr ""
-
-#: panels/background/cc-background-preview.ui.h:1
-msgid "Activities"
 msgstr ""
 
 #: panels/sound/cc-output-test-dialog.ui.h:1
