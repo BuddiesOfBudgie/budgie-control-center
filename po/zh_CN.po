@@ -6,6 +6,7 @@
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
 # Gavin Zhao, 2022
+# Yazi Tian, 2022
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-21 20:07+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Gavin Zhao, 2022\n"
+"Last-Translator: Yazi Tian, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/buddiesofbudgie/teams/129844/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -375,7 +376,7 @@ msgstr "已完成"
 #. Translators: Clicking this button prioritizes printing of this print job
 #: panels/printers/pp-job-row.c:179
 msgid "Move this job to the top of the queue"
-msgstr ""
+msgstr "将此作业移动到队列的顶端"
 
 #. Translators: The found device is a JetDirect printer
 #: panels/printers/pp-host.c:478
@@ -475,7 +476,7 @@ msgstr "转换为 PS 等级 1"
 #. Translators: this is an option of "GhostScript"
 #: panels/printers/pp-ppd-option-widget.c:93
 msgid "Convert to PS level 2"
-msgstr "转换为 PS 等级 1"
+msgstr "转换为 PS 等级 2"
 
 #. Translators: this is an option of "GhostScript"
 #: panels/printers/pp-ppd-option-widget.c:95
@@ -850,12 +851,12 @@ msgstr "无线键盘"
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:197
 msgid "Uninterruptible power supply"
-msgstr "不间断电源（UPS）"
+msgstr "不间断电源"
 
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:200
 msgid "Personal digital assistant"
-msgstr "个人数字助理（PDA）"
+msgstr "个人数字助理 PDA"
 
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:203
@@ -1090,7 +1091,7 @@ msgstr "将您的校准设备放在方块上并按“开始”"
 #: panels/color/cc-color-calibrate.c:353
 msgid ""
 "Move your calibration device to the calibrate position and press “Continue”"
-msgstr "将您的校准器移动到校准位置并按“继续”"
+msgstr "将您的校准器移动到校准位置并按 “继续”"
 
 #. TRANSLATORS: Some calibration devices need the user to move a
 #. * dial or switch manually. We also show a picture showing them
@@ -1098,7 +1099,7 @@ msgstr "将您的校准器移动到校准位置并按“继续”"
 #: panels/color/cc-color-calibrate.c:359
 msgid ""
 "Move your calibration device to the surface position and press “Continue”"
-msgstr "将您的校准器移动到表面位置并按“继续”"
+msgstr "将您的校准器移动到表面位置并按 “继续”"
 
 #. TRANSLATORS: on some hardware e.g. Lenovo W700 the sensor
 #. * is built into the palmrest and we need to fullscreen the
@@ -1224,7 +1225,7 @@ msgstr "纵向，朝左"
 #: panels/display/cc-display-settings.c:122
 msgctxt "Display rotation"
 msgid "Landscape (flipped)"
-msgstr "横向翻转"
+msgstr "横向 (翻转)"
 
 #: panels/display/cc-display-settings.c:196
 #, c-format
@@ -1334,25 +1335,25 @@ msgstr "无"
 #: panels/keyboard/cc-keyboard-panel.c:91
 msgctxt "keyboard key"
 msgid "Left Alt"
-msgstr "左Alt键"
+msgstr "左 Alt 键"
 
 #: panels/keyboard/cc-keyboard-panel.c:73
 #: panels/keyboard/cc-keyboard-panel.c:92
 msgctxt "keyboard key"
 msgid "Right Alt"
-msgstr "右Alt键"
+msgstr "右 Alt 键"
 
 #: panels/keyboard/cc-keyboard-panel.c:74
 #: panels/keyboard/cc-keyboard-panel.c:93
 msgctxt "keyboard key"
 msgid "Left Super"
-msgstr "左Super徽标键"
+msgstr "左 Super 徽标键"
 
 #: panels/keyboard/cc-keyboard-panel.c:75
 #: panels/keyboard/cc-keyboard-panel.c:94
 msgctxt "keyboard key"
 msgid "Right Super"
-msgstr "右Super徽标键"
+msgstr "右 Super 徽标键"
 
 #: panels/keyboard/cc-keyboard-panel.c:76
 #: panels/keyboard/cc-keyboard-panel.c:95
@@ -1364,7 +1365,7 @@ msgstr "菜单键"
 #: panels/keyboard/cc-keyboard-panel.c:96
 msgctxt "keyboard key"
 msgid "Right Ctrl"
-msgstr "右Ctrl键"
+msgstr "右 Ctrl 键"
 
 #: panels/keyboard/cc-keyboard-panel.c:86
 #: panels/keyboard/cc-keyboard-panel.ui.h:9
@@ -1592,7 +1593,7 @@ msgstr "左手中指"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:687
 msgid "_Left index finger"
-msgstr "左手食指(_L)"
+msgstr "左手食指"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:689
 msgid "Left ring finger"
@@ -1612,7 +1613,7 @@ msgstr "右手中指"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:697
 msgid "_Right index finger"
-msgstr "右手食指(_R)"
+msgstr "右手食指"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:699
 msgid "Right ring finger"
@@ -1830,23 +1831,23 @@ msgstr "解锁以允许用户更改设置"
 msgid ""
 "The username should usually only consist of lower case letters from a-z, "
 "digits and the following characters: - _"
-msgstr "用户名只能包含小写英文字母（a 至 z）、数字和“-”、“_”符号"
+msgstr "用户名只能包含小写英文字母a - z, 数字和符号: -_"
 
 #: panels/user-accounts/user-utils.c:436
 msgid "Sorry, that user name isn’t available. Please try another."
-msgstr "抱歉，该用户名不可用。请试下别的。"
+msgstr "抱歉，该用户名不可用。请试下别的."
 
 #: panels/user-accounts/user-utils.c:478
 msgid "The username is too long."
-msgstr "用户名太长。"
+msgstr "用户名太长."
 
 #: panels/user-accounts/user-utils.c:537
 msgid "This will be used to name your home folder and can’t be changed."
-msgstr "将作为您主文件夹的名称且不可再次更改。"
+msgstr "将作为您主文件夹的名称且不可再次更改."
 
 #: panels/user-accounts/cc-add-user-dialog.c:34
 msgid "Should match the web address of your login provider."
-msgstr "应与您登录提供商的网络地址相同。"
+msgstr "应与您登录提供商的网络地址相同."
 
 #: panels/user-accounts/cc-add-user-dialog.c:204
 msgid "Failed to add account"
@@ -2465,7 +2466,7 @@ msgstr "昨天"
 #. Translators: This is a date format string in the style of "Feb 24".
 #: panels/common/cc-util.c:138
 msgid "%b %e"
-msgstr "%-m月%-d日"
+msgstr "%b %e"
 
 #. Translators: This is a date format string in the style of "Feb 24, 2013".
 #: panels/common/cc-util.c:143
@@ -3509,19 +3510,19 @@ msgstr "仅5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G (首选)"
 
 #: panels/wwan/cc-wwan-device.c:1009
 msgid "2G, 3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G, 4G (首选), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1011
 msgid "2G, 3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G, 3G (首选), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1013
 msgid "2G (Preferred), 3G, 4G, 5G"
-msgstr ""
+msgstr "2G (首选), 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
@@ -3545,15 +3546,15 @@ msgstr "2G, 3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1035
 msgid "3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 4G, 5G (首选)"
 
 #: panels/wwan/cc-wwan-device.c:1037
 msgid "3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "3G, 4G (首选), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1039
 msgid "3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "3G (首选), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
@@ -3561,15 +3562,15 @@ msgstr "3G、4G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 4G, 5G (首选)"
 
 #: panels/wwan/cc-wwan-device.c:1050
 msgid "2G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 4G (首选), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1052
 msgid "2G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G (首选), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
@@ -3577,15 +3578,15 @@ msgstr "2G、4G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 5G (首选)"
 
 #: panels/wwan/cc-wwan-device.c:1063
 msgid "2G, 3G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G (首选), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1065
 msgid "2G (Preferred), 3G, 5G"
-msgstr ""
+msgstr "2G (首选), 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
@@ -3629,11 +3630,11 @@ msgstr "2G, 3G"
 
 #: panels/wwan/cc-wwan-device.c:1103
 msgid "2G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 5G (首选)"
 
 #: panels/wwan/cc-wwan-device.c:1105
 msgid "2G (Preferred), 5G"
-msgstr ""
+msgstr "2G (首选), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
@@ -3641,11 +3642,11 @@ msgstr "2G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 5G (首选)"
 
 #: panels/wwan/cc-wwan-device.c:1115
 msgid "3G (Preferred), 5G"
-msgstr ""
+msgstr "3G (首选), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
@@ -3653,11 +3654,11 @@ msgstr "3G、5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
-msgstr ""
+msgstr "4G, 5G (首选)"
 
 #: panels/wwan/cc-wwan-device.c:1125
 msgid "4G (Preferred), 5G"
-msgstr ""
+msgstr "4G (首选), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
@@ -4947,7 +4948,7 @@ msgstr "系统音量"
 
 #: panels/sound/cc-sound-panel.ui.h:2
 msgid "Over-Amplification"
-msgstr ""
+msgstr "过大"
 
 #: panels/sound/cc-sound-panel.ui.h:4
 #, no-c-format
@@ -5018,17 +5019,19 @@ msgstr "为电视调整"
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Scale"
-msgstr ""
+msgstr "比例"
 
 #: panels/display/cc-display-settings.ui.h:6
 msgid "Fractional Scaling"
-msgstr ""
+msgstr "分数比例"
 
 #: panels/display/cc-display-settings.ui.h:7
 msgid ""
 "May increase power usage, lower speed, or reduce display sharpness.\n"
 "        Fractional scaling will disable the lock-screen."
 msgstr ""
+"可能会增加功耗, 降低速度或降低显示清晰度.\n"
+"        分数缩放将禁用锁定屏幕."
 
 #. This cancels the redshift inhibit.
 #: panels/display/cc-night-light-page.ui.h:2
@@ -5106,7 +5109,7 @@ msgstr "色温"
 
 #: panels/display/cc-display-panel.ui.h:1
 msgid "Display Settings Disabled"
-msgstr ""
+msgstr "显示设置禁用"
 
 #: panels/display/cc-display-panel.ui.h:2
 msgid "Single Display"
@@ -5739,11 +5742,11 @@ msgstr "粗细(_T)："
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "细"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "粗"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5781,11 +5784,11 @@ msgstr "对比度(_C)："
 #. The contrast scale goes from Color to None (grayscale)
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:30
 msgid "Co_lor"
-msgstr ""
+msgstr "Co_lor"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:32
 msgid "Full"
-msgstr ""
+msgstr "全部"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:37
 msgid "Color Effects:"
@@ -5833,7 +5836,7 @@ msgstr "按键接受延迟(_C)："
 #: panels/universal-access/cc-pointing-dialog.ui.h:5
 #: panels/universal-access/cc-pointing-dialog.ui.h:11
 msgid "Short"
-msgstr ""
+msgstr "短"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:10
 msgid "Slow keys typing delay"
@@ -5844,7 +5847,7 @@ msgstr "慢速键输入延迟"
 #: panels/universal-access/cc-pointing-dialog.ui.h:7
 #: panels/universal-access/cc-pointing-dialog.ui.h:12
 msgid "Long"
-msgstr ""
+msgstr "长"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:12
 msgid "Beep when a key is pr_essed"
@@ -5933,11 +5936,11 @@ msgstr "运动阈值(_T)："
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "小"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "在"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -6290,7 +6293,7 @@ msgstr "文件共享(_F)"
 
 #: panels/sharing/cc-sharing-panel.ui.h:3
 msgid "Remote _Desktop"
-msgstr ""
+msgstr "远程 _Desktop"
 
 #: panels/sharing/cc-sharing-panel.ui.h:4
 msgid "_Media Sharing"
@@ -6318,38 +6321,38 @@ msgstr "远程登录"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "远程桌面"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
 "Remote desktop allows viewing and controlling your desktop from another "
 "computer."
-msgstr ""
+msgstr "远程桌面允许从另一台计算机查看和控制您的桌面."
 
 #: panels/sharing/cc-sharing-panel.ui.h:13
 msgid "Enable or disable remote desktop connections to this computer."
-msgstr ""
+msgstr "启用或禁用到此计算机的远程桌面连接."
 
 #: panels/sharing/cc-sharing-panel.ui.h:14
 msgid "Enable Legacy VNC Protocol"
-msgstr ""
+msgstr "启用传统 VNC 协议"
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
-msgstr ""
+msgstr "远程控制"
 
 #: panels/sharing/cc-sharing-panel.ui.h:16
 msgid "Allows remote connections to control the screen."
-msgstr ""
+msgstr "允许远程连接控制屏幕."
 
 #: panels/sharing/cc-sharing-panel.ui.h:17
 msgid "How to Connect"
-msgstr ""
+msgstr "如何连接"
 
 #: panels/sharing/cc-sharing-panel.ui.h:18
 msgid ""
 "Connect to this computer using the device name or remote desktop address."
-msgstr ""
+msgstr "使用设备名称或远程桌面地址连接到此计算机."
 
 #: panels/sharing/cc-sharing-panel.ui.h:19
 #: panels/info-overview/cc-info-overview-panel.ui.h:1
@@ -6358,37 +6361,37 @@ msgstr "设备名称"
 
 #: panels/sharing/cc-sharing-panel.ui.h:20
 msgid "Remote Desktop Address"
-msgstr ""
+msgstr "远程桌面地址"
 
 #: panels/sharing/cc-sharing-panel.ui.h:21
 msgid "VNC Address"
-msgstr ""
+msgstr "VNC 地址"
 
 #: panels/sharing/cc-sharing-panel.ui.h:22
 msgid "Authentication"
-msgstr ""
+msgstr "授权"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
-msgstr ""
+msgstr "需要用户名和密码才能连接到这台计算机."
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "用户名称"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
-msgstr ""
+msgstr "验证加密"
 
 #: panels/sharing/cc-sharing-panel.ui.h:27
 msgid "Encryption Fingerprint"
-msgstr ""
+msgstr "加密指纹"
 
 #: panels/sharing/cc-sharing-panel.ui.h:28
 msgid ""
 "The encryption fingerprint can be seen in connecting clients and should be "
 "identical"
-msgstr ""
+msgstr "加密指纹可以在连接客户端时看到，并且应该是相同的"
 
 #: panels/sharing/cc-sharing-panel.ui.h:29
 msgid "Media Sharing"
@@ -6463,7 +6466,7 @@ msgstr "选择数字，日期和货币的格式。 更改将在下次登录时�
 
 #: panels/region/cc-format-chooser.ui.h:6
 msgid "Search locales…"
-msgstr ""
+msgstr "搜索地方…"
 
 #: panels/region/cc-format-chooser.ui.h:7
 msgid "Common Formats"
@@ -6996,7 +6999,7 @@ msgstr "网络名称"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Security type"
-msgstr ""
+msgstr "安全类型"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Turn Wi-Fi off"
@@ -7439,12 +7442,12 @@ msgstr "锁屏通知(_L)"
 #. This is the per application switch for message tray usage.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:2
 msgid "_Notifications"
-msgstr ""
+msgstr "_Notifications"
 
 #. This is the setting to configure sounds associated with notifications.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:4
 msgid "Sound _Alerts"
-msgstr ""
+msgstr "声音 _Alerts"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:5
 msgid "Notification _Popups"
@@ -7460,11 +7463,11 @@ msgstr "禁用弹窗时通知将继续在通知列表里显示。"
 #. screen.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:8
 msgid "Show Message _Content in Popups"
-msgstr ""
+msgstr "显示消息 _Content 在弹出窗口"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:10
 msgid "Show Message C_ontent on Lock Screen"
-msgstr ""
+msgstr "显示消息 C_ontent 在锁屏时"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:1
 msgid "_Web"
@@ -7575,11 +7578,11 @@ msgstr "双击超时"
 
 #: panels/mouse/cc-mouse-panel.ui.h:9
 msgid "Acceleration Profile"
-msgstr ""
+msgstr "加速度图"
 
 #: panels/mouse/cc-mouse-panel.ui.h:10
 msgid "How the pointer moves when you move the mouse."
-msgstr ""
+msgstr "当你移动鼠标时指针是如何移动的."
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
@@ -7809,7 +7812,7 @@ msgstr "添加打印机，查看打印任务和管理打印"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/printers/budgie-printers-panel.desktop.in.in:16
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
-msgstr "Printer;Queue;Print;Paper;Ink;Toner;打印机;队列;打印;纸张;墨水;墨粉;硒鼓;墨盒;"
+msgstr "打印机;队列;打印;纸张;墨水;墨粉;硒鼓;墨盒;"
 
 #: panels/location/budgie-location-panel.desktop.in.in:4
 msgid "Protect your location information"
@@ -7822,8 +7825,7 @@ msgstr "保护您的位置信息"
 #: panels/usage/budgie-usage-panel.desktop.in.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
-msgstr ""
-"screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;屏幕;锁;诊断;崩溃;私有;最近;临时;索引;名称;网络;认证;标志;身份;隐私;"
+msgstr "屏幕;锁;诊断;崩溃;私有;最近;临时;索引;名称;网络;认证;标志;身份;隐私;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:4
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
@@ -7833,7 +7835,7 @@ msgstr "为绘图用平板设备设置按键映射并调整触控笔灵敏度"
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:15
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
-msgstr "Tablet;Wacom;Stylus;Eraser;Mouse;数位板;绘图板;绘画板;手绘板;手写板;触控笔;橡皮擦;擦除器;鼠标;"
+msgstr "数位板;绘图板;绘画板;手绘板;手写板;触控笔;橡皮擦;擦除器;鼠标;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
 msgid "Power"
@@ -7848,8 +7850,7 @@ msgstr "查看电池状态并更改省电设置"
 #: panels/power/budgie-power-panel.desktop.in.in:15
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
-msgstr ""
-"Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;电源;睡眠;挂起;休眠;电池;亮度;暗;空白;监视器;显示器;空闲;能源;能耗;"
+msgstr "电源;睡眠;挂起;休眠;电池;亮度;暗;空白;监视器;显示器;空闲;能源;能耗;"
 
 #: panels/color/budgie-color-panel.desktop.in.in:3
 msgid "Color"
@@ -7864,7 +7865,7 @@ msgstr "校准显示器、相机、打印机等设备的色彩"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/color/budgie-color-panel.desktop.in.in:15
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
-msgstr "Color;ICC;Profile;Calibrate;Printer;Display;颜色;色彩;配置;校准;打印机;显示;"
+msgstr "颜色;色彩;配置;校准;打印机;显示;"
 
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
 msgid "Turn Bluetooth on and off and connect your devices"
@@ -7874,7 +7875,7 @@ msgstr "开关蓝牙及连接您的设备"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
 msgid "share;sharing;bluetooth;obex;"
-msgstr "share;sharing;bluetooth;obex;分享;共享;蓝牙;"
+msgstr "分享;共享;蓝牙;"
 
 #: panels/background/budgie-background-panel.desktop.in.in:3
 msgid "Background"
@@ -7888,7 +7889,7 @@ msgstr "将背景图片改为一张壁纸或照片"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/background/budgie-background-panel.desktop.in.in:15
 msgid "Wallpaper;Screen;Desktop;"
-msgstr "Wallpaper;Screen;Desktop;壁纸;墙纸;屏幕;桌面;背景;"
+msgstr "壁纸;墙纸;屏幕;桌面;背景;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
 msgid "Sound"
@@ -7903,8 +7904,7 @@ msgstr "更改音频音量、音频输入输出和事件声音"
 #: panels/sound/budgie-sound-panel.desktop.in.in:15
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
-msgstr ""
-"Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;声卡;麦克风;话筒;音量;淡入淡出;均衡;蓝牙;耳机;耳麦;音频;输出;输入;"
+msgstr "声卡;麦克风;话筒;音量;淡入淡出;均衡;蓝牙;耳机;耳麦;音频;输出;输入;"
 
 #: panels/display/budgie-display-panel.desktop.in.in:4
 msgid "Choose how to use connected monitors and projectors"
@@ -7915,8 +7915,7 @@ msgstr "选择如何使用接入的显示器和投影仪"
 #: panels/display/budgie-display-panel.desktop.in.in:15
 msgid ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
-msgstr ""
-"Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;面板;投影仪;屏幕;分辨率;刷新;夜晚;晚上;光;蓝;红移;颜色;日落;日出;"
+msgstr "面板;投影仪;屏幕;分辨率;刷新;夜晚;晚上;光;蓝;红移;颜色;日落;日出;"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
 msgid "Keyboard"
@@ -7933,8 +7932,7 @@ msgstr "更改键盘快捷键并设置您的输入首选项、键盘布局和输
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
-msgstr ""
-"Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;快捷键;工作空间;窗口;更改大小;缩放;对比度;输入;源;锁定;音量;"
+msgstr "快捷键;工作空间;窗口;更改大小;缩放;对比度;输入;源;锁定;音量;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
 msgid "Users"
@@ -7950,10 +7948,7 @@ msgstr "添加或删除用户及更改密码"
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
-msgstr ""
-"Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
-"Time;App Restrictions;Web Restrictions;Usage;Usage "
-"Limit;Kid;Child;登录;名字;名称;指纹;头像;标志;脸部;密码;家长控制;亮屏时间;应用限制;网络限制;占用;占用限制;孩子;儿童;"
+msgstr "登录;名字;名称;指纹;头像;标志;脸部;密码;家长控制;亮屏时间;应用限制;网络限制;占用;占用限制;孩子;儿童;"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
@@ -7971,8 +7966,7 @@ msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
 msgstr ""
-"Keyboard;Mouse;a11y;Accessibility;Universal "
-"Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;键盘;鼠标;无障碍;辅助功能;通用访问;可访问;对比度;光标;声音;缩放;屏幕;读取器;阅读器;大;高;巨大;文本;文字;字体;大小;粘滞;按键;慢;回弹;鼠标;双击;点击;单击;延迟;速度;助手;重复;闪烁;可视化;视觉;听觉;音频;输入;打字;"
+"键盘;鼠标;无障碍;辅助功能;通用访问;可访问;对比度;光标;声音;缩放;屏幕;读取器;阅读器;大;高;巨大;文本;文字;字体;大小;粘滞;按键;慢;回弹;鼠标;双击;点击;单击;延迟;速度;助手;重复;闪烁;可视化;视觉;听觉;音频;输入;打字;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
 msgid "Multitasking"
@@ -7986,8 +7980,7 @@ msgstr "管理生产力和多任务的首选项"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
-msgstr ""
-"Multitasking;Multitask;Productivity;Customize;Desktop;多任务;多进程;生产力;自定义;桌面;"
+msgstr "多任务;多进程;生产力;自定义;桌面;"
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
 msgid "Control various application permissions and settings"
@@ -7997,7 +7990,7 @@ msgstr "控制不同应用程序权限和设置"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
 msgid "application;flatpak;permission;setting;"
-msgstr "application;flatpak;permission;setting;应用程序;权限;设置;"
+msgstr "应用程序;权限;设置;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
 msgid "Control what you want to share with others"
@@ -8008,8 +8001,7 @@ msgstr "控制想要与其他用户共享的内容"
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:16
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
-msgstr ""
-"share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;共享;主机;名称;远程;桌面;介质;媒体;音频;视频;图片;照片;电影;服务器;渲染;"
+msgstr "共享;主机;名称;远程;桌面;介质;媒体;音频;视频;图片;照片;电影;服务器;渲染;"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
 msgid "Removable Media"
@@ -8025,8 +8017,7 @@ msgstr "配置可移动介质设置"
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
-msgstr ""
-"device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;设备;系统;默认;应用程序;首选;音频;视频;光盘;光碟;盘片;可擦写;可移除;可移动;媒体;介质;自动运行;"
+msgstr "设备;系统;默认;应用程序;首选;音频;视频;光盘;光碟;盘片;可擦写;可移除;可移动;媒体;介质;自动运行;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
 msgid "Region & Language"
@@ -8041,7 +8032,7 @@ msgstr "选择您的显示语言和格式"
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:15
 msgid "Language;Layout;Keyboard;Input;"
-msgstr "Language;Layout;Keyboard;Input;语言;布局;键盘;输入;"
+msgstr "语言;布局;键盘;输入;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
 msgid "About"
@@ -8060,7 +8051,7 @@ msgstr "查看系统信息"
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
-"device;system;information;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;设备;系统;信息;内存;处理器;CPU;版本;默认;应用程序;首选;音频;视频;光盘;光碟;盘片;可擦写;可移除;可移动;媒体;介质;自动运行;"
+"设备;系统;信息;内存;处理器;CPU;版本;默认;应用程序;首选;音频;视频;光盘;光碟;盘片;可擦写;可移除;可移动;媒体;介质;自动运行;"
 
 #: panels/network/budgie-network-panel.desktop.in.in:4
 msgid "Control how you connect to the Internet"
@@ -8070,8 +8061,7 @@ msgstr "控制连接到互联网的方式"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-network-panel.desktop.in.in:15
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
-msgstr ""
-"Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;网络;互联网协议;局域网;代理;广域网;宽带;调制解调器;蓝牙;虚拟专用网;域名系统;"
+msgstr "网络;互联网协议;局域网;代理;广域网;宽带;调制解调器;蓝牙;虚拟专用网;域名系统;"
 
 #: panels/network/budgie-wifi-panel.desktop.in.in:4
 msgid "Control how you connect to Wi-Fi networks"
@@ -8081,9 +8071,7 @@ msgstr "控制连接到 Wi-Fi 网络的方式"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-wifi-panel.desktop.in.in:15
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
-msgstr ""
-"Network;Wireless;Wi-"
-"Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;网络;无线;无线保真;互联网协议;局域网;宽带;域名系统;热点;"
+msgstr "网络;无线;无线保真;互联网协议;局域网;宽带;域名系统;热点;"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
 msgid "Mobile Network"
@@ -8097,7 +8085,7 @@ msgstr "配置电话和移动数据连接"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:16
 msgid "cellular;wwan;telephony;sim;mobile;"
-msgstr "cellular;wwan;telephony;sim;mobile;蜂窝;移动;无线;"
+msgstr "蜂窝;移动;无线;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:4
 msgid "Change the date and time, including time zone"
@@ -8107,7 +8095,7 @@ msgstr "改变日期、时间和时区"
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:15
 msgid "Clock;Timezone;Location;"
-msgstr "Clock;Timezone;Location;时钟;时区;位置;"
+msgstr "时钟;时区;位置;"
 
 #: panels/camera/budgie-camera-panel.desktop.in.in:4
 msgid "Protect your pictures"
@@ -8119,8 +8107,7 @@ msgstr "保护您的图片"
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
-msgstr ""
-"screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;屏幕;锁;诊断;崩溃;私;最近;临时;索引;名称;网络;认证;标志;身份;"
+msgstr "屏幕;锁;诊断;崩溃;私;最近;临时;索引;名称;网络;认证;标志;身份;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:4
 msgid "Control which notifications are displayed and what they show"
@@ -8130,7 +8117,7 @@ msgstr "控制显示的通知种类及内容"
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
-msgstr "Notifications;Banner;Message;Tray;Popup;通知;横幅;条幅;消息;托盘;弹出;弹窗;"
+msgstr "通知;横幅;条幅;消息;托盘;弹出;弹窗;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
 msgid "Default Applications"
@@ -8145,7 +8132,7 @@ msgstr "配置默认应用程序"
 #. semicolon!
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
 msgid "default;application;preferred;media;"
-msgstr "default;application;preferred;media;默认;应用程序;首选;偏好;媒体;介质;"
+msgstr "默认;应用程序;首选;偏好;媒体;介质;"
 
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:4
 msgid "Protect your conversations"
@@ -8164,7 +8151,7 @@ msgstr "管理雷雳设备"
 #. semicolon!
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
 msgid "Thunderbolt;privacy;"
-msgstr "Thunderbolt;privacy;雷雳;雷电;隐私;"
+msgstr "雷雳;雷电;隐私;"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:3
 msgid "Mouse & Touchpad"
@@ -8180,8 +8167,7 @@ msgstr "改变鼠标和触摸板灵敏度，并选择右手或左手习惯"
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:15
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
-msgstr ""
-"Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;触摸板;指针;触摸;单击;双击;按钮;轨迹球;滚动;"
+msgstr "触摸板;指针;触摸;单击;双击;按钮;轨迹球;滚动;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
 msgid "Diagnostics"
@@ -8215,14 +8201,13 @@ msgstr "连接在线帐号并决定如何使用"
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
-msgstr ""
-"Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;谷歌;脸谱;脸书;推特;雅虎;互联网;网络;在线;聊天;日历;邮件;联系人;云存储;稍后阅读;"
+msgstr "谷歌;脸谱;脸书;推特;雅虎;互联网;网络;在线;聊天;日历;邮件;联系人;云存储;稍后阅读;"
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
 msgid "Preferences;Settings;"
-msgstr "Preferences;Settings;首选项;设置;"
+msgstr "首选项;设置;"
 
 #: panels/keyboard/50-accessibility.xml.in:4
 msgid "Turn zoom on or off"
@@ -8266,15 +8251,15 @@ msgstr "切换至上个输入源"
 
 #: panels/keyboard/01-raven.xml.in:2
 msgid "Raven"
-msgstr ""
+msgstr "乌夜啼"
 
 #: panels/keyboard/01-raven.xml.in:4
 msgid "Raven Applets"
-msgstr ""
+msgstr "乌夜啼小程序"
 
 #: panels/keyboard/01-raven.xml.in:6
 msgid "Raven Notifications"
-msgstr ""
+msgstr "乌夜啼消息通知"
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"

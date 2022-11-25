@@ -5,6 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Green, 2022
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-21 20:07+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Green, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/buddiesofbudgie/teams/129844/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,7 +45,7 @@ msgstr "解像度"
 
 #: panels/printers/pp-options-dialog.c:92
 msgid "GhostScript pre-filtering"
-msgstr "GhostScript のプレフィルタリング"
+msgstr "GhostScript のプリフィルタ"
 
 #. Translators: This option sets number of pages printed on one sheet
 #: panels/printers/pp-options-dialog.c:530
@@ -106,7 +107,7 @@ msgstr "色"
 #: panels/printers/pp-options-dialog.c:669
 msgctxt "Printer Option Group"
 msgid "Finishing"
-msgstr "表面処理"
+msgstr "仕上げ"
 
 #. Translators: "Advanced" tab contains all others settings
 #: panels/printers/pp-options-dialog.c:672
@@ -119,12 +120,12 @@ msgstr "高度"
 #: panels/printers/pp-options-dialog.c:857
 #: panels/printers/pp-options-dialog.ui.h:2
 msgid "Test Page"
-msgstr "テストページ"
+msgstr "テストページの印刷"
 
 #. Translators: Name of job which makes printer to print test page
 #: panels/printers/pp-options-dialog.c:870
 msgid "Test page"
-msgstr "テストページ"
+msgstr "テストページの印刷"
 
 #. Translators: This is the label of the button that opens the Jobs Dialog.
 #: panels/printers/pp-printer-entry.c:523 panels/printers/printer-entry.ui.h:8
@@ -136,12 +137,12 @@ msgstr "アクティブなジョブがありません"
 #, c-format
 msgid "%u Job"
 msgid_plural "%u Jobs"
-msgstr[0] "%u ジョブ"
+msgstr[0] "%u 件のジョブ"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
 msgid "Clean print heads"
-msgstr "ヘッドクリーニング"
+msgstr "プリンタヘッドのクリーニング"
 
 #. Translators: The printer is low on toner
 #: panels/printers/pp-printer-entry.c:713
@@ -212,22 +213,22 @@ msgstr "停止中"
 #. Translators: The printer marker supply waste receptacle is almost full
 #: panels/printers/pp-printer-entry.c:739
 msgid "Waste receptacle almost full"
-msgstr "廃インクタンクがもう少しでいっぱいです"
+msgstr "廃インクタンクがほぼ満杯です"
 
 #. Translators: The printer marker supply waste receptacle is full
 #: panels/printers/pp-printer-entry.c:741
 msgid "Waste receptacle full"
-msgstr "廃インクタンクがいっぱいです"
+msgstr "廃インクタンクが満杯です"
 
 #. Translators: Optical photo conductors are used in laser printers
 #: panels/printers/pp-printer-entry.c:743
 msgid "The optical photo conductor is near end of life"
-msgstr "感光体の寿命が近づいています"
+msgstr "感光体の寿命が迫っています"
 
 #. Translators: Optical photo conductors are used in laser printers
 #: panels/printers/pp-printer-entry.c:745
 msgid "The optical photo conductor is no longer functioning"
-msgstr "感光体の寿命です"
+msgstr "感光体は寿命です"
 
 #. Translators: Printer's state (can start new job without waiting)
 #: panels/printers/pp-printer-entry.c:866
@@ -280,27 +281,27 @@ msgstr "短辺とじ (フリップ)"
 #. Translators: this is an option of "Orientation"
 #: panels/printers/pp-ipp-option-widget.c:70
 msgid "Portrait"
-msgstr "縦方向"
+msgstr "縦向き"
 
 #. Translators: this is an option of "Orientation"
 #: panels/printers/pp-ipp-option-widget.c:72
 msgid "Landscape"
-msgstr "横方向"
+msgstr "横向き"
 
 #. Translators: this is an option of "Orientation"
 #: panels/printers/pp-ipp-option-widget.c:74
 msgid "Reverse landscape"
-msgstr "横方向 (逆向き)"
+msgstr "横向き (反転)"
 
 #. Translators: this is an option of "Orientation"
 #: panels/printers/pp-ipp-option-widget.c:76
 msgid "Reverse portrait"
-msgstr "縦方向 (逆向き)"
+msgstr "縦向き (反転)"
 
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "自動設定"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:683
@@ -317,7 +318,7 @@ msgstr "新しいプリンターを追加できませんでした。"
 #: panels/printers/cc-printers-panel.c:1226
 #, c-format
 msgid "Could not load ui: %s"
-msgstr "ui ファイルを読み込めませんでした: %s"
+msgstr "ui ファイル %s を読み込めませんでした"
 
 #: panels/printers/cc-printers-panel.c:1294
 msgid "Unlock to Add Printers and Change Settings"
@@ -374,7 +375,7 @@ msgstr "完了"
 #. Translators: Clicking this button prioritizes printing of this print job
 #: panels/printers/pp-job-row.c:179
 msgid "Move this job to the top of the queue"
-msgstr ""
+msgstr "このジョブをキューの先頭へ移動"
 
 #. Translators: The found device is a JetDirect printer
 #: panels/printers/pp-host.c:478
@@ -395,7 +396,7 @@ msgstr "%s の詳細"
 
 #: panels/printers/pp-details-dialog.c:101
 msgid "No suitable driver found"
-msgstr "適切なドライバーが見つかりませんでした"
+msgstr "適切なドライバーが見つかりません"
 
 #: panels/printers/pp-details-dialog.c:232
 msgid "Select PPD File"
@@ -444,7 +445,7 @@ msgid ""
 "PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, "
 "*.PPD.GZ)"
 msgstr ""
-"PostScript Printer Description ファイル(*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, "
+"PostScript Printer Description ファイル (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, "
 "*.PPD.GZ)"
 
 #. Translators: this is an option of "Paper Source"
@@ -461,7 +462,7 @@ msgstr "自動選択"
 #: panels/printers/pp-ppd-option-widget.c:83
 #: panels/printers/pp-ppd-option-widget.c:87
 msgid "Printer Default"
-msgstr "プリンターのデフォルト"
+msgstr "標準のプリンター"
 
 #. Translators: this is an option of "GhostScript"
 #: panels/printers/pp-ppd-option-widget.c:89
@@ -471,17 +472,17 @@ msgstr "内蔵 GhostScript フォントのみ"
 #. Translators: this is an option of "GhostScript"
 #: panels/printers/pp-ppd-option-widget.c:91
 msgid "Convert to PS level 1"
-msgstr "PS レベル 1 に変換"
+msgstr "PS レベル 1 へ変換"
 
 #. Translators: this is an option of "GhostScript"
 #: panels/printers/pp-ppd-option-widget.c:93
 msgid "Convert to PS level 2"
-msgstr "PS レベル 2 に変換"
+msgstr "PS レベル 2 へ変換"
 
 #. Translators: this is an option of "GhostScript"
 #: panels/printers/pp-ppd-option-widget.c:95
 msgid "No pre-filtering"
-msgstr "プレフィルタリングなし"
+msgstr "プリフィルタなし"
 
 #. Translators: This is the title presented at top of the dialog.
 #: panels/printers/pp-new-printer-dialog.c:254
@@ -510,7 +511,7 @@ msgstr "%s で利用可能なプリンターを表示するにはユーザー名
 
 #: panels/printers/pp-new-printer-dialog.c:587
 msgid "Searching for Printers"
-msgstr "プリンターの検索"
+msgstr "プリンターを検索中"
 
 #. Translators: The found device is a printer connected via USB
 #: panels/printers/pp-new-printer-dialog.c:1375
@@ -616,11 +617,11 @@ msgstr "閉じる(_C)"
 
 #: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Test Your _Settings"
-msgstr "設定を確認(_S)"
+msgstr "設定のテスト(_S)"
 
 #: panels/wacom/cc-wacom-panel.c:764 panels/wacom/wacom-stylus-page.ui.h:8
 msgid "Stylus"
-msgstr "ペン"
+msgstr "スタイラス"
 
 #. TRANSLATORS: secondary battery
 #: panels/wacom/cc-wacom-panel.c:767 panels/power/cc-battery-row.c:209
@@ -639,7 +640,7 @@ msgstr "バッテリー"
 
 #: panels/power/cc-power-panel.c:644
 msgid "When _idle"
-msgstr "アイドル時(_I)"
+msgstr "待機時(_I)"
 
 #: panels/power/cc-power-panel.c:796
 msgid "Suspend"
@@ -711,7 +712,7 @@ msgstr "動作温度が高いためパフォーマンスモードが一時的に
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
-msgstr ""
+msgstr "揺れを検出したので、パフォーマンスモードは一時的に使用できません。デバイスを安定した場所に移動して正常に戻してください。"
 
 #: panels/power/cc-power-panel.c:1163
 msgid "Performance mode temporarily disabled."
@@ -721,24 +722,24 @@ msgstr "パフォーマンスモードが一時的に無効になりました。
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
-msgstr "バッテリー低下: 省電力が有効になりました。バッテリーが十分に充電されると以前のモードに戻ります。"
+msgstr "バッテリーが低下したので、省電力が有効になりました。充分に充電すると以前のモードに戻ります。"
 
 #. translators: "%s" is an application name
 #: panels/power/cc-power-panel.c:1214
 #, c-format
 msgid "Power Saver mode activated by “%s”."
-msgstr "“%s”によって省電力モードがアクティブになります。"
+msgstr "“%s”によって省電力モードが作動します。"
 
 #. translators: "%s" is an application name
 #: panels/power/cc-power-panel.c:1218
 #, c-format
 msgid "Performance mode activated by “%s”."
-msgstr "“%s”によってパフォーマンスモードがアクティブになります。"
+msgstr "“%s”によってパフォーマンスモードが作動します。"
 
 #: panels/power/cc-power-profile-row.c:132
 msgctxt "Power profile"
 msgid "Performance"
-msgstr "パフォーマンス"
+msgstr "パフォーマンス優先"
 
 #: panels/power/cc-power-profile-row.c:133
 msgid "High performance and power usage."
@@ -747,7 +748,7 @@ msgstr "高いパフォーマンスと消費電力です。"
 #: panels/power/cc-power-profile-row.c:136
 msgctxt "Power profile"
 msgid "Balanced"
-msgstr "バランス"
+msgstr "バランス優先"
 
 #: panels/power/cc-power-profile-row.c:137
 msgid "Standard performance and power usage."
@@ -756,7 +757,7 @@ msgstr "標準的なパフォーマンスと消費電力です。"
 #: panels/power/cc-power-profile-row.c:140
 msgctxt "Power profile"
 msgid "Power Saver"
-msgstr "省電力"
+msgstr "省電力モード"
 
 #: panels/power/cc-power-profile-row.c:141
 msgid "Reduced performance and power usage."
@@ -764,7 +765,7 @@ msgstr "パフォーマンスと消費電力を抑えます。"
 
 #: panels/power/cc-battery-row.c:80
 msgid "Unknown time"
-msgstr "残り時間は不明"
+msgstr "残り時間不明"
 
 #: panels/power/cc-battery-row.c:83
 #, c-format
@@ -799,7 +800,7 @@ msgstr[0] "分"
 #: panels/power/cc-battery-row.c:117
 #, c-format
 msgid "%s until fully charged"
-msgstr "フル充電まで %s"
+msgstr "満充電まで %s"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:124
@@ -816,7 +817,7 @@ msgstr "残り %s"
 #. TRANSLATORS: primary battery
 #: panels/power/cc-battery-row.c:134 panels/power/cc-battery-row.c:164
 msgid "Fully charged"
-msgstr "フル充電"
+msgstr "満充電"
 
 #. TRANSLATORS: primary battery
 #: panels/power/cc-battery-row.c:138 panels/power/cc-battery-row.c:168
@@ -851,12 +852,12 @@ msgstr "ワイヤレスキーボード"
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:197
 msgid "Uninterruptible power supply"
-msgstr "無停電電源装置"
+msgstr "無停電電源装置 (UPS)"
 
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:200
 msgid "Personal digital assistant"
-msgstr "携帯情報端末"
+msgstr "携帯情報端末 (PDA)"
 
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:203
@@ -866,7 +867,7 @@ msgstr "携帯電話"
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:206
 msgid "Media player"
-msgstr "音楽プレーヤー"
+msgstr "メディアプレーヤー"
 
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:212
@@ -936,21 +937,21 @@ msgstr "高品質"
 #: panels/color/cc-color-profile.c:151
 msgctxt "Colorspace fallback"
 msgid "Default RGB"
-msgstr "デフォルト RGB"
+msgstr "標準の RGB"
 
 #. TRANSLATORS: this default CMYK space is used for printers that
 #. * do not have additional printer profiles specified in the PPD
 #: panels/color/cc-color-profile.c:158
 msgctxt "Colorspace fallback"
 msgid "Default CMYK"
-msgstr "デフォルト CMYK"
+msgstr "標準の CMYK"
 
 #. TRANSLATORS: this default gray space is used for printers that
 #. * do not have additional printer profiles specified in the PPD
 #: panels/color/cc-color-profile.c:165
 msgctxt "Colorspace fallback"
 msgid "Default Gray"
-msgstr "デフォルトグレー"
+msgstr "標準のグレー"
 
 #: panels/color/cc-color-profile.c:188
 msgid "Vendor supplied factory calibration data"
@@ -1009,7 +1010,7 @@ msgstr "%s ウェブカム"
 #. * profile has been auto-generated for this hardware
 #: panels/color/cc-color-panel.c:164
 msgid "Default: "
-msgstr "デフォルト: "
+msgstr "既定: "
 
 #. TRANSLATORS: this is a profile prefix to signify the
 #. * profile his a standard space like AdobeRGB
@@ -1210,22 +1211,22 @@ msgstr "100%"
 #: panels/display/cc-display-settings.c:113
 msgctxt "Display rotation"
 msgid "Landscape"
-msgstr "横方向"
+msgstr "横向き"
 
 #: panels/display/cc-display-settings.c:116
 msgctxt "Display rotation"
 msgid "Portrait Right"
-msgstr "縦方向 (右向き)"
+msgstr "縦向き (右回転)"
 
 #: panels/display/cc-display-settings.c:119
 msgctxt "Display rotation"
 msgid "Portrait Left"
-msgstr "縦方向 (左向き)"
+msgstr "縦向き (左回転)"
 
 #: panels/display/cc-display-settings.c:122
 msgctxt "Display rotation"
 msgid "Landscape (flipped)"
-msgstr "横方向 (逆向き)"
+msgstr "横向き (反転)"
 
 #: panels/display/cc-display-settings.c:196
 #, c-format
@@ -1265,7 +1266,7 @@ msgstr "何もしない"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:381
 msgid "Layout default"
-msgstr ""
+msgstr "標準のレイアウト"
 
 #: panels/keyboard/cc-keyboard-manager.c:486
 #: panels/keyboard/cc-keyboard-manager.c:494
@@ -1329,7 +1330,7 @@ msgstr "代替文字キーを使用すると追加の文字を入力できます
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "なし"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -1532,7 +1533,7 @@ msgstr "そのようなドメインやレルムは見つかりませんでした
 #: panels/user-accounts/cc-realm-manager.c:726
 #, c-format
 msgid "Cannot log in as %s at the %s domain"
-msgstr "%2$s ドメインに %1$s としてログインできません"
+msgstr "%s ドメインに %s としてログインできません"
 
 #: panels/user-accounts/cc-realm-manager.c:718
 msgid "Invalid password, please try again"
@@ -2004,14 +2005,14 @@ msgstr "先週"
 #: panels/user-accounts/cc-login-history-dialog.c:86
 msgctxt "login history week label"
 msgid "%b %e"
-msgstr "%B%-e日"
+msgstr "%B%e日"
 
 #. Translators: This is a date format string in the style of "Feb 24, 2013",
 #. shown as the last day of a week on login history dialog.
 #: panels/user-accounts/cc-login-history-dialog.c:91
 msgctxt "login history week label"
 msgid "%b %e, %Y"
-msgstr "%Y年%B%-e日"
+msgstr "%Y年%B%e日"
 
 #. Translators: This indicates a week label on a login history.
 #. The first %s is the first day of a week, and the second %s the last day.
@@ -2044,17 +2045,17 @@ msgstr "短い"
 #: panels/universal-access/cc-zoom-options-dialog.c:304
 msgctxt "Distance"
 msgid "¼ Screen"
-msgstr "画面の¼"
+msgstr "画面の ¼"
 
 #: panels/universal-access/cc-zoom-options-dialog.c:305
 msgctxt "Distance"
 msgid "½ Screen"
-msgstr "画面の½"
+msgstr "画面の ½"
 
 #: panels/universal-access/cc-zoom-options-dialog.c:306
 msgctxt "Distance"
 msgid "¾ Screen"
-msgstr "画面の¾"
+msgstr "画面の ¾"
 
 #: panels/universal-access/cc-zoom-options-dialog.c:307
 msgctxt "Distance"
@@ -2462,12 +2463,12 @@ msgstr "昨日"
 #. Translators: This is a date format string in the style of "Feb 24".
 #: panels/common/cc-util.c:138
 msgid "%b %e"
-msgstr "%B%-e日"
+msgstr "%B%e日"
 
 #. Translators: This is a date format string in the style of "Feb 24, 2013".
 #: panels/common/cc-util.c:143
 msgid "%b %e, %Y"
-msgstr "%Y年%B%-e日"
+msgstr "%Y年%B%e日"
 
 #: panels/common/cc-util.c:165
 #, c-format
@@ -2604,7 +2605,7 @@ msgstr "DNS"
 
 #: panels/network/net-device-ethernet.c:180
 msgid "Last used"
-msgstr "最後の利用"
+msgstr "直前の利用"
 
 #. Translators: network device speed
 #: panels/network/net-device-ethernet.c:220
@@ -5681,7 +5682,7 @@ msgstr "今すぐパスワードを設定する"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:1
 msgid "Full Screen"
-msgstr "フルスクリーン"
+msgstr "全画面表示"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:2
 msgid "Top Half"
@@ -5701,12 +5702,12 @@ msgstr "右半分"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:6
 msgid "Zoom Options"
-msgstr "ズームオプション"
+msgstr "拡大縮小の設定"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:7
 #: panels/universal-access/cc-ua-panel.ui.h:7
 msgid "_Zoom"
-msgstr "ズーム(_Z)"
+msgstr "拡大縮小(_Z)"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:8
 msgid "_Magnification:"
@@ -5726,7 +5727,7 @@ msgstr "画面の外側も表示する(_E)"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:12
 msgid "_Keep magnifier cursor centered"
-msgstr "カーソルを画面中央にキープする (中央)(_K)"
+msgstr "カーソルを画面中央に保持する (中央)(_K)"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:13
 msgid "Magnifier cursor _pushes contents around"
@@ -5750,11 +5751,11 @@ msgstr "太さ(_T):"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "細い"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "太い"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5944,11 +5945,11 @@ msgstr "ジェスチャーのしきい値(_T):"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "小さい"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "大きい"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -5977,7 +5978,7 @@ msgstr "画面全体をひらめかせる(_S)"
 
 #: panels/universal-access/cc-ua-panel.ui.h:1
 msgid "_Always Show Accessibility Menu"
-msgstr "常にアクセシビリティメニューを表示する(_A)"
+msgstr "常に操作支援メニューを表示する(_A)"
 
 #: panels/universal-access/cc-ua-panel.ui.h:2
 msgid "Seeing"
@@ -6231,7 +6232,7 @@ msgstr "システムのキーボードショートカットの禁止"
 
 #: panels/applications/cc-applications-panel.ui.h:20
 msgid "Default Handlers"
-msgstr "デフォルトのハンドラ"
+msgstr "既定のハンドラ"
 
 #: panels/applications/cc-applications-panel.ui.h:21
 msgid "Types of files and links that this application opens."
@@ -6329,7 +6330,7 @@ msgstr "リモートログイン"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "リモートデスクトップ"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
@@ -7387,7 +7388,7 @@ msgstr "自動日時設定(_D)"
 
 #: panels/datetime/cc-datetime-panel.ui.h:20
 msgid "Requires internet access"
-msgstr "インターネットアクセスが必要です"
+msgstr "インターネット接続が必要です"
 
 #: panels/datetime/cc-datetime-panel.ui.h:21
 msgid "Date & _Time"
@@ -7399,7 +7400,7 @@ msgstr "自動タイムゾーン設定(_Z)"
 
 #: panels/datetime/cc-datetime-panel.ui.h:23
 msgid "Requires location services enabled and internet access"
-msgstr "位置サービスの有効化とインターネットアクセスが必要です"
+msgstr "位置サービスの有効化とインターネット接続が必要です"
 
 #: panels/datetime/cc-datetime-panel.ui.h:24
 msgid "Time Z_one"
@@ -7407,7 +7408,7 @@ msgstr "タイムゾーン(_O)"
 
 #: panels/datetime/cc-datetime-panel.ui.h:25
 msgid "Time _Format"
-msgstr "日時書式(_F)"
+msgstr "日時の表記(_F)"
 
 #: panels/datetime/cc-datetime-panel.ui.h:26
 msgid "24-hour"
@@ -7633,11 +7634,11 @@ msgstr "エッジスクロール"
 
 #: panels/diagnostics/cc-diagnostics-panel.ui.h:1
 msgid "Problem Reporting"
-msgstr "問題報告"
+msgstr "不具合報告"
 
 #: panels/diagnostics/cc-diagnostics-panel.ui.h:2
 msgid "_Automatic Problem Reporting"
-msgstr "問題のレポートを自動で送信する(_A)"
+msgstr "不具合報告を自動的に送信する(_A)"
 
 #: panels/usage/cc-usage-panel.ui.h:1
 msgid "File History"
@@ -7698,13 +7699,13 @@ msgstr "一時ファイルを削除する(_D)…"
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:16 panels/usage/cc-usage-panel.ui.h:34
 msgid "1 day"
-msgstr ""
+msgstr "1 日"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:18
 msgid "2 days"
-msgstr ""
+msgstr "2 日"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
@@ -7753,7 +7754,7 @@ msgstr ""
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:40
 msgid "Forever"
-msgstr ""
+msgstr "永久に"
 
 #: panels/online-accounts/online-accounts.ui.h:2
 msgid "Connect to your data in the cloud"
@@ -7773,11 +7774,11 @@ msgstr "アカウントを削除"
 
 #: shell/help-overlay.ui.h:2
 msgid "Quit"
-msgstr ""
+msgstr "中止"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "パネル"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
