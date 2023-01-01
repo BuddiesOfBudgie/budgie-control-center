@@ -18,6 +18,7 @@ i18n.merge_file(
 
 xml_files = [
   '00-multimedia.xml',
+  '01-budgie.xml',
   '01-input-sources.xml',
   '01-launchers.xml',
   '01-screenshot.xml',
