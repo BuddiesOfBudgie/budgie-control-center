@@ -59,6 +59,7 @@ struct _CcMousePanel
   GtkSwitch         *touchpad_natural_scrolling_switch;
   GtkListBoxRow     *touchpad_speed_row;
   GtkScale          *touchpad_speed_scale;
+  GtkComboBox       *touchpad_click_method_box;
   GtkSwitch         *touchpad_toggle_switch;
   GtkListBoxRow     *two_finger_scrolling_row;
   GtkSwitch         *two_finger_scrolling_switch;
@@ -291,6 +292,10 @@ setup_dialog (CcMousePanel *self)
                    gtk_range_get_adjustment (GTK_RANGE (self->touchpad_speed_scale)), "value",
                    G_SETTINGS_BIND_DEFAULT);
 
+  g_settings_bind (self->touchpad_settings, "click-method",
+                   self->touchpad_click_method_box, "active-id",
+                   G_SETTINGS_BIND_DEFAULT);
+
   g_settings_bind (self->touchpad_settings, "tap-to-click",
                    self->tap_to_click_switch, "active",
                    G_SETTINGS_BIND_DEFAULT);
@@ -443,6 +448,7 @@ cc_mouse_panel_class_init (CcMousePanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_natural_scrolling_switch);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_speed_row);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_speed_scale);
+  gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_click_method_box);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_toggle_switch);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, two_finger_scrolling_row);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, two_finger_scrolling_switch);
