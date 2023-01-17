@@ -288,18 +288,18 @@
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="activatable">false</property>
-                            <property name="title" translatable="yes">Click Method Profile</property>
-                            <property name="subtitle" translatable="yes">How different mouse clicks (e.g. left and right) are registered.</property>
+                            <property name="title" translatable="yes">Touchpad Click Method</property>
+                            <property name="subtitle" translatable="yes">Create button behavior (left, middle and right) using the chosen action.</property>
                             <child>
                               <object class="GtkComboBoxText" id="touchpad_click_method_box">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
                                 <property name="valign">center</property>
                                 <items>
-                                  <item id="default" translatable="yes">Hardware Default</item>
-                                  <item id="none" translatable="yes">None</item>
-                                  <item id="areas" translatable="yes">Pressed Area</item>
-                                  <item id="fingers" translatable="yes">Number of Fingers</item>
+                                  <item id="default" translatable="yes">Use the touchpad default</item>
+                                  <item id="none" translatable="yes">No buttons created</item>
+                                  <item id="areas" translatable="yes">Left, middle and right areas</item>
+                                  <item id="fingers" translatable="yes">One, two and three fingers</item>
                                 </items>
                               </object>
                             </child>
