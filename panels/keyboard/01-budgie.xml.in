@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<KeyListEntries group="system" schema="com.solus-project.budgie-wm" name="System">
+
+  <KeyListEntry name="show-power-dialog" description="Show the Power Dialog"/>
+
+</KeyListEntries>
