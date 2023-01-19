@@ -180,6 +180,15 @@
                       </object>
                     </child>
 
+                    <!-- Kernel version -->
+                    <child>
+                      <object class="CcListRow" id="kernel_row">
+                        <property name="visible">False</property>
+                        <property name="title" translatable="yes">Kernel Version</property>
+                        <property name="activatable">False</property>
+                      </object>
+                    </child>
+
                     <!-- Software Updates -->
                     <child>
                       <object class="CcListRow" id="software_updates_row">

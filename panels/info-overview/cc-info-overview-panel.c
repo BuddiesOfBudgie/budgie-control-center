@@ -67,6 +67,7 @@ struct _CcInfoOverviewPanel
   GtkDialog       *hostname_editor;
   CcHostnameEntry *hostname_entry;
   CcListRow       *hostname_row;
+  CcListRow       *kernel_row;
   CcListRow       *memory_row;
   GtkListBox      *os_box;
   GtkImage        *os_logo;
@@ -539,6 +540,23 @@ get_hardware_model_string ()
 }
 
 static char *
+get_kernel_version_string ()
+{
+  g_autofree char *kernel_name = NULL;
+  g_autofree char *kernel_release = NULL;
+
+  kernel_name = get_hostnamed_property ("KernelName");
+  if (!kernel_name || g_strcmp0 (kernel_name, "") == 0)
+    return NULL;
+
+  kernel_release = get_hostnamed_property ("KernelRelease");
+  if (!kernel_release || g_strcmp0 (kernel_release, "") == 0)
+    return NULL;
+
+  return g_strdup_printf ("%s %s", kernel_name, kernel_release);
+}
+
+static char *
 get_cpu_info (const glibtop_sysinfo *info)
 {
   g_autoptr(GHashTable) counts = NULL;
@@ -746,6 +764,7 @@ info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
   g_autofree char *os_name_text = NULL;
   g_autofree char *os_build_text = NULL;
   g_autofree char *hardware_model_text = NULL;
+  g_autofree char *kernel_version_text = NULL;
   g_autofree gchar *graphics_hardware_string = NULL;
   guint64 ram_size;
 
@@ -783,6 +802,10 @@ info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
 
   graphics_hardware_string = get_graphics_hardware_string ();
   cc_list_row_set_secondary_markup (self->graphics_row, graphics_hardware_string);
+
+  kernel_version_text = get_kernel_version_string ();
+  cc_list_row_set_secondary_label (self->kernel_row, kernel_version_text);
+  gtk_widget_set_visible (GTK_WIDGET (self->kernel_row), kernel_version_text != NULL);
 }
 
 static gboolean
@@ -998,6 +1021,7 @@ cc_info_overview_panel_class_init (CcInfoOverviewPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, hostname_editor);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, hostname_entry);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, hostname_row);
+  gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, kernel_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, memory_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, os_box);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, os_logo);
