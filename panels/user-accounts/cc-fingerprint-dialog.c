@@ -855,7 +855,7 @@ handle_enroll_signal (CcFingerprintDialog *self,
             }
           else if (g_str_equal (result, "enroll-duplicate"))
             {
-              message = _("Fingerprint is duplicate");
+              message = _("Fingerprint is a duplicate");
             }
           else
             {
