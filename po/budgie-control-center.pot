@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 22:23+0000\n"
+"POT-Creation-Date: 2023-01-21 12:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -297,23 +297,23 @@ msgid "Automatic configuration"
 msgstr ""
 
 #. Translators: %s is the printer name
-#: panels/printers/cc-printers-panel.c:683
+#: panels/printers/cc-printers-panel.c:692
 #, c-format
 msgid "Printer “%s” has been deleted"
 msgstr ""
 
 #. Translators: Addition of the new printer failed.
-#: panels/printers/cc-printers-panel.c:927
+#: panels/printers/cc-printers-panel.c:941
 msgid "Failed to add new printer."
 msgstr ""
 
 #. Translators: The XML file containing user interface can not be loaded
-#: panels/printers/cc-printers-panel.c:1226
+#: panels/printers/cc-printers-panel.c:1244
 #, c-format
 msgid "Could not load ui: %s"
 msgstr ""
 
-#: panels/printers/cc-printers-panel.c:1294
+#: panels/printers/cc-printers-panel.c:1312
 msgid "Unlock to Add Printers and Change Settings"
 msgstr ""
 
@@ -415,7 +415,7 @@ msgstr ""
 #: panels/user-accounts/cc-add-user-dialog.ui.h:2
 #: panels/user-accounts/cc-password-dialog.ui.h:2
 #: panels/region/cc-format-chooser.ui.h:2
-#: panels/info-overview/cc-info-overview-panel.ui.h:17
+#: panels/info-overview/cc-info-overview-panel.ui.h:20
 #: panels/common/cc-language-chooser.ui.h:3
 #: panels/network/connection-editor/connection-editor.ui.h:1
 #: panels/network/cc-wifi-hotspot-dialog.ui.h:6
@@ -689,30 +689,30 @@ msgstr ""
 msgid "Automatic suspend"
 msgstr ""
 
-#: panels/power/cc-power-panel.c:1159
+#: panels/power/cc-power-panel.c:1162
 msgid "Performance mode temporarily disabled due to high operating temperature."
 msgstr ""
 
-#: panels/power/cc-power-panel.c:1161
+#: panels/power/cc-power-panel.c:1164
 msgid "Lap detected: performance mode temporarily unavailable. Move the device to a stable surface to restore."
 msgstr ""
 
-#: panels/power/cc-power-panel.c:1163
+#: panels/power/cc-power-panel.c:1166
 msgid "Performance mode temporarily disabled."
 msgstr ""
 
-#: panels/power/cc-power-panel.c:1206
+#: panels/power/cc-power-panel.c:1209
 msgid "Low battery: power saver enabled. Previous mode will be restored when battery is sufficiently charged."
 msgstr ""
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1214
+#: panels/power/cc-power-panel.c:1217
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr ""
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1218
+#: panels/power/cc-power-panel.c:1221
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr ""
@@ -1612,49 +1612,53 @@ msgid "Fingerprint device storage is full"
 msgstr ""
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:858
+msgid "Fingerprint is a duplicate"
+msgstr ""
+
+#: panels/user-accounts/cc-fingerprint-dialog.c:862
 msgid "Failed to enroll new fingerprint"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:889
+#: panels/user-accounts/cc-fingerprint-dialog.c:893
 #, c-format
 msgid "Failed to start enrollment: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:897
+#: panels/user-accounts/cc-fingerprint-dialog.c:901
 msgctxt "Fingerprint enroll state"
 msgid "Failed to enroll new fingerprint"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:928
+#: panels/user-accounts/cc-fingerprint-dialog.c:932
 #, c-format
 msgid "Failed to stop enrollment: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:974
+#: panels/user-accounts/cc-fingerprint-dialog.c:978
 msgid "Repeatedly lift and place your finger on the reader to enroll your fingerprint"
 msgstr ""
 
 #. TRANSLATORS: This is the label for the button to enroll a new finger
-#: panels/user-accounts/cc-fingerprint-dialog.c:1118
+#: panels/user-accounts/cc-fingerprint-dialog.c:1122
 msgid "Scan new fingerprint"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1157
+#: panels/user-accounts/cc-fingerprint-dialog.c:1161
 #, c-format
 msgid "Failed to release fingerprint device %s: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1229
+#: panels/user-accounts/cc-fingerprint-dialog.c:1233
 msgctxt "Fingerprint enroll state"
 msgid "Problem Reading Device"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1264
+#: panels/user-accounts/cc-fingerprint-dialog.c:1268
 #, c-format
 msgid "Failed to claim fingerprint device %s: %s"
 msgstr ""
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1413
+#: panels/user-accounts/cc-fingerprint-dialog.c:1417
 #, c-format
 msgid "Failed to get fingerprint devices: %s"
 msgstr ""
@@ -2334,42 +2338,33 @@ msgstr ""
 msgid "Formats"
 msgstr ""
 
-#: panels/info-overview/cc-info-overview-panel.c:396
-#: panels/info-overview/cc-info-overview-panel.c:420
-#: panels/info-overview/cc-info-overview-panel.c:466
-#: panels/info-overview/cc-info-overview-panel.c:496
+#: panels/info-overview/cc-info-overview-panel.c:398
+#: panels/info-overview/cc-info-overview-panel.c:418
+#: panels/info-overview/cc-info-overview-panel.c:460
+#: panels/info-overview/cc-info-overview-panel.c:490
 #: panels/wwan/cc-wwan-details-dialog.c:101
 msgid "Unknown"
 msgstr ""
 
-#. translators: This is the name of the OS, followed by the build ID, for
-#. * example:
-#. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
-#. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: panels/info-overview/cc-info-overview-panel.c:428
-#, c-format
-msgid "%s; Build ID: %s"
-msgstr ""
-
 #. translators: This is the type of architecture for the OS
-#: panels/info-overview/cc-info-overview-panel.c:443
+#: panels/info-overview/cc-info-overview-panel.c:437
 msgid "64-bit"
 msgstr ""
 
 #. translators: This is the type of architecture for the OS
-#: panels/info-overview/cc-info-overview-panel.c:446
+#: panels/info-overview/cc-info-overview-panel.c:440
 msgid "32-bit"
 msgstr ""
 
-#: panels/info-overview/cc-info-overview-panel.c:705
+#: panels/info-overview/cc-info-overview-panel.c:713
 msgid "X11"
 msgstr ""
 
-#: panels/info-overview/cc-info-overview-panel.c:709
+#: panels/info-overview/cc-info-overview-panel.c:717
 msgid "Wayland"
 msgstr ""
 
-#: panels/info-overview/cc-info-overview-panel.c:711
+#: panels/info-overview/cc-info-overview-panel.c:719
 msgctxt "Windowing system (Wayland, X11, or Unknown)"
 msgid "Unknown"
 msgstr ""
@@ -2491,14 +2486,14 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: panels/network/net-device-ethernet.c:147
-#: panels/network/connection-editor/ce-page-details.c:414
+#: panels/network/connection-editor/ce-page-details.c:412
 #: panels/network/net-device-mobile.c:442
 #: panels/network/connection-editor/details-page.ui.h:4
 msgid "IPv4 Address"
 msgstr ""
 
 #: panels/network/net-device-ethernet.c:149
-#: panels/network/connection-editor/ce-page-details.c:415
+#: panels/network/connection-editor/ce-page-details.c:413
 #: panels/network/net-device-mobile.c:443
 #: panels/network/connection-editor/details-page.ui.h:5
 #: panels/network/network-mobile.ui.h:4
@@ -2507,8 +2502,8 @@ msgstr ""
 
 #: panels/network/net-device-ethernet.c:152
 #: panels/network/net-device-ethernet.c:154
-#: panels/network/connection-editor/ce-page-details.c:417
-#: panels/network/connection-editor/ce-page-details.c:418
+#: panels/network/connection-editor/ce-page-details.c:415
+#: panels/network/connection-editor/ce-page-details.c:416
 #: panels/network/net-device-mobile.c:446
 #: panels/network/net-device-mobile.c:447 panels/network/network-mobile.ui.h:3
 msgid "IP Address"
@@ -2528,21 +2523,21 @@ msgid "Default Route"
 msgstr ""
 
 #: panels/network/net-device-ethernet.c:169
-#: panels/network/connection-editor/ce-page-details.c:422
+#: panels/network/connection-editor/ce-page-details.c:420
 #: panels/network/net-device-mobile.c:451
 msgid "DNS4"
 msgstr ""
 
 #: panels/network/net-device-ethernet.c:170
-#: panels/network/connection-editor/ce-page-details.c:423
+#: panels/network/connection-editor/ce-page-details.c:421
 #: panels/network/net-device-mobile.c:452
 msgid "DNS6"
 msgstr ""
 
 #: panels/network/net-device-ethernet.c:172
 #: panels/network/net-device-ethernet.c:174
-#: panels/network/connection-editor/ce-page-details.c:425
-#: panels/network/connection-editor/ce-page-details.c:426
+#: panels/network/connection-editor/ce-page-details.c:423
+#: panels/network/connection-editor/ce-page-details.c:424
 #: panels/network/net-device-mobile.c:454
 #: panels/network/net-device-mobile.c:455
 #: panels/network/connection-editor/ip4-page.ui.h:11
@@ -2558,7 +2553,7 @@ msgstr ""
 
 #. Translators: network device speed
 #: panels/network/net-device-ethernet.c:220
-#: panels/network/connection-editor/ce-page-details.c:300
+#: panels/network/connection-editor/ce-page-details.c:298
 #, c-format
 msgid "%d Mb/s"
 msgstr ""
@@ -3267,61 +3262,61 @@ msgstr ""
 msgid "Never"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:298
+#: panels/network/connection-editor/ce-page-details.c:296
 #, c-format
 msgid "%d Mb/s (%1.1f GHz)"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:315
+#: panels/network/connection-editor/ce-page-details.c:313
 msgid "2.4 GHz / 5 GHz"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:317
+#: panels/network/connection-editor/ce-page-details.c:315
 msgid "2.4 GHz"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:319
+#: panels/network/connection-editor/ce-page-details.c:317
 msgid "5 GHz"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:339
+#: panels/network/connection-editor/ce-page-details.c:337
 msgctxt "Signal strength"
 msgid "None"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:341
+#: panels/network/connection-editor/ce-page-details.c:339
 msgctxt "Signal strength"
 msgid "Weak"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:343
+#: panels/network/connection-editor/ce-page-details.c:341
 msgctxt "Signal strength"
 msgid "Ok"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:345
+#: panels/network/connection-editor/ce-page-details.c:343
 msgctxt "Signal strength"
 msgid "Good"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:347
+#: panels/network/connection-editor/ce-page-details.c:345
 msgctxt "Signal strength"
 msgid "Excellent"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:478
+#: panels/network/connection-editor/ce-page-details.c:476
 msgid "Forget Connection"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:480
+#: panels/network/connection-editor/ce-page-details.c:478
 msgid "Remove Connection Profile"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:482
+#: panels/network/connection-editor/ce-page-details.c:480
 msgid "Remove VPN"
 msgstr ""
 
-#: panels/network/connection-editor/ce-page-details.c:500
+#: panels/network/connection-editor/ce-page-details.c:498
 msgid "Details"
 msgstr ""
 
@@ -3684,15 +3679,15 @@ msgstr ""
 msgid "_Set"
 msgstr ""
 
-#: panels/wwan/cc-wwan-data.c:542
+#: panels/wwan/cc-wwan-data.c:547
 msgid "Operation Cancelled"
 msgstr ""
 
-#: panels/wwan/cc-wwan-data.c:545
+#: panels/wwan/cc-wwan-data.c:550
 msgid "<b>Error:</b> Access denied changing settings"
 msgstr ""
 
-#: panels/wwan/cc-wwan-data.c:548
+#: panels/wwan/cc-wwan-data.c:553
 msgid "<b>Error:</b> Mobile Equipment Error"
 msgstr ""
 
@@ -3745,25 +3740,25 @@ msgctxt "timezone map"
 msgid "%s (%s)"
 msgstr ""
 
-#: panels/thunderbolt/cc-bolt-panel.c:175
+#: panels/thunderbolt/cc-bolt-panel.c:240
 msgid "The Thunderbolt subsystem (boltd) is not installed or not set up properly."
 msgstr ""
 
-#: panels/thunderbolt/cc-bolt-panel.c:468
+#: panels/thunderbolt/cc-bolt-panel.c:533
 msgid ""
 "Thunderbolt could not be detected.\n"
 "Either the system lacks Thunderbolt support, it has been disabled in the BIOS or is set to an unsupported security level in the BIOS."
 msgstr ""
 
-#: panels/thunderbolt/cc-bolt-panel.c:512
+#: panels/thunderbolt/cc-bolt-panel.c:577
 msgid "Thunderbolt support has been disabled in the BIOS."
 msgstr ""
 
-#: panels/thunderbolt/cc-bolt-panel.c:516
+#: panels/thunderbolt/cc-bolt-panel.c:581
 msgid "Thunderbolt security level could not be determined."
 msgstr ""
 
-#: panels/thunderbolt/cc-bolt-panel.c:621
+#: panels/thunderbolt/cc-bolt-panel.c:686
 #, c-format
 msgid "Error switching direct mode: %s"
 msgstr ""
@@ -3971,7 +3966,7 @@ msgstr ""
 msgid "[PANEL] [ARGUMENT…]"
 msgstr ""
 
-#: shell/cc-panel-loader.c:295
+#: shell/cc-panel-loader.c:298
 msgid "Available panels:"
 msgstr ""
 
@@ -4176,13 +4171,8 @@ msgstr ""
 msgid "No printers"
 msgstr ""
 
-#. Translators: This button adds new printer.
-#: panels/printers/printers.ui.h:7
-msgid "Add a Printer…"
-msgstr ""
-
 #. Translators: The CUPS server is not running (we can not connect to it).
-#: panels/printers/printers.ui.h:9
+#: panels/printers/printers.ui.h:7
 msgid ""
 "Sorry! The system printing service\n"
 "doesn’t seem to be available."
@@ -6405,31 +6395,40 @@ msgstr ""
 msgid "OS Name"
 msgstr ""
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:10
-msgid "OS Type"
-msgstr ""
-
+#. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
-msgid "Windowing System"
+msgid "OS Build ID"
 msgstr ""
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:12
-msgid "Virtualization"
+msgid "OS Type"
 msgstr ""
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:13
-msgid "Software Updates"
+msgid "Windowing System"
 msgstr ""
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:14
-msgid "Rename Device"
+msgid "Virtualization"
 msgstr ""
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
-msgid "The device name is used to identify this device when it is viewed over the network, or when pairing Bluetooth devices."
+msgid "Kernel Version"
 msgstr ""
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
+msgid "Software Updates"
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:17
+msgid "Rename Device"
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:18
+msgid "The device name is used to identify this device when it is viewed over the network, or when pairing Bluetooth devices."
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:19
 msgid "_Rename"
 msgstr ""
 

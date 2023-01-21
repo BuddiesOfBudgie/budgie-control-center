@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 20:07+0100\n"
+"POT-Creation-Date: 2023-01-17 22:23+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Tamil (https://www.transifex.com/buddiesofbudgie/teams/129844/ta/)\n"
@@ -616,7 +616,7 @@ msgstr "வரைபடத்தை காட்டு"
 msgid "_Close"
 msgstr "மூடு (_C)"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Test Your _Settings"
 msgstr "உங்களுடைய அமைவுகளை சோதிக்கவும் (_S)"
 
@@ -2298,7 +2298,7 @@ msgstr ""
 msgid "Copy"
 msgstr "நகலெடு"
 
-#: panels/sharing/cc-sharing-panel.c:1702
+#: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
 msgid "Sharing"
 msgstr "பகிர்வு"
@@ -4939,10 +4939,6 @@ msgstr ""
 
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Add Picture…"
-msgstr ""
-
-#: panels/background/cc-background-preview.ui.h:1
-msgid "Activities"
 msgstr ""
 
 #: panels/sound/cc-output-test-dialog.ui.h:1
@@ -7658,14 +7654,39 @@ msgid "Touchpad Speed"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
-msgid "Tap to Click"
+msgid "Touchpad Click Method"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
-msgid "Two-finger Scrolling"
+msgid ""
+"Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
+msgid "Use the touchpad default"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:22
+msgid "No buttons created"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:23
+msgid "Left, middle and right areas"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:24
+msgid "One, two and three fingers"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:25
+msgid "Tap to Click"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:26
+msgid "Two-finger Scrolling"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Edge Scrolling"
 msgstr ""
 
@@ -8426,9 +8447,13 @@ msgstr "அடுத்த தடம் ."
 msgid "Eject"
 msgstr "வெளியேற்று"
 
-#: panels/keyboard/01-system.xml.in:2
+#: panels/keyboard/01-budgie.xml.in:2 panels/keyboard/01-system.xml.in:2
 msgid "System"
 msgstr "கணினி"
+
+#: panels/keyboard/01-budgie.xml.in:4
+msgid "Show the Power Dialog"
+msgstr ""
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"

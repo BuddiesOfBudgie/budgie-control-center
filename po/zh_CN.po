@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 20:07+0100\n"
+"POT-Creation-Date: 2023-01-17 22:23+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: Yazi Tian, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/buddiesofbudgie/teams/129844/zh_CN/)\n"
@@ -614,7 +614,7 @@ msgstr "显示映射"
 msgid "_Close"
 msgstr "关闭(_C)"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Test Your _Settings"
 msgstr "测试您的设置(_S)"
 
@@ -2277,7 +2277,7 @@ msgstr ""
 msgid "Copy"
 msgstr "复制"
 
-#: panels/sharing/cc-sharing-panel.c:1702
+#: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
 msgid "Sharing"
 msgstr "共享"
@@ -4901,10 +4901,6 @@ msgstr "关闭飞行模式开关以开启蓝牙。"
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Add Picture…"
 msgstr "添加图片…"
-
-#: panels/background/cc-background-preview.ui.h:1
-msgid "Activities"
-msgstr "活动"
 
 #: panels/sound/cc-output-test-dialog.ui.h:1
 msgid "Click a speaker to test"
@@ -7611,14 +7607,39 @@ msgid "Touchpad Speed"
 msgstr "触摸板速度"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
+msgid "Touchpad Click Method"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:20
+msgid ""
+"Create button behavior (left, middle and right) using the chosen action."
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:21
+msgid "Use the touchpad default"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:22
+msgid "No buttons created"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:23
+msgid "Left, middle and right areas"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:24
+msgid "One, two and three fingers"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "Tap to Click"
 msgstr "轻触以点击"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Two-finger Scrolling"
 msgstr "双指滚动"
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Edge Scrolling"
 msgstr "边缘滚动"
 
@@ -8358,9 +8379,13 @@ msgstr "下一曲目"
 msgid "Eject"
 msgstr "弹出"
 
-#: panels/keyboard/01-system.xml.in:2
+#: panels/keyboard/01-budgie.xml.in:2 panels/keyboard/01-system.xml.in:2
 msgid "System"
 msgstr "系统"
+
+#: panels/keyboard/01-budgie.xml.in:4
+msgid "Show the Power Dialog"
+msgstr ""
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"

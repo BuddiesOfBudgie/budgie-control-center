@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 20:07+0100\n"
+"POT-Creation-Date: 2023-01-17 22:23+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: Green, 2022\n"
 "Language-Team: Japanese (https://www.transifex.com/buddiesofbudgie/teams/129844/ja/)\n"
@@ -615,7 +615,7 @@ msgstr "画面のマッピング"
 msgid "_Close"
 msgstr "閉じる(_C)"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Test Your _Settings"
 msgstr "設定を確認(_S)"
 
@@ -2278,7 +2278,7 @@ msgstr ""
 msgid "Copy"
 msgstr "コピー"
 
-#: panels/sharing/cc-sharing-panel.c:1702
+#: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
 msgid "Sharing"
 msgstr "共有"
@@ -4915,10 +4915,6 @@ msgstr "Bluetooth を使用するには機内モードスイッチをオフに�
 msgid "Add Picture…"
 msgstr "画像を追加…"
 
-#: panels/background/cc-background-preview.ui.h:1
-msgid "Activities"
-msgstr "アクティビティ"
-
 #: panels/sound/cc-output-test-dialog.ui.h:1
 msgid "Click a speaker to test"
 msgstr "スピーカーをクリックしてテストしてください"
@@ -6561,7 +6557,7 @@ msgstr "用紙サイズ"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:2
 msgid "Hardware Model"
-msgstr "ハードウェアモデル"
+msgstr "ハードウェアの型式"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:3
 msgid "Memory"
@@ -7594,7 +7590,7 @@ msgstr "ダブルクリックと認識される最長クリック間隔"
 
 #: panels/mouse/cc-mouse-panel.ui.h:9
 msgid "Acceleration Profile"
-msgstr "加速度のプロファイル"
+msgstr "加速の設定"
 
 #: panels/mouse/cc-mouse-panel.ui.h:10
 msgid "How the pointer moves when you move the mouse."
@@ -7627,14 +7623,39 @@ msgid "Touchpad Speed"
 msgstr "タッチパッドの速度"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
+msgid "Touchpad Click Method"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:20
+msgid ""
+"Create button behavior (left, middle and right) using the chosen action."
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:21
+msgid "Use the touchpad default"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:22
+msgid "No buttons created"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:23
+msgid "Left, middle and right areas"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:24
+msgid "One, two and three fingers"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "Tap to Click"
 msgstr "タップでクリックする"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Two-finger Scrolling"
 msgstr "2 本指でのスクロール"
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Edge Scrolling"
 msgstr "エッジスクロール"
 
@@ -8397,9 +8418,13 @@ msgstr "次のトラック"
 msgid "Eject"
 msgstr "取り出し"
 
-#: panels/keyboard/01-system.xml.in:2
+#: panels/keyboard/01-budgie.xml.in:2 panels/keyboard/01-system.xml.in:2
 msgid "System"
 msgstr "システム"
+
+#: panels/keyboard/01-budgie.xml.in:4
+msgid "Show the Power Dialog"
+msgstr ""
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"
