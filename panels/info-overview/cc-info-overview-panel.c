@@ -67,10 +67,12 @@ struct _CcInfoOverviewPanel
   GtkDialog       *hostname_editor;
   CcHostnameEntry *hostname_entry;
   CcListRow       *hostname_row;
+  CcListRow       *kernel_row;
   CcListRow       *memory_row;
   GtkListBox      *os_box;
   GtkImage        *os_logo;
   CcListRow       *os_name_row;
+  CcListRow       *os_build_row;
   CcListRow       *os_type_row;
   CcListRow       *processor_row;
   CcListRow       *software_updates_row;
@@ -403,37 +405,29 @@ get_os_name (void)
   g_autofree gchar *name = NULL;
   g_autofree gchar *version_id = NULL;
   g_autofree gchar *pretty_name = NULL;
-  g_autofree gchar *build_id = NULL;
-  g_autofree gchar *name_version = NULL;
-  gchar *result = NULL;
 
   name = g_get_os_info (G_OS_INFO_KEY_NAME);
   version_id = g_get_os_info (G_OS_INFO_KEY_VERSION_ID);
   pretty_name = g_get_os_info (G_OS_INFO_KEY_PRETTY_NAME);
-  build_id = g_get_os_info ("BUILD_ID");
 
   if (pretty_name)
-    name_version = g_strdup (pretty_name);
+    return g_steal_pointer (&pretty_name);
   else if (name && version_id)
-    name_version = g_strdup_printf ("%s %s", name, version_id);
+    return g_strdup_printf ("%s %s", name, version_id);
   else
-    name_version = g_strdup (_("Unknown"));
-
-  if (build_id)
-    {
-      /* translators: This is the name of the OS, followed by the build ID, for
-       * example:
-       * "Fedora 25 (Workstation Edition); Build ID: xyz" or
-       * "Ubuntu 16.04 LTS; Build ID: jki" */
-      result = g_strdup_printf (_("%s; Build ID: %s"), name_version, build_id);
-    }
-  else
-    {
-      result = g_strdup (name_version);
-    }
-
-  return result;
+    return g_strdup (_("Unknown"));
 }
+
+static char *
+get_os_build_id (void)
+{
+  char *build_id = NULL;
+
+  build_id = g_get_os_info ("BUILD_ID");
+
+  return build_id;
+}
+
 
 static char *
 get_os_type (void)
@@ -497,13 +491,11 @@ get_primary_disc_info (CcInfoOverviewPanel *self)
     }
 }
 
-static void
-get_hardware_model (CcInfoOverviewPanel *self)
+static char *
+get_hostnamed_property (const char *property_name)
 {
   g_autoptr(GDBusProxy) hostnamed_proxy = NULL;
-  g_autoptr(GVariant) vendor_variant = NULL;
-  g_autoptr(GVariant) model_variant = NULL;
-  const char *vendor_string, *model_string;
+  g_autoptr(GVariant) property_variant = NULL;
   g_autoptr(GError) error = NULL;
 
   hostnamed_proxy = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SYSTEM,
@@ -517,35 +509,51 @@ get_hardware_model (CcInfoOverviewPanel *self)
   if (hostnamed_proxy == NULL)
     {
       g_debug ("Couldn't get hostnamed to start, bailing: %s", error->message);
-      return;
+      return NULL;
     }
 
-  vendor_variant = g_dbus_proxy_get_cached_property (hostnamed_proxy, "HardwareVendor");
-  if (!vendor_variant)
+  property_variant = g_dbus_proxy_get_cached_property (hostnamed_proxy, property_name);
+  if (!property_variant)
     {
-      g_debug ("Unable to retrieve org.freedesktop.hostname1.HardwareVendor property");
-      return;
+      g_debug ("Unable to retrieve org.freedesktop.hostname1.%s property", property_name);
+      return NULL;
     }
 
-  model_variant = g_dbus_proxy_get_cached_property (hostnamed_proxy, "HardwareModel");
-  if (!model_variant)
-    {
-      g_debug ("Unable to retrieve org.freedesktop.hostname1.HardwareModel property");
-      return;
-    }
+  return g_variant_dup_string (property_variant, NULL);
+}
 
-  vendor_string = g_variant_get_string (vendor_variant, NULL),
-  model_string = g_variant_get_string (model_variant, NULL);
+static char *
+get_hardware_model_string ()
+{
+  g_autofree char *vendor_string = NULL;
+  g_autofree char *model_string = NULL;
 
-  if (vendor_string && g_strcmp0 (vendor_string, "") != 0)
-    {
-      g_autofree gchar *vendor_model = NULL;
+  vendor_string = get_hostnamed_property ("HardwareVendor");
+  if (!vendor_string || g_strcmp0 (vendor_string, "") == 0)
+    return NULL;
 
-      vendor_model = g_strdup_printf ("%s %s", vendor_string, model_string);
+  model_string = get_hostnamed_property ("HardwareModel");
+  if (!model_string || g_strcmp0 (model_string, "") == 0)
+    return NULL;
 
-      cc_list_row_set_secondary_label (self->hardware_model_row, vendor_model);
-      gtk_widget_set_visible (GTK_WIDGET (self->hardware_model_row), TRUE);
-    }
+  return g_strdup_printf ("%s %s", vendor_string, model_string);
+}
+
+static char *
+get_kernel_version_string ()
+{
+  g_autofree char *kernel_name = NULL;
+  g_autofree char *kernel_release = NULL;
+
+  kernel_name = get_hostnamed_property ("KernelName");
+  if (!kernel_name || g_strcmp0 (kernel_name, "") == 0)
+    return NULL;
+
+  kernel_release = get_hostnamed_property ("KernelRelease");
+  if (!kernel_release || g_strcmp0 (kernel_release, "") == 0)
+    return NULL;
+
+  return g_strdup_printf ("%s %s", kernel_name, kernel_release);
 }
 
 static char *
@@ -754,6 +762,9 @@ info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
   g_autofree char *cpu_text = NULL;
   g_autofree char *os_type_text = NULL;
   g_autofree char *os_name_text = NULL;
+  g_autofree char *os_build_text = NULL;
+  g_autofree char *hardware_model_text = NULL;
+  g_autofree char *kernel_version_text = NULL;
   g_autofree gchar *graphics_hardware_string = NULL;
   guint64 ram_size;
 
@@ -762,7 +773,9 @@ info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
 
   cc_list_row_set_secondary_label (self->windowing_system_row, get_windowing_system ());
 
-  get_hardware_model (self);
+  hardware_model_text = get_hardware_model_string ();
+  cc_list_row_set_secondary_label (self->hardware_model_row, hardware_model_text);
+  gtk_widget_set_visible (GTK_WIDGET (self->hardware_model_row), hardware_model_text != NULL);
 
   ram_size = get_ram_size_dmi ();
   if (ram_size == 0)
@@ -781,10 +794,18 @@ info_overview_panel_setup_overview (CcInfoOverviewPanel *self)
   os_name_text = get_os_name ();
   cc_list_row_set_secondary_label (self->os_name_row, os_name_text);
 
+  os_build_text = get_os_build_id ();
+  cc_list_row_set_secondary_label (self->os_build_row, os_build_text);
+  gtk_widget_set_visible (GTK_WIDGET (self->os_build_row), os_build_text != NULL);
+
   get_primary_disc_info (self);
 
   graphics_hardware_string = get_graphics_hardware_string ();
   cc_list_row_set_secondary_markup (self->graphics_row, graphics_hardware_string);
+
+  kernel_version_text = get_kernel_version_string ();
+  cc_list_row_set_secondary_label (self->kernel_row, kernel_version_text);
+  gtk_widget_set_visible (GTK_WIDGET (self->kernel_row), kernel_version_text != NULL);
 }
 
 static gboolean
@@ -1000,10 +1021,12 @@ cc_info_overview_panel_class_init (CcInfoOverviewPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, hostname_editor);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, hostname_entry);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, hostname_row);
+  gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, kernel_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, memory_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, os_box);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, os_logo);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, os_name_row);
+  gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, os_build_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, os_type_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, processor_row);
   gtk_widget_class_bind_template_child (widget_class, CcInfoOverviewPanel, rename_button);

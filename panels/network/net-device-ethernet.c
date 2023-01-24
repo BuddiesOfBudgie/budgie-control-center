@@ -410,6 +410,7 @@ add_profile_button_clicked_cb (NetDeviceEthernet *self)
         g_autofree gchar *id = NULL;
         NetConnectionEditor *editor;
         const GPtrArray *connections;
+        const char *iface;
 
         connection = nm_simple_connection_new ();
         sc = NM_SETTING_CONNECTION (nm_setting_connection_new ());
@@ -425,6 +426,11 @@ add_profile_button_clicked_cb (NetDeviceEthernet *self)
                       NM_SETTING_CONNECTION_ID, id,
                       NM_SETTING_CONNECTION_TYPE, NM_SETTING_WIRED_SETTING_NAME,
                       NM_SETTING_CONNECTION_AUTOCONNECT, TRUE,
+                      NULL);
+
+        iface = nm_device_get_iface (self->device);
+        g_object_set (sc,
+                      NM_SETTING_CONNECTION_INTERFACE_NAME, iface,
                       NULL);
 
         nm_connection_add_setting (connection, nm_setting_wired_new ());

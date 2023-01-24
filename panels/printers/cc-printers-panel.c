@@ -127,6 +127,9 @@ static void actualize_printers_list (CcPrintersPanel *self);
 static void update_sensitivity (gpointer user_data);
 static void detach_from_cups_notifier (gpointer data);
 static void free_dests (CcPrintersPanel *self);
+static void set_current_page (GObject      *source_object,
+                              GAsyncResult *result,
+                              gpointer      user_data);
 
 static void
 execute_action (CcPrintersPanel *self,
@@ -626,6 +629,12 @@ on_printer_deletion_undone (CcPrintersPanel *self)
   gtk_list_box_invalidate_filter (GTK_LIST_BOX (widget));
 
   g_clear_handle_id (&self->remove_printer_timeout_id, g_source_remove);
+
+  if (self->num_dests > 0)
+    {
+      widget = (GtkWidget *) gtk_builder_get_object (self->builder, "main-vbox");
+      gtk_stack_set_visible_child_name (GTK_STACK (widget), "printers-list");
+    }
 }
 
 static void
@@ -694,6 +703,9 @@ on_printer_deleted (CcPrintersPanel *self,
   gtk_revealer_set_reveal_child (self->notification, TRUE);
 
   self->remove_printer_timeout_id = g_timeout_add_seconds (10, G_SOURCE_FUNC (on_remove_printer_timeout), self);
+
+  if (self->num_dests == 1 + g_list_length (self->deleted_printers))
+    pp_cups_connection_test_async (self->cups, NULL, set_current_page, self);
 }
 
 static void
@@ -825,7 +837,9 @@ actualize_printers_list_cb (GObject      *source_object,
   g_free (cups_dests);
 
   widget = (GtkWidget*) gtk_builder_get_object (self->builder, "main-vbox");
-  if (self->num_dests == 0 && !self->new_printer_name)
+  if ((self->num_dests == 0 && self->new_printer_name == NULL) ||
+      (self->num_dests == 1 + g_list_length (self->deleted_printers) &&
+       self->deleted_printer_name != NULL))
     pp_cups_connection_test_async (PP_CUPS (source_object), NULL, set_current_page, self);
   else
     gtk_stack_set_visible_child_name (GTK_STACK (widget), "printers-list");
@@ -986,6 +1000,7 @@ update_sensitivity (gpointer user_data)
   GtkWidget               *widget;
   gboolean                 local_server = TRUE;
   gboolean                 no_cups = FALSE;
+  gboolean                 empty_state = FALSE;
 
   self->is_authorized =
     self->permission &&
@@ -996,6 +1011,8 @@ update_sensitivity (gpointer user_data)
   widget = (GtkWidget*) gtk_builder_get_object (self->builder, "main-vbox");
   if (g_strcmp0 (gtk_stack_get_visible_child_name (GTK_STACK (widget)), "no-cups-page") == 0)
     no_cups = TRUE;
+  else if (g_strcmp0 (gtk_stack_get_visible_child_name (GTK_STACK (widget)), "empty-state") == 0)
+    empty_state = TRUE;
 
   cups_server = cupsServer ();
   if (cups_server &&
@@ -1012,6 +1029,7 @@ update_sensitivity (gpointer user_data)
   gtk_widget_set_visible (widget, !no_cups);
 
   widget = (GtkWidget*) gtk_builder_get_object (self->builder, "printer-add-button");
+  gtk_widget_set_visible (widget, !empty_state);
   gtk_widget_set_sensitive (widget, local_server && self->is_authorized && !no_cups && !self->new_printer_name);
 
   widget = (GtkWidget*) gtk_builder_get_object (self->builder, "printer-add-button2");

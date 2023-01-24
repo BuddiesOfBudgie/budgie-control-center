@@ -5,15 +5,16 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Moo, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 20:07+0100\n"
+"POT-Creation-Date: 2023-01-17 22:23+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Moo, 2022\n"
 "Language-Team: Lithuanian (https://www.transifex.com/buddiesofbudgie/teams/129844/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -303,7 +304,7 @@ msgstr "Apverstas stačias"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "Automatinė konfigūracija"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:683
@@ -622,7 +623,7 @@ msgstr "Ekrano susiejimas"
 msgid "_Close"
 msgstr "_Užverti"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Test Your _Settings"
 msgstr "Tikrinkite savo _nustatymus"
 
@@ -2337,7 +2338,7 @@ msgstr ""
 msgid "Copy"
 msgstr "Kopijuoti"
 
-#: panels/sharing/cc-sharing-panel.c:1702
+#: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
 msgid "Sharing"
 msgstr "Dalinimasis"
@@ -3597,7 +3598,7 @@ msgstr "tik 4G"
 
 #: panels/wwan/cc-wwan-device.c:997
 msgid "5G Only"
-msgstr ""
+msgstr "Tik 5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
@@ -3617,7 +3618,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1022
 msgid "2G, 3G, 4G (Preferred)"
@@ -3649,7 +3650,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
-msgstr ""
+msgstr "3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
@@ -3665,7 +3666,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
-msgstr ""
+msgstr "2G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
@@ -3681,7 +3682,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
-msgstr ""
+msgstr "2G, 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1073
 msgid "3G, 4G (Preferred)"
@@ -3729,7 +3730,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
-msgstr ""
+msgstr "2G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
@@ -3741,7 +3742,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
-msgstr ""
+msgstr "3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
@@ -3753,7 +3754,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
-msgstr ""
+msgstr "4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
@@ -5038,10 +5039,6 @@ msgstr "Išjunkite skrydžio veiksenos jungiklį Bluetooth įjungimui."
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Add Picture…"
 msgstr "Pridėti paveikslėlį…"
-
-#: panels/background/cc-background-preview.ui.h:1
-msgid "Activities"
-msgstr "Veiklos"
 
 #: panels/sound/cc-output-test-dialog.ui.h:1
 msgid "Click a speaker to test"
@@ -6540,7 +6537,7 @@ msgstr ""
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "Naudotojo vardas"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
@@ -7170,7 +7167,7 @@ msgstr "Tinklo pavadinimas"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Security type"
-msgstr ""
+msgstr "Saugumo tipas"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Turn Wi-Fi off"
@@ -7792,14 +7789,39 @@ msgid "Touchpad Speed"
 msgstr "Jutiklinio kilimėlio greitis"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
+msgid "Touchpad Click Method"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:20
+msgid ""
+"Create button behavior (left, middle and right) using the chosen action."
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:21
+msgid "Use the touchpad default"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:22
+msgid "No buttons created"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:23
+msgid "Left, middle and right areas"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:24
+msgid "One, two and three fingers"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "Tap to Click"
 msgstr "Bakstelėti _paspaudimui"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Two-finger Scrolling"
 msgstr "Slinktis dviem pirštais"
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Edge Scrolling"
 msgstr "Slinkimas kraštuose"
 
@@ -8487,7 +8509,7 @@ msgstr ""
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"
-msgstr ""
+msgstr "Išvalyti pranešimus"
 
 #: panels/keyboard/01-launchers.xml.in:2
 msgid "Launchers"
@@ -8582,9 +8604,13 @@ msgstr "Kitas takelis"
 msgid "Eject"
 msgstr "Išstumti"
 
-#: panels/keyboard/01-system.xml.in:2
+#: panels/keyboard/01-budgie.xml.in:2 panels/keyboard/01-system.xml.in:2
 msgid "System"
 msgstr "Sistema"
+
+#: panels/keyboard/01-budgie.xml.in:4
+msgid "Show the Power Dialog"
+msgstr ""
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"

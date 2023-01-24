@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-21 20:07+0100\n"
+"POT-Creation-Date: 2023-01-17 22:23+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Galician (https://www.transifex.com/buddiesofbudgie/teams/129844/gl/)\n"
@@ -617,7 +617,7 @@ msgstr "Mostrar mapeo"
 msgid "_Close"
 msgstr "_Pechar"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Test Your _Settings"
 msgstr "Comprobar a súa _configuración"
 
@@ -2326,7 +2326,7 @@ msgstr ""
 msgid "Copy"
 msgstr "Copiar"
 
-#: panels/sharing/cc-sharing-panel.c:1702
+#: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
 msgid "Sharing"
 msgstr "Compartir"
@@ -5016,10 +5016,6 @@ msgstr "Apague o modo avión para activar o Bluetooth."
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Add Picture…"
 msgstr "Engadir imaxe…"
-
-#: panels/background/cc-background-preview.ui.h:1
-msgid "Activities"
-msgstr "Actividades"
 
 #: panels/sound/cc-output-test-dialog.ui.h:1
 msgid "Click a speaker to test"
@@ -7779,14 +7775,39 @@ msgid "Touchpad Speed"
 msgstr "Velocidade da área táctil"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
+msgid "Touchpad Click Method"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:20
+msgid ""
+"Create button behavior (left, middle and right) using the chosen action."
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:21
+msgid "Use the touchpad default"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:22
+msgid "No buttons created"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:23
+msgid "Left, middle and right areas"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:24
+msgid "One, two and three fingers"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "Tap to Click"
 msgstr "Tocar para facer clic"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Two-finger Scrolling"
 msgstr "Desprazamento con dous dedos"
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Edge Scrolling"
 msgstr "Desprazamento no bordo"
 
@@ -8565,9 +8586,13 @@ msgstr "Seguinte pista"
 msgid "Eject"
 msgstr "Expulsar"
 
-#: panels/keyboard/01-system.xml.in:2
+#: panels/keyboard/01-budgie.xml.in:2 panels/keyboard/01-system.xml.in:2
 msgid "System"
 msgstr "Sistema"
+
+#: panels/keyboard/01-budgie.xml.in:4
+msgid "Show the Power Dialog"
+msgstr ""
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"
