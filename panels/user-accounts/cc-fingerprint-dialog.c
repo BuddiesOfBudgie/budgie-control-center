@@ -83,6 +83,7 @@ struct _CcFingerprintDialog
   GtkWidget      *error_infobar;
   GtkWidget      *no_devices_found;
   GtkWidget      *prints_manager;
+  GtkWidget      *fprintd_label;
 
   CcFingerprintManager *manager;
   DialogState           dialog_state;
@@ -128,6 +129,14 @@ const char * FINGER_IDS[] = {
   "left-ring-finger",
   "left-little-finger",
   "any",
+};
+
+#define N_VALID_PAM_AUTH_EXE G_N_ELEMENTS (PAM_AUTH_EXE) - 1
+const char * PAM_AUTH_EXE[] = {
+  "authselect-gtk",
+  "authselect",
+  "authconfig",
+  "pam-auth-update"
 };
 
 typedef enum {
@@ -612,6 +621,11 @@ static void
 update_prints_store (CcFingerprintDialog *self)
 {
   ActUser *user;
+  g_autofree gchar *pam_message = NULL;
+  gchar *pam_exe = NULL;
+  /* TRANSLATORS: This is part of the translation 'Ensure fprintd has been enabled using your pam authorization module' */
+  gchar *pam_exe_fallback = _("your pam authorization module");
+  guint pam_exe_loop = 0;
 
   g_assert_true (CC_FPRINTD_IS_DEVICE (self->device));
 
@@ -629,6 +643,21 @@ update_prints_store (CcFingerprintDialog *self)
                                                 self->cancellable,
                                                 list_enrolled_cb,
                                                 self);
+  // tailor the fprintd message depending upon what pam auth executable is available
+  for (guint loop = pam_exe_loop; loop <= N_VALID_PAM_AUTH_EXE; loop++) {
+    if (g_find_program_in_path (PAM_AUTH_EXE[loop]) != NULL) {
+      pam_exe = (gchar *)PAM_AUTH_EXE[loop];
+      break;
+    }
+  }
+
+  if (pam_exe == NULL) {
+    pam_exe = pam_exe_fallback;
+  }
+
+  /* TRANSLATORS: fprintd does not have to be translated, the %s is the name of an executable that is calculated when the app is running */
+  pam_message = g_strdup_printf (_("Ensure fprintd has been enabled using %s"), pam_exe);
+  gtk_label_set_label ((GtkLabel*)self->fprintd_label, pam_message);
 }
 
 static void
@@ -1574,6 +1603,7 @@ cc_fingerprint_dialog_class_init (CcFingerprintDialogClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcFingerprintDialog, print_popover);
   gtk_widget_class_bind_template_child (widget_class, CcFingerprintDialog, prints_gallery);
   gtk_widget_class_bind_template_child (widget_class, CcFingerprintDialog, prints_manager);
+  gtk_widget_class_bind_template_child (widget_class, CcFingerprintDialog, fprintd_label);
   gtk_widget_class_bind_template_child (widget_class, CcFingerprintDialog, spinner);
   gtk_widget_class_bind_template_child (widget_class, CcFingerprintDialog, stack);
   gtk_widget_class_bind_template_child (widget_class, CcFingerprintDialog, title);
