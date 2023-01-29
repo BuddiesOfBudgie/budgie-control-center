@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 22:23+0000\n"
+"POT-Creation-Date: 2023-01-24 18:45+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Vietnamese (https://www.transifex.com/buddiesofbudgie/teams/129844/vi/)\n"
@@ -303,23 +303,23 @@ msgid "Automatic configuration"
 msgstr ""
 
 #. Translators: %s is the printer name
-#: panels/printers/cc-printers-panel.c:683
+#: panels/printers/cc-printers-panel.c:692
 #, c-format
 msgid "Printer “%s” has been deleted"
 msgstr "Máy in “%s” đã bị xóa bỏ"
 
 #. Translators: Addition of the new printer failed.
-#: panels/printers/cc-printers-panel.c:927
+#: panels/printers/cc-printers-panel.c:941
 msgid "Failed to add new printer."
 msgstr "Không thể thêm máy in mới."
 
 #. Translators: The XML file containing user interface can not be loaded
-#: panels/printers/cc-printers-panel.c:1226
+#: panels/printers/cc-printers-panel.c:1244
 #, c-format
 msgid "Could not load ui: %s"
 msgstr "Không thể tải giao diện: %s"
 
-#: panels/printers/cc-printers-panel.c:1294
+#: panels/printers/cc-printers-panel.c:1312
 msgid "Unlock to Add Printers and Change Settings"
 msgstr "Mở khóa để Thêm máy in và thay đổi cài đặt"
 
@@ -407,8 +407,8 @@ msgstr "Chọn tập tin PPD"
 #: panels/display/cc-display-panel.c:1207
 #: panels/user-accounts/cc-avatar-chooser.c:105
 #: panels/user-accounts/cc-avatar-chooser.c:241
-#: panels/user-accounts/cc-user-panel.c:638
-#: panels/user-accounts/cc-user-panel.c:656
+#: panels/user-accounts/cc-user-panel.c:637
+#: panels/user-accounts/cc-user-panel.c:655
 #: panels/sharing/cc-sharing-panel.c:539 panels/network/cc-wifi-panel.c:871
 #: panels/network/connection-editor/vpn-helpers.c:176
 #: panels/network/connection-editor/vpn-helpers.c:299
@@ -421,7 +421,7 @@ msgstr "Chọn tập tin PPD"
 #: panels/user-accounts/cc-add-user-dialog.ui.h:2
 #: panels/user-accounts/cc-password-dialog.ui.h:2
 #: panels/region/cc-format-chooser.ui.h:2
-#: panels/info-overview/cc-info-overview-panel.ui.h:17
+#: panels/info-overview/cc-info-overview-panel.ui.h:20
 #: panels/common/cc-language-chooser.ui.h:3
 #: panels/network/connection-editor/connection-editor.ui.h:1
 #: panels/network/cc-wifi-hotspot-dialog.ui.h:6
@@ -530,6 +530,7 @@ msgstr "Cổng song song"
 #. Translators: The found device is a printer connected via Bluetooth
 #: panels/printers/pp-new-printer-dialog.c:1392
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:3
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -702,12 +703,12 @@ msgstr "Không bao giờ"
 msgid "Automatic suspend"
 msgstr "Tự động tạm dừng"
 
-#: panels/power/cc-power-panel.c:1159
+#: panels/power/cc-power-panel.c:1162
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
 msgstr "Chế độ năng suất tạm thời bị tắt bởi vì nhiệt độ của hoạt dộng cao."
 
-#: panels/power/cc-power-panel.c:1161
+#: panels/power/cc-power-panel.c:1164
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
@@ -715,11 +716,11 @@ msgstr ""
 "Dò thấy máy tính đang để trên đùi: chế độ năng suất hiện tạm thời không sẵn "
 "sàng. Hãy chuyển thiết bị đến mặt phẳng ổn định hơn để phục hồi lại."
 
-#: panels/power/cc-power-panel.c:1163
+#: panels/power/cc-power-panel.c:1166
 msgid "Performance mode temporarily disabled."
 msgstr "Tạm thời tắt chế độ năng suất."
 
-#: panels/power/cc-power-panel.c:1206
+#: panels/power/cc-power-panel.c:1209
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
@@ -728,13 +729,13 @@ msgstr ""
 "được dùng lại khi pin đã được sạc đủ dùng."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1214
+#: panels/power/cc-power-panel.c:1217
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr "Chế độ tiết kiệm điện được kích hoạt bởi “%s”."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1218
+#: panels/power/cc-power-panel.c:1221
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr "Chế độ năng suất được kích hoạt bởi “%s”."
@@ -1459,8 +1460,8 @@ msgstr "Đặt lại tất cả"
 #. translators:
 #. * The device has been disabled
 #: panels/keyboard/keyboard-shortcuts.c:367
-#: panels/user-accounts/cc-user-panel.c:848
-#: panels/user-accounts/cc-user-panel.c:938
+#: panels/user-accounts/cc-user-panel.c:847
+#: panels/user-accounts/cc-user-panel.c:934
 #: panels/wwan/cc-wwan-device-page.c:479
 #: subprojects/gvc/gvc-mixer-control.c:1908
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:2
@@ -1558,121 +1559,138 @@ msgstr "Mật khẩu không đúng, vui lòng thử lại"
 msgid "Couldn’t connect to the %s domain: %s"
 msgstr "Không thể kết nối đến miền %s: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:236
+#: panels/user-accounts/cc-fingerprint-dialog.c:245
 msgid "the device needs to be claimed to perform this action"
 msgstr "thiết bị cần để yêu cầu thực hiện thao tác này"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:238
+#: panels/user-accounts/cc-fingerprint-dialog.c:247
 msgid "the device is already claimed by another process"
 msgstr "thiết bị này đang được dùng bởi một tiến trình khác"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:240
+#: panels/user-accounts/cc-fingerprint-dialog.c:249
 msgid "you do not have permission to perform the action"
 msgstr "bạn không có đủ quyền hạn thực hiện thao tác"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:242
+#: panels/user-accounts/cc-fingerprint-dialog.c:251
 msgid "no prints have been enrolled"
 msgstr "không có dấu tay nào được đăng ký"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:251
+#: panels/user-accounts/cc-fingerprint-dialog.c:260
 msgid "Failed to communicate with the device during enrollment"
 msgstr "Không thể giao tiếp với thiết bị trong khi đăng ký"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:255
+#: panels/user-accounts/cc-fingerprint-dialog.c:264
 msgid "Failed to communicate with the fingerprint reader"
 msgstr "Gặp lỗi khi giao tiếp với bộ đọc dấu vân tay"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:257
+#: panels/user-accounts/cc-fingerprint-dialog.c:266
 msgid "Failed to communicate with the fingerprint daemon"
 msgstr "Gặp lỗi khi giao tiếp với dịch vụ đọc dấu vân tay"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:585
+#: panels/user-accounts/cc-fingerprint-dialog.c:594
 #, c-format
 msgid "Failed to list fingerprints: %s"
 msgstr "Gặp lỗi khi liệt kê các dấu vân tay: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:652
+#. TRANSLATORS: This is part of the translation 'Ensure fprintd has been
+#. enabled using your pam authorization module'
+#: panels/user-accounts/cc-fingerprint-dialog.c:627
+msgid "your pam authorization module"
+msgstr ""
+
+#. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
+#. an executable that is calculated when the app is running
+#: panels/user-accounts/cc-fingerprint-dialog.c:659
+#, c-format
+msgid "Ensure fprintd has been enabled using %s"
+msgstr ""
+
+#: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
 msgid "Failed to delete saved fingerprints: %s"
 msgstr "Gặp lỗi khi xóa các dấu vân tay đã lưu: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:683
+#: panels/user-accounts/cc-fingerprint-dialog.c:712
 msgid "Left thumb"
 msgstr "Ngón cái tay trái"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:685
+#: panels/user-accounts/cc-fingerprint-dialog.c:714
 msgid "Left middle finger"
 msgstr "Ngón giữa tay trái"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:687
+#: panels/user-accounts/cc-fingerprint-dialog.c:716
 msgid "_Left index finger"
 msgstr "Ngón trỏ _trái"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:689
+#: panels/user-accounts/cc-fingerprint-dialog.c:718
 msgid "Left ring finger"
 msgstr "Ngón đeo nhẫn tay trái"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:691
+#: panels/user-accounts/cc-fingerprint-dialog.c:720
 msgid "Left little finger"
 msgstr "Ngón út tay trái"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:693
+#: panels/user-accounts/cc-fingerprint-dialog.c:722
 msgid "Right thumb"
 msgstr "Ngón cái tay phải"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:695
+#: panels/user-accounts/cc-fingerprint-dialog.c:724
 msgid "Right middle finger"
 msgstr "Ngón giữa tay phải"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:697
+#: panels/user-accounts/cc-fingerprint-dialog.c:726
 msgid "_Right index finger"
 msgstr "Ngón trỏ _phải"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:699
+#: panels/user-accounts/cc-fingerprint-dialog.c:728
 msgid "Right ring finger"
 msgstr "Ngón đeo nhẫn tay phải"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:701
+#: panels/user-accounts/cc-fingerprint-dialog.c:730
 msgid "Right little finger"
 msgstr "Ngón út tay phải"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:703
+#: panels/user-accounts/cc-fingerprint-dialog.c:732
 msgid "Unknown Finger"
 msgstr "Ngón tay chưa biết"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:837
+#: panels/user-accounts/cc-fingerprint-dialog.c:866
 msgctxt "Fingerprint enroll state"
 msgid "Complete"
 msgstr "Hoàn thành"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:848
+#: panels/user-accounts/cc-fingerprint-dialog.c:877
 msgid "Fingerprint device disconnected"
 msgstr "Thiết bị đọc dấu vân tay đã ngắt kết nối"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:854
+#: panels/user-accounts/cc-fingerprint-dialog.c:883
 msgid "Fingerprint device storage is full"
 msgstr "Phần lưu trữ của thiết bị đọc dấu vân tay đã bị đầy"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:858
+#: panels/user-accounts/cc-fingerprint-dialog.c:887
+msgid "Fingerprint is a duplicate"
+msgstr ""
+
+#: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
 msgstr "Gặp lỗi khi đăng ký dấu vân tay mới"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:889
+#: panels/user-accounts/cc-fingerprint-dialog.c:922
 #, c-format
 msgid "Failed to start enrollment: %s"
 msgstr "Gặp lỗi khi bắt đầu đăng ký: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:897
+#: panels/user-accounts/cc-fingerprint-dialog.c:930
 msgctxt "Fingerprint enroll state"
 msgid "Failed to enroll new fingerprint"
 msgstr "Gặp lỗi khi đăng ký dấu vân tay mới"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:928
+#: panels/user-accounts/cc-fingerprint-dialog.c:961
 #, c-format
 msgid "Failed to stop enrollment: %s"
 msgstr "Gặp lỗi khi dừng đăng ký: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:974
+#: panels/user-accounts/cc-fingerprint-dialog.c:1007
 msgid ""
 "Repeatedly lift and place your finger on the reader to enroll your "
 "fingerprint"
@@ -1680,65 +1698,65 @@ msgstr ""
 "Liên tục nhấc và đặt ngón tay lên đầu đọc để đăng ký dấu vân tay của bạn"
 
 #. TRANSLATORS: This is the label for the button to enroll a new finger
-#: panels/user-accounts/cc-fingerprint-dialog.c:1118
+#: panels/user-accounts/cc-fingerprint-dialog.c:1151
 msgid "Scan new fingerprint"
 msgstr "Quét dấu vân tay mới"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1157
+#: panels/user-accounts/cc-fingerprint-dialog.c:1190
 #, c-format
 msgid "Failed to release fingerprint device %s: %s"
 msgstr "Gặp lỗi giải phóng thiết bị đọc dấu vân tay %s: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1229
+#: panels/user-accounts/cc-fingerprint-dialog.c:1262
 msgctxt "Fingerprint enroll state"
 msgid "Problem Reading Device"
 msgstr "Lỗi đọc từ thiết bị"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1264
+#: panels/user-accounts/cc-fingerprint-dialog.c:1297
 #, c-format
 msgid "Failed to claim fingerprint device %s: %s"
 msgstr "Gặp lỗi khi yêu cầu thiết bị đọc dấu vân tay %s: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1413
+#: panels/user-accounts/cc-fingerprint-dialog.c:1446
 #, c-format
 msgid "Failed to get fingerprint devices: %s"
 msgstr "Gặp lỗi khi lấy các thiết vị đọc dấu vân tay: %s"
 
-#: panels/user-accounts/cc-user-panel.c:222
+#: panels/user-accounts/cc-user-panel.c:221
 msgid "Your account"
 msgstr "Tài khoản của bạn"
 
-#: panels/user-accounts/cc-user-panel.c:402
+#: panels/user-accounts/cc-user-panel.c:401
 msgid "Failed to delete user"
 msgstr "Gặp lỗi khi xóa người dùng"
 
-#: panels/user-accounts/cc-user-panel.c:457
-#: panels/user-accounts/cc-user-panel.c:512
-#: panels/user-accounts/cc-user-panel.c:558
+#: panels/user-accounts/cc-user-panel.c:456
+#: panels/user-accounts/cc-user-panel.c:511
+#: panels/user-accounts/cc-user-panel.c:557
 msgid "Failed to revoke remotely managed user"
 msgstr "Gặp lỗi khi thu hồi quyền quản trị từ xa"
 
-#: panels/user-accounts/cc-user-panel.c:607
+#: panels/user-accounts/cc-user-panel.c:606
 msgid "You cannot delete your own account."
 msgstr "Không thể xóa tài khoản của chính bạn."
 
-#: panels/user-accounts/cc-user-panel.c:616
+#: panels/user-accounts/cc-user-panel.c:615
 #, c-format
 msgid "%s is still logged in"
 msgstr "%s vẫn đang đăng nhập"
 
-#: panels/user-accounts/cc-user-panel.c:620
+#: panels/user-accounts/cc-user-panel.c:619
 msgid ""
 "Deleting a user while they are logged in can leave the system in an "
 "inconsistent state."
 msgstr "Xóa người dùng vẫn đang đăng nhập có thể gây bất ổn hệ thống."
 
-#: panels/user-accounts/cc-user-panel.c:629
+#: panels/user-accounts/cc-user-panel.c:628
 #, c-format
 msgid "Do you want to keep %s’s files?"
 msgstr "Bạn có muốn giữ các tập tin của %s không?"
 
-#: panels/user-accounts/cc-user-panel.c:633
+#: panels/user-accounts/cc-user-panel.c:632
 msgid ""
 "It is possible to keep the home directory, mail spool and temporary files "
 "around when deleting a user account."
@@ -1746,45 +1764,45 @@ msgstr ""
 "Có thể giữ lại thư mục cá nhân, thư từ và tập tin tạm khi xóa tài khoản "
 "người dùng."
 
-#: panels/user-accounts/cc-user-panel.c:636
+#: panels/user-accounts/cc-user-panel.c:635
 msgid "_Delete Files"
 msgstr "_Xóa tập tin"
 
-#: panels/user-accounts/cc-user-panel.c:637
+#: panels/user-accounts/cc-user-panel.c:636
 msgid "_Keep Files"
 msgstr "_Giữ tập tin"
 
-#: panels/user-accounts/cc-user-panel.c:651
+#: panels/user-accounts/cc-user-panel.c:650
 #, c-format
 msgid "Are you sure you want to revoke remotely managed %s’s account?"
 msgstr "Bạn có chắc chắn muốn thu hồi tài khoản quản trị từ xa của %s không?"
 
-#: panels/user-accounts/cc-user-panel.c:655
+#: panels/user-accounts/cc-user-panel.c:654
 msgid "_Delete"
 msgstr "_Xóa"
 
-#: panels/user-accounts/cc-user-panel.c:705
+#: panels/user-accounts/cc-user-panel.c:704
 msgctxt "Password mode"
 msgid "Account disabled"
 msgstr "Tài khoản bị vô hiệu hóa"
 
-#: panels/user-accounts/cc-user-panel.c:713
+#: panels/user-accounts/cc-user-panel.c:712
 msgctxt "Password mode"
 msgid "To be set at next login"
 msgstr "Cần đặt vào lần đăng nhập tiếp theo"
 
-#: panels/user-accounts/cc-user-panel.c:716
+#: panels/user-accounts/cc-user-panel.c:715
 msgctxt "Password mode"
 msgid "None"
 msgstr "Không có"
 
-#: panels/user-accounts/cc-user-panel.c:759
+#: panels/user-accounts/cc-user-panel.c:758
 msgid "Logged in"
 msgstr "Đang đăng nhập"
 
 #. Translators: This is a time format string in the style of "22:58".
 #. It indicates a login time which follows a date.
-#: panels/user-accounts/cc-user-panel.c:771
+#: panels/user-accounts/cc-user-panel.c:770
 #: panels/user-accounts/cc-login-history-dialog.c:173
 msgctxt "login date-time"
 msgid "%k:%M"
@@ -1792,7 +1810,7 @@ msgstr "%k:%M"
 
 #. Translators: This indicates a login date-time.
 #. The first %s is a date, and the second %s a time.
-#: panels/user-accounts/cc-user-panel.c:775
+#: panels/user-accounts/cc-user-panel.c:774
 #: panels/user-accounts/cc-login-history-dialog.c:176
 #, c-format
 msgctxt "login date-time"
@@ -1800,17 +1818,17 @@ msgid "%s, %s"
 msgstr "%2$s, %1$s"
 
 #. TRANSLATORS: Status of Parental Controls setup
-#: panels/user-accounts/cc-user-panel.c:846
-#: panels/user-accounts/cc-user-panel.c:935
+#: panels/user-accounts/cc-user-panel.c:845
+#: panels/user-accounts/cc-user-panel.c:931
 #: panels/wwan/cc-wwan-device-page.c:477
 msgid "Enabled"
 msgstr "Bật"
 
-#: panels/user-accounts/cc-user-panel.c:1259
+#: panels/user-accounts/cc-user-panel.c:1255
 msgid "Failed to contact the accounts service"
 msgstr "Gặp lỗi khi liên lạc dịch vụ tài khoản (accountsservice)"
 
-#: panels/user-accounts/cc-user-panel.c:1261
+#: panels/user-accounts/cc-user-panel.c:1257
 msgid "Please make sure that the AccountService is installed and enabled."
 msgstr "Hãy kiểm tra xem AccountService có cài và được bật không."
 
@@ -1818,7 +1836,7 @@ msgstr "Hãy kiểm tra xem AccountService có cài và được bật không."
 #. * We split the line in 2 here to "make it look good", as there's
 #. * no good way to do this in GTK+ for tooltips. See:
 #. * https://bugzilla.gnome.org/show_bug.cgi?id=657168
-#: panels/user-accounts/cc-user-panel.c:1293
+#: panels/user-accounts/cc-user-panel.c:1289
 msgid ""
 "To make changes,\n"
 "click the * icon first"
@@ -1826,12 +1844,12 @@ msgstr ""
 "Để thay đổi,\n"
 "nhấn biểu tượng * trước"
 
-#: panels/user-accounts/cc-user-panel.c:1366
+#: panels/user-accounts/cc-user-panel.c:1362
 msgid "Delete the selected user account"
 msgstr "Xóa tài khoản người dùng được chọn"
 
-#: panels/user-accounts/cc-user-panel.c:1378
-#: panels/user-accounts/cc-user-panel.c:1489
+#: panels/user-accounts/cc-user-panel.c:1374
+#: panels/user-accounts/cc-user-panel.c:1485
 msgid ""
 "To delete the selected user account,\n"
 "click the * icon first"
@@ -1839,7 +1857,7 @@ msgstr ""
 "Để xóa tài khoản người dùng được chọn,\n"
 "nhấn biểu tượng * trước"
 
-#: panels/user-accounts/cc-user-panel.c:1535
+#: panels/user-accounts/cc-user-panel.c:1508
 msgid "Unlock to Add Users and Change Settings"
 msgstr "Mở khóa để Thêm người dùng và thay đổi cài đặt"
 
@@ -2147,6 +2165,7 @@ msgstr "Truy cập đầy đủ vào /dev"
 #: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
 #: panels/wwan/cc-wwan-network-dialog.ui.h:1
 #: panels/network/budgie-network-panel.desktop.in.in:3
+#: build/panels/network/budgie-network-panel.desktop.in:3
 msgid "Network"
 msgstr "Mạng"
 
@@ -2250,6 +2269,7 @@ msgstr "Tập tin khác"
 #: panels/applications/cc-applications-panel.ui.h:26
 #: panels/notifications/cc-notifications-panel.ui.h:4
 #: panels/applications/budgie-applications-panel.desktop.in.in:3
+#: build/panels/applications/budgie-applications-panel.desktop.in:3
 msgid "Applications"
 msgstr "Ứng dụng"
 
@@ -2304,6 +2324,7 @@ msgstr "Sao chép"
 
 #: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:3
 msgid "Sharing"
 msgstr "Chia sẻ"
 
@@ -2415,42 +2436,33 @@ msgstr "Hệ mét"
 msgid "Formats"
 msgstr "Định dạng"
 
-#: panels/info-overview/cc-info-overview-panel.c:396
-#: panels/info-overview/cc-info-overview-panel.c:420
-#: panels/info-overview/cc-info-overview-panel.c:466
-#: panels/info-overview/cc-info-overview-panel.c:496
+#: panels/info-overview/cc-info-overview-panel.c:398
+#: panels/info-overview/cc-info-overview-panel.c:418
+#: panels/info-overview/cc-info-overview-panel.c:460
+#: panels/info-overview/cc-info-overview-panel.c:490
 #: panels/wwan/cc-wwan-details-dialog.c:101
 msgid "Unknown"
 msgstr "Chưa biết"
 
-#. translators: This is the name of the OS, followed by the build ID, for
-#. * example:
-#. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
-#. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: panels/info-overview/cc-info-overview-panel.c:428
-#, c-format
-msgid "%s; Build ID: %s"
-msgstr "%s; Mã số biên dịch: %s"
-
 #. translators: This is the type of architecture for the OS
-#: panels/info-overview/cc-info-overview-panel.c:443
+#: panels/info-overview/cc-info-overview-panel.c:437
 msgid "64-bit"
 msgstr "64-bít"
 
 #. translators: This is the type of architecture for the OS
-#: panels/info-overview/cc-info-overview-panel.c:446
+#: panels/info-overview/cc-info-overview-panel.c:440
 msgid "32-bit"
 msgstr "32-bít"
 
-#: panels/info-overview/cc-info-overview-panel.c:705
+#: panels/info-overview/cc-info-overview-panel.c:713
 msgid "X11"
 msgstr "X11"
 
-#: panels/info-overview/cc-info-overview-panel.c:709
+#: panels/info-overview/cc-info-overview-panel.c:717
 msgid "Wayland"
 msgstr "Wayland"
 
-#: panels/info-overview/cc-info-overview-panel.c:711
+#: panels/info-overview/cc-info-overview-panel.c:719
 msgctxt "Windowing system (Wayland, X11, or Unknown)"
 msgid "Unknown"
 msgstr "Chưa biết"
@@ -2570,14 +2582,14 @@ msgid_plural "%i days ago"
 msgstr[0] "%i ngày trước"
 
 #: panels/network/net-device-ethernet.c:147
-#: panels/network/connection-editor/ce-page-details.c:414
+#: panels/network/connection-editor/ce-page-details.c:412
 #: panels/network/net-device-mobile.c:442
 #: panels/network/connection-editor/details-page.ui.h:4
 msgid "IPv4 Address"
 msgstr "Địa chỉ IPv4"
 
 #: panels/network/net-device-ethernet.c:149
-#: panels/network/connection-editor/ce-page-details.c:415
+#: panels/network/connection-editor/ce-page-details.c:413
 #: panels/network/net-device-mobile.c:443
 #: panels/network/connection-editor/details-page.ui.h:5
 #: panels/network/network-mobile.ui.h:4
@@ -2586,8 +2598,8 @@ msgstr "Địa chỉ IPv6"
 
 #: panels/network/net-device-ethernet.c:152
 #: panels/network/net-device-ethernet.c:154
-#: panels/network/connection-editor/ce-page-details.c:417
-#: panels/network/connection-editor/ce-page-details.c:418
+#: panels/network/connection-editor/ce-page-details.c:415
+#: panels/network/connection-editor/ce-page-details.c:416
 #: panels/network/net-device-mobile.c:446
 #: panels/network/net-device-mobile.c:447 panels/network/network-mobile.ui.h:3
 msgid "IP Address"
@@ -2607,21 +2619,21 @@ msgid "Default Route"
 msgstr "Định tuyến mặc định"
 
 #: panels/network/net-device-ethernet.c:169
-#: panels/network/connection-editor/ce-page-details.c:422
+#: panels/network/connection-editor/ce-page-details.c:420
 #: panels/network/net-device-mobile.c:451
 msgid "DNS4"
 msgstr "DNS4"
 
 #: panels/network/net-device-ethernet.c:170
-#: panels/network/connection-editor/ce-page-details.c:423
+#: panels/network/connection-editor/ce-page-details.c:421
 #: panels/network/net-device-mobile.c:452
 msgid "DNS6"
 msgstr "DNS6"
 
 #: panels/network/net-device-ethernet.c:172
 #: panels/network/net-device-ethernet.c:174
-#: panels/network/connection-editor/ce-page-details.c:425
-#: panels/network/connection-editor/ce-page-details.c:426
+#: panels/network/connection-editor/ce-page-details.c:423
+#: panels/network/connection-editor/ce-page-details.c:424
 #: panels/network/net-device-mobile.c:454
 #: panels/network/net-device-mobile.c:455
 #: panels/network/connection-editor/ip4-page.ui.h:11
@@ -2637,7 +2649,7 @@ msgstr "Dùng lần cuối"
 
 #. Translators: network device speed
 #: panels/network/net-device-ethernet.c:220
-#: panels/network/connection-editor/ce-page-details.c:300
+#: panels/network/connection-editor/ce-page-details.c:298
 #, c-format
 msgid "%d Mb/s"
 msgstr "%d Mb/s"
@@ -2848,6 +2860,7 @@ msgstr "Chọn khóa riêng của bạn"
 
 #: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
 #: panels/network/budgie-wifi-panel.desktop.in.in:3
+#: build/panels/network/budgie-wifi-panel.desktop.in:3
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
@@ -3379,61 +3392,61 @@ msgstr "Không"
 msgid "Never"
 msgstr "Không bao giờ"
 
-#: panels/network/connection-editor/ce-page-details.c:298
+#: panels/network/connection-editor/ce-page-details.c:296
 #, c-format
 msgid "%d Mb/s (%1.1f GHz)"
 msgstr "%d Mb/s (%1.1f GHz)"
 
-#: panels/network/connection-editor/ce-page-details.c:315
+#: panels/network/connection-editor/ce-page-details.c:313
 msgid "2.4 GHz / 5 GHz"
 msgstr "2.4 GHz / 5 GHz"
 
-#: panels/network/connection-editor/ce-page-details.c:317
+#: panels/network/connection-editor/ce-page-details.c:315
 msgid "2.4 GHz"
 msgstr "2.4 GHz"
 
-#: panels/network/connection-editor/ce-page-details.c:319
+#: panels/network/connection-editor/ce-page-details.c:317
 msgid "5 GHz"
 msgstr "5 GHz"
 
-#: panels/network/connection-editor/ce-page-details.c:339
+#: panels/network/connection-editor/ce-page-details.c:337
 msgctxt "Signal strength"
 msgid "None"
 msgstr "Không có"
 
-#: panels/network/connection-editor/ce-page-details.c:341
+#: panels/network/connection-editor/ce-page-details.c:339
 msgctxt "Signal strength"
 msgid "Weak"
 msgstr "Yếu"
 
-#: panels/network/connection-editor/ce-page-details.c:343
+#: panels/network/connection-editor/ce-page-details.c:341
 msgctxt "Signal strength"
 msgid "Ok"
 msgstr "Ok"
 
-#: panels/network/connection-editor/ce-page-details.c:345
+#: panels/network/connection-editor/ce-page-details.c:343
 msgctxt "Signal strength"
 msgid "Good"
 msgstr "Tốt"
 
-#: panels/network/connection-editor/ce-page-details.c:347
+#: panels/network/connection-editor/ce-page-details.c:345
 msgctxt "Signal strength"
 msgid "Excellent"
 msgstr "Tuyệt hảo"
 
-#: panels/network/connection-editor/ce-page-details.c:478
+#: panels/network/connection-editor/ce-page-details.c:476
 msgid "Forget Connection"
 msgstr "Quên kết nối"
 
-#: panels/network/connection-editor/ce-page-details.c:480
+#: panels/network/connection-editor/ce-page-details.c:478
 msgid "Remove Connection Profile"
 msgstr "Xóa bỏ Hồ sơ Kết nối"
 
-#: panels/network/connection-editor/ce-page-details.c:482
+#: panels/network/connection-editor/ce-page-details.c:480
 msgid "Remove VPN"
 msgstr "Xóa VPN"
 
-#: panels/network/connection-editor/ce-page-details.c:500
+#: panels/network/connection-editor/ce-page-details.c:498
 msgid "Details"
 msgstr "Chi tiết"
 
@@ -3806,15 +3819,15 @@ msgstr ""
 msgid "_Set"
 msgstr "Đặ_t"
 
-#: panels/wwan/cc-wwan-data.c:542
+#: panels/wwan/cc-wwan-data.c:547
 msgid "Operation Cancelled"
 msgstr "Thao tác bị hủy"
 
-#: panels/wwan/cc-wwan-data.c:545
+#: panels/wwan/cc-wwan-data.c:550
 msgid "<b>Error:</b> Access denied changing settings"
 msgstr "<b>Lỗi:</b> Truy nhập thay đổi cài đặt bị từ chối"
 
-#: panels/wwan/cc-wwan-data.c:548
+#: panels/wwan/cc-wwan-data.c:553
 msgid "<b>Error:</b> Mobile Equipment Error"
 msgstr "<b>Lỗi:</b> Lỗi thiết bị di động"
 
@@ -3867,13 +3880,13 @@ msgctxt "timezone map"
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: panels/thunderbolt/cc-bolt-panel.c:175
+#: panels/thunderbolt/cc-bolt-panel.c:240
 msgid ""
 "The Thunderbolt subsystem (boltd) is not installed or not set up properly."
 msgstr ""
 "Hệ thống phụ Thunderbolt (boltd) chưa được cài đặt hoặc cài đặt chưa đúng."
 
-#: panels/thunderbolt/cc-bolt-panel.c:468
+#: panels/thunderbolt/cc-bolt-panel.c:533
 msgid ""
 "Thunderbolt could not be detected.\n"
 "Either the system lacks Thunderbolt support, it has been disabled in the BIOS or is set to an unsupported security level in the BIOS."
@@ -3881,15 +3894,15 @@ msgstr ""
 "Thunderbolt không thể được phát hiện.\n"
 "Hoặc hệ thống thiếu hỗ trợ Thunderbolt, nó đã bị vô hiệu hóa trong BIOS hoặc được đặt ở mức bảo mật không được hỗ trợ trong BIOS."
 
-#: panels/thunderbolt/cc-bolt-panel.c:512
+#: panels/thunderbolt/cc-bolt-panel.c:577
 msgid "Thunderbolt support has been disabled in the BIOS."
 msgstr "Hỗ trợ Thunderbolt đã bị tắt trong BIOS."
 
-#: panels/thunderbolt/cc-bolt-panel.c:516
+#: panels/thunderbolt/cc-bolt-panel.c:581
 msgid "Thunderbolt security level could not be determined."
 msgstr "Mức an ninh Thunderbolt không thể dò tìm thấy."
 
-#: panels/thunderbolt/cc-bolt-panel.c:621
+#: panels/thunderbolt/cc-bolt-panel.c:686
 #, c-format
 msgid "Error switching direct mode: %s"
 msgstr "Lỗi chế độ chuyển trực tiếp: %s"
@@ -4100,7 +4113,7 @@ msgstr "Khung hiển thị"
 msgid "[PANEL] [ARGUMENT…]"
 msgstr "[BẢNG] [Đ.SỐ…]"
 
-#: shell/cc-panel-loader.c:295
+#: shell/cc-panel-loader.c:298
 msgid "Available panels:"
 msgstr "Bảng điều khiển hiện có:"
 
@@ -4110,6 +4123,7 @@ msgstr "Riêng tư"
 
 #: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
+#: build/shell/budgie-control-center.desktop.in:3
 msgid "Budgie Control Center"
 msgstr ""
 
@@ -4310,13 +4324,8 @@ msgstr "Hoàn tác"
 msgid "No printers"
 msgstr "Không có máy in"
 
-#. Translators: This button adds new printer.
-#: panels/printers/printers.ui.h:7
-msgid "Add a Printer…"
-msgstr "Thêm máy in…"
-
 #. Translators: The CUPS server is not running (we can not connect to it).
-#: panels/printers/printers.ui.h:9
+#: panels/printers/printers.ui.h:7
 msgid ""
 "Sorry! The system printing service\n"
 "doesn’t seem to be available."
@@ -4447,6 +4456,7 @@ msgstr "Cài đặt Bluetooth"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:3
 msgid "Wacom Tablet"
 msgstr "Bảng vẽ Wacom"
 
@@ -5266,6 +5276,7 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:20
 #: panels/display/budgie-display-panel.desktop.in.in:3
+#: build/panels/display/budgie-display-panel.desktop.in:3
 msgid "Displays"
 msgstr "Màn hình"
 
@@ -6256,16 +6267,19 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:5
 #: panels/camera/budgie-camera-panel.desktop.in.in:3
+#: build/panels/camera/budgie-camera-panel.desktop.in:3
 msgid "Camera"
 msgstr "Máy ảnh"
 
 #: panels/applications/cc-applications-panel.ui.h:7
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:3
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:3
 msgid "Microphone"
 msgstr "Micrô"
 
 #: panels/applications/cc-applications-panel.ui.h:8
 #: panels/location/budgie-location-panel.desktop.in.in:3
+#: build/panels/location/budgie-location-panel.desktop.in:3
 msgid "Location Services"
 msgstr "Dịch vụ vị trí"
 
@@ -6300,6 +6314,7 @@ msgstr "Tìm kiếm"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:3
 msgid "Notifications"
 msgstr "Thông báo"
 
@@ -6679,27 +6694,36 @@ msgstr "Đang tính toán…"
 msgid "OS Name"
 msgstr "Tên HĐH"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:10
+#. translators: this field contains the distro build ID
+#: panels/info-overview/cc-info-overview-panel.ui.h:11
+msgid "OS Build ID"
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
 msgstr "Kiểu HĐH"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:11
+#: panels/info-overview/cc-info-overview-panel.ui.h:13
 msgid "Windowing System"
 msgstr "Hệ thống Cửa sổ"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:12
+#: panels/info-overview/cc-info-overview-panel.ui.h:14
 msgid "Virtualization"
 msgstr "Ảo hóa"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:13
+#: panels/info-overview/cc-info-overview-panel.ui.h:15
+msgid "Kernel Version"
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
 msgstr "Cập nhật phần mềm"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:14
+#: panels/info-overview/cc-info-overview-panel.ui.h:17
 msgid "Rename Device"
 msgstr "Đổi tên thiết bị"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:15
+#: panels/info-overview/cc-info-overview-panel.ui.h:18
 msgid ""
 "The device name is used to identify this device when it is viewed over the "
 "network, or when pairing Bluetooth devices."
@@ -6707,7 +6731,7 @@ msgstr ""
 "Tên thiết bị được sử dụng để xác định thiết bị này khi nó được xem qua mạng "
 "hoặc khi ghép nối thiết bị Bluetooth."
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:16
+#: panels/info-overview/cc-info-overview-panel.ui.h:19
 msgid "_Rename"
 msgstr "Đổ_i tên"
 
@@ -7464,6 +7488,7 @@ msgstr "Tháng mười hai"
 
 #: panels/datetime/cc-datetime-panel.ui.h:13
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:3
 msgid "Date & Time"
 msgstr "Ngày & giờ"
 
@@ -7957,10 +7982,12 @@ msgid "Help"
 msgstr "Trợ giúp"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:3
+#: build/panels/printers/budgie-printers-panel.desktop.in:3
 msgid "Printers"
 msgstr "Máy in"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:4
+#: build/panels/printers/budgie-printers-panel.desktop.in:4
 msgid "Add printers, view printer jobs and decide how you want to print"
 msgstr ""
 "Thêm máy in, xem các công việc in và quyết định bạn muốn in như thế nào"
@@ -7968,10 +7995,12 @@ msgstr ""
 #. Translators: Search terms to find the Printers panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/printers/budgie-printers-panel.desktop.in.in:16
+#: build/panels/printers/budgie-printers-panel.desktop.in:16
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
 msgstr "Printer;Máy;in;May;Queue;Print;In;Paper;Giấy;Giay;Ink;Mực;Muc;Toner;"
 
 #: panels/location/budgie-location-panel.desktop.in.in:4
+#: build/panels/location/budgie-location-panel.desktop.in:4
 msgid "Protect your location information"
 msgstr "Bảo vệ thông tin vị trí của bạn"
 
@@ -7980,6 +8009,9 @@ msgstr "Bảo vệ thông tin vị trí của bạn"
 #: panels/location/budgie-location-panel.desktop.in.in:16
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:16
 #: panels/usage/budgie-usage-panel.desktop.in.in:16
+#: build/panels/location/budgie-location-panel.desktop.in:16
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:16
+#: build/panels/usage/budgie-usage-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
 msgstr ""
@@ -7987,27 +8019,32 @@ msgstr ""
 " sách riêng tư;chinh sach rieng tu;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:4
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:4
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr "Đặt ảnh của nút và sửa kiểu dáng cho thích hợp dành cho bảng đồ họa"
 
 #. Translators: Search terms to find the Wacom Tablet panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:15
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:15
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
 msgstr ""
 "Tablet;Bảng;bang;Wacom;Stylus;Bút;trỏ;but;tro;Eraser;Tẩy;Tay;Mouse;Chuột;Chuot;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
+#: build/panels/power/budgie-power-panel.desktop.in:3
 msgid "Power"
 msgstr "Nguồn điện"
 
 #: panels/power/budgie-power-panel.desktop.in.in:4
+#: build/panels/power/budgie-power-panel.desktop.in:4
 msgid "View your battery status and change power saving settings"
 msgstr "Hiển thị trạng thái pin và thay đổi cài đặt chế độ tiết kiệm pin"
 
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/power/budgie-power-panel.desktop.in.in:15
+#: build/panels/power/budgie-power-panel.desktop.in:15
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
 msgstr ""
@@ -8015,10 +8052,12 @@ msgstr ""
 " lượng;nang luong;"
 
 #: panels/color/budgie-color-panel.desktop.in.in:3
+#: build/panels/color/budgie-color-panel.desktop.in:3
 msgid "Color"
 msgstr "Màu sắc"
 
 #: panels/color/budgie-color-panel.desktop.in.in:4
+#: build/panels/color/budgie-color-panel.desktop.in:4
 msgid ""
 "Calibrate the color of your devices, such as displays, cameras or printers"
 msgstr ""
@@ -8027,45 +8066,54 @@ msgstr ""
 #. Translators: Search terms to find the Color panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/color/budgie-color-panel.desktop.in.in:15
+#: build/panels/color/budgie-color-panel.desktop.in:15
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
 msgstr ""
 "Color;Màu;Mau;ICC;Profile;Calibrate;Chinh;Printer;Máy;in;May;Display;Màn;hình;Man;hinh;"
 
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:4
 msgid "Turn Bluetooth on and off and connect your devices"
 msgstr "Bật/tắt Bluetooth và kết nối các thiết bị của bạn"
 
 #. Translators: Search terms to find the Bluetooth panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:15
 msgid "share;sharing;bluetooth;obex;"
 msgstr "share;chia sẻ;chia se;sharing;bluetooth;obex;"
 
 #: panels/background/budgie-background-panel.desktop.in.in:3
+#: build/panels/background/budgie-background-panel.desktop.in:3
 msgid "Background"
 msgstr "Ảnh nền"
 
 #: panels/background/budgie-background-panel.desktop.in.in:4
+#: build/panels/background/budgie-background-panel.desktop.in:4
 msgid "Change your background image to a wallpaper or photo"
 msgstr "Thay đổi ảnh nền màn hình"
 
 #. Translators: Search terms to find the Background panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/background/budgie-background-panel.desktop.in.in:15
+#: build/panels/background/budgie-background-panel.desktop.in:15
 msgid "Wallpaper;Screen;Desktop;"
 msgstr "Wallpaper;Ảnh;nền;Anh;nen;Screen;Màn;hình;Man;hinh;Desktop;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
+#: build/panels/sound/budgie-sound-panel.desktop.in:3
 msgid "Sound"
 msgstr "Âm thanh"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:4
+#: build/panels/sound/budgie-sound-panel.desktop.in:4
 msgid "Change sound levels, inputs, outputs, and alert sounds"
 msgstr "Thay đổi âm lượng, đầu vào/ra và âm thanh cảnh báo"
 
 #. Translators: Search terms to find the Sound panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sound/budgie-sound-panel.desktop.in.in:15
+#: build/panels/sound/budgie-sound-panel.desktop.in:15
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 msgstr ""
@@ -8073,12 +8121,14 @@ msgstr ""
 "bằng;Can bang;Bluetooth;Headset;Audio;Tiếng;Tieng;Input;Đầu vào;dau vao;"
 
 #: panels/display/budgie-display-panel.desktop.in.in:4
+#: build/panels/display/budgie-display-panel.desktop.in:4
 msgid "Choose how to use connected monitors and projectors"
 msgstr "Chọn cách dùng màn hình và máy chiếu được kết nối"
 
 #. Translators: Search terms to find the Displays panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/display/budgie-display-panel.desktop.in.in:15
+#: build/panels/display/budgie-display-panel.desktop.in:15
 msgid ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
 msgstr ""
@@ -8087,10 +8137,12 @@ msgstr ""
 "hon;sunrise;bình minh;binh minh;"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:3
 msgid "Keyboard"
 msgstr "Bàm phím"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:4
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:4
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
@@ -8101,6 +8153,7 @@ msgstr ""
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:15
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
@@ -8110,16 +8163,19 @@ msgstr ""
 "phan;Input;Source;nguồn;nguon;Lock;khóa;khoa;Volume;âm lượng;am luong;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:3
 msgid "Users"
 msgstr "Người dùng"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:4
 msgid "Add or remove users and change your password"
 msgstr "Thêm, xóa người dùng và thay đổi mật khẩu"
 
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:15
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:15
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
@@ -8129,17 +8185,20 @@ msgstr ""
 "khẩu;Hạn chế;Trẻ em;Giới hạn;Cha mẹ;Dấu vân tay;"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
 msgstr "Truy cập"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:4
 msgid "Make it easier to see, hear, type, point and click"
 msgstr "Làm cho việc xem, nghe, gõ, di và bấm chuột trở nên dễ dàng hơn"
 
 #. Translators: Search terms to find the Accessibility panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:15
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:15
 msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
@@ -8156,34 +8215,40 @@ msgstr ""
 "thanh;typing;gõ;go;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:3
 msgid "Multitasking"
 msgstr "Đa nhiệm"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:4
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:4
 msgid "Manage preferences for productivity and multitasking"
 msgstr "Quản lý các tùy chỉnh cho năng suất và đa nhiệm"
 
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:15
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
 "Multitasking;Multitask;Productivity;Customize;Desktop;Đa;nhiệm;Tùy;chọn;chỉnh;da"
 " nhiem;"
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
+#: build/panels/applications/budgie-applications-panel.desktop.in:4
 msgid "Control various application permissions and settings"
 msgstr "Điều khiển các phân quyền và cài đặt của ứng dụng nhiều thứ khác nhau"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
+#: build/panels/applications/budgie-applications-panel.desktop.in:16
 msgid "application;flatpak;permission;setting;"
 msgstr ""
 "application;flatpak;permission;setting;ứng dụng;ung dung;quyền;quyen;cài "
 "đặt;cai dat;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:4
 msgid "Control what you want to share with others"
 msgstr ""
 "Điều khiển việc bạn muôn chia sẻ những gì với các máy tính hay thiết bị khác"
@@ -8191,6 +8256,7 @@ msgstr ""
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:16
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:16
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
 msgstr ""
@@ -8199,10 +8265,12 @@ msgstr ""
 "tien;audio;nhạc;nhạc;video;phim;pictures;photos;ảnh;anh;movies;server;renderer;"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:3
 msgid "Removable Media"
 msgstr "Đa phương tiện"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:4
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:4
 msgid "Configure Removable Media settings"
 msgstr "Cấu hình cho các cài đặt đĩa đa phương tiện"
 
@@ -8210,6 +8278,7 @@ msgstr "Cấu hình cho các cài đặt đĩa đa phương tiện"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:15
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
@@ -8219,10 +8288,12 @@ msgstr ""
 " phương tiện;da phuong tien;autorun;tự chạy;tu chay;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
+#: build/panels/region/budgie-region-panel.desktop.in:3
 msgid "Region & Language"
 msgstr "Lãnh thổ & ngôn ngữ"
 
 #: panels/region/budgie-region-panel.desktop.in.in:4
+#: build/panels/region/budgie-region-panel.desktop.in:4
 msgid "Select your display language and formats"
 msgstr "Chọn ngôn ngữ hiển thị, định dạng"
 
@@ -8230,15 +8301,18 @@ msgstr "Chọn ngôn ngữ hiển thị, định dạng"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:15
+#: build/panels/region/budgie-region-panel.desktop.in:15
 msgid "Language;Layout;Keyboard;Input;"
 msgstr ""
 "Language;Ngôn;ngữ;Ngon;ngu;Layout;Bố;trí;Bo;tri;Keyboard;Bàn;phím;Ban;phim;Kieu;go;Input;nhập;nhap;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:3
 msgid "About"
 msgstr "Giới thiệu"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:4
 msgid "View information about your system"
 msgstr "Xem thông tin về hệ thống của bạn"
 
@@ -8248,61 +8322,72 @@ msgstr "Xem thông tin về hệ thống của bạn"
 #. "Preferred Applications" is the old name for the preference, so make
 #. sure that you use the same "translation" for those keywords
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:19
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:19
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
 "device;thiết;bị;thiet;bi;system;hệ;thống;he;thong;information;thông;tin;thong;memory;bộ;nhớ;bo;nho;processor;xử;lý;xu;ly;li;version;phiên;bản;phien;ban;default;mặc;định;mac;dinh;application;ứng;dụng;ung;dung;preferred;ưa;thích;ua;thich;cd;dvd;usb;audio;video;disc;đĩa;dia;removable;di;động;dong;media;autorun;tự;chạy;"
 
 #: panels/network/budgie-network-panel.desktop.in.in:4
+#: build/panels/network/budgie-network-panel.desktop.in:4
 msgid "Control how you connect to the Internet"
 msgstr "Điều khiển cách kết nối Internet"
 
 #. Translators: Search terms to find the Network panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-network-panel.desktop.in.in:15
+#: build/panels/network/budgie-network-panel.desktop.in:15
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 msgstr ""
 "Network;mạng;mang;IP;LAN;Proxy;ủy nhiệm;uy "
 "nhiem;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 
 #: panels/network/budgie-wifi-panel.desktop.in.in:4
+#: build/panels/network/budgie-wifi-panel.desktop.in:4
 msgid "Control how you connect to Wi-Fi networks"
 msgstr "Điều khiển cách kết nối đến mạng Wi-Fi"
 
 #. Translators: Search terms to find the Wi-Fi panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-wifi-panel.desktop.in.in:15
+#: build/panels/network/budgie-wifi-panel.desktop.in:15
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 msgstr ""
 "Network;mạng;mang;Wireless;không dây;khong day;Wi-"
 "Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;điểm truy cập;diem truy cap;"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:3
 msgid "Mobile Network"
 msgstr "Mạng di động"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:4
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:4
 msgid "Configure Telephony and mobile data connections"
 msgstr "Cấu hình kết nối cho điện thoại và dữ liệu di động"
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:16
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:16
 msgid "cellular;wwan;telephony;sim;mobile;"
 msgstr "cellular;wwan;telephony;sim;mobile;di động;di dong;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:4
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:4
 msgid "Change the date and time, including time zone"
 msgstr "Thay đổi ngày giờ hay múi giờ"
 
 #. Translators: Search terms to find the Date and Time panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:15
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:15
 msgid "Clock;Timezone;Location;"
 msgstr ""
 "Clock;Đồng;hồ;Dong;ho;Timezone;Múi;giờ;Mui;gio;Location;Vị;trí;Vi;tri;nước;nuoc;tỉnh;tỉnh;thành;phố;thanh;pho;"
 
 #: panels/camera/budgie-camera-panel.desktop.in.in:4
+#: build/panels/camera/budgie-camera-panel.desktop.in:4
 msgid "Protect your pictures"
 msgstr "Bảo vệ các ảnh của bạn"
 
@@ -8310,27 +8395,33 @@ msgstr "Bảo vệ các ảnh của bạn"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/camera/budgie-camera-panel.desktop.in.in:16
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:16
+#: build/panels/camera/budgie-camera-panel.desktop.in:16
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
 "screen;màn;hình;man;hình;lock;khóa;khoa;diagnostics;chẩn;đoán;chan;doan;;crash;hư;hu;private;riêng;tư;rieng;tu;recent;mới;dùng;moi;dung;gần;đây;gan;day;temporary;tạm;tam;tmp;index;name;tên;ten;network;mạng;mang;identity;thực;thể;thuc;the;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:4
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:4
 msgid "Control which notifications are displayed and what they show"
 msgstr "Cấu hình xem cảnh báo nào sẽ được hiển thị và hiển thị nó như thế nào"
 
 #. Translators: Search terms to find the Notifications panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
 msgstr ""
 "Notifications;Thông;báo;Thong;bao;Banner;Message;Nhắn;nhan;Tray;Khay;Popup;Nổi;lên;Noi;len;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:3
 msgid "Default Applications"
 msgstr "Ứng dụng mặc định"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:4
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:4
 msgid "Configure Default Applications"
 msgstr "Cấu hình ứng dụng mặc định"
 
@@ -8338,20 +8429,24 @@ msgstr "Cấu hình ứng dụng mặc định"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:15
 msgid "default;application;preferred;media;"
 msgstr ""
 "default;application;preferred;media;mặc định;mac dinh;ứng dụng;ung dung;ưa "
 "dùng;uu dung;"
 
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:4
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:4
 msgid "Protect your conversations"
 msgstr "Bảo vệ các cuộc chuyện trò của bạn"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:3
 msgid "Thunderbolt"
 msgstr "Thunderbolt"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:4
 msgid "Manage Thunderbolt devices"
 msgstr "Quản lý thiết bị Thunderbolt"
 
@@ -8359,14 +8454,17 @@ msgstr "Quản lý thiết bị Thunderbolt"
 #. Do NOT translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:15
 msgid "Thunderbolt;privacy;"
 msgstr "Thunderbolt;privacy;riêng tư;rieng tu;"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:3
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:3
 msgid "Mouse & Touchpad"
 msgstr "Chuột & Touchpad"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:4
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:4
 msgid ""
 "Change your mouse or touchpad sensitivity and select right or left-handed"
 msgstr "Thay đổi độ nhạy chuột và touchpad và chọn thuận tay phải/trái"
@@ -8375,31 +8473,38 @@ msgstr "Thay đổi độ nhạy chuột và touchpad và chọn thuận tay ph�
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:15
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:15
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
 msgstr ""
 "Trackpad;Pointer;Con;trỏ;tro;Click;Nhấn;Nhắp;Nhan;Nhap;Tap;Double;Dup;Button;Nút;Nut;Trackball;Scroll;cuộn;cuon;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:3
 msgid "Diagnostics"
 msgstr "Chẩn đoán"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:4
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:4
 msgid "Report your problems"
 msgstr "Báo cáo vấn đề trục trặc của bạn"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
+#: build/panels/usage/budgie-usage-panel.desktop.in:3
 msgid "File History & Trash"
 msgstr "Lịch sử tập tin & Thùng rác"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:4
+#: build/panels/usage/budgie-usage-panel.desktop.in:4
 msgid "Don't leave traces"
 msgstr "Đừng để lại dấu vết"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:3
 msgid "Online Accounts"
 msgstr "Tài khoản trực tuyến"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:4
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:4
 msgid "Connect to your online accounts and decide what to use them for"
 msgstr ""
 "Kết nối các tài khoản trực tuyến của bạn và quyết định dùng chúng vào việc "
@@ -8411,6 +8516,7 @@ msgstr ""
 #. For ReadItLater and Pocket, see
 #. http://en.wikipedia.org/wiki/Pocket_(application)
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:18
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
 msgstr ""
@@ -8419,6 +8525,7 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
+#: build/shell/budgie-control-center.desktop.in:13
 msgid "Preferences;Settings;"
 msgstr ""
 "Preferences;Tùy;thích;Tuy;thich;Cấu;hình;Cau;hinh;Settings;Thiết;lập;Thiet;lap;Cài;đặt;cai;dat;Tùy;chọn;Tuy;chon;Cá;ca;nhân;nhan;hóa;hoa;"

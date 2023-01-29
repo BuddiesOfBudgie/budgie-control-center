@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 22:23+0000\n"
+"POT-Creation-Date: 2023-01-24 18:45+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Persian (https://www.transifex.com/buddiesofbudgie/teams/129844/fa/)\n"
@@ -304,23 +304,23 @@ msgid "Automatic configuration"
 msgstr ""
 
 #. Translators: %s is the printer name
-#: panels/printers/cc-printers-panel.c:683
+#: panels/printers/cc-printers-panel.c:692
 #, c-format
 msgid "Printer “%s” has been deleted"
 msgstr "چاپگر «%s» حذف شد"
 
 #. Translators: Addition of the new printer failed.
-#: panels/printers/cc-printers-panel.c:927
+#: panels/printers/cc-printers-panel.c:941
 msgid "Failed to add new printer."
 msgstr "شکست در افزودن چاپگر جدید."
 
 #. Translators: The XML file containing user interface can not be loaded
-#: panels/printers/cc-printers-panel.c:1226
+#: panels/printers/cc-printers-panel.c:1244
 #, c-format
 msgid "Could not load ui: %s"
 msgstr "ناتوان در گشودن واسط کاربری: %s"
 
-#: panels/printers/cc-printers-panel.c:1294
+#: panels/printers/cc-printers-panel.c:1312
 msgid "Unlock to Add Printers and Change Settings"
 msgstr "قفل‌گشایی برای افزودن چاپگرها و تغییر تنظیمات"
 
@@ -408,8 +408,8 @@ msgstr "انتخاب پروندهٔ PPD"
 #: panels/display/cc-display-panel.c:1207
 #: panels/user-accounts/cc-avatar-chooser.c:105
 #: panels/user-accounts/cc-avatar-chooser.c:241
-#: panels/user-accounts/cc-user-panel.c:638
-#: panels/user-accounts/cc-user-panel.c:656
+#: panels/user-accounts/cc-user-panel.c:637
+#: panels/user-accounts/cc-user-panel.c:655
 #: panels/sharing/cc-sharing-panel.c:539 panels/network/cc-wifi-panel.c:871
 #: panels/network/connection-editor/vpn-helpers.c:176
 #: panels/network/connection-editor/vpn-helpers.c:299
@@ -422,7 +422,7 @@ msgstr "انتخاب پروندهٔ PPD"
 #: panels/user-accounts/cc-add-user-dialog.ui.h:2
 #: panels/user-accounts/cc-password-dialog.ui.h:2
 #: panels/region/cc-format-chooser.ui.h:2
-#: panels/info-overview/cc-info-overview-panel.ui.h:17
+#: panels/info-overview/cc-info-overview-panel.ui.h:20
 #: panels/common/cc-language-chooser.ui.h:3
 #: panels/network/connection-editor/connection-editor.ui.h:1
 #: panels/network/cc-wifi-hotspot-dialog.ui.h:6
@@ -530,6 +530,7 @@ msgstr "درگاه موازی"
 #. Translators: The found device is a printer connected via Bluetooth
 #: panels/printers/pp-new-printer-dialog.c:1392
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:3
 msgid "Bluetooth"
 msgstr "بلوتوث"
 
@@ -704,12 +705,12 @@ msgstr "هرگز"
 msgid "Automatic suspend"
 msgstr "تعلیق خودکار"
 
-#: panels/power/cc-power-panel.c:1159
+#: panels/power/cc-power-panel.c:1162
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
 msgstr "حالت کارایی به خاطر دمای عملیاتی بالا، به صورت موقّتی از کار افتاده."
 
-#: panels/power/cc-power-panel.c:1161
+#: panels/power/cc-power-panel.c:1164
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
@@ -717,11 +718,11 @@ msgstr ""
 "روی زانو: حالت کارایی به صورت موقّتی موجود نیست. برای بازیابی، افزاره را به "
 "سطحی پایدار جابه‌جا کنید."
 
-#: panels/power/cc-power-panel.c:1163
+#: panels/power/cc-power-panel.c:1166
 msgid "Performance mode temporarily disabled."
 msgstr "حالت کارایی به صورت موقّتی از کار افتاده."
 
-#: panels/power/cc-power-panel.c:1206
+#: panels/power/cc-power-panel.c:1209
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
@@ -730,13 +731,13 @@ msgstr ""
 "کافی شارژ شد، برخواهد گشت."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1214
+#: panels/power/cc-power-panel.c:1217
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr "حالت ذخیرهٔ نیرو به دست «%s» فعّال شد."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1218
+#: panels/power/cc-power-panel.c:1221
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr "حالت کارایی به دست «%s» فعّال شد."
@@ -1467,8 +1468,8 @@ msgstr "بازنشانی همه"
 #. translators:
 #. * The device has been disabled
 #: panels/keyboard/keyboard-shortcuts.c:367
-#: panels/user-accounts/cc-user-panel.c:848
-#: panels/user-accounts/cc-user-panel.c:938
+#: panels/user-accounts/cc-user-panel.c:847
+#: panels/user-accounts/cc-user-panel.c:934
 #: panels/wwan/cc-wwan-device-page.c:479
 #: subprojects/gvc/gvc-mixer-control.c:1908
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:2
@@ -1566,175 +1567,192 @@ msgstr "گذرواژهٔ نادرست، لطفاً دوباره تلاش کنی�
 msgid "Couldn’t connect to the %s domain: %s"
 msgstr "نمی‌توان به دامنهٔ %s وصل شد: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:236
+#: panels/user-accounts/cc-fingerprint-dialog.c:245
 msgid "the device needs to be claimed to perform this action"
 msgstr "پیش از انجام این کنش،‌ افزاره باید درخواست شود"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:238
+#: panels/user-accounts/cc-fingerprint-dialog.c:247
 msgid "the device is already claimed by another process"
 msgstr "افزاره به دست فرایندی دیگر درخواست شده است"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:240
+#: panels/user-accounts/cc-fingerprint-dialog.c:249
 msgid "you do not have permission to perform the action"
 msgstr "اجازهٔ انجام این کنش را ندارید"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:242
+#: panels/user-accounts/cc-fingerprint-dialog.c:251
 msgid "no prints have been enrolled"
 msgstr "هیچ اثر انگشتی ثبت نشده"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:251
+#: panels/user-accounts/cc-fingerprint-dialog.c:260
 msgid "Failed to communicate with the device during enrollment"
 msgstr "شکست در ارتباط با افزاره هنگام ثبت"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:255
+#: panels/user-accounts/cc-fingerprint-dialog.c:264
 msgid "Failed to communicate with the fingerprint reader"
 msgstr "شکست در ارتباط با خوانندهٔ اثر انگشت"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:257
+#: panels/user-accounts/cc-fingerprint-dialog.c:266
 msgid "Failed to communicate with the fingerprint daemon"
 msgstr "شکست در ارتباط با خدمت اثر انگشت"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:585
+#: panels/user-accounts/cc-fingerprint-dialog.c:594
 #, c-format
 msgid "Failed to list fingerprints: %s"
 msgstr "شکست در فهرست اثر انگشت‌ها: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:652
+#. TRANSLATORS: This is part of the translation 'Ensure fprintd has been
+#. enabled using your pam authorization module'
+#: panels/user-accounts/cc-fingerprint-dialog.c:627
+msgid "your pam authorization module"
+msgstr ""
+
+#. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
+#. an executable that is calculated when the app is running
+#: panels/user-accounts/cc-fingerprint-dialog.c:659
+#, c-format
+msgid "Ensure fprintd has been enabled using %s"
+msgstr ""
+
+#: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
 msgid "Failed to delete saved fingerprints: %s"
 msgstr "شکست در حذف اثر انگشت‌های ذخیره‌شده: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:683
+#: panels/user-accounts/cc-fingerprint-dialog.c:712
 msgid "Left thumb"
 msgstr "شصت چپ"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:685
+#: panels/user-accounts/cc-fingerprint-dialog.c:714
 msgid "Left middle finger"
 msgstr "انگشت وسط چپ"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:687
+#: panels/user-accounts/cc-fingerprint-dialog.c:716
 msgid "_Left index finger"
 msgstr "انگشت اشاره _چپ"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:689
+#: panels/user-accounts/cc-fingerprint-dialog.c:718
 msgid "Left ring finger"
 msgstr "انگشت حلقه چپ"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:691
+#: panels/user-accounts/cc-fingerprint-dialog.c:720
 msgid "Left little finger"
 msgstr "انگشت کوچک چپ"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:693
+#: panels/user-accounts/cc-fingerprint-dialog.c:722
 msgid "Right thumb"
 msgstr "شصت راست"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:695
+#: panels/user-accounts/cc-fingerprint-dialog.c:724
 msgid "Right middle finger"
 msgstr "انگشت وسط راست"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:697
+#: panels/user-accounts/cc-fingerprint-dialog.c:726
 msgid "_Right index finger"
 msgstr "انگشت اشاره _راست"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:699
+#: panels/user-accounts/cc-fingerprint-dialog.c:728
 msgid "Right ring finger"
 msgstr "انگشت حلقه راست"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:701
+#: panels/user-accounts/cc-fingerprint-dialog.c:730
 msgid "Right little finger"
 msgstr "انگشت کوچک راست"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:703
+#: panels/user-accounts/cc-fingerprint-dialog.c:732
 msgid "Unknown Finger"
 msgstr "اثر انگشت نامشخّص"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:837
+#: panels/user-accounts/cc-fingerprint-dialog.c:866
 msgctxt "Fingerprint enroll state"
 msgid "Complete"
 msgstr "تمام"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:848
+#: panels/user-accounts/cc-fingerprint-dialog.c:877
 msgid "Fingerprint device disconnected"
 msgstr "افزارهٔ اثر انگشت قطع شد"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:854
+#: panels/user-accounts/cc-fingerprint-dialog.c:883
 msgid "Fingerprint device storage is full"
 msgstr "فضای ذخیرهٔ افزارهٔ اثر انگشتتان پر است"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:858
+#: panels/user-accounts/cc-fingerprint-dialog.c:887
+msgid "Fingerprint is a duplicate"
+msgstr ""
+
+#: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
 msgstr "شکست در ثبت اثر انگشت جدید"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:889
+#: panels/user-accounts/cc-fingerprint-dialog.c:922
 #, c-format
 msgid "Failed to start enrollment: %s"
 msgstr "شکست در آغاز ثبت: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:897
+#: panels/user-accounts/cc-fingerprint-dialog.c:930
 msgctxt "Fingerprint enroll state"
 msgid "Failed to enroll new fingerprint"
 msgstr "شکست در ثبت اثر انگشت جدید"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:928
+#: panels/user-accounts/cc-fingerprint-dialog.c:961
 #, c-format
 msgid "Failed to stop enrollment: %s"
 msgstr "شکست در توقّف ثبت: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:974
+#: panels/user-accounts/cc-fingerprint-dialog.c:1007
 msgid ""
 "Repeatedly lift and place your finger on the reader to enroll your "
 "fingerprint"
 msgstr "برایثبت انگشتتان، چند بار بلندش کرده و روی حسگر بگذارید"
 
 #. TRANSLATORS: This is the label for the button to enroll a new finger
-#: panels/user-accounts/cc-fingerprint-dialog.c:1118
+#: panels/user-accounts/cc-fingerprint-dialog.c:1151
 msgid "Scan new fingerprint"
 msgstr "پویش اثر انگشت جدید"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1157
+#: panels/user-accounts/cc-fingerprint-dialog.c:1190
 #, c-format
 msgid "Failed to release fingerprint device %s: %s"
 msgstr "شکست در آزاد کردن افزارهٔ اثر انگشت %s: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1229
+#: panels/user-accounts/cc-fingerprint-dialog.c:1262
 msgctxt "Fingerprint enroll state"
 msgid "Problem Reading Device"
 msgstr "مشکل در خواندن از افزاره"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1264
+#: panels/user-accounts/cc-fingerprint-dialog.c:1297
 #, c-format
 msgid "Failed to claim fingerprint device %s: %s"
 msgstr "شکست در درخواست افزارهٔ اثر انگشت %s: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1413
+#: panels/user-accounts/cc-fingerprint-dialog.c:1446
 #, c-format
 msgid "Failed to get fingerprint devices: %s"
 msgstr "شکست در گرفتن افزارهٔ اثر انگشت: %s"
 
-#: panels/user-accounts/cc-user-panel.c:222
+#: panels/user-accounts/cc-user-panel.c:221
 msgid "Your account"
 msgstr "حساب شمانام‌کاربری گزیده در دسترس نیست"
 
-#: panels/user-accounts/cc-user-panel.c:402
+#: panels/user-accounts/cc-user-panel.c:401
 msgid "Failed to delete user"
 msgstr "شکست در حذف کاربر"
 
-#: panels/user-accounts/cc-user-panel.c:457
-#: panels/user-accounts/cc-user-panel.c:512
-#: panels/user-accounts/cc-user-panel.c:558
+#: panels/user-accounts/cc-user-panel.c:456
+#: panels/user-accounts/cc-user-panel.c:511
+#: panels/user-accounts/cc-user-panel.c:557
 msgid "Failed to revoke remotely managed user"
 msgstr "شکست در لغو دسترسی کاربرِ مدیریت شده از راه دور"
 
-#: panels/user-accounts/cc-user-panel.c:607
+#: panels/user-accounts/cc-user-panel.c:606
 msgid "You cannot delete your own account."
 msgstr "شما نمی‌توانید حساب خودتان را حذف کنید."
 
-#: panels/user-accounts/cc-user-panel.c:616
+#: panels/user-accounts/cc-user-panel.c:615
 #, c-format
 msgid "%s is still logged in"
 msgstr "کاربر %s هم‌چنان وارد است"
 
-#: panels/user-accounts/cc-user-panel.c:620
+#: panels/user-accounts/cc-user-panel.c:619
 msgid ""
 "Deleting a user while they are logged in can leave the system in an "
 "inconsistent state."
@@ -1742,12 +1760,12 @@ msgstr ""
 "حذف یک کاربر در حالی که وارد بودن ممکن است سامانه را در حالتی متناقض قرار "
 "دهد."
 
-#: panels/user-accounts/cc-user-panel.c:629
+#: panels/user-accounts/cc-user-panel.c:628
 #, c-format
 msgid "Do you want to keep %s’s files?"
 msgstr "می‌خواهید پرونده‌های «%s» را نگه دارید؟"
 
-#: panels/user-accounts/cc-user-panel.c:633
+#: panels/user-accounts/cc-user-panel.c:632
 msgid ""
 "It is possible to keep the home directory, mail spool and temporary files "
 "around when deleting a user account."
@@ -1755,45 +1773,45 @@ msgstr ""
 "هنگام حذف یک حساب کاربری، نگهداری از شاخه خانه، رایانامه و پرونده‌های موقتش "
 "امکان‌پذیر است."
 
-#: panels/user-accounts/cc-user-panel.c:636
+#: panels/user-accounts/cc-user-panel.c:635
 msgid "_Delete Files"
 msgstr "_حذف پرونده‌ها"
 
-#: panels/user-accounts/cc-user-panel.c:637
+#: panels/user-accounts/cc-user-panel.c:636
 msgid "_Keep Files"
 msgstr "_نگه‌داری پرونده‌ها"
 
-#: panels/user-accounts/cc-user-panel.c:651
+#: panels/user-accounts/cc-user-panel.c:650
 #, c-format
 msgid "Are you sure you want to revoke remotely managed %s’s account?"
 msgstr "مطمئنید که می‌خواهید دسترسی حساب مدیریت از راه دور %s را لغو کنید؟"
 
-#: panels/user-accounts/cc-user-panel.c:655
+#: panels/user-accounts/cc-user-panel.c:654
 msgid "_Delete"
 msgstr "_حذف"
 
-#: panels/user-accounts/cc-user-panel.c:705
+#: panels/user-accounts/cc-user-panel.c:704
 msgctxt "Password mode"
 msgid "Account disabled"
 msgstr "حساب از کار افتاد"
 
-#: panels/user-accounts/cc-user-panel.c:713
+#: panels/user-accounts/cc-user-panel.c:712
 msgctxt "Password mode"
 msgid "To be set at next login"
 msgstr "در ورود بعدی تنظیم می‌شود"
 
-#: panels/user-accounts/cc-user-panel.c:716
+#: panels/user-accounts/cc-user-panel.c:715
 msgctxt "Password mode"
 msgid "None"
 msgstr "هیچ"
 
-#: panels/user-accounts/cc-user-panel.c:759
+#: panels/user-accounts/cc-user-panel.c:758
 msgid "Logged in"
 msgstr "وارد شده"
 
 #. Translators: This is a time format string in the style of "22:58".
 #. It indicates a login time which follows a date.
-#: panels/user-accounts/cc-user-panel.c:771
+#: panels/user-accounts/cc-user-panel.c:770
 #: panels/user-accounts/cc-login-history-dialog.c:173
 msgctxt "login date-time"
 msgid "%k:%M"
@@ -1801,7 +1819,7 @@ msgstr "%OH:%OM"
 
 #. Translators: This indicates a login date-time.
 #. The first %s is a date, and the second %s a time.
-#: panels/user-accounts/cc-user-panel.c:775
+#: panels/user-accounts/cc-user-panel.c:774
 #: panels/user-accounts/cc-login-history-dialog.c:176
 #, c-format
 msgctxt "login date-time"
@@ -1809,17 +1827,17 @@ msgid "%s, %s"
 msgstr "%s، %s"
 
 #. TRANSLATORS: Status of Parental Controls setup
-#: panels/user-accounts/cc-user-panel.c:846
-#: panels/user-accounts/cc-user-panel.c:935
+#: panels/user-accounts/cc-user-panel.c:845
+#: panels/user-accounts/cc-user-panel.c:931
 #: panels/wwan/cc-wwan-device-page.c:477
 msgid "Enabled"
 msgstr "فعَال"
 
-#: panels/user-accounts/cc-user-panel.c:1259
+#: panels/user-accounts/cc-user-panel.c:1255
 msgid "Failed to contact the accounts service"
 msgstr "ارتباط با سرویس حساب شکست خورد"
 
-#: panels/user-accounts/cc-user-panel.c:1261
+#: panels/user-accounts/cc-user-panel.c:1257
 msgid "Please make sure that the AccountService is installed and enabled."
 msgstr "لطفاً مطمئن شوید که AccountService نصب و به کار افتاده است."
 
@@ -1827,7 +1845,7 @@ msgstr "لطفاً مطمئن شوید که AccountService نصب و به کار
 #. * We split the line in 2 here to "make it look good", as there's
 #. * no good way to do this in GTK+ for tooltips. See:
 #. * https://bugzilla.gnome.org/show_bug.cgi?id=657168
-#: panels/user-accounts/cc-user-panel.c:1293
+#: panels/user-accounts/cc-user-panel.c:1289
 msgid ""
 "To make changes,\n"
 "click the * icon first"
@@ -1835,12 +1853,12 @@ msgstr ""
 "برای ایجاد تغییرات،\n"
 "ابتدا بر روی نقشک * کلیک کنید"
 
-#: panels/user-accounts/cc-user-panel.c:1366
+#: panels/user-accounts/cc-user-panel.c:1362
 msgid "Delete the selected user account"
 msgstr "حذف حساب کاربر انتخاب شده"
 
-#: panels/user-accounts/cc-user-panel.c:1378
-#: panels/user-accounts/cc-user-panel.c:1489
+#: panels/user-accounts/cc-user-panel.c:1374
+#: panels/user-accounts/cc-user-panel.c:1485
 msgid ""
 "To delete the selected user account,\n"
 "click the * icon first"
@@ -1848,7 +1866,7 @@ msgstr ""
 "برای حذف حساب کاربر انتخاب شده،\n"
 "ابتدا بر روی شمایل * کلیک کنید"
 
-#: panels/user-accounts/cc-user-panel.c:1535
+#: panels/user-accounts/cc-user-panel.c:1508
 msgid "Unlock to Add Users and Change Settings"
 msgstr "قفل‌گشایی برای افزودن کاربران و تغییر تنظیمات"
 
@@ -2161,6 +2179,7 @@ msgstr "دسترسی کامل به ‪/dev"
 #: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
 #: panels/wwan/cc-wwan-network-dialog.ui.h:1
 #: panels/network/budgie-network-panel.desktop.in.in:3
+#: build/panels/network/budgie-network-panel.desktop.in:3
 msgid "Network"
 msgstr "شبکه"
 
@@ -2264,6 +2283,7 @@ msgstr "دیگر پرونده‌ها"
 #: panels/applications/cc-applications-panel.ui.h:26
 #: panels/notifications/cc-notifications-panel.ui.h:4
 #: panels/applications/budgie-applications-panel.desktop.in.in:3
+#: build/panels/applications/budgie-applications-panel.desktop.in:3
 msgid "Applications"
 msgstr "برنامه‌های کاربردی"
 
@@ -2318,6 +2338,7 @@ msgstr "رونوشت"
 
 #: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:3
 msgid "Sharing"
 msgstr "هم‌رسانی"
 
@@ -2431,42 +2452,33 @@ msgstr "متریک"
 msgid "Formats"
 msgstr "قالب‌ها"
 
-#: panels/info-overview/cc-info-overview-panel.c:396
-#: panels/info-overview/cc-info-overview-panel.c:420
-#: panels/info-overview/cc-info-overview-panel.c:466
-#: panels/info-overview/cc-info-overview-panel.c:496
+#: panels/info-overview/cc-info-overview-panel.c:398
+#: panels/info-overview/cc-info-overview-panel.c:418
+#: panels/info-overview/cc-info-overview-panel.c:460
+#: panels/info-overview/cc-info-overview-panel.c:490
 #: panels/wwan/cc-wwan-details-dialog.c:101
 msgid "Unknown"
 msgstr "ناشناخته"
 
-#. translators: This is the name of the OS, followed by the build ID, for
-#. * example:
-#. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
-#. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: panels/info-overview/cc-info-overview-panel.c:428
-#, c-format
-msgid "%s; Build ID: %s"
-msgstr "%s; شناسهٔ ساخت: %s"
-
 #. translators: This is the type of architecture for the OS
-#: panels/info-overview/cc-info-overview-panel.c:443
+#: panels/info-overview/cc-info-overview-panel.c:437
 msgid "64-bit"
 msgstr "۶۴بیتی"
 
 #. translators: This is the type of architecture for the OS
-#: panels/info-overview/cc-info-overview-panel.c:446
+#: panels/info-overview/cc-info-overview-panel.c:440
 msgid "32-bit"
 msgstr "۳۲بیتی"
 
-#: panels/info-overview/cc-info-overview-panel.c:705
+#: panels/info-overview/cc-info-overview-panel.c:713
 msgid "X11"
 msgstr "X11"
 
-#: panels/info-overview/cc-info-overview-panel.c:709
+#: panels/info-overview/cc-info-overview-panel.c:717
 msgid "Wayland"
 msgstr "وی‌لند"
 
-#: panels/info-overview/cc-info-overview-panel.c:711
+#: panels/info-overview/cc-info-overview-panel.c:719
 msgctxt "Windowing system (Wayland, X11, or Unknown)"
 msgid "Unknown"
 msgstr "ناشناخته"
@@ -2589,14 +2601,14 @@ msgstr[0] "%Ii روز پیش"
 msgstr[1] "%Ii روز پیش"
 
 #: panels/network/net-device-ethernet.c:147
-#: panels/network/connection-editor/ce-page-details.c:414
+#: panels/network/connection-editor/ce-page-details.c:412
 #: panels/network/net-device-mobile.c:442
 #: panels/network/connection-editor/details-page.ui.h:4
 msgid "IPv4 Address"
 msgstr "نشانی IPv4"
 
 #: panels/network/net-device-ethernet.c:149
-#: panels/network/connection-editor/ce-page-details.c:415
+#: panels/network/connection-editor/ce-page-details.c:413
 #: panels/network/net-device-mobile.c:443
 #: panels/network/connection-editor/details-page.ui.h:5
 #: panels/network/network-mobile.ui.h:4
@@ -2605,8 +2617,8 @@ msgstr "نشانی IPv6"
 
 #: panels/network/net-device-ethernet.c:152
 #: panels/network/net-device-ethernet.c:154
-#: panels/network/connection-editor/ce-page-details.c:417
-#: panels/network/connection-editor/ce-page-details.c:418
+#: panels/network/connection-editor/ce-page-details.c:415
+#: panels/network/connection-editor/ce-page-details.c:416
 #: panels/network/net-device-mobile.c:446
 #: panels/network/net-device-mobile.c:447 panels/network/network-mobile.ui.h:3
 msgid "IP Address"
@@ -2626,21 +2638,21 @@ msgid "Default Route"
 msgstr "بسامدهای پشتیبانی شده"
 
 #: panels/network/net-device-ethernet.c:169
-#: panels/network/connection-editor/ce-page-details.c:422
+#: panels/network/connection-editor/ce-page-details.c:420
 #: panels/network/net-device-mobile.c:451
 msgid "DNS4"
 msgstr "ساناد۴"
 
 #: panels/network/net-device-ethernet.c:170
-#: panels/network/connection-editor/ce-page-details.c:423
+#: panels/network/connection-editor/ce-page-details.c:421
 #: panels/network/net-device-mobile.c:452
 msgid "DNS6"
 msgstr "ساناد۶"
 
 #: panels/network/net-device-ethernet.c:172
 #: panels/network/net-device-ethernet.c:174
-#: panels/network/connection-editor/ce-page-details.c:425
-#: panels/network/connection-editor/ce-page-details.c:426
+#: panels/network/connection-editor/ce-page-details.c:423
+#: panels/network/connection-editor/ce-page-details.c:424
 #: panels/network/net-device-mobile.c:454
 #: panels/network/net-device-mobile.c:455
 #: panels/network/connection-editor/ip4-page.ui.h:11
@@ -2656,7 +2668,7 @@ msgstr "آخرین استفاده"
 
 #. Translators: network device speed
 #: panels/network/net-device-ethernet.c:220
-#: panels/network/connection-editor/ce-page-details.c:300
+#: panels/network/connection-editor/ce-page-details.c:298
 #, c-format
 msgid "%d Mb/s"
 msgstr "%Id مگابیت/ثانیه"
@@ -2862,6 +2874,7 @@ msgstr "کلید خصوصی خود را انتخاب کنید"
 
 #: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
 #: panels/network/budgie-wifi-panel.desktop.in.in:3
+#: build/panels/network/budgie-wifi-panel.desktop.in:3
 msgid "Wi-Fi"
 msgstr "وای‌فای"
 
@@ -3393,61 +3406,61 @@ msgstr "هیچ"
 msgid "Never"
 msgstr "هرگز"
 
-#: panels/network/connection-editor/ce-page-details.c:298
+#: panels/network/connection-editor/ce-page-details.c:296
 #, c-format
 msgid "%d Mb/s (%1.1f GHz)"
 msgstr "%Id مگابیت/ثانیه (%I1.1f گیگاهرتز)"
 
-#: panels/network/connection-editor/ce-page-details.c:315
+#: panels/network/connection-editor/ce-page-details.c:313
 msgid "2.4 GHz / 5 GHz"
 msgstr "۲.۴ گیگاهرتز / ۵ گیگاهرتز"
 
-#: panels/network/connection-editor/ce-page-details.c:317
+#: panels/network/connection-editor/ce-page-details.c:315
 msgid "2.4 GHz"
 msgstr "۲.۴ گیگاهرتز"
 
-#: panels/network/connection-editor/ce-page-details.c:319
+#: panels/network/connection-editor/ce-page-details.c:317
 msgid "5 GHz"
 msgstr "۵ گیگاهرتز"
 
-#: panels/network/connection-editor/ce-page-details.c:339
+#: panels/network/connection-editor/ce-page-details.c:337
 msgctxt "Signal strength"
 msgid "None"
 msgstr "هیچ"
 
-#: panels/network/connection-editor/ce-page-details.c:341
+#: panels/network/connection-editor/ce-page-details.c:339
 msgctxt "Signal strength"
 msgid "Weak"
 msgstr "ضعیف"
 
-#: panels/network/connection-editor/ce-page-details.c:343
+#: panels/network/connection-editor/ce-page-details.c:341
 msgctxt "Signal strength"
 msgid "Ok"
 msgstr "کافی"
 
-#: panels/network/connection-editor/ce-page-details.c:345
+#: panels/network/connection-editor/ce-page-details.c:343
 msgctxt "Signal strength"
 msgid "Good"
 msgstr "خوب"
 
-#: panels/network/connection-editor/ce-page-details.c:347
+#: panels/network/connection-editor/ce-page-details.c:345
 msgctxt "Signal strength"
 msgid "Excellent"
 msgstr "عالی"
 
-#: panels/network/connection-editor/ce-page-details.c:478
+#: panels/network/connection-editor/ce-page-details.c:476
 msgid "Forget Connection"
 msgstr "فراموشی اتّصال"
 
-#: panels/network/connection-editor/ce-page-details.c:480
+#: panels/network/connection-editor/ce-page-details.c:478
 msgid "Remove Connection Profile"
 msgstr "برداشتن نمایهٔ اتّصال"
 
-#: panels/network/connection-editor/ce-page-details.c:482
+#: panels/network/connection-editor/ce-page-details.c:480
 msgid "Remove VPN"
 msgstr "برداشتن وی‌پی‌ان"
 
-#: panels/network/connection-editor/ce-page-details.c:500
+#: panels/network/connection-editor/ce-page-details.c:498
 msgid "Details"
 msgstr "جزییات"
 
@@ -3820,15 +3833,15 @@ msgstr ""
 msgid "_Set"
 msgstr "_تنظیم"
 
-#: panels/wwan/cc-wwan-data.c:542
+#: panels/wwan/cc-wwan-data.c:547
 msgid "Operation Cancelled"
 msgstr "عملیات لغو شد"
 
-#: panels/wwan/cc-wwan-data.c:545
+#: panels/wwan/cc-wwan-data.c:550
 msgid "<b>Error:</b> Access denied changing settings"
 msgstr "<b>خطا:</b> دسترسی به تغییر تنظیمات رد شد"
 
-#: panels/wwan/cc-wwan-data.c:548
+#: panels/wwan/cc-wwan-data.c:553
 msgid "<b>Error:</b> Mobile Equipment Error"
 msgstr "<b>خطا:</b> خطای تجهیزات همراه"
 
@@ -3881,12 +3894,12 @@ msgctxt "timezone map"
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: panels/thunderbolt/cc-bolt-panel.c:175
+#: panels/thunderbolt/cc-bolt-panel.c:240
 msgid ""
 "The Thunderbolt subsystem (boltd) is not installed or not set up properly."
 msgstr "زیرسامانهٔ تاندربولت (boltd) نصب یا به درستی پیکربندی نشده است."
 
-#: panels/thunderbolt/cc-bolt-panel.c:468
+#: panels/thunderbolt/cc-bolt-panel.c:533
 msgid ""
 "Thunderbolt could not be detected.\n"
 "Either the system lacks Thunderbolt support, it has been disabled in the BIOS or is set to an unsupported security level in the BIOS."
@@ -3894,15 +3907,15 @@ msgstr ""
 "تاندربولت تشخیص داده نشد.\n"
 "یا سامانه فاقد پشتیبانی تاندربولت است، یا در بایوس از کار افتاده یا روی سطح امنیتی پشتیبانی نشده‌ای تنظیم شده."
 
-#: panels/thunderbolt/cc-bolt-panel.c:512
+#: panels/thunderbolt/cc-bolt-panel.c:577
 msgid "Thunderbolt support has been disabled in the BIOS."
 msgstr "پشتیبانی تاندربولت در بایوس از کار افتاده است."
 
-#: panels/thunderbolt/cc-bolt-panel.c:516
+#: panels/thunderbolt/cc-bolt-panel.c:581
 msgid "Thunderbolt security level could not be determined."
 msgstr "نمی‌توان سطح امنیتی تاندربولت را تعیین کرد."
 
-#: panels/thunderbolt/cc-bolt-panel.c:621
+#: panels/thunderbolt/cc-bolt-panel.c:686
 #, c-format
 msgid "Error switching direct mode: %s"
 msgstr "خطا در تعویض حالت مستقیم: %s"
@@ -4114,7 +4127,7 @@ msgstr "تابلو برای نمایش"
 msgid "[PANEL] [ARGUMENT…]"
 msgstr "[PANEL] [ARGUMENT…]"
 
-#: shell/cc-panel-loader.c:295
+#: shell/cc-panel-loader.c:298
 msgid "Available panels:"
 msgstr "تابلوهای موجود:"
 
@@ -4124,6 +4137,7 @@ msgstr "محرمانگی"
 
 #: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
+#: build/shell/budgie-control-center.desktop.in:3
 msgid "Budgie Control Center"
 msgstr ""
 
@@ -4326,13 +4340,8 @@ msgstr "برگردان"
 msgid "No printers"
 msgstr "هیچ چاپگری نیست"
 
-#. Translators: This button adds new printer.
-#: panels/printers/printers.ui.h:7
-msgid "Add a Printer…"
-msgstr "افزودن یک چاپگر…"
-
 #. Translators: The CUPS server is not running (we can not connect to it).
-#: panels/printers/printers.ui.h:9
+#: panels/printers/printers.ui.h:7
 msgid ""
 "Sorry! The system printing service\n"
 "doesn’t seem to be available."
@@ -4462,6 +4471,7 @@ msgstr "تنظیمات بلوتوث"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:3
 msgid "Wacom Tablet"
 msgstr "تبلت Wa­com"
 
@@ -5279,6 +5289,7 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:20
 #: panels/display/budgie-display-panel.desktop.in.in:3
+#: build/panels/display/budgie-display-panel.desktop.in:3
 msgid "Displays"
 msgstr "نمایشگرها"
 
@@ -6265,16 +6276,19 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:5
 #: panels/camera/budgie-camera-panel.desktop.in.in:3
+#: build/panels/camera/budgie-camera-panel.desktop.in:3
 msgid "Camera"
 msgstr "دوربین"
 
 #: panels/applications/cc-applications-panel.ui.h:7
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:3
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:3
 msgid "Microphone"
 msgstr "میکرفون"
 
 #: panels/applications/cc-applications-panel.ui.h:8
 #: panels/location/budgie-location-panel.desktop.in.in:3
+#: build/panels/location/budgie-location-panel.desktop.in:3
 msgid "Location Services"
 msgstr "خدمات مکان‌یابی"
 
@@ -6309,6 +6323,7 @@ msgstr "جست‌وجو"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:3
 msgid "Notifications"
 msgstr "آگاهی‌ها"
 
@@ -6683,27 +6698,36 @@ msgstr "درحال محاسبه…"
 msgid "OS Name"
 msgstr "نام سیستم‌عامل"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:10
+#. translators: this field contains the distro build ID
+#: panels/info-overview/cc-info-overview-panel.ui.h:11
+msgid "OS Build ID"
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
 msgstr "گونهٔ سیستم‌عامل"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:11
+#: panels/info-overview/cc-info-overview-panel.ui.h:13
 msgid "Windowing System"
 msgstr "سامانهٔ پنجره"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:12
+#: panels/info-overview/cc-info-overview-panel.ui.h:14
 msgid "Virtualization"
 msgstr "مجازی‌سازی"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:13
+#: panels/info-overview/cc-info-overview-panel.ui.h:15
+msgid "Kernel Version"
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
 msgstr "به‌روز رسانی‌های نرم‌افزاری"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:14
+#: panels/info-overview/cc-info-overview-panel.ui.h:17
 msgid "Rename Device"
 msgstr "تغییر نام افزاره"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:15
+#: panels/info-overview/cc-info-overview-panel.ui.h:18
 msgid ""
 "The device name is used to identify this device when it is viewed over the "
 "network, or when pairing Bluetooth devices."
@@ -6711,7 +6735,7 @@ msgstr ""
 "نام افزاره برای تشخیص این افزاره هنگام دیده شدن روی شبکه یا جفت شدن "
 "افزاره‌های بلوتوثی استفاده می‌شود."
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:16
+#: panels/info-overview/cc-info-overview-panel.ui.h:19
 msgid "_Rename"
 msgstr "_تغییرنام"
 
@@ -7465,6 +7489,7 @@ msgstr "دسامبر"
 
 #: panels/datetime/cc-datetime-panel.ui.h:13
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:3
 msgid "Date & Time"
 msgstr "تاریخ و زمان"
 
@@ -7958,20 +7983,24 @@ msgid "Help"
 msgstr "راهنما"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:3
+#: build/panels/printers/budgie-printers-panel.desktop.in:3
 msgid "Printers"
 msgstr "چاپگرها"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:4
+#: build/panels/printers/budgie-printers-panel.desktop.in:4
 msgid "Add printers, view printer jobs and decide how you want to print"
 msgstr "افزودن چاپگر، دیدن کارهای چاپگر و تصمیم برای چگونگی چاپ"
 
 #. Translators: Search terms to find the Printers panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/printers/budgie-printers-panel.desktop.in.in:16
+#: build/panels/printers/budgie-printers-panel.desktop.in:16
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
 msgstr "Printer;Queue;Print;Paper;Ink;Toner;چاپگر;صف;چاپ;کاغذ;جوهر;"
 
 #: panels/location/budgie-location-panel.desktop.in.in:4
+#: build/panels/location/budgie-location-panel.desktop.in:4
 msgid "Protect your location information"
 msgstr "محافظت از اطّلاعات موقعیتتان"
 
@@ -7980,6 +8009,9 @@ msgstr "محافظت از اطّلاعات موقعیتتان"
 #: panels/location/budgie-location-panel.desktop.in.in:16
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:16
 #: panels/usage/budgie-usage-panel.desktop.in.in:16
+#: build/panels/location/budgie-location-panel.desktop.in:16
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:16
+#: build/panels/usage/budgie-usage-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
 msgstr ""
@@ -7987,36 +8019,43 @@ msgstr ""
 " شخصی;حریم خصوصی;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:4
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:4
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr "تنظیم هدایت کلیدها و تنظیم حساسیت قلم برای تبلت‌های گرافیکی"
 
 #. Translators: Search terms to find the Wacom Tablet panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:15
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:15
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
 msgstr "Tablet;Wacom;Stylus;Eraser;Mouse;تبلت;Wa­com;استایلوس;پاک‌کن;موشی;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
+#: build/panels/power/budgie-power-panel.desktop.in:3
 msgid "Power"
 msgstr "انرژی"
 
 #: panels/power/budgie-power-panel.desktop.in.in:4
+#: build/panels/power/budgie-power-panel.desktop.in:4
 msgid "View your battery status and change power saving settings"
 msgstr "وضعیت باتری خود را دیده و تنظیمات ذخیرهٔ انرژی را تغییر دهید"
 
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/power/budgie-power-panel.desktop.in.in:15
+#: build/panels/power/budgie-power-panel.desktop.in:15
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
 msgstr ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;نیرو;انرژی;خواب;تعلیق;باتری;روشنایی;تاریکی;نمایشگر;مانیتور;مونیتور;صفحه;"
 
 #: panels/color/budgie-color-panel.desktop.in.in:3
+#: build/panels/color/budgie-color-panel.desktop.in:3
 msgid "Color"
 msgstr "رنگ"
 
 #: panels/color/budgie-color-panel.desktop.in.in:4
+#: build/panels/color/budgie-color-panel.desktop.in:4
 msgid ""
 "Calibrate the color of your devices, such as displays, cameras or printers"
 msgstr "رنگ افزاره‌هایتان نظیر نمایشگرها، دوربین‌ها یا چاپگرها را واسنجی کنید"
@@ -8024,45 +8063,54 @@ msgstr "رنگ افزاره‌هایتان نظیر نمایشگرها، دور�
 #. Translators: Search terms to find the Color panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/color/budgie-color-panel.desktop.in.in:15
+#: build/panels/color/budgie-color-panel.desktop.in:15
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
 msgstr ""
 "Color;ICC;Profile;Calibrate;Printer;Display;رنگ;نمایه;واسنجی;چاپگر;نمایشگر;"
 
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:4
 msgid "Turn Bluetooth on and off and connect your devices"
 msgstr "بلوتوث را خاموش و روشن کنید و به افزاره‌های خود متّصل شوید"
 
 #. Translators: Search terms to find the Bluetooth panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:15
 msgid "share;sharing;bluetooth;obex;"
 msgstr "share;sharing;bluetooth;obex;اشتراک;هم‌رسانی;بلوتوث;هم‌رسانی;"
 
 #: panels/background/budgie-background-panel.desktop.in.in:3
+#: build/panels/background/budgie-background-panel.desktop.in:3
 msgid "Background"
 msgstr "پس‌زمینه"
 
 #: panels/background/budgie-background-panel.desktop.in.in:4
+#: build/panels/background/budgie-background-panel.desktop.in:4
 msgid "Change your background image to a wallpaper or photo"
 msgstr "تصویر پس‌زمینهٔ خود را به یک کاغذ دیواری یا عکس تغییر دهید"
 
 #. Translators: Search terms to find the Background panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/background/budgie-background-panel.desktop.in.in:15
+#: build/panels/background/budgie-background-panel.desktop.in:15
 msgid "Wallpaper;Screen;Desktop;"
 msgstr "پس‌زمینه;صفحه‌نمایش;رومیزی;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
+#: build/panels/sound/budgie-sound-panel.desktop.in:3
 msgid "Sound"
 msgstr "صدا"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:4
+#: build/panels/sound/budgie-sound-panel.desktop.in:4
 msgid "Change sound levels, inputs, outputs, and alert sounds"
 msgstr "تغییر بلندی صدا، ورودی‌ها، خروجی‌ها و رویدادهای صوتی"
 
 #. Translators: Search terms to find the Sound panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sound/budgie-sound-panel.desktop.in.in:15
+#: build/panels/sound/budgie-sound-panel.desktop.in:15
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 msgstr ""
@@ -8070,22 +8118,26 @@ msgstr ""
 " صدا;محو شدن;بالانس;بلوتوث;گوشی;صوت;صدا;ورودی;خروجی;"
 
 #: panels/display/budgie-display-panel.desktop.in.in:4
+#: build/panels/display/budgie-display-panel.desktop.in:4
 msgid "Choose how to use connected monitors and projectors"
 msgstr "نحوهٔ استفاده از نمایشگرها و پروژکتورهای متّصل را انتخاب کنید"
 
 #. Translators: Search terms to find the Displays panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/display/budgie-display-panel.desktop.in.in:15
+#: build/panels/display/budgie-display-panel.desktop.in:15
 msgid ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
 msgstr ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;تابلو;پروژکتور;صفحه;مانیتور;نمایشگر;تفکیک;شب;نور;آبی;رنگ;غروب;طلوع;"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:3
 msgid "Keyboard"
 msgstr "صفحه‌کلید"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:4
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:4
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
@@ -8096,6 +8148,7 @@ msgstr ""
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:15
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
@@ -8103,16 +8156,19 @@ msgstr ""
 " کاری;پنجره;اندازه;بزرگ‌نمایی;تضاد;ورودی;منبع;قفل;صدا;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:3
 msgid "Users"
 msgstr "کاربرها"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:4
 msgid "Add or remove users and change your password"
 msgstr "افزودن یا برداشتنن کاربرها و تعویض گذرواژه‌تان"
 
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:15
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:15
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
@@ -8123,17 +8179,20 @@ msgstr ""
 "انگشت;چهرک;آواتار;لوگو;نشنان;صورت;گذرواژه;رمز;محدودیت;والدین;زمان;وب;کاره;استفاده;بچه;کودک;"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
 msgstr "دسترسی‌پذیری"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:4
 msgid "Make it easier to see, hear, type, point and click"
 msgstr "ساده‌تر کردن دیدن، شنیدن، نوشتن، نشانه‌روی و کلیک"
 
 #. Translators: Search terms to find the Accessibility panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:15
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:15
 msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
@@ -8145,48 +8204,57 @@ msgstr ""
 "موشی;چشمک;سرعت;بینایی;شنوایی;صدا;تایپ;نوشتن;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:3
 msgid "Multitasking"
 msgstr "چندوظیفگی"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:4
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:4
 msgid "Manage preferences for productivity and multitasking"
 msgstr "مدیریت ترجیحات برای بهره‌وری و چندوظیفگی"
 
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:15
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
 "Multitasking;Multitask;Productivity;Customize;Desktop;چندوظیفگی;بهره‌وری;شخصی‌سازی;میزکار;"
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
+#: build/panels/applications/budgie-applications-panel.desktop.in:4
 msgid "Control various application permissions and settings"
 msgstr "واپایشاجازه‌ها و تنظیمات برنامه‌های مختلف"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
+#: build/panels/applications/budgie-applications-panel.desktop.in:16
 msgid "application;flatpak;permission;setting;"
 msgstr ""
 "کاره;برنامه;فلت‌پک;اجازه;مجوز;دسترسی;تنظیمات;application;flatpak;permission;setting;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:4
 msgid "Control what you want to share with others"
 msgstr "واپایش چیزهایی که می‌خواهید با دیگران هم‌رسانی کنید"
 
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:16
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:16
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
 msgstr ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;هم‌رسانی;اشتراک;میزبان;نام;دور;میزکار;ریانه;صدا;آهنگ;ویدیو;فیلم;عکس;تصویر;کارساز;سرور;"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:3
 msgid "Removable Media"
 msgstr "رسانه‌های جداشدنی"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:4
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:4
 msgid "Configure Removable Media settings"
 msgstr "پیکربندی تنظیمات رسانه‌های جداشدنی"
 
@@ -8194,6 +8262,7 @@ msgstr "پیکربندی تنظیمات رسانه‌های جداشدنی"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:15
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
@@ -8201,10 +8270,12 @@ msgstr ""
 " حذف;رسانه;اجرا خودکار;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
+#: build/panels/region/budgie-region-panel.desktop.in:3
 msgid "Region & Language"
 msgstr "ناحیه و زبان"
 
 #: panels/region/budgie-region-panel.desktop.in.in:4
+#: build/panels/region/budgie-region-panel.desktop.in:4
 msgid "Select your display language and formats"
 msgstr "گزینش قالب‌ها و زبان نمایشیتان"
 
@@ -8212,14 +8283,17 @@ msgstr "گزینش قالب‌ها و زبان نمایشیتان"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:15
+#: build/panels/region/budgie-region-panel.desktop.in:15
 msgid "Language;Layout;Keyboard;Input;"
 msgstr "زبان;چیدمان;صفحه‌کلید؛ورودی;Language;Layout;Keyboard;Input;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:3
 msgid "About"
 msgstr "درباره"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:4
 msgid "View information about your system"
 msgstr "دیدن اطّلاعات دربارهٔ سامانه‌تان"
 
@@ -8229,6 +8303,7 @@ msgstr "دیدن اطّلاعات دربارهٔ سامانه‌تان"
 #. "Preferred Applications" is the old name for the preference, so make
 #. sure that you use the same "translation" for those keywords
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:19
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:19
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
@@ -8238,54 +8313,64 @@ msgstr ""
 " حذف;رسانه;اجرای خودکار;"
 
 #: panels/network/budgie-network-panel.desktop.in.in:4
+#: build/panels/network/budgie-network-panel.desktop.in:4
 msgid "Control how you connect to the Internet"
 msgstr "واپایش شیوهٔ اتّصال به اینترنت"
 
 #. Translators: Search terms to find the Network panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-network-panel.desktop.in.in:15
+#: build/panels/network/budgie-network-panel.desktop.in:15
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 msgstr ""
 "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;شبکه;آی "
 "پی;لن;پیشکار;پروکسی;ون;پهن‌باند;مودم;بلوتوث;وی پی ان;دی ان اس;ساناد;"
 
 #: panels/network/budgie-wifi-panel.desktop.in.in:4
+#: build/panels/network/budgie-wifi-panel.desktop.in:4
 msgid "Control how you connect to Wi-Fi networks"
 msgstr "واپایش شیوهٔ اتّصال به شبکه‌های وای‌فای"
 
 #. Translators: Search terms to find the Wi-Fi panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-wifi-panel.desktop.in.in:15
+#: build/panels/network/budgie-wifi-panel.desktop.in:15
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 msgstr ""
 "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;شبکه;بی سیم;وای "
 "فای;آی پی;لن;پروکسی;پهن‌باند;دی ان اس;ساناد;هات اسپات;"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:3
 msgid "Mobile Network"
 msgstr "شبکهٔ همراه"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:4
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:4
 msgid "Configure Telephony and mobile data connections"
 msgstr "پیکربندی اتّصال‌های دادهٔ همراه و تلفن"
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:16
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:16
 msgid "cellular;wwan;telephony;sim;mobile;"
 msgstr "cellular;wwan;telephony;sim;mobile;موبایل;تلفن;همراه;سیم‌کارت;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:4
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:4
 msgid "Change the date and time, including time zone"
 msgstr "تغییر ساعت و تاریخ، شامل منطقه زمانی"
 
 #. Translators: Search terms to find the Date and Time panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:15
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:15
 msgid "Clock;Timezone;Location;"
 msgstr "سایت;منطقهٔ زمانی;مکان;"
 
 #: panels/camera/budgie-camera-panel.desktop.in.in:4
+#: build/panels/camera/budgie-camera-panel.desktop.in:4
 msgid "Protect your pictures"
 msgstr "محافظت از عکس‌هایتان"
 
@@ -8293,26 +8378,32 @@ msgstr "محافظت از عکس‌هایتان"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/camera/budgie-camera-panel.desktop.in.in:16
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:16
+#: build/panels/camera/budgie-camera-panel.desktop.in:16
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;صفحه;قفل;کرش;خصوصی;اخیر;موقت;نمایه;نام;شبکه;هویت;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:4
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:4
 msgid "Control which notifications are displayed and what they show"
 msgstr "واپایش آگاهی‌های نمایش داده شده و آن‌چه نشان می‌دهند"
 
 #. Translators: Search terms to find the Notifications panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
 msgstr "Notifications;Banner;Message;Tray;Popup;آگاهیها;بنر;پیام;سینی;واشو;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:3
 msgid "Default Applications"
 msgstr "برنامه‌های پیش‌گزیده"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:4
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:4
 msgid "Configure Default Applications"
 msgstr "پیکربندی برنامه‌های پیش‌گزیده"
 
@@ -8320,18 +8411,22 @@ msgstr "پیکربندی برنامه‌های پیش‌گزیده"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:15
 msgid "default;application;preferred;media;"
 msgstr "default;application;preferred;media;پیش‌گزیده;پیش‌گزیده;ترجیح;رسانه;"
 
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:4
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:4
 msgid "Protect your conversations"
 msgstr "محافظت از گفت‌وگوهایتان"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:3
 msgid "Thunderbolt"
 msgstr "تاندربولت"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:4
 msgid "Manage Thunderbolt devices"
 msgstr "مدیریت افزاره‌های تاندربولت"
 
@@ -8339,14 +8434,17 @@ msgstr "مدیریت افزاره‌های تاندربولت"
 #. Do NOT translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:15
 msgid "Thunderbolt;privacy;"
 msgstr "Thunderbolt;Privacy;تاندربولت;محرمانگی;حریم شخصی;حریم خصوصی;"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:3
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:3
 msgid "Mouse & Touchpad"
 msgstr "موشی و صفحه‌لمسی"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:4
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:4
 msgid ""
 "Change your mouse or touchpad sensitivity and select right or left-handed"
 msgstr "تغییر میزان حساسیت موشی یا صفحه‌لمسی و انتخاب راست‌دست یا چپ‌دست بودن"
@@ -8355,32 +8453,39 @@ msgstr "تغییر میزان حساسیت موشی یا صفحه‌لمسی و 
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:15
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:15
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
 msgstr ""
 "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;صفحه‌جهت‌ده;نشانگر;کلیک;ضربه;دوبار;دکمه;صفحه"
 " ردیاب;لغزش;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:3
 msgid "Diagnostics"
 msgstr "عیب‌یابی"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:4
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:4
 msgid "Report your problems"
 msgstr "گزارش مشکلاتتان"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
+#: build/panels/usage/budgie-usage-panel.desktop.in:3
 msgid "File History & Trash"
 msgstr "تاریخچهٔ پرونده و زباله‌دان"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:4
+#: build/panels/usage/budgie-usage-panel.desktop.in:4
 msgid "Don't leave traces"
 msgstr "برجا نگذاشتن اثر"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:3
 msgid "Online Accounts"
 msgstr "حساب‌های برخط"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:4
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:4
 msgid "Connect to your online accounts and decide what to use them for"
 msgstr ""
 "به حساب‌های برخطتان وصل شده و تصمیم بگیرید از آن‌ها برای چه استفاده‌ کنید"
@@ -8391,6 +8496,7 @@ msgstr ""
 #. For ReadItLater and Pocket, see
 #. http://en.wikipedia.org/wiki/Pocket_(application)
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:18
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
 msgstr ""
@@ -8400,6 +8506,7 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
+#: build/shell/budgie-control-center.desktop.in:13
 msgid "Preferences;Settings;"
 msgstr "Preferences;Settings;ترجیحات;تنظیمات;"
 

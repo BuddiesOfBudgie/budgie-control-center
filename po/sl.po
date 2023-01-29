@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 22:23+0000\n"
+"POT-Creation-Date: 2023-01-24 18:45+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Slovenian (https://www.transifex.com/buddiesofbudgie/teams/129844/sl/)\n"
@@ -306,23 +306,23 @@ msgid "Automatic configuration"
 msgstr ""
 
 #. Translators: %s is the printer name
-#: panels/printers/cc-printers-panel.c:683
+#: panels/printers/cc-printers-panel.c:692
 #, c-format
 msgid "Printer “%s” has been deleted"
 msgstr "Tiskalnik »%s« je bil izbrisan."
 
 #. Translators: Addition of the new printer failed.
-#: panels/printers/cc-printers-panel.c:927
+#: panels/printers/cc-printers-panel.c:941
 msgid "Failed to add new printer."
 msgstr "Dodajanje novega tiskalnika je spodletelo."
 
 #. Translators: The XML file containing user interface can not be loaded
-#: panels/printers/cc-printers-panel.c:1226
+#: panels/printers/cc-printers-panel.c:1244
 #, c-format
 msgid "Could not load ui: %s"
 msgstr "Ni mogoče naložiti uporabniškega vmesnika: %s"
 
-#: panels/printers/cc-printers-panel.c:1294
+#: panels/printers/cc-printers-panel.c:1312
 msgid "Unlock to Add Printers and Change Settings"
 msgstr "Odklenite za dodajanje tiskalnikov in spreminjanje nastavitev"
 
@@ -410,8 +410,8 @@ msgstr "Izbor datoteke PPD"
 #: panels/display/cc-display-panel.c:1207
 #: panels/user-accounts/cc-avatar-chooser.c:105
 #: panels/user-accounts/cc-avatar-chooser.c:241
-#: panels/user-accounts/cc-user-panel.c:638
-#: panels/user-accounts/cc-user-panel.c:656
+#: panels/user-accounts/cc-user-panel.c:637
+#: panels/user-accounts/cc-user-panel.c:655
 #: panels/sharing/cc-sharing-panel.c:539 panels/network/cc-wifi-panel.c:871
 #: panels/network/connection-editor/vpn-helpers.c:176
 #: panels/network/connection-editor/vpn-helpers.c:299
@@ -424,7 +424,7 @@ msgstr "Izbor datoteke PPD"
 #: panels/user-accounts/cc-add-user-dialog.ui.h:2
 #: panels/user-accounts/cc-password-dialog.ui.h:2
 #: panels/region/cc-format-chooser.ui.h:2
-#: panels/info-overview/cc-info-overview-panel.ui.h:17
+#: panels/info-overview/cc-info-overview-panel.ui.h:20
 #: panels/common/cc-language-chooser.ui.h:3
 #: panels/network/connection-editor/connection-editor.ui.h:1
 #: panels/network/cc-wifi-hotspot-dialog.ui.h:6
@@ -533,6 +533,7 @@ msgstr "Vzporedna vrata"
 #. Translators: The found device is a printer connected via Bluetooth
 #: panels/printers/pp-new-printer-dialog.c:1392
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:3
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -711,14 +712,14 @@ msgstr "Nikoli"
 msgid "Automatic suspend"
 msgstr "Samodejen prehod v pripravljenost"
 
-#: panels/power/cc-power-panel.c:1159
+#: panels/power/cc-power-panel.c:1162
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
 msgstr ""
 "Zmogljivostni način delovanja je začasno onemogočen zaradi visoke delovne "
 "temperature."
 
-#: panels/power/cc-power-panel.c:1161
+#: panels/power/cc-power-panel.c:1164
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
@@ -726,11 +727,11 @@ msgstr ""
 "Sprememba delovanja: zmogljivostni način začasno ni na voljo. Za ponovno "
 "vzpostavitev je treba napravo premakniti na stabilno površino."
 
-#: panels/power/cc-power-panel.c:1163
+#: panels/power/cc-power-panel.c:1166
 msgid "Performance mode temporarily disabled."
 msgstr "Zmogljivostni način je začasno onemogočen."
 
-#: panels/power/cc-power-panel.c:1206
+#: panels/power/cc-power-panel.c:1209
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
@@ -739,13 +740,13 @@ msgstr ""
 "uporabljeni način bo obnovljen, ko bo baterija dovolj napolnjena."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1214
+#: panels/power/cc-power-panel.c:1217
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr "Varčevalni način delovanja je sprožil program »%s«."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1218
+#: panels/power/cc-power-panel.c:1221
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr "Zmogljivostni način delovanja je sprožil program »%s«."
@@ -1491,8 +1492,8 @@ msgstr "Ponastavi vse"
 #. translators:
 #. * The device has been disabled
 #: panels/keyboard/keyboard-shortcuts.c:367
-#: panels/user-accounts/cc-user-panel.c:848
-#: panels/user-accounts/cc-user-panel.c:938
+#: panels/user-accounts/cc-user-panel.c:847
+#: panels/user-accounts/cc-user-panel.c:934
 #: panels/wwan/cc-wwan-device-page.c:479
 #: subprojects/gvc/gvc-mixer-control.c:1908
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:2
@@ -1590,123 +1591,140 @@ msgstr "Napačno geslo, poskusite znova."
 msgid "Couldn’t connect to the %s domain: %s"
 msgstr "Z domeno %s povezava ni mogoča: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:236
+#: panels/user-accounts/cc-fingerprint-dialog.c:245
 msgid "the device needs to be claimed to perform this action"
 msgstr ""
 "pred izvajanjem tega opravila mora biti vzpostavljena povezava z napravo"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:238
+#: panels/user-accounts/cc-fingerprint-dialog.c:247
 msgid "the device is already claimed by another process"
 msgstr "naprava je že v uporabi v drugem opravilu"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:240
+#: panels/user-accounts/cc-fingerprint-dialog.c:249
 msgid "you do not have permission to perform the action"
 msgstr "ni ustreznih dovoljenj za izvajanje tega dejanja"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:242
+#: panels/user-accounts/cc-fingerprint-dialog.c:251
 msgid "no prints have been enrolled"
 msgstr "ni poslanih opravil za tiskanje"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:251
+#: panels/user-accounts/cc-fingerprint-dialog.c:260
 msgid "Failed to communicate with the device during enrollment"
 msgstr "Povezovanje z napravo med vpisovanjem je spodletelo."
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:255
+#: panels/user-accounts/cc-fingerprint-dialog.c:264
 msgid "Failed to communicate with the fingerprint reader"
 msgstr "Povezovanje s čitalcem prstnih odtisov je spodletelo."
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:257
+#: panels/user-accounts/cc-fingerprint-dialog.c:266
 msgid "Failed to communicate with the fingerprint daemon"
 msgstr ""
 "Povezovanje z ozadnjim programom čitalca prstnih odtisov je spodletelo."
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:585
+#: panels/user-accounts/cc-fingerprint-dialog.c:594
 #, c-format
 msgid "Failed to list fingerprints: %s"
 msgstr "Prikaz prstnih odtisov je spodletel: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:652
+#. TRANSLATORS: This is part of the translation 'Ensure fprintd has been
+#. enabled using your pam authorization module'
+#: panels/user-accounts/cc-fingerprint-dialog.c:627
+msgid "your pam authorization module"
+msgstr ""
+
+#. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
+#. an executable that is calculated when the app is running
+#: panels/user-accounts/cc-fingerprint-dialog.c:659
+#, c-format
+msgid "Ensure fprintd has been enabled using %s"
+msgstr ""
+
+#: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
 msgid "Failed to delete saved fingerprints: %s"
 msgstr "Brisanje prstnih odtisov je spodletelo: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:683
+#: panels/user-accounts/cc-fingerprint-dialog.c:712
 msgid "Left thumb"
 msgstr "Levi palec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:685
+#: panels/user-accounts/cc-fingerprint-dialog.c:714
 msgid "Left middle finger"
 msgstr "Levi sredinec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:687
+#: panels/user-accounts/cc-fingerprint-dialog.c:716
 msgid "_Left index finger"
 msgstr "_Levi kazalec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:689
+#: panels/user-accounts/cc-fingerprint-dialog.c:718
 msgid "Left ring finger"
 msgstr "Levi prstanec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:691
+#: panels/user-accounts/cc-fingerprint-dialog.c:720
 msgid "Left little finger"
 msgstr "Levi mezinec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:693
+#: panels/user-accounts/cc-fingerprint-dialog.c:722
 msgid "Right thumb"
 msgstr "Desni palec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:695
+#: panels/user-accounts/cc-fingerprint-dialog.c:724
 msgid "Right middle finger"
 msgstr "Desni sredinec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:697
+#: panels/user-accounts/cc-fingerprint-dialog.c:726
 msgid "_Right index finger"
 msgstr "_Desni kazalec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:699
+#: panels/user-accounts/cc-fingerprint-dialog.c:728
 msgid "Right ring finger"
 msgstr "Desni prstanec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:701
+#: panels/user-accounts/cc-fingerprint-dialog.c:730
 msgid "Right little finger"
 msgstr "Desni mezinec"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:703
+#: panels/user-accounts/cc-fingerprint-dialog.c:732
 msgid "Unknown Finger"
 msgstr "Neznan prst"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:837
+#: panels/user-accounts/cc-fingerprint-dialog.c:866
 msgctxt "Fingerprint enroll state"
 msgid "Complete"
 msgstr "Končano"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:848
+#: panels/user-accounts/cc-fingerprint-dialog.c:877
 msgid "Fingerprint device disconnected"
 msgstr "Naprava za prijavo s prstnim odtisom ni priklopljena"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:854
+#: panels/user-accounts/cc-fingerprint-dialog.c:883
 msgid "Fingerprint device storage is full"
 msgstr "Shramba naprave za branje prstnega odtisa je polna"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:858
+#: panels/user-accounts/cc-fingerprint-dialog.c:887
+msgid "Fingerprint is a duplicate"
+msgstr ""
+
+#: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
 msgstr "Odčitavanje novega prstnega odtisa je spodletelo."
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:889
+#: panels/user-accounts/cc-fingerprint-dialog.c:922
 #, c-format
 msgid "Failed to start enrollment: %s"
 msgstr "Začenjanje odčitavanja je spodletelo: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:897
+#: panels/user-accounts/cc-fingerprint-dialog.c:930
 msgctxt "Fingerprint enroll state"
 msgid "Failed to enroll new fingerprint"
 msgstr "Odčitavanje novega prstnega odtisa je spodletelo."
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:928
+#: panels/user-accounts/cc-fingerprint-dialog.c:961
 #, c-format
 msgid "Failed to stop enrollment: %s"
 msgstr "Zaustavljanje odčitavanja je spodletelo: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:974
+#: panels/user-accounts/cc-fingerprint-dialog.c:1007
 msgid ""
 "Repeatedly lift and place your finger on the reader to enroll your "
 "fingerprint"
@@ -1715,54 +1733,54 @@ msgstr ""
 "odtisa"
 
 #. TRANSLATORS: This is the label for the button to enroll a new finger
-#: panels/user-accounts/cc-fingerprint-dialog.c:1118
+#: panels/user-accounts/cc-fingerprint-dialog.c:1151
 msgid "Scan new fingerprint"
 msgstr "Odčitaj nov prstni odtis"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1157
+#: panels/user-accounts/cc-fingerprint-dialog.c:1190
 #, c-format
 msgid "Failed to release fingerprint device %s: %s"
 msgstr "Sproščanje naprave za branje prstnega odtisa %s je spodletelo: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1229
+#: panels/user-accounts/cc-fingerprint-dialog.c:1262
 msgctxt "Fingerprint enroll state"
 msgid "Problem Reading Device"
 msgstr "Napaka branja naprave"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1264
+#: panels/user-accounts/cc-fingerprint-dialog.c:1297
 #, c-format
 msgid "Failed to claim fingerprint device %s: %s"
 msgstr "Povezovanje naprave za branje prstnega odtisa %s je spodletelo: %s"
 
-#: panels/user-accounts/cc-fingerprint-dialog.c:1413
+#: panels/user-accounts/cc-fingerprint-dialog.c:1446
 #, c-format
 msgid "Failed to get fingerprint devices: %s"
 msgstr "Pridobivanje naprav za prstni odtis je spodletelo: %s"
 
-#: panels/user-accounts/cc-user-panel.c:222
+#: panels/user-accounts/cc-user-panel.c:221
 msgid "Your account"
 msgstr "Račun"
 
-#: panels/user-accounts/cc-user-panel.c:402
+#: panels/user-accounts/cc-user-panel.c:401
 msgid "Failed to delete user"
 msgstr "Napaka med brisanjem uporabnika"
 
-#: panels/user-accounts/cc-user-panel.c:457
-#: panels/user-accounts/cc-user-panel.c:512
-#: panels/user-accounts/cc-user-panel.c:558
+#: panels/user-accounts/cc-user-panel.c:456
+#: panels/user-accounts/cc-user-panel.c:511
+#: panels/user-accounts/cc-user-panel.c:557
 msgid "Failed to revoke remotely managed user"
 msgstr "Preklic oddaljeno vodenega uporabnika je spodletel"
 
-#: panels/user-accounts/cc-user-panel.c:607
+#: panels/user-accounts/cc-user-panel.c:606
 msgid "You cannot delete your own account."
 msgstr "Ni mogoče izbrisati lastnega računa."
 
-#: panels/user-accounts/cc-user-panel.c:616
+#: panels/user-accounts/cc-user-panel.c:615
 #, c-format
 msgid "%s is still logged in"
 msgstr "%s je še vedno prijavljen"
 
-#: panels/user-accounts/cc-user-panel.c:620
+#: panels/user-accounts/cc-user-panel.c:619
 msgid ""
 "Deleting a user while they are logged in can leave the system in an "
 "inconsistent state."
@@ -1770,12 +1788,12 @@ msgstr ""
 "Izbris uporabnika, ki je trenutno prijavljen, lahko vpliva na delovanje "
 "sistema."
 
-#: panels/user-accounts/cc-user-panel.c:629
+#: panels/user-accounts/cc-user-panel.c:628
 #, c-format
 msgid "Do you want to keep %s’s files?"
 msgstr "Ali želite obdržati datoteke uporabnika %s?"
 
-#: panels/user-accounts/cc-user-panel.c:633
+#: panels/user-accounts/cc-user-panel.c:632
 msgid ""
 "It is possible to keep the home directory, mail spool and temporary files "
 "around when deleting a user account."
@@ -1783,47 +1801,47 @@ msgstr ""
 "Mogoče je ohraniti domačo mapo, vrstilno mapo pošte in začasne datoteke tudi"
 " med brisanjem uporabniškega računa."
 
-#: panels/user-accounts/cc-user-panel.c:636
+#: panels/user-accounts/cc-user-panel.c:635
 msgid "_Delete Files"
 msgstr "_Izbriši datoteke"
 
-#: panels/user-accounts/cc-user-panel.c:637
+#: panels/user-accounts/cc-user-panel.c:636
 msgid "_Keep Files"
 msgstr "_Ohrani datoteke"
 
-#: panels/user-accounts/cc-user-panel.c:651
+#: panels/user-accounts/cc-user-panel.c:650
 #, c-format
 msgid "Are you sure you want to revoke remotely managed %s’s account?"
 msgstr ""
 "Ali ste prepričani, da želite preklicati oddaljeno voden račun uporabnika "
 "%s?"
 
-#: panels/user-accounts/cc-user-panel.c:655
+#: panels/user-accounts/cc-user-panel.c:654
 msgid "_Delete"
 msgstr "_Izbriši"
 
-#: panels/user-accounts/cc-user-panel.c:705
+#: panels/user-accounts/cc-user-panel.c:704
 msgctxt "Password mode"
 msgid "Account disabled"
 msgstr "Račun je onemogočen"
 
-#: panels/user-accounts/cc-user-panel.c:713
+#: panels/user-accounts/cc-user-panel.c:712
 msgctxt "Password mode"
 msgid "To be set at next login"
 msgstr "Nastavljeno bo ob naslednji prijavi"
 
-#: panels/user-accounts/cc-user-panel.c:716
+#: panels/user-accounts/cc-user-panel.c:715
 msgctxt "Password mode"
 msgid "None"
 msgstr "Brez"
 
-#: panels/user-accounts/cc-user-panel.c:759
+#: panels/user-accounts/cc-user-panel.c:758
 msgid "Logged in"
 msgstr "Trenutno dejavna prijava"
 
 #. Translators: This is a time format string in the style of "22:58".
 #. It indicates a login time which follows a date.
-#: panels/user-accounts/cc-user-panel.c:771
+#: panels/user-accounts/cc-user-panel.c:770
 #: panels/user-accounts/cc-login-history-dialog.c:173
 msgctxt "login date-time"
 msgid "%k:%M"
@@ -1831,7 +1849,7 @@ msgstr "%k:%M"
 
 #. Translators: This indicates a login date-time.
 #. The first %s is a date, and the second %s a time.
-#: panels/user-accounts/cc-user-panel.c:775
+#: panels/user-accounts/cc-user-panel.c:774
 #: panels/user-accounts/cc-login-history-dialog.c:176
 #, c-format
 msgctxt "login date-time"
@@ -1839,17 +1857,17 @@ msgid "%s, %s"
 msgstr "%s, %s"
 
 #. TRANSLATORS: Status of Parental Controls setup
-#: panels/user-accounts/cc-user-panel.c:846
-#: panels/user-accounts/cc-user-panel.c:935
+#: panels/user-accounts/cc-user-panel.c:845
+#: panels/user-accounts/cc-user-panel.c:931
 #: panels/wwan/cc-wwan-device-page.c:477
 msgid "Enabled"
 msgstr "Omogočeno"
 
-#: panels/user-accounts/cc-user-panel.c:1259
+#: panels/user-accounts/cc-user-panel.c:1255
 msgid "Failed to contact the accounts service"
 msgstr "Napaka med povezovanjem s storitvijo računov"
 
-#: panels/user-accounts/cc-user-panel.c:1261
+#: panels/user-accounts/cc-user-panel.c:1257
 msgid "Please make sure that the AccountService is installed and enabled."
 msgstr "Prepričajte se, da je paket AccoutnService nameščen in omogočen."
 
@@ -1857,7 +1875,7 @@ msgstr "Prepričajte se, da je paket AccoutnService nameščen in omogočen."
 #. * We split the line in 2 here to "make it look good", as there's
 #. * no good way to do this in GTK+ for tooltips. See:
 #. * https://bugzilla.gnome.org/show_bug.cgi?id=657168
-#: panels/user-accounts/cc-user-panel.c:1293
+#: panels/user-accounts/cc-user-panel.c:1289
 msgid ""
 "To make changes,\n"
 "click the * icon first"
@@ -1865,12 +1883,12 @@ msgstr ""
 "Za spreminjanje,\n"
 "kliknite na ikono *"
 
-#: panels/user-accounts/cc-user-panel.c:1366
+#: panels/user-accounts/cc-user-panel.c:1362
 msgid "Delete the selected user account"
 msgstr "Izbriši izbran uporabniški račun"
 
-#: panels/user-accounts/cc-user-panel.c:1378
-#: panels/user-accounts/cc-user-panel.c:1489
+#: panels/user-accounts/cc-user-panel.c:1374
+#: panels/user-accounts/cc-user-panel.c:1485
 msgid ""
 "To delete the selected user account,\n"
 "click the * icon first"
@@ -1878,7 +1896,7 @@ msgstr ""
 "Za izbris izbranega uporabniškega\n"
 "računa, kliknite na ikono *"
 
-#: panels/user-accounts/cc-user-panel.c:1535
+#: panels/user-accounts/cc-user-panel.c:1508
 msgid "Unlock to Add Users and Change Settings"
 msgstr "Odklenite za spreminjanje nastavitev in uporabnikov"
 
@@ -2193,6 +2211,7 @@ msgstr "Poln dostop do mape /dev"
 #: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
 #: panels/wwan/cc-wwan-network-dialog.ui.h:1
 #: panels/network/budgie-network-panel.desktop.in.in:3
+#: build/panels/network/budgie-network-panel.desktop.in:3
 msgid "Network"
 msgstr "Omrežje"
 
@@ -2297,6 +2316,7 @@ msgstr "Druge datoteke"
 #: panels/applications/cc-applications-panel.ui.h:26
 #: panels/notifications/cc-notifications-panel.ui.h:4
 #: panels/applications/budgie-applications-panel.desktop.in.in:3
+#: build/panels/applications/budgie-applications-panel.desktop.in:3
 msgid "Applications"
 msgstr "Programi"
 
@@ -2351,6 +2371,7 @@ msgstr "Kopiraj"
 
 #: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:3
 msgid "Sharing"
 msgstr "Souporaba"
 
@@ -2463,42 +2484,33 @@ msgstr "Metrični"
 msgid "Formats"
 msgstr "Jezikovna določila"
 
-#: panels/info-overview/cc-info-overview-panel.c:396
-#: panels/info-overview/cc-info-overview-panel.c:420
-#: panels/info-overview/cc-info-overview-panel.c:466
-#: panels/info-overview/cc-info-overview-panel.c:496
+#: panels/info-overview/cc-info-overview-panel.c:398
+#: panels/info-overview/cc-info-overview-panel.c:418
+#: panels/info-overview/cc-info-overview-panel.c:460
+#: panels/info-overview/cc-info-overview-panel.c:490
 #: panels/wwan/cc-wwan-details-dialog.c:101
 msgid "Unknown"
 msgstr "Neznano"
 
-#. translators: This is the name of the OS, followed by the build ID, for
-#. * example:
-#. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
-#. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: panels/info-overview/cc-info-overview-panel.c:428
-#, c-format
-msgid "%s; Build ID: %s"
-msgstr "%s, ID izgradnje: %s"
-
 #. translators: This is the type of architecture for the OS
-#: panels/info-overview/cc-info-overview-panel.c:443
+#: panels/info-overview/cc-info-overview-panel.c:437
 msgid "64-bit"
 msgstr "64-bitni sistem"
 
 #. translators: This is the type of architecture for the OS
-#: panels/info-overview/cc-info-overview-panel.c:446
+#: panels/info-overview/cc-info-overview-panel.c:440
 msgid "32-bit"
 msgstr "32-bitni sistem"
 
-#: panels/info-overview/cc-info-overview-panel.c:705
+#: panels/info-overview/cc-info-overview-panel.c:713
 msgid "X11"
 msgstr "X11"
 
-#: panels/info-overview/cc-info-overview-panel.c:709
+#: panels/info-overview/cc-info-overview-panel.c:717
 msgid "Wayland"
 msgstr "Wayland"
 
-#: panels/info-overview/cc-info-overview-panel.c:711
+#: panels/info-overview/cc-info-overview-panel.c:719
 msgctxt "Windowing system (Wayland, X11, or Unknown)"
 msgid "Unknown"
 msgstr "Neznano"
@@ -2627,14 +2639,14 @@ msgstr[2] "pred %i dnevoma"
 msgstr[3] "pred %i dnevi"
 
 #: panels/network/net-device-ethernet.c:147
-#: panels/network/connection-editor/ce-page-details.c:414
+#: panels/network/connection-editor/ce-page-details.c:412
 #: panels/network/net-device-mobile.c:442
 #: panels/network/connection-editor/details-page.ui.h:4
 msgid "IPv4 Address"
 msgstr "Naslov IPv4"
 
 #: panels/network/net-device-ethernet.c:149
-#: panels/network/connection-editor/ce-page-details.c:415
+#: panels/network/connection-editor/ce-page-details.c:413
 #: panels/network/net-device-mobile.c:443
 #: panels/network/connection-editor/details-page.ui.h:5
 #: panels/network/network-mobile.ui.h:4
@@ -2643,8 +2655,8 @@ msgstr "Naslov IPv6"
 
 #: panels/network/net-device-ethernet.c:152
 #: panels/network/net-device-ethernet.c:154
-#: panels/network/connection-editor/ce-page-details.c:417
-#: panels/network/connection-editor/ce-page-details.c:418
+#: panels/network/connection-editor/ce-page-details.c:415
+#: panels/network/connection-editor/ce-page-details.c:416
 #: panels/network/net-device-mobile.c:446
 #: panels/network/net-device-mobile.c:447 panels/network/network-mobile.ui.h:3
 msgid "IP Address"
@@ -2664,21 +2676,21 @@ msgid "Default Route"
 msgstr "Privzeta smer"
 
 #: panels/network/net-device-ethernet.c:169
-#: panels/network/connection-editor/ce-page-details.c:422
+#: panels/network/connection-editor/ce-page-details.c:420
 #: panels/network/net-device-mobile.c:451
 msgid "DNS4"
 msgstr "DNS4"
 
 #: panels/network/net-device-ethernet.c:170
-#: panels/network/connection-editor/ce-page-details.c:423
+#: panels/network/connection-editor/ce-page-details.c:421
 #: panels/network/net-device-mobile.c:452
 msgid "DNS6"
 msgstr "DNS6"
 
 #: panels/network/net-device-ethernet.c:172
 #: panels/network/net-device-ethernet.c:174
-#: panels/network/connection-editor/ce-page-details.c:425
-#: panels/network/connection-editor/ce-page-details.c:426
+#: panels/network/connection-editor/ce-page-details.c:423
+#: panels/network/connection-editor/ce-page-details.c:424
 #: panels/network/net-device-mobile.c:454
 #: panels/network/net-device-mobile.c:455
 #: panels/network/connection-editor/ip4-page.ui.h:11
@@ -2694,7 +2706,7 @@ msgstr "Nazadnje uporabljeno"
 
 #. Translators: network device speed
 #: panels/network/net-device-ethernet.c:220
-#: panels/network/connection-editor/ce-page-details.c:300
+#: panels/network/connection-editor/ce-page-details.c:298
 #, c-format
 msgid "%d Mb/s"
 msgstr "%d Mb/s"
@@ -2902,6 +2914,7 @@ msgstr "Izbor osebnega ključa"
 
 #: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
 #: panels/network/budgie-wifi-panel.desktop.in.in:3
+#: build/panels/network/budgie-wifi-panel.desktop.in:3
 msgid "Wi-Fi"
 msgstr "Omrežje Wi-Fi"
 
@@ -3436,61 +3449,61 @@ msgstr "Brez"
 msgid "Never"
 msgstr "Nikoli"
 
-#: panels/network/connection-editor/ce-page-details.c:298
+#: panels/network/connection-editor/ce-page-details.c:296
 #, c-format
 msgid "%d Mb/s (%1.1f GHz)"
 msgstr "%d Mb/s (%1.1f GHz)"
 
-#: panels/network/connection-editor/ce-page-details.c:315
+#: panels/network/connection-editor/ce-page-details.c:313
 msgid "2.4 GHz / 5 GHz"
 msgstr "2.4 GHz / 5 GHz"
 
-#: panels/network/connection-editor/ce-page-details.c:317
+#: panels/network/connection-editor/ce-page-details.c:315
 msgid "2.4 GHz"
 msgstr "2.4 GHz"
 
-#: panels/network/connection-editor/ce-page-details.c:319
+#: panels/network/connection-editor/ce-page-details.c:317
 msgid "5 GHz"
 msgstr "5 GHz"
 
-#: panels/network/connection-editor/ce-page-details.c:339
+#: panels/network/connection-editor/ce-page-details.c:337
 msgctxt "Signal strength"
 msgid "None"
 msgstr "Brez"
 
-#: panels/network/connection-editor/ce-page-details.c:341
+#: panels/network/connection-editor/ce-page-details.c:339
 msgctxt "Signal strength"
 msgid "Weak"
 msgstr "Šibko"
 
-#: panels/network/connection-editor/ce-page-details.c:343
+#: panels/network/connection-editor/ce-page-details.c:341
 msgctxt "Signal strength"
 msgid "Ok"
 msgstr "V redu"
 
-#: panels/network/connection-editor/ce-page-details.c:345
+#: panels/network/connection-editor/ce-page-details.c:343
 msgctxt "Signal strength"
 msgid "Good"
 msgstr "Dobro"
 
-#: panels/network/connection-editor/ce-page-details.c:347
+#: panels/network/connection-editor/ce-page-details.c:345
 msgctxt "Signal strength"
 msgid "Excellent"
 msgstr "Odlično"
 
-#: panels/network/connection-editor/ce-page-details.c:478
+#: panels/network/connection-editor/ce-page-details.c:476
 msgid "Forget Connection"
 msgstr "Pozabi povezavo"
 
-#: panels/network/connection-editor/ce-page-details.c:480
+#: panels/network/connection-editor/ce-page-details.c:478
 msgid "Remove Connection Profile"
 msgstr "Odstrani profil povezave"
 
-#: panels/network/connection-editor/ce-page-details.c:482
+#: panels/network/connection-editor/ce-page-details.c:480
 msgid "Remove VPN"
 msgstr "Odstrani VPN"
 
-#: panels/network/connection-editor/ce-page-details.c:500
+#: panels/network/connection-editor/ce-page-details.c:498
 msgid "Details"
 msgstr "Podrobnosti"
 
@@ -3872,15 +3885,15 @@ msgstr ""
 msgid "_Set"
 msgstr "_Nastavi"
 
-#: panels/wwan/cc-wwan-data.c:542
+#: panels/wwan/cc-wwan-data.c:547
 msgid "Operation Cancelled"
 msgstr "Opravilo je preklicano"
 
-#: panels/wwan/cc-wwan-data.c:545
+#: panels/wwan/cc-wwan-data.c:550
 msgid "<b>Error:</b> Access denied changing settings"
 msgstr "<b>Napakar:</b> dostop do spreminjanja nastavitev je onemogočen"
 
-#: panels/wwan/cc-wwan-data.c:548
+#: panels/wwan/cc-wwan-data.c:553
 msgid "<b>Error:</b> Mobile Equipment Error"
 msgstr "<b>Napaka:</b> Napaka mobilne naprave"
 
@@ -3933,13 +3946,13 @@ msgctxt "timezone map"
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
-#: panels/thunderbolt/cc-bolt-panel.c:175
+#: panels/thunderbolt/cc-bolt-panel.c:240
 msgid ""
 "The Thunderbolt subsystem (boltd) is not installed or not set up properly."
 msgstr ""
 "Podsistem Thunderbolt (boltd) ni nameščen oziroma je neustrezno nastavljen."
 
-#: panels/thunderbolt/cc-bolt-panel.c:468
+#: panels/thunderbolt/cc-bolt-panel.c:533
 msgid ""
 "Thunderbolt could not be detected.\n"
 "Either the system lacks Thunderbolt support, it has been disabled in the BIOS or is set to an unsupported security level in the BIOS."
@@ -3947,15 +3960,15 @@ msgstr ""
 "Sistema Thunderbolt ni mogoče zaznati.\n"
 "Podpora sistemu morda ni na voljo, sistem je v zaganjalniku BIOS onemogočen, ali pa je nastavljen na nepodprto varnostno raven."
 
-#: panels/thunderbolt/cc-bolt-panel.c:512
+#: panels/thunderbolt/cc-bolt-panel.c:577
 msgid "Thunderbolt support has been disabled in the BIOS."
 msgstr "Podpora Thunderbolt je onemogočena med nastavitvami BIOS."
 
-#: panels/thunderbolt/cc-bolt-panel.c:516
+#: panels/thunderbolt/cc-bolt-panel.c:581
 msgid "Thunderbolt security level could not be determined."
 msgstr "Varnostne ravni Thunderbolt ni mogoče določiti."
 
-#: panels/thunderbolt/cc-bolt-panel.c:621
+#: panels/thunderbolt/cc-bolt-panel.c:686
 #, c-format
 msgid "Error switching direct mode: %s"
 msgstr "Napaka preklapljanja neposrednega načina: %s"
@@ -4169,7 +4182,7 @@ msgstr "Pult za prikaz"
 msgid "[PANEL] [ARGUMENT…]"
 msgstr "[PULT][ARGUMENT …]"
 
-#: shell/cc-panel-loader.c:295
+#: shell/cc-panel-loader.c:298
 msgid "Available panels:"
 msgstr "Razpoložljivi pulti:"
 
@@ -4179,6 +4192,7 @@ msgstr "Zasebnost"
 
 #: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
+#: build/shell/budgie-control-center.desktop.in:3
 msgid "Budgie Control Center"
 msgstr ""
 
@@ -4386,13 +4400,8 @@ msgstr "Razveljavi"
 msgid "No printers"
 msgstr "Ni nastavljenih tiskalnikov"
 
-#. Translators: This button adds new printer.
-#: panels/printers/printers.ui.h:7
-msgid "Add a Printer…"
-msgstr "Dodaj tiskalnik …"
-
 #. Translators: The CUPS server is not running (we can not connect to it).
-#: panels/printers/printers.ui.h:9
+#: panels/printers/printers.ui.h:7
 msgid ""
 "Sorry! The system printing service\n"
 "doesn’t seem to be available."
@@ -4523,6 +4532,7 @@ msgstr "Nastavitve vmesnika Bluetooth"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:3
 msgid "Wacom Tablet"
 msgstr "Tablica Wacom"
 
@@ -5340,6 +5350,7 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:20
 #: panels/display/budgie-display-panel.desktop.in.in:3
+#: build/panels/display/budgie-display-panel.desktop.in:3
 msgid "Displays"
 msgstr "Zasloni"
 
@@ -6330,16 +6341,19 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:5
 #: panels/camera/budgie-camera-panel.desktop.in.in:3
+#: build/panels/camera/budgie-camera-panel.desktop.in:3
 msgid "Camera"
 msgstr "Kamera"
 
 #: panels/applications/cc-applications-panel.ui.h:7
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:3
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:3
 msgid "Microphone"
 msgstr "Mikrofon"
 
 #: panels/applications/cc-applications-panel.ui.h:8
 #: panels/location/budgie-location-panel.desktop.in.in:3
+#: build/panels/location/budgie-location-panel.desktop.in:3
 msgid "Location Services"
 msgstr "Storitve določanja položaja"
 
@@ -6374,6 +6388,7 @@ msgstr "Iskanje ~"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:3
 msgid "Notifications"
 msgstr "Obvestila"
 
@@ -6751,27 +6766,36 @@ msgstr "Poteka preračunavanje …"
 msgid "OS Name"
 msgstr "Naziv OS"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:10
+#. translators: this field contains the distro build ID
+#: panels/info-overview/cc-info-overview-panel.ui.h:11
+msgid "OS Build ID"
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
 msgstr "Vrsta OS"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:11
+#: panels/info-overview/cc-info-overview-panel.ui.h:13
 msgid "Windowing System"
 msgstr "Sistem izrisovanja oken"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:12
+#: panels/info-overview/cc-info-overview-panel.ui.h:14
 msgid "Virtualization"
 msgstr "Ustvarjanje navideznih naprav"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:13
+#: panels/info-overview/cc-info-overview-panel.ui.h:15
+msgid "Kernel Version"
+msgstr ""
+
+#: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
 msgstr "Posodobitve programske opreme"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:14
+#: panels/info-overview/cc-info-overview-panel.ui.h:17
 msgid "Rename Device"
 msgstr "Preimenuj napravo"
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:15
+#: panels/info-overview/cc-info-overview-panel.ui.h:18
 msgid ""
 "The device name is used to identify this device when it is viewed over the "
 "network, or when pairing Bluetooth devices."
@@ -6779,7 +6803,7 @@ msgstr ""
 "Ime naprave se uporablja za določitev naprave, kadar je ta prikazana v "
 "omrežju oziroma ob povezovanju naprav Bluetooth."
 
-#: panels/info-overview/cc-info-overview-panel.ui.h:16
+#: panels/info-overview/cc-info-overview-panel.ui.h:19
 msgid "_Rename"
 msgstr "_Preimenuj"
 
@@ -7537,6 +7561,7 @@ msgstr "december"
 
 #: panels/datetime/cc-datetime-panel.ui.h:13
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:3
 msgid "Date & Time"
 msgstr "Datum in čas"
 
@@ -8031,10 +8056,12 @@ msgid "Help"
 msgstr "Pomoč"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:3
+#: build/panels/printers/budgie-printers-panel.desktop.in:3
 msgid "Printers"
 msgstr "Tiskalniki"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:4
+#: build/panels/printers/budgie-printers-panel.desktop.in:4
 msgid "Add printers, view printer jobs and decide how you want to print"
 msgstr ""
 "Dodajte tiskalnike, oglejte si posle tiskalnika in se odločite, kako želite "
@@ -8043,10 +8070,12 @@ msgstr ""
 #. Translators: Search terms to find the Printers panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/printers/budgie-printers-panel.desktop.in.in:16
+#: build/panels/printers/budgie-printers-panel.desktop.in:16
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
 msgstr "Tiskalnik;Vrsta;Tiskanje;Papir;Črnilo;Toner;"
 
 #: panels/location/budgie-location-panel.desktop.in.in:4
+#: build/panels/location/budgie-location-panel.desktop.in:4
 msgid "Protect your location information"
 msgstr "Zaščitite podrobnosti o trenutnem mestu"
 
@@ -8055,12 +8084,16 @@ msgstr "Zaščitite podrobnosti o trenutnem mestu"
 #: panels/location/budgie-location-panel.desktop.in.in:16
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:16
 #: panels/usage/budgie-usage-panel.desktop.in.in:16
+#: build/panels/location/budgie-location-panel.desktop.in:16
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:16
+#: build/panels/usage/budgie-usage-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
 msgstr ""
 "zaslon;zaklep;diagnostika;crash;sesutje;zasebnost;hrošči;nedavno;začasno;tmp;index;ime;network;omrežje;istovetnost;identiteta;podatki;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:4
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:4
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Nastavitev preslikave gumbov in prilagoditev občutljivosti paličice grafične"
@@ -8069,14 +8102,17 @@ msgstr ""
 #. Translators: Search terms to find the Wacom Tablet panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:15
+#: build/panels/wacom/budgie-wacom-panel.desktop.in:15
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
 msgstr "Tablica;Wacom;Stylus;Radirka;Eraser;Miška;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
+#: build/panels/power/budgie-power-panel.desktop.in:3
 msgid "Power"
 msgstr "Napajanje"
 
 #: panels/power/budgie-power-panel.desktop.in.in:4
+#: build/panels/power/budgie-power-panel.desktop.in:4
 msgid "View your battery status and change power saving settings"
 msgstr ""
 "Oglejte si stanje baterije in spremenite nastavitve varčevanje z energijo"
@@ -8084,6 +8120,7 @@ msgstr ""
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/power/budgie-power-panel.desktop.in.in:15
+#: build/panels/power/budgie-power-panel.desktop.in:15
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
 msgstr ""
@@ -8091,10 +8128,12 @@ msgstr ""
 "mirovanju;baterija;zaslon;DPMS;nedejavnost;svetlost;energija;poraba;"
 
 #: panels/color/budgie-color-panel.desktop.in.in:3
+#: build/panels/color/budgie-color-panel.desktop.in:3
 msgid "Color"
 msgstr "Barva"
 
 #: panels/color/budgie-color-panel.desktop.in.in:4
+#: build/panels/color/budgie-color-panel.desktop.in:4
 msgid ""
 "Calibrate the color of your devices, such as displays, cameras or printers"
 msgstr ""
@@ -8103,38 +8142,46 @@ msgstr ""
 #. Translators: Search terms to find the Color panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/color/budgie-color-panel.desktop.in.in:15
+#: build/panels/color/budgie-color-panel.desktop.in:15
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
 msgstr "Barva;ICC;Profil;Umerjanje;Tiskalnik;Zaslon;"
 
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:4
 msgid "Turn Bluetooth on and off and connect your devices"
 msgstr "Vklopite in izklopite Bluetooth in povežite svoje naprave"
 
 #. Translators: Search terms to find the Bluetooth panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
+#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:15
 msgid "share;sharing;bluetooth;obex;"
 msgstr "souporaba;izmenjava;obex;bluetooth;povezovanje;"
 
 #: panels/background/budgie-background-panel.desktop.in.in:3
+#: build/panels/background/budgie-background-panel.desktop.in:3
 msgid "Background"
 msgstr "Ozadje"
 
 #: panels/background/budgie-background-panel.desktop.in.in:4
+#: build/panels/background/budgie-background-panel.desktop.in:4
 msgid "Change your background image to a wallpaper or photo"
 msgstr "Spremeni ozadje na sliko namizja ali fotografijo"
 
 #. Translators: Search terms to find the Background panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/background/budgie-background-panel.desktop.in.in:15
+#: build/panels/background/budgie-background-panel.desktop.in:15
 msgid "Wallpaper;Screen;Desktop;"
 msgstr "Slika ozadja;Zaslon;Namizje;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
+#: build/panels/sound/budgie-sound-panel.desktop.in:3
 msgid "Sound"
 msgstr "Zvok"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:4
+#: build/panels/sound/budgie-sound-panel.desktop.in:4
 msgid "Change sound levels, inputs, outputs, and alert sounds"
 msgstr ""
 "Spreminjanje zvokovnih naprav, glasnosti zvoka in povezljivost z dogodki"
@@ -8142,6 +8189,7 @@ msgstr ""
 #. Translators: Search terms to find the Sound panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sound/budgie-sound-panel.desktop.in.in:15
+#: build/panels/sound/budgie-sound-panel.desktop.in:15
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 msgstr ""
@@ -8149,12 +8197,14 @@ msgstr ""
 "slušalke;Zvok;Dovod;Odvod;"
 
 #: panels/display/budgie-display-panel.desktop.in.in:4
+#: build/panels/display/budgie-display-panel.desktop.in:4
 msgid "Choose how to use connected monitors and projectors"
 msgstr "Izbor načina uporabe povezanih zaslonov in projektorjev"
 
 #. Translators: Search terms to find the Displays panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/display/budgie-display-panel.desktop.in.in:15
+#: build/panels/display/budgie-display-panel.desktop.in:15
 msgid ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
 msgstr ""
@@ -8162,10 +8212,12 @@ msgstr ""
 " zamik;zora;mrak;barve;"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:3
 msgid "Keyboard"
 msgstr "Tipkovnica"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:4
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:4
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
@@ -8176,6 +8228,7 @@ msgstr ""
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
+#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:15
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
@@ -8183,16 +8236,19 @@ msgstr ""
 "površina;okno;prilagoditev;velikost;kontrast;približanje;vir;zaklep;glasnost;jakost;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:3
 msgid "Users"
 msgstr "Uporabniki"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:4
 msgid "Add or remove users and change your password"
 msgstr "Upravljanje uporabnikov in spreminjanje gesel"
 
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:15
+#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:15
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
@@ -8202,17 +8258,20 @@ msgstr ""
 "uporabe;Otroci;Otrok;Mladostniki;"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
 msgstr "Dostopnost"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:4
 msgid "Make it easier to see, hear, type, point and click"
 msgstr "Naj bo enostavnejše videti, slišati, tipkati, kazati in klikati"
 
 #. Translators: Search terms to find the Accessibility panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:15
+#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:15
 msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
@@ -8220,47 +8279,56 @@ msgstr ""
 "tipkovnica;miška;a11y;dostopnost;kontrast;približanje;zaslon;bralnik;besedilo;pisava;velikost;AccessX;lepljive;počasne;odskočne;tipke;zamik;odskočne;dvojne;klik;ponovitev;zvok;tipkanje;tipkovnica,nastavitve;sluh;kontrast;zvok;približanje;zoom;zaslon;velikost;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:3
 msgid "Multitasking"
 msgstr "Večopravilnost"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:4
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:4
 msgid "Manage preferences for productivity and multitasking"
 msgstr "Upravljanje nastavitev za učinkovito delo in večopravilnost"
 
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
+#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:15
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
 "Multitasking;Multitask;Productivity;Customize;Desktop;Namizje;Večopravilnost;Učinkovitost;Prilagajanje;Delo;"
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
+#: build/panels/applications/budgie-applications-panel.desktop.in:4
 msgid "Control various application permissions and settings"
 msgstr "Nadzor nad dovoljenji in nastavitvami številnih programov"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
+#: build/panels/applications/budgie-applications-panel.desktop.in:16
 msgid "application;flatpak;permission;setting;"
 msgstr "program;flatpak;dovoljenja;nastavitve;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:4
 msgid "Control what you want to share with others"
 msgstr "Nadzor nad souporabo podatkov in datotek z drugimi uporabniki"
 
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:16
+#: build/panels/sharing/budgie-sharing-panel.desktop.in:16
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
 msgstr ""
 "souporaba;izmenjava;ssh;gostitelj;ime;oddaljeno;namizje;bluetooth;obex;predstavnost;zvok;audio;slika;video;fotografije;filmi;strežnik;izrisovanje;"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:3
 msgid "Removable Media"
 msgstr "Odstranljivi nosilci"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:4
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:4
 msgid "Configure Removable Media settings"
 msgstr "Nastavitve odstranljivih nosilcev"
 
@@ -8268,6 +8336,7 @@ msgstr "Nastavitve odstranljivih nosilcev"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
+#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:15
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
@@ -8275,10 +8344,12 @@ msgstr ""
 " zagon;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
+#: build/panels/region/budgie-region-panel.desktop.in:3
 msgid "Region & Language"
 msgstr "Področje in Jezik"
 
 #: panels/region/budgie-region-panel.desktop.in.in:4
+#: build/panels/region/budgie-region-panel.desktop.in:4
 msgid "Select your display language and formats"
 msgstr "Izbor jezika za zapisov"
 
@@ -8286,14 +8357,17 @@ msgstr "Izbor jezika za zapisov"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:15
+#: build/panels/region/budgie-region-panel.desktop.in:15
 msgid "Language;Layout;Keyboard;Input;"
 msgstr "jezik,razporeditev;tipkovnica;vnos;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:3
 msgid "About"
 msgstr "O programu"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:4
 msgid "View information about your system"
 msgstr "Pregled podrobnosti sistema"
 
@@ -8303,6 +8377,7 @@ msgstr "Pregled podrobnosti sistema"
 #. "Preferred Applications" is the old name for the preference, so make
 #. sure that you use the same "translation" for those keywords
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:19
+#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:19
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
@@ -8310,24 +8385,28 @@ msgstr ""
 " zagon;nastavitve;"
 
 #: panels/network/budgie-network-panel.desktop.in.in:4
+#: build/panels/network/budgie-network-panel.desktop.in:4
 msgid "Control how you connect to the Internet"
 msgstr "Nadzor nad načini povezovanja v internet"
 
 #. Translators: Search terms to find the Network panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-network-panel.desktop.in.in:15
+#: build/panels/network/budgie-network-panel.desktop.in:15
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 msgstr ""
 "omrežje;brezžično;Wi-"
 "Fi;Wifi;IP;LAN;Proxy;Posredniški;širokopasovno;modem;bluetooth;vpn;vlan;most;vez;DNS;"
 
 #: panels/network/budgie-wifi-panel.desktop.in.in:4
+#: build/panels/network/budgie-wifi-panel.desktop.in:4
 msgid "Control how you connect to Wi-Fi networks"
 msgstr "Nadzor nad načini povezovanja v omrežja Wi-Fi"
 
 #. Translators: Search terms to find the Wi-Fi panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-wifi-panel.desktop.in.in:15
+#: build/panels/network/budgie-wifi-panel.desktop.in:15
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 msgstr ""
 "omrežje;brezžično;Wi-"
@@ -8335,30 +8414,36 @@ msgstr ""
 " točka;"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:3
 msgid "Mobile Network"
 msgstr "Mobilno omrežje"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:4
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:4
 msgid "Configure Telephony and mobile data connections"
 msgstr "Nastavitve telefonije in mobilnih podatkovnih povezav"
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:16
+#: build/panels/wwan/budgie-wwan-panel.desktop.in:16
 msgid "cellular;wwan;telephony;sim;mobile;"
 msgstr "cellular;wwan;telephony;telefon;kartica;klicanje;mobilno;sim;mobile;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:4
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:4
 msgid "Change the date and time, including time zone"
 msgstr "Spreminjanje sistemskega časa, datuma in časovnega območja"
 
 #. Translators: Search terms to find the Date and Time panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:15
+#: build/panels/datetime/budgie-datetime-panel.desktop.in:15
 msgid "Clock;Timezone;Location;"
 msgstr "Ura;Časovni pas;Mesto;"
 
 #: panels/camera/budgie-camera-panel.desktop.in.in:4
+#: build/panels/camera/budgie-camera-panel.desktop.in:4
 msgid "Protect your pictures"
 msgstr "Zaščita slik in fotografij"
 
@@ -8366,26 +8451,32 @@ msgstr "Zaščita slik in fotografij"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/camera/budgie-camera-panel.desktop.in.in:16
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:16
+#: build/panels/camera/budgie-camera-panel.desktop.in:16
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
 "zaslon;zaklep;diagnostika;zasebnost;hrošči;sesutje;nedavno;začasno;tmp;index;ime;omrežje;istovetnost;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:4
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:4
 msgid "Control which notifications are displayed and what they show"
 msgstr "Nadzirajte katera obvestila so prikazana in kaj prikazujejo"
 
 #. Translators: Search terms to find the Notifications panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
+#: build/panels/notifications/budgie-notifications-panel.desktop.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
 msgstr "Obvestila;sporočila;pojavna sporočila;opozorila;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:3
 msgid "Default Applications"
 msgstr "Privzeti programi"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:4
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:4
 msgid "Configure Default Applications"
 msgstr "Nastavitev privzetih programov"
 
@@ -8393,19 +8484,23 @@ msgstr "Nastavitev privzetih programov"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
+#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:15
 msgid "default;application;preferred;media;"
 msgstr ""
 "privzeto;program;prednostno;priljubljeno;media;predstavnost;sistem;podrobnosti;info;informacije;različica;"
 
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:4
+#: build/panels/microphone/budgie-microphone-panel.desktop.in:4
 msgid "Protect your conversations"
 msgstr "Zaščita pogovorov"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:3
 msgid "Thunderbolt"
 msgstr "Thunderbolt"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:4
 msgid "Manage Thunderbolt devices"
 msgstr "Upravljanje naprav Thunderbolt"
 
@@ -8413,14 +8508,17 @@ msgstr "Upravljanje naprav Thunderbolt"
 #. Do NOT translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
+#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:15
 msgid "Thunderbolt;privacy;"
 msgstr "Thunderbolt;zasebnost;"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:3
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:3
 msgid "Mouse & Touchpad"
 msgstr "Miška in Sledilna ploščica"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:4
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:4
 msgid ""
 "Change your mouse or touchpad sensitivity and select right or left-handed"
 msgstr ""
@@ -8431,32 +8529,39 @@ msgstr ""
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:15
+#: build/panels/mouse/budgie-mouse-panel.desktop.in:15
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
 msgstr ""
 "Sledilna ploščica;Kazalnik;Klik;Udarjanje;Dvojni;Gumb;Sledilna "
 "kroglica;Drsnik;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:3
 msgid "Diagnostics"
 msgstr "Diagnostika napak"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:4
+#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:4
 msgid "Report your problems"
 msgstr "Pošiljajte poročila o težavah"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
+#: build/panels/usage/budgie-usage-panel.desktop.in:3
 msgid "File History & Trash"
 msgstr "Zgodovina datoteke in smeti"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:4
+#: build/panels/usage/budgie-usage-panel.desktop.in:4
 msgid "Don't leave traces"
 msgstr "Ne puščaj sledi"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:3
 msgid "Online Accounts"
 msgstr "Spletni računi"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:4
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:4
 msgid "Connect to your online accounts and decide what to use them for"
 msgstr ""
 "Nadzirajte svoje spletne račune in se odločite za kaj jih boste uporabili"
@@ -8467,6 +8572,7 @@ msgstr ""
 #. For ReadItLater and Pocket, see
 #. http://en.wikipedia.org/wiki/Pocket_(application)
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
+#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:18
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
 msgstr ""
@@ -8476,6 +8582,7 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
+#: build/shell/budgie-control-center.desktop.in:13
 msgid "Preferences;Settings;"
 msgstr "Možnosti;Nastavitve;"
 
