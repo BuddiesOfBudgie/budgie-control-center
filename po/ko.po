@@ -5,7 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
-# Junghee Lee <daemul72@gmail.com>, 2022
+# Junghee Lee <daemul72@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-24 18:45+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2022\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2023\n"
 "Language-Team: Korean (https://www.transifex.com/buddiesofbudgie/teams/129844/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -751,12 +751,12 @@ msgstr "균형"
 
 #: panels/power/cc-power-profile-row.c:137
 msgid "Standard performance and power usage."
-msgstr "표준의 성능 및 전력 사용입니다."
+msgstr "표준 성능 및 전력 사용입니다."
 
 #: panels/power/cc-power-profile-row.c:140
 msgctxt "Power profile"
 msgid "Power Saver"
-msgstr "절전"
+msgstr "절전 기능"
 
 #: panels/power/cc-power-profile-row.c:141
 msgid "Reduced performance and power usage."
@@ -851,7 +851,7 @@ msgstr "무선 키보드"
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:197
 msgid "Uninterruptible power supply"
-msgstr "무정전 전원 장치"
+msgstr "무정전 전원 장치(UPS)"
 
 #. TRANSLATORS: secondary battery
 #: panels/power/cc-battery-row.c:200
@@ -1583,14 +1583,14 @@ msgstr "지문 목록 표시에 실패했습니다: %s"
 #. enabled using your pam authorization module'
 #: panels/user-accounts/cc-fingerprint-dialog.c:627
 msgid "your pam authorization module"
-msgstr ""
+msgstr "사용자의 팸 인증 모듈"
 
 #. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
 #. an executable that is calculated when the app is running
 #: panels/user-accounts/cc-fingerprint-dialog.c:659
 #, c-format
 msgid "Ensure fprintd has been enabled using %s"
-msgstr ""
+msgstr "%s을(를) 사용하여 fprintd가 활성화되었는지 확인합니다"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
@@ -1656,7 +1656,7 @@ msgstr "지문 입력 장치의 저장소가 가득 찼습니다"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:887
 msgid "Fingerprint is a duplicate"
-msgstr ""
+msgstr "지문이 중복됩니다"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
@@ -4541,7 +4541,7 @@ msgstr "시스템 성능과 전력 사용에 영향을 미칩니다."
 
 #: panels/power/cc-power-panel.ui.h:25
 msgid "Power Saving Options"
-msgstr "전기 절약 옵션"
+msgstr "절전 옵션"
 
 #: panels/power/cc-power-panel.ui.h:26
 msgid "Automatic Screen Brightness"
@@ -4569,7 +4569,7 @@ msgstr "일정 시간 사용하지 않으면 화면을 끕니다."
 
 #: panels/power/cc-power-panel.ui.h:32
 msgid "Automatic Power Saver"
-msgstr "자동 절전"
+msgstr "자동 절전 기능"
 
 #: panels/power/cc-power-panel.ui.h:33
 msgid "Enables power saver mode when battery is low."
@@ -6600,7 +6600,7 @@ msgstr "운영 체제 이름"
 #. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
 msgid "OS Build ID"
-msgstr ""
+msgstr "OS 빌드 ID"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
@@ -6616,7 +6616,7 @@ msgstr "가상화"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
 msgid "Kernel Version"
-msgstr ""
+msgstr "커널 버전"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
@@ -7649,28 +7649,28 @@ msgstr "터치패드 속도"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Click Method"
-msgstr ""
+msgstr "터치패드 클릭 방법"
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
-msgstr ""
+msgstr "선택한 동작을 사용하여 버튼 동작(왼쪽, 가운데, 오른쪽)을 만듭니다."
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
 msgid "Use the touchpad default"
-msgstr ""
+msgstr "터치패드 기본값 사용하기"
 
 #: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "No buttons created"
-msgstr ""
+msgstr "생성된 버튼 없음"
 
 #: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "Left, middle and right areas"
-msgstr ""
+msgstr "왼쪽, 가운데, 오른쪽 영역"
 
 #: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "One, two and three fingers"
-msgstr ""
+msgstr "손가락 하나, 둘, 셋"
 
 #: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "Tap to Click"
@@ -8537,7 +8537,7 @@ msgstr "시스템"
 
 #: panels/keyboard/01-budgie.xml.in:4
 msgid "Show the Power Dialog"
-msgstr ""
+msgstr "전원 대화상자 표시하기"
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"

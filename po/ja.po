@@ -5,7 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
-# Green, 2022
+# Green <usergreen@users.osdn.me>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-24 18:45+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Green, 2022\n"
+"Last-Translator: Green <usergreen@users.osdn.me>, 2023\n"
 "Language-Team: Japanese (https://www.transifex.com/buddiesofbudgie/teams/129844/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6602,7 +6602,7 @@ msgstr "OS 名"
 #. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
 msgid "OS Build ID"
-msgstr ""
+msgstr "OS のビルド ID"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
@@ -6618,7 +6618,7 @@ msgstr "仮想化"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
 msgid "Kernel Version"
-msgstr ""
+msgstr "Kernel のバージョン"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
@@ -7289,7 +7289,7 @@ msgstr "ネットワークの状態"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:7
 msgid "Own Number"
-msgstr ""
+msgstr "所有者番号"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:8
 msgid "Device Details"
@@ -7623,11 +7623,11 @@ msgstr "マウスを動かしたときのポインターの動き方です。"
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "Flat"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "アダプティブ"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7649,16 +7649,16 @@ msgstr "タッチパッドの速度"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Click Method"
-msgstr ""
+msgstr "タッチパッドのクリック方式"
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
-msgstr ""
+msgstr "選択したアクションを使って、（左・中・右）ボタンが動作するようにします。"
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
 msgid "Use the touchpad default"
-msgstr ""
+msgstr "タッチパッドの初期設定を使用"
 
 #: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "No buttons created"

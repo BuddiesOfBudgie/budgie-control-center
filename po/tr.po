@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Sabri Ünal <libreajans@gmail.com>, 2022
+# Sabri Ünal <libreajans@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-24 18:45+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>, 2022\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>, 2023\n"
 "Language-Team: Turkish (https://www.transifex.com/buddiesofbudgie/teams/129844/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1606,14 +1606,14 @@ msgstr "Parmak izleri listelenemedi: %s"
 #. enabled using your pam authorization module'
 #: panels/user-accounts/cc-fingerprint-dialog.c:627
 msgid "your pam authorization module"
-msgstr ""
+msgstr "pam kimlik doğrulama modülünüz"
 
 #. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
 #. an executable that is calculated when the app is running
 #: panels/user-accounts/cc-fingerprint-dialog.c:659
 #, c-format
 msgid "Ensure fprintd has been enabled using %s"
-msgstr ""
+msgstr "%s kullanarak fprintd hizmetinin etkinleştirildiğinden emin olun"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
@@ -1679,7 +1679,7 @@ msgstr "Parmak izi aygıtının deposu dolu"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:887
 msgid "Fingerprint is a duplicate"
-msgstr ""
+msgstr "Parmak izi ikiz"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
@@ -3904,7 +3904,7 @@ msgstr "%s (%s)"
 msgid ""
 "The Thunderbolt subsystem (boltd) is not installed or not set up properly."
 msgstr ""
-"Thunderbolt altsistemi (boltd) yüklenmemiş veya doğru şekilde ayarlanmamış."
+"Thunderbolt altsistemi (boltd) kurulmamış ya da doğru şekilde ayarlanmamış."
 
 #: panels/thunderbolt/cc-bolt-panel.c:533
 msgid ""
@@ -6728,7 +6728,7 @@ msgstr "İşletim Sistemi Adı"
 #. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
 msgid "OS Build ID"
-msgstr ""
+msgstr "İşletim Sistemi İnşa Kimliği"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
@@ -6744,7 +6744,7 @@ msgstr "Sanallaştırma"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
 msgid "Kernel Version"
-msgstr ""
+msgstr "Çekirdek Sürümü"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
@@ -7791,28 +7791,28 @@ msgstr "Dokunmatik Yüzey Hızı"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Click Method"
-msgstr ""
+msgstr "Dokunmaki Yüzek Tıklama Metodu"
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
-msgstr ""
+msgstr "Seçilen eylemi kullanarak düğme davranışı (sol, orta ve sağ) oluştur."
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
 msgid "Use the touchpad default"
-msgstr ""
+msgstr "Dokunmatik yüzey öntanımlısını kullan"
 
 #: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "No buttons created"
-msgstr ""
+msgstr "Düğme oluşturulmadı"
 
 #: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "Left, middle and right areas"
-msgstr ""
+msgstr "Sol, orta ve sağ alanlar"
 
 #: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "One, two and three fingers"
-msgstr ""
+msgstr "Bir, iki ve üç parmak"
 
 #: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "Tap to Click"
@@ -8696,7 +8696,7 @@ msgstr "Sistem"
 
 #: panels/keyboard/01-budgie.xml.in:4
 msgid "Show the Power Dialog"
-msgstr ""
+msgstr "Güç İletişim Kutusunu Göster"
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"
