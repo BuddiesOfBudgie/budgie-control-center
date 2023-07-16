@@ -41,6 +41,7 @@ struct _CcDefaultAppsPanel
   GtkWidget *default_apps_grid;
 
   GtkWidget *web_label;
+  GtkWidget *files_label;
   GtkWidget *mail_label;
   GtkWidget *calendar_label;
   GtkWidget *music_label;
@@ -154,6 +155,7 @@ info_panel_setup_default_app (CcDefaultAppsPanel *self,
 
 static DefaultAppData preferred_app_infos[] = {
   { "x-scheme-handler/http", OFFSET (web_label), "text/html;application/xhtml+xml;x-scheme-handler/https" },
+  { "inode/directory", OFFSET (files_label), NULL },
   { "x-scheme-handler/mailto", OFFSET (mail_label), NULL },
   { "text/calendar", OFFSET (calendar_label), NULL },
   { "audio/x-vorbis+ogg", OFFSET (music_label), "audio/*" },
@@ -181,6 +183,7 @@ cc_default_apps_panel_class_init (CcDefaultAppsPanelClass *klass)
   gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/default-apps/cc-default-apps-panel.ui");
   gtk_widget_class_bind_template_child (widget_class, CcDefaultAppsPanel, default_apps_grid);
   gtk_widget_class_bind_template_child (widget_class, CcDefaultAppsPanel, web_label);
+  gtk_widget_class_bind_template_child (widget_class, CcDefaultAppsPanel, files_label);
   gtk_widget_class_bind_template_child (widget_class, CcDefaultAppsPanel, mail_label);
   gtk_widget_class_bind_template_child (widget_class, CcDefaultAppsPanel, calendar_label);
   gtk_widget_class_bind_template_child (widget_class, CcDefaultAppsPanel, music_label);
