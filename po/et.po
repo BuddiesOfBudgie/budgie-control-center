@@ -5,6 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# vaba <vaba@riseup.net>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -13,8 +14,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-24 18:45+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
-"Language-Team: Estonian (https://www.transifex.com/buddiesofbudgie/teams/129844/et/)\n"
+"Last-Translator: vaba <vaba@riseup.net>, 2023\n"
+"Language-Team: Estonian (https://app.transifex.com/buddiesofbudgie/teams/129844/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +41,7 @@ msgstr "Väljundsalv"
 #: panels/printers/pp-options-dialog.c:91
 msgctxt "printing option"
 msgid "Resolution"
-msgstr ""
+msgstr "Lahutusvõime"
 
 #: panels/printers/pp-options-dialog.c:92
 msgid "GhostScript pre-filtering"
@@ -119,7 +120,7 @@ msgstr "Laiendatud"
 #: panels/printers/pp-options-dialog.c:857
 #: panels/printers/pp-options-dialog.ui.h:2
 msgid "Test Page"
-msgstr ""
+msgstr "Testlehekülg"
 
 #. Translators: Name of job which makes printer to print test page
 #: panels/printers/pp-options-dialog.c:870
@@ -129,7 +130,7 @@ msgstr "Testleht"
 #. Translators: This is the label of the button that opens the Jobs Dialog.
 #: panels/printers/pp-printer-entry.c:523 panels/printers/printer-entry.ui.h:8
 msgid "No Active Jobs"
-msgstr ""
+msgstr "Katiivseid tööprotsesse ei ole"
 
 #. Translators: This is the label of the button that opens the Jobs Dialog.
 #: panels/printers/pp-printer-entry.c:528
@@ -301,7 +302,7 @@ msgstr "Pööratud portree"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "Automaatne konfiguratsioon"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:692
@@ -334,13 +335,13 @@ msgstr "Ootel"
 #: panels/printers/pp-job-row.c:143
 msgctxt "print job"
 msgid "Paused"
-msgstr ""
+msgstr "Pausitud"
 
 #. Translators: Job's state (job needs authentication to proceed further)
 #: panels/printers/pp-job-row.c:148
 msgctxt "print job"
 msgid "Authentication required"
-msgstr ""
+msgstr "Autentimine on vajalik"
 
 #. Translators: Job's state (job is currently printing)
 #: panels/printers/pp-job-row.c:153
@@ -559,8 +560,8 @@ msgstr "Server nõuab autentimist"
 #, c-format
 msgid "%u Job Requires Authentication"
 msgid_plural "%u Jobs Require Authentication"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u töö nõuab autentimist"
+msgstr[1] "%u tööd nõuavad autentimist"
 
 #. Translators: This is the printer name for which we are showing the active
 #. jobs
@@ -568,7 +569,7 @@ msgstr[1] ""
 #, c-format
 msgctxt "Printer jobs dialog title"
 msgid "%s — Active Jobs"
-msgstr ""
+msgstr "%s aktiivset printimistööd"
 
 #. Translators: The printer needs authentication info to print.
 #: panels/printers/pp-jobs-dialog.c:475
@@ -588,7 +589,7 @@ msgstr "Uus kiirklahv…"
 #: panels/wacom/cc-wacom-button-row.c:244
 #, c-format
 msgid "Button %d"
-msgstr ""
+msgstr "Nupp %d"
 
 #: panels/wacom/cc-wacom-stylus-page.c:357
 msgid "Button"
@@ -646,7 +647,7 @@ msgstr "Kui _jõude"
 
 #: panels/power/cc-power-panel.c:796
 msgid "Suspend"
-msgstr ""
+msgstr "Uinak"
 
 #: panels/power/cc-power-panel.c:797
 msgid "Power Off"
@@ -658,7 +659,7 @@ msgstr "Talveuni"
 
 #: panels/power/cc-power-panel.c:799
 msgid "Nothing"
-msgstr ""
+msgstr "Mitte midagi"
 
 #: panels/power/cc-power-panel.c:856 panels/power/cc-power-panel.c:867
 #: panels/universal-access/cc-ua-panel.c:334
@@ -694,17 +695,17 @@ msgstr "Sees"
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d minut"
+msgstr[1] "%d minutit"
 
 #: panels/power/cc-power-panel.c:980
 msgctxt "Idle time"
 msgid "Never"
-msgstr ""
+msgstr "Mitte iial"
 
 #: panels/power/cc-power-panel.c:1066
 msgid "Automatic suspend"
-msgstr ""
+msgstr "Automaatne uinumine"
 
 #: panels/power/cc-power-panel.c:1162
 msgid ""
@@ -726,45 +727,47 @@ msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
 msgstr ""
+"Aku tühi: energiasäästja on lubatud. Eelmine režiim taastatakse, kui aku on "
+"piisavalt laetud."
 
 #. translators: "%s" is an application name
 #: panels/power/cc-power-panel.c:1217
 #, c-format
 msgid "Power Saver mode activated by “%s”."
-msgstr ""
+msgstr "Energiasäästurežiimi aktiveeris „%s”."
 
 #. translators: "%s" is an application name
 #: panels/power/cc-power-panel.c:1221
 #, c-format
 msgid "Performance mode activated by “%s”."
-msgstr ""
+msgstr "Jõudlusrežiimi aktiveeris \"%s\"."
 
 #: panels/power/cc-power-profile-row.c:132
 msgctxt "Power profile"
 msgid "Performance"
-msgstr ""
+msgstr "Jõudlus"
 
 #: panels/power/cc-power-profile-row.c:133
 msgid "High performance and power usage."
-msgstr ""
+msgstr "Kõrge jõudlus ja energiakasutus."
 
 #: panels/power/cc-power-profile-row.c:136
 msgctxt "Power profile"
 msgid "Balanced"
-msgstr ""
+msgstr "Tasakaalustatud"
 
 #: panels/power/cc-power-profile-row.c:137
 msgid "Standard performance and power usage."
-msgstr ""
+msgstr "Standardne jõudlus ja energiakasutus."
 
 #: panels/power/cc-power-profile-row.c:140
 msgctxt "Power profile"
 msgid "Power Saver"
-msgstr ""
+msgstr "Energia säästja"
 
 #: panels/power/cc-power-profile-row.c:141
 msgid "Reduced performance and power usage."
-msgstr ""
+msgstr "Vähendatud jõudlus ja energiatarbimine."
 
 #: panels/power/cc-battery-row.c:80
 msgid "Unknown time"
@@ -829,7 +832,7 @@ msgstr "Täis laetud"
 #. TRANSLATORS: primary battery
 #: panels/power/cc-battery-row.c:138 panels/power/cc-battery-row.c:168
 msgid "Not charging"
-msgstr ""
+msgstr "Not charging"
 
 #. TRANSLATORS: primary battery
 #: panels/power/cc-battery-row.c:142 panels/power/cc-battery-row.c:172
@@ -906,7 +909,7 @@ msgstr "Standardruum"
 #. * a different color, or swap the red and green channels
 #: panels/color/cc-color-profile.c:104
 msgid "Test Profile"
-msgstr "Katseprofiil:"
+msgstr "Katseprofiil"
 
 #. TRANSLATORS: automatic profiles are generated automatically
 #. * by the color management system based on manufacturing data,
@@ -1220,7 +1223,7 @@ msgstr "100%"
 #: panels/display/cc-display-settings.c:113
 msgctxt "Display rotation"
 msgid "Landscape"
-msgstr ""
+msgstr "Rõhtpaigutus"
 
 #: panels/display/cc-display-settings.c:116
 msgctxt "Display rotation"
@@ -1249,11 +1252,11 @@ msgstr "_Rakenda"
 
 #: panels/display/cc-display-panel.c:1239
 msgid "Apply Changes?"
-msgstr ""
+msgstr "Rakendada muudatused?"
 
 #: panels/display/cc-display-panel.c:1244
 msgid "Changes Cannot be Applied"
-msgstr ""
+msgstr "Muudatusi ei saa rakendada"
 
 #: panels/display/cc-display-panel.c:1245
 msgid "This could be due to hardware limitations."
@@ -1301,7 +1304,7 @@ msgstr "Muu"
 #, c-format
 msgid ""
 "%s is already being used for %s. If you replace it, %s will be disabled"
-msgstr ""
+msgstr "%s on juba kasutusel %s jaoks. Kui asendate selle, keelatakse %s"
 
 #: panels/keyboard/cc-keyboard-shortcut-editor.c:535
 msgid "Enter the new shortcut"
@@ -1339,7 +1342,7 @@ msgstr ""
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "Ei ole"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -1393,7 +1396,7 @@ msgstr ""
 #: panels/keyboard/cc-keyboard-panel.c:97
 msgctxt "keyboard key"
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #: panels/keyboard/cc-keyboard-panel.c:98
 msgctxt "keyboard key"
@@ -1650,7 +1653,7 @@ msgstr ""
 #: panels/user-accounts/cc-fingerprint-dialog.c:866
 msgctxt "Fingerprint enroll state"
 msgid "Complete"
-msgstr ""
+msgstr "Valmis"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:877
 msgid "Fingerprint device disconnected"
@@ -1716,7 +1719,7 @@ msgstr ""
 
 #: panels/user-accounts/cc-user-panel.c:221
 msgid "Your account"
-msgstr ""
+msgstr "Sinu konto"
 
 #: panels/user-accounts/cc-user-panel.c:401
 msgid "Failed to delete user"
@@ -1773,7 +1776,7 @@ msgstr ""
 
 #: panels/user-accounts/cc-user-panel.c:654
 msgid "_Delete"
-msgstr ""
+msgstr "Ku_stuta"
 
 #: panels/user-accounts/cc-user-panel.c:704
 msgctxt "Password mode"
@@ -2101,29 +2104,29 @@ msgstr ""
 #: panels/universal-access/cc-ua-panel.c:357
 msgctxt "cursor size"
 msgid "Medium"
-msgstr ""
+msgstr "Keskmine"
 
 #: panels/universal-access/cc-ua-panel.c:360
 msgctxt "cursor size"
 msgid "Large"
-msgstr ""
+msgstr "Suur"
 
 #: panels/universal-access/cc-ua-panel.c:363
 msgctxt "cursor size"
 msgid "Larger"
-msgstr ""
+msgstr "Suurem"
 
 #: panels/universal-access/cc-ua-panel.c:366
 msgctxt "cursor size"
 msgid "Largest"
-msgstr ""
+msgstr "Suurim"
 
 #: panels/universal-access/cc-ua-panel.c:370
 #, c-format
 msgid "%d pixel"
 msgid_plural "%d pixels"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d piksel"
+msgstr[1] "%d pikslit"
 
 #: panels/applications/cc-applications-panel.c:845
 msgid "System Bus"
@@ -2169,12 +2172,12 @@ msgstr "Kodukataloog"
 #: panels/applications/cc-applications-panel.c:862
 #: panels/applications/cc-applications-panel.c:867
 msgid "Read-only"
-msgstr ""
+msgstr "Ainult lugemine"
 
 #: panels/applications/cc-applications-panel.c:865
 #: panels/applications/cc-applications-panel.c:867
 msgid "File System"
-msgstr ""
+msgstr "Failisüsteem"
 
 #: panels/applications/cc-applications-panel.c:871
 #: panels/keyboard/01-launchers.xml.in:6
@@ -2208,11 +2211,11 @@ msgstr ""
 #: panels/applications/cc-applications-panel.c:1070
 #: panels/applications/cc-applications-panel.c:1106
 msgid "Unset"
-msgstr ""
+msgstr "Määramata"
 
 #: panels/applications/cc-applications-panel.c:1161
 msgid "Links"
-msgstr ""
+msgstr "Viited"
 
 #: panels/applications/cc-applications-panel.c:1169
 msgid "Hypertext Files"
@@ -2224,7 +2227,7 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.c:1197
 msgid "Image Files"
-msgstr ""
+msgstr "Pildifailid"
 
 #: panels/applications/cc-applications-panel.c:1213
 msgid "Font Files"
@@ -2240,11 +2243,11 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.c:1317
 msgid "Audio Files"
-msgstr ""
+msgstr "Audio failid"
 
 #: panels/applications/cc-applications-panel.c:1334
 msgid "Video Files"
-msgstr ""
+msgstr "Video failid"
 
 #: panels/applications/cc-applications-panel.c:1342
 msgid "Other Files"
@@ -2272,12 +2275,12 @@ msgstr "Väljas"
 #: panels/sharing/cc-sharing-panel.c:464
 msgctxt "service is enabled"
 msgid "Enabled"
-msgstr ""
+msgstr "Lubatud"
 
 #: panels/sharing/cc-sharing-panel.c:467
 msgctxt "service is active"
 msgid "Active"
-msgstr ""
+msgstr "Aktiivne"
 
 #: panels/sharing/cc-sharing-panel.c:536
 msgid "Choose a Folder"
@@ -2429,12 +2432,12 @@ msgstr "Tundmatu"
 #. translators: This is the type of architecture for the OS
 #: panels/info-overview/cc-info-overview-panel.c:437
 msgid "64-bit"
-msgstr ""
+msgstr "64-bitine"
 
 #. translators: This is the type of architecture for the OS
 #: panels/info-overview/cc-info-overview-panel.c:440
 msgid "32-bit"
-msgstr ""
+msgstr "32-bitine"
 
 #: panels/info-overview/cc-info-overview-panel.c:713
 msgid "X11"
@@ -2447,22 +2450,22 @@ msgstr "Wayland"
 #: panels/info-overview/cc-info-overview-panel.c:719
 msgctxt "Windowing system (Wayland, X11, or Unknown)"
 msgid "Unknown"
-msgstr ""
+msgstr "Tundmatu"
 
 #. translators: This is the default hotspot name, need to be less than
 #. 32-bytes
 #: panels/common/hostname-helper.c:177
 msgctxt "hotspot"
 msgid "Hotspot"
-msgstr ""
+msgstr "Wi-Fi tugijaam (hotspot)"
 
 #: panels/common/cc-time-entry.c:219
 msgid "_Copy"
-msgstr ""
+msgstr "_Kopeeri"
 
 #: panels/common/cc-time-entry.c:225
 msgid "Select _All"
-msgstr ""
+msgstr "V_ali kõik"
 
 #: panels/common/cc-permission-infobar.c:107
 msgid "Unlock to Change Settings"
@@ -2496,55 +2499,55 @@ msgstr "%e. %b %Y"
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d tund"
+msgstr[1] "%d tundi"
 
 #: panels/common/cc-util.c:167
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d sekund"
+msgstr[1] "%d sekundit"
 
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
 #, c-format
 msgctxt "hours minutes seconds"
 msgid "%s %s %s"
-msgstr ""
+msgstr "%s %s %s"
 
 #. 5 hours 2 minutes
 #: panels/common/cc-util.c:179
 #, c-format
 msgctxt "hours minutes"
 msgid "%s %s"
-msgstr ""
+msgstr "%s %s"
 
 #. 5 hours
 #: panels/common/cc-util.c:184
 #, c-format
 msgctxt "hours"
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #. 2 minutes 12 seconds
 #: panels/common/cc-util.c:192
 #, c-format
 msgctxt "minutes seconds"
 msgid "%s %s"
-msgstr ""
+msgstr "%s %s"
 
 #. 2 minutes
 #: panels/common/cc-util.c:197
 #, c-format
 msgctxt "minutes"
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #. 0 seconds
 #: panels/common/cc-util.c:208
 msgid "0 seconds"
-msgstr ""
+msgstr "0 sekundit"
 
 #: panels/network/net-device-ethernet.c:96
 msgid "never"
@@ -2735,7 +2738,7 @@ msgstr ""
 
 #: panels/network/wireless-security/eap-method.c:195
 msgid "no file selected"
-msgstr ""
+msgstr "faili pole valitud"
 
 #: panels/network/wireless-security/eap-method.c:222
 msgid "unspecified error validating eap-method file"
@@ -2743,7 +2746,7 @@ msgstr ""
 
 #: panels/network/wireless-security/eap-method.c:397
 msgid "DER, PEM, or PKCS#12 private keys (*.der, *.pem, *.p12, *.key)"
-msgstr ""
+msgstr "DER, PEM või PKCS#12 privaatvõtmed (*.der, *.pem, *.p12, *.key)"
 
 #: panels/network/wireless-security/eap-method.c:400
 msgid "DER or PEM certificates (*.der, *.pem, *.crt, *.cer)"
@@ -2783,7 +2786,7 @@ msgstr ""
 
 #: panels/network/wireless-security/ws-sae.c:77
 msgid "Wi-Fi password is missing."
-msgstr ""
+msgstr "WiFi parool puudub."
 
 #: panels/network/wireless-security/eap-method-tls.c:92
 msgid "missing EAP-TLS identity"
@@ -2825,7 +2828,7 @@ msgstr ""
 
 #: panels/network/wireless-security/eap-method-tls.c:520
 msgid "Choose your private key"
-msgstr ""
+msgstr "Vali oma privaatvõti"
 
 #: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
 #: panels/network/budgie-wifi-panel.desktop.in.in:3
@@ -3117,7 +3120,7 @@ msgstr "Juhe eemaldatud"
 #, c-format
 msgctxt "Wi-Fi Connection"
 msgid "%s (SSID: %s)"
-msgstr ""
+msgstr "%s (SSID: %s)"
 
 #: panels/network/cc-wifi-connection-row.c:274
 msgid "Insecure network (WEP)"
@@ -3129,15 +3132,15 @@ msgstr ""
 
 #: panels/network/cc-wifi-connection-row.c:284
 msgid "Secure network (WPA2)"
-msgstr ""
+msgstr "Turvaline võrk (WPA2)"
 
 #: panels/network/cc-wifi-connection-row.c:289
 msgid "Secure network (WPA3)"
-msgstr ""
+msgstr "Turvaline võrk (WPA3)"
 
 #: panels/network/cc-wifi-connection-row.c:294
 msgid "Secure network"
-msgstr ""
+msgstr "Turvaline võrk"
 
 #: panels/network/connection-editor/ce-page-8021x-security.c:112
 #: panels/network/connection-editor/ce-page-security.c:424
@@ -3258,19 +3261,19 @@ msgstr ""
 
 #: panels/network/connection-editor/ce-page.c:234
 msgid "Preserve"
-msgstr ""
+msgstr "Hoia"
 
 #: panels/network/connection-editor/ce-page.c:235
 msgid "Permanent"
-msgstr ""
+msgstr "Alaline"
 
 #: panels/network/connection-editor/ce-page.c:236
 msgid "Random"
-msgstr ""
+msgstr "Juhuslik"
 
 #: panels/network/connection-editor/ce-page.c:237
 msgid "Stable"
-msgstr ""
+msgstr "Stabiilne"
 
 #: panels/network/connection-editor/ce-page.c:241
 msgid ""
@@ -3327,7 +3330,7 @@ msgstr "WPA"
 #. TRANSLATORS: this WPA3 WiFi security
 #: panels/network/connection-editor/ce-page-details.c:107
 msgid "WPA3"
-msgstr ""
+msgstr "WPA3"
 
 #. TRANSLATORS: this WPA WiFi security
 #: panels/network/connection-editor/ce-page-details.c:124
@@ -3427,18 +3430,18 @@ msgstr ""
 
 #: panels/network/cc-wifi-hotspot-dialog.c:267
 msgid "Must have a minimum of 8 characters"
-msgstr ""
+msgstr "Peab olema vähemalt 8 tähemärki"
 
 #: panels/network/cc-wifi-hotspot-dialog.c:272
 #, c-format
 msgid "Must have a maximum of %d character"
 msgid_plural "Must have a maximum of %d characters"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Peab sisaldama maksimaalselt %d tähemärki"
+msgstr[1] "Peab sisaldama maksimaalselt %d tähemärki"
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
-msgstr ""
+msgstr "Kas lülitada WiFi-leviala sisse?"
 
 #: panels/network/net-proxy.c:71
 #: panels/network/connection-editor/ip4-page.ui.h:4
@@ -3484,7 +3487,7 @@ msgstr "_Unusta"
 
 #: panels/network/net-device-wifi.c:1040 panels/network/net-device-wifi.c:1047
 msgid "Known Wi-Fi Networks"
-msgstr ""
+msgstr "Tuntud Wi-Fi võrgud"
 
 #. translators: This is the label for the "Forget wireless network"
 #. functionality
@@ -3684,7 +3687,7 @@ msgstr ""
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
 msgid "Unknown"
-msgstr ""
+msgstr "Tundmatu"
 
 #: panels/wwan/cc-wwan-details-dialog.c:81
 msgid "Not Registered"
@@ -3692,7 +3695,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-details-dialog.c:85
 msgid "Registered"
-msgstr ""
+msgstr "Registreeritud"
 
 #: panels/wwan/cc-wwan-details-dialog.c:89
 msgid "Roaming"
@@ -3700,11 +3703,11 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-details-dialog.c:93
 msgid "Searching"
-msgstr ""
+msgstr "Otsimine"
 
 #: panels/wwan/cc-wwan-details-dialog.c:97
 msgid "Denied"
-msgstr ""
+msgstr "Tagasi lükatud"
 
 #: panels/wwan/cc-wwan-panel.c:453 panels/wwan/cc-wwan-panel.c:482
 #, c-format
@@ -3717,7 +3720,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device-page.c:189 panels/wwan/cc-wwan-device-page.c:237
 msgid "Unlock"
-msgstr ""
+msgstr "Eemalda lukk"
 
 #: panels/wwan/cc-wwan-device-page.c:194
 #, c-format
@@ -3866,13 +3869,13 @@ msgstr ""
 #: panels/thunderbolt/cc-bolt-device-entry.c:125
 msgctxt "Thunderbolt Device Status"
 msgid "Disconnected"
-msgstr ""
+msgstr "Ühendus katkestatud"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.c:97
 #: panels/thunderbolt/cc-bolt-device-entry.c:128
 msgctxt "Thunderbolt Device Status"
 msgid "Connecting"
-msgstr ""
+msgstr "Ühendan"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.c:100
 #: panels/thunderbolt/cc-bolt-device-entry.c:132
@@ -3884,7 +3887,7 @@ msgstr ""
 #: panels/thunderbolt/cc-bolt-device-dialog.c:103
 msgctxt "Thunderbolt Device Status"
 msgid "Authorization Error"
-msgstr ""
+msgstr "Autentimise viga"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.c:106
 #: panels/thunderbolt/cc-bolt-device-entry.c:138
@@ -3906,7 +3909,7 @@ msgstr ""
 #: panels/thunderbolt/cc-bolt-device-entry.c:152
 msgctxt "Thunderbolt Device Status"
 msgid "Unknown"
-msgstr ""
+msgstr "Tundmatu"
 
 #. Translators: The time point the device was authorized.
 #: panels/thunderbolt/cc-bolt-device-dialog.c:177
@@ -3947,7 +3950,7 @@ msgstr ""
 #: panels/thunderbolt/cc-bolt-device-entry.c:146
 msgctxt "Thunderbolt Device Status"
 msgid "Authorized"
-msgstr ""
+msgstr "Autenditud"
 
 #: panels/mouse/cc-mouse-test.c:131 panels/mouse/cc-mouse-test.ui.h:1
 msgid "Try clicking, double clicking, scrolling"
@@ -4030,7 +4033,7 @@ msgstr "Muu"
 #: panels/online-accounts/cc-online-accounts-panel.c:576
 #, c-format
 msgid "%s Account"
-msgstr ""
+msgstr "%s konto"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:870
 msgid "Error removing account"
@@ -4045,7 +4048,7 @@ msgstr ""
 
 #: shell/cc-application.c:59
 msgid "Display version number"
-msgstr ""
+msgstr "Versiooninumbri kuvamine"
 
 #: shell/cc-application.c:60
 msgid "Enable verbose mode"
@@ -4079,7 +4082,7 @@ msgstr "Privaatsus"
 #: shell/budgie-control-center.desktop.in.in:3
 #: build/shell/budgie-control-center.desktop.in:3
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Budgie juhtimiskeskus"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -4107,7 +4110,7 @@ msgstr "Süsteemsed helid"
 #: panels/printers/new-printer-dialog.ui.h:6
 #: panels/wwan/cc-wwan-device-page.ui.h:4
 msgid "_Unlock"
-msgstr ""
+msgstr "_Võta lukust lahti"
 
 #. Translators: No printers were detected
 #: panels/printers/new-printer-dialog.ui.h:8
@@ -4151,7 +4154,7 @@ msgstr "Parool"
 #. Translators: This is a windows domain used with SMB protocol.
 #: panels/printers/pp-jobs-dialog.ui.h:2
 msgid "Domain"
-msgstr ""
+msgstr "Domeen"
 
 #. Translators: This button authenticates all print jobs and send them for
 #. printing.
@@ -4169,7 +4172,7 @@ msgstr ""
 #. need credentials.
 #: panels/printers/pp-jobs-dialog.ui.h:12
 msgid "_Authenticate"
-msgstr ""
+msgstr "_Autendi"
 
 #. Translators: this label describes the dialog empty state, with no jobs
 #. listed.
@@ -4202,7 +4205,7 @@ msgstr ""
 #. printer.
 #: panels/printers/printer-entry.ui.h:6
 msgid "Clean Print Heads"
-msgstr ""
+msgstr "Puhasta trükipead"
 
 #: panels/printers/printer-entry.ui.h:7
 msgid "Remove Printer"
@@ -4230,7 +4233,7 @@ msgstr ""
 #. Translators: This is the button which restarts the printer.
 #: panels/printers/printer-entry.ui.h:15
 msgid "Restart"
-msgstr ""
+msgstr "Taaskäivita"
 
 #: panels/printers/pp-details-dialog.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:3
@@ -4274,7 +4277,7 @@ msgstr ""
 #: panels/printers/printers.ui.h:4
 #: panels/online-accounts/online-accounts.ui.h:1
 msgid "Undo"
-msgstr ""
+msgstr "Unusta"
 
 #: panels/printers/printers.ui.h:5
 msgid "No printers"
@@ -4300,6 +4303,8 @@ msgid ""
 "Location services allow applications to know your location. Using Wi-Fi and "
 "mobile broadband increases accuracy."
 msgstr ""
+"Asukohateenused võimaldavad rakendustel teie asukohta teada. Wi-Fi ja "
+"mobiilse lairibaühenduse kasutamine suurendab täpsust."
 
 #: panels/location/cc-location-panel.ui.h:4
 msgid ""
@@ -4389,7 +4394,7 @@ msgstr "Digitaallaua eelistused"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:4
 msgid "_Help"
-msgstr ""
+msgstr "_Abi"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:6
 msgid "No tablet detected"
@@ -4427,7 +4432,7 @@ msgstr "Nuppude ühendamine…"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:14
 msgid "Calibrate…"
-msgstr "Kalibreerimine..."
+msgstr "Kalibreerimine…"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:15
 msgid "Adjust mouse settings"
@@ -4541,7 +4546,7 @@ msgstr ""
 
 #: panels/power/cc-power-panel.ui.h:25
 msgid "Power Saving Options"
-msgstr ""
+msgstr "Toitevalikud"
 
 #: panels/power/cc-power-panel.ui.h:26
 msgid "Automatic Screen Brightness"
@@ -4756,7 +4761,7 @@ msgstr "Rohkem teavet värvihalduse kohta"
 
 #: panels/color/cc-color-panel.ui.h:34
 msgid "_Set for all users"
-msgstr ""
+msgstr "Määra kõigile ka_sutajaile"
 
 #: panels/color/cc-color-panel.ui.h:35
 msgid "Set this profile for all users on this computer"
@@ -4764,7 +4769,7 @@ msgstr "Määrata see profiil kõigile selle arvuti kasutajatele"
 
 #: panels/color/cc-color-panel.ui.h:36
 msgid "_Enable"
-msgstr ""
+msgstr "_Luba"
 
 #: panels/color/cc-color-panel.ui.h:37
 msgid "_Add profile"
@@ -4784,7 +4789,7 @@ msgstr ""
 
 #: panels/color/cc-color-panel.ui.h:41
 msgid "_View details"
-msgstr ""
+msgstr "_Vaata üksikasju"
 
 #: panels/color/cc-color-panel.ui.h:42
 msgid "Unable to detect any devices that can be color managed"
@@ -4834,7 +4839,7 @@ msgstr "Laia vahemikuga LCD (RGB LED taustvalgus)"
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:34
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "Kõrge"
 
 #: panels/color/cc-color-panel.ui.h:54
 msgid "40 minutes"
@@ -4842,13 +4847,13 @@ msgstr "40 minutit"
 
 #: panels/color/cc-color-panel.ui.h:55
 msgid "Medium"
-msgstr ""
+msgstr "Keskmine"
 
 #: panels/color/cc-color-panel.ui.h:57
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:33
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:35
 msgid "Low"
-msgstr ""
+msgstr "Madal"
 
 #: panels/color/cc-color-panel.ui.h:59
 msgid "Native to display"
@@ -4877,12 +4882,12 @@ msgstr "Kuva kalibreerimine"
 #. This starts the calibration process
 #: panels/color/cc-color-calibrate.ui.h:4
 msgid "_Start"
-msgstr ""
+msgstr "_Käivita"
 
 #. This resumes the calibration process
 #: panels/color/cc-color-calibrate.ui.h:6
 msgid "_Resume"
-msgstr ""
+msgstr "_Jätka"
 
 #. This button returns the user back to the color control panel
 #: panels/color/cc-color-calibrate.ui.h:8
@@ -4917,7 +4922,7 @@ msgstr ""
 
 #: panels/bluetooth/cc-bluetooth-panel.ui.h:7
 msgid "Turn Off Airplane Mode"
-msgstr ""
+msgstr "Lülita lennurežiim välja"
 
 #: panels/bluetooth/cc-bluetooth-panel.ui.h:8
 msgid "Hardware Airplane Mode is on"
@@ -4937,11 +4942,11 @@ msgstr ""
 
 #: panels/sound/cc-balance-slider.ui.h:1 panels/mouse/cc-mouse-panel.ui.h:4
 msgid "Left"
-msgstr ""
+msgstr "Vasak"
 
 #: panels/sound/cc-balance-slider.ui.h:2 panels/mouse/cc-mouse-panel.ui.h:5
 msgid "Right"
-msgstr ""
+msgstr "Parem"
 
 #: panels/sound/cc-alert-chooser.ui.h:1
 msgid "Bark"
@@ -4961,11 +4966,11 @@ msgstr "Sonar"
 
 #: panels/sound/cc-fade-slider.ui.h:1
 msgid "Rear"
-msgstr ""
+msgstr "Taga"
 
 #: panels/sound/cc-fade-slider.ui.h:2
 msgid "Front"
-msgstr ""
+msgstr "Esi"
 
 #: panels/sound/cc-sound-panel.ui.h:1
 msgid "System Volume"
@@ -5000,15 +5005,15 @@ msgstr "Testi"
 
 #: panels/sound/cc-sound-panel.ui.h:9
 msgid "Configuration"
-msgstr ""
+msgstr "Seadistused"
 
 #: panels/sound/cc-sound-panel.ui.h:10
 msgid "Balance"
-msgstr ""
+msgstr "Balanss"
 
 #: panels/sound/cc-sound-panel.ui.h:11
 msgid "Fade"
-msgstr ""
+msgstr "Hajumine"
 
 #: panels/sound/cc-sound-panel.ui.h:12
 msgid "Subwoofer"
@@ -5044,7 +5049,7 @@ msgstr ""
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Scale"
-msgstr ""
+msgstr "Skaleerimine"
 
 #: panels/display/cc-display-settings.ui.h:6
 msgid "Fractional Scaling"
@@ -5077,15 +5082,15 @@ msgstr ""
 #: panels/display/cc-night-light-page.ui.h:6
 #: panels/display/cc-display-panel.ui.h:22
 msgid "Night Light"
-msgstr ""
+msgstr "Öövalgustus"
 
 #: panels/display/cc-night-light-page.ui.h:7
 msgid "Schedule"
-msgstr ""
+msgstr "Ajakava"
 
 #: panels/display/cc-night-light-page.ui.h:8
 msgid "Sunset to Sunrise"
-msgstr ""
+msgstr "Päikeseloojang päikesetõusuni"
 
 #: panels/display/cc-night-light-page.ui.h:9
 msgid "Manual Schedule"
@@ -5098,7 +5103,7 @@ msgstr "Kellaajad"
 
 #: panels/display/cc-night-light-page.ui.h:11
 msgid "From"
-msgstr ""
+msgstr "Kust kohast"
 
 #: panels/display/cc-night-light-page.ui.h:12
 msgid "Hour"
@@ -5115,12 +5120,12 @@ msgstr "Minut"
 #. This is the short form for the time period in the morning
 #: panels/display/cc-night-light-page.ui.h:16
 msgid "AM"
-msgstr ""
+msgstr "EL"
 
 #. This is the short form for the time period in the afternoon
 #: panels/display/cc-night-light-page.ui.h:18
 msgid "PM"
-msgstr ""
+msgstr "PL"
 
 #: panels/display/cc-night-light-page.ui.h:19
 msgid "To"
@@ -5128,7 +5133,7 @@ msgstr ""
 
 #: panels/display/cc-night-light-page.ui.h:20
 msgid "Color Temperature"
-msgstr ""
+msgstr "Värvustemperatuur"
 
 #: panels/display/cc-display-panel.ui.h:1
 msgid "Display Settings Disabled"
@@ -5140,7 +5145,7 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:3
 msgid "Join Displays"
-msgstr ""
+msgstr "Ühenda kuvarid"
 
 #: panels/display/cc-display-panel.ui.h:4
 msgid "Mirror"
@@ -5327,11 +5332,11 @@ msgstr ""
 
 #: panels/keyboard/cc-input-row.ui.h:1
 msgid "Move up"
-msgstr ""
+msgstr "Liiguta üles"
 
 #: panels/keyboard/cc-input-row.ui.h:2
 msgid "Move down"
-msgstr ""
+msgstr "Liiguta alla"
 
 #: panels/keyboard/cc-input-row.ui.h:3
 msgid "Preferences"
@@ -5344,7 +5349,7 @@ msgstr ""
 #: panels/keyboard/cc-input-row.ui.h:5
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:9
 msgid "Remove"
-msgstr ""
+msgstr "Eemalda"
 
 #: panels/keyboard/cc-keyboard-shortcut-row.ui.h:1
 msgid "Reset the shortcut to its default value"
@@ -5360,7 +5365,7 @@ msgstr ""
 
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:5
 msgid "Shortcut"
-msgstr ""
+msgstr "Kiirklahv"
 
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:6
 msgid "Set Shortcut…"
@@ -5373,11 +5378,11 @@ msgstr "Lisa"
 
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:11
 msgid "Replace"
-msgstr ""
+msgstr "Asenda"
 
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:12
 msgid "Set"
-msgstr ""
+msgstr "Sea"
 
 #: panels/keyboard/cc-input-list-box.ui.h:1
 msgid "No input source selected"
@@ -5423,11 +5428,11 @@ msgstr ""
 
 #: panels/user-accounts/cc-fingerprint-dialog.ui.h:6
 msgid "_No"
-msgstr ""
+msgstr "_Ei"
 
 #: panels/user-accounts/cc-fingerprint-dialog.ui.h:7
 msgid "_Yes"
-msgstr ""
+msgstr "_Jah"
 
 #: panels/user-accounts/cc-fingerprint-dialog.ui.h:8
 msgid ""
@@ -5503,7 +5508,7 @@ msgstr "Kasutajaikoon"
 
 #: panels/user-accounts/cc-user-panel.ui.h:6
 msgid "Account Settings"
-msgstr ""
+msgstr "Konto seadistused"
 
 #: panels/user-accounts/cc-user-panel.ui.h:7
 msgid "_Administrator"
@@ -5526,7 +5531,7 @@ msgstr ""
 #: panels/user-accounts/cc-user-panel.ui.h:11
 #: panels/region/cc-region-panel.ui.h:5
 msgid "_Language"
-msgstr "_Keel:"
+msgstr "_Keel"
 
 #: panels/user-accounts/cc-user-panel.ui.h:12
 msgid "Authentication & Login"
@@ -5621,11 +5626,11 @@ msgstr "_Täisnimi"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:6
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:7
 msgid "Administrator"
-msgstr ""
+msgstr "Administraator"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:8
 msgid "Account _Type"
@@ -5637,11 +5642,11 @@ msgstr ""
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:11
 msgid "Set a password _now"
-msgstr ""
+msgstr "Määra parool _nüüd"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:13
 msgid "_Confirm"
-msgstr ""
+msgstr "_Kinnita"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:14
 msgid ""
@@ -5652,7 +5657,7 @@ msgstr ""
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:16
 msgid "You are Offline"
-msgstr ""
+msgstr "Oled võrguühenduseta"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:17
 msgid "You must be online in order to add enterprise users."
@@ -5680,7 +5685,7 @@ msgstr "_Muuda"
 
 #: panels/user-accounts/cc-password-dialog.ui.h:4
 msgid "_Confirm New Password"
-msgstr ""
+msgstr "_Kinnita uus salasõna"
 
 #: panels/user-accounts/cc-password-dialog.ui.h:5
 msgid "_New Password"
@@ -5765,15 +5770,15 @@ msgstr "Luup"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:17
 msgid "_Thickness:"
-msgstr ""
+msgstr "_Paksus:"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "Peen"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "Paks"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5782,7 +5787,7 @@ msgstr ""
 #. The color of the accessibility crosshair
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:22
 msgid "Co_lor:"
-msgstr ""
+msgstr "_Värv:"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:23
 msgid "_Crosshairs:"
@@ -5802,20 +5807,20 @@ msgstr ""
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:27
 msgid "_Brightness:"
-msgstr ""
+msgstr "_Heledus:"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:28
 msgid "_Contrast:"
-msgstr ""
+msgstr "_Kontrast:"
 
 #. The contrast scale goes from Color to None (grayscale)
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:30
 msgid "Co_lor"
-msgstr ""
+msgstr "_Värv"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:32
 msgid "Full"
-msgstr ""
+msgstr "Täielik"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:37
 msgid "Color Effects:"
@@ -5843,7 +5848,7 @@ msgstr "Kahe klahvi koosvajutamisel keelatakse"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:5
 msgid "Beep when a _modifier key is pressed"
-msgstr ""
+msgstr "Muuteklahvi vajutamisel tehakse _piiksu"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:6
 msgid "S_low Keys"
@@ -5863,7 +5868,7 @@ msgstr "Nõustumise viivitus:"
 #: panels/universal-access/cc-pointing-dialog.ui.h:5
 #: panels/universal-access/cc-pointing-dialog.ui.h:11
 msgid "Short"
-msgstr ""
+msgstr "Lühike"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:10
 msgid "Slow keys typing delay"
@@ -5874,7 +5879,7 @@ msgstr "Aeglaste klahvide sisestusviivitus"
 #: panels/universal-access/cc-pointing-dialog.ui.h:7
 #: panels/universal-access/cc-pointing-dialog.ui.h:12
 msgid "Long"
-msgstr ""
+msgstr "Pikk"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:12
 msgid "Beep when a key is pr_essed"
@@ -5923,7 +5928,7 @@ msgstr ""
 #: panels/universal-access/cc-repeat-keys-dialog.ui.h:5
 #: panels/universal-access/cc-cursor-blinking-dialog.ui.h:3
 msgid "Speed"
-msgstr ""
+msgstr "Kiirus"
 
 #: panels/universal-access/cc-repeat-keys-dialog.ui.h:6
 msgid "Repeat keys speed"
@@ -5943,7 +5948,7 @@ msgstr "Peamise nupu allhoidmisel tehakse teisene klõps"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:6
 msgid "Secondary click delay"
-msgstr "Teisese klõpsu viivitus "
+msgstr "Teisese klõpsu viivitus"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:8
 msgid "_Hover Click"
@@ -5963,11 +5968,11 @@ msgstr "_Liikumise lävi:"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "Väike"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "Suur"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -5979,7 +5984,7 @@ msgstr "Proovi _välku"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:3
 msgid "Use a visual indication when an alert sound occurs."
-msgstr "Hoiatusheliga koos hoiatatakse ka visuaalselt"
+msgstr "Hoiatusheliga koos hoiatatakse ka visuaalselt."
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:4
 #: panels/universal-access/cc-ua-panel.ui.h:12
@@ -6133,7 +6138,7 @@ msgstr ""
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:4
 msgid "Workspaces"
-msgstr ""
+msgstr "Tööalad"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:5
 msgid "_Dynamic workspaces"
@@ -6189,13 +6194,13 @@ msgstr ""
 #: panels/camera/budgie-camera-panel.desktop.in.in:3
 #: build/panels/camera/budgie-camera-panel.desktop.in:3
 msgid "Camera"
-msgstr ""
+msgstr "Kaamera"
 
 #: panels/applications/cc-applications-panel.ui.h:7
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:3
 #: build/panels/microphone/budgie-microphone-panel.desktop.in:3
 msgid "Microphone"
-msgstr ""
+msgstr "Mikrofon"
 
 #: panels/applications/cc-applications-panel.ui.h:8
 #: panels/location/budgie-location-panel.desktop.in.in:3
@@ -6219,7 +6224,7 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:12
 msgid "Integration"
-msgstr ""
+msgstr "Põimimine"
 
 #: panels/applications/cc-applications-panel.ui.h:13
 msgid "System features used by this application."
@@ -6238,15 +6243,15 @@ msgstr "Teated"
 
 #: panels/applications/cc-applications-panel.ui.h:16
 msgid "Run in background"
-msgstr ""
+msgstr "Taustal töötamine"
 
 #: panels/applications/cc-applications-panel.ui.h:17
 msgid "Set Desktop Background"
-msgstr ""
+msgstr "Määra töölaua taust"
 
 #: panels/applications/cc-applications-panel.ui.h:18
 msgid "Sounds"
-msgstr ""
+msgstr "Helid"
 
 #: panels/applications/cc-applications-panel.ui.h:19
 msgid "Inhibit system keyboard shortcuts"
@@ -6266,7 +6271,7 @@ msgstr "Lähtesta"
 
 #: panels/applications/cc-applications-panel.ui.h:23
 msgid "Usage"
-msgstr ""
+msgstr "Kasutus"
 
 #: panels/applications/cc-applications-panel.ui.h:24
 msgid "How much resources this application is using."
@@ -6274,7 +6279,7 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:25
 msgid "Storage"
-msgstr ""
+msgstr "Salvesti"
 
 #: panels/applications/cc-applications-panel.ui.h:27
 msgid "Open in Software"
@@ -6292,15 +6297,15 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:31
 msgid "Application"
-msgstr ""
+msgstr "Rakendus"
 
 #: panels/applications/cc-applications-panel.ui.h:32
 msgid "Data"
-msgstr ""
+msgstr "Andmed"
 
 #: panels/applications/cc-applications-panel.ui.h:33
 msgid "Cache"
-msgstr ""
+msgstr "Puhver"
 
 #: panels/applications/cc-applications-panel.ui.h:34
 msgid "<b>Total</b>"
@@ -6312,15 +6317,15 @@ msgstr ""
 
 #: panels/sharing/cc-sharing-networks.ui.h:1
 msgid "Networks"
-msgstr ""
+msgstr "Võrgud"
 
 #: panels/sharing/cc-sharing-panel.ui.h:1
 msgid "_Computer Name"
-msgstr ""
+msgstr "_Arvuti nimi"
 
 #: panels/sharing/cc-sharing-panel.ui.h:2
 msgid "_File Sharing"
-msgstr ""
+msgstr "_Failijagamine"
 
 #: panels/sharing/cc-sharing-panel.ui.h:3
 msgid "Remote _Desktop"
@@ -6340,7 +6345,7 @@ msgstr "Mõned teenused on võrguühenduse puudumise tõttu keelatud."
 
 #: panels/sharing/cc-sharing-panel.ui.h:7
 msgid "File Sharing"
-msgstr ""
+msgstr "Failijagamine"
 
 #: panels/sharing/cc-sharing-panel.ui.h:8
 msgid "_Require Password"
@@ -6352,7 +6357,7 @@ msgstr "Kauglogimine"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "Kaugtöölaud"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
@@ -6370,7 +6375,7 @@ msgstr ""
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
-msgstr ""
+msgstr "Kaugjuhtimine"
 
 #: panels/sharing/cc-sharing-panel.ui.h:16
 msgid "Allows remote connections to control the screen."
@@ -6400,7 +6405,7 @@ msgstr ""
 
 #: panels/sharing/cc-sharing-panel.ui.h:22
 msgid "Authentication"
-msgstr ""
+msgstr "Autentimine"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
@@ -6408,7 +6413,7 @@ msgstr ""
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "Kasutajanimi"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
@@ -6434,7 +6439,7 @@ msgstr ""
 
 #: panels/sharing/cc-sharing-panel.ui.h:31
 msgid "Folders"
-msgstr ""
+msgstr "Kataloogid"
 
 #: panels/sharing/cc-sharing-panel.ui.h:32
 msgid "_New connections must ask for access"
@@ -6442,7 +6447,7 @@ msgstr ""
 
 #: panels/sharing/cc-sharing-panel.ui.h:33
 msgid "_Require a password"
-msgstr ""
+msgstr "Nõua pa_rooli"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:1
 msgid "Select how media should be handled"
@@ -6463,7 +6468,7 @@ msgstr "_Muusikaesitaja"
 #: panels/removable-media/cc-removable-media-panel.ui.h:5
 #: panels/default-apps/cc-default-apps-panel.ui.h:6
 msgid "_Photos"
-msgstr "_Fotod:"
+msgstr "_Fotod"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:6
 msgid "_Software"
@@ -6541,7 +6546,7 @@ msgstr ""
 
 #: panels/region/cc-region-panel.ui.h:7
 msgid "Restart…"
-msgstr ""
+msgstr "Taaskäivita…"
 
 #: panels/region/cc-region-panel.ui.h:9
 msgid "The format used for numbers, dates, and currencies."
@@ -6602,7 +6607,7 @@ msgstr "Arvutamine…"
 #. translators: this field contains the distro name and version
 #: panels/info-overview/cc-info-overview-panel.ui.h:9
 msgid "OS Name"
-msgstr ""
+msgstr "OS nimi"
 
 #. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
@@ -6623,11 +6628,11 @@ msgstr "Virtualiseerimine"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
 msgid "Kernel Version"
-msgstr ""
+msgstr "Kerneli versioon"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
-msgstr ""
+msgstr "Tarkvara uuendused"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:17
 msgid "Rename Device"
@@ -6638,18 +6643,20 @@ msgid ""
 "The device name is used to identify this device when it is viewed over the "
 "network, or when pairing Bluetooth devices."
 msgstr ""
+"Seadme nime kasutatakse selle seadme tuvastamiseks, kui seda võrgus "
+"vaadatakse või Bluetooth-seadmete sidumisel."
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:19
 msgid "_Rename"
-msgstr ""
+msgstr "_Nimeta ümber"
 
 #: panels/common/cc-language-chooser.ui.h:1
 msgid "Select Language"
-msgstr ""
+msgstr "Keele valik"
 
 #: panels/common/cc-language-chooser.ui.h:2
 msgid "_Select"
-msgstr ""
+msgstr "_Vali"
 
 #: panels/common/cc-language-chooser.ui.h:4
 msgid "No languages found"
@@ -6657,7 +6664,7 @@ msgstr "Keeli ei leitud"
 
 #: panels/common/cc-permission-infobar.ui.h:1
 msgid "Unlock…"
-msgstr ""
+msgstr "Lukusta lahti…"
 
 #: panels/common/cc-permission-infobar.ui.h:2
 msgid "Some settings must be unlocked before they can be changed."
@@ -6689,7 +6696,7 @@ msgstr "Lülita seade välja"
 
 #: panels/network/cc-network-panel.ui.h:1
 msgid "Other Devices"
-msgstr ""
+msgstr "Muud seadmed"
 
 #: panels/network/cc-network-panel.ui.h:3
 msgid "Not set up"
@@ -6816,7 +6823,7 @@ msgstr "_Sisemine autentimine"
 
 #: panels/network/wireless-security/eap-method-fast.ui.h:9
 msgid "Allow automatic PAC pro_visioning"
-msgstr ""
+msgstr "Automaatsed _PAC-klauslid on lubatud"
 
 #: panels/network/wireless-security/eap-method-peap.ui.h:5
 msgid "Version 0"
@@ -6912,17 +6919,17 @@ msgstr "Ainult kohalik võrk (link-local)"
 #: panels/network/connection-editor/ip4-page.ui.h:5
 #: panels/network/connection-editor/ip6-page.ui.h:6
 msgid "Disable"
-msgstr ""
+msgstr "Keela"
 
 #: panels/network/connection-editor/ip4-page.ui.h:6
 #: panels/network/connection-editor/ip6-page.ui.h:7
 msgid "Shared to other computers"
-msgstr ""
+msgstr "Jagada teistele arvutitele"
 
 #: panels/network/connection-editor/ip4-page.ui.h:7
 #: panels/network/connection-editor/ip6-page.ui.h:8
 msgid "Addresses"
-msgstr ""
+msgstr "Aadressid"
 
 #: panels/network/connection-editor/ip4-page.ui.h:9
 msgid "Netmask"
@@ -6957,7 +6964,7 @@ msgstr "Automaatsed marsruudid"
 #: panels/network/connection-editor/ip4-page.ui.h:18
 #: panels/network/connection-editor/ip6-page.ui.h:18
 msgid "Metric"
-msgstr ""
+msgstr "Meetermõõdustik"
 
 #: panels/network/connection-editor/ip4-page.ui.h:19
 #: panels/network/connection-editor/ip6-page.ui.h:19
@@ -7047,7 +7054,7 @@ msgstr "Lülita Wi-Fi välja"
 
 #: panels/network/network-wifi.ui.h:6
 msgid "_Connect to Hidden Network…"
-msgstr "_Ühendu varjatud võrguga..."
+msgstr "_Ühendu varjatud võrguga…"
 
 #: panels/network/network-wifi.ui.h:7
 msgid "_Turn On Wi-Fi Hotspot…"
@@ -7059,7 +7066,7 @@ msgstr ""
 
 #: panels/network/cc-wifi-panel.ui.h:1
 msgid "Airplane Mode"
-msgstr ""
+msgstr "Lennukirežiim"
 
 #: panels/network/cc-wifi-panel.ui.h:2
 msgid "Disables Wi-Fi, Bluetooth and mobile broadband"
@@ -7075,7 +7082,7 @@ msgstr ""
 
 #: panels/network/cc-wifi-panel.ui.h:5 panels/wwan/cc-wwan-panel.ui.h:4
 msgid "Airplane Mode On"
-msgstr ""
+msgstr "Lennurežiim"
 
 #: panels/network/cc-wifi-panel.ui.h:6
 msgid "Turn off to use Wi-Fi"
@@ -7131,7 +7138,7 @@ msgstr "_Lülita sisse"
 
 #: panels/network/network-proxy.ui.h:1
 msgid "Network Proxy"
-msgstr ""
+msgstr "Võrgu proksi"
 
 #: panels/network/network-proxy.ui.h:5
 msgid "_HTTP Proxy"
@@ -7179,7 +7186,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:2
 msgid "_Next"
-msgstr ""
+msgstr "_Edasi"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:3
 #: panels/wwan/cc-wwan-network-dialog.ui.h:2 panels/wwan/cc-wwan-panel.ui.h:1
@@ -7236,7 +7243,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-device-page.ui.h:12
 msgid "Advanced"
-msgstr ""
+msgstr "Täiendav"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:13
 msgid "_Access Point Names"
@@ -7260,7 +7267,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-network-dialog.ui.h:3
 msgid "_Automatic"
-msgstr ""
+msgstr "_Automaatne"
 
 #: panels/wwan/cc-wwan-network-dialog.ui.h:4
 msgid "Choose Network"
@@ -7280,11 +7287,11 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:3
 msgid "Carrier"
-msgstr ""
+msgstr "Kandja"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:4
 msgid "Network Type"
-msgstr ""
+msgstr "Võrgu tüüp"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:6
 msgid "Network Status"
@@ -7308,7 +7315,7 @@ msgstr ""
 
 #: panels/wwan/cc-wwan-apn-dialog.ui.h:6
 msgid "APN"
-msgstr ""
+msgstr "APN"
 
 #: panels/wwan/cc-wwan-panel.ui.h:2
 msgid "No WWAN Adapter Found"
@@ -7558,11 +7565,11 @@ msgstr ""
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui.h:2
 msgid "Status:"
-msgstr ""
+msgstr "Olek:"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui.h:3
 msgid "UUID:"
-msgstr ""
+msgstr "UUID:"
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui.h:4
 msgid "Authorize and Connect"
@@ -7570,7 +7577,7 @@ msgstr ""
 
 #: panels/thunderbolt/cc-bolt-device-dialog.ui.h:5
 msgid "Forget Device"
-msgstr ""
+msgstr "Unusta seade"
 
 #: panels/thunderbolt/cc-bolt-panel.ui.h:1
 msgid "No Thunderbolt support"
@@ -7626,11 +7633,11 @@ msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "Lame"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "Kohanev"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7820,7 +7827,7 @@ msgstr ""
 
 #: panels/online-accounts/online-accounts.ui.h:4
 msgid "Add an account"
-msgstr ""
+msgstr "Uue konto lisamine"
 
 #: panels/online-accounts/online-accounts.ui.h:5
 msgid "Remove Account"
@@ -7832,7 +7839,7 @@ msgstr "Lõpeta"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "Paneelid"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
@@ -8052,7 +8059,7 @@ msgstr ""
 #: build/panels/universal-access/budgie-universal-access-panel.desktop.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
-msgstr ""
+msgstr "Hõlbustused"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
 #: build/panels/universal-access/budgie-universal-access-panel.desktop.in:4
@@ -8150,7 +8157,7 @@ msgstr "Keel;Paigutus;Klaviatuur;Sisend;Sisestamine;"
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
 #: build/panels/info-overview/budgie-info-overview-panel.desktop.in:3
 msgid "About"
-msgstr ""
+msgstr "Teave"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
 #: build/panels/info-overview/budgie-info-overview-panel.desktop.in:4
@@ -8247,7 +8254,7 @@ msgstr "Teadete kuvamine ja nende sisu"
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
 #: build/panels/notifications/budgie-notifications-panel.desktop.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
-msgstr "teated;bänner;sõnumid;teateala;hüpikaken;hüpikteade;"
+msgstr "Teated;bänner;sõnum;teateala;hüpikaken;hüpikteade;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
 #: build/panels/default-apps/budgie-default-apps-panel.desktop.in:3
@@ -8275,7 +8282,7 @@ msgstr ""
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
 #: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:3
 msgid "Thunderbolt"
-msgstr ""
+msgstr "Thunderbolt"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
 #: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:4
@@ -8465,7 +8472,7 @@ msgstr "Heli ja meedia"
 
 #: panels/keyboard/00-multimedia.xml.in:4
 msgid "Volume mute/unmute"
-msgstr ""
+msgstr "Heli tummaks/kuuldavaks"
 
 #: panels/keyboard/00-multimedia.xml.in:6
 msgid "Volume down"
@@ -8477,7 +8484,7 @@ msgstr "Heli valjemaks"
 
 #: panels/keyboard/00-multimedia.xml.in:10
 msgid "Microphone mute/unmute"
-msgstr ""
+msgstr "Mikrofon tummaks/kuuldavaks"
 
 #: panels/keyboard/00-multimedia.xml.in:12
 msgid "Launch media player"
