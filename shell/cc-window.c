@@ -663,8 +663,6 @@ window_key_press_event_cb (CcWindow    *self,
     {
       switch (event->keyval)
         {
-          case GDK_KEY_s:
-          case GDK_KEY_S:
           case GDK_KEY_f:
           case GDK_KEY_F:
             /* The search only happens when we're in the MAIN view */
