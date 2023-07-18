@@ -30,6 +30,7 @@ struct _CcAlertChooser
 {
   GtkBox         parent_instance;
 
+  CcSoundButton *none_button;
   CcSoundButton *bark_button;
   CcSoundButton *drip_button;
   CcSoundButton *glass_button;
@@ -230,7 +231,9 @@ static void
 clicked_cb (CcAlertChooser *self,
             CcSoundButton  *button)
 {
-  if (button == self->bark_button)
+  if (button == self->none_button)
+    g_settings_set_boolean (self->sound_settings, "event-sounds", FALSE);
+  else if (button == self->bark_button)
     select_sound (self, "bark");
   else if (button == self->drip_button)
     select_sound (self, "drip");
@@ -240,6 +243,8 @@ clicked_cb (CcAlertChooser *self,
     select_sound (self, "sonar");
 
   set_button (self, button, TRUE);
+  if (button != self->none_button)
+    set_button (self, self->none_button, FALSE);
   if (button != self->bark_button)
     set_button (self, self->bark_button, FALSE);
   if (button != self->drip_button)
@@ -271,6 +276,7 @@ cc_alert_chooser_class_init (CcAlertChooserClass *klass)
 
   gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/sound/cc-alert-chooser.ui");
 
+  gtk_widget_class_bind_template_child (widget_class, CcAlertChooser, none_button);
   gtk_widget_class_bind_template_child (widget_class, CcAlertChooser, bark_button);
   gtk_widget_class_bind_template_child (widget_class, CcAlertChooser, drip_button);
   gtk_widget_class_bind_template_child (widget_class, CcAlertChooser, glass_button);
@@ -298,7 +304,10 @@ cc_alert_chooser_init (CcAlertChooser *self)
   self->sound_settings = g_settings_new (KEY_SOUNDS_SCHEMA);
 
   alert_name = get_alert_name ();
-  if (g_strcmp0 (alert_name, "bark") == 0)
+
+  if (!g_settings_get_boolean (self->sound_settings, "event-sounds"))
+    set_button (self, self->none_button, TRUE);
+  else if (g_strcmp0 (alert_name, "bark") == 0)
     set_button (self, self->bark_button, TRUE);
   else if (g_strcmp0 (alert_name, "drip") == 0)
     set_button (self, self->drip_button, TRUE);
