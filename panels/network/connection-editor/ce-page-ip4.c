@@ -96,8 +96,11 @@ method_changed (CEPageIP4 *self)
                 routes_enabled = FALSE;
         } else {
                 addr_enabled = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->manual_radio));
-                dns_enabled = !gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->local_radio));
                 routes_enabled = !gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->local_radio));
+                if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (self->local_radio)))
+                        dns_enabled = FALSE;
+                else
+                        dns_enabled = !gtk_switch_get_active (self->auto_dns_switch);
         }
 
         gtk_widget_set_visible (GTK_WIDGET (self->address_box), addr_enabled);
@@ -312,8 +315,8 @@ add_dns_section (CEPageIP4 *self)
         gint i;
 
         gtk_switch_set_active (self->auto_dns_switch, !nm_setting_ip_config_get_ignore_auto_dns (self->setting));
-        g_signal_connect_object (self->auto_dns_switch, "notify::active", G_CALLBACK (ce_page_changed), self, G_CONNECT_SWAPPED);
-
+        g_signal_connect_object (self->auto_dns_switch, "notify::active", G_CALLBACK (method_changed), self, G_CONNECT_SWAPPED);
+        
         string = g_string_new ("");
 
         for (i = 0; i < nm_setting_ip_config_get_num_dns (self->setting); i++) {
@@ -616,8 +619,9 @@ ui_to_setting (CEPageIP4 *self)
 
         dns_servers = g_ptr_array_new_with_free_func (g_free);
         dns_text = g_strstrip (g_strdup (gtk_entry_get_text (GTK_ENTRY (self->dns_entry))));
-        if (g_str_equal (method, NM_SETTING_IP4_CONFIG_METHOD_AUTO) ||
-            g_str_equal (method, NM_SETTING_IP4_CONFIG_METHOD_MANUAL))
+        if ((g_str_equal (method, NM_SETTING_IP4_CONFIG_METHOD_AUTO) ||
+            g_str_equal (method, NM_SETTING_IP4_CONFIG_METHOD_MANUAL)) &&
+            !gtk_switch_get_active (self->auto_dns_switch))
                 dns_addresses = g_strsplit_set (dns_text, ", ", -1);
         else
                 dns_addresses = NULL;
