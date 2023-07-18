@@ -125,20 +125,42 @@ set_sound_symlink (const gchar *alert_name,
 }
 
 static void
+update_dir_mtime (const char *dir_path)
+{
+  g_autoptr(GFile) dir = NULL;
+  g_autoptr(GDateTime) now = NULL;
+  g_autoptr(GError) mtime_error = NULL;
+
+  now = g_date_time_new_now_utc ();
+  dir = g_file_new_for_path (dir_path);
+  if (!g_file_set_attribute_uint64 (dir,
+                                    G_FILE_ATTRIBUTE_TIME_MODIFIED,
+                                    g_date_time_to_unix (now),
+                                    G_FILE_QUERY_INFO_NONE,
+                                    NULL,
+                                    &mtime_error))
+    {
+      g_warning ("Failed to update directory modification time for %s: %s",
+                 dir_path, mtime_error->message);
+    }
+}
+
+static void
 set_custom_theme (CcAlertChooser *self,
                   const gchar    *name)
 {
-  g_autofree gchar *dir = NULL;
+  g_autofree gchar *dir_path = NULL;
   g_autofree gchar *theme_path = NULL;
+  g_autofree gchar *sounds_path = NULL;
   g_autoptr(GKeyFile) theme_file = NULL;
   g_autoptr(GVariant) default_theme = NULL;
   g_autoptr(GError) load_error = NULL;
   g_autoptr(GError) save_error = NULL;
 
-  dir = get_theme_dir ();
-  g_mkdir_with_parents (dir, USER_DIR_MODE);
+  dir_path = get_theme_dir ();
+  g_mkdir_with_parents (dir_path, USER_DIR_MODE);
 
-  theme_path = g_build_filename (dir, "index.theme", NULL);
+  theme_path = g_build_filename (dir_path, "index.theme", NULL);
 
   default_theme = g_settings_get_default_value (self->sound_settings, "theme-name");
 
@@ -160,6 +182,17 @@ set_custom_theme (CcAlertChooser *self,
 
   set_sound_symlink ("bell-terminal", name);
   set_sound_symlink ("bell-window-system", name);
+
+  /* Ensure canberra's event-sound-cache will get updated when g-s-d
+   * clears the cached samples.
+   */
+  sounds_path = g_build_filename (g_get_user_data_dir (), "sounds", NULL);
+  update_dir_mtime (sounds_path);
+
+  /* Ensure the g-s-d sound plugin which does non-recursive monitoring
+   * notices the change even if the theme directory already existed.
+   */
+  update_dir_mtime (dir_path);
 
   g_settings_set_boolean (self->sound_settings, "event-sounds", TRUE);
   g_settings_set_string (self->sound_settings, "theme-name", CUSTOM_THEME_NAME);
