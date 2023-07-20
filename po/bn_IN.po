@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: budgie-control-center 1.1.0\n"
+"Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-24 18:45+0000\n"
+"POT-Creation-Date: 2023-07-16 10:31+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Bengali (India) (https://app.transifex.com/buddiesofbudgie/teams/129844/bn_IN/)\n"
@@ -6565,7 +6565,7 @@ msgid "_Music player"
 msgstr "মিউজিক প্লেয়ার (_M)"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:5
-#: panels/default-apps/cc-default-apps-panel.ui.h:6
+#: panels/default-apps/cc-default-apps-panel.ui.h:7
 msgid "_Photos"
 msgstr "ছবি (_P)"
 
@@ -7632,18 +7632,22 @@ msgid "_Web"
 msgstr "ওয়েব (_W)"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
+msgid "_Files"
+msgstr ""
+
+#: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"
 msgstr "মেল (_M)"
 
-#: panels/default-apps/cc-default-apps-panel.ui.h:3
+#: panels/default-apps/cc-default-apps-panel.ui.h:4
 msgid "_Calendar"
 msgstr "বর্ষপঞ্জি (_C)"
 
-#: panels/default-apps/cc-default-apps-panel.ui.h:4
+#: panels/default-apps/cc-default-apps-panel.ui.h:5
 msgid "M_usic"
 msgstr "মিউজিক (_u)"
 
-#: panels/default-apps/cc-default-apps-panel.ui.h:5
+#: panels/default-apps/cc-default-apps-panel.ui.h:6
 msgid "_Video"
 msgstr "ভিডিও (_V)"
 

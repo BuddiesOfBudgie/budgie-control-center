@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: budgie-control-center 1.1.0\n"
+"Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-24 18:45+0000\n"
+"POT-Creation-Date: 2023-07-16 10:31+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Hungarian (https://app.transifex.com/buddiesofbudgie/teams/129844/hu/)\n"
@@ -6590,7 +6590,7 @@ msgid "_Music player"
 msgstr "_Zenelejátszó"
 
 #: panels/removable-media/cc-removable-media-panel.ui.h:5
-#: panels/default-apps/cc-default-apps-panel.ui.h:6
+#: panels/default-apps/cc-default-apps-panel.ui.h:7
 msgid "_Photos"
 msgstr "_Fényképek"
 
@@ -7669,18 +7669,22 @@ msgid "_Web"
 msgstr "_Web"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
+msgid "_Files"
+msgstr ""
+
+#: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"
 msgstr "_Levelezés"
 
-#: panels/default-apps/cc-default-apps-panel.ui.h:3
+#: panels/default-apps/cc-default-apps-panel.ui.h:4
 msgid "_Calendar"
 msgstr "_Naptár"
 
-#: panels/default-apps/cc-default-apps-panel.ui.h:4
+#: panels/default-apps/cc-default-apps-panel.ui.h:5
 msgid "M_usic"
 msgstr "_Zene"
 
-#: panels/default-apps/cc-default-apps-panel.ui.h:5
+#: panels/default-apps/cc-default-apps-panel.ui.h:6
 msgid "_Video"
 msgstr "_Videó"
 
