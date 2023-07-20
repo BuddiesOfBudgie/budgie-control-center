@@ -233,7 +233,7 @@ cc_hostname_entry_constructed (GObject *object)
   else
     gtk_entry_set_text (GTK_ENTRY (self), "");
 
-  g_signal_connect (self, "changed", G_CALLBACK (text_changed_cb), NULL);
+  g_signal_connect (self, "apply", G_CALLBACK (text_changed_cb), NULL);
 }
 
 static void
