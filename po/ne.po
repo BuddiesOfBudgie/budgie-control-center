@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-16 10:31+0100\n"
+"POT-Creation-Date: 2023-07-20 22:20+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Nepali (https://app.transifex.com/buddiesofbudgie/teams/129844/ne/)\n"
@@ -315,12 +315,12 @@ msgid "Failed to add new printer."
 msgstr "नयाँ मुद्रक थप्न असफल"
 
 #. Translators: The XML file containing user interface can not be loaded
-#: panels/printers/cc-printers-panel.c:1244
+#: panels/printers/cc-printers-panel.c:1246
 #, c-format
 msgid "Could not load ui: %s"
 msgstr "ui जडान गर्न सकिएन : %s"
 
-#: panels/printers/cc-printers-panel.c:1312
+#: panels/printers/cc-printers-panel.c:1314
 msgid "Unlock to Add Printers and Change Settings"
 msgstr "मुद्रक र परिवर्तन सेटिङ थप्न ताल्चा खोल्नुहोस्"
 
@@ -531,7 +531,6 @@ msgstr "समानान्तर पोर्ट"
 #. Translators: The found device is a printer connected via Bluetooth
 #: panels/printers/pp-new-printer-dialog.c:1392
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:3
 msgid "Bluetooth"
 msgstr "ब्लुटुठ"
 
@@ -634,33 +633,39 @@ msgstr "ट्याबलेट"
 msgid "Batteries"
 msgstr "बेटरिहरू"
 
+#. Translators: UPS is an Uninterruptible Power Supply:
+#. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
+#: panels/power/cc-power-panel.c:386
+msgid "UPS"
+msgstr ""
+
 #. TRANSLATORS: secondary battery, misc
-#: panels/power/cc-power-panel.c:384 panels/power/cc-battery-row.c:218
+#: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
 #: panels/power/cc-power-panel.ui.h:21
 msgid "Battery"
 msgstr "बेटरि"
 
-#: panels/power/cc-power-panel.c:644
+#: panels/power/cc-power-panel.c:649
 msgid "When _idle"
 msgstr "निश्क्रिय"
 
-#: panels/power/cc-power-panel.c:796
+#: panels/power/cc-power-panel.c:801
 msgid "Suspend"
 msgstr "निश्क्रिय गर्ने"
 
-#: panels/power/cc-power-panel.c:797
+#: panels/power/cc-power-panel.c:802
 msgid "Power Off"
 msgstr "पावर बन्द"
 
-#: panels/power/cc-power-panel.c:798
+#: panels/power/cc-power-panel.c:803
 msgid "Hibernate"
 msgstr "हाइवरनेट"
 
-#: panels/power/cc-power-panel.c:799
+#: panels/power/cc-power-panel.c:804
 msgid "Nothing"
 msgstr "केही पनि होइन"
 
-#: panels/power/cc-power-panel.c:856 panels/power/cc-power-panel.c:867
+#: panels/power/cc-power-panel.c:861 panels/power/cc-power-panel.c:872
 #: panels/universal-access/cc-ua-panel.c:334
 #: panels/universal-access/cc-ua-panel.c:615
 #: panels/universal-access/cc-ua-panel.c:625
@@ -671,15 +676,15 @@ msgstr "केही पनि होइन"
 msgid "Off"
 msgstr "बन्द"
 
-#: panels/power/cc-power-panel.c:858
+#: panels/power/cc-power-panel.c:863
 msgid "When on battery power"
 msgstr "जब बेटरि पावरमा"
 
-#: panels/power/cc-power-panel.c:860
+#: panels/power/cc-power-panel.c:865
 msgid "When plugged in"
 msgstr "जडान भएको बेला"
 
-#: panels/power/cc-power-panel.c:862 panels/power/cc-power-panel.c:869
+#: panels/power/cc-power-panel.c:867 panels/power/cc-power-panel.c:874
 #: panels/universal-access/cc-ua-panel.c:334
 #: panels/universal-access/cc-ua-panel.c:615
 #: panels/universal-access/cc-ua-panel.c:625
@@ -690,51 +695,51 @@ msgid "On"
 msgstr "खुला छ"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
-#: panels/power/cc-power-panel.c:973 panels/common/cc-util.c:166
+#: panels/power/cc-power-panel.c:978 panels/common/cc-util.c:166
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d मिनेट"
 msgstr[1] "%d मिनेट"
 
-#: panels/power/cc-power-panel.c:980
+#: panels/power/cc-power-panel.c:985
 msgctxt "Idle time"
 msgid "Never"
 msgstr "कहिल्यै पनि"
 
-#: panels/power/cc-power-panel.c:1066
+#: panels/power/cc-power-panel.c:1071
 msgid "Automatic suspend"
 msgstr "स्वत निश्क्रिय"
 
-#: panels/power/cc-power-panel.c:1162
+#: panels/power/cc-power-panel.c:1167
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
 msgstr ""
 
-#: panels/power/cc-power-panel.c:1164
+#: panels/power/cc-power-panel.c:1169
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
 msgstr ""
 
-#: panels/power/cc-power-panel.c:1166
+#: panels/power/cc-power-panel.c:1171
 msgid "Performance mode temporarily disabled."
 msgstr ""
 
-#: panels/power/cc-power-panel.c:1209
+#: panels/power/cc-power-panel.c:1214
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
 msgstr ""
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1217
+#: panels/power/cc-power-panel.c:1222
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr ""
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1221
+#: panels/power/cc-power-panel.c:1226
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr ""
@@ -1203,7 +1208,7 @@ msgstr "तस्वीर छान्नुहोस्"
 msgid "Current background"
 msgstr "हालको पृष्ठभूमि"
 
-#: panels/sound/cc-alert-chooser.c:151
+#: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
 msgstr "अनुकुलन"
 
@@ -1237,7 +1242,7 @@ msgctxt "Display rotation"
 msgid "Landscape (flipped)"
 msgstr "ल्यान्डस्केप (फ्लिप गरिएको)"
 
-#: panels/display/cc-display-settings.c:196
+#: panels/display/cc-display-settings.c:199
 #, c-format
 msgid "%.2lf Hz"
 msgstr "%.2lf हर्ज"
@@ -1268,6 +1273,7 @@ msgid "Less Warm"
 msgstr "कम न्यानो"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:379
+#: panels/sound/cc-alert-chooser.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:7
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:31
 msgid "None"
@@ -1292,7 +1298,7 @@ msgstr "अरू…"
 msgid "No input sources found"
 msgstr "कुनै पनि निर्गत श्रोत फेला परेन ।"
 
-#: panels/keyboard/cc-input-chooser.c:964
+#: panels/keyboard/cc-input-chooser.c:988
 msgctxt "Input Source"
 msgid "Other"
 msgstr "अन्य"
@@ -1870,7 +1876,7 @@ msgstr ""
 msgid "Unlock to Add Users and Change Settings"
 msgstr "प्रयोगकर्ता थप्न र सेटिङ परिवर्तन गर्न ताल्चा खोल्नुहोस्"
 
-#: panels/user-accounts/user-utils.c:432
+#: panels/user-accounts/user-utils.c:438
 msgid ""
 "The username should usually only consist of lower case letters from a-z, "
 "digits and the following characters: - _"
@@ -1878,17 +1884,17 @@ msgstr ""
 "प्रयोगकर्ता नाममा साधारणतया a-z, अङ्क र निम्न क्यारेक्टरहरूको लोअर केस "
 "अक्षरहरू मात्र हुनुपर्दछ: - _"
 
-#: panels/user-accounts/user-utils.c:436
+#: panels/user-accounts/user-utils.c:442
 msgid "Sorry, that user name isn’t available. Please try another."
 msgstr ""
 "माफ गर्नुहोस्, त्यो प्रयोगकर्ता नाम उपलब्ध छैन । कृपया अर्को प्रयास "
 "गर्नुहोस् ।"
 
-#: panels/user-accounts/user-utils.c:478
+#: panels/user-accounts/user-utils.c:484
 msgid "The username is too long."
 msgstr "प्रयोगकर्ता नाम धेरै लामो भयो ।"
 
-#: panels/user-accounts/user-utils.c:537
+#: panels/user-accounts/user-utils.c:543
 msgid "This will be used to name your home folder and can’t be changed."
 msgstr "यो तपाईँको गृह फोल्डर नाम दिन प्रयोग गरिन्छ र परिवर्तन गर्न सकिँदैन ।"
 
@@ -2176,7 +2182,6 @@ msgstr "/dev मा पूरा पहुँच"
 #: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
 #: panels/wwan/cc-wwan-network-dialog.ui.h:1
 #: panels/network/budgie-network-panel.desktop.in.in:3
-#: build/panels/network/budgie-network-panel.desktop.in:3
 msgid "Network"
 msgstr "सञ्जाल"
 
@@ -2280,7 +2285,6 @@ msgstr "अन्य फाइलहरू"
 #: panels/applications/cc-applications-panel.ui.h:26
 #: panels/notifications/cc-notifications-panel.ui.h:4
 #: panels/applications/budgie-applications-panel.desktop.in.in:3
-#: build/panels/applications/budgie-applications-panel.desktop.in:3
 msgid "Applications"
 msgstr "अनुप्रयोग"
 
@@ -2335,7 +2339,6 @@ msgstr "प्रतिलिपि बनाउनुहोस्"
 
 #: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:3
 msgid "Sharing"
 msgstr "साझेदारी"
 
@@ -2872,7 +2875,6 @@ msgstr "निजी  कुञ्जी छान्नुहोस्"
 
 #: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
 #: panels/network/budgie-wifi-panel.desktop.in.in:3
-#: build/panels/network/budgie-wifi-panel.desktop.in:3
 msgid "Wi-Fi"
 msgstr "वाई-फाई"
 
@@ -3188,17 +3190,17 @@ msgstr "सुरक्षित सञ्जाल"
 msgid "Security"
 msgstr "सुरक्षा"
 
-#: panels/network/connection-editor/ce-page-ip6.c:226
-#: panels/network/connection-editor/ce-page-ip4.c:245
+#: panels/network/connection-editor/ce-page-ip6.c:229
+#: panels/network/connection-editor/ce-page-ip4.c:248
 msgid "Delete Address"
 msgstr "ठेगाना पुस्तिका  मेट्नुहोस्"
 
-#: panels/network/connection-editor/ce-page-ip6.c:370
-#: panels/network/connection-editor/ce-page-ip4.c:400
+#: panels/network/connection-editor/ce-page-ip6.c:373
+#: panels/network/connection-editor/ce-page-ip4.c:403
 msgid "Delete Route"
 msgstr "पथ मेट्नुहोस्"
 
-#: panels/network/connection-editor/ce-page-ip6.c:726
+#: panels/network/connection-editor/ce-page-ip6.c:730
 msgid "IPv6"
 msgstr "IPv6"
 
@@ -3336,31 +3338,31 @@ msgstr ""
 msgid "Profile %d"
 msgstr "प्रोफाइल %d"
 
-#: panels/network/connection-editor/net-connection-editor.c:280
+#: panels/network/connection-editor/net-connection-editor.c:305
 msgid "Unable to open connection editor"
 msgstr "जडान सम्पादक खोल्न सकिएन"
 
-#: panels/network/connection-editor/net-connection-editor.c:296
+#: panels/network/connection-editor/net-connection-editor.c:321
 msgid "New Profile"
 msgstr "नायाँ प्रोफाइल"
 
-#: panels/network/connection-editor/net-connection-editor.c:504
+#: panels/network/connection-editor/net-connection-editor.c:533
 #: panels/printers/new-printer-dialog.ui.h:4
 #: panels/color/cc-color-panel.ui.h:29 panels/keyboard/cc-input-chooser.ui.h:3
 #: panels/user-accounts/cc-add-user-dialog.ui.h:3
 msgid "_Add"
 msgstr "थप्नुहोस्"
 
-#: panels/network/connection-editor/net-connection-editor.c:587
+#: panels/network/connection-editor/net-connection-editor.c:616
 #: panels/network/cc-network-panel.ui.h:2
 msgid "VPN"
 msgstr "भीपीएन"
 
-#: panels/network/connection-editor/net-connection-editor.c:731
+#: panels/network/connection-editor/net-connection-editor.c:760
 msgid "Import from file…"
 msgstr "फाईलबाट आयात गर्नुहोस्…"
 
-#: panels/network/connection-editor/net-connection-editor.c:763
+#: panels/network/connection-editor/net-connection-editor.c:792
 msgid "Add VPN"
 msgstr "भीपीएन थप्नुहोस्"
 
@@ -3461,7 +3463,7 @@ msgstr "भीपीएन हटाउनुहोस्"
 msgid "Details"
 msgstr "विस्तृत विवरणहरू"
 
-#: panels/network/connection-editor/ce-page-ip4.c:754
+#: panels/network/connection-editor/ce-page-ip4.c:758
 msgid "IPv4"
 msgstr "IPv4"
 
@@ -3917,7 +3919,7 @@ msgstr "BIOS मा थन्डरबोल्ट समर्थन अक्�
 msgid "Thunderbolt security level could not be determined."
 msgstr "थन्डरबोल्ट सुरक्षा स्तर निर्धारण गर्न सकेन ।"
 
-#: panels/thunderbolt/cc-bolt-panel.c:686
+#: panels/thunderbolt/cc-bolt-panel.c:690
 #, c-format
 msgid "Error switching direct mode: %s"
 msgstr "प्रत्यक्ष मोड स्विच गर्दा त्रुटि: %s"
@@ -4082,6 +4084,18 @@ msgstr "सबै अस्थायी फाइलहरू स्थायी
 msgid "_Purge Temporary Files"
 msgstr "अस्थाई फाइलहरू मेट्नुहोस्"
 
+#: panels/usage/cc-usage-panel.c:322
+msgid "Clear File History?"
+msgstr ""
+
+#: panels/usage/cc-usage-panel.c:323
+msgid "After clearing, lists of recently used files will appear empty."
+msgstr ""
+
+#: panels/usage/cc-usage-panel.c:324
+msgid "_Clear History"
+msgstr ""
+
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
 msgid "Other"
@@ -4137,9 +4151,8 @@ msgstr "उपलब्ध प्यानलहरू:"
 msgid "Privacy"
 msgstr "गोपनीयता"
 
-#: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
+#: shell/cc-window.c:313 shell/cc-window.c:1044 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
-#: build/shell/budgie-control-center.desktop.in:3
 msgid "Budgie Control Center"
 msgstr ""
 
@@ -4476,7 +4489,6 @@ msgstr "ब्लुटुठ सेटिङ"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:3
 msgid "Wacom Tablet"
 msgstr "वाक्म ट्याबलेट"
 
@@ -5020,19 +5032,19 @@ msgstr "देब्रे"
 msgid "Right"
 msgstr "दाहिने"
 
-#: panels/sound/cc-alert-chooser.ui.h:1
+#: panels/sound/cc-alert-chooser.ui.h:2
 msgid "Bark"
 msgstr "Bark"
 
-#: panels/sound/cc-alert-chooser.ui.h:2
+#: panels/sound/cc-alert-chooser.ui.h:3
 msgid "Drip"
 msgstr "द्रिप"
 
-#: panels/sound/cc-alert-chooser.ui.h:3
+#: panels/sound/cc-alert-chooser.ui.h:4
 msgid "Glass"
 msgstr "ग्लास"
 
-#: panels/sound/cc-alert-chooser.ui.h:4
+#: panels/sound/cc-alert-chooser.ui.h:5
 msgid "Sonar"
 msgstr "सोनार"
 
@@ -5296,7 +5308,6 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:20
 #: panels/display/budgie-display-panel.desktop.in.in:3
-#: build/panels/display/budgie-display-panel.desktop.in:3
 msgid "Displays"
 msgstr "प्रदर्शन"
 
@@ -6284,19 +6295,16 @@ msgstr "यो अनुप्रयोगले आवश्यक पर्न
 
 #: panels/applications/cc-applications-panel.ui.h:5
 #: panels/camera/budgie-camera-panel.desktop.in.in:3
-#: build/panels/camera/budgie-camera-panel.desktop.in:3
 msgid "Camera"
 msgstr "क्यामेरा"
 
 #: panels/applications/cc-applications-panel.ui.h:7
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:3
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:3
 msgid "Microphone"
 msgstr "माईक्रोफोन"
 
 #: panels/applications/cc-applications-panel.ui.h:8
 #: panels/location/budgie-location-panel.desktop.in.in:3
-#: build/panels/location/budgie-location-panel.desktop.in:3
 msgid "Location Services"
 msgstr "स्थान सेवाहरू"
 
@@ -6331,7 +6339,6 @@ msgstr "खोजी गर्नुहोस्"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:3
 msgid "Notifications"
 msgstr "सूचना"
 
@@ -7498,7 +7505,6 @@ msgstr "डिसेम्बर"
 
 #: panels/datetime/cc-datetime-panel.ui.h:13
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:3
 msgid "Date & Time"
 msgstr "मिति र समय"
 
@@ -7995,12 +8001,10 @@ msgid "Help"
 msgstr "मद्दत"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:3
-#: build/panels/printers/budgie-printers-panel.desktop.in:3
 msgid "Printers"
 msgstr "मुद्रणयन्त्रहरू"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:4
-#: build/panels/printers/budgie-printers-panel.desktop.in:4
 msgid "Add printers, view printer jobs and decide how you want to print"
 msgstr ""
 "मुद्रक थप्नुहोस्, मुद्रक कार्य हेर्नुहोस् र तपाईँले कसरी मुद्रण गर्ने निर्णय"
@@ -8009,12 +8013,10 @@ msgstr ""
 #. Translators: Search terms to find the Printers panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/printers/budgie-printers-panel.desktop.in.in:16
-#: build/panels/printers/budgie-printers-panel.desktop.in:16
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
 msgstr "मुद्रणयन्त्र;Queue;मुद्रण;कागज;मसी;टोनर;"
 
 #: panels/location/budgie-location-panel.desktop.in.in:4
-#: build/panels/location/budgie-location-panel.desktop.in:4
 msgid "Protect your location information"
 msgstr "तपाईँको स्थान जानकारि सुरक्षित गर्नुहोस्"
 
@@ -8023,16 +8025,12 @@ msgstr "तपाईँको स्थान जानकारि सुरक
 #: panels/location/budgie-location-panel.desktop.in.in:16
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:16
 #: panels/usage/budgie-usage-panel.desktop.in.in:16
-#: build/panels/location/budgie-location-panel.desktop.in:16
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:16
-#: build/panels/usage/budgie-usage-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
 msgstr ""
 "पर्दा;ताल्चा;निदान;क्र्यास;निजी;हालैको;अस्थायी;tmp;index;नाम;सञ्जाल;पहिचान;गोपनीयता;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:4
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:4
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "बटन मानचित्र सेट गर्नुहोस् र ग्राफिक्स ट्याबलेटका लागि स्टाइलस संवेदनशीलता "
@@ -8041,17 +8039,14 @@ msgstr ""
 #. Translators: Search terms to find the Wacom Tablet panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:15
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:15
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
 msgstr "ट्याबलेट;वाक्म;स्टाईलस्;ईरेजर;माउस;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
-#: build/panels/power/budgie-power-panel.desktop.in:3
 msgid "Power"
 msgstr "पावर"
 
 #: panels/power/budgie-power-panel.desktop.in.in:4
-#: build/panels/power/budgie-power-panel.desktop.in:4
 msgid "View your battery status and change power saving settings"
 msgstr ""
 "तपाईँको ब्याट्री स्थिति हेर्नुहोस् र पावर बचत सेटिङ परिवर्तन गर्नुहोस्"
@@ -8059,7 +8054,6 @@ msgstr ""
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/power/budgie-power-panel.desktop.in.in:15
-#: build/panels/power/budgie-power-panel.desktop.in:15
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
 msgstr ""
@@ -8067,12 +8061,10 @@ msgstr ""
 " मोनिटर;DPMS;निष्प्रयोजन; शक्ति;"
 
 #: panels/color/budgie-color-panel.desktop.in.in:3
-#: build/panels/color/budgie-color-panel.desktop.in:3
 msgid "Color"
 msgstr "रङ"
 
 #: panels/color/budgie-color-panel.desktop.in.in:4
-#: build/panels/color/budgie-color-panel.desktop.in:4
 msgid ""
 "Calibrate the color of your devices, such as displays, cameras or printers"
 msgstr ""
@@ -8082,60 +8074,50 @@ msgstr ""
 #. Translators: Search terms to find the Color panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/color/budgie-color-panel.desktop.in.in:15
-#: build/panels/color/budgie-color-panel.desktop.in:15
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
 msgstr "रङ;आइसिसी;प्रोफाइल;क्यालिब्रेट;मुद्रणयन्त्र;डिस्प्ले;"
 
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:4
 msgid "Turn Bluetooth on and off and connect your devices"
 msgstr "यन्त्र जडानकोलागि ब्लुटुठ बन्द अनि खोल्नुहोस्"
 
 #. Translators: Search terms to find the Bluetooth panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:15
 msgid "share;sharing;bluetooth;obex;"
 msgstr "साझा;साझेदारी;ब्लुटुथ;ओबेक्स;"
 
 #: panels/background/budgie-background-panel.desktop.in.in:3
-#: build/panels/background/budgie-background-panel.desktop.in:3
 msgid "Background"
 msgstr "पृष्ठभूमि"
 
 #: panels/background/budgie-background-panel.desktop.in.in:4
-#: build/panels/background/budgie-background-panel.desktop.in:4
 msgid "Change your background image to a wallpaper or photo"
 msgstr "पृष्ठभुमिको छवि वालपेपर वा फोटो मा परिनत गर्नुहोस्"
 
 #. Translators: Search terms to find the Background panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/background/budgie-background-panel.desktop.in.in:15
-#: build/panels/background/budgie-background-panel.desktop.in:15
 msgid "Wallpaper;Screen;Desktop;"
 msgstr "वालपेपर;पर्दा;डेस्कटप;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
-#: build/panels/sound/budgie-sound-panel.desktop.in:3
 msgid "Sound"
 msgstr "ध्वनि"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:4
-#: build/panels/sound/budgie-sound-panel.desktop.in:4
 msgid "Change sound levels, inputs, outputs, and alert sounds"
 msgstr "ध्वनि स्तर, आगत, निर्गत, र चेतावनी ध्वनि परिवर्तन गर्नुहोस्"
 
 #. Translators: Search terms to find the Sound panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sound/budgie-sound-panel.desktop.in.in:15
-#: build/panels/sound/budgie-sound-panel.desktop.in:15
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 msgstr ""
 "कार्ड; माइक्रोफोन; भोल्युम; फेड; ब्यालेन्स; ब्लुटुथ; हेडसेट;ध्वनि;आगत;निर्गत"
 
 #: panels/display/budgie-display-panel.desktop.in.in:4
-#: build/panels/display/budgie-display-panel.desktop.in:4
 msgid "Choose how to use connected monitors and projectors"
 msgstr ""
 "तपाईँको माउस वा टचप्याड संवेदनशीलता परिवर्तन गर्नुहोस् र दायाँ वा बायाँ-हाते"
@@ -8144,7 +8126,6 @@ msgstr ""
 #. Translators: Search terms to find the Displays panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/display/budgie-display-panel.desktop.in.in:15
-#: build/panels/display/budgie-display-panel.desktop.in:15
 msgid ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
 msgstr ""
@@ -8152,12 +8133,10 @@ msgstr ""
 " रात; प्रकाश; नीलो;रेडसिफ्ट;रङ;सूर्यास्त;सूर्योदय;"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:3
 msgid "Keyboard"
 msgstr "कुञ्जीपाटी"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:4
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:4
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
@@ -8166,7 +8145,6 @@ msgstr ""
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:15
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
@@ -8174,12 +8152,10 @@ msgstr ""
 " स्रोत; ताल्चा लगाउनुहोस्; भोल्युम;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:3
 msgid "Users"
 msgstr "प्रयोगकर्ता"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:4
 msgid "Add or remove users and change your password"
 msgstr ""
 "प्रयोगकर्ता थप्नुहोस् वा हटाउनुहोस् र तपाईँको पासवर्ड परिवर्तन गर्नुहोस्"
@@ -8187,27 +8163,23 @@ msgstr ""
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:15
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:15
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
 msgstr ""
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
 msgstr "पहुँचता"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:4
 msgid "Make it easier to see, hear, type, point and click"
 msgstr "हर्न, सुन्न, टाईप, देखाउन र क्लिक गर्न सहज बनाउनुहोस्"
 
 #. Translators: Search terms to find the Accessibility panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:15
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:15
 msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
@@ -8218,55 +8190,46 @@ msgstr ""
 "सहयोग गर्नुहोस्; दोहोर्याउनुहोस्; ब्लिङ्क;दृश्य;श्रवण;अडियो;टाइपिङ;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:3
 msgid "Multitasking"
 msgstr ""
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:4
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:4
 msgid "Manage preferences for productivity and multitasking"
 msgstr ""
 
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:15
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
-#: build/panels/applications/budgie-applications-panel.desktop.in:4
 msgid "Control various application permissions and settings"
 msgstr "विभिन्न अनुप्रयोग अनुमति र सेटिङ नियन्त्रण गर्नुहोस्"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
-#: build/panels/applications/budgie-applications-panel.desktop.in:16
 msgid "application;flatpak;permission;setting;"
 msgstr "अनुप्रयोग;flatpak;अनुमति;सेटिङ;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:4
 msgid "Control what you want to share with others"
 msgstr "अरूसँग बाँड्न चाहेको कुरा नियन्त्रण गर्नुहोस्"
 
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:16
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:16
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
 msgstr ""
 "साझेदारी;साझेदारी;ssh;होस्ट;नाम;टाढाको;डेस्कटप;मिडिया;अडियो;भिडियो;तस्विर;फोटो;चलचित्र;सर्भर;रेन्डरर;"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:3
 msgid "Removable Media"
 msgstr "हटाउन सकिने माध्यम"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:4
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:4
 msgid "Configure Removable Media settings"
 msgstr "हटाउन योग्य मिडिया सेटिङ्ग"
 
@@ -8274,7 +8237,6 @@ msgstr "हटाउन योग्य मिडिया सेटिङ्ग
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:15
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
@@ -8282,12 +8244,10 @@ msgstr ""
 " सकिने;मिडिया;स्वचालित;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
-#: build/panels/region/budgie-region-panel.desktop.in:3
 msgid "Region & Language"
 msgstr "क्षेत्र र भाषा"
 
 #: panels/region/budgie-region-panel.desktop.in.in:4
-#: build/panels/region/budgie-region-panel.desktop.in:4
 msgid "Select your display language and formats"
 msgstr ""
 
@@ -8295,17 +8255,14 @@ msgstr ""
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:15
-#: build/panels/region/budgie-region-panel.desktop.in:15
 msgid "Language;Layout;Keyboard;Input;"
 msgstr "भाषा;खाका;किबोर्ड;आगत;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:3
 msgid "About"
 msgstr "बारेमा"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:4
 msgid "View information about your system"
 msgstr "तपाईँको प्रणाली बारेको सूचना हेर्नुहोस्"
 
@@ -8315,7 +8272,6 @@ msgstr "तपाईँको प्रणाली बारेको सूच
 #. "Preferred Applications" is the old name for the preference, so make
 #. sure that you use the same "translation" for those keywords
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:19
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:19
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
@@ -8323,61 +8279,51 @@ msgstr ""
 " सकिने;मिडिया; स्वचालित;"
 
 #: panels/network/budgie-network-panel.desktop.in.in:4
-#: build/panels/network/budgie-network-panel.desktop.in:4
 msgid "Control how you connect to the Internet"
 msgstr "कसरी तपाईं इन्टरनेट जडान गर्ने बारे नियन्त्रण गर्नुहोस"
 
 #. Translators: Search terms to find the Network panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-network-panel.desktop.in.in:15
-#: build/panels/network/budgie-network-panel.desktop.in:15
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 msgstr ""
 "सञ्जाल;आईपी; LAN; प्रोक्सी; WAN; ब्रडब्यान्ड; मोडेम; ब्लुटुथ;भीपीएन;डीएनएस;"
 
 #: panels/network/budgie-wifi-panel.desktop.in.in:4
-#: build/panels/network/budgie-wifi-panel.desktop.in:4
 msgid "Control how you connect to Wi-Fi networks"
 msgstr "तपाईँले ताररहित सञ्जालमा कसरी जडान गर्न नियन्त्रण गर्नुहोस्"
 
 #. Translators: Search terms to find the Wi-Fi panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-wifi-panel.desktop.in.in:15
-#: build/panels/network/budgie-wifi-panel.desktop.in:15
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 msgstr "सञ्जाल; ताररहित;Wi-Fi;Wifi;IP; LAN; ब्रडब्यान्ड;डीएनएस; हटस्पट;"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:3
 msgid "Mobile Network"
 msgstr ""
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:4
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:4
 msgid "Configure Telephony and mobile data connections"
 msgstr ""
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:16
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:16
 msgid "cellular;wwan;telephony;sim;mobile;"
 msgstr ""
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:4
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:4
 msgid "Change the date and time, including time zone"
 msgstr "समय क्षेत्र सहित मिति र समय परिवर्तन गर्नुहोस"
 
 #. Translators: Search terms to find the Date and Time panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:15
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:15
 msgid "Clock;Timezone;Location;"
 msgstr "घडी;समय क्षेत्र;स्थान;"
 
 #: panels/camera/budgie-camera-panel.desktop.in.in:4
-#: build/panels/camera/budgie-camera-panel.desktop.in:4
 msgid "Protect your pictures"
 msgstr "तपाईँको तस्वीर सुरक्षित राख्नुहोस्"
 
@@ -8385,15 +8331,12 @@ msgstr "तपाईँको तस्वीर सुरक्षित रा
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/camera/budgie-camera-panel.desktop.in.in:16
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:16
-#: build/panels/camera/budgie-camera-panel.desktop.in:16
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
 "पर्दा;ताल्चा;निदान;क्र्यास;निजी;हालैको;अस्थायी;tmp;index;नाम;सञ्जाल;पहिचान;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:4
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:4
 msgid "Control which notifications are displayed and what they show"
 msgstr ""
 "कुन सूचना प्रदर्शन गरिएको छ र तिनीहरूले के देखाउँछन् नियन्त्रण गर्नुहोस्"
@@ -8401,17 +8344,14 @@ msgstr ""
 #. Translators: Search terms to find the Notifications panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
 msgstr "सूचनाहरू; ब्यानर; सन्देश; ट्रे; पपअप;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:3
 msgid "Default Applications"
 msgstr "पुर्वनिर्धारित अनुप्रयोग"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:4
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:4
 msgid "Configure Default Applications"
 msgstr "पुर्वनिर्धारित अनुप्रयोग कन्फिगर"
 
@@ -8419,22 +8359,18 @@ msgstr "पुर्वनिर्धारित अनुप्रयोग �
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:15
 msgid "default;application;preferred;media;"
 msgstr "पूर्वनिर्धारित;अनुप्रयोग;रुचाइएको;मिडिया;"
 
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:4
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:4
 msgid "Protect your conversations"
 msgstr "तपाईँको वार्तालाप सुरक्षित गर्नुहोस्"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:3
 msgid "Thunderbolt"
 msgstr "थन्डरबोल्ट"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:4
 msgid "Manage Thunderbolt devices"
 msgstr "थन्डरबोल्ट यन्त्र प्रबन्ध गर्नुहोस्"
 
@@ -8442,17 +8378,14 @@ msgstr "थन्डरबोल्ट यन्त्र प्रबन्ध 
 #. Do NOT translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:15
 msgid "Thunderbolt;privacy;"
 msgstr "थन्डरबोल्ट;गोपनीयता;"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:3
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:3
 msgid "Mouse & Touchpad"
 msgstr "माउस र टचप्याड"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:4
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:4
 msgid ""
 "Change your mouse or touchpad sensitivity and select right or left-handed"
 msgstr ""
@@ -8463,37 +8396,30 @@ msgstr ""
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:15
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:15
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
 msgstr "ट्रयाकप्याड; सूचक; क्लिक; ट्याप; डबल; बटन; ट्रयाक्बल;स्कोल;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:3
 msgid "Diagnostics"
 msgstr "निदान"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:4
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:4
 msgid "Report your problems"
 msgstr "तपाईँको समस्याहरू प्रतिवेदन गर्नुहोस्"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
-#: build/panels/usage/budgie-usage-panel.desktop.in:3
 msgid "File History & Trash"
 msgstr "फाइल इतिहास र रद्दीटोकरी"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:4
-#: build/panels/usage/budgie-usage-panel.desktop.in:4
 msgid "Don't leave traces"
 msgstr "चिन्ह हरू नछोड्नुहोस्"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:3
 msgid "Online Accounts"
 msgstr "अनलाईन खाताहरू"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:4
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:4
 msgid "Connect to your online accounts and decide what to use them for"
 msgstr ""
 "तपाईँको अनलाइन खातामा जडान गर्नुहोस् र तिनीहरूलाई केका लागि प्रयोग गर्ने "
@@ -8505,7 +8431,6 @@ msgstr ""
 #. For ReadItLater and Pocket, see
 #. http://en.wikipedia.org/wiki/Pocket_(application)
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:18
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
 msgstr ""
@@ -8514,7 +8439,6 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
-#: build/shell/budgie-control-center.desktop.in:13
 msgid "Preferences;Settings;"
 msgstr "प्राथमिकता;सेटिङ;"
 

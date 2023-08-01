@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-16 10:31+0100\n"
+"POT-Creation-Date: 2023-07-20 22:20+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: Thomas Staudinger, 2023\n"
 "Language-Team: German (https://app.transifex.com/buddiesofbudgie/teams/129844/de/)\n"
@@ -316,12 +316,12 @@ msgid "Failed to add new printer."
 msgstr "Neuer Drucker konnte nicht hinzugefügt werden."
 
 #. Translators: The XML file containing user interface can not be loaded
-#: panels/printers/cc-printers-panel.c:1244
+#: panels/printers/cc-printers-panel.c:1246
 #, c-format
 msgid "Could not load ui: %s"
 msgstr "Die Benutzeroberfläche konnte nicht geladen werden: %s"
 
-#: panels/printers/cc-printers-panel.c:1312
+#: panels/printers/cc-printers-panel.c:1314
 msgid "Unlock to Add Printers and Change Settings"
 msgstr "Entsperren, um Drucker hinzuzufügen und Einstellungen zu ändern"
 
@@ -534,7 +534,6 @@ msgstr "Parallele Schnittstelle"
 #. Translators: The found device is a printer connected via Bluetooth
 #: panels/printers/pp-new-printer-dialog.c:1392
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:3
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -637,33 +636,39 @@ msgstr "Grafiktablett"
 msgid "Batteries"
 msgstr "Akku"
 
+#. Translators: UPS is an Uninterruptible Power Supply:
+#. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
+#: panels/power/cc-power-panel.c:386
+msgid "UPS"
+msgstr ""
+
 #. TRANSLATORS: secondary battery, misc
-#: panels/power/cc-power-panel.c:384 panels/power/cc-battery-row.c:218
+#: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
 #: panels/power/cc-power-panel.ui.h:21
 msgid "Battery"
 msgstr "Akku"
 
-#: panels/power/cc-power-panel.c:644
+#: panels/power/cc-power-panel.c:649
 msgid "When _idle"
 msgstr "Wenn _inaktiv"
 
-#: panels/power/cc-power-panel.c:796
+#: panels/power/cc-power-panel.c:801
 msgid "Suspend"
 msgstr "Bereitschaft"
 
-#: panels/power/cc-power-panel.c:797
+#: panels/power/cc-power-panel.c:802
 msgid "Power Off"
 msgstr "Ausschalten"
 
-#: panels/power/cc-power-panel.c:798
+#: panels/power/cc-power-panel.c:803
 msgid "Hibernate"
 msgstr "Ruhezustand"
 
-#: panels/power/cc-power-panel.c:799
+#: panels/power/cc-power-panel.c:804
 msgid "Nothing"
 msgstr "Nichts"
 
-#: panels/power/cc-power-panel.c:856 panels/power/cc-power-panel.c:867
+#: panels/power/cc-power-panel.c:861 panels/power/cc-power-panel.c:872
 #: panels/universal-access/cc-ua-panel.c:334
 #: panels/universal-access/cc-ua-panel.c:615
 #: panels/universal-access/cc-ua-panel.c:625
@@ -674,15 +679,15 @@ msgstr "Nichts"
 msgid "Off"
 msgstr "Aus"
 
-#: panels/power/cc-power-panel.c:858
+#: panels/power/cc-power-panel.c:863
 msgid "When on battery power"
 msgstr "Wenn im Akkubetrieb"
 
-#: panels/power/cc-power-panel.c:860
+#: panels/power/cc-power-panel.c:865
 msgid "When plugged in"
 msgstr "Wenn angeschlossen"
 
-#: panels/power/cc-power-panel.c:862 panels/power/cc-power-panel.c:869
+#: panels/power/cc-power-panel.c:867 panels/power/cc-power-panel.c:874
 #: panels/universal-access/cc-ua-panel.c:334
 #: panels/universal-access/cc-ua-panel.c:615
 #: panels/universal-access/cc-ua-panel.c:625
@@ -693,30 +698,30 @@ msgid "On"
 msgstr "An"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
-#: panels/power/cc-power-panel.c:973 panels/common/cc-util.c:166
+#: panels/power/cc-power-panel.c:978 panels/common/cc-util.c:166
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d Minute"
 msgstr[1] "%d Minuten"
 
-#: panels/power/cc-power-panel.c:980
+#: panels/power/cc-power-panel.c:985
 msgctxt "Idle time"
 msgid "Never"
 msgstr "Nie"
 
-#: panels/power/cc-power-panel.c:1066
+#: panels/power/cc-power-panel.c:1071
 msgid "Automatic suspend"
 msgstr "Automatisch in Bereitschaft gehen"
 
-#: panels/power/cc-power-panel.c:1162
+#: panels/power/cc-power-panel.c:1167
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
 msgstr ""
 "Leistungsmodus aufgrund hoher Betriebstemperaturen vorübergehend nicht "
 "verfügbar."
 
-#: panels/power/cc-power-panel.c:1164
+#: panels/power/cc-power-panel.c:1169
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
@@ -725,11 +730,11 @@ msgstr ""
 " Sie das Gerät auf eine stabile Oberfläche, um in den Leistungsmodus "
 "wechseln zu können."
 
-#: panels/power/cc-power-panel.c:1166
+#: panels/power/cc-power-panel.c:1171
 msgid "Performance mode temporarily disabled."
 msgstr "Leistungsmodus vorübergehend deaktiviert."
 
-#: panels/power/cc-power-panel.c:1209
+#: panels/power/cc-power-panel.c:1214
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
@@ -738,13 +743,13 @@ msgstr ""
 "wieder verwendet, wenn der Akku ausreichend geladen ist."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1217
+#: panels/power/cc-power-panel.c:1222
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr "Energiesparmodus durch »%s« aktiviert."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1221
+#: panels/power/cc-power-panel.c:1226
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr "Leistungsmodus durch »%s« aktiviert."
@@ -1219,7 +1224,7 @@ msgstr "Ein Bild wählen"
 msgid "Current background"
 msgstr "Aktueller Hintergrund"
 
-#: panels/sound/cc-alert-chooser.c:151
+#: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
 msgstr "Benutzerdefiniert"
 
@@ -1253,7 +1258,7 @@ msgctxt "Display rotation"
 msgid "Landscape (flipped)"
 msgstr "Kopfstehendes Querformat"
 
-#: panels/display/cc-display-settings.c:196
+#: panels/display/cc-display-settings.c:199
 #, c-format
 msgid "%.2lf Hz"
 msgstr "%.2lf Hz"
@@ -1284,6 +1289,7 @@ msgid "Less Warm"
 msgstr "Kühler"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:379
+#: panels/sound/cc-alert-chooser.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:7
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:31
 msgid "None"
@@ -1308,7 +1314,7 @@ msgstr "Mehr …"
 msgid "No input sources found"
 msgstr "Keine Eingabequellen gefunden"
 
-#: panels/keyboard/cc-input-chooser.c:964
+#: panels/keyboard/cc-input-chooser.c:988
 msgctxt "Input Source"
 msgid "Other"
 msgstr "Weitere"
@@ -1892,7 +1898,7 @@ msgstr ""
 msgid "Unlock to Add Users and Change Settings"
 msgstr "Entsperren, um Nutzer hinzuzufügen und Einstellungen zu ändern"
 
-#: panels/user-accounts/user-utils.c:432
+#: panels/user-accounts/user-utils.c:438
 msgid ""
 "The username should usually only consist of lower case letters from a-z, "
 "digits and the following characters: - _"
@@ -1900,17 +1906,17 @@ msgstr ""
 "Der Benutzername darf aus Klein- und Großbuchstaben von A bis Z, Ziffern "
 "sowie den Zeichen »-« und »_« bestehen"
 
-#: panels/user-accounts/user-utils.c:436
+#: panels/user-accounts/user-utils.c:442
 msgid "Sorry, that user name isn’t available. Please try another."
 msgstr ""
 "Leider ist dieser Benutzername nicht verfügbar. Wählen Sie bitte einen "
 "anderen."
 
-#: panels/user-accounts/user-utils.c:478
+#: panels/user-accounts/user-utils.c:484
 msgid "The username is too long."
 msgstr "Der Benutzername ist zu lang."
 
-#: panels/user-accounts/user-utils.c:537
+#: panels/user-accounts/user-utils.c:543
 msgid "This will be used to name your home folder and can’t be changed."
 msgstr ""
 "Dieser Eintrag wird für Ihren Benutzerordner verwendet und kann nicht "
@@ -2209,7 +2215,6 @@ msgstr "Vollständiger Zugriff auf /dev"
 #: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
 #: panels/wwan/cc-wwan-network-dialog.ui.h:1
 #: panels/network/budgie-network-panel.desktop.in.in:3
-#: build/panels/network/budgie-network-panel.desktop.in:3
 msgid "Network"
 msgstr "Netzwerk"
 
@@ -2314,7 +2319,6 @@ msgstr "Andere Dateien"
 #: panels/applications/cc-applications-panel.ui.h:26
 #: panels/notifications/cc-notifications-panel.ui.h:4
 #: panels/applications/budgie-applications-panel.desktop.in.in:3
-#: build/panels/applications/budgie-applications-panel.desktop.in:3
 msgid "Applications"
 msgstr "Anwendungen"
 
@@ -2369,7 +2373,6 @@ msgstr "Kopieren"
 
 #: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:3
 msgid "Sharing"
 msgstr "Freigabe"
 
@@ -2905,7 +2908,6 @@ msgstr "Wählen Sie Ihren geheimen Schlüssel"
 
 #: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
 #: panels/network/budgie-wifi-panel.desktop.in.in:3
-#: build/panels/network/budgie-wifi-panel.desktop.in:3
 msgid "Wi-Fi"
 msgstr "WLAN"
 
@@ -3222,17 +3224,17 @@ msgstr "Netzwerk sichern"
 msgid "Security"
 msgstr "Sicherheit"
 
-#: panels/network/connection-editor/ce-page-ip6.c:226
-#: panels/network/connection-editor/ce-page-ip4.c:245
+#: panels/network/connection-editor/ce-page-ip6.c:229
+#: panels/network/connection-editor/ce-page-ip4.c:248
 msgid "Delete Address"
 msgstr "Adresse entfernen"
 
-#: panels/network/connection-editor/ce-page-ip6.c:370
-#: panels/network/connection-editor/ce-page-ip4.c:400
+#: panels/network/connection-editor/ce-page-ip6.c:373
+#: panels/network/connection-editor/ce-page-ip4.c:403
 msgid "Delete Route"
 msgstr "Route entfernen"
 
-#: panels/network/connection-editor/ce-page-ip6.c:726
+#: panels/network/connection-editor/ce-page-ip6.c:730
 msgid "IPv6"
 msgstr "IPv6"
 
@@ -3372,31 +3374,31 @@ msgstr ""
 msgid "Profile %d"
 msgstr "Profil %d"
 
-#: panels/network/connection-editor/net-connection-editor.c:280
+#: panels/network/connection-editor/net-connection-editor.c:305
 msgid "Unable to open connection editor"
 msgstr "Öffnen des Verbindungseditors schlug fehl"
 
-#: panels/network/connection-editor/net-connection-editor.c:296
+#: panels/network/connection-editor/net-connection-editor.c:321
 msgid "New Profile"
 msgstr "Neues Profil"
 
-#: panels/network/connection-editor/net-connection-editor.c:504
+#: panels/network/connection-editor/net-connection-editor.c:533
 #: panels/printers/new-printer-dialog.ui.h:4
 #: panels/color/cc-color-panel.ui.h:29 panels/keyboard/cc-input-chooser.ui.h:3
 #: panels/user-accounts/cc-add-user-dialog.ui.h:3
 msgid "_Add"
 msgstr "_Hinzufügen"
 
-#: panels/network/connection-editor/net-connection-editor.c:587
+#: panels/network/connection-editor/net-connection-editor.c:616
 #: panels/network/cc-network-panel.ui.h:2
 msgid "VPN"
 msgstr "VPN"
 
-#: panels/network/connection-editor/net-connection-editor.c:731
+#: panels/network/connection-editor/net-connection-editor.c:760
 msgid "Import from file…"
 msgstr "Aus Datei importieren …"
 
-#: panels/network/connection-editor/net-connection-editor.c:763
+#: panels/network/connection-editor/net-connection-editor.c:792
 msgid "Add VPN"
 msgstr "VPN hinzufügen"
 
@@ -3497,7 +3499,7 @@ msgstr "VPN entfernen"
 msgid "Details"
 msgstr "Details"
 
-#: panels/network/connection-editor/ce-page-ip4.c:754
+#: panels/network/connection-editor/ce-page-ip4.c:758
 msgid "IPv4"
 msgstr "IPv4"
 
@@ -3955,7 +3957,7 @@ msgstr "Die Unterstützung für Thunderbolt wurde im BIOS deaktiviert."
 msgid "Thunderbolt security level could not be determined."
 msgstr "Die Sicherheitsstufe von Thunderbolt konnte nicht ermittelt werden."
 
-#: panels/thunderbolt/cc-bolt-panel.c:686
+#: panels/thunderbolt/cc-bolt-panel.c:690
 #, c-format
 msgid "Error switching direct mode: %s"
 msgstr "Fehler beim Wechsel in den Direktmodus: %s"
@@ -4121,6 +4123,18 @@ msgstr "Alle temporären Dateien werden dauerhaft gelöscht."
 msgid "_Purge Temporary Files"
 msgstr "Temporäre Dateien _löschen"
 
+#: panels/usage/cc-usage-panel.c:322
+msgid "Clear File History?"
+msgstr ""
+
+#: panels/usage/cc-usage-panel.c:323
+msgid "After clearing, lists of recently used files will appear empty."
+msgstr ""
+
+#: panels/usage/cc-usage-panel.c:324
+msgid "_Clear History"
+msgstr ""
+
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
 msgid "Other"
@@ -4176,9 +4190,8 @@ msgstr "Verfügbare Leisten:"
 msgid "Privacy"
 msgstr "Datenschutz"
 
-#: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
+#: shell/cc-window.c:313 shell/cc-window.c:1044 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
-#: build/shell/budgie-control-center.desktop.in:3
 msgid "Budgie Control Center"
 msgstr "Budgie Control Center"
 
@@ -4519,7 +4532,6 @@ msgstr "Bluetooth-Einstellungen"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:3
 msgid "Wacom Tablet"
 msgstr "Wacom-Tabletts"
 
@@ -5070,19 +5082,19 @@ msgstr "Links"
 msgid "Right"
 msgstr "Rechts"
 
-#: panels/sound/cc-alert-chooser.ui.h:1
+#: panels/sound/cc-alert-chooser.ui.h:2
 msgid "Bark"
 msgstr "Bellen"
 
-#: panels/sound/cc-alert-chooser.ui.h:2
+#: panels/sound/cc-alert-chooser.ui.h:3
 msgid "Drip"
 msgstr "Tropfen"
 
-#: panels/sound/cc-alert-chooser.ui.h:3
+#: panels/sound/cc-alert-chooser.ui.h:4
 msgid "Glass"
 msgstr "Glas"
 
-#: panels/sound/cc-alert-chooser.ui.h:4
+#: panels/sound/cc-alert-chooser.ui.h:5
 msgid "Sonar"
 msgstr "Sonar"
 
@@ -5354,7 +5366,6 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:20
 #: panels/display/budgie-display-panel.desktop.in.in:3
-#: build/panels/display/budgie-display-panel.desktop.in:3
 msgid "Displays"
 msgstr "Bildschirme"
 
@@ -6350,19 +6361,16 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:5
 #: panels/camera/budgie-camera-panel.desktop.in.in:3
-#: build/panels/camera/budgie-camera-panel.desktop.in:3
 msgid "Camera"
 msgstr "Kamera"
 
 #: panels/applications/cc-applications-panel.ui.h:7
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:3
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:3
 msgid "Microphone"
 msgstr "Mikrofon"
 
 #: panels/applications/cc-applications-panel.ui.h:8
 #: panels/location/budgie-location-panel.desktop.in.in:3
-#: build/panels/location/budgie-location-panel.desktop.in:3
 msgid "Location Services"
 msgstr "Ortungsdienste"
 
@@ -6397,7 +6405,6 @@ msgstr "Suchen"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:3
 msgid "Notifications"
 msgstr "Benachrichtigungen"
 
@@ -7577,7 +7584,6 @@ msgstr "Dezember"
 
 #: panels/datetime/cc-datetime-panel.ui.h:13
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:3
 msgid "Date & Time"
 msgstr "Datum und Zeit"
 
@@ -8082,12 +8088,10 @@ msgid "Help"
 msgstr "Hilfe"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:3
-#: build/panels/printers/budgie-printers-panel.desktop.in:3
 msgid "Printers"
 msgstr "Drucker"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:4
-#: build/panels/printers/budgie-printers-panel.desktop.in:4
 msgid "Add printers, view printer jobs and decide how you want to print"
 msgstr ""
 "Drucker hinzufügen, Druckeraufgaben anzeigen und entscheiden, wie Sie "
@@ -8096,12 +8100,10 @@ msgstr ""
 #. Translators: Search terms to find the Printers panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/printers/budgie-printers-panel.desktop.in.in:16
-#: build/panels/printers/budgie-printers-panel.desktop.in:16
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
 msgstr "Drucker;Warteschlange;Drucken;Papier;Tinte;Toner;Tintenpatrone;"
 
 #: panels/location/budgie-location-panel.desktop.in.in:4
-#: build/panels/location/budgie-location-panel.desktop.in:4
 msgid "Protect your location information"
 msgstr "Ihre Standortinformationen schützen"
 
@@ -8110,16 +8112,12 @@ msgstr "Ihre Standortinformationen schützen"
 #: panels/location/budgie-location-panel.desktop.in.in:16
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:16
 #: panels/usage/budgie-usage-panel.desktop.in.in:16
-#: build/panels/location/budgie-location-panel.desktop.in:16
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:16
-#: build/panels/usage/budgie-usage-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
 msgstr ""
 "Bildschirm;Sperre;Diagnose;Absturz;Crash;Privat;temporär;Index;Name;Netzwerk;Identität;Privatsphäre;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:4
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:4
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Knopfzuordnung einstellen und die Empfindlichkeit des Stiftes für "
@@ -8128,17 +8126,14 @@ msgstr ""
 #. Translators: Search terms to find the Wacom Tablet panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:15
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:15
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
 msgstr "Tablett;Wacom;Stylus;Radiergummi;Maus;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
-#: build/panels/power/budgie-power-panel.desktop.in:3
 msgid "Power"
 msgstr "Energie"
 
 #: panels/power/budgie-power-panel.desktop.in.in:4
-#: build/panels/power/budgie-power-panel.desktop.in:4
 msgid "View your battery status and change power saving settings"
 msgstr ""
 "Den Status Ihres Akkus anzeigen und die Energiespareinstellungen ändern"
@@ -8146,19 +8141,16 @@ msgstr ""
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/power/budgie-power-panel.desktop.in.in:15
-#: build/panels/power/budgie-power-panel.desktop.in:15
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
 msgstr ""
 "Energie;Schlafmodus;Bereitschaft;Ruhezustand;Akku;Helligkeit;Abdunkeln;Abschalten;Bildschirm;DPMS;Energie;Einschaltknopf;"
 
 #: panels/color/budgie-color-panel.desktop.in.in:3
-#: build/panels/color/budgie-color-panel.desktop.in:3
 msgid "Color"
 msgstr "Farbe"
 
 #: panels/color/budgie-color-panel.desktop.in.in:4
-#: build/panels/color/budgie-color-panel.desktop.in:4
 msgid ""
 "Calibrate the color of your devices, such as displays, cameras or printers"
 msgstr ""
@@ -8167,79 +8159,66 @@ msgstr ""
 #. Translators: Search terms to find the Color panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/color/budgie-color-panel.desktop.in.in:15
-#: build/panels/color/budgie-color-panel.desktop.in:15
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
 msgstr "Farbe;ICC;Profil;Kalibrieren;Drucker;Anzeige;"
 
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:4
 msgid "Turn Bluetooth on and off and connect your devices"
 msgstr "Schalten Sie Bluetooth an oder aus und verbinden Sie Ihre Geräte"
 
 #. Translators: Search terms to find the Bluetooth panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:15
 msgid "share;sharing;bluetooth;obex;"
 msgstr "Freigabe;Bluetooth;obex;"
 
 #: panels/background/budgie-background-panel.desktop.in.in:3
-#: build/panels/background/budgie-background-panel.desktop.in:3
 msgid "Background"
 msgstr "Hintergrund"
 
 #: panels/background/budgie-background-panel.desktop.in.in:4
-#: build/panels/background/budgie-background-panel.desktop.in:4
 msgid "Change your background image to a wallpaper or photo"
 msgstr "Verwenden Sie ein Foto oder eine Grafikdatei für den Hintergrund"
 
 #. Translators: Search terms to find the Background panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/background/budgie-background-panel.desktop.in.in:15
-#: build/panels/background/budgie-background-panel.desktop.in:15
 msgid "Wallpaper;Screen;Desktop;"
 msgstr "Hintergrundbild;Bildschirm;Schreibtisch;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
-#: build/panels/sound/budgie-sound-panel.desktop.in:3
 msgid "Sound"
 msgstr "Audio"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:4
-#: build/panels/sound/budgie-sound-panel.desktop.in:4
 msgid "Change sound levels, inputs, outputs, and alert sounds"
 msgstr "Lautstärke, Ein- und Ausgabequellen und Alarmtöne einstellen"
 
 #. Translators: Search terms to find the Sound panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sound/budgie-sound-panel.desktop.in.in:15
-#: build/panels/sound/budgie-sound-panel.desktop.in:15
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 msgstr ""
 "Karte;Mikrofon;Lautstärkeregler;Lautstärke;Ausblenden;Balance;Bluetooth;Headset;Audio;Eingang;Ausgang;"
 
 #: panels/display/budgie-display-panel.desktop.in.in:4
-#: build/panels/display/budgie-display-panel.desktop.in:4
 msgid "Choose how to use connected monitors and projectors"
 msgstr "Legt fest, wie angeschlossene Monitore und Projektoren arbeiten"
 
 #. Translators: Search terms to find the Displays panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/display/budgie-display-panel.desktop.in.in:15
-#: build/panels/display/budgie-display-panel.desktop.in:15
 msgid ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
 msgstr ""
 "Panel;Projektor;xrandr;Anzeige;Auflösung;Aktualisieren;Bildschirm;Monitor;Nacht;Tag;Blau;Rotverschiebung;Farbe;Sonnenuntergang;Sonnenaufgang;"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:3
 msgid "Keyboard"
 msgstr "Tastatur"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:4
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:4
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
@@ -8250,26 +8229,22 @@ msgstr ""
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:15
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
 "Kürzel;Arbeitsfläche;Fenster;Vergrößern;Verkleinern;Kontrast;Eingabe;Quelle;Sperren;Lautstärke;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:3
 msgid "Users"
 msgstr "Benutzer"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:4
 msgid "Add or remove users and change your password"
 msgstr "Benutzer hinzufügen oder entfernen und das Passwort ändern"
 
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:15
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:15
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
@@ -8280,20 +8255,17 @@ msgstr ""
 "Restrictions;Usage;Nutzung;Usage Limit;Nutzungseinschränkung;Kid;Child;Kind;"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
 msgstr "Barrierefreiheit"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:4
 msgid "Make it easier to see, hear, type, point and click"
 msgstr "Sehen, Hören, Tippen, Zeigen und Klicken erleichtern"
 
 #. Translators: Search terms to find the Accessibility panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:15
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:15
 msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
@@ -8303,57 +8275,48 @@ msgstr ""
 "Tasten;Tastaturmaus;Klick;Verzögerung;Assistent;Wiederholen;Blinken;Visuell;Tippen;Hören;Audio;Eingabe;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:3
 msgid "Multitasking"
 msgstr "Multitasking"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:4
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:4
 msgid "Manage preferences for productivity and multitasking"
 msgstr "Einstellungen für Produktivität und Multitasking verwalten"
 
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:15
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
 "Multitasking;Multitask;Productivity;Produktivität;Customize;Bearbeiten;Desktop;Arbeitsumgebung;"
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
-#: build/panels/applications/budgie-applications-panel.desktop.in:4
 msgid "Control various application permissions and settings"
 msgstr "Festlegen verschiedener Anwendungs-Berechtigungen und Einstellungen"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
-#: build/panels/applications/budgie-applications-panel.desktop.in:16
 msgid "application;flatpak;permission;setting;"
 msgstr ""
 "application;anwendung;flatpak;permission;berechtigung;setting;einstellung;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:4
 msgid "Control what you want to share with others"
 msgstr "Legen Sie fest, was Sie für Andere freigeben möchten"
 
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:16
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:16
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
 msgstr ""
 "Freigabe;ssh;Rechner;Name;Entfernt;Arbeitsumgebung;Umgebung;Medien;Audio;Video;Bilder;Fotos;Filme;Server;"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:3
 msgid "Removable Media"
 msgstr "Wechselmedien"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:4
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:4
 msgid "Configure Removable Media settings"
 msgstr "Wechselmedien einrichten"
 
@@ -8361,19 +8324,16 @@ msgstr "Wechselmedien einrichten"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:15
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
 "Gerät;System;Information;Speicher;Prozessor;Version;Vorgabe;Anwendung;Ersatz;bevorzugt;CD;DVD;USB;Audio;Video;Medien;Wechsel;Medien;Autostart;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
-#: build/panels/region/budgie-region-panel.desktop.in:3
 msgid "Region & Language"
 msgstr "Region und Sprache"
 
 #: panels/region/budgie-region-panel.desktop.in.in:4
-#: build/panels/region/budgie-region-panel.desktop.in:4
 msgid "Select your display language and formats"
 msgstr "Wählen Sie Ihre Sprache und Formate"
 
@@ -8381,17 +8341,14 @@ msgstr "Wählen Sie Ihre Sprache und Formate"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:15
-#: build/panels/region/budgie-region-panel.desktop.in:15
 msgid "Language;Layout;Keyboard;Input;"
 msgstr "Sprache;Belegung;Tastatur;Eingabe;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:3
 msgid "About"
 msgstr "Info"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:4
 msgid "View information about your system"
 msgstr "Informationen über Ihr System anzeigen"
 
@@ -8401,69 +8358,58 @@ msgstr "Informationen über Ihr System anzeigen"
 #. "Preferred Applications" is the old name for the preference, so make
 #. sure that you use the same "translation" for those keywords
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:19
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:19
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
 "Gerät;System;Information;Rechnername;Speicher;Prozessor;Version;Vorgabe;Anwendung;Ersatz;bevorzugt;CD;DVD;USB;Audio;Video;Medien;Wechsel;Medien;Autostart;"
 
 #: panels/network/budgie-network-panel.desktop.in.in:4
-#: build/panels/network/budgie-network-panel.desktop.in:4
 msgid "Control how you connect to the Internet"
 msgstr "Legt fest, wie mit dem Internet verbunden wird"
 
 #. Translators: Search terms to find the Network panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-network-panel.desktop.in.in:15
-#: build/panels/network/budgie-network-panel.desktop.in:15
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 msgstr ""
 "Netzwerk;LAN;IP;Proxy;WAN;Breitband;DSL;Modem;Bluetooth;VPN;Brücke;DNS;"
 
 #: panels/network/budgie-wifi-panel.desktop.in.in:4
-#: build/panels/network/budgie-wifi-panel.desktop.in:4
 msgid "Control how you connect to Wi-Fi networks"
 msgstr "Legt fest, wie mit Funknetzwerken verbunden wird"
 
 #. Translators: Search terms to find the Wi-Fi panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-wifi-panel.desktop.in.in:15
-#: build/panels/network/budgie-wifi-panel.desktop.in:15
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 msgstr "Netzwerk;Drahtlos;WLAN;Wifi;IP;LAN;Breitband;Hotspot;DNS;"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:3
 msgid "Mobile Network"
 msgstr "Mobiles Netzwerk"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:4
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:4
 msgid "Configure Telephony and mobile data connections"
 msgstr "Telefonie und mobile Datenverbindungen einrichten"
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:16
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:16
 msgid "cellular;wwan;telephony;sim;mobile;"
 msgstr ""
 "cellular;wwan;telephony;sim;mobile;Funknetzwerk;Mobilfunk;Weitverkehrsfunk;Telefonie;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:4
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:4
 msgid "Change the date and time, including time zone"
 msgstr "Das Datum, die Zeit und die Zeitzone ändern"
 
 #. Translators: Search terms to find the Date and Time panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:15
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:15
 msgid "Clock;Timezone;Location;"
 msgstr "Uhr;Zeitzone;Ort;"
 
 #: panels/camera/budgie-camera-panel.desktop.in.in:4
-#: build/panels/camera/budgie-camera-panel.desktop.in:4
 msgid "Protect your pictures"
 msgstr "Ihre Bilder schützen"
 
@@ -8471,32 +8417,26 @@ msgstr "Ihre Bilder schützen"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/camera/budgie-camera-panel.desktop.in.in:16
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:16
-#: build/panels/camera/budgie-camera-panel.desktop.in:16
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
 "Bildschirm;Sperre;Diagnose;Absturz;Crash;Privat;temporär;Index;Name;Netzwerk;Identität;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:4
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:4
 msgid "Control which notifications are displayed and what they show"
 msgstr "Legt fest, wie Nachrichten angezeigt werden und was diese anzeigen"
 
 #. Translators: Search terms to find the Notifications panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
 msgstr "Benachrichtigungen;Banner;Nachricht;Popup;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:3
 msgid "Default Applications"
 msgstr "Vorgabe-Anwendungen"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:4
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:4
 msgid "Configure Default Applications"
 msgstr "Vorgabe-Anwendungen einrichten"
 
@@ -8504,22 +8444,18 @@ msgstr "Vorgabe-Anwendungen einrichten"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:15
 msgid "default;application;preferred;media;"
 msgstr "Vorgabe;Voreinstellung;Anwendung;bevorzugt;Medien;Medium;"
 
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:4
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:4
 msgid "Protect your conversations"
 msgstr "Ihre Unterhaltungen schützen"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:3
 msgid "Thunderbolt"
 msgstr "Thunderbolt"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:4
 msgid "Manage Thunderbolt devices"
 msgstr "Thunderbolt-Geräte verwalten"
 
@@ -8527,17 +8463,14 @@ msgstr "Thunderbolt-Geräte verwalten"
 #. Do NOT translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:15
 msgid "Thunderbolt;privacy;"
 msgstr "Thunderbolt;Privatsphäre;"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:3
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:3
 msgid "Mouse & Touchpad"
 msgstr "Maus und Tastfeld"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:4
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:4
 msgid ""
 "Change your mouse or touchpad sensitivity and select right or left-handed"
 msgstr ""
@@ -8548,38 +8481,31 @@ msgstr ""
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:15
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:15
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
 msgstr ""
 "Trackpad;Zeiger;Mauszeiger;Klick;Doppelklick;Maustaste;Trackball;Bildlauf;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:3
 msgid "Diagnostics"
 msgstr "Fehlerdiagnose"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:4
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:4
 msgid "Report your problems"
 msgstr "Melden Sie Ihre Probleme"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
-#: build/panels/usage/budgie-usage-panel.desktop.in:3
 msgid "File History & Trash"
 msgstr "Dateichronik und Papierkorb"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:4
-#: build/panels/usage/budgie-usage-panel.desktop.in:4
 msgid "Don't leave traces"
 msgstr "Keine Spuren hinterlassen"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:3
 msgid "Online Accounts"
 msgstr "Online-Konten"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:4
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:4
 msgid "Connect to your online accounts and decide what to use them for"
 msgstr ""
 "Verbinden Sie sich mit Ihren Online-Konten und entscheiden Sie, wofür diese "
@@ -8591,7 +8517,6 @@ msgstr ""
 #. For ReadItLater and Pocket, see
 #. http://en.wikipedia.org/wiki/Pocket_(application)
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:18
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
 msgstr ""
@@ -8600,7 +8525,6 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
-#: build/shell/budgie-control-center.desktop.in:13
 msgid "Preferences;Settings;"
 msgstr "Einstellungen;"
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-16 10:31+0100\n"
+"POT-Creation-Date: 2023-07-20 22:20+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Ukrainian (https://app.transifex.com/buddiesofbudgie/teams/129844/uk/)\n"
@@ -317,12 +317,12 @@ msgid "Failed to add new printer."
 msgstr "Не вдалось додати принтер."
 
 #. Translators: The XML file containing user interface can not be loaded
-#: panels/printers/cc-printers-panel.c:1244
+#: panels/printers/cc-printers-panel.c:1246
 #, c-format
 msgid "Could not load ui: %s"
 msgstr "Не вдалось завантажити інтерфейс: %s"
 
-#: panels/printers/cc-printers-panel.c:1312
+#: panels/printers/cc-printers-panel.c:1314
 msgid "Unlock to Add Printers and Change Settings"
 msgstr "Розблокуйте, щоб додати принтери і змінити налаштування"
 
@@ -533,7 +533,6 @@ msgstr "Паралельний порт"
 #. Translators: The found device is a printer connected via Bluetooth
 #: panels/printers/pp-new-printer-dialog.c:1392
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:3
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -638,33 +637,39 @@ msgstr "Планшет"
 msgid "Batteries"
 msgstr "Батареї"
 
+#. Translators: UPS is an Uninterruptible Power Supply:
+#. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
+#: panels/power/cc-power-panel.c:386
+msgid "UPS"
+msgstr ""
+
 #. TRANSLATORS: secondary battery, misc
-#: panels/power/cc-power-panel.c:384 panels/power/cc-battery-row.c:218
+#: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
 #: panels/power/cc-power-panel.ui.h:21
 msgid "Battery"
 msgstr "Батарея"
 
-#: panels/power/cc-power-panel.c:644
+#: panels/power/cc-power-panel.c:649
 msgid "When _idle"
 msgstr "Коли _бездіяльний"
 
-#: panels/power/cc-power-panel.c:796
+#: panels/power/cc-power-panel.c:801
 msgid "Suspend"
 msgstr "Призупинити"
 
-#: panels/power/cc-power-panel.c:797
+#: panels/power/cc-power-panel.c:802
 msgid "Power Off"
 msgstr "Вимкнути"
 
-#: panels/power/cc-power-panel.c:798
+#: panels/power/cc-power-panel.c:803
 msgid "Hibernate"
 msgstr "Приспати"
 
-#: panels/power/cc-power-panel.c:799
+#: panels/power/cc-power-panel.c:804
 msgid "Nothing"
 msgstr "Нічого"
 
-#: panels/power/cc-power-panel.c:856 panels/power/cc-power-panel.c:867
+#: panels/power/cc-power-panel.c:861 panels/power/cc-power-panel.c:872
 #: panels/universal-access/cc-ua-panel.c:334
 #: panels/universal-access/cc-ua-panel.c:615
 #: panels/universal-access/cc-ua-panel.c:625
@@ -675,15 +680,15 @@ msgstr "Нічого"
 msgid "Off"
 msgstr "Вимкнено"
 
-#: panels/power/cc-power-panel.c:858
+#: panels/power/cc-power-panel.c:863
 msgid "When on battery power"
 msgstr "Коли живлення від батареї"
 
-#: panels/power/cc-power-panel.c:860
+#: panels/power/cc-power-panel.c:865
 msgid "When plugged in"
 msgstr "Коли під'єднано"
 
-#: panels/power/cc-power-panel.c:862 panels/power/cc-power-panel.c:869
+#: panels/power/cc-power-panel.c:867 panels/power/cc-power-panel.c:874
 #: panels/universal-access/cc-ua-panel.c:334
 #: panels/universal-access/cc-ua-panel.c:615
 #: panels/universal-access/cc-ua-panel.c:625
@@ -694,7 +699,7 @@ msgid "On"
 msgstr "Увімкнено"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
-#: panels/power/cc-power-panel.c:973 panels/common/cc-util.c:166
+#: panels/power/cc-power-panel.c:978 panels/common/cc-util.c:166
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
@@ -703,23 +708,23 @@ msgstr[1] "%d хвилини"
 msgstr[2] "%d хвилин"
 msgstr[3] "%d хвилина"
 
-#: panels/power/cc-power-panel.c:980
+#: panels/power/cc-power-panel.c:985
 msgctxt "Idle time"
 msgid "Never"
 msgstr "Ніколи"
 
-#: panels/power/cc-power-panel.c:1066
+#: panels/power/cc-power-panel.c:1071
 msgid "Automatic suspend"
 msgstr "Автоматично призупиняти роботу"
 
-#: panels/power/cc-power-panel.c:1162
+#: panels/power/cc-power-panel.c:1167
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
 msgstr ""
 "Режим підвищеної швидкодії тимчасово вимкнено через високу операційну "
 "температуру."
 
-#: panels/power/cc-power-panel.c:1164
+#: panels/power/cc-power-panel.c:1169
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
@@ -728,11 +733,11 @@ msgstr ""
 "тимчасово недоступний. Перенесіть пристрій на стабільну поверхню, щоб "
 "відновити доступ."
 
-#: panels/power/cc-power-panel.c:1166
+#: panels/power/cc-power-panel.c:1171
 msgid "Performance mode temporarily disabled."
 msgstr "Режим підвищеної швидкодії тимчасово вимкнено."
 
-#: panels/power/cc-power-panel.c:1209
+#: panels/power/cc-power-panel.c:1214
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
@@ -741,13 +746,13 @@ msgstr ""
 " режим буде відновлено за достатнього рівня заряду акумулятора."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1217
+#: panels/power/cc-power-panel.c:1222
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr "Режим заощадження енергії активовано «%s»."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1221
+#: panels/power/cc-power-panel.c:1226
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr "Режим високої швидкодії активовано «%s»."
@@ -1230,7 +1235,7 @@ msgstr "Виберіть зображення"
 msgid "Current background"
 msgstr "Поточне тло"
 
-#: panels/sound/cc-alert-chooser.c:151
+#: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
 msgstr "Свій"
 
@@ -1264,7 +1269,7 @@ msgctxt "Display rotation"
 msgid "Landscape (flipped)"
 msgstr "Альбомна перевернута"
 
-#: panels/display/cc-display-settings.c:196
+#: panels/display/cc-display-settings.c:199
 #, c-format
 msgid "%.2lf Hz"
 msgstr "%.2lf Гц"
@@ -1295,6 +1300,7 @@ msgid "Less Warm"
 msgstr "Холодніше"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:379
+#: panels/sound/cc-alert-chooser.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:7
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:31
 msgid "None"
@@ -1319,7 +1325,7 @@ msgstr "Більше…"
 msgid "No input sources found"
 msgstr "Не знайдено жодного джерела введення"
 
-#: panels/keyboard/cc-input-chooser.c:964
+#: panels/keyboard/cc-input-chooser.c:988
 msgctxt "Input Source"
 msgid "Other"
 msgstr "Інше"
@@ -1901,7 +1907,7 @@ msgstr ""
 msgid "Unlock to Add Users and Change Settings"
 msgstr "Розблокуйте, щоб додати користувачів і змінити налаштування"
 
-#: panels/user-accounts/user-utils.c:432
+#: panels/user-accounts/user-utils.c:438
 msgid ""
 "The username should usually only consist of lower case letters from a-z, "
 "digits and the following characters: - _"
@@ -1909,15 +1915,15 @@ msgstr ""
 "Ім'я користувача зазвичай має містити лише літери нижнього регістру a-z, "
 "цифри і такі символи: - _"
 
-#: panels/user-accounts/user-utils.c:436
+#: panels/user-accounts/user-utils.c:442
 msgid "Sorry, that user name isn’t available. Please try another."
 msgstr "Вибачте, цей користувач недоступний. Спробуйте інакшого."
 
-#: panels/user-accounts/user-utils.c:478
+#: panels/user-accounts/user-utils.c:484
 msgid "The username is too long."
 msgstr "Перейменуйте користувача на меншу кількістю літер."
 
-#: panels/user-accounts/user-utils.c:537
+#: panels/user-accounts/user-utils.c:543
 msgid "This will be used to name your home folder and can’t be changed."
 msgstr ""
 "Це буде назвою вашого домашнього каталогу, яку згодом змінити буде "
@@ -2212,7 +2218,6 @@ msgstr "Повний доступ до /dev"
 #: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
 #: panels/wwan/cc-wwan-network-dialog.ui.h:1
 #: panels/network/budgie-network-panel.desktop.in.in:3
-#: build/panels/network/budgie-network-panel.desktop.in:3
 msgid "Network"
 msgstr "Мережа"
 
@@ -2316,7 +2321,6 @@ msgstr "Інші файли"
 #: panels/applications/cc-applications-panel.ui.h:26
 #: panels/notifications/cc-notifications-panel.ui.h:4
 #: panels/applications/budgie-applications-panel.desktop.in.in:3
-#: build/panels/applications/budgie-applications-panel.desktop.in:3
 msgid "Applications"
 msgstr "Програми"
 
@@ -2371,7 +2375,6 @@ msgstr "Копіювати"
 
 #: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:3
 msgid "Sharing"
 msgstr "Оприлюднення"
 
@@ -2912,7 +2915,6 @@ msgstr "Виберіть ваш особистий ключ"
 
 #: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
 #: panels/network/budgie-wifi-panel.desktop.in.in:3
-#: build/panels/network/budgie-wifi-panel.desktop.in:3
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
@@ -3228,17 +3230,17 @@ msgstr "Захищена мережа"
 msgid "Security"
 msgstr "Безпека"
 
-#: panels/network/connection-editor/ce-page-ip6.c:226
-#: panels/network/connection-editor/ce-page-ip4.c:245
+#: panels/network/connection-editor/ce-page-ip6.c:229
+#: panels/network/connection-editor/ce-page-ip4.c:248
 msgid "Delete Address"
 msgstr "Вилучити адресу"
 
-#: panels/network/connection-editor/ce-page-ip6.c:370
-#: panels/network/connection-editor/ce-page-ip4.c:400
+#: panels/network/connection-editor/ce-page-ip6.c:373
+#: panels/network/connection-editor/ce-page-ip4.c:403
 msgid "Delete Route"
 msgstr "Вилучити маршрут"
 
-#: panels/network/connection-editor/ce-page-ip6.c:726
+#: panels/network/connection-editor/ce-page-ip6.c:730
 msgid "IPv6"
 msgstr "IPv6"
 
@@ -3376,31 +3378,31 @@ msgstr ""
 msgid "Profile %d"
 msgstr "Профіль %d"
 
-#: panels/network/connection-editor/net-connection-editor.c:280
+#: panels/network/connection-editor/net-connection-editor.c:305
 msgid "Unable to open connection editor"
 msgstr "Не вдалося відкрити редактор з'єднань"
 
-#: panels/network/connection-editor/net-connection-editor.c:296
+#: panels/network/connection-editor/net-connection-editor.c:321
 msgid "New Profile"
 msgstr "Створити профіль"
 
-#: panels/network/connection-editor/net-connection-editor.c:504
+#: panels/network/connection-editor/net-connection-editor.c:533
 #: panels/printers/new-printer-dialog.ui.h:4
 #: panels/color/cc-color-panel.ui.h:29 panels/keyboard/cc-input-chooser.ui.h:3
 #: panels/user-accounts/cc-add-user-dialog.ui.h:3
 msgid "_Add"
 msgstr "_Додати"
 
-#: panels/network/connection-editor/net-connection-editor.c:587
+#: panels/network/connection-editor/net-connection-editor.c:616
 #: panels/network/cc-network-panel.ui.h:2
 msgid "VPN"
 msgstr "VPN"
 
-#: panels/network/connection-editor/net-connection-editor.c:731
+#: panels/network/connection-editor/net-connection-editor.c:760
 msgid "Import from file…"
 msgstr "Імпортувати з файла…"
 
-#: panels/network/connection-editor/net-connection-editor.c:763
+#: panels/network/connection-editor/net-connection-editor.c:792
 msgid "Add VPN"
 msgstr "Додати VPN"
 
@@ -3501,7 +3503,7 @@ msgstr "Вилучити VPN"
 msgid "Details"
 msgstr "Подробиці"
 
-#: panels/network/connection-editor/ce-page-ip4.c:754
+#: panels/network/connection-editor/ce-page-ip4.c:758
 msgid "IPv4"
 msgstr "IPv4"
 
@@ -3963,7 +3965,7 @@ msgstr "Підтримку Thunderbolt було вимкнено у BIOS."
 msgid "Thunderbolt security level could not be determined."
 msgstr "Не вдається визначити рівень безпеки Thunderbolt."
 
-#: panels/thunderbolt/cc-bolt-panel.c:686
+#: panels/thunderbolt/cc-bolt-panel.c:690
 #, c-format
 msgid "Error switching direct mode: %s"
 msgstr "Помилка перемикання безпосереднього режиму: %s"
@@ -4130,6 +4132,18 @@ msgstr "Усі тимчасові файли буде безповоротно �
 msgid "_Purge Temporary Files"
 msgstr "П_очистити тимчасові файли"
 
+#: panels/usage/cc-usage-panel.c:322
+msgid "Clear File History?"
+msgstr ""
+
+#: panels/usage/cc-usage-panel.c:323
+msgid "After clearing, lists of recently used files will appear empty."
+msgstr ""
+
+#: panels/usage/cc-usage-panel.c:324
+msgid "_Clear History"
+msgstr ""
+
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
 msgid "Other"
@@ -4185,9 +4199,8 @@ msgstr "Доступні панелі:"
 msgid "Privacy"
 msgstr "Конфіденційність"
 
-#: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
+#: shell/cc-window.c:313 shell/cc-window.c:1044 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
-#: build/shell/budgie-control-center.desktop.in:3
 msgid "Budgie Control Center"
 msgstr ""
 
@@ -4532,7 +4545,6 @@ msgstr "Параметри Bluetooth"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:3
 msgid "Wacom Tablet"
 msgstr "Планшет Wacom"
 
@@ -5080,19 +5092,19 @@ msgstr "Ліва"
 msgid "Right"
 msgstr "Права"
 
-#: panels/sound/cc-alert-chooser.ui.h:1
+#: panels/sound/cc-alert-chooser.ui.h:2
 msgid "Bark"
 msgstr "Гав"
 
-#: panels/sound/cc-alert-chooser.ui.h:2
+#: panels/sound/cc-alert-chooser.ui.h:3
 msgid "Drip"
 msgstr "Капля"
 
-#: panels/sound/cc-alert-chooser.ui.h:3
+#: panels/sound/cc-alert-chooser.ui.h:4
 msgid "Glass"
 msgstr "Скло"
 
-#: panels/sound/cc-alert-chooser.ui.h:4
+#: panels/sound/cc-alert-chooser.ui.h:5
 msgid "Sonar"
 msgstr "Сонар"
 
@@ -5356,7 +5368,6 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:20
 #: panels/display/budgie-display-panel.desktop.in.in:3
-#: build/panels/display/budgie-display-panel.desktop.in:3
 msgid "Displays"
 msgstr "Дисплеї"
 
@@ -6346,19 +6357,16 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:5
 #: panels/camera/budgie-camera-panel.desktop.in.in:3
-#: build/panels/camera/budgie-camera-panel.desktop.in:3
 msgid "Camera"
 msgstr "Камера"
 
 #: panels/applications/cc-applications-panel.ui.h:7
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:3
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:3
 msgid "Microphone"
 msgstr "Мікрофон"
 
 #: panels/applications/cc-applications-panel.ui.h:8
 #: panels/location/budgie-location-panel.desktop.in.in:3
-#: build/panels/location/budgie-location-panel.desktop.in:3
 msgid "Location Services"
 msgstr "Служби розташування"
 
@@ -6393,7 +6401,6 @@ msgstr "Пошук"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:3
 msgid "Notifications"
 msgstr "Сповіщення"
 
@@ -7567,7 +7574,6 @@ msgstr "Грудень"
 
 #: panels/datetime/cc-datetime-panel.ui.h:13
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:3
 msgid "Date & Time"
 msgstr "Дата й час"
 
@@ -8068,12 +8074,10 @@ msgid "Help"
 msgstr "Довідка"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:3
-#: build/panels/printers/budgie-printers-panel.desktop.in:3
 msgid "Printers"
 msgstr "Принтери"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:4
-#: build/panels/printers/budgie-printers-panel.desktop.in:4
 msgid "Add printers, view printer jobs and decide how you want to print"
 msgstr ""
 "Додати принтер, переглянути завдання і визначити, яким способом друкувати"
@@ -8081,12 +8085,10 @@ msgstr ""
 #. Translators: Search terms to find the Printers panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/printers/budgie-printers-panel.desktop.in.in:16
-#: build/panels/printers/budgie-printers-panel.desktop.in:16
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
 msgstr "Принтер;Черга;Друк;Папір;Чорнило;Тонер;"
 
 #: panels/location/budgie-location-panel.desktop.in.in:4
-#: build/panels/location/budgie-location-panel.desktop.in:4
 msgid "Protect your location information"
 msgstr "Захистіть ваші дані щодо місця перебування"
 
@@ -8095,16 +8097,12 @@ msgstr "Захистіть ваші дані щодо місця перебув�
 #: panels/location/budgie-location-panel.desktop.in.in:16
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:16
 #: panels/usage/budgie-usage-panel.desktop.in.in:16
-#: build/panels/location/budgie-location-panel.desktop.in:16
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:16
-#: build/panels/usage/budgie-usage-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
 msgstr ""
 "екран;блокування;діагностика;крах;особисте;нещодавнє;тимчасове;tmp;індекс;назва;мережа;засвідчення;конфіденційність;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:4
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:4
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Вкажіть відбиття кнопок і скоригуйте чутливість стила для графічних "
@@ -8113,17 +8111,14 @@ msgstr ""
 #. Translators: Search terms to find the Wacom Tablet panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:15
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:15
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
 msgstr "Планшет;Wacom;Стилус;стило;Гумка;Миша;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
-#: build/panels/power/budgie-power-panel.desktop.in:3
 msgid "Power"
 msgstr "Живлення"
 
 #: panels/power/budgie-power-panel.desktop.in.in:4
-#: build/panels/power/budgie-power-panel.desktop.in:4
 msgid "View your battery status and change power saving settings"
 msgstr ""
 "Переглянути стан вашої батареї і змінити параметри заощадження енергії"
@@ -8131,19 +8126,16 @@ msgstr ""
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/power/budgie-power-panel.desktop.in.in:15
-#: build/panels/power/budgie-power-panel.desktop.in:15
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
 msgstr ""
 "Живлення;Сон;Призупинити;Приспати;Батарея;Яскравість;Затемнення;Порожній;DPMS;Бездіяльність;живлення;енергія;"
 
 #: panels/color/budgie-color-panel.desktop.in.in:3
-#: build/panels/color/budgie-color-panel.desktop.in:3
 msgid "Color"
 msgstr "Колір"
 
 #: panels/color/budgie-color-panel.desktop.in.in:4
-#: build/panels/color/budgie-color-panel.desktop.in:4
 msgid ""
 "Calibrate the color of your devices, such as displays, cameras or printers"
 msgstr "Відкалібрувати кольори таких пристроїв, як екрани, камери і принтери"
@@ -8151,79 +8143,66 @@ msgstr "Відкалібрувати кольори таких пристрої�
 #. Translators: Search terms to find the Color panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/color/budgie-color-panel.desktop.in.in:15
-#: build/panels/color/budgie-color-panel.desktop.in:15
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
 msgstr "Колір;ICC;Профіль;Калібрування;Принтер;Екран;"
 
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:4
 msgid "Turn Bluetooth on and off and connect your devices"
 msgstr "Увімкнути або вимкнути з'єднання з пристроєм через Bluetooth"
 
 #. Translators: Search terms to find the Bluetooth panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:15
 msgid "share;sharing;bluetooth;obex;"
 msgstr "оприлюднення;поділитись;блютуз;obex;"
 
 #: panels/background/budgie-background-panel.desktop.in.in:3
-#: build/panels/background/budgie-background-panel.desktop.in:3
 msgid "Background"
 msgstr "Тло"
 
 #: panels/background/budgie-background-panel.desktop.in.in:4
-#: build/panels/background/budgie-background-panel.desktop.in:4
 msgid "Change your background image to a wallpaper or photo"
 msgstr "Змінити малюнок тла на шпалери або фотографію"
 
 #. Translators: Search terms to find the Background panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/background/budgie-background-panel.desktop.in.in:15
-#: build/panels/background/budgie-background-panel.desktop.in:15
 msgid "Wallpaper;Screen;Desktop;"
 msgstr "Шпалери;Екран;Стільниця;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
-#: build/panels/sound/budgie-sound-panel.desktop.in:3
 msgid "Sound"
 msgstr "Звук"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:4
-#: build/panels/sound/budgie-sound-panel.desktop.in:4
 msgid "Change sound levels, inputs, outputs, and alert sounds"
 msgstr "Змінити рівень звуку"
 
 #. Translators: Search terms to find the Sound panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sound/budgie-sound-panel.desktop.in.in:15
-#: build/panels/sound/budgie-sound-panel.desktop.in:15
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 msgstr ""
 "Карта;Мікрофон;Гучність;Згасання;Баланс;Bluetooth;Гарнітура;Аудіо;Вивід;Ввід;Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 
 #: panels/display/budgie-display-panel.desktop.in.in:4
-#: build/panels/display/budgie-display-panel.desktop.in:4
 msgid "Choose how to use connected monitors and projectors"
 msgstr "Змінити використання під'єднаних моніторів та проекторів"
 
 #. Translators: Search terms to find the Displays panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/display/budgie-display-panel.desktop.in.in:15
-#: build/panels/display/budgie-display-panel.desktop.in:15
 msgid ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
 msgstr ""
 "Панель;Проектори;xrandr;Екран;Роздільність;Оновлення;Монітор;Нічне;Світло;Синій;redshift;колір;захід;світанок;"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:3
 msgid "Keyboard"
 msgstr "Клавіатура"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:4
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:4
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
@@ -8234,7 +8213,6 @@ msgstr ""
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:15
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
@@ -8242,19 +8220,16 @@ msgstr ""
 "розміру;Масштаб;Контраст;Введення;Джерело;Блокування;Том;Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:3
 msgid "Users"
 msgstr "Користувачі"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:4
 msgid "Add or remove users and change your password"
 msgstr "Додати або вилучити користувачів і змінити свій пароль"
 
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:15
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:15
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
@@ -8267,20 +8242,17 @@ msgstr ""
 "користування;діти;дитина;дитячий;"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
 msgstr "Доступність"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:4
 msgid "Make it easier to see, hear, type, point and click"
 msgstr "Полегшує читання, слухання, набирання, наведення і натискання"
 
 #. Translators: Search terms to find the Accessibility panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:15
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:15
 msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
@@ -8291,56 +8263,47 @@ msgstr ""
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:3
 msgid "Multitasking"
 msgstr "Багатозадачність"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:4
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:4
 msgid "Manage preferences for productivity and multitasking"
 msgstr "Керування параметрами продуктивності та багатозадачності"
 
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:15
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
 "Multitasking;Multitask;Productivity;Customize;Desktop;багатозадачність;задача;завдання;продуктивність;налаштовування;налаштування;стільниця;"
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
-#: build/panels/applications/budgie-applications-panel.desktop.in:4
 msgid "Control various application permissions and settings"
 msgstr "Керування різними дозволами й налаштуваннями програм"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
-#: build/panels/applications/budgie-applications-panel.desktop.in:16
 msgid "application;flatpak;permission;setting;"
 msgstr "програма;flatpak;дозвіл;налаштування;application;permission;setting;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:4
 msgid "Control what you want to share with others"
 msgstr "Вказує, чим ви бажаєте поділитись з іншими"
 
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:16
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:16
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
 msgstr ""
 "спільне;оприлюднення;ssh;вузол;назва;віддалений;стільниця;носій;аудіо;відео;малюнок;фотографії;фільми;сервер;відтворення;"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:3
 msgid "Removable Media"
 msgstr "Змінний носій"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:4
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:4
 msgid "Configure Removable Media settings"
 msgstr "Налаштування параметрів портативних носіїв даних"
 
@@ -8348,19 +8311,16 @@ msgstr "Налаштування параметрів портативних н�
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:15
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
 "пристрій;система;типове;програма;бажане;cd;dvd;usb;аудіо;відео;диск;знімний;носій;автозапуск;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
-#: build/panels/region/budgie-region-panel.desktop.in:3
 msgid "Region & Language"
 msgstr "Регіон та мова"
 
 #: panels/region/budgie-region-panel.desktop.in.in:4
-#: build/panels/region/budgie-region-panel.desktop.in:4
 msgid "Select your display language and formats"
 msgstr "Вибрати мову і формати показу даних"
 
@@ -8368,17 +8328,14 @@ msgstr "Вибрати мову і формати показу даних"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:15
-#: build/panels/region/budgie-region-panel.desktop.in:15
 msgid "Language;Layout;Keyboard;Input;"
 msgstr "Мова;Розкладка;Клавіатура;Введення;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:3
 msgid "About"
 msgstr "Про систему"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:4
 msgid "View information about your system"
 msgstr "Переглянути інформацію про вашу систему"
 
@@ -8388,68 +8345,57 @@ msgstr "Переглянути інформацію про вашу систем
 #. "Preferred Applications" is the old name for the preference, so make
 #. sure that you use the same "translation" for those keywords
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:19
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:19
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
 "пристрій;система;інформація;назва;вузол;пам'ять;процесор;версія;типово;програма;альтернативний;переважний;cd;dvd;usb;аудіо;звук;відео;диск;знімний;знімний;носій;автозапуск;device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 
 #: panels/network/budgie-network-panel.desktop.in.in:4
-#: build/panels/network/budgie-network-panel.desktop.in:4
 msgid "Control how you connect to the Internet"
 msgstr "Вказати яким способом з'єднуватись з інтернетом"
 
 #. Translators: Search terms to find the Network panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-network-panel.desktop.in.in:15
-#: build/panels/network/budgie-network-panel.desktop.in:15
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 msgstr "Мережа;IP;LAN;Проксі;WAN;Broadband;Модем;Bluetooth;vpn;DNS;"
 
 #: panels/network/budgie-wifi-panel.desktop.in.in:4
-#: build/panels/network/budgie-wifi-panel.desktop.in:4
 msgid "Control how you connect to Wi-Fi networks"
 msgstr "Керування способами з'єднання із мережами Wi-Fi"
 
 #. Translators: Search terms to find the Wi-Fi panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-wifi-panel.desktop.in.in:15
-#: build/panels/network/budgie-wifi-panel.desktop.in:15
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 msgstr "Мережа;Бездротова;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:3
 msgid "Mobile Network"
 msgstr "Мобільна мережа"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:4
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:4
 msgid "Configure Telephony and mobile data connections"
 msgstr "Налаштовування телефонії та мобільних з'єднань для передавання даних"
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:16
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:16
 msgid "cellular;wwan;telephony;sim;mobile;"
 msgstr ""
 "cellular;wwan;telephony;sim;mobile;стільниковий;телефонія;телефон;сім;картка;мобільний;вван;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:4
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:4
 msgid "Change the date and time, including time zone"
 msgstr "Змінити дату та час, і часовий пояс зокрема"
 
 #. Translators: Search terms to find the Date and Time panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:15
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:15
 msgid "Clock;Timezone;Location;"
 msgstr "Годинник;Пояс;Місцевість;"
 
 #: panels/camera/budgie-camera-panel.desktop.in.in:4
-#: build/panels/camera/budgie-camera-panel.desktop.in:4
 msgid "Protect your pictures"
 msgstr "Захистіть ваші зображення"
 
@@ -8457,32 +8403,26 @@ msgstr "Захистіть ваші зображення"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/camera/budgie-camera-panel.desktop.in.in:16
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:16
-#: build/panels/camera/budgie-camera-panel.desktop.in:16
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
 "екран;блокування;діагностика;крах;особисте;нещодавнє;тимчасове;tmp;індекс;назва;мережа;засвідчення;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:4
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:4
 msgid "Control which notifications are displayed and what they show"
 msgstr "Вказує які сповіщення показуються і що вони показують"
 
 #. Translators: Search terms to find the Notifications panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
 msgstr "Сповіщення;Шапка;Повідомлення;Лоток;Контекстний;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:3
 msgid "Default Applications"
 msgstr "Типові програми"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:4
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:4
 msgid "Configure Default Applications"
 msgstr "Налаштовування типових програм"
 
@@ -8490,22 +8430,18 @@ msgstr "Налаштовування типових програм"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:15
 msgid "default;application;preferred;media;"
 msgstr "типове;програма;бажане;носій;default;application;preferred;media;"
 
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:4
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:4
 msgid "Protect your conversations"
 msgstr "Захистіть ваш обмін повідомленнями"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:3
 msgid "Thunderbolt"
 msgstr "Thunderbolt"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:4
 msgid "Manage Thunderbolt devices"
 msgstr "Керування пристроями Thunderbolt"
 
@@ -8513,17 +8449,14 @@ msgstr "Керування пристроями Thunderbolt"
 #. Do NOT translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:15
 msgid "Thunderbolt;privacy;"
 msgstr "Thunderbolt;тандерболт;конфіденційність;"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:3
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:3
 msgid "Mouse & Touchpad"
 msgstr "Миша та сенсорний пристрій"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:4
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:4
 msgid ""
 "Change your mouse or touchpad sensitivity and select right or left-handed"
 msgstr "Змінити чутливість вашої миші та сенсорного пристрою і вибрати руку"
@@ -8532,37 +8465,30 @@ msgstr "Змінити чутливість вашої миші та сенсо�
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:15
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:15
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
 msgstr "Сенсор;Вказівник;Клік;Стукіт;Подвійний;Кнопка;Кулька;Прокрутити;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:3
 msgid "Diagnostics"
 msgstr "Діагностика"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:4
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:4
 msgid "Report your problems"
 msgstr "Повідомити про помилки"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
-#: build/panels/usage/budgie-usage-panel.desktop.in:3
 msgid "File History & Trash"
 msgstr "Журнал файлів та смітник"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:4
-#: build/panels/usage/budgie-usage-panel.desktop.in:4
 msgid "Don't leave traces"
 msgstr "Не залишати слідів"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:3
 msgid "Online Accounts"
 msgstr "Облікові записи в інтернеті"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:4
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:4
 msgid "Connect to your online accounts and decide what to use them for"
 msgstr ""
 "З'єднатись з вашим мережевими обліковими записами і вирішити, що з ними "
@@ -8574,7 +8500,6 @@ msgstr ""
 #. For ReadItLater and Pocket, see
 #. http://en.wikipedia.org/wiki/Pocket_(application)
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:18
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
 msgstr ""
@@ -8583,7 +8508,6 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
-#: build/shell/budgie-control-center.desktop.in:13
 msgid "Preferences;Settings;"
 msgstr "Налаштування;Параметри;"
 

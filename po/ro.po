@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-16 10:31+0100\n"
+"POT-Creation-Date: 2023-07-20 22:20+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
 "Language-Team: Romanian (https://app.transifex.com/buddiesofbudgie/teams/129844/ro/)\n"
@@ -316,12 +316,12 @@ msgid "Failed to add new printer."
 msgstr "Nu s-a putut adăuga imprimanta nouă."
 
 #. Translators: The XML file containing user interface can not be loaded
-#: panels/printers/cc-printers-panel.c:1244
+#: panels/printers/cc-printers-panel.c:1246
 #, c-format
 msgid "Could not load ui: %s"
 msgstr "Nu s-a putut încărca interfața cu utilizatorul: %s"
 
-#: panels/printers/cc-printers-panel.c:1312
+#: panels/printers/cc-printers-panel.c:1314
 msgid "Unlock to Add Printers and Change Settings"
 msgstr "Deblocați pentru a adăuga imprimante și schimba configurări"
 
@@ -534,7 +534,6 @@ msgstr "Port paralel"
 #. Translators: The found device is a printer connected via Bluetooth
 #: panels/printers/pp-new-printer-dialog.c:1392
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:3
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -638,33 +637,39 @@ msgstr "Tabletă"
 msgid "Batteries"
 msgstr "Baterii"
 
+#. Translators: UPS is an Uninterruptible Power Supply:
+#. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
+#: panels/power/cc-power-panel.c:386
+msgid "UPS"
+msgstr ""
+
 #. TRANSLATORS: secondary battery, misc
-#: panels/power/cc-power-panel.c:384 panels/power/cc-battery-row.c:218
+#: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
 #: panels/power/cc-power-panel.ui.h:21
 msgid "Battery"
 msgstr "Baterie"
 
-#: panels/power/cc-power-panel.c:644
+#: panels/power/cc-power-panel.c:649
 msgid "When _idle"
 msgstr "Când e _inactiv"
 
-#: panels/power/cc-power-panel.c:796
+#: panels/power/cc-power-panel.c:801
 msgid "Suspend"
 msgstr "Suspendă"
 
-#: panels/power/cc-power-panel.c:797
+#: panels/power/cc-power-panel.c:802
 msgid "Power Off"
 msgstr "Oprește"
 
-#: panels/power/cc-power-panel.c:798
+#: panels/power/cc-power-panel.c:803
 msgid "Hibernate"
 msgstr "Hibernează"
 
-#: panels/power/cc-power-panel.c:799
+#: panels/power/cc-power-panel.c:804
 msgid "Nothing"
 msgstr "Nimic"
 
-#: panels/power/cc-power-panel.c:856 panels/power/cc-power-panel.c:867
+#: panels/power/cc-power-panel.c:861 panels/power/cc-power-panel.c:872
 #: panels/universal-access/cc-ua-panel.c:334
 #: panels/universal-access/cc-ua-panel.c:615
 #: panels/universal-access/cc-ua-panel.c:625
@@ -675,15 +680,15 @@ msgstr "Nimic"
 msgid "Off"
 msgstr "Oprit"
 
-#: panels/power/cc-power-panel.c:858
+#: panels/power/cc-power-panel.c:863
 msgid "When on battery power"
 msgstr "Când funcționează pe baterie"
 
-#: panels/power/cc-power-panel.c:860
+#: panels/power/cc-power-panel.c:865
 msgid "When plugged in"
 msgstr "Alimentat de la rețea"
 
-#: panels/power/cc-power-panel.c:862 panels/power/cc-power-panel.c:869
+#: panels/power/cc-power-panel.c:867 panels/power/cc-power-panel.c:874
 #: panels/universal-access/cc-ua-panel.c:334
 #: panels/universal-access/cc-ua-panel.c:615
 #: panels/universal-access/cc-ua-panel.c:625
@@ -694,7 +699,7 @@ msgid "On"
 msgstr "Pornit"
 
 #. Translators: Option for "Blank Screen" in "Power" panel
-#: panels/power/cc-power-panel.c:973 panels/common/cc-util.c:166
+#: panels/power/cc-power-panel.c:978 panels/common/cc-util.c:166
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
@@ -702,23 +707,23 @@ msgstr[0] "%d minut"
 msgstr[1] "%d minute"
 msgstr[2] "%d de minute"
 
-#: panels/power/cc-power-panel.c:980
+#: panels/power/cc-power-panel.c:985
 msgctxt "Idle time"
 msgid "Never"
 msgstr "Niciodată"
 
-#: panels/power/cc-power-panel.c:1066
+#: panels/power/cc-power-panel.c:1071
 msgid "Automatic suspend"
 msgstr "Suspendare automată"
 
-#: panels/power/cc-power-panel.c:1162
+#: panels/power/cc-power-panel.c:1167
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
 msgstr ""
 "Modul de performanță este dezactivat temporar din cauza temperaturii înalte "
 "de operare."
 
-#: panels/power/cc-power-panel.c:1164
+#: panels/power/cc-power-panel.c:1169
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
@@ -726,11 +731,11 @@ msgstr ""
 "Suprafață neregulată detectată: modul de performanță este indisponibil. "
 "Mutați dispozitivul la o suprafață stabilă pentru restaurare."
 
-#: panels/power/cc-power-panel.c:1166
+#: panels/power/cc-power-panel.c:1171
 msgid "Performance mode temporarily disabled."
 msgstr "Modul de performanță este dezactivat temporar."
 
-#: panels/power/cc-power-panel.c:1209
+#: panels/power/cc-power-panel.c:1214
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
@@ -739,13 +744,13 @@ msgstr ""
 "restaurat când bateria este încărcată suficient."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1217
+#: panels/power/cc-power-panel.c:1222
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr "Modul de economizare energie activat de „%s”."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1221
+#: panels/power/cc-power-panel.c:1226
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr "Modul de performanță a fost activat de „%s”."
@@ -1223,7 +1228,7 @@ msgstr "Selectați o fotografie"
 msgid "Current background"
 msgstr "Fundalul curent"
 
-#: panels/sound/cc-alert-chooser.c:151
+#: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
 msgstr "Personalizat"
 
@@ -1257,7 +1262,7 @@ msgctxt "Display rotation"
 msgid "Landscape (flipped)"
 msgstr "Peisaj (inversat)"
 
-#: panels/display/cc-display-settings.c:196
+#: panels/display/cc-display-settings.c:199
 #, c-format
 msgid "%.2lf Hz"
 msgstr "%.2lf Hz"
@@ -1288,6 +1293,7 @@ msgid "Less Warm"
 msgstr "Mai rece"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:379
+#: panels/sound/cc-alert-chooser.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:7
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:31
 msgid "None"
@@ -1312,7 +1318,7 @@ msgstr "Mai mult…"
 msgid "No input sources found"
 msgstr "Nu s-au găsit surse de intrare"
 
-#: panels/keyboard/cc-input-chooser.c:964
+#: panels/keyboard/cc-input-chooser.c:988
 msgctxt "Input Source"
 msgid "Other"
 msgstr "Altele"
@@ -1891,7 +1897,7 @@ msgstr ""
 msgid "Unlock to Add Users and Change Settings"
 msgstr "Deblocați pentru a adăuga utilizatori și schimba configurări"
 
-#: panels/user-accounts/user-utils.c:432
+#: panels/user-accounts/user-utils.c:438
 msgid ""
 "The username should usually only consist of lower case letters from a-z, "
 "digits and the following characters: - _"
@@ -1899,16 +1905,16 @@ msgstr ""
 "Numele de utilizator poate conține numai litere mari și mici de la a la z, "
 "cifre și următoarele caractere: - _"
 
-#: panels/user-accounts/user-utils.c:436
+#: panels/user-accounts/user-utils.c:442
 msgid "Sorry, that user name isn’t available. Please try another."
 msgstr ""
 "Ne pare rău dar numele de utilizator nu este disponibil. Încercați altul."
 
-#: panels/user-accounts/user-utils.c:478
+#: panels/user-accounts/user-utils.c:484
 msgid "The username is too long."
 msgstr "Numele utilizatorului este prea lung."
 
-#: panels/user-accounts/user-utils.c:537
+#: panels/user-accounts/user-utils.c:543
 msgid "This will be used to name your home folder and can’t be changed."
 msgstr ""
 "Aceasta va fi folosit pentru denumirea dosarului personal și nu poate fi "
@@ -2203,7 +2209,6 @@ msgstr "Acces total la /dev"
 #: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
 #: panels/wwan/cc-wwan-network-dialog.ui.h:1
 #: panels/network/budgie-network-panel.desktop.in.in:3
-#: build/panels/network/budgie-network-panel.desktop.in:3
 msgid "Network"
 msgstr "Rețea"
 
@@ -2308,7 +2313,6 @@ msgstr "Alte fișiere"
 #: panels/applications/cc-applications-panel.ui.h:26
 #: panels/notifications/cc-notifications-panel.ui.h:4
 #: panels/applications/budgie-applications-panel.desktop.in.in:3
-#: build/panels/applications/budgie-applications-panel.desktop.in:3
 msgid "Applications"
 msgstr "Aplicații"
 
@@ -2363,7 +2367,6 @@ msgstr "Copiere"
 
 #: panels/sharing/cc-sharing-panel.c:1718
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:3
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:3
 msgid "Sharing"
 msgstr "Partajare"
 
@@ -2902,7 +2905,6 @@ msgstr "Alegeți o cheie privată"
 
 #: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
 #: panels/network/budgie-wifi-panel.desktop.in.in:3
-#: build/panels/network/budgie-wifi-panel.desktop.in:3
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
 
@@ -3218,17 +3220,17 @@ msgstr "Rețea securizată"
 msgid "Security"
 msgstr "Securitate"
 
-#: panels/network/connection-editor/ce-page-ip6.c:226
-#: panels/network/connection-editor/ce-page-ip4.c:245
+#: panels/network/connection-editor/ce-page-ip6.c:229
+#: panels/network/connection-editor/ce-page-ip4.c:248
 msgid "Delete Address"
 msgstr "Șterge adresa"
 
-#: panels/network/connection-editor/ce-page-ip6.c:370
-#: panels/network/connection-editor/ce-page-ip4.c:400
+#: panels/network/connection-editor/ce-page-ip6.c:373
+#: panels/network/connection-editor/ce-page-ip4.c:403
 msgid "Delete Route"
 msgstr "Șterge ruta"
 
-#: panels/network/connection-editor/ce-page-ip6.c:726
+#: panels/network/connection-editor/ce-page-ip6.c:730
 msgid "IPv6"
 msgstr "IPv6"
 
@@ -3367,31 +3369,31 @@ msgstr ""
 msgid "Profile %d"
 msgstr "Profilul %d"
 
-#: panels/network/connection-editor/net-connection-editor.c:280
+#: panels/network/connection-editor/net-connection-editor.c:305
 msgid "Unable to open connection editor"
 msgstr "Nu se poate deschide editorul de conexiuni"
 
-#: panels/network/connection-editor/net-connection-editor.c:296
+#: panels/network/connection-editor/net-connection-editor.c:321
 msgid "New Profile"
 msgstr "Profil nou"
 
-#: panels/network/connection-editor/net-connection-editor.c:504
+#: panels/network/connection-editor/net-connection-editor.c:533
 #: panels/printers/new-printer-dialog.ui.h:4
 #: panels/color/cc-color-panel.ui.h:29 panels/keyboard/cc-input-chooser.ui.h:3
 #: panels/user-accounts/cc-add-user-dialog.ui.h:3
 msgid "_Add"
 msgstr "_Adaugă"
 
-#: panels/network/connection-editor/net-connection-editor.c:587
+#: panels/network/connection-editor/net-connection-editor.c:616
 #: panels/network/cc-network-panel.ui.h:2
 msgid "VPN"
 msgstr "VPN"
 
-#: panels/network/connection-editor/net-connection-editor.c:731
+#: panels/network/connection-editor/net-connection-editor.c:760
 msgid "Import from file…"
 msgstr "Importă din fișier…"
 
-#: panels/network/connection-editor/net-connection-editor.c:763
+#: panels/network/connection-editor/net-connection-editor.c:792
 msgid "Add VPN"
 msgstr "Adaugă VPN"
 
@@ -3492,7 +3494,7 @@ msgstr "Elimină VPN"
 msgid "Details"
 msgstr "Detalii"
 
-#: panels/network/connection-editor/ce-page-ip4.c:754
+#: panels/network/connection-editor/ce-page-ip4.c:758
 msgid "IPv4"
 msgstr "IPv4"
 
@@ -3952,7 +3954,7 @@ msgstr "Suportul pentru Thunderbolt a fost dezactivat în BIOS."
 msgid "Thunderbolt security level could not be determined."
 msgstr "Nivelul de securitate Thunderbolt nu a putut fi determinat."
 
-#: panels/thunderbolt/cc-bolt-panel.c:686
+#: panels/thunderbolt/cc-bolt-panel.c:690
 #, c-format
 msgid "Error switching direct mode: %s"
 msgstr "Eroare la comutarea modului direct: %s"
@@ -4118,6 +4120,18 @@ msgstr "Toate fișierele temporare vor fi șterse permanent."
 msgid "_Purge Temporary Files"
 msgstr "Șterge fișierele tem_porare"
 
+#: panels/usage/cc-usage-panel.c:322
+msgid "Clear File History?"
+msgstr ""
+
+#: panels/usage/cc-usage-panel.c:323
+msgid "After clearing, lists of recently used files will appear empty."
+msgstr ""
+
+#: panels/usage/cc-usage-panel.c:324
+msgid "_Clear History"
+msgstr ""
+
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
 msgid "Other"
@@ -4173,9 +4187,8 @@ msgstr "Panouri disponibile:"
 msgid "Privacy"
 msgstr "Confidențialitate"
 
-#: shell/cc-window.c:313 shell/cc-window.c:1043 shell/cc-window.ui.h:1
+#: shell/cc-window.c:313 shell/cc-window.c:1044 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
-#: build/shell/budgie-control-center.desktop.in:3
 msgid "Budgie Control Center"
 msgstr ""
 
@@ -4514,7 +4527,6 @@ msgstr "Configurări bluetooth"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:3
 msgid "Wacom Tablet"
 msgstr "Tabletă Wacom"
 
@@ -5062,19 +5074,19 @@ msgstr "Stânga"
 msgid "Right"
 msgstr "Dreapta"
 
-#: panels/sound/cc-alert-chooser.ui.h:1
+#: panels/sound/cc-alert-chooser.ui.h:2
 msgid "Bark"
 msgstr "Lătrat"
 
-#: panels/sound/cc-alert-chooser.ui.h:2
+#: panels/sound/cc-alert-chooser.ui.h:3
 msgid "Drip"
 msgstr "Susur"
 
-#: panels/sound/cc-alert-chooser.ui.h:3
+#: panels/sound/cc-alert-chooser.ui.h:4
 msgid "Glass"
 msgstr "Sticlă"
 
-#: panels/sound/cc-alert-chooser.ui.h:4
+#: panels/sound/cc-alert-chooser.ui.h:5
 msgid "Sonar"
 msgstr "Sonar"
 
@@ -5338,7 +5350,6 @@ msgstr ""
 
 #: panels/display/cc-display-panel.ui.h:20
 #: panels/display/budgie-display-panel.desktop.in.in:3
-#: build/panels/display/budgie-display-panel.desktop.in:3
 msgid "Displays"
 msgstr "Ecrane"
 
@@ -6337,19 +6348,16 @@ msgstr ""
 
 #: panels/applications/cc-applications-panel.ui.h:5
 #: panels/camera/budgie-camera-panel.desktop.in.in:3
-#: build/panels/camera/budgie-camera-panel.desktop.in:3
 msgid "Camera"
 msgstr "Cameră"
 
 #: panels/applications/cc-applications-panel.ui.h:7
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:3
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:3
 msgid "Microphone"
 msgstr "Microfon"
 
 #: panels/applications/cc-applications-panel.ui.h:8
 #: panels/location/budgie-location-panel.desktop.in.in:3
-#: build/panels/location/budgie-location-panel.desktop.in:3
 msgid "Location Services"
 msgstr "Servicii de locație"
 
@@ -6384,7 +6392,6 @@ msgstr "Căutare"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:3
 msgid "Notifications"
 msgstr "Notificări"
 
@@ -7559,7 +7566,6 @@ msgstr "Decembrie"
 
 #: panels/datetime/cc-datetime-panel.ui.h:13
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:3
 msgid "Date & Time"
 msgstr "Data și ora"
 
@@ -8061,25 +8067,21 @@ msgid "Help"
 msgstr "Ajutor"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:3
-#: build/panels/printers/budgie-printers-panel.desktop.in:3
 msgid "Printers"
 msgstr "Imprimante"
 
 #: panels/printers/budgie-printers-panel.desktop.in.in:4
-#: build/panels/printers/budgie-printers-panel.desktop.in:4
 msgid "Add printers, view printer jobs and decide how you want to print"
 msgstr "Adaugă imprimante, sarcini de tipărire și ce trebuie imprimat"
 
 #. Translators: Search terms to find the Printers panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/printers/budgie-printers-panel.desktop.in.in:16
-#: build/panels/printers/budgie-printers-panel.desktop.in:16
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
 msgstr ""
 "Printer;Queue;Print;Paper;Ink;Toner;Imprimantă;Tipărire;Coadă;Tipărire;Hârtie;Cerneală;Toner;Laser;"
 
 #: panels/location/budgie-location-panel.desktop.in.in:4
-#: build/panels/location/budgie-location-panel.desktop.in:4
 msgid "Protect your location information"
 msgstr "Protejați informațiile de locație"
 
@@ -8088,16 +8090,12 @@ msgstr "Protejați informațiile de locație"
 #: panels/location/budgie-location-panel.desktop.in.in:16
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:16
 #: panels/usage/budgie-usage-panel.desktop.in.in:16
-#: build/panels/location/budgie-location-panel.desktop.in:16
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:16
-#: build/panels/usage/budgie-usage-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
 msgstr ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;ecran;blocare;diagnostice;pană;privat;temporar;nume;rețeaidentitate;confidențialitate;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:4
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:4
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr ""
 "Configurează funcțiile butoanelor și ajustează sensibilitatea creionului "
@@ -8106,24 +8104,20 @@ msgstr ""
 #. Translators: Search terms to find the Wacom Tablet panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:15
-#: build/panels/wacom/budgie-wacom-panel.desktop.in:15
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
 msgstr "Tabletă;Wacom;Stylus;Radieră;Mouse;Maus;Creion;Stilou;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
-#: build/panels/power/budgie-power-panel.desktop.in:3
 msgid "Power"
 msgstr "Consum"
 
 #: panels/power/budgie-power-panel.desktop.in.in:4
-#: build/panels/power/budgie-power-panel.desktop.in:4
 msgid "View your battery status and change power saving settings"
 msgstr "Stare baterie și schimbare setări consum energie"
 
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/power/budgie-power-panel.desktop.in.in:15
-#: build/panels/power/budgie-power-panel.desktop.in:15
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
 msgstr ""
@@ -8131,12 +8125,10 @@ msgstr ""
 " așteptare;Energie;"
 
 #: panels/color/budgie-color-panel.desktop.in.in:3
-#: build/panels/color/budgie-color-panel.desktop.in:3
 msgid "Color"
 msgstr "Culoare"
 
 #: panels/color/budgie-color-panel.desktop.in.in:4
-#: build/panels/color/budgie-color-panel.desktop.in:4
 msgid ""
 "Calibrate the color of your devices, such as displays, cameras or printers"
 msgstr ""
@@ -8146,47 +8138,39 @@ msgstr ""
 #. Translators: Search terms to find the Color panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/color/budgie-color-panel.desktop.in.in:15
-#: build/panels/color/budgie-color-panel.desktop.in:15
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
 msgstr ""
 "Color;ICC;Profile;Calibrate;Printer;Display;Culoare;Culori;Profil;Calibrare;Imprimantă;Afișaj;Afișaje;Ecran;Ecrane;"
 
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:4
 msgid "Turn Bluetooth on and off and connect your devices"
 msgstr "Deschideți și închideți Bluetooth și conectați-vă dispozitivele"
 
 #. Translators: Search terms to find the Bluetooth panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
-#: build/panels/bluetooth/budgie-bluetooth-panel.desktop.in:15
 msgid "share;sharing;bluetooth;obex;"
 msgstr "share;sharing;bluetooth;obex;partajează;partajare;"
 
 #: panels/background/budgie-background-panel.desktop.in.in:3
-#: build/panels/background/budgie-background-panel.desktop.in:3
 msgid "Background"
 msgstr "Fundal"
 
 #: panels/background/budgie-background-panel.desktop.in.in:4
-#: build/panels/background/budgie-background-panel.desktop.in:4
 msgid "Change your background image to a wallpaper or photo"
 msgstr "Schimbă imaginea de fundal într-un tapet sau o fotografie"
 
 #. Translators: Search terms to find the Background panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/background/budgie-background-panel.desktop.in.in:15
-#: build/panels/background/budgie-background-panel.desktop.in:15
 msgid "Wallpaper;Screen;Desktop;"
 msgstr "Wallpaper;Screen;Desktop;Tapet;Ecran;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
-#: build/panels/sound/budgie-sound-panel.desktop.in:3
 msgid "Sound"
 msgstr "Sunet"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:4
-#: build/panels/sound/budgie-sound-panel.desktop.in:4
 msgid "Change sound levels, inputs, outputs, and alert sounds"
 msgstr ""
 "Schimbă nivelurile de sunet, intrările, ieșirile și sunetele de alertă"
@@ -8194,33 +8178,28 @@ msgstr ""
 #. Translators: Search terms to find the Sound panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sound/budgie-sound-panel.desktop.in.in:15
-#: build/panels/sound/budgie-sound-panel.desktop.in:15
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 msgstr ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Microfon;Căști;Volum;Balansat;"
 
 #: panels/display/budgie-display-panel.desktop.in.in:4
-#: build/panels/display/budgie-display-panel.desktop.in:4
 msgid "Choose how to use connected monitors and projectors"
 msgstr "Alege cum să fie folosite monitoarele și proiectoarele conectate"
 
 #. Translators: Search terms to find the Displays panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/display/budgie-display-panel.desktop.in.in:15
-#: build/panels/display/budgie-display-panel.desktop.in:15
 msgid ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
 msgstr ""
 "Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;Panou;Proiector;Ecran;Rezoluție;Lumină;Albastru;culoare;apus;răsărit;"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:3
 msgid "Keyboard"
 msgstr "Tastatură"
 
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:4
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:4
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
@@ -8231,26 +8210,22 @@ msgstr ""
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
-#: build/panels/keyboard/budgie-keyboard-panel.desktop.in:15
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;Scurtătură;Scurtături;Fereastră;Redimensionează;Sursă;Blochează;Volum;"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:3
 msgid "Users"
 msgstr "Utilizatori"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:4
 msgid "Add or remove users and change your password"
 msgstr "Adăugați și ștergeți utilizatori și schimbați parola"
 
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:15
-#: build/panels/user-accounts/budgie-user-accounts-panel.desktop.in:15
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
@@ -8262,13 +8237,11 @@ msgstr ""
 "utilizare;Limită de utilizare;Copil;Copii;"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:3
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
 msgstr "Accesibilitate"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:4
 msgid "Make it easier to see, hear, type, point and click"
 msgstr ""
 "Facilitează vederea, auzul, tastatul, mutatul mausului și apăsarea clicului"
@@ -8276,7 +8249,6 @@ msgstr ""
 #. Translators: Search terms to find the Accessibility panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:15
-#: build/panels/universal-access/budgie-universal-access-panel.desktop.in:15
 msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
@@ -8289,12 +8261,10 @@ msgstr ""
 "repetiție;dublu;clic;amânare;viteză;asistență;repetă;clipește;vizual;auz;tastare;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:3
 msgid "Multitasking"
 msgstr "Sarcini multiple"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:4
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:4
 msgid "Manage preferences for productivity and multitasking"
 msgstr ""
 "Administrează preferințele pentru productivitate și efectuarea de sarcini "
@@ -8303,46 +8273,39 @@ msgstr ""
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
-#: build/panels/multitasking/budgie-multitasking-panel.desktop.in:15
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
 "Multitasking;Multitask;Productivity;Customize;Desktop;Sarcini;Sarcini "
 "multiple;Productivitate;Personalizează;Personalizare;"
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:4
-#: build/panels/applications/budgie-applications-panel.desktop.in:4
 msgid "Control various application permissions and settings"
 msgstr "Controlează permisiuni și configurări variate ale aplicației"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/applications/budgie-applications-panel.desktop.in.in:16
-#: build/panels/applications/budgie-applications-panel.desktop.in:16
 msgid "application;flatpak;permission;setting;"
 msgstr ""
 "application;flatpak;permission;setting;aplicație;permisiune;configurare;"
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:4
 msgid "Control what you want to share with others"
 msgstr "Controlați ce partajați cu alții"
 
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:16
-#: build/panels/sharing/budgie-sharing-panel.desktop.in:16
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
 msgstr ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;partajare;împărtășire;nume;poze;imagini;filme;"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:3
 msgid "Removable Media"
 msgstr "Medii detașabile"
 
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:4
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:4
 msgid "Configure Removable Media settings"
 msgstr "Configurează medii detașabile"
 
@@ -8350,19 +8313,16 @@ msgstr "Configurează medii detașabile"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
-#: build/panels/removable-media/budgie-removable-media-panel.desktop.in:15
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;dispozitiv;sistem;implicit;implicită;implicite;aplicație;aplicații;preferate;preferată;amovibil;autopornire;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
-#: build/panels/region/budgie-region-panel.desktop.in:3
 msgid "Region & Language"
 msgstr "Regiune și limbă"
 
 #: panels/region/budgie-region-panel.desktop.in.in:4
-#: build/panels/region/budgie-region-panel.desktop.in:4
 msgid "Select your display language and formats"
 msgstr "Selectați limba afișată și formatele"
 
@@ -8370,17 +8330,14 @@ msgstr "Selectați limba afișată și formatele"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:15
-#: build/panels/region/budgie-region-panel.desktop.in:15
 msgid "Language;Layout;Keyboard;Input;"
 msgstr "Language;Layout;Keyboard;Input;Limbă;Aranjament;Intrare;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:3
 msgid "About"
 msgstr "Despre"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:4
 msgid "View information about your system"
 msgstr "Vedeți informații despre sistem"
 
@@ -8390,7 +8347,6 @@ msgstr "Vedeți informații despre sistem"
 #. "Preferred Applications" is the old name for the preference, so make
 #. sure that you use the same "translation" for those keywords
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:19
-#: build/panels/info-overview/budgie-info-overview-panel.desktop.in:19
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
@@ -8398,62 +8354,52 @@ msgstr ""
 " gazdă;memorie;procesor;vesiune;implicit;aplicație;preferată;detașabil;"
 
 #: panels/network/budgie-network-panel.desktop.in.in:4
-#: build/panels/network/budgie-network-panel.desktop.in:4
 msgid "Control how you connect to the Internet"
 msgstr "Controlați modul în care vă conectați la Internet"
 
 #. Translators: Search terms to find the Network panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-network-panel.desktop.in.in:15
-#: build/panels/network/budgie-network-panel.desktop.in:15
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 msgstr ""
 "Network;Wireless;Wi-"
 "Fi;Wifi;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;Rețea;"
 
 #: panels/network/budgie-wifi-panel.desktop.in.in:4
-#: build/panels/network/budgie-wifi-panel.desktop.in:4
 msgid "Control how you connect to Wi-Fi networks"
 msgstr "Controlați modul în care vă conectați la rețele Wi-Fi"
 
 #. Translators: Search terms to find the Wi-Fi panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/network/budgie-wifi-panel.desktop.in.in:15
-#: build/panels/network/budgie-wifi-panel.desktop.in:15
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 msgstr "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;Rețea;"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:3
 msgid "Mobile Network"
 msgstr "Rețea mobilă"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:4
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:4
 msgid "Configure Telephony and mobile data connections"
 msgstr "Configurează Telefonia și conexiunile de date mobile"
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:16
-#: build/panels/wwan/budgie-wwan-panel.desktop.in:16
 msgid "cellular;wwan;telephony;sim;mobile;"
 msgstr "cellular;wwan;telephony;sim;mobile;celular;telefonie;mobilă;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:4
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:4
 msgid "Change the date and time, including time zone"
 msgstr "Schimbați data și ora, inclusiv fusul orar"
 
 #. Translators: Search terms to find the Date and Time panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:15
-#: build/panels/datetime/budgie-datetime-panel.desktop.in:15
 msgid "Clock;Timezone;Location;"
 msgstr "Clock;Timezone;Location;Ceas;Timp;Fus orar;Locație;"
 
 #: panels/camera/budgie-camera-panel.desktop.in.in:4
-#: build/panels/camera/budgie-camera-panel.desktop.in:4
 msgid "Protect your pictures"
 msgstr "Protejați-vă fotografiile"
 
@@ -8461,32 +8407,26 @@ msgstr "Protejați-vă fotografiile"
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/camera/budgie-camera-panel.desktop.in.in:16
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:16
-#: build/panels/camera/budgie-camera-panel.desktop.in:16
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:16
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;ecran;încuiere;recent;rețea;nume;identitate;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:4
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:4
 msgid "Control which notifications are displayed and what they show"
 msgstr "Controlează tipurile de notificări afișate și ce afișează acestea"
 
 #. Translators: Search terms to find the Notifications panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:15
-#: build/panels/notifications/budgie-notifications-panel.desktop.in:15
 msgid "Notifications;Banner;Message;Tray;Popup;"
 msgstr "Notifications;Banner;Message;Tray;Popup;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:3
 msgid "Default Applications"
 msgstr "Aplicații implicite"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:4
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:4
 msgid "Configure Default Applications"
 msgstr "Configurează aplicații implicite"
 
@@ -8494,23 +8434,19 @@ msgstr "Configurează aplicații implicite"
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
-#: build/panels/default-apps/budgie-default-apps-panel.desktop.in:15
 msgid "default;application;preferred;media;"
 msgstr ""
 "default;application;preferred;media;implicit;implicită;implicite;aplicație;preferată;preferate;"
 
 #: panels/microphone/budgie-microphone-panel.desktop.in.in:4
-#: build/panels/microphone/budgie-microphone-panel.desktop.in:4
 msgid "Protect your conversations"
 msgstr "Protejați conversațiile"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:3
 msgid "Thunderbolt"
 msgstr "Thunderbolt"
 
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:4
 msgid "Manage Thunderbolt devices"
 msgstr "Administrează dispozitive Thunderbolt"
 
@@ -8518,17 +8454,14 @@ msgstr "Administrează dispozitive Thunderbolt"
 #. Do NOT translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
-#: build/panels/thunderbolt/budgie-thunderbolt-panel.desktop.in:15
 msgid "Thunderbolt;privacy;"
 msgstr "Thunderbolt;privacy;confidențialitate;"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:3
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:3
 msgid "Mouse & Touchpad"
 msgstr "Maus și touchpad"
 
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:4
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:4
 msgid ""
 "Change your mouse or touchpad sensitivity and select right or left-handed"
 msgstr ""
@@ -8539,38 +8472,31 @@ msgstr ""
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:15
-#: build/panels/mouse/budgie-mouse-panel.desktop.in:15
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
 msgstr ""
 "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;Clic;Derulare;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:3
 msgid "Diagnostics"
 msgstr "Diagnostice"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:4
-#: build/panels/diagnostics/budgie-diagnostics-panel.desktop.in:4
 msgid "Report your problems"
 msgstr "Raportați problemele"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
-#: build/panels/usage/budgie-usage-panel.desktop.in:3
 msgid "File History & Trash"
 msgstr "Gunoi și istoricul fișierelor"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:4
-#: build/panels/usage/budgie-usage-panel.desktop.in:4
 msgid "Don't leave traces"
 msgstr "Nu lăsa urme"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:3
 msgid "Online Accounts"
 msgstr "Conturi online"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:4
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:4
 msgid "Connect to your online accounts and decide what to use them for"
 msgstr ""
 "Conectați-vă la conturile online și decideți modul în care să le folosiți"
@@ -8581,7 +8507,6 @@ msgstr ""
 #. For ReadItLater and Pocket, see
 #. http://en.wikipedia.org/wiki/Pocket_(application)
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
-#: build/panels/online-accounts/budgie-online-accounts-panel.desktop.in:18
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
 msgstr ""
@@ -8590,7 +8515,6 @@ msgstr ""
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/budgie-control-center.desktop.in.in:13
-#: build/shell/budgie-control-center.desktop.in:13
 msgid "Preferences;Settings;"
 msgstr "Preferences;Settings;Preferințe;Configurări;"
 
