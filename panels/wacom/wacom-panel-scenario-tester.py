@@ -54,7 +54,7 @@ def wrap_call(testbed):
     os.environ['UMOCKDEV_DIR'] = testbed.get_root_dir()
 
     wrapper = os.environ.get('WRAPPER')
-    args = ['gnome-control-center', '-v', 'wacom']
+    args = ['budgie-control-center', '-v', 'wacom']
     if wrapper == 'gdb':
         args = ['gdb', '-ex', 'r', '-ex', 'bt full', '--args'] + args
     elif wrapper:
