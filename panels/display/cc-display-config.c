@@ -438,7 +438,7 @@ G_DEFINE_TYPE_WITH_PRIVATE (CcDisplayConfig,
 gboolean
 cc_has_fractional_key ()
 {
-  GSettingsSchema * mutter_x11_scaling_options = g_settings_schema_source_lookup(g_settings_schema_source_get_default(), "org.gnome.mutter.x11", FALSE); // Fractional scaling in Mutter only applies to Manjaro and Ubuntu
+  GSettingsSchema * mutter_x11_scaling_options = g_settings_schema_source_lookup(g_settings_schema_source_get_default(), "com.solus-project.magpie.x11", FALSE);
   gboolean ret = mutter_x11_scaling_options != NULL;
 
   if (ret) {
