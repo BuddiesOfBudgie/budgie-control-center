@@ -12,12 +12,12 @@
     </p>
   </description>
   <url type="bugtracker">https://github.com/BuddiesOfBudgie/budgie-control-center/issues/</url>
-  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <url type="translate">https://explore.transifex.com/buddiesofbudgie/budgie-control-center/</url>
   <update_contact>admin@buddiesofbudgie.org</update_contact>
-  <project_group>GNOME</project_group>
+  <project_group>Budgie</project_group>
   <launchable type="desktop-id">budgie-control-center.desktop</launchable>
   <developer_name>BuddiesOfBudgie</developer_name>
-  <compulsory_for_desktop>GNOME</compulsory_for_desktop>
+  <compulsory_for_desktop>Budgie</compulsory_for_desktop>
   <kudos>
     <kudo>HiDpiIcon</kudo>
     <kudo>HighContrast</kudo>
@@ -26,8 +26,4 @@
     <kudo>UserDocs</kudo>
   </kudos>
   <translation type="gettext">budgie-control-center-2.0</translation>
-  <custom>
-    <value key="Purism::form_factor">workstation</value>
-    <value key="Purism::form_factor">mobile</value>
-  </custom>
 </component>
