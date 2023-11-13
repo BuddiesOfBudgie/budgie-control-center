@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Desktop Icons
+Comment=Configure Desktop Icons
+Exec=budgie-control-center desktop-icons
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=org.buddiesofbudgie.Settings-desktop-icons-symbolic
+Terminal=false
+Type=Application
+NoDisplay=true
+StartupNotify=true
+Categories=GNOME;GTK;Settings;X-GNOME-Settings-Panel;X-GNOME-DetailsSettings;
+OnlyShowIn=Budgie;
+# Translators: Search terms to find the Default Applications panel. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+Keywords=desktop;icons;

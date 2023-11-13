@@ -7,6 +7,7 @@ panels = [
   'color',
   'datetime',
   'default-apps',
+  'desktop-icons',
   'diagnostics',
   'display',
   'info-overview',

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkBox" id="header_box">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkSwitch" id="enable_switch">
+        <property name="use_action_appearance">False</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="valign">center</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="padding">4</property>
+        <property name="pack_type">end</property>
+        <property name="position">2</property>
+      </packing>
+    </child>
+  </object>
+  <template class="CcDesktopIconsPanel" parent="CcPanel">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <child>
+      <object class="HdyPreferencesPage">
+        <property name="visible">True</property>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="visible">True</property>
+	          <property name="title" translatable="yes">Directories to Show</property>
+	          <child>
+              <object class="GtkListBox">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="selection-mode">none</property>
+                <style>
+                  <class name="content"/>
+                </style>
+                <child>
+                  <object class="GtkListBoxRow">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="selectable">False</property>
+                    <property name="activatable">False</property>
+                    <style>
+                      <class name="content"/>
+                    </style>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <property name="xalign">0</property>
+                            <property name="label" translatable="yes">Home</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkSwitch" id="home_switch">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkListBoxRow">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="selectable">False</property>
+                    <property name="activatable">False</property>
+                    <style>
+                      <class name="content"/>
+                    </style>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <property name="xalign">0</property>
+                            <property name="label" translatable="yes">Trash</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkSwitch" id="trash_switch">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkListBoxRow">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="selectable">False</property>
+                    <property name="activatable">False</property>
+                    <style>
+                      <class name="content"/>
+                    </style>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <property name="xalign">0</property>
+                            <property name="label" translatable="yes">Active Mounts</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkSwitch" id="mounts_switch">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="HdyPreferencesGroup">
+            <property name="visible">True</property>
+            <property name="title">Icons</property>
+            <child>
+              <object class="GtkListBox">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="selection-mode">none</property>
+                <style>
+                  <class name="content"/>
+                </style>
+                <child>
+                  <object class="GtkListBoxRow">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="selectable">False</property>
+                    <property name="activatable">False</property>
+                    <style>
+                      <class name="content"/>
+                    </style>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <property name="xalign">0</property>
+                            <property name="label" translatable="yes">Click Policy</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkComboBoxText" id="click_policy_combo">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <items>
+                              <item translatable="yes" id="single">Single</item>
+                              <item translatable="yes" id="double">Double</item>
+                            </items>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkListBoxRow">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="selectable">False</property>
+                    <property name="activatable">False</property>
+                    <style>
+                      <class name="content"/>
+                    </style>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <property name="xalign">0</property>
+                            <property name="label" translatable="yes">Icon Size</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkComboBoxText" id="icon_size_combo">
+                            <property name="visible">True</property>
+                            <property name="margin_start">12</property>
+                            <property name="margin_end">12</property>
+                            <property name="margin_top">12</property>
+                            <property name="margin_bottom">12</property>
+                            <items>
+                              <item translatable="yes" id="small">Small</item>
+                              <item translatable="yes" id="normal">Normal</item>
+                              <item translatable="yes" id="large">Large</item>
+                              <item translatable="yes" id="massive">Massive</item>
+                            </items>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>
