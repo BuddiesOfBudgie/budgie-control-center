@@ -27,7 +27,7 @@
       <object class="HdyPreferencesPage">
         <property name="visible">True</property>
         <child>
-          <object class="HdyPreferencesGroup">
+          <object class="HdyPreferencesGroup" id="directories_group">
             <property name="visible">True</property>
 	          <property name="title" translatable="yes">Directories to Show</property>
 	          <child>
@@ -181,7 +181,7 @@
           </object>
         </child>
         <child>
-          <object class="HdyPreferencesGroup">
+          <object class="HdyPreferencesGroup" id="icons_group">
             <property name="visible">True</property>
             <property name="title">Icons</property>
             <child>
