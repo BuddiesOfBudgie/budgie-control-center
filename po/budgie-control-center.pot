@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -600,7 +600,7 @@ msgstr ""
 msgid "_Close"
 msgstr ""
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr ""
 
@@ -7455,42 +7455,46 @@ msgid "Touchpad"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
-msgid "Touchpad Speed"
+msgid "Disable Touchpad While Typing"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
-msgid "Touchpad Click Method"
+msgid "Touchpad Speed"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
-msgid "Create button behavior (left, middle and right) using the chosen action."
+msgid "Touchpad Click Method"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
-msgid "Use the touchpad default"
+msgid "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:22
-msgid "No buttons created"
+msgid "Use the touchpad default"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:23
-msgid "Left, middle and right areas"
+msgid "No buttons created"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:24
-msgid "One, two and three fingers"
+msgid "Left, middle and right areas"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:25
-msgid "Tap to Click"
+msgid "One, two and three fingers"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:26
-msgid "Two-finger Scrolling"
+msgid "Tap to Click"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:27
+msgid "Two-finger Scrolling"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr ""
 

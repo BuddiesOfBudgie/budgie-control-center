@@ -61,6 +61,8 @@ struct _CcMousePanel
   GtkScale          *touchpad_speed_scale;
   GtkComboBox       *touchpad_click_method_box;
   GtkSwitch         *touchpad_toggle_switch;
+  GtkListBoxRow     *touchpad_typing_row;
+  GtkSwitch         *touchpad_typing_switch;
   GtkListBoxRow     *two_finger_scrolling_row;
   GtkSwitch         *two_finger_scrolling_switch;
 
@@ -254,6 +256,12 @@ setup_dialog (CcMousePanel *self)
                                 touchpad_enabled_set_mapping,
                                 NULL, NULL);
   g_settings_bind_with_mapping (self->touchpad_settings, "send-events",
+                                self->touchpad_typing_row, "sensitive",
+                                G_SETTINGS_BIND_GET,
+                                touchpad_enabled_get_mapping,
+                                touchpad_enabled_set_mapping,
+                                NULL, NULL);
+  g_settings_bind_with_mapping (self->touchpad_settings, "send-events",
                                 self->touchpad_natural_scrolling_row, "sensitive",
                                 G_SETTINGS_BIND_GET,
                                 touchpad_enabled_get_mapping,
@@ -307,6 +315,10 @@ setup_dialog (CcMousePanel *self)
   g_settings_bind (self->touchpad_settings, "edge-scrolling-enabled",
                    self->edge_scrolling_switch, "state",
                    G_SETTINGS_BIND_GET);
+
+  g_settings_bind (self->touchpad_settings, "disable-while-typing",
+                   self->touchpad_typing_switch, "active",
+                   G_SETTINGS_BIND_DEFAULT);
 
   setup_touchpad_options (self);
 }
@@ -450,6 +462,8 @@ cc_mouse_panel_class_init (CcMousePanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_speed_scale);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_click_method_box);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_toggle_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_typing_row);
+  gtk_widget_class_bind_template_child (widget_class, CcMousePanel, touchpad_typing_switch);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, two_finger_scrolling_row);
   gtk_widget_class_bind_template_child (widget_class, CcMousePanel, two_finger_scrolling_switch);
 

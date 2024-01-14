@@ -244,6 +244,22 @@
                           </object>
                         </child>
                         <child>
+                          <object class="HdyActionRow" id="touchpad_typing_row">
+                              <property name="visible">True</property>
+                              <property name="can_focus">True</property>
+                              <property name="activatable">false</property>
+                              <property name="title" translatable="yes">Disable Touchpad While Typing</property>
+                              <child>
+                                <object class="GtkSwitch" id="touchpad_typing_switch">
+                                  <property name="visible">True</property>
+                                  <property name="can_focus">True</property>
+                                  <property name="halign">end</property>
+                                  <property name="valign">center</property>
+                                </object>
+                              </child>
+                          </object>
+                        </child>
+                        <child>
                           <object class="HdyActionRow" id="touchpad_natural_scrolling_row">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
