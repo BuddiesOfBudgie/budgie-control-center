@@ -334,7 +334,7 @@ msgstr "대기"
 #: panels/printers/pp-job-row.c:143
 msgctxt "print job"
 msgid "Paused"
-msgstr "일시 중지 상태"
+msgstr "일시정지됨"
 
 #. Translators: Job's state (job needs authentication to proceed further)
 #: panels/printers/pp-job-row.c:148
@@ -634,7 +634,7 @@ msgstr "배터리"
 #. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
 #: panels/power/cc-power-panel.c:386
 msgid "UPS"
-msgstr ""
+msgstr "UPS"
 
 #. TRANSLATORS: secondary battery, misc
 #: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
@@ -4023,15 +4023,15 @@ msgstr "임시 파일 지우기(_P)"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "파일 히스토리를 비우시겠습니까?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
-msgstr ""
+msgstr "비우면 최근에 사용한 파일 목록이 비어 있는 상태로 표시됩니다."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "히스토리 비우기(_C)"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -4173,7 +4173,7 @@ msgstr "인증(_U)"
 #. list.
 #: panels/printers/pp-jobs-dialog.ui.h:10
 msgid "Clear All"
-msgstr "모두 지우기"
+msgstr "모두 비우기"
 
 #. Translators: This button pop up authentication dialog for print jobs which
 #. need credentials.
@@ -4481,7 +4481,7 @@ msgstr "단추를 기능에 연결"
 msgid ""
 "To edit a shortcut, choose the “Send Keystroke” action, press the keyboard "
 "shortcut button and hold down the new keys or press Backspace to clear."
-msgstr "단축키를 편집하려면, “키 누름 보내기” 동작을 선택하고, 새 키를 누르십시오. 지우려면 백스페이스를 누르십시오."
+msgstr "단축키를 편집하려면, “키 누름 보내기” 동작을 선택하고, 새 키를 누르십시오. 비우려면 백스페이스를 누르십시오."
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Blank screen" in "Power" panel.
@@ -4593,7 +4593,7 @@ msgstr "자동 대기 모드(_A)"
 
 #: panels/power/cc-power-panel.ui.h:35
 msgid "Pauses the computer after a period of inactivity."
-msgstr "일정 시간 사용하지 않으면 컴퓨터를 일시 중지합니다."
+msgstr "일정 시간 사용하지 않으면 컴퓨터를 일시정지합니다."
 
 #: panels/power/cc-power-panel.ui.h:36
 msgid "Suspend & Power Button"
@@ -6308,7 +6308,7 @@ msgstr "<b>전체</b>"
 
 #: panels/applications/cc-applications-panel.ui.h:35
 msgid "Clear Cache…"
-msgstr "캐시 지우기…"
+msgstr "캐시 비우기…"
 
 #: panels/sharing/cc-sharing-networks.ui.h:1
 msgid "Networks"
@@ -7517,7 +7517,7 @@ msgstr "웹(_W)"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "파일(_F)"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"
@@ -7704,7 +7704,7 @@ msgstr "문제점 보고서 자동(_A)"
 
 #: panels/usage/cc-usage-panel.ui.h:1
 msgid "File History"
-msgstr "파일 사용 내역"
+msgstr "파일 히스토리"
 
 #: panels/usage/cc-usage-panel.ui.h:2
 msgid ""
@@ -7712,7 +7712,7 @@ msgid ""
 " shared between applications, and makes it easier to find files that you "
 "might want to use."
 msgstr ""
-"파일 사용 내역은 사용한 파일의 기록을 유지하고 있습니다. 이 정보는 응용 프로그램 사이에 공유되므로, 사용하려는 파일을 쉽게 찾을 수 "
+"파일 히스토리는 사용한 파일의 기록을 유지하고 있습니다. 이 정보는 응용 프로그램 사이에 공유되므로, 사용하려는 파일을 쉽게 찾을 수 "
 "있습니다."
 
 #: panels/usage/cc-usage-panel.ui.h:3
@@ -7721,11 +7721,11 @@ msgstr "파일 사용 내역(_I)"
 
 #: panels/usage/cc-usage-panel.ui.h:4
 msgid "File _History Duration"
-msgstr "파일 사용 내역 기간(_H)"
+msgstr "파일 히스토리 기간(_H)"
 
 #: panels/usage/cc-usage-panel.ui.h:5
 msgid "_Clear History…"
-msgstr "기록 지우기(_C)…"
+msgstr "히스토리 비우기(_C)…"
 
 #: panels/usage/cc-usage-panel.ui.h:6
 msgid "Trash & Temporary Files"
@@ -8279,7 +8279,7 @@ msgstr "문제점 보고하기"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
 msgid "File History & Trash"
-msgstr "파일 사용 내역 및 휴지통"
+msgstr "파일 히스토리 및 휴지통"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:4
 msgid "Don't leave traces"
@@ -8372,7 +8372,7 @@ msgstr "실행 아이콘"
 
 #: panels/keyboard/01-launchers.xml.in:4
 msgid "Launch help browser"
-msgstr "도움말 보기 실행"
+msgstr "도움말 브라우저 실행"
 
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
@@ -8380,7 +8380,7 @@ msgstr "계산기 실행"
 
 #: panels/keyboard/01-launchers.xml.in:10
 msgid "Launch email client"
-msgstr "전자메일 읽기 실행"
+msgstr "전자메일 클라이언트 실행"
 
 #: panels/keyboard/01-launchers.xml.in:12
 msgid "Launch web browser"
@@ -8388,7 +8388,7 @@ msgstr "웹 브라우저 실행"
 
 #: panels/keyboard/01-launchers.xml.in:14
 msgid "Home folder"
-msgstr "내 폴더"
+msgstr "홈 폴더"
 
 #: panels/keyboard/01-launchers.xml.in:16
 msgctxt "keybinding"
@@ -8397,19 +8397,19 @@ msgstr "검색하기"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"
-msgstr "스크린샷"
+msgstr "스크린숏"
 
 #: panels/keyboard/01-screenshot.xml.in:6
 msgid "Save a screenshot to $PICTURES"
-msgstr "스크린샷을 $PICTURES 위치에 저장하기"
+msgstr "스크린숏을 $PICTURES 위치에 저장하기"
 
 #: panels/keyboard/01-screenshot.xml.in:10
 msgid "Save a screenshot of a window to $PICTURES"
-msgstr "창 스크린샷을 $PICTURES 위치에 저장하기"
+msgstr "창의 스크린숏을 $PICTURES 위치에 저장하기"
 
 #: panels/keyboard/01-screenshot.xml.in:14
 msgid "Save a screenshot of an area to $PICTURES"
-msgstr "영역 스크린샷을 $PICTURES 위치에 저장하기"
+msgstr "영역의 스크린숏을 $PICTURES 위치에 저장하기"
 
 #: panels/keyboard/00-multimedia.xml.in:2
 msgid "Sound and Media"
@@ -8417,7 +8417,7 @@ msgstr "사운드 및 미디어"
 
 #: panels/keyboard/00-multimedia.xml.in:4
 msgid "Volume mute/unmute"
-msgstr "볼륨 묵음/해제"
+msgstr "볼륨 음소거/해제"
 
 #: panels/keyboard/00-multimedia.xml.in:6
 msgid "Volume down"
@@ -8429,7 +8429,7 @@ msgstr "음량 높이기"
 
 #: panels/keyboard/00-multimedia.xml.in:10
 msgid "Microphone mute/unmute"
-msgstr "마이크 묵음/해제"
+msgstr "마이크 음소거/해제"
 
 #: panels/keyboard/00-multimedia.xml.in:12
 msgid "Launch media player"
@@ -8437,11 +8437,11 @@ msgstr "미디어 플레이어 실행"
 
 #: panels/keyboard/00-multimedia.xml.in:14
 msgid "Play (or play/pause)"
-msgstr "재생(또는 재생/일시 중지)"
+msgstr "재생 (또는 재생/일시정지)"
 
 #: panels/keyboard/00-multimedia.xml.in:16
 msgid "Pause playback"
-msgstr "재생 일시 중지"
+msgstr "재생 일시정지"
 
 #: panels/keyboard/00-multimedia.xml.in:18
 msgid "Stop playback"
@@ -8457,7 +8457,7 @@ msgstr "다음 트랙"
 
 #: panels/keyboard/00-multimedia.xml.in:24
 msgid "Eject"
-msgstr "빼기"
+msgstr "꺼내기"
 
 #: panels/keyboard/01-budgie.xml.in:2 panels/keyboard/01-system.xml.in:2
 msgid "System"

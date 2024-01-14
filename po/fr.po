@@ -643,7 +643,7 @@ msgstr "Batteries"
 #. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
 #: panels/power/cc-power-panel.c:386
 msgid "UPS"
-msgstr ""
+msgstr "Onduleur"
 
 #. TRANSLATORS: secondary battery, misc
 #: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
@@ -4138,15 +4138,16 @@ msgstr "_Purger les fichiers temporaires"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "Effacer l'historique des fichiers?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
 msgstr ""
+"Après effacement, la liste des fichiers récemment utilisés apparaitra vide."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "_Effacer l'historique"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -7745,7 +7746,7 @@ msgstr "Sites _Web"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "_Fichiers"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"

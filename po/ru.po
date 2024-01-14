@@ -643,7 +643,7 @@ msgstr "Батареи"
 #. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
 #: panels/power/cc-power-panel.c:386
 msgid "UPS"
-msgstr ""
+msgstr "ИБП"
 
 #. TRANSLATORS: secondary battery, misc
 #: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
@@ -4136,15 +4136,15 @@ msgstr "_Удалить временные файлы"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "Очистить историю файлов?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
-msgstr ""
+msgstr "После очистки списки недавно использованных файлов будут пустыми."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "_Очистить Историю"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -7716,7 +7716,7 @@ msgstr "_Интернет"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "_Файлы"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"

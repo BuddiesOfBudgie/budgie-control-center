@@ -7,6 +7,7 @@
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
 # davidrogel, 2022
 # Tomás Varela Duarte, 2023
+# _-Caleb-_ <tanausugomez@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 22:20+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Tomás Varela Duarte, 2023\n"
+"Last-Translator: _-Caleb-_ <tanausugomez@gmail.com>, 2023\n"
 "Language-Team: Spanish (https://app.transifex.com/buddiesofbudgie/teams/129844/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4125,15 +4126,15 @@ msgstr "_Limpiar archivos temporales"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "¿Limpiar historial de archivos?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
-msgstr ""
+msgstr "Tras la limpieza, la lista de archivos recientes aparecerá vacía."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "_Limpiar Historial"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -7711,7 +7712,7 @@ msgstr "_Web"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "_Archivos"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"

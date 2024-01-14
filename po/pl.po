@@ -645,7 +645,7 @@ msgstr "Akumulatory"
 #. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
 #: panels/power/cc-power-panel.c:386
 msgid "UPS"
-msgstr ""
+msgstr "UPS"
 
 #. TRANSLATORS: secondary battery, misc
 #: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
@@ -4137,15 +4137,15 @@ msgstr "_Usuń pliki tymczasowe"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "Wyczyścić historię plików?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
-msgstr ""
+msgstr "Po wyczyszczeniu, listy ostatnio używanych plików będą puste."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "_Czyść historię"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -5193,7 +5193,7 @@ msgstr "Dostosowanie do telewizora"
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Scale"
-msgstr ""
+msgstr "Skaluj"
 
 #: panels/display/cc-display-settings.ui.h:6
 msgid "Fractional Scaling"
@@ -5204,11 +5204,13 @@ msgid ""
 "May increase power usage, lower speed, or reduce display sharpness.\n"
 "        Fractional scaling will disable the lock-screen."
 msgstr ""
+"Może zwiększać zużycie energii, obniżyć prędkość lub zmniejszać ostrość wyświetlacza.\n"
+"Skalowanie ułamkowe wyłączy ekran blokady."
 
 #. This cancels the redshift inhibit.
 #: panels/display/cc-night-light-page.ui.h:2
 msgid "Restart Filter"
-msgstr "Włącz"
+msgstr "Uruchom ponownie filtr"
 
 #. Inhibit the redshift functionality until the next day starts
 #: panels/display/cc-night-light-page.ui.h:4
@@ -6537,7 +6539,7 @@ msgstr "Włączanie lub wyłączanie połączeń pulpitu zdalnego z tym komputer
 
 #: panels/sharing/cc-sharing-panel.ui.h:14
 msgid "Enable Legacy VNC Protocol"
-msgstr ""
+msgstr "Włącz starszy protokół VNC"
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
@@ -7707,7 +7709,7 @@ msgstr "_WWW"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "_Pliki"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"

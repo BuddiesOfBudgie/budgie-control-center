@@ -5,6 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Davidmp <medipas@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 22:20+0100\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Davidmp <medipas@gmail.com>, 2023\n"
 "Language-Team: Catalan (https://app.transifex.com/buddiesofbudgie/teams/129844/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -301,7 +302,7 @@ msgstr "Vertical del revés"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "Configuració automàtica"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:692
@@ -375,7 +376,7 @@ msgstr "Completada"
 #. Translators: Clicking this button prioritizes printing of this print job
 #: panels/printers/pp-job-row.c:179
 msgid "Move this job to the top of the queue"
-msgstr ""
+msgstr "Mou aquesta tasca al principi de la cua"
 
 #. Translators: The found device is a JetDirect printer
 #: panels/printers/pp-host.c:478
@@ -639,7 +640,7 @@ msgstr "Bateries"
 #. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
 #: panels/power/cc-power-panel.c:386
 msgid "UPS"
-msgstr ""
+msgstr "SAI"
 
 #. TRANSLATORS: secondary battery, misc
 #: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
@@ -1297,7 +1298,7 @@ msgstr "Cap"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:381
 msgid "Layout default"
-msgstr ""
+msgstr "Disposició per defecte"
 
 #: panels/keyboard/cc-keyboard-manager.c:486
 #: panels/keyboard/cc-keyboard-manager.c:494
@@ -1364,7 +1365,7 @@ msgstr ""
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "Cap"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -1622,14 +1623,14 @@ msgstr "No s'ha pogut llistar les empremtes: %s"
 #. enabled using your pam authorization module'
 #: panels/user-accounts/cc-fingerprint-dialog.c:627
 msgid "your pam authorization module"
-msgstr ""
+msgstr "el vostre mòdul d'autorització pam."
 
 #. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
 #. an executable that is calculated when the app is running
 #: panels/user-accounts/cc-fingerprint-dialog.c:659
 #, c-format
 msgid "Ensure fprintd has been enabled using %s"
-msgstr ""
+msgstr "Assegureu-vos que fprintd s'hagi habilitat mitjançant %s"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
@@ -1695,7 +1696,7 @@ msgstr "L'emmagatzematge del dispositiu d'empremtes està ple"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:887
 msgid "Fingerprint is a duplicate"
-msgstr ""
+msgstr "L'empremta digital és un duplicat."
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
@@ -3511,8 +3512,8 @@ msgstr "Ha de tenir com a mínim 8 caràcters"
 #, c-format
 msgid "Must have a maximum of %d character"
 msgid_plural "Must have a maximum of %d characters"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ha de tenir com a mínim %d caràcter."
+msgstr[1] "Ha de tenir com a mínim %d caràcters."
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
@@ -3605,27 +3606,27 @@ msgstr "Només 4G"
 
 #: panels/wwan/cc-wwan-device.c:997
 msgid "5G Only"
-msgstr ""
+msgstr "Només 5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G (preferit)"
 
 #: panels/wwan/cc-wwan-device.c:1009
 msgid "2G, 3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G, 4G (preferit), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1011
 msgid "2G, 3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G, 3G (preferit), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1013
 msgid "2G (Preferred), 3G, 4G, 5G"
-msgstr ""
+msgstr "2G (preferit), 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1022
 msgid "2G, 3G, 4G (Preferred)"
@@ -3645,51 +3646,51 @@ msgstr "2G, 3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1035
 msgid "3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 4G, 5G (preferit)"
 
 #: panels/wwan/cc-wwan-device.c:1037
 msgid "3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "3G, 4G (preferit), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1039
 msgid "3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "3G (preferit), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
-msgstr ""
+msgstr "3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 4G, 5G (preferit)"
 
 #: panels/wwan/cc-wwan-device.c:1050
 msgid "2G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 4G (preferit), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1052
 msgid "2G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G (preferit), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
-msgstr ""
+msgstr "2G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 5G (preferit)"
 
 #: panels/wwan/cc-wwan-device.c:1063
 msgid "2G, 3G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G (preferit), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1065
 msgid "2G (Preferred), 3G, 5G"
-msgstr ""
+msgstr "2G (preferit), 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
-msgstr ""
+msgstr "2G, 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1073
 msgid "3G, 4G (Preferred)"
@@ -3729,39 +3730,39 @@ msgstr "2G, 3G"
 
 #: panels/wwan/cc-wwan-device.c:1103
 msgid "2G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 5G (preferit)"
 
 #: panels/wwan/cc-wwan-device.c:1105
 msgid "2G (Preferred), 5G"
-msgstr ""
+msgstr "2G (preferit), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
-msgstr ""
+msgstr "2G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 5G (preferit)"
 
 #: panels/wwan/cc-wwan-device.c:1115
 msgid "3G (Preferred), 5G"
-msgstr ""
+msgstr "3G (preferit), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
-msgstr ""
+msgstr "3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
-msgstr ""
+msgstr "4G, 5G (preferit)"
 
 #: panels/wwan/cc-wwan-device.c:1125
 msgid "4G (Preferred), 5G"
-msgstr ""
+msgstr "4G (preferit), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
-msgstr ""
+msgstr "4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
@@ -3851,7 +3852,7 @@ msgstr "El codi PIN ha de ser un número de 4-8 dígits"
 
 #: panels/wwan/cc-wwan-device-page.c:317
 msgid "Unlocking…"
-msgstr ""
+msgstr "Es desbloca…"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.c:230
 #: panels/wwan/cc-wwan-mode-dialog.ui.h:3
@@ -4110,15 +4111,17 @@ msgstr "Suprimeix els fitxers _temporals"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "Voleu netejar l'historial dels fitxers?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
 msgstr ""
+"Després d'esborrar, les llistes dels fitxers usats recentment apareixeran "
+"buides."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "_Neteja l'historial"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -4178,7 +4181,7 @@ msgstr "Privacitat"
 #: shell/cc-window.c:313 shell/cc-window.c:1044 shell/cc-window.ui.h:1
 #: shell/budgie-control-center.desktop.in.in:3
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Centre de control del Budgie"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -4592,12 +4595,12 @@ msgstr "15 minuts"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:4
 msgid "20 minutes"
-msgstr ""
+msgstr "20 minuts"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:6
 msgid "25 minutes"
-msgstr ""
+msgstr "25 minuts"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4610,7 +4613,7 @@ msgstr "30 minuts"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:10
 msgid "45 minutes"
-msgstr ""
+msgstr "45 minuts"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4620,27 +4623,27 @@ msgstr ""
 #: panels/power/cc-power-panel.ui.h:12 panels/display/cc-display-panel.ui.h:38
 #: panels/usage/cc-usage-panel.ui.h:14
 msgid "1 hour"
-msgstr ""
+msgstr "1 hora"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:14
 msgid "80 minutes"
-msgstr ""
+msgstr "80 minuts"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:16
 msgid "90 minutes"
-msgstr ""
+msgstr "90 minuts"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:18
 msgid "100 minutes"
-msgstr ""
+msgstr "100 minuts"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:20
 msgid "2 hours"
-msgstr ""
+msgstr "2 hores"
 
 #: panels/power/cc-power-panel.ui.h:23
 msgid "Power Mode"
@@ -4950,7 +4953,7 @@ msgstr "LCD de gamma àmplia (retroil·luminació de LED RGB)"
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:34
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "Alta"
 
 #: panels/color/cc-color-panel.ui.h:54
 msgid "40 minutes"
@@ -4958,13 +4961,13 @@ msgstr "40 minuts"
 
 #: panels/color/cc-color-panel.ui.h:55
 msgid "Medium"
-msgstr ""
+msgstr "Mitjana"
 
 #: panels/color/cc-color-panel.ui.h:57
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:33
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:35
 msgid "Low"
-msgstr ""
+msgstr "Baixa"
 
 #: panels/color/cc-color-panel.ui.h:59
 msgid "Native to display"
@@ -5090,7 +5093,7 @@ msgstr "Volum del sistema"
 
 #: panels/sound/cc-sound-panel.ui.h:2
 msgid "Over-Amplification"
-msgstr ""
+msgstr "Sobreamplificació"
 
 #: panels/sound/cc-sound-panel.ui.h:4
 #, no-c-format
@@ -5098,6 +5101,9 @@ msgid ""
 "Allows raising the volume above 100%. This can result in a loss of audio "
 "quality; it is better to increase application volume settings, if possible."
 msgstr ""
+"Permet apujar el volum per sobre del 100 %. Això pot provocar una pèrdua de "
+"qualitat d'àudio; és millor augmentar la configuració del volum de "
+"l'aplicació, si és possible."
 
 #: panels/sound/cc-sound-panel.ui.h:5
 msgid "Volume Levels"
@@ -5149,7 +5155,7 @@ msgstr "So d'alerta"
 
 #: panels/display/cc-display-settings.ui.h:2
 msgid "Resolution"
-msgstr ""
+msgstr "Resolució"
 
 #: panels/display/cc-display-settings.ui.h:3
 msgid "Refresh Rate"
@@ -5161,17 +5167,19 @@ msgstr "Ajusta per televisió"
 
 #: panels/display/cc-display-settings.ui.h:5
 msgid "Scale"
-msgstr ""
+msgstr "Escala"
 
 #: panels/display/cc-display-settings.ui.h:6
 msgid "Fractional Scaling"
-msgstr ""
+msgstr "Escala fraccional"
 
 #: panels/display/cc-display-settings.ui.h:7
 msgid ""
 "May increase power usage, lower speed, or reduce display sharpness.\n"
 "        Fractional scaling will disable the lock-screen."
 msgstr ""
+"Pot augmentar el consum d'energia, reduir la velocitat o reduir la nitidesa de la pantalla.\n"
+"L'escala fraccionada desactivarà la pantalla de blocatge.."
 
 #. This cancels the redshift inhibit.
 #: panels/display/cc-night-light-page.ui.h:2
@@ -5251,7 +5259,7 @@ msgstr "Temperatura del color"
 
 #: panels/display/cc-display-panel.ui.h:1
 msgid "Display Settings Disabled"
-msgstr ""
+msgstr "Configuració de la pantalla desactivada"
 
 #: panels/display/cc-display-panel.ui.h:2
 msgid "Single Display"
@@ -5346,13 +5354,13 @@ msgstr "Pantalles"
 #. dialog.
 #: panels/display/cc-display-panel.ui.h:24
 msgid "Screen Turns Off"
-msgstr ""
+msgstr "La pantalla s'apaga."
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/display/cc-display-panel.ui.h:26
 msgid "30 seconds"
-msgstr ""
+msgstr "30 segons"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5360,7 +5368,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:28
 #: panels/display/cc-display-panel.ui.h:40
 msgid "1 minute"
-msgstr ""
+msgstr "1 minut"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5368,7 +5376,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:30
 #: panels/display/cc-display-panel.ui.h:42
 msgid "2 minutes"
-msgstr ""
+msgstr "2 minuts"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5376,7 +5384,7 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:32
 #: panels/display/cc-display-panel.ui.h:44
 msgid "3 minutes"
-msgstr ""
+msgstr "3 minuts"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
@@ -5384,27 +5392,27 @@ msgstr ""
 #: panels/display/cc-display-panel.ui.h:34
 #: panels/display/cc-display-panel.ui.h:48
 msgid "5 minutes"
-msgstr ""
+msgstr "5 minuts"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:46
 msgid "4 minutes"
-msgstr ""
+msgstr "4 minuts"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:50
 msgid "8 minutes"
-msgstr ""
+msgstr "8 minuts"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:52
 msgid "10 minutes"
-msgstr ""
+msgstr "10 minuts"
 
 #. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/display/cc-display-panel.ui.h:54
 msgid "12 minutes"
-msgstr ""
+msgstr "12 minuts"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:1
 msgid "Input Sources"
@@ -5441,7 +5449,7 @@ msgstr "Visualitza i personalitza les dreceres"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.ui.h:1
 msgid "Use layout default"
-msgstr ""
+msgstr "Disposició per defecte"
 
 #: panels/keyboard/cc-input-chooser.ui.h:1
 msgid "Add an Input Source"
@@ -5904,11 +5912,11 @@ msgstr "_Gruix:"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "Prima"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "Gruixuda"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5946,11 +5954,11 @@ msgstr "_Contrast:"
 #. The contrast scale goes from Color to None (grayscale)
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:30
 msgid "Co_lor"
-msgstr ""
+msgstr "Co_lor"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:32
 msgid "Full"
-msgstr ""
+msgstr "Plena"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:37
 msgid "Color Effects:"
@@ -5999,7 +6007,7 @@ msgstr "Retard d'a_cceptació:"
 #: panels/universal-access/cc-pointing-dialog.ui.h:5
 #: panels/universal-access/cc-pointing-dialog.ui.h:11
 msgid "Short"
-msgstr ""
+msgstr "Curta"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:10
 msgid "Slow keys typing delay"
@@ -6010,7 +6018,7 @@ msgstr "Retard d'escriptura de les tecles lentes"
 #: panels/universal-access/cc-pointing-dialog.ui.h:7
 #: panels/universal-access/cc-pointing-dialog.ui.h:12
 msgid "Long"
-msgstr ""
+msgstr "Llarga"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:12
 msgid "Beep when a key is pr_essed"
@@ -6099,11 +6107,11 @@ msgstr "Llindar de _moviment:"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "Petita"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "Grossa"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -6467,7 +6475,7 @@ msgstr "_Compartició de fitxers"
 
 #: panels/sharing/cc-sharing-panel.ui.h:3
 msgid "Remote _Desktop"
-msgstr ""
+msgstr "Escriptori _remot"
 
 #: panels/sharing/cc-sharing-panel.ui.h:4
 msgid "_Media Sharing"
@@ -6495,38 +6503,43 @@ msgstr "Entrada remota"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "Escriptori remot"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
 "Remote desktop allows viewing and controlling your desktop from another "
 "computer."
 msgstr ""
+"L'escriptori remot permet veure i controlar l'escriptori des d'un altre "
+"ordinador."
 
 #: panels/sharing/cc-sharing-panel.ui.h:13
 msgid "Enable or disable remote desktop connections to this computer."
 msgstr ""
+"Activa o desactiva les connexions d'escriptori remot a aquest ordinador."
 
 #: panels/sharing/cc-sharing-panel.ui.h:14
 msgid "Enable Legacy VNC Protocol"
-msgstr ""
+msgstr "Activa el protocol VNC de llegat"
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
-msgstr ""
+msgstr "Control remot"
 
 #: panels/sharing/cc-sharing-panel.ui.h:16
 msgid "Allows remote connections to control the screen."
-msgstr ""
+msgstr "Permet connexions remotes per controlar la pantalla."
 
 #: panels/sharing/cc-sharing-panel.ui.h:17
 msgid "How to Connect"
-msgstr ""
+msgstr "Com fer la connexió"
 
 #: panels/sharing/cc-sharing-panel.ui.h:18
 msgid ""
 "Connect to this computer using the device name or remote desktop address."
 msgstr ""
+"Connecteu-vos a aquest ordinador mitjançant el nom del dispositiu o l'adreça"
+" de l'escriptori remot."
 
 #: panels/sharing/cc-sharing-panel.ui.h:19
 #: panels/info-overview/cc-info-overview-panel.ui.h:1
@@ -6535,37 +6548,41 @@ msgstr "Nom del dispositiu"
 
 #: panels/sharing/cc-sharing-panel.ui.h:20
 msgid "Remote Desktop Address"
-msgstr ""
+msgstr "Adreça d'escriptori remot"
 
 #: panels/sharing/cc-sharing-panel.ui.h:21
 msgid "VNC Address"
-msgstr ""
+msgstr "Adreça VNC"
 
 #: panels/sharing/cc-sharing-panel.ui.h:22
 msgid "Authentication"
-msgstr ""
+msgstr "Autenticació"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
 msgstr ""
+"El nom d'usuari i la contrasenya són necessaris per connectar-se a aquest "
+"ordinador."
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "Nom d'usuari"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
-msgstr ""
+msgstr "Verificació de l'encriptació"
 
 #: panels/sharing/cc-sharing-panel.ui.h:27
 msgid "Encryption Fingerprint"
-msgstr ""
+msgstr "Empremta d'encriptació"
 
 #: panels/sharing/cc-sharing-panel.ui.h:28
 msgid ""
 "The encryption fingerprint can be seen in connecting clients and should be "
 "identical"
 msgstr ""
+"L'empremta digital d'encriptació es pot veure als clients connectats i "
+"hauria de ser idèntica."
 
 #: panels/sharing/cc-sharing-panel.ui.h:29
 msgid "Media Sharing"
@@ -6642,7 +6659,7 @@ msgstr ""
 
 #: panels/region/cc-format-chooser.ui.h:6
 msgid "Search locales…"
-msgstr ""
+msgstr "Cerca llengües..."
 
 #: panels/region/cc-format-chooser.ui.h:7
 msgid "Common Formats"
@@ -6753,7 +6770,7 @@ msgstr "Nom del SO"
 #. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
 msgid "OS Build ID"
-msgstr ""
+msgstr "ID de compilació del SO"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
@@ -6769,7 +6786,7 @@ msgstr "Virtualització"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
 msgid "Kernel Version"
-msgstr ""
+msgstr "Versió del nucli"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
@@ -7189,7 +7206,7 @@ msgstr "Nom de la xarxa"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Security type"
-msgstr ""
+msgstr "Tipus de seguretat"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Turn Wi-Fi off"
@@ -7638,16 +7655,16 @@ msgstr "_Notificacions a la pantalla de bloqueig"
 #. This is the per application switch for message tray usage.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:2
 msgid "_Notifications"
-msgstr ""
+msgstr "_Notificacions"
 
 #. This is the setting to configure sounds associated with notifications.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:4
 msgid "Sound _Alerts"
-msgstr ""
+msgstr "_Alertes de so"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:5
 msgid "Notification _Popups"
-msgstr ""
+msgstr "Notificacions _emergents"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:6
 msgid ""
@@ -7661,11 +7678,11 @@ msgstr ""
 #. screen.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:8
 msgid "Show Message _Content in Popups"
-msgstr ""
+msgstr "Mostra el _contingut del missatge a les finestres emergents."
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:10
 msgid "Show Message C_ontent on Lock Screen"
-msgstr ""
+msgstr "Mostra el c_ontingut del missatge a la pantalla de blocatge."
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:1
 msgid "_Web"
@@ -7673,7 +7690,7 @@ msgstr "_Web"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "_Fitxers"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"
@@ -7782,19 +7799,19 @@ msgstr "Temps d'espera del doble clic"
 
 #: panels/mouse/cc-mouse-panel.ui.h:9
 msgid "Acceleration Profile"
-msgstr ""
+msgstr "Perfil d'acceleració"
 
 #: panels/mouse/cc-mouse-panel.ui.h:10
 msgid "How the pointer moves when you move the mouse."
-msgstr ""
+msgstr "Com es mou el punter quan es mou el ratolí"
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "Pla"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "Adaptatiu"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7816,28 +7833,29 @@ msgstr "Velocitat del ratolí tàctil"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Click Method"
-msgstr ""
+msgstr "Mètode de clic al ratolí tàctil"
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
+"Creeu el comportament del botó (esquerre, mig i dret) amb l'acció escollida."
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
 msgid "Use the touchpad default"
-msgstr ""
+msgstr "Usa el ratolí tàctil predeterminat."
 
 #: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "No buttons created"
-msgstr ""
+msgstr "No s'ha creat cap botó."
 
 #: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "Left, middle and right areas"
-msgstr ""
+msgstr "Àrees esquerra, mitjana i dreta"
 
 #: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "One, two and three fingers"
-msgstr ""
+msgstr "Un, dos i tres dits"
 
 #: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "Tap to Click"
@@ -7923,62 +7941,62 @@ msgstr "Suprimeix els fitxers _temporals…"
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:16 panels/usage/cc-usage-panel.ui.h:34
 msgid "1 day"
-msgstr ""
+msgstr "1 dia"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:18
 msgid "2 days"
-msgstr ""
+msgstr "2 dies"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:20
 msgid "3 days"
-msgstr ""
+msgstr "3 dies"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:22
 msgid "4 days"
-msgstr ""
+msgstr "4 dies"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:24
 msgid "5 days"
-msgstr ""
+msgstr "5 dies"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:26
 msgid "6 days"
-msgstr ""
+msgstr "6 dies"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:28 panels/usage/cc-usage-panel.ui.h:36
 msgid "7 days"
-msgstr ""
+msgstr "7 dies"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:30
 msgid "14 days"
-msgstr ""
+msgstr "14 dies"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:32 panels/usage/cc-usage-panel.ui.h:38
 msgid "30 days"
-msgstr ""
+msgstr "30 dies"
 
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:40
 msgid "Forever"
-msgstr ""
+msgstr "Sempre"
 
 #: panels/online-accounts/online-accounts.ui.h:2
 msgid "Connect to your data in the cloud"
@@ -8000,19 +8018,19 @@ msgstr "Suprimeix el compte"
 
 #: shell/help-overlay.ui.h:2
 msgid "Quit"
-msgstr ""
+msgstr "Surt"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "Plafons"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
-msgstr ""
+msgstr "Torna al plafó anterior"
 
 #: shell/help-overlay.ui.h:6
 msgid "Cancel search"
-msgstr ""
+msgstr "Cancel·la la cerca"
 
 #: shell/cc-window.ui.h:2
 msgid "All Settings"
@@ -8531,19 +8549,19 @@ msgstr "Commuta a la font d'entrada anterior"
 
 #: panels/keyboard/01-raven.xml.in:2
 msgid "Raven"
-msgstr ""
+msgstr "Raven"
 
 #: panels/keyboard/01-raven.xml.in:4
 msgid "Raven Applets"
-msgstr ""
+msgstr "Miniaplicacions del Raven"
 
 #: panels/keyboard/01-raven.xml.in:6
 msgid "Raven Notifications"
-msgstr ""
+msgstr "Notificacions del Raven"
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"
-msgstr ""
+msgstr "Neteja les notificacions"
 
 #: panels/keyboard/01-launchers.xml.in:2
 msgid "Launchers"
@@ -8644,7 +8662,7 @@ msgstr "Sistema"
 
 #: panels/keyboard/01-budgie.xml.in:4
 msgid "Show the Power Dialog"
-msgstr ""
+msgstr "Mostra el diàleg de l'energia"
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"
