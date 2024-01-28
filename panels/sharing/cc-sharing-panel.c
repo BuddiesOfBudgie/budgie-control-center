@@ -1636,13 +1636,21 @@ check_remote_desktop_available (CcSharingPanel *self)
   if (!cc_sharing_panel_check_schema_available (self, GNOME_REMOTE_DESKTOP_RDP_SCHEMA_ID))
     return;
 
-  self->remote_desktop_name_watch = g_bus_watch_name (G_BUS_TYPE_SESSION,
+  /*self->remote_desktop_name_watch = g_bus_watch_name (G_BUS_TYPE_SESSION,
                                                       "org.gnome.Mutter.RemoteDesktop",
                                                       G_BUS_NAME_WATCHER_FLAGS_NONE,
                                                       remote_desktop_name_appeared,
                                                       NULL,
                                                       self,
                                                       NULL);
+    Latest versions of gnome-remote-desktop requires the xdg-portal-gnome, changes in GDM
+    and other changes specific to mutter
+
+    Lets just hide remote desktop support; rather than strip the code, lets leave
+    the code here for future reference and possible implementation details for
+    a future magpie
+    */
+    self->remote_desktop_name_watch = 0; // ensure we don't display remote desktop options
 }
 
 static void
