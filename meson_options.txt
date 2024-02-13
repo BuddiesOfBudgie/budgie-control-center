@@ -1,3 +1,4 @@
+option('ssh', type: 'boolean', value: false, description: 'build with SSH Socket based connection for remote login')
 option('cheese', type: 'boolean', value: true, description: 'build with cheese webcam support')
 option('documentation', type: 'boolean', value: false, description: 'build documentation')
 option('ibus', type: 'boolean', value: true, description: 'build with IBus support')

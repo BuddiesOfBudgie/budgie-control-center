@@ -191,6 +191,11 @@ endif
 config_h.set('HAVE_CHEESE', enable_cheese,
              description: 'Define to 1 to enable cheese webcam support')
 
+# Remote login use SOCKET based SSH instead of starting 'eagerly'
+enable_sshsocket = get_option('ssh')
+config_h.set('HAVE_SSHSOCKET', enable_sshsocket,
+             description: 'Define to 1 to enable ssh socket connections')
+
 # IBus support
 enable_ibus = get_option('ibus')
 if enable_ibus

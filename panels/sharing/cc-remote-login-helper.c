@@ -43,7 +43,25 @@ main (int    argc,
     {
       g_autoptr(GError) error = NULL;
 
-      /* on <=jammy we want to ensure the socket is disabled and enable the
+#ifdef HAVE_SSHSOCKET
+      /* for socket based connection ensure the service is disabled and enable the
+         socket to match the default behaviour */
+      if (!cc_disable_service (SSHD_SERVICE, G_BUS_TYPE_SYSTEM, &error))
+        {
+          g_critical ("Failed to enable %s: %s", SSHD_SOCKET, error->message);
+          return EXIT_FAILURE;
+        }
+      else if (!cc_enable_service (SSHD_SOCKET, G_BUS_TYPE_SYSTEM, &error))
+        {
+          g_critical ("Failed to enable %s: %s", SSHD_SERVICE, error->message);
+          return EXIT_FAILURE;
+        }
+      else
+        {
+          return EXIT_SUCCESS;
+        }
+#else
+      /* default is to ensure the socket is disabled and enable the
          service to match the default behaviour */
       if (!cc_disable_service (SSHD_SOCKET, G_BUS_TYPE_SYSTEM, &error))
         {
@@ -59,6 +77,7 @@ main (int    argc,
         {
           return EXIT_SUCCESS;
         }
+#endif
     }
   else if (g_str_equal (argv[1], "disable"))
     {
