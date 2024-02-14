@@ -112,7 +112,7 @@ if not libhandy_dep.found()
   libhandy_dep = libhandy.get_variable('libhandy_dep')
 endif
 
-goa_req_version = '>= 3.25.3'
+#goa_req_version = '>= 3.25.3'
 pulse_req_version = '>= 2.0'
 
 accounts_dep = dependency('accountsservice', version: '>= 0.6.39')
@@ -122,7 +122,7 @@ gio_dep = dependency('gio-2.0')
 glib_dep = dependency('glib-2.0', version: '>= 2.70.0')
 gnome_desktop_dep = dependency('gnome-desktop-3.0', version: '>= 3.33.4')
 gnome_settings_dep = dependency('gnome-settings-daemon', version: '>= 3.27.90')
-goa_dep = dependency('goa-1.0', version: goa_req_version)
+#goa_dep = dependency('goa-1.0', version: goa_req_version)
 gsettings_desktop_dep = dependency('gsettings-desktop-schemas', version: '>= 42.alpha')
 libxml_dep = dependency('libxml-2.0')
 pulse_dep = dependency('libpulse', version: pulse_req_version)
