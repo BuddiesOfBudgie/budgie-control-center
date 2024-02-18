@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: Yaroslav Popkov, 2023\n"
 "Language-Team: Russian (https://app.transifex.com/buddiesofbudgie/teams/129844/ru/)\n"
@@ -622,7 +622,7 @@ msgstr "Отображение на экран"
 msgid "_Close"
 msgstr "_Закрыть"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr "Проверить _настройки"
 
@@ -7858,45 +7858,49 @@ msgid "Touchpad"
 msgstr "Сенсорная панель"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
+msgid "Disable Touchpad While Typing"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
 msgstr "Скорость указателя сенсорной панели"
 
-#: panels/mouse/cc-mouse-panel.ui.h:19
+#: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
 msgstr "Метод нажатия тачпадом"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
 "Создать поведение кнопки (слева, посередине и справа), используя выбранное "
 "действие."
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
 msgstr "Использовать сенсорную панель по умолчанию"
 
-#: panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
 msgstr "Кнопки не созданы"
 
-#: panels/mouse/cc-mouse-panel.ui.h:23
+#: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
 msgstr "Левая, средняя и правая области"
 
-#: panels/mouse/cc-mouse-panel.ui.h:24
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
 msgstr "Один, два и три пальца"
 
-#: panels/mouse/cc-mouse-panel.ui.h:25
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
 msgstr "Нажатие касанием"
 
-#: panels/mouse/cc-mouse-panel.ui.h:26
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Two-finger Scrolling"
 msgstr "Прокрутка двумя пальцами"
 
-#: panels/mouse/cc-mouse-panel.ui.h:27
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr "Участки прокрутки по краям"
 

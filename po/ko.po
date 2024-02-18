@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: Junghee Lee <daemul72@gmail.com>, 2023\n"
 "Language-Team: Korean (https://app.transifex.com/buddiesofbudgie/teams/129844/ko/)\n"
@@ -613,7 +613,7 @@ msgstr "디스플레이 매핑"
 msgid "_Close"
 msgstr "닫기(_C)"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr "사용자 설정 테스트(_S)"
 
@@ -7654,43 +7654,47 @@ msgid "Touchpad"
 msgstr "터치패드"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
+msgid "Disable Touchpad While Typing"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
 msgstr "터치패드 속도"
 
-#: panels/mouse/cc-mouse-panel.ui.h:19
+#: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
 msgstr "터치패드 클릭 방법"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr "선택한 동작을 사용하여 버튼 동작(왼쪽, 가운데, 오른쪽)을 만듭니다."
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
 msgstr "터치패드 기본값 사용하기"
 
-#: panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
 msgstr "생성된 버튼 없음"
 
-#: panels/mouse/cc-mouse-panel.ui.h:23
+#: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
 msgstr "왼쪽, 가운데, 오른쪽 영역"
 
-#: panels/mouse/cc-mouse-panel.ui.h:24
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
 msgstr "손가락 하나, 둘, 셋"
 
-#: panels/mouse/cc-mouse-panel.ui.h:25
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
 msgstr "터치패드 두드리면 단추 누름으로 취급"
 
-#: panels/mouse/cc-mouse-panel.ui.h:26
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Two-finger Scrolling"
 msgstr "두손가락 스크롤"
 
-#: panels/mouse/cc-mouse-panel.ui.h:27
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr "가장자리 스크롤"
 

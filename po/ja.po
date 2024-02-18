@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: Green <usergreen@users.osdn.me>, 2024\n"
 "Language-Team: Japanese (https://app.transifex.com/buddiesofbudgie/teams/129844/ja/)\n"
@@ -507,7 +507,7 @@ msgstr "%s のロック解除"
 #: panels/printers/pp-new-printer-dialog.c:277
 #, c-format
 msgid "Enter username and password to view printers on %s."
-msgstr "%s で利用可能なプリンタを表示するにはユーザー名とパスワードを入力してください。"
+msgstr "%s で利用可能なプリンタを表示するには、ユーザ名とパスワードを入力してください。"
 
 #: panels/printers/pp-new-printer-dialog.c:587
 msgid "Searching for Printers"
@@ -572,7 +572,7 @@ msgstr "%s — 実行中のジョブ"
 #: panels/printers/pp-jobs-dialog.c:475
 #, c-format
 msgid "Enter credentials to print from %s."
-msgstr "%s から印刷するにはユーザー名とパスワードを入力してください。"
+msgstr "%s から印刷するにはユーザ名とパスワードを入力してください。"
 
 #: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
@@ -615,7 +615,7 @@ msgstr "画面のマッピング"
 msgid "_Close"
 msgstr "閉じる(_C)"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr "設定を確認(_S)"
 
@@ -1722,13 +1722,13 @@ msgstr "あなたのアカウント"
 
 #: panels/user-accounts/cc-user-panel.c:401
 msgid "Failed to delete user"
-msgstr "ユーザーの削除に失敗しました"
+msgstr "ユーザの削除に失敗しました"
 
 #: panels/user-accounts/cc-user-panel.c:456
 #: panels/user-accounts/cc-user-panel.c:511
 #: panels/user-accounts/cc-user-panel.c:557
 msgid "Failed to revoke remotely managed user"
-msgstr "リモート管理ユーザーの削除に失敗しました"
+msgstr "リモートで管理するユーザの削除に失敗しました"
 
 #: panels/user-accounts/cc-user-panel.c:606
 msgid "You cannot delete your own account."
@@ -1743,7 +1743,7 @@ msgstr "%s はまだログインしています"
 msgid ""
 "Deleting a user while they are logged in can leave the system in an "
 "inconsistent state."
-msgstr "ログイン中のユーザーを削除すると、システムが不整合な状態になることがあります。"
+msgstr "ログイン中のユーザを削除すると、システムが不整合な状態になることがあります。"
 
 #: panels/user-accounts/cc-user-panel.c:628
 #, c-format
@@ -1754,7 +1754,7 @@ msgstr "%s のファイルを残しますか?"
 msgid ""
 "It is possible to keep the home directory, mail spool and temporary files "
 "around when deleting a user account."
-msgstr "ユーザーアカウントを削除するとき、ユーザーのホームディレクトリ、メールスプールおよび一時ファイルを残しておくことができます。"
+msgstr "ユーザアカウントを削除するとき、ユーザのホームディレクトリ、メールスプールおよび一時ファイルを残しておくことができます。"
 
 #: panels/user-accounts/cc-user-panel.c:635
 msgid "_Delete Files"
@@ -1836,7 +1836,7 @@ msgstr "変更するには、まず * アイコンをクリックしてくださ
 
 #: panels/user-accounts/cc-user-panel.c:1362
 msgid "Delete the selected user account"
-msgstr "選択したユーザーアカウントを削除します"
+msgstr "選択したユーザアカウントを削除します"
 
 #: panels/user-accounts/cc-user-panel.c:1374
 #: panels/user-accounts/cc-user-panel.c:1485
@@ -1844,30 +1844,30 @@ msgid ""
 "To delete the selected user account,\n"
 "click the * icon first"
 msgstr ""
-"選択したユーザーアカウントを削除するには、\n"
+"選択したユーザアカウントを削除するには、\n"
 "まず * アイコンをクリックしてください"
 
 #: panels/user-accounts/cc-user-panel.c:1508
 msgid "Unlock to Add Users and Change Settings"
-msgstr "設定の変更やユーザーを追加する場合はロックを解除してください"
+msgstr "設定の変更やユーザを追加する場合は、ロックを解除してください"
 
 #: panels/user-accounts/user-utils.c:438
 msgid ""
 "The username should usually only consist of lower case letters from a-z, "
 "digits and the following characters: - _"
-msgstr "ユーザー名には小文字の “a” から “z”、数字の “0” から “9”、記号の “-” と “_” のみを使用してください。"
+msgstr "ユーザ名には小文字の “a” から “z”、数字の “0” から “9”、記号の “-” と “_” のみを使用してください。"
 
 #: panels/user-accounts/user-utils.c:442
 msgid "Sorry, that user name isn’t available. Please try another."
-msgstr "申し訳ありませんが、そのユーザー名は使用できません。他の名前を試してください。"
+msgstr "申し訳ありませんが、そのユーザ名は使用できません。他の名前を試してください。"
 
 #: panels/user-accounts/user-utils.c:484
 msgid "The username is too long."
-msgstr "ユーザー名が長すぎます。"
+msgstr "ユーザ名が長すぎます。"
 
 #: panels/user-accounts/user-utils.c:543
 msgid "This will be used to name your home folder and can’t be changed."
-msgstr "ユーザー名はホームフォルダーの名前に使用します。これは変更できません。"
+msgstr "ユーザ名はホームフォルダの名前に使用します。これは変更できません。"
 
 #: panels/user-accounts/cc-add-user-dialog.c:34
 msgid "Should match the web address of your login provider."
@@ -1933,12 +1933,12 @@ msgstr "新しいパスワードが現在のものと似過ぎています。も
 #: panels/user-accounts/pw-utils.c:100
 msgctxt "Password hint"
 msgid "A password without your user name would be stronger."
-msgstr "パスワードからユーザー名を除くともっと強固になります。"
+msgstr "パスワードからユーザ名を除くともっと強固になります。"
 
 #: panels/user-accounts/pw-utils.c:102
 msgctxt "Password hint"
 msgid "Try to avoid using your name in the password."
-msgstr "パスワードの中にユーザー名を使うのは避けてください。"
+msgstr "パスワードの中にユーザ名を使うのは避けてください。"
 
 #: panels/user-accounts/pw-utils.c:104
 msgctxt "Password hint"
@@ -2284,7 +2284,7 @@ msgstr "フォルダを選択"
 msgid ""
 "File Sharing allows you to share your Public folder with others on your "
 "current network using: %s"
-msgstr "ファイル共有を使用すると、現在のネットワークを次の URI に接続して、あなたの公開フォルダを他のユーザーと共有できるようにします: %s"
+msgstr "ファイル共有を使用すると、現在のネットワークを次の URI に接続して、あなたの公開フォルダを他のユーザと共有できるようにします: %s"
 
 #. TRANSLATORS: %s is replaced with a link to a "ssh <hostname>" command to
 #. run
@@ -2294,7 +2294,7 @@ msgid ""
 "When remote login is enabled, remote users can connect using the Secure Shell command:\n"
 "%s"
 msgstr ""
-"リモートログインを有効にすると、リモートユーザーは次の Secure Shell コマンドを使用して接続可能になります:\n"
+"リモートログインを有効にすると、リモートユーザは次の Secure Shell コマンドを使用して接続可能になります:\n"
 "%s"
 
 #: panels/sharing/cc-sharing-panel.c:958
@@ -2663,7 +2663,7 @@ msgstr "PAC ファイル (*.pac)"
 
 #: panels/network/wireless-security/eap-method-leap.c:65
 msgid "missing EAP-LEAP username"
-msgstr "EAP-LEAP ユーザー名がありません"
+msgstr "EAP-LEAP ユーザ名がありません"
 
 #: panels/network/wireless-security/eap-method-leap.c:80
 msgid "missing EAP-LEAP password"
@@ -2671,7 +2671,7 @@ msgstr "EAP-LEAP パスワードがありません"
 
 #: panels/network/wireless-security/ws-leap.c:66
 msgid "missing leap-username"
-msgstr "LEAP ユーザー名がありません"
+msgstr "LEAP ユーザ名がありません"
 
 #: panels/network/wireless-security/ws-leap.c:81
 msgid "missing leap-password"
@@ -2755,7 +2755,7 @@ msgstr "無効な EAP-TTLS CA 証明書: 証明書が指定されていません
 
 #: panels/network/wireless-security/eap-method-simple.c:78
 msgid "missing EAP username"
-msgstr "EAP ユーザー名がありません"
+msgstr "EAP ユーザ名がありません"
 
 #: panels/network/wireless-security/eap-method-simple.c:91
 msgid "missing EAP password"
@@ -2801,7 +2801,7 @@ msgstr "無効な EAP-TLS 秘密鍵: %s"
 #: panels/network/wireless-security/eap-method-tls.c:139
 #, c-format
 msgid "invalid EAP-TLS user-certificate: %s"
-msgstr "無効な EAP-TLS ユーザー証明書: %s"
+msgstr "無効な EAP-TLS ユーザ証明書: %s"
 
 #: panels/network/wireless-security/eap-method-tls.c:272
 msgid "Unencrypted private keys are insecure"
@@ -2832,7 +2832,7 @@ msgstr "Wi-Fi"
 
 #: panels/network/cc-wifi-panel.c:869
 msgid "Stop hotspot and disconnect any users?"
-msgstr "アクセスポイントを停止し、ユーザーとの接続を切断しますか?"
+msgstr "アクセスポイントを停止し、ユーザとの接続を切断しますか?"
 
 #: panels/network/cc-wifi-panel.c:872
 msgid "_Stop Hotspot"
@@ -4137,7 +4137,7 @@ msgstr "認証が必要です"
 
 #: panels/printers/new-printer-dialog.ui.h:12
 msgid "Enter username and password to view printers on Print Server."
-msgstr "プリンタサーバーで利用可能なプリンタを表示するには、ユーザー名とパスワードを入力してください。"
+msgstr "プリンタサーバで利用可能なプリンタを表示するには、ユーザ名とパスワードを入力してください。"
 
 #. Translators: This is a username on a print server.
 #: panels/printers/new-printer-dialog.ui.h:13
@@ -4145,7 +4145,7 @@ msgstr "プリンタサーバーで利用可能なプリンタを表示するに
 #: panels/printers/authentication-dialog.ui.h:3
 #: panels/wwan/cc-wwan-apn-dialog.ui.h:7
 msgid "Username"
-msgstr "ユーザー名"
+msgstr "ユーザ名"
 
 #. Translators: This is a password needed for printing.
 #: panels/printers/new-printer-dialog.ui.h:14
@@ -4657,7 +4657,7 @@ msgstr "キャリブレーション品質"
 
 #: panels/color/cc-color-panel.ui.h:9
 msgid "Select the sensor device you want to use for calibration."
-msgstr "キャリブレーションに使用するセンサーデバイスを選択してください。"
+msgstr "キャリブレーションに使用するセンサデバイスを選択してください。"
 
 #: panels/color/cc-color-panel.ui.h:10
 msgid "Calibration Device"
@@ -4760,11 +4760,11 @@ msgstr "色管理についてもっと詳しく知る"
 
 #: panels/color/cc-color-panel.ui.h:34
 msgid "_Set for all users"
-msgstr "全ユーザー用に設定(_S)"
+msgstr "すべてのユーザ用に設定(_S)"
 
 #: panels/color/cc-color-panel.ui.h:35
 msgid "Set this profile for all users on this computer"
-msgstr "このプロファイルを現在のシステムで利用するすべてのユーザーに設定します。"
+msgstr "このプロファイルを現在のシステムで利用するすべてのユーザに設定します。"
 
 #: panels/color/cc-color-panel.ui.h:36
 msgid "_Enable"
@@ -5489,11 +5489,11 @@ msgstr "この指を再登録(_R)…"
 
 #: panels/user-accounts/cc-user-panel.ui.h:1
 msgid "_Add User…"
-msgstr "ユーザーを追加(_A)…"
+msgstr "ユーザを追加(_A)…"
 
 #: panels/user-accounts/cc-user-panel.ui.h:2
 msgid "Create a user account"
-msgstr "ユーザーアカウントを作成します"
+msgstr "ユーザアカウントを作成します"
 
 #: panels/user-accounts/cc-user-panel.ui.h:3
 msgid "Your session needs to be restarted for changes to take effect"
@@ -5505,7 +5505,7 @@ msgstr "ログアウト"
 
 #: panels/user-accounts/cc-user-panel.ui.h:5
 msgid "User Icon"
-msgstr "ユーザーアイコン"
+msgstr "ユーザアイコン"
 
 #: panels/user-accounts/cc-user-panel.ui.h:6
 msgid "Account Settings"
@@ -5519,7 +5519,7 @@ msgstr "管理者(_A)"
 msgid ""
 "Administrators can add and remove other users, and can change settings for "
 "all users."
-msgstr "管理者は他のユーザーの追加、削除、設定の変更ができます。"
+msgstr "管理者は他のユーザの追加と削除、すべてのユーザの設定変更ができます。"
 
 #: panels/user-accounts/cc-user-panel.ui.h:9
 msgid "_Parental Controls"
@@ -5563,22 +5563,22 @@ msgstr "アカウントのアクティビティ"
 
 #: panels/user-accounts/cc-user-panel.ui.h:17
 msgid "Remove User…"
-msgstr "ユーザーを削除…"
+msgstr "ユーザを削除…"
 
 #. Translators: This is the empty state page label which states that there are
 #. no users to show in the panel.
 #: panels/user-accounts/cc-user-panel.ui.h:19
 msgid "No Users Found"
-msgstr "ユーザーが見つかりませんでした"
+msgstr "ユーザが見つかりませんでした"
 
 #: panels/user-accounts/cc-user-panel.ui.h:20
 msgid "Unlock to add a user account."
-msgstr "ユーザーアカウントを追加するために、ロックを解除します。"
+msgstr "ロックを解除してユーザアカウントを追加します。"
 
 #: panels/user-accounts/data/join-dialog.ui.h:1
 #: panels/user-accounts/cc-add-user-dialog.ui.h:1
 msgid "Add User"
-msgstr "ユーザーを追加"
+msgstr "ユーザを追加"
 
 #. Translators: This button enrolls the computer in the domain in order to use
 #. enterprise logins.
@@ -5619,7 +5619,7 @@ msgstr "管理者パスワード"
 #: panels/network/wireless-security/eap-method-simple.ui.h:1
 #: panels/network/wireless-security/eap-method-leap.ui.h:1
 msgid "_Username"
-msgstr "ユーザー名(_U)"
+msgstr "ユーザ名(_U)"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:5
 msgid "_Full Name"
@@ -5639,7 +5639,7 @@ msgstr "アカウントの種類(_T)"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:10
 msgid "Allow user to set a password when they next _login"
-msgstr "次回ログイン時に、ユーザー自身でパスワード設定できるようにする(_L)"
+msgstr "次回ログイン時に、ユーザ自身でパスワード設定できるようにする(_L)"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:11
 msgid "Set a password _now"
@@ -5655,7 +5655,7 @@ msgid ""
 "used on this device. You can also use this account to access company "
 "resources on the internet."
 msgstr ""
-"エンタープライズログインでは、中央管理された既存のユーザーアカウントをこのデバイスで使用できます。このアカウントを使用して、インターネット上の企業内の各種リソースにアクセスすることができます。"
+"エンタープライズログインでは、中央管理された既存のユーザアカウントをこのデバイスで使用できます。このアカウントを使用して、インターネット上の企業内の各種リソースにアクセスすることができます。"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:16
 msgid "You are Offline"
@@ -5663,7 +5663,7 @@ msgstr "現在オフラインです"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:17
 msgid "You must be online in order to add enterprise users."
-msgstr "エンタープライズユーザーを追加するには、システムをオンラインにする必要があります。"
+msgstr "エンタープライズユーザを追加するには、システムをオンラインにする必要があります。"
 
 #: panels/user-accounts/cc-add-user-dialog.ui.h:18
 msgid "_Enterprise Login"
@@ -5699,7 +5699,7 @@ msgstr "現在のパスワード(_P)"
 
 #: panels/user-accounts/cc-password-dialog.ui.h:7
 msgid "Allow user to change their password on next login"
-msgstr "次回ログイン時に、ユーザー自身でパスワード設定できるようにする"
+msgstr "次回ログイン時に、ユーザ自身でパスワード設定できるようにする"
 
 #: panels/user-accounts/cc-password-dialog.ui.h:8
 msgid "Set a password now"
@@ -6407,11 +6407,11 @@ msgstr "認証"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
-msgstr "このコンピュータに接続するには、ユーザー名とパスワードが必要です。"
+msgstr "このコンピュータに接続するには、ユーザ名とパスワードが必要です。"
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr "ユーザー名"
+msgstr "ユーザ名"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
@@ -6556,7 +6556,7 @@ msgstr "フォーマット(_F)"
 
 #: panels/region/cc-region-panel.ui.h:11
 msgid "Login settings are used by all users when logging into the system"
-msgstr "ログイン画面の設定は、すべてのユーザーがシステムログイン時に使用します"
+msgstr "ログイン画面の設定は、すべてのユーザがシステムログイン時に使用します"
 
 #: panels/region/cc-format-preview.ui.h:1
 msgid "Dates"
@@ -6756,7 +6756,7 @@ msgstr "ID(_D)"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:2
 msgid "_User certificate"
-msgstr "ユーザー証明書(_U)"
+msgstr "ユーザ証明書(_U)"
 
 #: panels/network/wireless-security/eap-method-tls.ui.h:3
 #: panels/network/wireless-security/eap-method-peap.ui.h:8
@@ -7020,7 +7020,7 @@ msgstr "自動的に接続する(_A)"
 
 #: panels/network/connection-editor/details-page.ui.h:12
 msgid "Make available to _other users"
-msgstr "他のユーザーでも利用可能にする(_O)"
+msgstr "他のユーザでも利用可能にする(_O)"
 
 #: panels/network/connection-editor/details-page.ui.h:13
 msgid "_Metered connection: has data limits or can incur charges"
@@ -7658,43 +7658,47 @@ msgid "Touchpad"
 msgstr "タッチパッド"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
+msgid "Disable Touchpad While Typing"
+msgstr "入力中にタッチパッドを無効にする"
+
+#: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
 msgstr "タッチパッドの速度"
 
-#: panels/mouse/cc-mouse-panel.ui.h:19
+#: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
 msgstr "タッチパッドのクリック方式"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr "選択したアクションに従って（左・中・右）ボタンが動作するようにします。"
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
 msgstr "標準のタッチパッド設定を使用する"
 
-#: panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
 msgstr "ボタンは作成されませんでした"
 
-#: panels/mouse/cc-mouse-panel.ui.h:23
+#: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
 msgstr "左、中央、右エリア"
 
-#: panels/mouse/cc-mouse-panel.ui.h:24
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
 msgstr "指 1本、2本、3本"
 
-#: panels/mouse/cc-mouse-panel.ui.h:25
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
 msgstr "タップしてクリック"
 
-#: panels/mouse/cc-mouse-panel.ui.h:26
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Two-finger Scrolling"
 msgstr "2 本指でのスクロール"
 
-#: panels/mouse/cc-mouse-panel.ui.h:27
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr "エッジスクロール"
 
@@ -8021,11 +8025,11 @@ msgstr ""
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
 msgid "Users"
-msgstr "ユーザー"
+msgstr "ユーザ"
 
 #: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
 msgid "Add or remove users and change your password"
-msgstr "ユーザーの追加と削除、パスワードの変更を行います"
+msgstr "ユーザの追加と削除、パスワードの変更を行います"
 
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -8055,7 +8059,7 @@ msgid ""
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
 msgstr ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
-"Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;キーボード;マウス;アクセシビリティ;コントラスト;カーソル;サウンド;ズーム;拡大鏡;スクリーンリーダー;大きい;高;大きさ;テキスト;文字;フォント;サイズ;固定;キー;スロー;バウンス;ダブルクリック;ディレイ;遅延;速度;スピード;ユーザー支援;リピート;点滅;ビジュアル;視覚;ヒアリング;聴覚;音声;タイピング;ユニバーサルアクセス;"
+"Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;キーボード;マウス;アクセシビリティ;コントラスト;カーソル;サウンド;ズーム;拡大鏡;スクリーンリーダー;大きい;高;大きさ;テキスト;文字;フォント;サイズ;固定;キー;スロー;バウンス;ダブルクリック;ディレイ;遅延;速度;スピード;ユーザ支援;リピート;点滅;ビジュアル;視覚;ヒアリング;聴覚;音声;タイピング;ユニバーサルアクセス;"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
 msgid "Multitasking"
@@ -8085,7 +8089,7 @@ msgstr ""
 
 #: panels/sharing/budgie-sharing-panel.desktop.in.in:4
 msgid "Control what you want to share with others"
-msgstr "他のユーザーと共有する対象を設定します"
+msgstr "他のユーザと共有する対象を設定します"
 
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!

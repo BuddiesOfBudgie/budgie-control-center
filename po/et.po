@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: vaba <vaba@riseup.net>, 2023\n"
 "Language-Team: Estonian (https://app.transifex.com/buddiesofbudgie/teams/129844/et/)\n"
@@ -617,7 +617,7 @@ msgstr "Kuvade ühendamine"
 msgid "_Close"
 msgstr "_Sulge"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr "_Proovi oma sätteid"
 
@@ -7664,43 +7664,47 @@ msgid "Touchpad"
 msgstr "Puutepadi"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
-msgid "Touchpad Speed"
+msgid "Disable Touchpad While Typing"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
-msgid "Touchpad Click Method"
+msgid "Touchpad Speed"
 msgstr ""
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
+msgid "Touchpad Click Method"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:23
+#: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:24
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:25
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:26
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Two-finger Scrolling"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:27
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr ""
 

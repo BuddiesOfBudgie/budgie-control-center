@@ -5,16 +5,16 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
-# Moo, 2023
+# Moo, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Moo, 2023\n"
+"Last-Translator: Moo, 2024\n"
 "Language-Team: Lithuanian (https://app.transifex.com/buddiesofbudgie/teams/129844/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -623,7 +623,7 @@ msgstr "Ekrano susiejimas"
 msgid "_Close"
 msgstr "_Užverti"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr "Išbandykite savo _nustatymus"
 
@@ -4122,15 +4122,15 @@ msgstr "Išva_lyti laikinuosius failus"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "Išvalyti failų istoriją?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
-msgstr ""
+msgstr "Po išvalymo, paskiausiai naudotų failų sąrašai bus tušti."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "Išva_lyti istoriją"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -7690,7 +7690,7 @@ msgstr "_Žiniatinklis"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "_Failai"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"
@@ -7830,43 +7830,47 @@ msgid "Touchpad"
 msgstr "Jutiklinis kilimėlis"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
+msgid "Disable Touchpad While Typing"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
 msgstr "Jutiklinio kilimėlio greitis"
 
-#: panels/mouse/cc-mouse-panel.ui.h:19
+#: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
 msgstr "Spustelėjimo jutikliniu kilimėliu metodas"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
 msgstr "Naudoti jutiklinio kilimėlio numatytąsias reikšmes"
 
-#: panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
 msgstr "Nesukurta jokių mygtukų"
 
-#: panels/mouse/cc-mouse-panel.ui.h:23
+#: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
 msgstr "Kairioji, vidurinioji ir dešinioji sritis"
 
-#: panels/mouse/cc-mouse-panel.ui.h:24
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
 msgstr "Vienas, du ir trys pirštai"
 
-#: panels/mouse/cc-mouse-panel.ui.h:25
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
 msgstr "Bakstelėti _paspaudimui"
 
-#: panels/mouse/cc-mouse-panel.ui.h:26
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Two-finger Scrolling"
 msgstr "Slinktis dviem pirštais"
 
-#: panels/mouse/cc-mouse-panel.ui.h:27
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr "Slinkimas kraštuose"
 

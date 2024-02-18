@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
 "Last-Translator: Campbell Jones, 2023\n"
 "Language-Team: English (United States) (https://app.transifex.com/buddiesofbudgie/teams/129844/en_US/)\n"
@@ -616,7 +616,7 @@ msgstr "Display Mapping"
 msgid "_Close"
 msgstr "_Close"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr "Test Your _Settings"
 
@@ -7777,44 +7777,48 @@ msgid "Touchpad"
 msgstr "Touchpad"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
+msgid "Disable Touchpad While Typing"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
 msgstr "Touchpad Speed"
 
-#: panels/mouse/cc-mouse-panel.ui.h:19
+#: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
 msgstr "Touchpad Click Method"
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
 "Create button behavior (left, middle and right) using the chosen action."
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
 msgstr "Use the touchpad default"
 
-#: panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
 msgstr "No buttons created"
 
-#: panels/mouse/cc-mouse-panel.ui.h:23
+#: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
 msgstr "Left, middle and right areas"
 
-#: panels/mouse/cc-mouse-panel.ui.h:24
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
 msgstr "One, two and three fingers"
 
-#: panels/mouse/cc-mouse-panel.ui.h:25
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
 msgstr "Tap to Click"
 
-#: panels/mouse/cc-mouse-panel.ui.h:26
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Two-finger Scrolling"
 msgstr "Two-finger Scrolling"
 
-#: panels/mouse/cc-mouse-panel.ui.h:27
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr "Edge Scrolling"
 

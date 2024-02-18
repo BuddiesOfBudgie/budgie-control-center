@@ -4,22 +4,22 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# David Mohammed <fossfreedom@ubuntu.com>, 2022
+# David Mohammed <fossfreedom@ubuntu.com>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2024\n"
 "Language-Team: Hebrew (https://app.transifex.com/buddiesofbudgie/teams/129844/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 
 #: panels/printers/pp-options-dialog.c:87
 msgid "Two Sided"
@@ -139,7 +139,6 @@ msgid_plural "%u Jobs"
 msgstr[0] "משימה אחת"
 msgstr[1] "שתי משימות"
 msgstr[2] "‫%u משימות"
-msgstr[3] "‫%u משימות"
 
 #. Translators: Name of job which makes printer to clean its heads
 #: panels/printers/pp-printer-entry.c:648
@@ -562,8 +561,7 @@ msgid "%u Job Requires Authentication"
 msgid_plural "%u Jobs Require Authentication"
 msgstr[0] "משימה אחת דורשת אימות"
 msgstr[1] "שתי משימות דורשות אימות"
-msgstr[2] "‫%u משימות דורשות אימות"
-msgstr[3] "‏‫%u משימות דורשות אימות"
+msgstr[2] "‏‫%u משימות דורשות אימות"
 
 #. Translators: This is the printer name for which we are showing the active
 #. jobs
@@ -620,7 +618,7 @@ msgstr "הצגת מיפוי"
 msgid "_Close"
 msgstr "ס_גירה"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr "ב_דיקת ההגדרות שלך"
 
@@ -706,7 +704,6 @@ msgid_plural "%d minutes"
 msgstr[0] "דקה"
 msgstr[1] "שתי דקות"
 msgstr[2] "‏‫%d דקות"
-msgstr[3] "‏‫%d דקות"
 
 #: panels/power/cc-power-panel.c:985
 msgctxt "Idle time"
@@ -792,7 +789,6 @@ msgid_plural "%i minutes"
 msgstr[0] "דקה"
 msgstr[1] "שתי דקות"
 msgstr[2] "‏‫%i דקות"
-msgstr[3] "‏‫%i דקות"
 
 #: panels/power/cc-battery-row.c:92
 #, c-format
@@ -800,8 +796,7 @@ msgid "%i hour"
 msgid_plural "%i hours"
 msgstr[0] "שעה"
 msgstr[1] "שעתיים"
-msgstr[2] "‫%i שעות"
-msgstr[3] "‏‫%i שעות"
+msgstr[2] "‏‫%i שעות"
 
 #. TRANSLATOR: "%i %s %i %s" are "%i hours %i minutes"
 #. * Swap order with "%2$s %2$i %1$s %1$i if needed
@@ -816,7 +811,6 @@ msgid_plural "hours"
 msgstr[0] "שעה"
 msgstr[1] "שעתיים"
 msgstr[2] "שעות"
-msgstr[3] "שעות"
 
 #: panels/power/cc-battery-row.c:100
 msgid "minute"
@@ -824,7 +818,6 @@ msgid_plural "minutes"
 msgstr[0] "דקה"
 msgstr[1] "דקות"
 msgstr[2] "דקות"
-msgstr[3] "דקות"
 
 #. TRANSLATORS: %1 is a time string, e.g. "1 hour 5 minutes"
 #: panels/power/cc-battery-row.c:117
@@ -1449,7 +1442,6 @@ msgid_plural "%d modified"
 msgstr[0] "‫%d נערך"
 msgstr[1] "‫%d נערכו"
 msgstr[2] "‫%d נערכו"
-msgstr[3] "‫%d נערכו"
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:306
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:322
@@ -2163,8 +2155,7 @@ msgid "%d pixel"
 msgid_plural "%d pixels"
 msgstr[0] "פיקסל אחד"
 msgstr[1] "שני פיקסלים"
-msgstr[2] "‫%d פיקסלים"
-msgstr[3] "‏‫%d פיקסלים"
+msgstr[2] "‏‫%d פיקסלים"
 
 #: panels/applications/cc-applications-panel.c:845
 msgid "System Bus"
@@ -2543,7 +2534,6 @@ msgid_plural "%d hours"
 msgstr[0] "שעה"
 msgstr[1] "שעתיים"
 msgstr[2] "‫%d שעות"
-msgstr[3] "‫%d שעות"
 
 #: panels/common/cc-util.c:167
 #, c-format
@@ -2551,8 +2541,7 @@ msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "שנייה"
 msgstr[1] "שתי שניות"
-msgstr[2] "‫%d שניות"
-msgstr[3] "‏‫%d שניות"
+msgstr[2] "‏‫%d שניות"
 
 #. 5 hours 2 minutes 12 seconds
 #: panels/common/cc-util.c:174
@@ -2614,7 +2603,6 @@ msgid_plural "%i days ago"
 msgstr[0] "אתמול"
 msgstr[1] "שלשום"
 msgstr[2] "לפני %i ימים"
-msgstr[3] "לפני %i ימים"
 
 #: panels/network/net-device-ethernet.c:147
 #: panels/network/connection-editor/ce-page-details.c:412
@@ -3503,7 +3491,6 @@ msgid_plural "Must have a maximum of %d characters"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
-msgstr[3] ""
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
@@ -3810,7 +3797,6 @@ msgid_plural "Wrong password entered. You have %1$u tries left"
 msgstr[0] "הוקלדה ססמה שגויה. נותר לך עוד ניסיון אחד"
 msgstr[1] "הוקלדה ססמה שגויה. נותרו לך עוד שני ניסיונות"
 msgstr[2] "הוקלדה ססמה שגויה. נותרו לך עוד %1$u ניסיונות"
-msgstr[3] "הוקלדה ססמה שגויה. נותרו לך עוד %1$u ניסיונות"
 
 #: panels/wwan/cc-wwan-device-page.c:221
 #, c-format
@@ -3819,7 +3805,6 @@ msgid_plural "You have %u tries left"
 msgstr[0] "נותר לך ניסיון אחד"
 msgstr[1] "נותרו לך שני ניסיונות"
 msgstr[2] "נותרו לך %u ניסיונות"
-msgstr[3] "נותרו לך %u ניסיונות"
 
 #: panels/wwan/cc-wwan-device-page.c:226
 msgid "Wrong password entered."
@@ -4010,8 +3995,7 @@ msgid "Depends on %u other device"
 msgid_plural "Depends on %u other devices"
 msgstr[0] "תלוי בהתקן אחר"
 msgstr[1] "תלוי בשני התקנים אחרים"
-msgstr[2] "תלוי ב־%u התקנים אחרים"
-msgstr[3] "‫תלוי ב־%u התקנים אחרים"
+msgstr[2] "‫תלוי ב־%u התקנים אחרים"
 
 #: panels/thunderbolt/cc-bolt-device-entry.c:135
 msgctxt "Thunderbolt Device Status"
@@ -4176,8 +4160,7 @@ msgid "%u Output"
 msgid_plural "%u Outputs"
 msgstr[0] "ערוץ פלט אחד"
 msgstr[1] "שני ערוצי פלט"
-msgstr[2] "‫%u ערוצי פלט"
-msgstr[3] "‏‫%u ערוצי פלט"
+msgstr[2] "‏‫%u ערוצי פלט"
 
 #. translators:
 #. * The number of sound inputs on a particular device
@@ -4188,7 +4171,6 @@ msgid_plural "%u Inputs"
 msgstr[0] "ערוץ קלט אחד"
 msgstr[1] "שני ערוצי קלט"
 msgstr[2] "‏‫%u ערוצי קלט"
-msgstr[3] "‏‫%u ערוצי קלט"
 
 #: subprojects/gvc/gvc-mixer-control.c:2876
 msgid "System Sounds"
@@ -7755,43 +7737,47 @@ msgid "Touchpad"
 msgstr "משטח מגע"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
+msgid "Disable Touchpad While Typing"
+msgstr ""
+
+#: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
 msgstr "מהירות משטח מגע"
 
-#: panels/mouse/cc-mouse-panel.ui.h:19
+#: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:20
+#: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
+#: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:22
+#: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:23
+#: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:24
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
 msgstr ""
 
-#: panels/mouse/cc-mouse-panel.ui.h:25
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
 msgstr "הקשה היא לחיצה"
 
-#: panels/mouse/cc-mouse-panel.ui.h:26
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Two-finger Scrolling"
 msgstr "גלילה בשתי אצבעות"
 
-#: panels/mouse/cc-mouse-panel.ui.h:27
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr "קצה גלילה"
 

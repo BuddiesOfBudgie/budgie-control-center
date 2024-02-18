@@ -5,16 +5,16 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2023
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2024
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 22:20+0100\n"
+"POT-Creation-Date: 2023-12-23 16:46+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2023\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2024\n"
 "Language-Team: Portuguese (Portugal) (https://app.transifex.com/buddiesofbudgie/teams/129844/pt_PT/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -621,7 +621,7 @@ msgstr "Mapeamento de disposição"
 msgid "_Close"
 msgstr "Fe_char"
 
-#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:28
+#: panels/wacom/cc-wacom-panel.c:477 panels/mouse/cc-mouse-panel.ui.h:29
 msgid "Test Your _Settings"
 msgstr "Teste as _suas definições"
 
@@ -7851,45 +7851,49 @@ msgid "Touchpad"
 msgstr "Painel tátil"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
+msgid "Disable Touchpad While Typing"
+msgstr "Desativar o painel tátil enquanto escreve"
+
+#: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
 msgstr "Velocidade do painel tátil"
 
-#: panels/mouse/cc-mouse-panel.ui.h:19
-msgid "Touchpad Click Method"
-msgstr "Método de clique no Touchpad"
-
 #: panels/mouse/cc-mouse-panel.ui.h:20
+msgid "Touchpad Click Method"
+msgstr "Método de clique no Painel tátil"
+
+#: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
 "Criar comportamento do botão (esquerdo, meio e direito) usando a ação "
 "escolhida."
 
-#: panels/mouse/cc-mouse-panel.ui.h:21
-msgid "Use the touchpad default"
-msgstr "Utilize a predefinição do touchpad"
-
 #: panels/mouse/cc-mouse-panel.ui.h:22
+msgid "Use the touchpad default"
+msgstr "Utilize a predefinição do painel tátil"
+
+#: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
 msgstr "Sem botões criados"
 
-#: panels/mouse/cc-mouse-panel.ui.h:23
+#: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
 msgstr "Áreas esquerda, do meio e direita"
 
-#: panels/mouse/cc-mouse-panel.ui.h:24
+#: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
 msgstr "Um, dois e três dedos"
 
-#: panels/mouse/cc-mouse-panel.ui.h:25
+#: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
 msgstr "Tocar para clicar"
 
-#: panels/mouse/cc-mouse-panel.ui.h:26
+#: panels/mouse/cc-mouse-panel.ui.h:27
 msgid "Two-finger Scrolling"
 msgstr "Deslocamento com dois dedos"
 
-#: panels/mouse/cc-mouse-panel.ui.h:27
+#: panels/mouse/cc-mouse-panel.ui.h:28
 msgid "Edge Scrolling"
 msgstr "Deslocamento lateral"
 
