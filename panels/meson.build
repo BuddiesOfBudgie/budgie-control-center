@@ -16,7 +16,6 @@ panels = [
   'mouse',
   'multitasking',
   'notifications',
-  'online-accounts',
   'power',
   'printers',
   'region',
