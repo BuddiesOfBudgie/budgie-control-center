@@ -1,6 +1,6 @@
 project(
   'budgie-control-center', 'c',
-        version : '1.3.0',
+        version : '1.4.0',
         license : 'GPL2+',
   meson_version : '>= 0.53.0'
 )

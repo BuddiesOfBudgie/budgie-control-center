@@ -15,4 +15,4 @@ budgie-control-center is available under the terms of the GPL 2.0 license or fut
 
 Copyright © 2002-2022 GNOME Foundation
 
-Copyright © 2022 Budgie Desktop Developers
+Copyright © 2022-2024 Budgie Desktop Developers
