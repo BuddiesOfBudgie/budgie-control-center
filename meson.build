@@ -191,6 +191,10 @@ endif
 config_h.set('HAVE_CHEESE', enable_cheese,
              description: 'Define to 1 to enable cheese webcam support')
 
+enable_location = get_option('location')
+config_h.set('HAVE_LOCATION', enable_location,
+            description: 'Define to 1 to enable location support')
+
 # Remote login use SOCKET based SSH instead of starting 'eagerly'
 enable_sshsocket = get_option('ssh')
 config_h.set('HAVE_SSHSOCKET', enable_sshsocket,
@@ -327,4 +331,5 @@ summary({
   'IBus': enable_ibus,
   'Snap': enable_snap,
   'Malcontent': enable_malcontent,
+  'Location': enable_location,
 }, section: 'Optional Dependencies')

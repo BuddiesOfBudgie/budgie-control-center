@@ -11,7 +11,6 @@ panels = [
   'display',
   'info-overview',
   'keyboard',
-  'location',
   'microphone',
   'mouse',
   'multitasking',
@@ -27,6 +26,10 @@ panels = [
   'user-accounts',
   'wwan',
 ]
+
+if enable_location
+  panels += ['location']
+endif
 
 if host_is_linux
   panels += ['network']
