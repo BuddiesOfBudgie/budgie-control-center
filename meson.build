@@ -77,7 +77,8 @@ if get_option('buildtype').contains('debug')
     '-Wmissing-prototypes',
     '-Wnested-externs',
     '-Wno-strict-aliasing',
-    '-Wno-sign-compare'
+    '-Wno-sign-compare',
+    '-Wno-incompatible-pointer-types'
   ]
 
   common_flags += cc.get_supported_arguments(test_cflags)

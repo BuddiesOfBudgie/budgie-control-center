@@ -450,7 +450,7 @@ cc_display_settings_rebuild_ui (CcDisplaySettings *self)
                          cc_display_config_get_fractional_scaling (self->config));
 
   gtk_switch_set_active (GTK_SWITCH (self->scale_fractional_switch), cc_display_config_get_fractional_scaling (self->config));
-  gtk_widget_set_visible(self->scale_fractional_row, cc_has_fractional_key());
+  gtk_widget_set_visible(GTK_WIDGET (self->scale_fractional_row), cc_has_fractional_key());
 
   gtk_widget_set_visible (self->underscanning_row,
                           cc_display_monitor_supports_underscanning (self->selected_output) &&
