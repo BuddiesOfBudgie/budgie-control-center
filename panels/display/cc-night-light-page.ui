@@ -122,7 +122,7 @@
 
                     <!-- Schedule -->
                     <child>
-                      <object class="HdyActionRow">
+                      <object class="HdyActionRow" id="schedule_type_row">
                         <property name="visible">True</property>
                         <property name="title" translatable="yes">Schedule</property>
                         <property name="sensitive" bind-source="night_light_toggle_switch" bind-property="active" bind-flags="default|sync-create" />
