@@ -959,7 +959,7 @@ set_current_output (CcDisplayPanel   *panel,
       if (cc_has_fractional_key())
         {
           lockdown=cc_display_config_get_fractional_scaling (panel->current_config);
-          gtk_widget_set_sensitive(panel->automatic_screen_lock_switch, !lockdown);
+          gtk_widget_set_sensitive(GTK_WIDGET (panel->automatic_screen_lock_switch), !lockdown);
         }
     }
 
