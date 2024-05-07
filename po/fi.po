@@ -2216,14 +2216,6 @@ msgstr "Vain luku"
 msgid "File System"
 msgstr "Tiedostojärjestelmä"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Asetukset"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Voi muuttaa asetuksia"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6345,10 +6337,6 @@ msgstr "Integraatio"
 msgid "System features used by this application."
 msgstr "Sovelluksen käyttämät järjestelmäominaisuudet."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Haku"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8462,37 +8450,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Ominaisuudet;Asetukset;Preferences;Settings;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Suurennus päällä/pois"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Lähennä"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Loitonna"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Näytönlukija päällä/pois"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Virtuaalinäppäimistö päällä/pois"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Suurenna tekstin kokoa"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Pienennä tekstin kokoa"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Korkea kontrasti päälle/pois"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8522,10 +8490,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Käynnistimet"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Käynnistä ohjeselain"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Käynnistä laskin"
@@ -8542,10 +8506,6 @@ msgstr "Käynnistä internetselain"
 msgid "Home folder"
 msgstr "Kotikansio"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Etsi"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

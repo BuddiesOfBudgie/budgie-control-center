@@ -2223,14 +2223,6 @@ msgstr "Samo za čitanje"
 msgid "File System"
 msgstr "Datotečni sustav"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Postavke"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Može promijeniti postavke"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6366,10 +6358,6 @@ msgstr "Integracija"
 msgid "System features used by this application."
 msgstr "Značajke sustava koje koristi ova aplikacija."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Pretraga"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8484,37 +8472,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Osobitosti;Postavke;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Uključi ili isključi približavanje"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Približi"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Udalji"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Uključi ili isključi čitač zaslona"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Uključi/Isključi zaslonsku tipkovnicu"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Povećaj veličinu teksta"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Smanji veličinu teksta"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Uključi ili isključi visoki kontrast"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8544,10 +8512,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Pokretači"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Pokreni preglednik pomoći"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Pokreni kalkulator"
@@ -8564,10 +8528,6 @@ msgstr "Pokreni web preglednik"
 msgid "Home folder"
 msgstr "Osobna mapa"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Pretraga"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

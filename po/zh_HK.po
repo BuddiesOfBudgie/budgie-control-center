@@ -2163,14 +2163,6 @@ msgstr ""
 msgid "File System"
 msgstr ""
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "設定值"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6187,10 +6179,6 @@ msgstr ""
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "搜尋"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8243,37 +8231,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferences;Settings;偏好設定;設定值;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "開啟或關閉放大鏡"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "拉近"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "拉遠"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "開啟或關閉螢幕閱讀器"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "開啟或關閉螢幕鍵盤"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "將文字放大"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "將文字縮小"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "高對比開或關"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8303,10 +8271,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "執行器"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "執行說明文件瀏覽器"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "執行計數機"
@@ -8323,10 +8287,6 @@ msgstr "執行網頁瀏覽器"
 msgid "Home folder"
 msgstr "家目錄"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "搜尋"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"
