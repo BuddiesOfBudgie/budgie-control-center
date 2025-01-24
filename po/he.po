@@ -2207,14 +2207,6 @@ msgstr "קריאה בלבד"
 msgid "File System"
 msgstr "מערכת הפעלה"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "הגדרות"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "ניתן לשנות הגדרות"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6304,10 +6296,6 @@ msgstr "שילוב"
 msgid "System features used by this application."
 msgstr "תכונות מערכת המשמשות יישום זה."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "חיפוש"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8411,37 +8399,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "העדפות;הגדרות;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "הפעלה/השבתה של תכונת התקריב"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "התקרבות"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "התרחקות"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "הפעלה/השבתה של מקריא המסך"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "הצגת/הסתרת מקלדת על־גבי המסך"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "הגדלת הטקסט"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "הקטנת הטקסט"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "ביטול/הפעלה של ניגודיות גבוהה"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8471,10 +8439,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "משגרים"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "הפעלת דפדפן העזרה"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "הפעלת המחשבון"
@@ -8491,10 +8455,6 @@ msgstr "הפעלת דפדפן האינטרנט"
 msgid "Home folder"
 msgstr "תיקיית הבית"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "חיפוש"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

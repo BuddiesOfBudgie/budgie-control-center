@@ -2184,14 +2184,6 @@ msgstr "Ainult lugemine"
 msgid "File System"
 msgstr "Failisüsteem"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Sätted"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6238,10 +6230,6 @@ msgstr "Põimimine"
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Otsi"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8297,37 +8285,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Eelistused;Sätted;Seaded;Seadistused;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Luubi sisse või välja lülitamine"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Suurendamine"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Vähendamine"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Ekraanilugeja sisse või välja lülitamine"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Ekraaniklaviatuuri sisse või välja lülitamine"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Teksti suuruse suurendamine"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Teksti suuruse vähendamine"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Kõrge kontrast sisse või välja"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8357,10 +8325,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Käivitajad"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Abi sirvija käivitamine"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Kalkulaatori käivitamine"
@@ -8377,10 +8341,6 @@ msgstr "Veebibrauseri käivitamine"
 msgid "Home folder"
 msgstr "Kodukataloog"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Otsing"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

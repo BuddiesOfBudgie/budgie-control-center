@@ -2240,14 +2240,6 @@ msgstr ""
 msgid "File System"
 msgstr ""
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Roghainnean"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6391,10 +6383,6 @@ msgstr ""
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Lorg"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8503,37 +8491,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Roghainnean;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Cuir an sùmadh air no dheth"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Sùm a-steach"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Sùm a-mach"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Cuir leughadair na sgrìn air no dheth"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Cuir am meur-chlàr air an sgrìn air no dheth"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Dèan an teacsa nas motha"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Dèan an teacsa nas lugha"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Iomsgaradh àrd air no dheth"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8563,10 +8531,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Lòinsearan"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Cuir gu dol brabhsair na cobharach"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Cuir gu dol an t-àireamhair"
@@ -8583,10 +8547,6 @@ msgstr "Cuir gu dol am brabhsair-lìn"
 msgid "Home folder"
 msgstr "Am pasgan-dachaigh"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Lorg"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

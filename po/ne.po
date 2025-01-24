@@ -2204,14 +2204,6 @@ msgstr "पढ्न-मात्र"
 msgid "File System"
 msgstr "फाइल प्रणाली"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "सेटिङ"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "सेटिङ्गहरू परिवर्तन गर्न सक्छ"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6332,10 +6324,6 @@ msgstr "इन्टिगरेसन"
 msgid "System features used by this application."
 msgstr "यस अनुप्रयोगद्वारा प्रयोग गरिएको प्रणाली विशेषताहरू ।"
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "खोजी गर्नुहोस्"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8446,37 +8434,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "प्राथमिकता;सेटिङ;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "घट बढ गर्ने नगर्ने"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "जूम गर्नुहोस्"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "जुम घटाउनुहोस्"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "स्क्रीन रिडरलाई लाई  अन अथवा अफ गराउनुहोस"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "अन-स्क्रीन किबोर्ड लाई अन अथवा अफ गराउनुहोस"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "पाठ साइज बढाउनुहोस्"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "पाठ साइज घटाउनुहोस्"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "हाई कन्ट्रास्ट अन अथवा अफ"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8506,10 +8474,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "सुरुआत"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "मद्दत ब्राउजर सुरुआत गर्नुहोस्"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "गणकयन्त्र सुरु"
@@ -8526,10 +8490,6 @@ msgstr "वेब ब्राउजर सुरुआत गर्नुहो
 msgid "Home folder"
 msgstr "गृह फोल्डर"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "खोजी गर्नुहोस्"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

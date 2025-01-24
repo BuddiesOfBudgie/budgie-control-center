@@ -2182,14 +2182,6 @@ msgstr ""
 msgid "File System"
 msgstr ""
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "સુયોજનો"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6236,10 +6228,6 @@ msgstr ""
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "શોધો"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8299,37 +8287,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "પસંદગીઓ;સુયોજનો;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "નાનું મોટુ કરવાનુ ચાલુ અથવા બંધ કરો"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "મોટુ કરો"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "નાનું કરો"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "સ્ક્રીન વાંચકને ચાલુ અથવા બંધ રાખો"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "ઓન-સ્ક્રીન કિબોર્ડને ચાલુ અથવા બંધ રાખો"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "લખાણ માપ વધારો"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "લખાણ માપ ઘટાડો"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "ઉચ્ચ વિરોધાભાસ ચાલુ અથવા બંધ"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8359,10 +8327,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "લૉંચર"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "મદદ બ્રાઉઝર શરૂ કરો"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "કૅલ્ક્યુલેટર શરૂ કરો"
@@ -8379,10 +8343,6 @@ msgstr "વેબ બ્રાઉઝર શરૂ કરો"
 msgid "Home folder"
 msgstr "ઘર ફોલ્ડર"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "શોધો"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

@@ -2219,14 +2219,6 @@ msgstr "Skrifvarið"
 msgid "File System"
 msgstr "Skráakerfi"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Stillingar"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Má breyta stillingum"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6349,10 +6341,6 @@ msgstr "Samþætting"
 msgid "System features used by this application."
 msgstr "Kerfiseiginleikar sem þetta forrit notar."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Leita"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8459,37 +8447,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Kjörstillingar;Uppsetning;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Aðdráttur af eða á"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Renna að"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Renna frá"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Skjálesari af eða á"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Skjályklaborð af eða á"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Auka stærð texta"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Minnka stærð texta"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Hábirtuskil af eða á"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8519,10 +8487,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Forritaræsar"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Ræsa hjálparvafra"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Ræsa reiknivél"
@@ -8539,10 +8503,6 @@ msgstr "Ræsa netvafra"
 msgid "Home folder"
 msgstr "Heimamappa"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Leita"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

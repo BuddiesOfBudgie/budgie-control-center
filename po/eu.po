@@ -2222,14 +2222,6 @@ msgstr "Irakurtzeko soilik"
 msgid "File System"
 msgstr "Fitxategi-sistema"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Ezarpenak"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Ezarpenak aldatu ditzake"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6368,10 +6360,6 @@ msgstr "Integrazioa"
 msgid "System features used by this application."
 msgstr "Aplikazio honek darabiltzan sistema-eginbideak."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Bilatu"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8495,37 +8483,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Hobespenak;Ezarpenak;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Aktibatu edo desaktibatu zooma"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Handiagotu"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Txikiagotu"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Aktibatu edo desaktibatu pantailako irakurlea"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Aktibatu edo desaktibatu pantailako teklatua"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Handiagotu testuaren tamaina"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Txikiagotu testuaren tamaina"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Gaitu edo desgaitu kontraste altua"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8555,10 +8523,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Abiarazleak"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Abiatu laguntza-arakatzailea"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Abiarazi kalkulagailua"
@@ -8575,10 +8539,6 @@ msgstr "Abiatu web arakatzailea"
 msgid "Home folder"
 msgstr "Karpeta nagusia"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Bilatu"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

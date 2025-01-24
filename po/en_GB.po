@@ -2211,14 +2211,6 @@ msgstr "Read-only"
 msgid "File System"
 msgstr "File System"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Settings"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Can change settings"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6331,10 +6323,6 @@ msgstr "Integration"
 msgid "System features used by this application."
 msgstr "System features used by this application."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Search"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8437,37 +8425,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferences;Settings;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Turn zoom on or off"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Zoom in"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Zoom out"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Turn screen reader on or off"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Turn on-screen keyboard on or off"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Increase text size"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Decrease text size"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "High contrast on or off"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8497,10 +8465,6 @@ msgstr "Clear Notifications"
 msgid "Launchers"
 msgstr "Launchers"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Launch help browser"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Launch calculator"
@@ -8517,10 +8481,6 @@ msgstr "Launch web browser"
 msgid "Home folder"
 msgstr "Home folder"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Search"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

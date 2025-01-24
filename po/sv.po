@@ -2212,14 +2212,6 @@ msgstr "Skrivskyddat"
 msgid "File System"
 msgstr "Filsystem"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Inställningar"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Kan ändra inställningar"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6339,10 +6331,6 @@ msgstr "Integration"
 msgid "System features used by this application."
 msgstr "Systemfunktioner som används av detta program."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Sök"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8440,37 +8428,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Inställningar;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Aktivera eller inaktivera zoom"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Zooma in"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Zooma ut"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Aktivera eller inaktivera skärmläsare"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Aktivera eller inaktivera skärmtangentbord"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Öka textstorleken"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Minska textstorleken"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Hög kontrast på eller av"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8500,10 +8468,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Programstartare"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Starta hjälpläsare"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Starta miniräknare"
@@ -8520,10 +8484,6 @@ msgstr "Starta webbläsare"
 msgid "Home folder"
 msgstr "Hemmapp"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Sök"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

@@ -2244,14 +2244,6 @@ msgstr "Lecture seule"
 msgid "File System"
 msgstr "Système de fichiers"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Paramètres"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Peut modifier les réglages"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6423,10 +6415,6 @@ msgstr "Intégration"
 msgid "System features used by this application."
 msgstr "Fonctionnalités système utilisées par cette application."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Recherche"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8566,37 +8554,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Préférences;Paramètres;Réglages;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Activer ou désactiver le zoom"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Zoom avant"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Zoom arrière"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Activer ou désactiver le lecteur d’écran"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Activer ou désactiver le clavier visuel"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Augmenter la taille du texte"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Réduire la taille du texte"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Activer ou désactiver le contraste élevé"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8626,10 +8594,6 @@ msgstr "Effacer les notifications"
 msgid "Launchers"
 msgstr "Lanceurs"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Démarrer le navigateur d’aide"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Démarrer la calculatrice"
@@ -8646,10 +8610,6 @@ msgstr "Démarrer le navigateur Web"
 msgid "Home folder"
 msgstr "Dossier personnel"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Rechercher"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

@@ -2172,14 +2172,6 @@ msgstr ""
 msgid "File System"
 msgstr ""
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "ตั้งค่า"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6222,10 +6214,6 @@ msgstr ""
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "ค้นหา"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8278,37 +8266,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "ปรับแต่ง;ตั้งค่า;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "เปิดหรือปิดการซูม"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "ซูมเข้า"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "ซูมออก"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "เปิดหรือปิดการอ่านหน้าจอ"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "เปิดหรือปิดแป้นพิมพ์บนจอ"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "เพิ่มขนาดตัวอักษร"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "ลดขนาดตัวอักษร"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "เปิดหรือปิดการแสดงสีตัดกัน"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8338,10 +8306,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "ปุ่มเรียก"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "เรียกโปรแกรมแสดงวิธีใช้"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "เรียกเครื่องคิดเลข"
@@ -8358,10 +8322,6 @@ msgstr "เรียกเว็บเบราว์เซอร์"
 msgid "Home folder"
 msgstr "โฟลเดอร์บ้าน"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "ค้นหา"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"
