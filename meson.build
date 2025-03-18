@@ -248,9 +248,6 @@ config_h.set('HAVE_WWAN', host_is_linux,
              description: 'Define to 1 if WWan is available')
 
 if host_is_linux_not_s390
-  # gnome-bluetooth
-  gnome_bluetooth_dep = dependency('gnome-bluetooth-1.0', version: '>= 3.18.2')
-
   libwacom_dep = dependency('libwacom', version: '>= 0.7')
 
   wacom_deps = [
@@ -262,9 +259,17 @@ else
   message('Bluetooth and Wacom panels will not be built (no USB support on this platform)')
   message('Thunderbolt panel will not be built (not supported on this platform)')
 endif
-config_h.set('BUILD_BLUETOOTH', host_is_linux_not_s390,
+
+enable_bluetooth = get_option('bluetooth')
+if host_is_linux_not_s390 and enable_bluetooth
+  with_bluetooth = 1
+  gnome_bluetooth_dep = dependency('gnome-bluetooth-1.0', version: '>= 3.18.2')
+  config_h.set('BUILD_BLUETOOTH', with_bluetooth,
              description: 'Define to 1 to build the Bluetooth panel')
-config_h.set('HAVE_BLUETOOTH', host_is_linux_not_s390,
+else
+  with_bluetooth = 0
+endif
+config_h.set('HAVE_BLUETOOTH', with_bluetooth,
              description: 'Define to 1 if bluetooth support is available')
 config_h.set('BUILD_WACOM', host_is_linux_not_s390,
              description: 'Define to 1 to build the Wacom panel')
