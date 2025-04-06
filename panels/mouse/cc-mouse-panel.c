@@ -28,9 +28,12 @@
 #include "cc-mouse-panel.h"
 #include "cc-mouse-resources.h"
 #include "cc-mouse-test.h"
+#include "shell/cc-keyfile-search.h"
 #include "gsd-device-manager.h"
 #include "gsd-input-helper.h"
 #include "list-box-helper.h"
+
+const char* MOUSE_SECTION = "mouse_touchpad";
 
 struct _CcMousePanel
 {
@@ -99,8 +102,16 @@ setup_touchpad_options (CcMousePanel *self)
 
   gtk_widget_show (GTK_WIDGET (self->touchpad_frame));
 
+  if (have_two_finger_scrolling) {
+    have_two_finger_scrolling = search_keyfile_visible(MOUSE_SECTION, "two_finger_scrolling", NULL);
+  }
   gtk_widget_set_visible (GTK_WIDGET (self->two_finger_scrolling_row), have_two_finger_scrolling);
+
+  if (have_edge_scrolling) {
+    have_edge_scrolling = search_keyfile_visible(MOUSE_SECTION, "edge_scrolling", NULL);
+  }
   gtk_widget_set_visible (GTK_WIDGET (self->edge_scrolling_row), have_edge_scrolling);
+
   gtk_widget_set_visible (GTK_WIDGET (self->tap_to_click_row), have_tap_to_click);
 
   edge_scroll_enabled = g_settings_get_boolean (self->touchpad_settings, "edge-scrolling-enabled");
