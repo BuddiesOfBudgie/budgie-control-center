@@ -31,6 +31,8 @@
 #include "cc-object-storage.h"
 #include "cc-panel-loader.h"
 #include "cc-window.h"
+#include "cc-keyfile-search.h"
+
 
 struct _CcApplication
 {
@@ -200,6 +202,9 @@ cc_application_quit (GSimpleAction *simple,
 {
   CcApplication *self = CC_APPLICATION (user_data);
 
+  // Cleanup keyfile
+  cleanup_keyfile();
+
   gtk_widget_destroy (GTK_WIDGET (self->window));
 }
 
@@ -226,6 +231,11 @@ cc_application_startup (GApplication *application)
   G_APPLICATION_CLASS (cc_application_parent_class)->startup (application);
 
   hdy_init ();
+
+  // Initialize keyfile with the provided path
+  if (!initialize_keyfile()) {
+    g_warning("Failed to initialize keyfile.");
+  }
 
   gtk_application_set_accels_for_action (GTK_APPLICATION (application),
                                          "app.help", help_accels);
