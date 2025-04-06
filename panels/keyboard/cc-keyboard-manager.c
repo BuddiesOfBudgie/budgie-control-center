@@ -23,6 +23,7 @@
 #include <glib/gi18n.h>
 
 #include "cc-keyboard-manager.h"
+#include "shell/cc-keyfile-search.h"
 #include "keyboard-shortcuts.h"
 #include "wm-common.h"
 
@@ -301,6 +302,11 @@ append_section (CcKeyboardManager  *self,
       gboolean ret;
 
       if (have_key_for_group (self, group, keys_list[i].name))
+        continue;
+
+      g_debug("item %s", keys_list[i].name);
+      gboolean show_key = search_keyfile_visible("keyboard", keys_list[i].name, NULL);
+      if (!show_key)
         continue;
 
       item = cc_keyboard_item_new (keys_list[i].type);
