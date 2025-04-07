@@ -168,7 +168,7 @@
 
                 <!-- Multi-Monitor -->
                 <child>
-                  <object class="GtkLabel">
+                  <object class="GtkLabel" id="multi_monitor_label">
                     <property name="visible">true</property>
                     <property name="can-focus">true</property>
                     <property name="label" translatable="yes">Multi-Monitor</property>
@@ -180,7 +180,7 @@
                 </child>
 
                 <child>
-                  <object class="GtkListBox">
+                  <object class="GtkListBox" id="multi_monitor_list">
                     <property name="visible">true</property>
                     <property name="can-focus">true</property>
                     <property name="selection-mode">none</property>
