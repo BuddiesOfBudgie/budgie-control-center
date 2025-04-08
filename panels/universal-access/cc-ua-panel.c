@@ -39,10 +39,13 @@
 #include "cc-typing-dialog.h"
 #include "cc-visual-alerts-dialog.h"
 #include "cc-zoom-options-dialog.h"
+#include "shell/cc-keyfile-search.h"
 
 #define DPI_FACTOR_LARGE 1.25
 #define DPI_FACTOR_NORMAL 1.0
 #define HIGH_CONTRAST_THEME     "HighContrast"
+
+#define ACCESS_SECTION "access_section"
 
 /* shell settings */
 #define A11Y_SETTINGS                "org.gnome.desktop.a11y"
@@ -124,6 +127,7 @@ struct _CcUaPanel
   GtkScale          *double_click_delay_scale;
   GtkSwitch         *enable_animations_switch;
   GtkListBox        *hearing_listbox;
+  GtkBox            *hearing_box;
   GtkSwitch         *highcontrast_enable_switch;
   GtkListBoxRow     *highcontrast_row;
   GtkSwitch         *large_text_enable_switch;
@@ -149,6 +153,7 @@ struct _CcUaPanel
   GtkListBoxRow     *visual_alerts_row;
   GtkLabel          *zoom_label;
   GtkListBoxRow     *zoom_row;
+  GtkBox            *mousebox_enabled;
 
   GtkAdjustment *focus_adjustment;
 
@@ -197,7 +202,7 @@ cc_ua_panel_get_help_uri (CcPanel *panel)
 
 static void
 cc_ua_panel_class_init (CcUaPanelClass *klass)
-{ 
+{
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
   CcPanelClass *panel_class = CC_PANEL_CLASS (klass);
@@ -220,6 +225,7 @@ cc_ua_panel_class_init (CcUaPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, double_click_delay_scale);
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, enable_animations_switch);
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, hearing_listbox);
+  gtk_widget_class_bind_template_child (widget_class, CcUaPanel, hearing_box);
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, highcontrast_enable_switch);
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, highcontrast_row);
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, large_text_enable_switch);
@@ -245,6 +251,7 @@ cc_ua_panel_class_init (CcUaPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, visual_alerts_row);
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, zoom_label);
   gtk_widget_class_bind_template_child (widget_class, CcUaPanel, zoom_row);
+  gtk_widget_class_bind_template_child (widget_class, CcUaPanel, mousebox_enabled);
 }
 
 /* seeing section */
@@ -436,11 +443,16 @@ add_section (GtkListBox *list, CcUaPanel *self)
 static void
 cc_ua_panel_init_status (CcUaPanel *self)
 {
-  self->sections_reverse = g_list_prepend (self->sections_reverse, self->show_status_box);
+  if (search_keyfile_visible(ACCESS_SECTION, "show-status-box", NULL)) {
+    self->sections_reverse = g_list_prepend (self->sections_reverse, self->show_status_box);
 
-  g_settings_bind (self->a11y_settings, KEY_ALWAYS_SHOW_STATUS,
-                   self->show_status_switch, "active",
-                   G_SETTINGS_BIND_DEFAULT);
+    g_settings_bind (self->a11y_settings, KEY_ALWAYS_SHOW_STATUS,
+                    self->show_status_switch, "active",
+                    G_SETTINGS_BIND_DEFAULT);
+  } else {
+    gtk_widget_set_visible(self->show_status_box, FALSE);
+  }
+
 }
 
 static void
@@ -537,9 +549,14 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
                                 NULL);
 
   /* enable animation */
-  g_settings_bind (self->interface_settings, KEY_ENABLE_ANIMATIONS,
-                   self->enable_animations_switch, "active",
-                   G_SETTINGS_BIND_DEFAULT);
+  if (search_keyfile_visible(ACCESS_SECTION, "enable-animations", NULL)) {
+    g_settings_bind (self->interface_settings, KEY_ENABLE_ANIMATIONS,
+                    self->enable_animations_switch, "active",
+                    G_SETTINGS_BIND_DEFAULT);
+  } else {
+    GtkWidget *parent = gtk_widget_get_parent(gtk_widget_get_parent(self->enable_animations_switch));
+    gtk_widget_set_visible(parent, FALSE);
+  }
 
 
   /* large text */
@@ -569,20 +586,27 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
                                 NULL, NULL, NULL);
 
   /* screen reader */
-
-  g_settings_bind_with_mapping (self->application_settings, "screen-reader-enabled",
-                                self->screen_reader_label, "label",
-                                G_SETTINGS_BIND_GET,
-                                on_off_label_mapping_get,
-                                NULL, NULL, NULL);
+  if (search_keyfile_visible(ACCESS_SECTION, "screen-reader-enabled", NULL)) {
+    g_settings_bind_with_mapping (self->application_settings, "screen-reader-enabled",
+      self->screen_reader_label, "label",
+        G_SETTINGS_BIND_GET,
+        on_off_label_mapping_get,
+        NULL, NULL, NULL);
+  } else {
+    gtk_widget_set_visible(self->screen_reader_row, FALSE);
+  }
 
   /* sound keys */
-
-  g_settings_bind_with_mapping (self->kb_settings, KEY_TOGGLEKEYS_ENABLED,
-                                self->sound_keys_label, "label",
-                                G_SETTINGS_BIND_GET,
-                                on_off_label_mapping_get,
-                                NULL, NULL, NULL);
+  if (search_keyfile_visible(ACCESS_SECTION, "togglekeys-enabled", NULL)) {
+    g_settings_bind_with_mapping (self->kb_settings, KEY_TOGGLEKEYS_ENABLED,
+      self->sound_keys_label, "label",
+      G_SETTINGS_BIND_GET,
+      on_off_label_mapping_get,
+      NULL, NULL, NULL);
+  } else {
+    GtkWidget *parent = gtk_widget_get_parent(gtk_widget_get_parent(self->sound_keys_label));
+    gtk_widget_set_visible(parent, FALSE);
+  }
 }
 
 /* hearing/sound section */
@@ -602,6 +626,11 @@ cc_ua_panel_init_hearing (CcUaPanel *self)
                                 "label", G_SETTINGS_BIND_GET,
                                 on_off_label_mapping_get,
                                 NULL, NULL, NULL);
+
+  if (!search_keyfile_visible(ACCESS_SECTION, "hearing-box", NULL)) {
+    gtk_widget_set_visible(self->hearing_box, FALSE);
+  }
+
 }
 
 /* typing/keyboard section */
@@ -648,14 +677,23 @@ cc_ua_panel_init_keyboard (CcUaPanel *self)
                            G_CALLBACK (activate_row), self, G_CONNECT_SWAPPED);
 
   /* on-screen keyboard */
-  g_settings_bind (self->application_settings, KEY_SCREEN_KEYBOARD_ENABLED,
+  if (search_keyfile_visible(ACCESS_SECTION, "screenkeyboard-enabled", NULL)) {
+    g_settings_bind (self->application_settings, KEY_SCREEN_KEYBOARD_ENABLED,
                    self->screen_keyboard_enable_switch, "active",
                    G_SETTINGS_BIND_DEFAULT);
+  } else {
+    gtk_widget_set_visible(self->screen_keyboard_row, FALSE);
+  }
 
   /* Repeat keys */
-  g_signal_connect_object (self->kb_desktop_settings, "changed",
-                           G_CALLBACK (on_repeat_keys_toggled), self, G_CONNECT_SWAPPED);
-  on_repeat_keys_toggled (self);
+  if (search_keyfile_visible(ACCESS_SECTION, "repeatkeys-enabled", NULL)) {
+    g_signal_connect_object (self->kb_desktop_settings, "changed",
+                            G_CALLBACK (on_repeat_keys_toggled), self, G_CONNECT_SWAPPED);
+    on_repeat_keys_toggled (self);
+  } else {
+    gtk_widget_set_visible(self->repeat_keys_row, FALSE);
+  }
+
 
   /* Cursor Blinking */
   g_signal_connect_object (self->interface_settings, "changed",
@@ -663,9 +701,13 @@ cc_ua_panel_init_keyboard (CcUaPanel *self)
   on_cursor_blinking_toggled (self);
 
   /* accessx */
-  g_signal_connect_object (self->kb_settings, "changed",
-                           G_CALLBACK (update_accessx_label), self, G_CONNECT_SWAPPED);
-  update_accessx_label (self);
+  if (search_keyfile_visible(ACCESS_SECTION, "accessx-enabled", NULL)) {
+    g_signal_connect_object (self->kb_settings, "changed",
+                            G_CALLBACK (update_accessx_label), self, G_CONNECT_SWAPPED);
+    update_accessx_label (self);
+  } else {
+    gtk_widget_set_visible(self->accessx_row, FALSE);
+  }
 }
 
 /* mouse/pointing & clicking section */
@@ -708,6 +750,11 @@ cc_ua_panel_init_mouse (CcUaPanel *self)
                    G_SETTINGS_BIND_DEFAULT);
 
   gtk_scale_add_mark (GTK_SCALE (self->double_click_delay_scale), 400, GTK_POS_BOTTOM, NULL);
+
+  if (!search_keyfile_visible(ACCESS_SECTION, "mousebox-enabled", NULL)) {
+    gtk_widget_set_visible(self->mousebox_enabled, FALSE);
+  }
+
 }
 
 static void
