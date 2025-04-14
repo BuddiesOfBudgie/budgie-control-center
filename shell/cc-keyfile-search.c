@@ -15,19 +15,6 @@ static const gchar* window_manager_processes[] = {
     "labwc", NULL
 };
 
-// Function to convert a string to lowercase and replace non-alphanumeric characters with underscores
-static GString* sanitize_string(const gchar *str) {
-    g_autoptr(GString) sanitized_str = g_string_new(str);
-    for (gchar *p = sanitized_str->str; *p; ++p) {
-        if (!g_ascii_isalnum(*p) && *p != '-') {
-            *p = '_';
-        } else {
-            *p = g_ascii_tolower(*p);
-        }
-    }
-    return g_steal_pointer(&sanitized_str);
-}
-
 // Function to check if a process is running
 static gboolean is_process_running(const gchar *process_name) {
     g_autofree gchar *command = g_strdup_printf("pgrep -u %d %s", getuid(), process_name);
@@ -92,40 +79,32 @@ void cleanup_keyfile(void) {
 }
 
 // Convenience function to confirm if the search for the object should be declared visible
-gboolean search_keyfile_visible(const gchar *group, const gchar *default_string, const gchar *search_string) {
-    g_autoptr(GString) result = search_keyfile_pair(group, default_string, search_string);
-
+// this is done by exclusion - only explicitly hide if a match is found
+gboolean search_keyfile_visible(const gchar *group, const gchar *search_string) {
     gboolean returnval = FALSE;
-    if (!result || g_strcmp0(result->str, "true") == 0) returnval = TRUE;
 
-    return returnval;
-}
-
-// Public function to search keyfile pair
-GString* search_keyfile_pair(const gchar *group, const gchar *default_string, const gchar *search_string) {
     if (!keyfile) {
         g_warning("Keyfile is not initialized.");
-        return NULL;
+        return TRUE;
     }
 
     g_autoptr(GError) error = NULL;
-    g_autoptr(GString) sanitized_default_string = sanitize_string(default_string);
-    g_autoptr(GString) sanitized_search_string = search_string ? sanitize_string(search_string) : g_string_new(sanitized_default_string->str);
-    g_autoptr(GString) result = g_string_new(sanitized_default_string->str);
 
     if (g_key_file_has_group(keyfile, group)) {
-        if (g_key_file_has_key(keyfile, group, sanitized_search_string->str, &error)) {
-            g_autofree gchar *value = g_key_file_get_string(keyfile, group, sanitized_search_string->str, &error);
-            g_autoptr(GString) sanitized_value = sanitize_string(value);
-            g_string_assign(result, sanitized_value->str);
-            g_debug("found key %s with value %s", sanitized_default_string->str, sanitized_value->str);
+        if (g_key_file_has_key(keyfile, group, search_string, &error)) {
+            g_autofree gchar *value = g_key_file_get_string(keyfile, group, search_string, &error);
+            if (g_strcmp0(value, "true") == 0) {
+                g_debug("found key %s with value %s", search_string, value);
+                returnval = TRUE;
+            }
         } else {
-            g_debug("Search string '%s' not found in group '%s'.", sanitized_search_string->str, group);
-            return NULL;
+            g_debug("Search string '%s' not found in group '%s'.", search_string, group);
+            returnval = TRUE;
         }
     } else {
         g_debug("Group '%s' not found in keyfile.", group);
+        returnval = TRUE;
     }
 
-    return g_steal_pointer(&result);
+    return returnval;
 }

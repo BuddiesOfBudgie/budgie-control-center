@@ -103,12 +103,12 @@ setup_touchpad_options (CcMousePanel *self)
   gtk_widget_show (GTK_WIDGET (self->touchpad_frame));
 
   if (have_two_finger_scrolling) {
-    have_two_finger_scrolling = search_keyfile_visible(MOUSE_SECTION, "two_finger_scrolling", NULL);
+    have_two_finger_scrolling = search_keyfile_visible(MOUSE_SECTION, "two_finger_scrolling");
   }
   gtk_widget_set_visible (GTK_WIDGET (self->two_finger_scrolling_row), have_two_finger_scrolling);
 
   if (have_edge_scrolling) {
-    have_edge_scrolling = search_keyfile_visible(MOUSE_SECTION, "edge_scrolling", NULL);
+    have_edge_scrolling = search_keyfile_visible(MOUSE_SECTION, "edge_scrolling");
   }
   gtk_widget_set_visible (GTK_WIDGET (self->edge_scrolling_row), have_edge_scrolling);
 

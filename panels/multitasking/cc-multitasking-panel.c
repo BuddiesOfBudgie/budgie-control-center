@@ -92,7 +92,7 @@ cc_multitasking_panel_init (CcMultitaskingPanel *self)
   self->budgie_settings = g_settings_new ("com.solus-project.budgie-wm");
   self->mutter_settings = g_settings_new ("org.gnome.mutter");
 
-  if (search_keyfile_visible("multitasking", "multi-monitor-tasking", NULL)) {
+  if (search_keyfile_visible("multitasking", "multi-monitor-tasking")) {
     if (g_settings_get_boolean (self->mutter_settings, "workspaces-only-on-primary"))
       gtk_toggle_button_set_active (self->workspaces_primary_display_radio, TRUE);
     else

@@ -443,7 +443,7 @@ add_section (GtkListBox *list, CcUaPanel *self)
 static void
 cc_ua_panel_init_status (CcUaPanel *self)
 {
-  if (search_keyfile_visible(ACCESS_SECTION, "show-status-box", NULL)) {
+  if (search_keyfile_visible(ACCESS_SECTION, "show-status-box")) {
     self->sections_reverse = g_list_prepend (self->sections_reverse, self->show_status_box);
 
     g_settings_bind (self->a11y_settings, KEY_ALWAYS_SHOW_STATUS,
@@ -549,7 +549,7 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
                                 NULL);
 
   /* enable animation */
-  if (search_keyfile_visible(ACCESS_SECTION, "enable-animations", NULL)) {
+  if (search_keyfile_visible(ACCESS_SECTION, "enable-animations")) {
     g_settings_bind (self->interface_settings, KEY_ENABLE_ANIMATIONS,
                     self->enable_animations_switch, "active",
                     G_SETTINGS_BIND_DEFAULT);
@@ -586,7 +586,7 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
                                 NULL, NULL, NULL);
 
   /* screen reader */
-  if (search_keyfile_visible(ACCESS_SECTION, "screen-reader-enabled", NULL)) {
+  if (search_keyfile_visible(ACCESS_SECTION, "screen-reader-enabled")) {
     g_settings_bind_with_mapping (self->application_settings, "screen-reader-enabled",
       self->screen_reader_label, "label",
         G_SETTINGS_BIND_GET,
@@ -597,7 +597,7 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
   }
 
   /* sound keys */
-  if (search_keyfile_visible(ACCESS_SECTION, "togglekeys-enabled", NULL)) {
+  if (search_keyfile_visible(ACCESS_SECTION, "togglekeys-enabled")) {
     g_settings_bind_with_mapping (self->kb_settings, KEY_TOGGLEKEYS_ENABLED,
       self->sound_keys_label, "label",
       G_SETTINGS_BIND_GET,
@@ -627,7 +627,7 @@ cc_ua_panel_init_hearing (CcUaPanel *self)
                                 on_off_label_mapping_get,
                                 NULL, NULL, NULL);
 
-  if (!search_keyfile_visible(ACCESS_SECTION, "hearing-box", NULL)) {
+  if (!search_keyfile_visible(ACCESS_SECTION, "hearing-box")) {
     gtk_widget_set_visible(self->hearing_box, FALSE);
   }
 
@@ -677,7 +677,7 @@ cc_ua_panel_init_keyboard (CcUaPanel *self)
                            G_CALLBACK (activate_row), self, G_CONNECT_SWAPPED);
 
   /* on-screen keyboard */
-  if (search_keyfile_visible(ACCESS_SECTION, "screenkeyboard-enabled", NULL)) {
+  if (search_keyfile_visible(ACCESS_SECTION, "screenkeyboard-enabled")) {
     g_settings_bind (self->application_settings, KEY_SCREEN_KEYBOARD_ENABLED,
                    self->screen_keyboard_enable_switch, "active",
                    G_SETTINGS_BIND_DEFAULT);
@@ -686,7 +686,7 @@ cc_ua_panel_init_keyboard (CcUaPanel *self)
   }
 
   /* Repeat keys */
-  if (search_keyfile_visible(ACCESS_SECTION, "repeatkeys-enabled", NULL)) {
+  if (search_keyfile_visible(ACCESS_SECTION, "repeatkeys-enabled")) {
     g_signal_connect_object (self->kb_desktop_settings, "changed",
                             G_CALLBACK (on_repeat_keys_toggled), self, G_CONNECT_SWAPPED);
     on_repeat_keys_toggled (self);
@@ -701,7 +701,7 @@ cc_ua_panel_init_keyboard (CcUaPanel *self)
   on_cursor_blinking_toggled (self);
 
   /* accessx */
-  if (search_keyfile_visible(ACCESS_SECTION, "accessx-enabled", NULL)) {
+  if (search_keyfile_visible(ACCESS_SECTION, "accessx-enabled")) {
     g_signal_connect_object (self->kb_settings, "changed",
                             G_CALLBACK (update_accessx_label), self, G_CONNECT_SWAPPED);
     update_accessx_label (self);
@@ -751,7 +751,7 @@ cc_ua_panel_init_mouse (CcUaPanel *self)
 
   gtk_scale_add_mark (GTK_SCALE (self->double_click_delay_scale), 400, GTK_POS_BOTTOM, NULL);
 
-  if (!search_keyfile_visible(ACCESS_SECTION, "mousebox-enabled", NULL)) {
+  if (!search_keyfile_visible(ACCESS_SECTION, "mousebox-enabled")) {
     gtk_widget_set_visible(self->mousebox_enabled, FALSE);
   }
 
