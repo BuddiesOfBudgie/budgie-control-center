@@ -304,7 +304,7 @@ append_section (CcKeyboardManager  *self,
       if (have_key_for_group (self, group, keys_list[i].name))
         continue;
 
-      g_debug("item %s", keys_list[i].name);
+      g_debug("Grabbed the key %s from the file", keys_list[i].name);
       gboolean show_key = search_keyfile_visible("keyboard", keys_list[i].name);
       if (!show_key)
         continue;

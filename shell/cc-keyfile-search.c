@@ -1,12 +1,5 @@
 #include "shell/cc-keyfile-search.h"
 #include <gio/gio.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <signal.h>
-#include <string.h>
-#include <stdio.h>
-#include <sys/stat.h>
-#include <ctype.h>
 
 // Private module variables
 static GKeyFile *keyfile = NULL;
@@ -35,7 +28,6 @@ static gboolean is_process_running(const gchar *process_name) {
 
 // Public function to initialize the keyfile
 gboolean initialize_keyfile(void) {
-    g_autoptr(GError) error = NULL;
     const gchar * const * data_dirs = g_get_system_data_dirs ();
 
     // Check for running window manager processes and update the keyfile path
@@ -46,20 +38,19 @@ gboolean initialize_keyfile(void) {
             for (int i = 0; data_dirs[i] != NULL; i++) {
                 g_autofree gchar *prefixed_file_path = g_strdup_printf("%s_keyfile.ini", *process);
                 g_autofree gchar *dir_path = g_build_filename (data_dirs[i], "budgie-control-center", "keyfile", prefixed_file_path, NULL);
-                g_debug("looking for %s", dir_path);
+                g_autoptr(GError) error = NULL;
 
-                struct stat buffer;
-                if (stat(dir_path, &buffer) == 0) {
-                    g_debug("found file");
-                    keyfile = g_key_file_new();
-                    if (g_key_file_load_from_file(keyfile, dir_path, G_KEY_FILE_NONE, &error)) {
-                        g_debug("loaded keyfile");
-                        process_found = TRUE;
-                        break;
-                    }
-                    g_key_file_unref(keyfile);
-                    keyfile = NULL;
+                keyfile = g_key_file_new();
+                if (g_key_file_load_from_file(keyfile, dir_path, G_KEY_FILE_NONE, &error)) {
+                    g_debug("loaded keyfile");
+                    process_found = TRUE;
+                    break;
                 }
+                if (error && !g_error_matches(error, G_FILE_ERROR, G_FILE_ERROR_NOENT)) {
+                    g_warning("Could not load key file: %s", error->message);
+                }
+                g_clear_object(&keyfile);
+                keyfile = NULL;
             }
         }
         process++;
@@ -92,9 +83,9 @@ gboolean search_keyfile_visible(const gchar *group, const gchar *search_string) 
 
     if (g_key_file_has_group(keyfile, group)) {
         if (g_key_file_has_key(keyfile, group, search_string, &error)) {
-            g_autofree gchar *value = g_key_file_get_string(keyfile, group, search_string, &error);
-            if (g_strcmp0(value, "true") == 0) {
-                g_debug("found key %s with value %s", search_string, value);
+            gboolean value = g_key_file_get_boolean(keyfile, group, search_string, &error);
+            if (value) {
+                g_debug("found key %s with value %d", search_string, value);
                 returnval = TRUE;
             }
         } else {
