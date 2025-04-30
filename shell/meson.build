@@ -45,6 +45,7 @@ common_sources = files(
   'cc-shell.c',
   'cc-panel-list.c',
   'cc-window.c',
+  'cc-keyfile-search.c'
 )
 
 
@@ -172,4 +173,9 @@ libtestshell_deps = common_deps + [ libwidgets_dep, libtestshell_dep ]
 install_data (
   'org.buddiesofbudgie.ControlCenter.gschema.xml',
   install_dir : control_center_schemadir
+)
+
+install_data (
+  'labwc_keyfile.ini',
+  install_dir : join_paths(control_center_pkgdatadir, 'keyfile')
 )

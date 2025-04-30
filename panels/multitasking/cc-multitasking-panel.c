@@ -24,6 +24,7 @@
 #include "cc-multitasking-resources.h"
 #include "cc-multitasking-row.h"
 #include "list-box-helper.h"
+#include "shell/cc-keyfile-search.h"
 
 struct _CcMultitaskingPanel
 {
@@ -31,6 +32,7 @@ struct _CcMultitaskingPanel
 
   GSettings       *mutter_settings;
   GSettings       *wm_settings;
+  GSettings       *budgie_settings;
 
   GtkSwitch       *active_screen_edges_switch;
   GtkToggleButton *dynamic_workspaces_radio;
@@ -38,6 +40,8 @@ struct _CcMultitaskingPanel
   GtkSpinButton   *number_of_workspaces_spin;
   GtkToggleButton *workspaces_primary_display_radio;
   GtkToggleButton *workspaces_span_displays_radio;
+  GtkLabel        *multi_monitor_label;
+  GtkListBox      *multi_monitor_list;
 };
 
 CC_PANEL_REGISTER (CcMultitaskingPanel, cc_multitasking_panel)
@@ -51,6 +55,7 @@ cc_multitasking_panel_finalize (GObject *object)
 
   g_clear_object (&self->mutter_settings);
   g_clear_object (&self->wm_settings);
+  g_clear_object (&self->budgie_settings);
 
   G_OBJECT_CLASS (cc_multitasking_panel_parent_class)->finalize (object);
 }
@@ -73,6 +78,8 @@ cc_multitasking_panel_class_init (CcMultitaskingPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, number_of_workspaces_spin);
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, workspaces_primary_display_radio);
   gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, workspaces_span_displays_radio);
+  gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, multi_monitor_label);
+  gtk_widget_class_bind_template_child (widget_class, CcMultitaskingPanel, multi_monitor_list);
 }
 
 static void
@@ -82,19 +89,25 @@ cc_multitasking_panel_init (CcMultitaskingPanel *self)
 
   gtk_widget_init_template (GTK_WIDGET (self));
 
+  self->budgie_settings = g_settings_new ("com.solus-project.budgie-wm");
   self->mutter_settings = g_settings_new ("org.gnome.mutter");
 
-  if (g_settings_get_boolean (self->mutter_settings, "workspaces-only-on-primary"))
-    gtk_toggle_button_set_active (self->workspaces_primary_display_radio, TRUE);
-  else
-    gtk_toggle_button_set_active (self->workspaces_span_displays_radio, TRUE);
+  if (search_keyfile_visible("multitasking", "multi-monitor-tasking")) {
+    if (g_settings_get_boolean (self->mutter_settings, "workspaces-only-on-primary"))
+      gtk_toggle_button_set_active (self->workspaces_primary_display_radio, TRUE);
+    else
+      gtk_toggle_button_set_active (self->workspaces_span_displays_radio, TRUE);
+  } else {
+      gtk_widget_set_visible(self->multi_monitor_label, FALSE);
+      gtk_widget_set_visible(self->multi_monitor_list, FALSE);
+  }
 
   g_settings_bind (self->mutter_settings,
                    "workspaces-only-on-primary",
                    self->workspaces_primary_display_radio,
                    "active",
                    G_SETTINGS_BIND_DEFAULT);
-  g_settings_bind (self->mutter_settings,
+  g_settings_bind (self->budgie_settings,
                    "edge-tiling",
                    self->active_screen_edges_switch,
                    "active",

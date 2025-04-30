@@ -36,7 +36,7 @@ extern GType cc_background_panel_get_type (void);
 #ifdef BUILD_BLUETOOTH
 extern GType cc_bluetooth_panel_get_type (void);
 #endif /* BUILD_BLUETOOTH */
-extern GType cc_color_panel_get_type (void);
+//extern GType cc_color_panel_get_type (void);
 extern GType cc_date_time_panel_get_type (void);
 extern GType cc_default_apps_panel_get_type (void);
 extern GType cc_display_panel_get_type (void);
@@ -104,14 +104,14 @@ static CcPanelLoaderVtable default_panels[] =
   PANEL_TYPE("bluetooth",        cc_bluetooth_panel_get_type,            NULL),
 #endif
   //PANEL_TYPE("camera",           cc_camera_panel_get_type,               NULL),
-  PANEL_TYPE("color",            cc_color_panel_get_type,                NULL),
+  //PANEL_TYPE("color",            cc_color_panel_get_type,                NULL),
   PANEL_TYPE("datetime",         cc_date_time_panel_get_type,            NULL),
   PANEL_TYPE("default-apps",     cc_default_apps_panel_get_type,         NULL),
-  PANEL_TYPE("diagnostics",      cc_diagnostics_panel_get_type,          cc_diagnostics_panel_static_init_func),
+  //PANEL_TYPE("diagnostics",      cc_diagnostics_panel_get_type,          cc_diagnostics_panel_static_init_func),
   PANEL_TYPE("display",          cc_display_panel_get_type,              NULL),
   PANEL_TYPE("info-overview",    cc_info_overview_panel_get_type,        NULL),
   PANEL_TYPE("keyboard",         cc_keyboard_panel_get_type,             NULL),
-  PANEL_TYPE("location",         cc_location_panel_get_type,             NULL),
+  //PANEL_TYPE("location",         cc_location_panel_get_type,             NULL),
   //PANEL_TYPE("microphone",       cc_microphone_panel_get_type,           NULL),
   PANEL_TYPE("mouse",            cc_mouse_panel_get_type,                NULL),
   PANEL_TYPE("multitasking",     cc_multitasking_panel_get_type,         NULL),
