@@ -450,7 +450,7 @@ cc_ua_panel_init_status (CcUaPanel *self)
                     self->show_status_switch, "active",
                     G_SETTINGS_BIND_DEFAULT);
   } else {
-    gtk_widget_set_visible(self->show_status_box, FALSE);
+    gtk_widget_set_visible(GTK_WIDGET(self->show_status_box), FALSE);
   }
 
 }
@@ -554,7 +554,7 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
                     self->enable_animations_switch, "active",
                     G_SETTINGS_BIND_DEFAULT);
   } else {
-    GtkWidget *parent = gtk_widget_get_parent(gtk_widget_get_parent(self->enable_animations_switch));
+    GtkWidget *parent = gtk_widget_get_parent(gtk_widget_get_parent(GTK_WIDGET(self->enable_animations_switch)));
     gtk_widget_set_visible(parent, FALSE);
   }
 
@@ -593,7 +593,7 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
         on_off_label_mapping_get,
         NULL, NULL, NULL);
   } else {
-    gtk_widget_set_visible(self->screen_reader_row, FALSE);
+    gtk_widget_set_visible(GTK_WIDGET(self->screen_reader_row), FALSE);
   }
 
   /* sound keys */
@@ -604,7 +604,7 @@ cc_ua_panel_init_seeing (CcUaPanel *self)
       on_off_label_mapping_get,
       NULL, NULL, NULL);
   } else {
-    GtkWidget *parent = gtk_widget_get_parent(gtk_widget_get_parent(self->sound_keys_label));
+    GtkWidget *parent = gtk_widget_get_parent(gtk_widget_get_parent(GTK_WIDGET(self->sound_keys_label)));
     gtk_widget_set_visible(parent, FALSE);
   }
 }
@@ -628,7 +628,7 @@ cc_ua_panel_init_hearing (CcUaPanel *self)
                                 NULL, NULL, NULL);
 
   if (!search_keyfile_visible(ACCESS_SECTION, "hearing-box")) {
-    gtk_widget_set_visible(self->hearing_box, FALSE);
+    gtk_widget_set_visible(GTK_WIDGET(self->hearing_box), FALSE);
   }
 
 }
@@ -682,7 +682,7 @@ cc_ua_panel_init_keyboard (CcUaPanel *self)
                    self->screen_keyboard_enable_switch, "active",
                    G_SETTINGS_BIND_DEFAULT);
   } else {
-    gtk_widget_set_visible(self->screen_keyboard_row, FALSE);
+    gtk_widget_set_visible(GTK_WIDGET(self->screen_keyboard_row), FALSE);
   }
 
   /* Repeat keys */
@@ -691,7 +691,7 @@ cc_ua_panel_init_keyboard (CcUaPanel *self)
                             G_CALLBACK (on_repeat_keys_toggled), self, G_CONNECT_SWAPPED);
     on_repeat_keys_toggled (self);
   } else {
-    gtk_widget_set_visible(self->repeat_keys_row, FALSE);
+    gtk_widget_set_visible(GTK_WIDGET(self->repeat_keys_row), FALSE);
   }
 
 
@@ -706,7 +706,7 @@ cc_ua_panel_init_keyboard (CcUaPanel *self)
                             G_CALLBACK (update_accessx_label), self, G_CONNECT_SWAPPED);
     update_accessx_label (self);
   } else {
-    gtk_widget_set_visible(self->accessx_row, FALSE);
+    gtk_widget_set_visible(GTK_WIDGET(self->accessx_row), FALSE);
   }
 }
 
@@ -752,7 +752,7 @@ cc_ua_panel_init_mouse (CcUaPanel *self)
   gtk_scale_add_mark (GTK_SCALE (self->double_click_delay_scale), 400, GTK_POS_BOTTOM, NULL);
 
   if (!search_keyfile_visible(ACCESS_SECTION, "mousebox-enabled")) {
-    gtk_widget_set_visible(self->mousebox_enabled, FALSE);
+    gtk_widget_set_visible(GTK_WIDGET(self->mousebox_enabled), FALSE);
   }
 
 }
