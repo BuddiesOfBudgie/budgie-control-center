@@ -98,8 +98,8 @@ cc_multitasking_panel_init (CcMultitaskingPanel *self)
     else
       gtk_toggle_button_set_active (self->workspaces_span_displays_radio, TRUE);
   } else {
-      gtk_widget_set_visible(self->multi_monitor_label, FALSE);
-      gtk_widget_set_visible(self->multi_monitor_list, FALSE);
+      gtk_widget_set_visible(GTK_WIDGET(self->multi_monitor_label), FALSE);
+      gtk_widget_set_visible(GTK_WIDGET(self->multi_monitor_list), FALSE);
   }
 
   g_settings_bind (self->mutter_settings,
