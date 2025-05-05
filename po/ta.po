@@ -2195,14 +2195,6 @@ msgstr ""
 msgid "File System"
 msgstr ""
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "அமைவுகள்"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6258,10 +6250,6 @@ msgstr ""
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "தேடு"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8337,37 +8325,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "விருப்பங்கள்;அமைப்புகள்;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "அணுகி பார்த்தல் செயலில் அல்லது செயல்நீங்கி"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "அணுகிப்பார்"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "விலகிப்பார்"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "திரை படிப்பி செயலில் அல்லது செயல்நீங்கி"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "திரை விசைப்பலகை செயலில் அல்லது செயல்நீங்கி"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "உரை அளவு ஐ அதிகமாக்குக"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "உரை அளவை குறைவாக்குக"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "உயர் மாறுபாடு செயலில் அல்லது செயல் நீங்கி"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8397,10 +8365,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "துவக்கிகள் "
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "உதவி மேலோடியை துவக்கு"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "கணக்கிடும் கருவியை துவக்கு"
@@ -8417,10 +8381,6 @@ msgstr "வலை மேலோடியை துவக்கு"
 msgid "Home folder"
 msgstr "இல்ல அடைவுக்குப் போகவும்."
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "தேடு"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

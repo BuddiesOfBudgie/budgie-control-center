@@ -2213,14 +2213,6 @@ msgstr "Salt okunur"
 msgid "File System"
 msgstr "Dosya Sistemi"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Ayarlar"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Ayarları değiştirebilir"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6344,10 +6336,6 @@ msgstr "Tümleşim"
 msgid "System features used by this application."
 msgstr "Bu uygulama tarafından kullanılan sistem özellikleri."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Ara"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8475,37 +8463,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Tercihler;Ayarlar;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Yakınlaştırmayı aç ya da kapat"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Yakınlaştır"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Uzaklaştır"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Ekran okuyucuyu aç ya da kapat"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Ekran klavyesini aç ya da kapat"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Yazıyı büyüt"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Yazıyı küçült"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Yüksek karşıtlık açık ya da kapalı"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8535,10 +8503,6 @@ msgstr "Bildirimleri Temizle"
 msgid "Launchers"
 msgstr "Başlatıcılar"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Yardım tarayıcısını çalıştır"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Hesap makinesini çalıştır"
@@ -8555,10 +8519,6 @@ msgstr "Web tarayıcısını çalıştır"
 msgid "Home folder"
 msgstr "Ev klasörü"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Ara"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

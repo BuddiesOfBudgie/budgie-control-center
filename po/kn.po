@@ -2183,14 +2183,6 @@ msgstr ""
 msgid "File System"
 msgstr ""
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "ಸಿದ್ಧತೆಗಳು"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6249,10 +6241,6 @@ msgstr ""
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "ಹುಡುಕು"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8323,37 +8311,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "ಆದ್ಯತೆಗಳು;ಸಿದ್ಧತೆಗಳು;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "ಹಿಗ್ಗಿಸುವಿಕೆಯನ್ನು ಆನ್ ಅಥವ ಆಫ್ ಮಾಡು"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "ಹಿಗ್ಗಿಸು"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "ಕುಗ್ಗಿಸು"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "ತೆರೆಓದುಗನನ್ನು ಆನ್ ಅಥವ ಆಫ್ ಮಾಡಿ"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "ತೆರೆ ಕೀಲಿಮಣೆಯನ್ನು ಆನ್ ಅಥವ ಆಫ್ ಮಾಡಿ"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "ಪಠ್ಯದ ಗಾತ್ರವನ್ನು ಹೆಚ್ಚಿಸು"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "ಪಠ್ಯದ ಗಾತ್ರವನ್ನು ಕುಗ್ಗಿಸು"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "ಅತ್ಯಂತ ವೈದೃಶ್ಯ ಆನ್ ಅಥವ ಆಫ್"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8383,10 +8351,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "ಆರಂಭಕಗಳು"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "ನೆರವಿನ ವೀಕ್ಷಕವನ್ನು ಆರಂಭಿಸಿ"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಅನ್ನು ಆರಂಭಿಸಿ"
@@ -8403,10 +8367,6 @@ msgstr "ಜಾಲ ವೀಕ್ಷಕವನ್ನು ಆರಂಭಿಸಿ"
 msgid "Home folder"
 msgstr "ನೆಲೆ ಕಡತಕೋಶ"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "ಹುಡುಕು"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

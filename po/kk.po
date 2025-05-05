@@ -2217,14 +2217,6 @@ msgstr "Тек оқу үшін"
 msgid "File System"
 msgstr "Файлдық жүйе"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Баптаулар"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Баптауларды өзгерте алады"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6354,10 +6346,6 @@ msgstr "Интеграция"
 msgid "System features used by this application."
 msgstr "Бұл қолданба қолданатын жүйелік мүмкіндіктер."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Іздеу"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8497,37 +8485,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferences;Settings;Баптаулар;Қалаулар;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Масштабтауды іске қосу/сөндіру"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Үлкейту"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Кішірейту"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Экраннан оқитын қолданбаны іске қосу/сөндіру"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Экрандағы пернетақтаны іске қосу/сөндіру"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Мәтін өлшемін үлкейту"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Мәтін өлшемін кішірейту"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Жоғары контраст іске қосулы/сөндірулі"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8557,10 +8525,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Жөнелткіштер"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Көмек шолушысын жөнелту"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Калькуляторды жөнелту"
@@ -8577,10 +8541,6 @@ msgstr "Веб браузерін жөнелту"
 msgid "Home folder"
 msgstr "Үй бумасы"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Іздеу"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

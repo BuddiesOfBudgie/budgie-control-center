@@ -2172,14 +2172,6 @@ msgstr "읽기 전용"
 msgid "File System"
 msgstr "파일 시스템"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "설정"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "설정 바꾸기 가능"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6226,10 +6218,6 @@ msgstr "연동"
 msgid "System features used by this application."
 msgstr "이 프로그램이 사용하는 시스템 기능."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "검색하기"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8314,37 +8302,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferences;환경설정;Settings;설정;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "확대 켜기 또는 끄기"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "확대"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "축소"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "화면 읽기 켜거나 끄기"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "화면 키보드를 켜거나 끄기"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "글자 크기 늘이기"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "글자 크기 줄이기"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "고대비 켜거나 끄기"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8374,10 +8342,6 @@ msgstr "알림 비우기"
 msgid "Launchers"
 msgstr "실행 아이콘"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "도움말 브라우저 실행"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "계산기 실행"
@@ -8394,10 +8358,6 @@ msgstr "웹 브라우저 실행"
 msgid "Home folder"
 msgstr "홈 폴더"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "검색하기"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

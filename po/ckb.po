@@ -2194,14 +2194,6 @@ msgstr "تەنها-خوێندنەوە"
 msgid "File System"
 msgstr "پەڕگەی سیستەم"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "ڕێكخستنەكان"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "ڕێكخستنەكان دەتوانرێ بگۆڕدرێ"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6270,10 +6262,6 @@ msgstr "یەکخستن"
 msgid "System features used by this application."
 msgstr "تایبەتمەندیەکانی سیستەم بەکارهێنراوە لەلایەن ئەم بەرنامەیە."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "گەڕان"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8343,37 +8331,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferences;Settings;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "نزیکی بکەوە یان دوری بخەوە"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "نزیکردنەوە"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "دوورکردنەوە"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "شاشەی خوێنەر هەڵبکە یان بیکوژێنەوە"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "تەختەکلیلی سەر شاشە هەڵبکە یان بیکوژێنەوە"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "قەبارەی نووسین زیادبکە"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "قەبارەی نووسین کەمبکە"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "جیاوازی بەرز هەڵبکە یان بیکوژێنەوە"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8403,10 +8371,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "کارپێکەر"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "وێبگەڕی یارمەتی کارپێبکە"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "ژمێرەر کارپێبکە"
@@ -8423,10 +8387,6 @@ msgstr "وێبگەڕی تۆڕ کارپێبکە"
 msgid "Home folder"
 msgstr "بوخچەی سەرەکی"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "گەڕان"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

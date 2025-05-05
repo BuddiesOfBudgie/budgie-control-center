@@ -2182,14 +2182,6 @@ msgstr ""
 msgid "File System"
 msgstr ""
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "সংহতিসমূহ"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6239,10 +6231,6 @@ msgstr ""
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "বিচাৰক"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8305,37 +8293,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "পছন্দসমূহ;সংহতিসমূহ;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "জুম অন বা অফ কৰক"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "ডাঙৰ কৰি দেখুৱাওক"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "সৰু কৰি দেখুৱাওক"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "স্ক্ৰিন ৰিডাৰ অন বা অফ কৰক"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "অন-স্ক্ৰিন কিবৰ্ড অন অথবা অফ কৰক"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "লিখনি আকাৰ ডাঙৰ কৰক"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "লিখনি আকাৰ সৰু কৰক"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "উচ্চ কন্ট্ৰাস্ট অন বা অফ কৰক"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8365,10 +8333,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "আৰম্ভকসমূহ"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "সহায় ব্ৰাউছাৰ আৰম্ভ কৰক"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "গণক আৰম্ভ কৰক"
@@ -8385,10 +8349,6 @@ msgstr "ৱেব ব্ৰাউছাৰ আৰম্ভ কৰক"
 msgid "Home folder"
 msgstr "ঘৰ ফোল্ডাৰ"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "সন্ধান কৰক"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

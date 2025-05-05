@@ -2173,14 +2173,6 @@ msgstr "只读"
 msgid "File System"
 msgstr "文件系统"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "设置"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "可以更改设置"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6214,10 +6206,6 @@ msgstr "集成"
 msgid "System features used by this application."
 msgstr "此应用程序使用的系统功能。"
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "搜索"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8270,37 +8258,17 @@ msgstr "谷歌;脸谱;脸书;推特;雅虎;互联网;网络;在线;聊天;日历
 msgid "Preferences;Settings;"
 msgstr "首选项;设置;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "开关屏幕缩放"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "放大"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "缩小"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "开关屏幕阅读器"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "开关屏幕键盘"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "增大文本字号"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "减小文本字号"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "高对比度开关"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8330,10 +8298,6 @@ msgstr "清除消息"
 msgid "Launchers"
 msgstr "启动器"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "启动帮助浏览器"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "启动计算器"
@@ -8350,10 +8314,6 @@ msgstr "启动网页浏览器"
 msgid "Home folder"
 msgstr "主目录"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "搜索"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"
