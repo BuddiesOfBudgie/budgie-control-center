@@ -1,6 +1,6 @@
 project(
   'budgie-control-center', 'c',
-        version : '1.4.0',
+        version : '1.4.1',
         license : 'GPL2+',
   meson_version : '>= 0.53.0'
 )
@@ -122,7 +122,7 @@ gdk_pixbuf_dep = dependency('gdk-pixbuf-2.0', version: '>= 2.23.0')
 gio_dep = dependency('gio-2.0')
 glib_dep = dependency('glib-2.0', version: '>= 2.70.0')
 gnome_desktop_dep = dependency('gnome-desktop-3.0', version: '>= 3.33.4')
-gnome_settings_dep = dependency('gnome-settings-daemon', version: '>= 3.27.90')
+gnome_settings_dep = dependency('gnome-settings-daemon', version: '>= 49.beta')
 #goa_dep = dependency('goa-1.0', version: goa_req_version)
 gsettings_desktop_dep = dependency('gsettings-desktop-schemas', version: '>= 42.alpha')
 libxml_dep = dependency('libxml-2.0')

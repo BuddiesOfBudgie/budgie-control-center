@@ -31,7 +31,7 @@
 #include <gdk/gdkx.h>
 #endif
 
-#define BINDINGS_SCHEMA       "org.gnome.settings-daemon.plugins.media-keys"
+#define BINDINGS_SCHEMA       "org.buddiesofbudgie.settings-daemon.plugins.media-keys"
 #define CUSTOM_SHORTCUTS_ID   "custom"
 
 struct _CcKeyboardManager
