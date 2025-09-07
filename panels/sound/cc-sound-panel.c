@@ -300,7 +300,7 @@ cc_sound_panel_init (CcSoundPanel *self)
                            G_CONNECT_SWAPPED);
   allow_amplified_changed_cb (self);
 
-  gtk_widget_set_visible(self->budgie_output_listbox, TRUE);
+  gtk_widget_set_visible(GTK_WIDGET (self->budgie_output_listbox), TRUE);
   gtk_widget_set_visible(GTK_WIDGET (self->output_volume_slider), FALSE);
   g_settings_bind (self->sound_settings, "allow-volume-overdrive",
                     self->allow_amplify_switch, "active", G_SETTINGS_BIND_DEFAULT);
