@@ -1,4 +1,4 @@
-appdata = 'budgie-control-center.appdata.xml'
+appdata = 'org.buddiesofbudgie.controlcenter.metainfo.xml'
 
 i18n.merge_file(
   input: appdata + '.in',
