@@ -14,7 +14,7 @@ configure_file(
   configuration : service_conf
 )
 
-desktop = 'budgie-control-center.desktop'
+desktop = 'org.buddiesofbudgie.ControlCenter.desktop'
 
 desktop_in = configure_file(
           input : desktop + '.in.in',

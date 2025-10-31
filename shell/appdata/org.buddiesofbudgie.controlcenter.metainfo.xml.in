@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2015 Richard Hughes <richard@hughsie.com> -->
 <component type="desktop">
-  <id>budgie-control-center.desktop</id>
+  <id>org.buddiesofbudgie.controlcenter</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-or-later</project_license>
+  <content_rating type="oars-1.1"/>
   <name>Budgie Control Center</name>
   <summary>Utility to configure desktop settings</summary>
   <description>
     <p>
-      Budgie Control Center is the primary interface for configuring your system.
+      Budgie Control Center is the primary interface for configuring your system. It is a fork of GNOME Settings / GNOME Control Center with the intent of providing a simplified list of settings that are applicable to the Budgie 10 series, along with any small quality-of-life settings.
     </p>
   </description>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <url type="homepage">https://buddiesofbudgie.org</url>
   <url type="bugtracker">https://github.com/BuddiesOfBudgie/budgie-control-center/issues/</url>
   <url type="translate">https://explore.transifex.com/buddiesofbudgie/budgie-control-center/</url>
   <update_contact>admin@buddiesofbudgie.org</update_contact>
   <project_group>Budgie</project_group>
-  <launchable type="desktop-id">budgie-control-center.desktop</launchable>
-  <developer_name>BuddiesOfBudgie</developer_name>
+  <developer id="org.buddiesofbudgie">
+    <name translate="no">Budgie Developers</name>
+    <url>https://github.com/BuddiesOfBudgie</url>
+  </developer>
+  <launchable type="desktop-id">org.buddiesofbudgie.ControlCenter.desktop</launchable>
   <compulsory_for_desktop>Budgie</compulsory_for_desktop>
   <kudos>
     <kudo>HiDpiIcon</kudo>
