@@ -340,14 +340,20 @@ cc_shell_model_iter_matches_search (CcShellModel *model,
 {
   g_autofree gchar *name = NULL;
   g_autofree gchar *description = NULL;
+  g_autofree gchar *id = NULL;
   gboolean result;
   g_auto(GStrv) keywords = NULL;
 
   gtk_tree_model_get (GTK_TREE_MODEL (model), iter,
+                      COL_ID, &id,
                       COL_CASEFOLDED_NAME, &name,
                       COL_CASEFOLDED_DESCRIPTION, &description,
                       COL_KEYWORDS, &keywords,
                       -1);
+
+  g_debug ("Search check for panel '%s' with term '%s'", id ? id : "(null)", term);
+  g_debug ("  Name: %s", name ? name : "(null)");
+  g_debug ("  Description: %s", description ? description : "(null)");
 
   result = (strstr (name, term) != NULL);
 
@@ -358,10 +364,21 @@ cc_shell_model_iter_matches_search (CcShellModel *model,
     {
       gint i;
 
+      g_debug ("  Checking %d keywords...", g_strv_length (keywords));
       for (i = 0; !result && keywords[i]; i++)
-        result = (strstr (keywords[i], term) == keywords[i]);
+        {
+          g_debug ("    Keyword[%d]: '%s' - checking if starts with '%s'", i, keywords[i], term);
+          result = (strstr (keywords[i], term) == keywords[i]);
+          if (result)
+            g_debug ("    MATCH FOUND!");
+        }
+    }
+  else if (!keywords)
+    {
+      g_debug ("  No keywords array!");
     }
 
+  g_debug ("  Result: %s", result ? "MATCH" : "no match");
   return result;
 }
 

@@ -10,6 +10,7 @@ panels = [
   'diagnostics',
   'info-overview',
   'keyboard',
+  'introduction',
   'location',
   'lock',
   'microphone',

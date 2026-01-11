@@ -75,4 +75,7 @@ void                 cc_panel_list_add_sidebar_widget            (CcPanelList   
 void                 cc_panel_list_set_selection_mode            (CcPanelList        *self,
                                                                   GtkSelectionMode    selection_mode);
 
+void                 cc_panel_list_set_panel_keywords    (CcPanelList        *self,
+                                                          const gchar        *id,
+                                                          const gchar * const *keywords);
 G_END_DECLS

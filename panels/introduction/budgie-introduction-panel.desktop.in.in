@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Introduction
+Comment=Get started with Budgie Desktop
+Exec=budgie-control-center introduction
+Icon=preferences-system
+Terminal=false
+Type=Application
+NoDisplay=true
+StartupNotify=true
+Categories=GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalizationSettings;
+OnlyShowIn=Budgie;
+# Translators: Search terms to find the Introduction panel
+Keywords=welcome;getting started;tour;first time;setup;guide;

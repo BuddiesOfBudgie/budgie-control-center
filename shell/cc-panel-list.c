@@ -333,6 +333,35 @@ row_data_new (CcPanelCategory     category,
   return data;
 }
 
+void
+cc_panel_list_set_panel_keywords (CcPanelList    *self,
+                                   const gchar    *id,
+                                   const gchar * const *keywords)
+{
+  RowData *data;
+  RowData *search_data;
+
+  g_return_if_fail (CC_IS_PANEL_LIST (self));
+  g_return_if_fail (id != NULL);
+
+  data = g_hash_table_lookup (self->id_to_data, id);
+  search_data = g_hash_table_lookup (self->id_to_search_data, id);
+
+  if (data)
+    {
+      g_strfreev (data->keywords);
+      data->keywords = g_strdupv ((gchar **)keywords);
+      g_debug ("Updated keywords for panel '%s' in main list", id);
+    }
+
+  if (search_data)
+    {
+      g_strfreev (search_data->keywords);
+      search_data->keywords = g_strdupv ((gchar **)keywords);
+      g_debug ("Updated keywords for panel '%s' in search list", id);
+    }
+}
+
 /*
  * GtkListBox functions
  */
@@ -354,6 +383,8 @@ filter_func (GtkListBoxRow *row,
   if (!self->search_query)
     return TRUE;
 
+  g_debug ("filter_func: Checking panel, search_query='%s'", self->search_query);
+
   panel_text = cc_util_normalize_casefold_and_unaccent (data->name);
   search_text = cc_util_normalize_casefold_and_unaccent (self->search_query);
   panel_description = cc_util_normalize_casefold_and_unaccent (data->description);
@@ -362,23 +393,35 @@ filter_func (GtkListBoxRow *row,
   g_strstrip (search_text);
   g_strstrip (panel_description);
 
+  g_debug ("  Panel: id='%s' name='%s'", data->id, data->name);
+
   /*
    * The description label is only visible when the search is
    * happening.
    */
   gtk_widget_set_visible (data->description_label, self->view == CC_PANEL_LIST_SEARCH);
 
-  for (i = 0; !retval && data->keywords[i] != NULL; i++)
+  /* Check keywords */
+  g_debug ("  Checking %d keywords for panel '%s'", data->keywords ? g_strv_length(data->keywords) : 0, data->id);
+  for (i = 0; !retval && data->keywords && data->keywords[i] != NULL; i++)
+    {
+      g_debug ("    keyword[%d]='%s', checking if starts with '%s'", i, data->keywords[i], search_text);
       retval = (strstr (data->keywords[i], search_text) == data->keywords[i]);
+      if (retval)
+        g_debug ("    KEYWORD MATCH!");
+    }
 
   retval = retval || g_strstr_len (panel_text, -1, search_text) != NULL ||
            g_strstr_len (panel_description, -1, search_text) != NULL;
+
+  g_debug ("  Result: %s", retval ? "SHOW" : "HIDE");
 
   return retval;
 }
 
 static const gchar * const panel_order[] = {
   /* Main page */
+  "introduction",
   "wifi",
   "network",
   "wwan",

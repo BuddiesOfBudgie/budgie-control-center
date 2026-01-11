@@ -17,6 +17,7 @@ control_center_pkgdatadir = join_paths(control_center_datadir, meson.project_nam
 control_center_desktopdir = join_paths(control_center_datadir, 'applications')
 control_center_icondir = join_paths(control_center_datadir, 'icons')
 control_center_schemadir = join_paths (control_center_datadir, 'glib-2.0', 'schemas')
+control_center_pkgdatadir = join_paths(control_center_datadir, 'budgie-control-center')
 
 control_center_gettext = meson.project_name() + '-2.0'
 
@@ -47,6 +48,8 @@ set_defines = [
 foreach define: set_defines
   config_h.set_quoted(define[0], define[1])
 endforeach
+
+config_h.set_quoted('BUDGIE_DATADIR', control_center_datadir)
 
 # meson does not support octal values, so it must be handled as a
 # string. See: https://github.com/mesonbuild/meson/issues/2047

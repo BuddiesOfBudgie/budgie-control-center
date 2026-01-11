@@ -176,6 +176,11 @@ install_data (
 )
 
 install_data (
+  'introduction/introduction.template',
+  install_dir : join_paths(control_center_datadir, 'budgie-control-center', 'introduction')
+)
+
+install_data (
   'labwc_keyfile.ini',
   install_dir : join_paths(control_center_pkgdatadir, 'keyfile')
 )

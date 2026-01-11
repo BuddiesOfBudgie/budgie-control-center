@@ -44,6 +44,7 @@
 #include "cc-panel-list.h"
 #include "cc-panel-loader.h"
 #include "cc-util.h"
+#include "panels/introduction/cc-introduction-panel.h"
 
 #define MOUSE_BACK_BUTTON 8
 
@@ -407,6 +408,159 @@ setup_model (CcWindow *self)
 
   /* React to visibility changes */
   g_signal_connect_object (model, "row-changed", G_CALLBACK (on_row_changed_cb), self, G_CONNECT_SWAPPED);
+}
+
+static void
+enhance_introduction_panel_keywords (CcWindow *self)
+{
+  GtkTreeModel *model;
+  GtkTreeIter iter;
+  gboolean found = FALSE;
+  CcPanel *panel;
+  GPtrArray *desktop_apps;
+  GPtrArray *keyword_array;
+  guint i, j;
+
+  g_debug ("Starting enhance_introduction_panel_keywords");
+
+  /* Find the introduction panel in the model */
+  model = GTK_TREE_MODEL (self->store);
+
+  if (gtk_tree_model_get_iter_first (model, &iter))
+    {
+      do
+        {
+          g_autofree gchar *id = NULL;
+          gtk_tree_model_get (model, &iter, COL_ID, &id, -1);
+
+          if (g_strcmp0 (id, "introduction") == 0)
+            {
+              found = TRUE;
+              g_debug ("Found introduction panel in model");
+              break;
+            }
+        }
+      while (gtk_tree_model_iter_next (model, &iter));
+    }
+
+  if (!found)
+    {
+      g_debug ("Introduction panel not found in model");
+      return;
+    }
+
+  /* Load the introduction panel to get its apps */
+  panel = cc_panel_loader_load_by_name (CC_SHELL (self), "introduction", NULL);
+  if (!panel || !CC_IS_INTRODUCTION_PANEL (panel))
+    {
+      g_debug ("Failed to load introduction panel");
+      g_clear_object (&panel);
+      return;
+    }
+
+  desktop_apps = cc_introduction_panel_get_desktop_apps (CC_INTRODUCTION_PANEL (panel));
+  if (!desktop_apps || desktop_apps->len == 0)
+    {
+      g_debug ("No desktop apps found");
+      g_clear_object (&panel);
+      return;
+    }
+
+  g_debug ("Found %u desktop apps", desktop_apps->len);
+
+  /* Collect all keywords from all external apps */
+  keyword_array = g_ptr_array_new_with_free_func (g_free);
+
+  for (i = 0; i < desktop_apps->len; i++)
+    {
+      GDesktopAppInfo *app_info = g_ptr_array_index (desktop_apps, i);
+      const gchar *keywords_str = g_desktop_app_info_get_string (app_info, "Keywords");
+      const gchar *name = g_app_info_get_display_name (G_APP_INFO (app_info));
+      const gchar *description = g_app_info_get_description (G_APP_INFO (app_info));
+      g_auto(GStrv) keywords_split = NULL;
+
+      g_debug ("Processing app: %s", name ? name : "(null)");
+
+      /* Add the app name as a keyword - use same normalization as model */
+      if (name)
+        {
+          g_autofree gchar *normalized_name = cc_util_normalize_casefold_and_unaccent (name);
+          g_debug ("  Adding name keyword: %s", normalized_name);
+          g_ptr_array_add (keyword_array, g_strdup (normalized_name));
+        }
+
+      /* Add description words as keywords */
+      if (description)
+        {
+          g_autofree gchar *normalized_desc = cc_util_normalize_casefold_and_unaccent (description);
+          g_auto(GStrv) desc_words = g_strsplit (normalized_desc, " ", -1);
+
+          for (j = 0; desc_words[j]; j++)
+            {
+              if (strlen (desc_words[j]) > 3)  /* Only add words longer than 3 chars */
+                {
+                  g_debug ("  Adding description word: %s", desc_words[j]);
+                  g_ptr_array_add (keyword_array, g_strdup (desc_words[j]));
+                }
+            }
+        }
+
+      /* Add all keywords from the desktop file */
+      if (keywords_str)
+        {
+          g_debug ("  Keywords string: %s", keywords_str);
+          keywords_split = g_strsplit (keywords_str, ";", -1);
+
+          for (j = 0; keywords_split[j]; j++)
+            {
+              g_autofree gchar *trimmed = g_strstrip (g_strdup (keywords_split[j]));
+              if (*trimmed)
+                {
+                  g_autofree gchar *normalized_keyword = cc_util_normalize_casefold_and_unaccent (trimmed);
+                  g_debug ("  Adding keyword: %s", normalized_keyword);
+                  g_ptr_array_add (keyword_array, g_strdup (normalized_keyword));
+                }
+            }
+        }
+    }
+
+  g_debug ("Total keywords collected: %u", keyword_array->len);
+
+  /* Convert to NULL-terminated array */
+  if (keyword_array->len > 0)
+    {
+      g_ptr_array_add (keyword_array, NULL);  /* NULL terminate */
+
+      /* Update the introduction panel's keywords in the model */
+      gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                          COL_KEYWORDS, keyword_array->pdata,
+                          -1);
+
+      g_debug ("Updated introduction panel keywords in model");
+
+      /* Also update the panel list's copy of the keywords */
+      cc_panel_list_set_panel_keywords (self->panel_list, "introduction", (const gchar * const *)keyword_array->pdata);
+
+      /* Verify what was actually set - read it back */
+      {
+        g_auto(GStrv) verify_keywords = NULL;
+        gtk_tree_model_get (model, &iter, COL_KEYWORDS, &verify_keywords, -1);
+
+        if (verify_keywords)
+          {
+            g_debug ("Verification - Keywords read back from model:");
+            for (i = 0; verify_keywords[i]; i++)
+              g_debug ("  [%u]: '%s'", i, verify_keywords[i]);
+          }
+        else
+          {
+            g_debug ("ERROR: No keywords found when reading back from model!");
+          }
+      }
+    }
+
+  g_ptr_array_free (keyword_array, TRUE);
+  g_clear_object (&panel);
 }
 
 static void
@@ -882,11 +1036,18 @@ cc_window_constructed (GObject *object)
   /* Add the panels */
   setup_model (self);
 
-  /* After everything is loaded, select the last used panel, if any,
-   * or the first visible panel */
+  /* Enhance introduction panel with keywords from external apps */
+  enhance_introduction_panel_keywords (self);
+
+  /* Get the last panel setting */
   id = g_settings_get_string (self->settings, "last-panel");
-  if (id != NULL && cc_shell_model_has_panel (self->store, id))
-    cc_panel_list_set_active_panel (self->panel_list, id);
+
+  /* Determine what to show on startup */
+  if (id != NULL && *id != '\0' && cc_shell_model_has_panel (self->store, id))
+    {
+      /* Last panel exists and is valid - show it */
+      cc_panel_list_set_active_panel (self->panel_list, id);
+    }
   else
     cc_panel_list_activate (self->panel_list);
 
