@@ -2208,14 +2208,6 @@ msgstr "শুধুমাত্র পাঠযোগ্য"
 msgid "File System"
 msgstr "ফাইল সিস্টেম"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "সেটিং"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "সেটিংস পরিবর্তন করতে পারে"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6334,10 +6326,6 @@ msgstr "মিশ্রণ"
 msgid "System features used by this application."
 msgstr "এই অ্যাপ্লিকেশন দ্বারা ব্যবহৃত সিস্টেম বৈশিষ্ট্যগুলি।"
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "অনুসন্ধান"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8440,37 +8428,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "অগ্রাধিকার;সেটিং;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "জুম চালু বা বন্ধ করুন"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "বড় মাপে প্রদর্শন"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "ছোট মাপে প্রদর্শন"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "স্ক্রীন রিডার চালু বা বন্ধ করুন"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "অন-স্ক্রীন কীবোর্ড চালু বা বন্ধ করুন"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "হরফের মাপ বৃদ্ধি করুন"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "হরফের মাপ হ্রাস করুন"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "গাঢ় তারতম্য চালু বা বন্ধ"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8500,10 +8468,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "লঞ্চার"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "সহায়তা ব্রাউজার লঞ্চ করুন"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "ক্যালকুলেটর আরম্ভ করুন"
@@ -8520,10 +8484,6 @@ msgstr "ওয়েব ব্রাউজার চালু করুন"
 msgid "Home folder"
 msgstr "ব্যক্তিগত ফোল্ডার"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "অনুসন্ধান"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

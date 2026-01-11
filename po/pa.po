@@ -2208,14 +2208,6 @@ msgstr "ਕੇਵਲ-ਪੜ੍ਹਨ ਲਈ"
 msgid "File System"
 msgstr "ਫਾਇਲ ਸਿਸਟਮ"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "ਸੈਟਿੰਗ"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "ਸੈਟਿੰਗਾਂ ਬਦਲ ਸਕਦੇ ਹਨ"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6320,10 +6312,6 @@ msgstr "ਏਕੀਕਰਨ"
 msgid "System features used by this application."
 msgstr "ਇਸ ਐਪਲੀਕੇਸ਼ਨ ਵਲੋਂ ਵਰਤੇ ਜਾ ਰਹੇ ਸਿਸਟਮ ਫੀਚਰ ਹਨ।"
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "ਖੋਜ"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8424,37 +8412,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "ਮੇਰੀ ਪਸੰਦ;ਸੈਟਿੰਗ;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "ਜ਼ੂਮ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "ਜ਼ੂਮ ਇਨ"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "ਜ਼ੂਮ ਆਉਟ"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "ਸਕਰੀਨ ਰੀਡਰ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "ਆਨ-ਸਕਰੀਨ ਕੀਬੋਰਡ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "ਟੈਕਸਟ ਅਕਾਰ ਵਧਾਓ"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "ਟੈਕਸਟ ਅਕਾਰ ਘਟਾਓ"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "ਵੱਧ-ਗੂੜ੍ਹਾ ਕਰਨਾ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8484,10 +8452,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "ਲਾਂਚਰ"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "ਮਦਦ-ਝਲਕਾਰਾ ਚਲਾਓ"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "ਕੈਲਕੂਲੇਟਰ ਚਲਾਓ"
@@ -8504,10 +8468,6 @@ msgstr "ਵੈਬ-ਬਰਾਊਜ਼ਰ ਚਲਾਓ"
 msgid "Home folder"
 msgstr "ਘਰ ਫੋਲਡਰ"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "ਖੋਜ"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

@@ -2203,14 +2203,6 @@ msgstr "Hanya-baca"
 msgid "File System"
 msgstr "Sistem Berkas"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Pengaturan"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Dapat mengubah pengaturan"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6326,10 +6318,6 @@ msgstr "Integrasi"
 msgid "System features used by this application."
 msgstr "Fitur sistem yang digunakan oleh aplikasi ini."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Cari"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8438,37 +8426,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferensi;Pengaturan;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Nyalakan atau matikan zum"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Perbesar"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Perkecil"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Nyalakan atau matikan pembaca layar"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Nyalakan atau matikan papan tik di layar"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Perbesar ukuran teks"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Perkecil ukuran teks"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Nyalakan atau matikan kontras tinggi"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8498,10 +8466,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Peluncur"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Tampilkan layar bantuan"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Luncurkan kalkulator"
@@ -8518,10 +8482,6 @@ msgstr "Tampilkan peramban web"
 msgid "Home folder"
 msgstr "Folder rumah"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Cari"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

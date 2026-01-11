@@ -2182,14 +2182,6 @@ msgstr ""
 msgid "File System"
 msgstr ""
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "అమరికలు"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr ""
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6237,10 +6229,6 @@ msgstr ""
 msgid "System features used by this application."
 msgstr ""
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "శోధించు"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8306,37 +8294,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "ప్రాధాన్యతలు;అమరికలు;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "జూమ్‌ను ఆన్ లేదా ఆఫ్ చేయి"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "అతిరూపించండి"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "అవరూపించండి"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "తెర చదువకాన్ని ఆన్ లేదా ఆఫ్ చేయి"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "తెర-పై కీబోర్డును ఆన్ లేక ఆఫ్ చేయి"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "పాఠము పరిమాణము పెంచు"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "పాఠము పరిమాణం తగ్గించు"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "అధిక వ్యత్యాసాన్ని ఆన్‌చేయి లేక ఆపు"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8366,10 +8334,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "ప్రారంభకాలు"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "సహాయ విహరిణి దించు"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "గణనపరికరాన్ని ప్రారంభించు"
@@ -8386,10 +8350,6 @@ msgstr "జాల విహారకాన్ని ప్రారంభిం�
 msgid "Home folder"
 msgstr "నివాస సంచయం"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "అన్వేషించు"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

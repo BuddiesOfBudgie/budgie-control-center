@@ -2220,14 +2220,6 @@ msgstr "Tikai lasāms"
 msgid "File System"
 msgstr "Datņu sistēma"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Iestatījumi"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Var mainīt iestatījumus"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6356,10 +6348,6 @@ msgstr "Integrācija"
 msgid "System features used by this application."
 msgstr "Sistēmas iespējas, ko izmanto šī lietotne."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Meklēt"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8472,37 +8460,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Iestatījumi;Uzstādījumi;Konfigurācija;Preferences;Settings;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Ieslēgt vai izslēgt tuvinājumu"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Tuvināt"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Tālināt"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Ieslēgt vai izslēgt ekrāna lasītāju"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Ieslēgt vai izslēgt ekrāna tastatūru"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Palielināt teksta izmēru"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Samazināt teksta izmēru"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Ieslēgt vai izslēgt augstu kontrastu"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8532,10 +8500,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Palaidēji"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Palaist palīdzības pārlūku"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Palaist kalkulatoru"
@@ -8552,10 +8516,6 @@ msgstr "Palaist tīmekļa pārlūku"
 msgid "Home folder"
 msgstr "Mājas mape"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Meklēt"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

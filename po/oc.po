@@ -2226,14 +2226,6 @@ msgstr "Lectura sola"
 msgid "File System"
 msgstr "Sistèma de fichièrs"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Paramètres"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Pòt modificar los reglatges"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6381,10 +6373,6 @@ msgstr "Integracion"
 msgid "System features used by this application."
 msgstr "Foncionalitats sistèma utilizadas per aquesta application."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Recercar"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8518,37 +8506,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferéncias;Paramètres;Reglatges;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Activar o desactivar lo zoom"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Zoom avant"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Zoom arrièr"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Activar o desactivar lo lector d'ecran"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Activar o desactivar lo clavièr visual"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Aumentar la talha del tèxte"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Reduire la talha del tèxte"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Activar o desactivar lo contraste elevat"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8578,10 +8546,6 @@ msgstr "Escafar las notificacions"
 msgid "Launchers"
 msgstr "Aviadors"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Aviar lo navigador d'ajuda"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Aviar la calculeta"
@@ -8598,10 +8562,6 @@ msgstr "Aviar lo navigador Web"
 msgid "Home folder"
 msgstr "Dorsièr personal"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Recercar"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

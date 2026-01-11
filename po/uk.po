@@ -2240,14 +2240,6 @@ msgstr "Лише читання"
 msgid "File System"
 msgstr "Файлова система"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Параметри"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Може змінювати налаштування"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6394,10 +6386,6 @@ msgstr "Інтеграція"
 msgid "System features used by this application."
 msgstr "Системні функції, що використовуються цією програмою."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Пошук"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8515,37 +8503,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Налаштування;Параметри;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Вимкнути або ввімкнути масштаб"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Наблизити"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Віддалити"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Увімкнути або вимкнути читач екрана"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Увімкнути або вимкнути екранну клавіатуру"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Збільшити розмір тексту"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Зменшити розмір тексту"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Увімкнути або вимкнути високий контраст"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8575,10 +8543,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Пускач"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Запустити переглядача довідки"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Запустити калькулятор"
@@ -8595,10 +8559,6 @@ msgstr "Запустити переглядача тенет"
 msgid "Home folder"
 msgstr "Домівка"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Пошук"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

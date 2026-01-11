@@ -2230,14 +2230,6 @@ msgstr "Sola lettura"
 msgid "File System"
 msgstr "File system"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Impostazioni"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Può modificare impostazioni"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6384,10 +6376,6 @@ msgstr "Integrazione"
 msgid "System features used by this application."
 msgstr "Funzionalità di sistema utilizzate da questa applicazione."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Cerca"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8499,37 +8487,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferenze;Impostazioni;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Attiva o disattiva l'ingrandimento"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Aumenta l'ingrandimento"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Riduci l'ingrandimento"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Attiva o disattiva il lettore di schermo"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Attiva o disattiva la tastiera a schermo"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Incrementa la dimensione del testo"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Diminuisci la dimensione del testo"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Attiva o disattiva il contrasto elevato"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8559,10 +8527,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Lanciatori"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Lancia il visualizzatore di manuali"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Lancia la calcolatrice"
@@ -8579,10 +8543,6 @@ msgstr "Lancia il browser web"
 msgid "Home folder"
 msgstr "Cartella home"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Cerca"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

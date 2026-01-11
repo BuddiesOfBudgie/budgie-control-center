@@ -2172,14 +2172,6 @@ msgstr "読み取り専用"
 msgid "File System"
 msgstr "ファイルシステム"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "設定"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "設定の変更"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6229,10 +6221,6 @@ msgstr "統合"
 msgid "System features used by this application."
 msgstr "このアプリケーションで使用するシステム機能です。"
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "検索"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8314,37 +8302,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferences;Settings;設定;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "ズームのオン/オフを切り替える"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "ズームイン（拡大）"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "ズームアウト（縮小）"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "スクリーンリーダーのオン/オフを切り替える"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "オンスクリーンキーボードのオン/オフを切り替える"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "文字を大きくする"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "文字を小さくする"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "ハイコントラストのオン/オフを切り替える"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8374,10 +8342,6 @@ msgstr "通知を消去"
 msgid "Launchers"
 msgstr "ランチャ"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "ヘルプブラウザを起動"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "電卓を起動"
@@ -8394,10 +8358,6 @@ msgstr "ウェブブラウザを起動"
 msgid "Home folder"
 msgstr "ホームフォルダ"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "検索"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

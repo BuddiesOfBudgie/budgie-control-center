@@ -2201,14 +2201,6 @@ msgstr "Nurlega"
 msgid "File System"
 msgstr "Dosiersistemo"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Agordoj"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Rajtas ŝanĝi agordojn"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6320,10 +6312,6 @@ msgstr "Integrigo"
 msgid "System features used by this application."
 msgstr "Sistemfunkcioj, kiujn uzas ĉi tiu aplikaĵo."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Serĉo"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8409,37 +8397,17 @@ msgstr ""
 msgid "Preferences;Settings;"
 msgstr "Preferoj;Agordoj;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Ŝalti aŭ malŝalti zomon"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Zomi"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Malzomi"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Ŝalti aŭ malŝalti la ekranlegilon"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Ŝalti aŭ malŝalti la ekranklavaron"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Pligrandigi la tekston"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Malpligrandigi la tekston"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Ŝalti aŭ malŝalti altan kontraston"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8469,10 +8437,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Lanĉiloj"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Lanĉi helpfoliumilon"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Lanĉi kalkulilon"
@@ -8489,10 +8453,6 @@ msgstr "Lanĉi retumilon"
 msgid "Home folder"
 msgstr "Hejmdosierujo"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Serĉi"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"

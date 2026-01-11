@@ -2193,14 +2193,6 @@ msgstr "Chỉ đọc"
 msgid "File System"
 msgstr "Hệ thống tập tin"
 
-#: panels/applications/cc-applications-panel.c:871
-#: panels/keyboard/01-launchers.xml.in:6
-msgid "Settings"
-msgstr "Cài đặt"
-
-#: panels/applications/cc-applications-panel.c:871
-msgid "Can change settings"
-msgstr "Không thể thay đổi các cài đặt"
 
 #: panels/applications/cc-applications-panel.c:873
 #, c-format
@@ -6315,10 +6307,6 @@ msgstr "Tích hợp"
 msgid "System features used by this application."
 msgstr "Tính năng hệ thống được sử dụng bởi ứng dụng này."
 
-#: panels/applications/cc-applications-panel.ui.h:14 shell/help-overlay.ui.h:3
-#: shell/cc-window.ui.h:3 panels/keyboard/01-launchers.xml.in:16
-msgid "Search"
-msgstr "Tìm kiếm"
 
 #: panels/applications/cc-applications-panel.ui.h:15
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
@@ -8462,37 +8450,17 @@ msgid "Preferences;Settings;"
 msgstr ""
 "Preferences;Tùy;thích;Tuy;thich;Cấu;hình;Cau;hinh;Settings;Thiết;lập;Thiet;lap;Cài;đặt;cai;dat;Tùy;chọn;Tuy;chon;Cá;ca;nhân;nhan;hóa;hoa;"
 
-#: panels/keyboard/50-accessibility.xml.in:4
-msgid "Turn zoom on or off"
-msgstr "Bật hoặc tắt thu phóng"
-
-#: panels/keyboard/50-accessibility.xml.in:6
-msgid "Zoom in"
-msgstr "Phóng to"
-
-#: panels/keyboard/50-accessibility.xml.in:8
-msgid "Zoom out"
-msgstr "Thu nhỏ"
-
 #: panels/keyboard/50-accessibility.xml.in:10
 msgid "Turn screen reader on or off"
 msgstr "Bật hoặc tắt trình đọc màn hình"
 
 #: panels/keyboard/50-accessibility.xml.in:12
-msgid "Turn on-screen keyboard on or off"
-msgstr "Bật hoặc tắt bàn phím ảo"
-
-#: panels/keyboard/50-accessibility.xml.in:14
 msgid "Increase text size"
 msgstr "Tăng cỡ chữ"
 
 #: panels/keyboard/50-accessibility.xml.in:16
 msgid "Decrease text size"
 msgstr "Giảm cỡ chữ"
-
-#: panels/keyboard/50-accessibility.xml.in:18
-msgid "High contrast on or off"
-msgstr "Bật hoặc tắt tương phản cao"
 
 #: panels/keyboard/01-input-sources.xml.in:8
 msgid "Switch to next input source"
@@ -8522,10 +8490,6 @@ msgstr ""
 msgid "Launchers"
 msgstr "Chạy phần mềm"
 
-#: panels/keyboard/01-launchers.xml.in:4
-msgid "Launch help browser"
-msgstr "Chạy trình duyệt trợ giúp"
-
 #: panels/keyboard/01-launchers.xml.in:8
 msgid "Launch calculator"
 msgstr "Chạy máy tính bỏ túi"
@@ -8542,10 +8506,6 @@ msgstr "Chạy trình duyệt web"
 msgid "Home folder"
 msgstr "Thư mục cá nhân"
 
-#: panels/keyboard/01-launchers.xml.in:16
-msgctxt "keybinding"
-msgid "Search"
-msgstr "Tìm kiếm"
 
 #: panels/keyboard/01-screenshot.xml.in:2
 msgid "Screenshots"
