@@ -69,8 +69,8 @@ sort_by_name_with_terms (GtkTreeModel  *model,
 
   for (i = 0; terms[i]; ++i)
     {
-      a_match = strstr (a_name, terms[i]) != NULL;
-      b_match = strstr (b_name, terms[i]) != NULL;
+      a_match = g_strstr_len (a_name, -1, terms[i]) != NULL;
+      b_match = g_strstr_len (b_name, -1, terms[i]) != NULL;
 
       if (a_match && !b_match)
         return -1;
@@ -94,7 +94,7 @@ count_matches (gchar **keywords,
 
   for (i = 0; terms[i]; ++i)
     for (j = 0; keywords[j]; ++j)
-      if (strstr (keywords[j], terms[i]))
+      if (g_strstr_len (keywords[j], -1, terms[i]))
         c += 1;
 
   return c;
@@ -355,10 +355,10 @@ cc_shell_model_iter_matches_search (CcShellModel *model,
   g_debug ("  Name: %s", name ? name : "(null)");
   g_debug ("  Description: %s", description ? description : "(null)");
 
-  result = (strstr (name, term) != NULL);
+  result = (g_strstr_len (name, -1, term) != NULL);
 
   if (!result && description)
-    result = (strstr (description, term) != NULL);
+    result = (g_strstr_len (description, -1, term) != NULL);
 
   if (!result && keywords)
     {
@@ -368,7 +368,7 @@ cc_shell_model_iter_matches_search (CcShellModel *model,
       for (i = 0; !result && keywords[i]; i++)
         {
           g_debug ("    Keyword[%d]: '%s' - checking if starts with '%s'", i, keywords[i], term);
-          result = (strstr (keywords[i], term) == keywords[i]);
+          result = (g_strstr_len (keywords[i], -1, term) == keywords[i]);
           if (result)
             g_debug ("    MATCH FOUND!");
         }
