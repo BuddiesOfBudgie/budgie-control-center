@@ -57,6 +57,7 @@ struct _CcBackgroundPanel
   CcBackgroundItem *current_background;
 
   CcBackgroundChooser *background_chooser;
+  GtkMenuButton *style_button;
   GtkButton *add_picture_button;
   CcBackgroundPreview *desktop_preview;
 };
@@ -218,14 +219,119 @@ cc_background_panel_get_help_uri (CcPanel *panel)
 }
 
 static void
+on_style_radio_toggled (GtkToggleButton *radio,
+                       CcBackgroundPanel *self)
+{
+  GDesktopBackgroundStyle style;
+
+  if (!gtk_toggle_button_get_active (radio))
+    return;
+
+  style = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (radio), "style"));
+  g_settings_set_enum (self->settings, WP_OPTIONS_KEY, style);
+  g_settings_apply (self->settings);
+}
+
+/* Add this helper function to create the popover */
+static GtkWidget *
+create_style_popover (CcBackgroundPanel *self)
+{
+  GtkWidget *popover;
+  GtkWidget *box;
+  GtkWidget *radio_centered, *radio_scaled, *radio_stretched;
+  GtkWidget *radio_zoom, *radio_wallpaper;
+  GSList *group = NULL;
+  GDesktopBackgroundStyle current_style;
+
+  popover = gtk_popover_new (GTK_WIDGET (self->style_button));
+
+  box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+  gtk_container_set_border_width (GTK_CONTAINER (box), 12);
+  gtk_widget_show (box);
+
+  current_style = g_settings_get_enum (self->settings, WP_OPTIONS_KEY);
+
+  /* Centered */
+  radio_centered = gtk_radio_button_new_with_label (group, _("Centered"));
+  group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio_centered));
+  g_object_set_data (G_OBJECT (radio_centered), "style",
+                    GINT_TO_POINTER (G_DESKTOP_BACKGROUND_STYLE_CENTERED));
+  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio_centered),
+                                current_style == G_DESKTOP_BACKGROUND_STYLE_CENTERED);
+  g_signal_connect (radio_centered, "toggled",
+                   G_CALLBACK (on_style_radio_toggled), self);
+  gtk_widget_show (radio_centered);
+  gtk_box_pack_start (GTK_BOX (box), radio_centered, FALSE, FALSE, 0);
+
+  /* Scaled */
+  radio_scaled = gtk_radio_button_new_with_label (group, _("Scaled"));
+  group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio_scaled));
+  g_object_set_data (G_OBJECT (radio_scaled), "style",
+                    GINT_TO_POINTER (G_DESKTOP_BACKGROUND_STYLE_SCALED));
+  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio_scaled),
+                                current_style == G_DESKTOP_BACKGROUND_STYLE_SCALED);
+  g_signal_connect (radio_scaled, "toggled",
+                   G_CALLBACK (on_style_radio_toggled), self);
+  gtk_widget_show (radio_scaled);
+  gtk_box_pack_start (GTK_BOX (box), radio_scaled, FALSE, FALSE, 0);
+
+  /* Stretched */
+  radio_stretched = gtk_radio_button_new_with_label (group, _("Stretched"));
+  group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio_stretched));
+  g_object_set_data (G_OBJECT (radio_stretched), "style",
+                    GINT_TO_POINTER (G_DESKTOP_BACKGROUND_STYLE_STRETCHED));
+  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio_stretched),
+                                current_style == G_DESKTOP_BACKGROUND_STYLE_STRETCHED);
+  g_signal_connect (radio_stretched, "toggled",
+                   G_CALLBACK (on_style_radio_toggled), self);
+  gtk_widget_show (radio_stretched);
+  gtk_box_pack_start (GTK_BOX (box), radio_stretched, FALSE, FALSE, 0);
+
+  /* Zoom */
+  radio_zoom = gtk_radio_button_new_with_label (group, _("Zoom"));
+  group = gtk_radio_button_get_group (GTK_RADIO_BUTTON (radio_zoom));
+  g_object_set_data (G_OBJECT (radio_zoom), "style",
+                    GINT_TO_POINTER (G_DESKTOP_BACKGROUND_STYLE_ZOOM));
+  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio_zoom),
+                                current_style == G_DESKTOP_BACKGROUND_STYLE_ZOOM);
+  g_signal_connect (radio_zoom, "toggled",
+                   G_CALLBACK (on_style_radio_toggled), self);
+  gtk_widget_show (radio_zoom);
+  gtk_box_pack_start (GTK_BOX (box), radio_zoom, FALSE, FALSE, 0);
+
+  /* Wallpaper */
+  radio_wallpaper = gtk_radio_button_new_with_label (group, _("Wallpaper"));
+  g_object_set_data (G_OBJECT (radio_wallpaper), "style",
+                    GINT_TO_POINTER (G_DESKTOP_BACKGROUND_STYLE_WALLPAPER));
+  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (radio_wallpaper),
+                                current_style == G_DESKTOP_BACKGROUND_STYLE_WALLPAPER);
+  g_signal_connect (radio_wallpaper, "toggled",
+                   G_CALLBACK (on_style_radio_toggled), self);
+  gtk_widget_show (radio_wallpaper);
+  gtk_box_pack_start (GTK_BOX (box), radio_wallpaper, FALSE, FALSE, 0);
+
+  gtk_container_add (GTK_CONTAINER (popover), box);
+
+  return popover;
+}
+
+static void
 cc_background_panel_constructed (GObject *object)
 {
   CcBackgroundPanel *self;
   CcShell *shell;
+  GtkWidget *popover;
 
   self = CC_BACKGROUND_PANEL (object);
   shell = cc_panel_get_shell (CC_PANEL (self));
 
+  cc_shell_embed_widget_in_header (shell, GTK_WIDGET (self->add_picture_button), GTK_POS_RIGHT);
+
+  /* Create style button */
+  popover = create_style_popover (self);
+  gtk_menu_button_set_popover (self->style_button, popover);
+
+  cc_shell_embed_widget_in_header (shell, GTK_WIDGET (self->style_button), GTK_POS_RIGHT);
   cc_shell_embed_widget_in_header (shell, GTK_WIDGET (self->add_picture_button), GTK_POS_RIGHT);
 
   G_OBJECT_CLASS (cc_background_panel_parent_class)->constructed (object);
@@ -272,6 +378,7 @@ cc_background_panel_class_init (CcBackgroundPanelClass *klass)
   gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/background/cc-background-panel.ui");
 
   gtk_widget_class_bind_template_child (widget_class, CcBackgroundPanel, add_picture_button);
+  gtk_widget_class_bind_template_child (widget_class, CcBackgroundPanel, style_button);
   gtk_widget_class_bind_template_child (widget_class, CcBackgroundPanel, background_chooser);
   gtk_widget_class_bind_template_child (widget_class, CcBackgroundPanel, desktop_preview);
 
@@ -299,7 +406,7 @@ cc_background_panel_init (CcBackgroundPanel *panel)
 
   panel->settings = g_settings_new (WP_PATH_ID);
   g_settings_delay (panel->settings);
- 
+
   panel->lock_settings = g_settings_new (WP_LOCK_PATH_ID);
   g_settings_delay (panel->lock_settings);
 
