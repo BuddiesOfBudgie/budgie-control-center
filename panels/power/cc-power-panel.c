@@ -23,7 +23,7 @@
 
 #include <libupower-glib/upower.h>
 #include <glib/gi18n.h>
-#include <gnome-settings-daemon/gsd-enums.h>
+#include <gnome-settings-daemon-50/gnome-settings-daemon/gsd-enums.h>
 #include <gio/gdesktopappinfo.h>
 #include <handy.h>
 

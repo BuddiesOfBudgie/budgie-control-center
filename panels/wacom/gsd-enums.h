@@ -4,4 +4,4 @@
  * prefixes this, we need a little help to avoid this
  * one line difference */
 
-#include <gnome-settings-daemon/gsd-enums.h>
+#include <gnome-settings-daemon-50/gnome-settings-daemon/gsd-enums.h>
