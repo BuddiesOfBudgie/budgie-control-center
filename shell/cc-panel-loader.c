@@ -33,9 +33,6 @@
 /* Extension points */
 extern GType cc_applications_panel_get_type (void);
 extern GType cc_background_panel_get_type (void);
-#ifdef BUILD_BLUETOOTH
-extern GType cc_bluetooth_panel_get_type (void);
-#endif /* BUILD_BLUETOOTH */
 //extern GType cc_color_panel_get_type (void);
 extern GType cc_date_time_panel_get_type (void);
 extern GType cc_default_apps_panel_get_type (void);
@@ -102,9 +99,6 @@ static CcPanelLoaderVtable default_panels[] =
 {
   PANEL_TYPE("applications",     cc_applications_panel_get_type,         NULL),
   PANEL_TYPE("background",       cc_background_panel_get_type,           NULL),
-#ifdef BUILD_BLUETOOTH
-  PANEL_TYPE("bluetooth",        cc_bluetooth_panel_get_type,            NULL),
-#endif
   //PANEL_TYPE("camera",           cc_camera_panel_get_type,               NULL),
   //PANEL_TYPE("color",            cc_color_panel_get_type,                NULL),
   PANEL_TYPE("datetime",         cc_date_time_panel_get_type,            NULL),
