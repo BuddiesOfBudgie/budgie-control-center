@@ -231,6 +231,8 @@ cc_application_startup (GApplication *application)
   G_APPLICATION_CLASS (cc_application_parent_class)->startup (application);
 
   hdy_init ();
+  hdy_style_manager_set_color_scheme (hdy_style_manager_get_default (),
+                                      HDY_COLOR_SCHEME_PREFER_DARK);
 
   // Initialize keyfile with the provided path
   if (!initialize_keyfile()) {
