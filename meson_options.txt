@@ -1,5 +1,4 @@
 option('ssh', type: 'boolean', value: false, description: 'build with SSH Socket based connection for remote login')
-option('cheese', type: 'boolean', value: true, description: 'build with cheese webcam support')
 option('documentation', type: 'boolean', value: false, description: 'build documentation')
 option('ibus', type: 'boolean', value: true, description: 'build with IBus support')
 option('privileged_group', type: 'string', value: 'wheel', description: 'name of group that has elevated permissions')
@@ -9,4 +8,3 @@ option('wayland', type: 'boolean', value: false, description: 'build with Waylan
 option('profile', type: 'combo', choices: ['default','development'], value: 'default')
 option('malcontent', type: 'boolean', value: false, description: 'build with malcontent support')
 option('dark_mode_distributor_logo', type: 'string', description: 'absolute path to distributor logo dark mode variant')
-option('bluetooth', type: 'boolean', value: true, description: 'build with bluetooth support')
