@@ -184,17 +184,6 @@ config_h.set10('HAVE_CUPS_HTTPCONNECT2',
                cc.has_function('httpConnect2', dependencies: cups_dep),
                description: 'Define if httpConnect2() is available in CUPS')
 
-# Optional dependency for the user accounts panel
-enable_cheese = get_option('cheese')
-if enable_cheese
-  cheese_deps = [
-    dependency('cheese', version: '>= 3.28.0'),
-    dependency('cheese-gtk', version: '>= 3.5.91')
-  ]
-endif
-config_h.set('HAVE_CHEESE', enable_cheese,
-             description: 'Define to 1 to enable cheese webcam support')
-
 # Remote login use SOCKET based SSH instead of starting 'eagerly'
 enable_sshsocket = get_option('ssh')
 config_h.set('HAVE_SSHSOCKET', enable_sshsocket,
@@ -259,21 +248,10 @@ if host_is_linux_not_s390
   config_h.set('HAVE_WACOM_3D_STYLUS', libwacom_dep.version().version_compare('>= 0.27'),
                description: 'Define to 1 if libwacom provides definition for 3D styli')
 else
-  message('Bluetooth and Wacom panels will not be built (no USB support on this platform)')
+  message('Wacom panels will not be built (no USB support on this platform)')
   message('Thunderbolt panel will not be built (not supported on this platform)')
 endif
 
-enable_bluetooth = get_option('bluetooth')
-if host_is_linux_not_s390 and enable_bluetooth
-  with_bluetooth = 1
-  gnome_bluetooth_dep = dependency('gnome-bluetooth-1.0', version: '>= 3.18.2')
-  config_h.set('BUILD_BLUETOOTH', with_bluetooth,
-             description: 'Define to 1 to build the Bluetooth panel')
-else
-  with_bluetooth = 0
-endif
-config_h.set('HAVE_BLUETOOTH', with_bluetooth,
-             description: 'Define to 1 if bluetooth support is available')
 config_h.set('BUILD_WACOM', host_is_linux_not_s390,
              description: 'Define to 1 to build the Wacom panel')
 config_h.set('HAVE_WACOM', host_is_linux_not_s390,
@@ -326,13 +304,11 @@ summary({
 })
 
 summary({
-  'GNOME Bluetooth': host_is_linux_not_s390,
   'NetworkManager': host_is_linux,
   'Wacom': host_is_linux_not_s390,
 }, section: 'Dependencies')
 
 summary({
-  'Cheese': enable_cheese,
   'IBus': enable_ibus,
   'Snap': enable_snap,
   'Malcontent': enable_malcontent,

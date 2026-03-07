@@ -31,12 +31,6 @@
 #define GNOME_DESKTOP_USE_UNSTABLE_API
 #include <libgnome-desktop/gnome-desktop-thumbnail.h>
 
-#ifdef HAVE_CHEESE
-#include <cheese-avatar-chooser.h>
-#include <cheese-camera-device.h>
-#include <cheese-camera-device-monitor.h>
-#endif /* HAVE_CHEESE */
-
 #include "cc-avatar-chooser.h"
 #include "cc-crop-area.h"
 #include "user-utils.h"
@@ -53,12 +47,6 @@ struct _CcAvatarChooser {
         GtkWidget *user_flowbox;
         GtkWidget *flowbox;
         GtkWidget *take_picture_button;
-
-#ifdef HAVE_CHEESE
-        CheeseCameraDeviceMonitor *monitor;
-        GCancellable *cancellable;
-        guint num_cameras;
-#endif /* HAVE_CHEESE */
 
         GnomeDesktopThumbnailFactory *thumb_factory;
         GListStore *faces;
@@ -274,74 +262,6 @@ cc_avatar_chooser_select_file (CcAvatarChooser *self)
         gtk_window_present (GTK_WINDOW (chooser));
 }
 
-#ifdef HAVE_CHEESE
-static gboolean
-destroy_chooser (GtkWidget *chooser)
-{
-        gtk_widget_destroy (chooser);
-        return FALSE;
-}
-
-static void
-webcam_response_cb (CcAvatarChooser  *self,
-                    int               response,
-                    GtkDialog        *dialog)
-{
-        if (response == GTK_RESPONSE_ACCEPT) {
-                g_autoptr(GdkPixbuf) pb = NULL;
-                g_autoptr(GdkPixbuf) pb2 = NULL;
-
-                g_object_get (G_OBJECT (dialog), "pixbuf", &pb, NULL);
-                pb2 = gdk_pixbuf_scale_simple (pb, PIXEL_SIZE, PIXEL_SIZE, GDK_INTERP_BILINEAR);
-
-                set_user_icon_data (self->user, pb2);
-        }
-        if (response != GTK_RESPONSE_DELETE_EVENT &&
-            response != GTK_RESPONSE_NONE)
-                g_idle_add ((GSourceFunc) destroy_chooser, dialog);
-
-        gtk_popover_popdown (GTK_POPOVER (self));
-}
-
-static void
-webcam_icon_selected (CcAvatarChooser *self)
-{
-        GtkWidget *window;
-
-        window = cheese_avatar_chooser_new ();
-        gtk_window_set_transient_for (GTK_WINDOW (window),
-                                      GTK_WINDOW (gtk_widget_get_toplevel (self->popup_button)));
-        gtk_window_set_modal (GTK_WINDOW (window), TRUE);
-        g_signal_connect_object (G_OBJECT (window), "response",
-                                 G_CALLBACK (webcam_response_cb), self, G_CONNECT_SWAPPED);
-        gtk_widget_show (window);
-}
-
-static void
-update_photo_menu_status (CcAvatarChooser *self)
-{
-        if (self->num_cameras == 0)
-                gtk_widget_set_visible (self->take_picture_button, FALSE);
-        else
-                gtk_widget_set_sensitive (self->take_picture_button, TRUE);
-}
-
-static void
-device_added (CcAvatarChooser *self)
-{
-        self->num_cameras++;
-        update_photo_menu_status (self);
-}
-
-static void
-device_removed (CcAvatarChooser *self)
-{
-        self->num_cameras--;
-        update_photo_menu_status (self);
-}
-
-#endif /* HAVE_CHEESE */
-
 static void
 face_widget_activated (CcAvatarChooser *self,
                        GtkFlowBoxChild *child)
@@ -385,33 +305,6 @@ create_face_widget (gpointer item,
 
         return image;
 }
-
-#ifdef HAVE_CHEESE
-static void
-setup_cheese_camera_device_monitor (CcAvatarChooser *self)
-{
-        g_signal_connect_object (G_OBJECT (self->monitor), "added", G_CALLBACK (device_added), self, G_CONNECT_SWAPPED);
-        g_signal_connect_object (G_OBJECT (self->monitor), "removed", G_CALLBACK (device_removed), self, G_CONNECT_SWAPPED);
-        cheese_camera_device_monitor_coldplug (self->monitor);
-        update_photo_menu_status (self);
-}
-
-static void
-cheese_camera_device_monitor_new_cb (GObject *source,
-                                     GAsyncResult *result,
-                                     gpointer user_data)
-{
-        CcAvatarChooser *self = user_data;
-        GObject *ret;
-
-        ret = g_async_initable_new_finish (G_ASYNC_INITABLE (source), result, NULL);
-        if (ret == NULL)
-                return;
-
-        self->monitor = CHEESE_CAMERA_DEVICE_MONITOR (ret);
-        setup_cheese_camera_device_monitor (self);
-}
-#endif /* HAVE_CHEESE */
 
 static GStrv
 get_settings_facesdirs (void)
@@ -530,18 +423,6 @@ setup_photo_popup (CcAvatarChooser *self)
                 g_auto(GStrv) system_facesdirs = get_system_facesdirs ();
                 add_faces_from_dirs (self->faces, system_facesdirs, FALSE);
         }
-
-#ifdef HAVE_CHEESE
-        gtk_widget_set_visible (self->take_picture_button, TRUE);
-
-        self->cancellable = g_cancellable_new ();
-        g_async_initable_new_async (CHEESE_TYPE_CAMERA_DEVICE_MONITOR,
-                                    G_PRIORITY_DEFAULT,
-                                    self->cancellable,
-                                    cheese_camera_device_monitor_new_cb,
-                                    self,
-                                    NULL);
-#endif /* HAVE_CHEESE */
 }
 
 static void
@@ -597,11 +478,6 @@ cc_avatar_chooser_dispose (GObject *object)
         CcAvatarChooser *self = CC_AVATAR_CHOOSER (object);
 
         g_clear_object (&self->thumb_factory);
-#ifdef HAVE_CHEESE
-        g_cancellable_cancel (self->cancellable);
-        g_clear_object (&self->cancellable);
-        g_clear_object (&self->monitor);
-#endif
         g_clear_object (&self->user);
 
         G_OBJECT_CLASS (cc_avatar_chooser_parent_class)->dispose (object);
@@ -626,9 +502,6 @@ cc_avatar_chooser_class_init (CcAvatarChooserClass *klass)
         gtk_widget_class_bind_template_child (wclass, CcAvatarChooser, take_picture_button);
 
         gtk_widget_class_bind_template_callback (wclass, cc_avatar_chooser_select_file);
-#ifdef HAVE_CHEESE
-        gtk_widget_class_bind_template_callback (wclass, webcam_icon_selected);
-#endif
 
         oclass->dispose = cc_avatar_chooser_dispose;
 }
