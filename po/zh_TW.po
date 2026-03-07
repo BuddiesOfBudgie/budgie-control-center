@@ -5,6 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Dwong33, 2026
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-17 21:26+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Dwong33, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/buddiesofbudgie/teams/129844/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -299,7 +300,7 @@ msgstr "直向倒轉"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "自動設定"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:692
@@ -320,7 +321,7 @@ msgstr "無法載入 ui：%s"
 
 #: panels/printers/cc-printers-panel.c:1314
 msgid "Unlock to Add Printers and Change Settings"
-msgstr ""
+msgstr "解鎖以新增印表機和更改設定"
 
 #. Translators: Job's state (job is waiting to be printed)
 #: panels/printers/pp-job-row.c:137
@@ -373,7 +374,7 @@ msgstr "已完成"
 #. Translators: Clicking this button prioritizes printing of this print job
 #: panels/printers/pp-job-row.c:179
 msgid "Move this job to the top of the queue"
-msgstr ""
+msgstr "將此工作移動到序列之首"
 
 #. Translators: The found device is a JetDirect printer
 #: panels/printers/pp-host.c:478
@@ -655,7 +656,7 @@ msgstr "電池"
 #. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
 #: panels/power/cc-power-panel.c:386
 msgid "UPS"
-msgstr ""
+msgstr "不斷電裝置（UPS）"
 
 #. TRANSLATORS: secondary battery, misc
 #: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
@@ -722,7 +723,7 @@ msgstr[0] "%d 分鐘"
 #: panels/power/cc-power-panel.c:985
 msgctxt "Idle time"
 msgid "Never"
-msgstr ""
+msgstr "從不"
 
 #: panels/power/cc-power-panel.c:1071
 msgid "Automatic suspend"
@@ -731,40 +732,40 @@ msgstr "自動暫停"
 #: panels/power/cc-power-panel.c:1171
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
-msgstr ""
+msgstr "因溫度過高緣故，效能模式暫時停用"
 
 #: panels/power/cc-power-panel.c:1173
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
-msgstr ""
+msgstr "你的手提電腦放在腿上？效能模式暫時停用。請移動裝置到平坦的地方恢復使用"
 
 #: panels/power/cc-power-panel.c:1175
 msgid "Performance mode temporarily disabled."
-msgstr ""
+msgstr "效能模式暫時停用"
 
 #: panels/power/cc-power-panel.c:1218
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
-msgstr ""
+msgstr "電池容量低：已啟動節能模式。此前的電源模式會在電池充滿後恢復。"
 
 #. translators: "%s" is an application name
 #: panels/power/cc-power-panel.c:1226
 #, c-format
 msgid "Power Saver mode activated by “%s”."
-msgstr ""
+msgstr "「%s」啟用了節能模式"
 
 #. translators: "%s" is an application name
 #: panels/power/cc-power-panel.c:1230
 #, c-format
 msgid "Performance mode activated by “%s”."
-msgstr ""
+msgstr "「%s」啟用了效能模式"
 
 #: panels/power/cc-power-profile-row.c:132
 msgctxt "Power profile"
 msgid "Performance"
-msgstr ""
+msgstr "效能模式"
 
 #: panels/power/cc-power-profile-row.c:133
 msgid "High performance and power usage."
@@ -773,7 +774,7 @@ msgstr "高效能與高度電量使用。"
 #: panels/power/cc-power-profile-row.c:136
 msgctxt "Power profile"
 msgid "Balanced"
-msgstr ""
+msgstr "平衡模式"
 
 #: panels/power/cc-power-profile-row.c:137
 msgid "Standard performance and power usage."
@@ -782,7 +783,7 @@ msgstr "標準效能與電量使用。"
 #: panels/power/cc-power-profile-row.c:140
 msgctxt "Power profile"
 msgid "Power Saver"
-msgstr ""
+msgstr "節能模式"
 
 #: panels/power/cc-power-profile-row.c:141
 msgid "Reduced performance and power usage."
@@ -1222,27 +1223,27 @@ msgstr "目前的背景"
 #. Centered
 #: panels/background/cc-background-panel.c:255
 msgid "Centered"
-msgstr ""
+msgstr "置中"
 
 #. Scaled
 #: panels/background/cc-background-panel.c:267
 msgid "Scaled"
-msgstr ""
+msgstr "縮放"
 
 #. Stretched
 #: panels/background/cc-background-panel.c:279
 msgid "Stretched"
-msgstr ""
+msgstr "延展"
 
 #. Zoom
 #: panels/background/cc-background-panel.c:291
 msgid "Zoom"
-msgstr ""
+msgstr "放大"
 
 #. Wallpaper
 #: panels/background/cc-background-panel.c:303
 msgid "Wallpaper"
-msgstr ""
+msgstr "牆紙"
 
 #: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
@@ -1267,7 +1268,7 @@ msgstr "沒有"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:381
 msgid "Layout default"
-msgstr ""
+msgstr "預設版面"
 
 #: panels/keyboard/cc-keyboard-manager.c:492
 #: panels/keyboard/cc-keyboard-manager.c:500
@@ -1331,7 +1332,7 @@ msgstr "可以用來輸入額外字元的代用字元。這些字元通常會以
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "沒有"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -1404,13 +1405,13 @@ msgstr "列印畫面"
 msgid ""
 "Input sources can be switched using the %s keyboard shortcut.\n"
 "This can be changed in the keyboard shortcut settings."
-msgstr ""
+msgstr "可以使用 %s 快捷鍵以改變輸入來源。此快捷鍵可以在鍵盤設定中更改。"
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:283
 #, c-format
 msgid "%d modified"
 msgid_plural "%d modified"
-msgstr[0] ""
+msgstr[0] "已更改 %d"
 
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:306
 #: panels/keyboard/cc-keyboard-shortcut-dialog.c:322
@@ -1551,7 +1552,7 @@ msgstr "需要索取裝置才能執行此動作"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:247
 msgid "the device is already claimed by another process"
-msgstr "該裝置已經被其他程序索取"
+msgstr "該裝置已經被其他程式索取"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:249
 msgid "you do not have permission to perform the action"
@@ -1582,14 +1583,14 @@ msgstr "無法列出指紋：%s"
 #. enabled using your pam authorization module'
 #: panels/user-accounts/cc-fingerprint-dialog.c:627
 msgid "your pam authorization module"
-msgstr ""
+msgstr "你的 pam 認證模組"
 
 #. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
 #. an executable that is calculated when the app is running
 #: panels/user-accounts/cc-fingerprint-dialog.c:659
 #, c-format
 msgid "Ensure fprintd has been enabled using %s"
-msgstr ""
+msgstr "確保 fprintd 已被 %s 啟用"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
@@ -1655,7 +1656,7 @@ msgstr "指紋裝置儲存空間已滿"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:887
 msgid "Fingerprint is a duplicate"
-msgstr ""
+msgstr "重複的指紋"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
@@ -3424,7 +3425,7 @@ msgstr "必須至少有 8 個字元"
 #, c-format
 msgid "Must have a maximum of %d character"
 msgid_plural "Must have a maximum of %d characters"
-msgstr[0] ""
+msgstr[0] "必須最多有 %d 個字元"
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
@@ -3498,281 +3499,281 @@ msgstr "需要先執行 NetworkManager。"
 
 #: panels/wwan/cc-wwan-device.c:988
 msgid "2G Only"
-msgstr ""
+msgstr "僅限 2G"
 
 #: panels/wwan/cc-wwan-device.c:991
 msgid "3G Only"
-msgstr ""
+msgstr "僅限 3G"
 
 #: panels/wwan/cc-wwan-device.c:994
 msgid "4G Only"
-msgstr ""
+msgstr "僅限 4G"
 
 #: panels/wwan/cc-wwan-device.c:997
 msgid "5G Only"
-msgstr ""
+msgstr "僅限 5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G (偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1009
 msgid "2G, 3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G, 4G (偏好), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1011
 msgid "2G, 3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G, 3G(偏好), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1013
 msgid "2G (Preferred), 3G, 4G, 5G"
-msgstr ""
+msgstr "2G (偏好), 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1022
 msgid "2G, 3G, 4G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 4G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1024
 msgid "2G, 3G (Preferred), 4G"
-msgstr ""
+msgstr "2G, 3G (偏好), 4G"
 
 #: panels/wwan/cc-wwan-device.c:1026
 msgid "2G (Preferred), 3G, 4G"
-msgstr ""
+msgstr "2G(偏好), 3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1028
 msgid "2G, 3G, 4G"
-msgstr ""
+msgstr "2G, 3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1035
 msgid "3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 4G, 5G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1037
 msgid "3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "3G, 4G(偏好), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1039
 msgid "3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "3G(偏好), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
-msgstr ""
+msgstr "3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 4G, 5G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1050
 msgid "2G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 4G(偏好), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1052
 msgid "2G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G(偏好), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
-msgstr ""
+msgstr "2G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 5G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1063
 msgid "2G, 3G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G(偏好), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1065
 msgid "2G (Preferred), 3G, 5G"
-msgstr ""
+msgstr "2G(偏好), 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
-msgstr ""
+msgstr "2G, 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1073
 msgid "3G, 4G (Preferred)"
-msgstr ""
+msgstr "3G, 4G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1075
 msgid "3G (Preferred), 4G"
-msgstr ""
+msgstr "3G(偏好), 4G"
 
 #: panels/wwan/cc-wwan-device.c:1077
 msgid "3G, 4G"
-msgstr ""
+msgstr "3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1083
 msgid "2G, 4G (Preferred)"
-msgstr ""
+msgstr "2G, 4G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1085
 msgid "2G (Preferred), 4G"
-msgstr ""
+msgstr "2G(偏好), 4G"
 
 #: panels/wwan/cc-wwan-device.c:1087
 msgid "2G, 4G"
-msgstr ""
+msgstr "2G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1093
 msgid "2G, 3G (Preferred)"
-msgstr ""
+msgstr "2G, 3G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1095
 msgid "2G (Preferred), 3G"
-msgstr ""
+msgstr "2G(偏好), 3G"
 
 #: panels/wwan/cc-wwan-device.c:1097
 msgid "2G, 3G"
-msgstr ""
+msgstr "2G, 3G"
 
 #: panels/wwan/cc-wwan-device.c:1103
 msgid "2G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 5G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1105
 msgid "2G (Preferred), 5G"
-msgstr ""
+msgstr "2G(偏好), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
-msgstr ""
+msgstr "2G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 5G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1115
 msgid "3G (Preferred), 5G"
-msgstr ""
+msgstr "3G(偏好), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
-msgstr ""
+msgstr "3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
-msgstr ""
+msgstr "4G, 5G(偏好)"
 
 #: panels/wwan/cc-wwan-device.c:1125
 msgid "4G (Preferred), 5G"
-msgstr ""
+msgstr "4G(偏好), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
-msgstr ""
+msgstr "4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
 msgid "Unknown"
-msgstr ""
+msgstr "未知"
 
 #: panels/wwan/cc-wwan-details-dialog.c:81
 msgid "Not Registered"
-msgstr ""
+msgstr "並未登記"
 
 #: panels/wwan/cc-wwan-details-dialog.c:85
 msgid "Registered"
-msgstr ""
+msgstr "已登記"
 
 #: panels/wwan/cc-wwan-details-dialog.c:89
 msgid "Roaming"
-msgstr ""
+msgstr "漫遊"
 
 #: panels/wwan/cc-wwan-details-dialog.c:93
 msgid "Searching"
-msgstr ""
+msgstr "搜尋中"
 
 #: panels/wwan/cc-wwan-details-dialog.c:97
 msgid "Denied"
-msgstr ""
+msgstr "已拒絕"
 
 #: panels/wwan/cc-wwan-panel.c:453 panels/wwan/cc-wwan-panel.c:482
 #, c-format
 msgid "SIM %d"
-msgstr ""
+msgstr "SIM %d"
 
 #: panels/wwan/cc-wwan-device-page.c:188
 msgid "Unlock SIM card"
-msgstr ""
+msgstr "解鎖 SIM 卡"
 
 #: panels/wwan/cc-wwan-device-page.c:189 panels/wwan/cc-wwan-device-page.c:237
 msgid "Unlock"
-msgstr ""
+msgstr "解鎖"
 
 #: panels/wwan/cc-wwan-device-page.c:194
 #, c-format
 msgid "Please provide PIN code for SIM %d"
-msgstr ""
+msgstr "請提供 SIM %d 的 PIN 碼"
 
 #: panels/wwan/cc-wwan-device-page.c:195
 msgid "Enter PIN to unlock your SIM card"
-msgstr ""
+msgstr "請輸入 PIN 以解鎖你的SIM卡"
 
 #: panels/wwan/cc-wwan-device-page.c:199
 #, c-format
 msgid "Please provide PUK code for SIM %d"
-msgstr ""
+msgstr "請提供 SIM %d 的 PUK 碼"
 
 #: panels/wwan/cc-wwan-device-page.c:200
 msgid "Enter PUK to unlock your SIM card"
-msgstr ""
+msgstr "請輸入 PUK 以解鎖你的SIM卡"
 
 #: panels/wwan/cc-wwan-device-page.c:218
 #, c-format
 msgid "Wrong password entered. You have %1$u try left"
 msgid_plural "Wrong password entered. You have %1$u tries left"
-msgstr[0] ""
+msgstr[0] "密碼錯誤，尚餘 %1$u 次再試機會"
 
 #: panels/wwan/cc-wwan-device-page.c:221
 #, c-format
 msgid "You have %u try left"
 msgid_plural "You have %u tries left"
-msgstr[0] ""
+msgstr[0] "尚餘 %1$u 次再試機會"
 
 #: panels/wwan/cc-wwan-device-page.c:226
 msgid "Wrong password entered."
-msgstr ""
+msgstr "密碼錯誤"
 
 #: panels/wwan/cc-wwan-device-page.c:271
 msgid "PUK code should be an 8 digit number"
-msgstr ""
+msgstr "PUK 碼應該是8位數字"
 
 #: panels/wwan/cc-wwan-device-page.c:295
 msgid "Enter New PIN"
-msgstr ""
+msgstr "輸入新的 PIN"
 
 #: panels/wwan/cc-wwan-device-page.c:299
 msgid "PIN code should be a 4-8 digit number"
-msgstr ""
+msgstr "PIN 應該是4至8位數字"
 
 #: panels/wwan/cc-wwan-device-page.c:317
 msgid "Unlocking…"
-msgstr ""
+msgstr "解鎖中"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.c:230
 #: panels/wwan/cc-wwan-mode-dialog.ui.h:3
 #: panels/wwan/cc-wwan-network-dialog.ui.h:7
 msgid "_Set"
-msgstr ""
+msgstr "_設定"
 
 #: panels/wwan/cc-wwan-data.c:547
 msgid "Operation Cancelled"
-msgstr ""
+msgstr "已取消作業"
 
 #: panels/wwan/cc-wwan-data.c:550
 msgid "<b>Error:</b> Access denied changing settings"
-msgstr ""
+msgstr "<b>錯誤：</b> 並無權限改變設定"
 
 #: panels/wwan/cc-wwan-data.c:553
 msgid "<b>Error:</b> Mobile Equipment Error"
-msgstr ""
+msgstr "<b>錯誤：</b> 行動裝置錯誤"
 
 #. Translators: This is the full date and time format used in 12-hour mode.
 #: panels/datetime/cc-datetime-panel.c:262
@@ -3984,15 +3985,15 @@ msgstr "傳送技術問題的報告有助於我們改進 %s。報告是以匿名
 
 #: panels/usage/cc-usage-panel.c:154
 msgid "Empty all items from Trash?"
-msgstr "要清除垃圾桶中所有的項目？"
+msgstr "要清除回收筒中所有的項目？"
 
 #: panels/usage/cc-usage-panel.c:155
 msgid "All items in the Trash will be permanently deleted."
-msgstr "所有在垃圾桶中的項目會永遠刪除。"
+msgstr "所有在回收筒中的項目會永遠刪除。"
 
 #: panels/usage/cc-usage-panel.c:156
 msgid "_Empty Trash"
-msgstr "清理垃圾桶(_E)"
+msgstr "清理回收筒(_E)"
 
 #: panels/usage/cc-usage-panel.c:177
 msgid "Delete all the temporary files?"
@@ -4008,15 +4009,15 @@ msgstr "清理暫存檔案(_P)"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "清除檔案歷史"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
-msgstr ""
+msgstr "在清理後，近期曾使用的檔案列表會被清空"
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "_清除歷史"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -4076,7 +4077,7 @@ msgstr "隱私"
 #: shell/cc-window.c:314 shell/cc-window.c:1205 shell/cc-window.ui.h:1
 #: shell/org.buddiesofbudgie.ControlCenter.desktop.in.in:2
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Budgie 控制中心"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -4152,7 +4153,7 @@ msgstr "網域"
 #. printing.
 #: panels/printers/pp-jobs-dialog.ui.h:8
 msgid "A_uthenticate"
-msgstr "核對(_U)"
+msgstr "認證(_U)"
 
 #. Translators: this action removes (purges) all the listed jobs from the
 #. list.
@@ -4164,7 +4165,7 @@ msgstr "全部清除"
 #. need credentials.
 #: panels/printers/pp-jobs-dialog.ui.h:12
 msgid "_Authenticate"
-msgstr "核對(_A)"
+msgstr "認證(_A)"
 
 #. Translators: this label describes the dialog empty state, with no jobs
 #. listed.
@@ -4262,7 +4263,7 @@ msgstr "核對"
 #. Translators: This button adds new printer.
 #: panels/printers/printers.ui.h:2
 msgid "Add Printer…"
-msgstr ""
+msgstr "新增印表機"
 
 #. Translators: This is the button which allows undoing the removal of the
 #. printer.
@@ -4316,11 +4317,11 @@ msgstr "沒有應用程式請求位置存取權限"
 
 #: panels/introduction/cc-introduction.ui.h:1
 msgid "Quick Start"
-msgstr ""
+msgstr "快速開始"
 
 #: panels/introduction/cc-introduction.ui.h:2
 msgid "Additional Settings"
-msgstr ""
+msgstr "額外設定"
 
 #: panels/wacom/wacom-stylus-page.ui.h:1 panels/mouse/cc-mouse-panel.ui.h:11
 msgid "Default"
@@ -4484,12 +4485,12 @@ msgstr "15 分鐘"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:4
 msgid "20 minutes"
-msgstr ""
+msgstr "20 分鐘"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:6
 msgid "25 minutes"
-msgstr ""
+msgstr "25 分鐘"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4502,7 +4503,7 @@ msgstr "30 分鐘"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:10
 msgid "45 minutes"
-msgstr ""
+msgstr "45 分鐘"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
@@ -4512,27 +4513,27 @@ msgstr ""
 #: panels/power/cc-power-panel.ui.h:12 panels/usage/cc-usage-panel.ui.h:14
 #: panels/lock/cc-lock-panel.ui.h:21
 msgid "1 hour"
-msgstr ""
+msgstr "1 小時"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:14
 msgid "80 minutes"
-msgstr ""
+msgstr "80 分鐘"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:16
 msgid "90 minutes"
-msgstr ""
+msgstr "90 分鐘"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:18
 msgid "100 minutes"
-msgstr ""
+msgstr "100 分鐘"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:20
 msgid "2 hours"
-msgstr ""
+msgstr "2 小時"
 
 #: panels/power/cc-power-panel.ui.h:23
 msgid "Power Mode"
@@ -4544,39 +4545,39 @@ msgstr "會影響系統效能與電量使用。"
 
 #: panels/power/cc-power-panel.ui.h:25
 msgid "Power Saving Options"
-msgstr ""
+msgstr "節能選項"
 
 #: panels/power/cc-power-panel.ui.h:26
 msgid "Automatic Screen Brightness"
-msgstr ""
+msgstr "自動調節螢幕亮度"
 
 #: panels/power/cc-power-panel.ui.h:27
 msgid "Screen brightness adjusts to the surrounding light."
-msgstr ""
+msgstr "螢幕亮度會因應附近環境光度調節"
 
 #: panels/power/cc-power-panel.ui.h:28
 msgid "Dim Screen"
-msgstr ""
+msgstr "調暗螢幕"
 
 #: panels/power/cc-power-panel.ui.h:29
 msgid "Reduces the screen brightness when the computer is inactive."
-msgstr ""
+msgstr "在電腦閒置時減少螢幕亮度"
 
 #: panels/power/cc-power-panel.ui.h:30
 msgid "Screen _Blank"
-msgstr ""
+msgstr "關閉螢幕"
 
 #: panels/power/cc-power-panel.ui.h:31
 msgid "Turns the screen off after a period of inactivity."
-msgstr ""
+msgstr "在電腦閒置一定時間後，關閉螢幕"
 
 #: panels/power/cc-power-panel.ui.h:32
 msgid "Automatic Power Saver"
-msgstr ""
+msgstr "自動能源節省工具"
 
 #: panels/power/cc-power-panel.ui.h:33
 msgid "Enables power saver mode when battery is low."
-msgstr ""
+msgstr "在電池容量低時啟用節能模式"
 
 #: panels/power/cc-power-panel.ui.h:34
 msgid "_Automatic Suspend"
@@ -4584,7 +4585,7 @@ msgstr "自動暫停(_A)"
 
 #: panels/power/cc-power-panel.ui.h:35
 msgid "Pauses the computer after a period of inactivity."
-msgstr ""
+msgstr "在電腦閒置一定時間後，暫停電腦"
 
 #: panels/power/cc-power-panel.ui.h:36
 msgid "Suspend & Power Button"
@@ -4824,7 +4825,7 @@ msgstr "廣色域 LCD (RGB LED 背光)"
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:34
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "高"
 
 #: panels/color/cc-color-panel.ui.h:54
 msgid "40 minutes"
@@ -4832,13 +4833,13 @@ msgstr "40 分鐘"
 
 #: panels/color/cc-color-panel.ui.h:55
 msgid "Medium"
-msgstr ""
+msgstr "中"
 
 #: panels/color/cc-color-panel.ui.h:57
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:33
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:35
 msgid "Low"
-msgstr ""
+msgstr "低"
 
 #: panels/color/cc-color-panel.ui.h:59
 msgid "Native to display"
@@ -4899,27 +4900,27 @@ msgstr "開啟以連接裝置與接收檔案傳輸。"
 
 #: panels/bluetooth/cc-bluetooth-panel.ui.h:5
 msgid "Airplane Mode is on"
-msgstr "飛安模式已開啟"
+msgstr "飛行模式已開啟"
 
 #: panels/bluetooth/cc-bluetooth-panel.ui.h:6
 msgid "Bluetooth is disabled when airplane mode is on."
-msgstr "當開啟飛安模式時，將停用藍牙。"
+msgstr "當開啟飛行模式時，將停用藍牙。"
 
 #: panels/bluetooth/cc-bluetooth-panel.ui.h:7
 msgid "Turn Off Airplane Mode"
-msgstr "關閉飛安模式"
+msgstr "關閉飛行模式"
 
 #: panels/bluetooth/cc-bluetooth-panel.ui.h:8
 msgid "Hardware Airplane Mode is on"
-msgstr "硬體飛安模式已開啟"
+msgstr "硬體飛行模式已開啟"
 
 #: panels/bluetooth/cc-bluetooth-panel.ui.h:9
 msgid "Turn off the Airplane mode switch to enable Bluetooth."
-msgstr "關閉飛安模式開關以啟用藍牙。"
+msgstr "關閉飛行模式開關以啟用藍牙。"
 
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Style"
-msgstr ""
+msgstr "風格"
 
 #: panels/background/cc-background-panel.ui.h:2
 msgid "Add Picture…"
@@ -4967,14 +4968,14 @@ msgstr "系統音量"
 
 #: panels/sound/cc-sound-panel.ui.h:2
 msgid "Over-Amplification"
-msgstr ""
+msgstr "過限音量"
 
 #: panels/sound/cc-sound-panel.ui.h:4
 #, no-c-format
 msgid ""
 "Allows raising the volume above 100%. This can result in a loss of audio "
 "quality; it is better to increase application volume settings, if possible."
-msgstr ""
+msgstr "允許將聲量調節到超過100%，這或會影響音訊質素。在可行的情況下，請先提高應用程式的聲量。"
 
 #: panels/sound/cc-sound-panel.ui.h:5
 msgid "Volume Levels"
@@ -5030,7 +5031,7 @@ msgstr "輸入來源"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:2
 msgid "Includes keyboard layouts and input methods."
-msgstr ""
+msgstr "包括鍵盤格局和輸入方法"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:3
 msgid "Input Source Switching"
@@ -5046,19 +5047,19 @@ msgstr "每個視窗各自切換獨立的輸入來源(_D)"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:6
 msgid "Special Character Entry"
-msgstr ""
+msgstr "特殊字元輸入"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:7
 msgid "Methods for entering symbols and letter variants using the keyboard."
-msgstr ""
+msgstr "使用鍵盤輸入符號或變體字母的方法"
 
 #: panels/keyboard/cc-keyboard-panel.ui.h:11
 msgid "View and Customize Shortcuts"
-msgstr ""
+msgstr "查看和設定快捷鍵"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.ui.h:1
 msgid "Use layout default"
-msgstr ""
+msgstr "使用預設格局"
 
 #: panels/keyboard/cc-input-chooser.ui.h:1
 msgid "Add an Input Source"
@@ -5510,11 +5511,11 @@ msgstr "厚度(_T)："
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "薄"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "厚"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5552,11 +5553,11 @@ msgstr "對比(_C)："
 #. The contrast scale goes from Color to None (grayscale)
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:30
 msgid "Co_lor"
-msgstr ""
+msgstr "顏色"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:32
 msgid "Full"
-msgstr ""
+msgstr "全面"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:37
 msgid "Color Effects:"
@@ -5604,7 +5605,7 @@ msgstr "接受時間延遲(_C)："
 #: panels/universal-access/cc-pointing-dialog.ui.h:5
 #: panels/universal-access/cc-pointing-dialog.ui.h:11
 msgid "Short"
-msgstr ""
+msgstr "短"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:10
 msgid "Slow keys typing delay"
@@ -5615,7 +5616,7 @@ msgstr "降低按鍵輸入延遲"
 #: panels/universal-access/cc-pointing-dialog.ui.h:7
 #: panels/universal-access/cc-pointing-dialog.ui.h:12
 msgid "Long"
-msgstr ""
+msgstr "長"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:12
 msgid "Beep when a key is pr_essed"
@@ -5704,11 +5705,11 @@ msgstr "移動速度(_M)："
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "小"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "大"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -5753,7 +5754,7 @@ msgstr "大型文字(_L)"
 
 #: panels/universal-access/cc-ua-panel.ui.h:5
 msgid "Enable A_nimations"
-msgstr ""
+msgstr "啟用動畫效果"
 
 #: panels/universal-access/cc-ua-panel.ui.h:6
 msgid "C_ursor Size"
@@ -5865,48 +5866,48 @@ msgstr "一般"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:2
 msgid "_Active Screen Edges"
-msgstr ""
+msgstr "活躍螢幕邊界"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:3
 msgid ""
 "Drag windows against the top, left, and right screen edges to resize them."
-msgstr ""
+msgstr "拖放視窗到螢幕上、左和右邊的邊界以改變其大小"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:4
 msgid "Workspaces"
-msgstr ""
+msgstr "工作區"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:5
 msgid "_Dynamic workspaces"
-msgstr ""
+msgstr "動態工作區"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:6
 msgid "Automatically removes empty workspaces."
-msgstr ""
+msgstr "自動清空空白的工作區"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:7
 msgid "_Fixed number of workspaces"
-msgstr ""
+msgstr "固定數目的工作區"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:8
 msgid "Specify a number of permanent workspaces."
-msgstr ""
+msgstr "請訂明工作區的數量"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:9
 msgid "_Number of Workspaces"
-msgstr ""
+msgstr "工作區的數量"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:10
 msgid "Multi-Monitor"
-msgstr ""
+msgstr "多螢幕"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:11
 msgid "Workspaces on _primary display only"
-msgstr ""
+msgstr "僅在主螢幕上使用工作區"
 
 #: panels/multitasking/cc-multitasking-panel.ui.h:12
 msgid "Workspaces on all d_isplays"
-msgstr ""
+msgstr "在所有螢幕上使用工作區"
 
 #: panels/applications/cc-applications-panel.ui.h:1
 msgid "No applications"
@@ -6015,7 +6016,7 @@ msgstr "儲存空間"
 
 #: panels/applications/cc-applications-panel.ui.h:27
 msgid "Open in Software"
-msgstr "在《軟體》中開啟"
+msgstr "在「軟體」中開啟"
 
 #: panels/applications/cc-applications-panel.ui.h:28
 #: shell/cc-panel-list.ui.h:2
@@ -6061,7 +6062,7 @@ msgstr "檔案分享(_F)"
 
 #: panels/sharing/cc-sharing-panel.ui.h:3
 msgid "Remote _Desktop"
-msgstr ""
+msgstr "遠端桌面（_D）"
 
 #: panels/sharing/cc-sharing-panel.ui.h:4
 msgid "_Media Sharing"
@@ -6089,38 +6090,38 @@ msgstr "遠端登入"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "遠端桌面"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
 "Remote desktop allows viewing and controlling your desktop from another "
 "computer."
-msgstr ""
+msgstr "遠端桌面允許你使用另外一部電腦控制此電腦"
 
 #: panels/sharing/cc-sharing-panel.ui.h:13
 msgid "Enable or disable remote desktop connections to this computer."
-msgstr ""
+msgstr "啟用或停用遠端桌面到本電腦"
 
 #: panels/sharing/cc-sharing-panel.ui.h:14
 msgid "Enable Legacy VNC Protocol"
-msgstr ""
+msgstr "啟用舊式 VNC 協議"
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
-msgstr ""
+msgstr "遠端控制"
 
 #: panels/sharing/cc-sharing-panel.ui.h:16
 msgid "Allows remote connections to control the screen."
-msgstr ""
+msgstr "允許遠端控制此螢幕"
 
 #: panels/sharing/cc-sharing-panel.ui.h:17
 msgid "How to Connect"
-msgstr ""
+msgstr "如何連接"
 
 #: panels/sharing/cc-sharing-panel.ui.h:18
 msgid ""
 "Connect to this computer using the device name or remote desktop address."
-msgstr ""
+msgstr "使用裝置名或遠端桌面地址以連接此電腦"
 
 #: panels/sharing/cc-sharing-panel.ui.h:19
 #: panels/info-overview/cc-info-overview-panel.ui.h:1
@@ -6129,37 +6130,37 @@ msgstr "裝置名稱"
 
 #: panels/sharing/cc-sharing-panel.ui.h:20
 msgid "Remote Desktop Address"
-msgstr ""
+msgstr "遠端桌面地址"
 
 #: panels/sharing/cc-sharing-panel.ui.h:21
 msgid "VNC Address"
-msgstr ""
+msgstr "VNC 地址"
 
 #: panels/sharing/cc-sharing-panel.ui.h:22
 msgid "Authentication"
-msgstr ""
+msgstr "認證"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
-msgstr ""
+msgstr "需要使用者名和密碼連接本電腦"
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "使用者名"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
-msgstr ""
+msgstr "確定加密"
 
 #: panels/sharing/cc-sharing-panel.ui.h:27
 msgid "Encryption Fingerprint"
-msgstr ""
+msgstr "指紋加密"
 
 #: panels/sharing/cc-sharing-panel.ui.h:28
 msgid ""
 "The encryption fingerprint can be seen in connecting clients and should be "
 "identical"
-msgstr ""
+msgstr "加密指紋應該與連接的客戶端相符"
 
 #: panels/sharing/cc-sharing-panel.ui.h:29
 msgid "Media Sharing"
@@ -6306,7 +6307,7 @@ msgstr "選擇數字、日期及貨幣的格式。變更會在下次登入時生
 
 #: panels/region/cc-format-chooser.ui.h:6
 msgid "Search locales…"
-msgstr ""
+msgstr "搜尋地方"
 
 #: panels/region/cc-format-chooser.ui.h:7
 msgid "Common Formats"
@@ -6330,11 +6331,11 @@ msgstr "預覽"
 
 #: panels/region/cc-region-panel.ui.h:1
 msgid "My Account"
-msgstr ""
+msgstr "我的戶口"
 
 #: panels/region/cc-region-panel.ui.h:2
 msgid "Login Screen"
-msgstr ""
+msgstr "登入畫面"
 
 #: panels/region/cc-region-panel.ui.h:3
 msgid "Language"
@@ -6416,7 +6417,7 @@ msgstr "作業系統名稱"
 #. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
 msgid "OS Build ID"
-msgstr ""
+msgstr "作業系統組建ID："
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
@@ -6432,7 +6433,7 @@ msgstr "虛擬化"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
 msgid "Kernel Version"
-msgstr ""
+msgstr "內核版本"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
@@ -6852,7 +6853,7 @@ msgstr "網路名稱"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Security type"
-msgstr ""
+msgstr "保安種類"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Turn Wi-Fi off"
@@ -6872,11 +6873,11 @@ msgstr "已知 Wi-Fi 網路(_K)"
 
 #: panels/network/cc-wifi-panel.ui.h:1
 msgid "Airplane Mode"
-msgstr "飛安模式"
+msgstr "飛行模式"
 
 #: panels/network/cc-wifi-panel.ui.h:2
 msgid "Disables Wi-Fi, Bluetooth and mobile broadband"
-msgstr "停用 Wi-Fi、藍牙與行動寬頻"
+msgstr "停用 Wi-Fi、藍牙與流動數據"
 
 #: panels/network/cc-wifi-panel.ui.h:3
 msgid "No Wi-Fi Adapter Found"
@@ -6888,7 +6889,7 @@ msgstr "請確認您的 Wi-Fi 網卡已插入並啟動"
 
 #: panels/network/cc-wifi-panel.ui.h:5 panels/wwan/cc-wwan-panel.ui.h:4
 msgid "Airplane Mode On"
-msgstr "開啟飛安模式"
+msgstr "開啟飛行模式"
 
 #: panels/network/cc-wifi-panel.ui.h:6
 msgid "Turn off to use Wi-Fi"
@@ -6989,11 +6990,11 @@ msgstr "設定網址(_C)"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:1
 msgid "SIM Lock"
-msgstr ""
+msgstr "SIM 卡鎖"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:2
 msgid "_Next"
-msgstr ""
+msgstr "下一步（_N）"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:3
 #: panels/wwan/cc-wwan-network-dialog.ui.h:2 panels/wwan/cc-wwan-panel.ui.h:1
@@ -7002,155 +7003,155 @@ msgstr "關閉"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:4
 msgid "_Lock SIM with PIN"
-msgstr ""
+msgstr "以 PIN 碼鎖上 SIM 卡（_L）"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:5
 msgid "Change PIN"
-msgstr ""
+msgstr "更改 PIN"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.ui.h:6
 msgid "Enter current PIN to change SIM lock settings"
-msgstr ""
+msgstr "輸入現有的 PIN 以改動 SIM 卡鎖的設定"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:1
 msgid "No SIM"
-msgstr ""
+msgstr "沒有 SIM 卡"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:2
 msgid "Insert a SIM card to use this modem"
-msgstr ""
+msgstr "請插入 SIM 卡以使用本數據機"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:3
 msgid "SIM Locked"
-msgstr ""
+msgstr "已鎖上 SIM"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:6
 msgid "_Mobile Data"
-msgstr ""
+msgstr "流動數據（_M）"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:7
 msgid "Access data using mobile network"
-msgstr ""
+msgstr "使用流動網絡"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:8
 msgid "_Data Roaming"
-msgstr ""
+msgstr "數據漫遊（_D）"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:9
 msgid "Use mobile data when roaming"
-msgstr ""
+msgstr "在漫遊時使用流動數據"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:10
 msgid "_Network Mode"
-msgstr ""
+msgstr "網絡模式（_N）"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:11
 msgid "N_etwork"
-msgstr ""
+msgstr "網絡（_N）"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:12
 msgid "Advanced"
-msgstr ""
+msgstr "進階"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:13
 msgid "_Access Point Names"
-msgstr ""
+msgstr "無線存取點名稱（_A)"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:14
 msgid "_SIM Lock"
-msgstr ""
+msgstr "SIM 卡鎖（_S）"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:15
 msgid "Lock SIM with PIN"
-msgstr ""
+msgstr "以 PIN 碼鎖定 SIM"
 
 #: panels/wwan/cc-wwan-device-page.ui.h:16
 msgid "M_odem Details"
-msgstr ""
+msgstr "數據機詳情（_M）"
 
 #: panels/wwan/cc-wwan-mode-dialog.ui.h:1
 msgid "Network Mode"
-msgstr ""
+msgstr "網絡模式"
 
 #: panels/wwan/cc-wwan-network-dialog.ui.h:3
 msgid "_Automatic"
-msgstr ""
+msgstr "自動（_A）"
 
 #: panels/wwan/cc-wwan-network-dialog.ui.h:4
 msgid "Choose Network"
-msgstr ""
+msgstr "選擇網絡"
 
 #: panels/wwan/cc-wwan-network-dialog.ui.h:5
 msgid "Refresh Network Providers"
-msgstr ""
+msgstr "更新網絡提供者"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:1
 msgid "Modem Details"
-msgstr ""
+msgstr "數據機詳情"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:2
 msgid "Modem Status"
-msgstr ""
+msgstr "數據機狀態"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:3
 msgid "Carrier"
-msgstr ""
+msgstr "營辦商"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:4
 msgid "Network Type"
-msgstr ""
+msgstr "網絡種類"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:6
 msgid "Network Status"
-msgstr ""
+msgstr "網絡狀態"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:7
 msgid "Own Number"
-msgstr ""
+msgstr "自身號碼"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:8
 msgid "Device Details"
-msgstr ""
+msgstr "裝置詳情"
 
 #: panels/wwan/cc-wwan-details-dialog.ui.h:11
 msgid "Firmware Version"
-msgstr ""
+msgstr "韌體版本"
 
 #: panels/wwan/cc-wwan-apn-dialog.ui.h:1
 msgid "Access Points"
-msgstr ""
+msgstr "無線存取點"
 
 #: panels/wwan/cc-wwan-apn-dialog.ui.h:6
 msgid "APN"
-msgstr ""
+msgstr "APN"
 
 #: panels/wwan/cc-wwan-panel.ui.h:2
 msgid "No WWAN Adapter Found"
-msgstr ""
+msgstr "找不到 WWAN 橋接器"
 
 #: panels/wwan/cc-wwan-panel.ui.h:3
 msgid "Make sure you have a Wireless Wan/Cellular device"
-msgstr ""
+msgstr "確保你有無線網絡、流動數據裝置"
 
 #: panels/wwan/cc-wwan-panel.ui.h:5
 msgid "Wireless Wan is disabled when airplane mode is on"
-msgstr ""
+msgstr "飛行模式下，Wifi亦被停用"
 
 #: panels/wwan/cc-wwan-panel.ui.h:6
 msgid "_Turn off Airplane Mode"
-msgstr ""
+msgstr "關閉飛行模式（_T）"
 
 #: panels/wwan/cc-wwan-panel.ui.h:7
 msgid "Data Connection"
-msgstr ""
+msgstr "數據連接"
 
 #: panels/wwan/cc-wwan-panel.ui.h:8
 msgid "SIM card used for internet"
-msgstr ""
+msgstr "用作連接互聯網的 SIM 卡"
 
 #: panels/wwan/cc-wwan-panel.ui.h:9
 msgid "Enable Mobile Network"
-msgstr ""
+msgstr "啟用流動網絡"
 
 #: panels/datetime/cc-datetime-panel.ui.h:1
 msgid "January"
@@ -7295,12 +7296,12 @@ msgstr "鎖定畫面通知(_L)"
 #. This is the per application switch for message tray usage.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:2
 msgid "_Notifications"
-msgstr ""
+msgstr "通知（_N）"
 
 #. This is the setting to configure sounds associated with notifications.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:4
 msgid "Sound _Alerts"
-msgstr ""
+msgstr "聲音通知（_A）"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:5
 msgid "Notification _Popups"
@@ -7316,11 +7317,11 @@ msgstr "當彈出視窗被停用時，通知將繼續出現在通知列表中。
 #. screen.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:8
 msgid "Show Message _Content in Popups"
-msgstr ""
+msgstr "以彈出視窗顯示通知內容（_C）"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:10
 msgid "Show Message C_ontent on Lock Screen"
-msgstr ""
+msgstr "在鎖定畫面上顯示通知內容（_C）"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:1
 msgid "_Web"
@@ -7328,7 +7329,7 @@ msgstr "網頁(_W)"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "檔案（_F）"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"
@@ -7427,7 +7428,7 @@ msgstr "滑鼠"
 
 #: panels/mouse/cc-mouse-panel.ui.h:7
 msgid "Mouse Speed"
-msgstr "鼠標速度"
+msgstr "滑鼠速度"
 
 #: panels/mouse/cc-mouse-panel.ui.h:8
 msgid "Double-click timeout"
@@ -7435,19 +7436,19 @@ msgstr "雙擊分辨時間"
 
 #: panels/mouse/cc-mouse-panel.ui.h:9
 msgid "Acceleration Profile"
-msgstr ""
+msgstr "加速度設定"
 
 #: panels/mouse/cc-mouse-panel.ui.h:10
 msgid "How the pointer moves when you move the mouse."
-msgstr ""
+msgstr "滑鼠與遊標移動的速度連繫"
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "平滑"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "適切"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7465,7 +7466,7 @@ msgstr "觸控板"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
 msgid "Disable Touchpad While Typing"
-msgstr ""
+msgstr "在使用鍵盤時停用觸控板"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
@@ -7473,28 +7474,28 @@ msgstr "觸控板速度"
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
-msgstr ""
+msgstr "觸控板點擊方法"
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
-msgstr ""
+msgstr "新增按鈕動作（左、中、右）"
 
 #: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
-msgstr ""
+msgstr "使用觸控板預設設定"
 
 #: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
-msgstr ""
+msgstr "並無新增按鈕"
 
 #: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
-msgstr ""
+msgstr "左、中、右區"
 
 #: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
-msgstr ""
+msgstr "一、二、三隻手指"
 
 #: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
@@ -7541,7 +7542,7 @@ msgstr "清除歷史記錄(_C)…"
 
 #: panels/usage/cc-usage-panel.ui.h:6
 msgid "Trash & Temporary Files"
-msgstr "垃圾桶與暫存檔"
+msgstr "回收筒與暫存檔"
 
 #: panels/usage/cc-usage-panel.ui.h:7
 msgid ""
@@ -7551,7 +7552,7 @@ msgstr "垃圾及暫存檔有時候可能會有個人或敏感資料。自動刪
 
 #: panels/usage/cc-usage-panel.ui.h:8
 msgid "Automatically Delete _Trash Content"
-msgstr "自動刪除垃圾桶的內容(_T)"
+msgstr "自動刪除回收筒的內容(_T)"
 
 #: panels/usage/cc-usage-panel.ui.h:9
 msgid "Automatically Delete Temporary _Files"
@@ -7563,7 +7564,7 @@ msgstr "自動刪除週期(_P)"
 
 #: panels/usage/cc-usage-panel.ui.h:11
 msgid "_Empty Trash…"
-msgstr "清理垃圾桶(_E)…"
+msgstr "清理回收筒(_E)…"
 
 #: panels/usage/cc-usage-panel.ui.h:12
 msgid "_Delete Temporary Files…"
@@ -7574,71 +7575,71 @@ msgstr "刪除暫存檔案(_D)…"
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:16 panels/usage/cc-usage-panel.ui.h:34
 msgid "1 day"
-msgstr ""
+msgstr "1天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:18
 msgid "2 days"
-msgstr ""
+msgstr "2天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:20
 msgid "3 days"
-msgstr ""
+msgstr "3天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:22
 msgid "4 days"
-msgstr ""
+msgstr "4天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:24
 msgid "5 days"
-msgstr ""
+msgstr "5天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:26
 msgid "6 days"
-msgstr ""
+msgstr "6天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:28 panels/usage/cc-usage-panel.ui.h:36
 msgid "7 days"
-msgstr ""
+msgstr "7天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:30
 msgid "14 days"
-msgstr ""
+msgstr "14天"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:32 panels/usage/cc-usage-panel.ui.h:38
 msgid "30 days"
-msgstr ""
+msgstr "30天"
 
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:40
 msgid "Forever"
-msgstr ""
+msgstr "永遠"
 
 #: panels/lock/cc-lock-panel.ui.h:1
 #: panels/lock/budgie-lock-panel.desktop.in.in:2
 msgid "Screen Lock"
-msgstr ""
+msgstr "螢幕鎖定"
 
 #: panels/lock/cc-lock-panel.ui.h:2
 msgid "Configure when the screen locks automatically to protect your privacy."
-msgstr ""
+msgstr "設定何時螢幕自動鎖定以保障你的私隱"
 
 #: panels/lock/cc-lock-panel.ui.h:3
 msgid "Automatic Screen _Lock"
@@ -7657,37 +7658,37 @@ msgstr "螢幕轉黑後，要多久才會自動鎖定螢幕。"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:7
 msgid "Screen Turns Off"
-msgstr ""
+msgstr "螢幕關閉"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:9
 msgid "30 seconds"
-msgstr ""
+msgstr "30秒"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:11
 msgid "1 minute"
-msgstr ""
+msgstr "1分鐘"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:13
 msgid "2 minutes"
-msgstr ""
+msgstr "2分鐘"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:15
 msgid "3 minutes"
-msgstr ""
+msgstr "3分鐘"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:17
 msgid "5 minutes"
-msgstr ""
+msgstr "5分鐘"
 
 #: panels/online-accounts/online-accounts.ui.h:2
 msgid "Connect to your data in the cloud"
@@ -7711,15 +7712,15 @@ msgstr "結束"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "面板"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
-msgstr ""
+msgstr "回到上一個面板"
 
 #: shell/help-overlay.ui.h:6
 msgid "Cancel search"
-msgstr ""
+msgstr "取消搜索"
 
 #: shell/cc-window.ui.h:2
 msgid "All Settings"
@@ -7738,7 +7739,7 @@ msgid ""
 "This version of Settings should only be used for development purposes. You "
 "may experience incorrect system behavior, data loss, and other unexpected "
 "issues. "
-msgstr "這個版本的《設定值》應只作為開發目的使用。您可能會遇到不正常的系統行為、資料遺失，或其他預期之外的問題。"
+msgstr "這個版本的「設定值」應只作為開發目的使用。您可能會遇到不正常的系統行為、資料遺失，或其他預期之外的問題。"
 
 #: shell/cc-window.ui.h:9
 msgid "Help"
@@ -7774,16 +7775,17 @@ msgstr ""
 
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:2
 msgid "Introduction"
-msgstr ""
+msgstr "介紹"
 
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:3
 msgid "Get started with Budgie Desktop"
-msgstr ""
+msgstr "開始使用 Budgie 桌面環境"
 
 #. Translators: Search terms to find the Introduction panel
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:13
 msgid "welcome;getting started;tour;first time;setup;guide;"
 msgstr ""
+"welcome;getting started;tour;first time;setup;guide;歡迎;開始使用;導覽;第一次;設定;導引"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
@@ -7866,7 +7868,7 @@ msgstr "鍵盤"
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
-msgstr ""
+msgstr "更改鍵盤快捷鍵給設定你的輸入偏好、鍵盤格局"
 
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
@@ -7891,6 +7893,9 @@ msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
 msgstr ""
+"Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
+"Time;App Restrictions;Web Restrictions;Usage;Usage "
+"Limit;Kid;Child;登入;名稱;指紋;頭像;標誌;面容;密碼;家長管理;螢幕時間;程式限制;網絡限制;用量;用量限制;幼童;小童;"
 
 #: panels/universal-access/budgie-universal-access-panel.desktop.in.in:2
 #: panels/keyboard/50-accessibility.xml.in:2
@@ -7912,17 +7917,18 @@ msgstr ""
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:2
 msgid "Multitasking"
-msgstr ""
+msgstr "多工運作"
 
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
 msgid "Manage preferences for productivity and multitasking"
-msgstr ""
+msgstr "管理生產力和多工運作的偏好設定"
 
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/multitasking/budgie-multitasking-panel.desktop.in.in:14
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
+"Multitasking;Multitask;Productivity;Customize;Desktop;多工運作;多工;生產力;生產力;自定義;桌面;"
 
 #: panels/applications/budgie-applications-panel.desktop.in.in:3
 msgid "Control various application permissions and settings"
@@ -7965,13 +7971,14 @@ msgstr ""
 
 #: panels/night-light/budgie-night-light-panel.desktop.in.in:3
 msgid "Configure night light settings"
-msgstr ""
+msgstr "設定夜覽"
 
 #. Translators: Search terms to find the Night Light panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/night-light/budgie-night-light-panel.desktop.in.in:14
 msgid "night;light;blue;redshift;color;sunset;sunrise;warm;screen;display;"
 msgstr ""
+"night;light;blue;redshift;color;sunset;sunrise;warm;screen;display;夜晚;淺色;藍色;紅移;顏色;日落;日出;暖光;螢幕;顯示器"
 
 #: panels/region/budgie-region-panel.desktop.in.in:2
 msgid "Region & Language"
@@ -7979,7 +7986,7 @@ msgstr "地區和語言"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
 msgid "Select your display language and formats"
-msgstr ""
+msgstr "選擇你的顯示語言及格式"
 
 #. Translators: Search terms to find the Region and Language panel. Do NOT
 #. translate or localize the semicolons! The list MUST also end with a
@@ -8032,17 +8039,17 @@ msgstr ""
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:2
 msgid "Mobile Network"
-msgstr ""
+msgstr "流動網絡"
 
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:3
 msgid "Configure Telephony and mobile data connections"
-msgstr ""
+msgstr "設定你的Telephony及流動數據連接"
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:15
 msgid "cellular;wwan;telephony;sim;mobile;"
-msgstr ""
+msgstr "cellular;wwan;telephony;sim;mobile;流動網絡;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
 msgid "Change the date and time, including time zone"
@@ -8138,7 +8145,7 @@ msgstr "回報您遇到的問題"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:2
 msgid "File History & Trash"
-msgstr "檔案歷程記錄與垃圾桶"
+msgstr "檔案歷程記錄與回收筒"
 
 #: panels/usage/budgie-usage-panel.desktop.in.in:3
 msgid "Don't leave traces"
@@ -8146,13 +8153,13 @@ msgstr "不留下追蹤"
 
 #: panels/lock/budgie-lock-panel.desktop.in.in:3
 msgid "Configure screen lock settings"
-msgstr ""
+msgstr "設定螢幕鎖定"
 
 #. Translators: Search terms to find the Screen Lock panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/lock/budgie-lock-panel.desktop.in.in:14
 msgid "screen;lock;privacy;security;automatic;delay;"
-msgstr ""
+msgstr "screen;lock;privacy;security;automatic;delay;螢幕;鎖定;私隱;安全;自動;延遲"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:2
 msgid "Online Accounts"
@@ -8221,19 +8228,19 @@ msgstr "切換到上一個輸入來源"
 
 #: panels/keyboard/01-raven.xml.in:2
 msgid "Raven"
-msgstr ""
+msgstr "Raven"
 
 #: panels/keyboard/01-raven.xml.in:4
 msgid "Raven Applets"
-msgstr ""
+msgstr "Raven 小程式"
 
 #: panels/keyboard/01-raven.xml.in:6
 msgid "Raven Notifications"
-msgstr ""
+msgstr "Raven 通知"
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"
-msgstr ""
+msgstr "清理通知"
 
 #: panels/keyboard/01-launchers.xml.in:2
 msgid "Launchers"
@@ -8257,7 +8264,7 @@ msgstr "執行網頁瀏覽器"
 
 #: panels/keyboard/01-launchers.xml.in:14
 msgid "Home folder"
-msgstr "家目錄"
+msgstr "主目錄"
 
 #: panels/keyboard/01-launchers.xml.in:16
 msgctxt "keybinding"
@@ -8334,7 +8341,7 @@ msgstr "系統"
 
 #: panels/keyboard/01-budgie.xml.in:4
 msgid "Show the Power Dialog"
-msgstr ""
+msgstr "顯示能源對話框"
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"

@@ -5,6 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2026
 # 
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-17 21:26+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2026\n"
 "Language-Team: Kazakh (https://app.transifex.com/buddiesofbudgie/teams/129844/kk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -300,7 +301,7 @@ msgstr "Теріс тік"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "Автоматты баптау"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:692
@@ -374,7 +375,7 @@ msgstr "Аяқталған"
 #. Translators: Clicking this button prioritizes printing of this print job
 #: panels/printers/pp-job-row.c:179
 msgid "Move this job to the top of the queue"
-msgstr ""
+msgstr "Бұл тапсырманы кезектің ең басына жылжыту"
 
 #. Translators: The found device is a JetDirect printer
 #: panels/printers/pp-host.c:478
@@ -662,7 +663,7 @@ msgstr "Батареялар"
 #. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
 #: panels/power/cc-power-panel.c:386
 msgid "UPS"
-msgstr ""
+msgstr "UPS"
 
 #. TRANSLATORS: secondary battery, misc
 #: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
@@ -1240,27 +1241,27 @@ msgstr "Ағымдағы фон"
 #. Centered
 #: panels/background/cc-background-panel.c:255
 msgid "Centered"
-msgstr ""
+msgstr "Ортасымен"
 
 #. Scaled
 #: panels/background/cc-background-panel.c:267
 msgid "Scaled"
-msgstr ""
+msgstr "Масштабталған"
 
 #. Stretched
 #: panels/background/cc-background-panel.c:279
 msgid "Stretched"
-msgstr ""
+msgstr "Созылған"
 
 #. Zoom
 #: panels/background/cc-background-panel.c:291
 msgid "Zoom"
-msgstr ""
+msgstr "Масштабтау"
 
 #. Wallpaper
 #: panels/background/cc-background-panel.c:303
 msgid "Wallpaper"
-msgstr ""
+msgstr "Түсқағаз"
 
 #: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
@@ -1285,7 +1286,7 @@ msgstr "Ешнәрсе"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:381
 msgid "Layout default"
-msgstr ""
+msgstr "Жайма әдепкісі"
 
 #: panels/keyboard/cc-keyboard-manager.c:492
 #: panels/keyboard/cc-keyboard-manager.c:500
@@ -1353,7 +1354,7 @@ msgstr ""
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "Ешнәрсе"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -1611,14 +1612,14 @@ msgstr "Саусақ іздерін тізіп шығару сәтсіз аяқ�
 #. enabled using your pam authorization module'
 #: panels/user-accounts/cc-fingerprint-dialog.c:627
 msgid "your pam authorization module"
-msgstr ""
+msgstr "сіздің pam авторизация модуліңіз"
 
 #. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
 #. an executable that is calculated when the app is running
 #: panels/user-accounts/cc-fingerprint-dialog.c:659
 #, c-format
 msgid "Ensure fprintd has been enabled using %s"
-msgstr ""
+msgstr "Fprintd %s көмегімен іске қосылғанына көз жеткізіңіз"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
@@ -1684,7 +1685,7 @@ msgstr "Саусақ ізін оқу құрылғысының жады толы�
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:887
 msgid "Fingerprint is a duplicate"
-msgstr ""
+msgstr "Саусақ ізі қайталанған"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
@@ -2074,7 +2075,7 @@ msgstr "Өткен апта"
 #, c-format
 msgctxt "login history week label"
 msgid "%b %e"
-msgstr "%e %b"
+msgstr "%b %e"
 
 #. Translators: This is a date format string in the style of "Feb 24, 2013",
 #. shown as the last day of a week on login history dialog.
@@ -2531,7 +2532,7 @@ msgstr "Кеше"
 #: panels/common/cc-util.c:138
 #, c-format
 msgid "%b %e"
-msgstr "%e %b"
+msgstr "%b %e"
 
 #. Translators: This is a date format string in the style of "Feb 24, 2013".
 #: panels/common/cc-util.c:143
@@ -3493,8 +3494,8 @@ msgstr "Кем дегенде 8 таңбадан тұруы тиіс"
 #, c-format
 msgid "Must have a maximum of %d character"
 msgid_plural "Must have a maximum of %d characters"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Максимум %d таңба болуы керек"
+msgstr[1] "Максимум %d таңба болуы керек"
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
@@ -3583,27 +3584,27 @@ msgstr "Тек 4G"
 
 #: panels/wwan/cc-wwan-device.c:997
 msgid "5G Only"
-msgstr ""
+msgstr "Тек 5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G (Қалаулы)"
 
 #: panels/wwan/cc-wwan-device.c:1009
 msgid "2G, 3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G, 4G (Қалаулы), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1011
 msgid "2G, 3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G, 3G (Қалаулы), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1013
 msgid "2G (Preferred), 3G, 4G, 5G"
-msgstr ""
+msgstr "2G (Қалаулы), 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1022
 msgid "2G, 3G, 4G (Preferred)"
@@ -3623,51 +3624,51 @@ msgstr "2G, 3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1035
 msgid "3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 4G, 5G (Қалаулы)"
 
 #: panels/wwan/cc-wwan-device.c:1037
 msgid "3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "3G, 4G (Қалаулы), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1039
 msgid "3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "3G (Қалаулы), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
-msgstr ""
+msgstr "3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 4G, 5G (Қалаулы)"
 
 #: panels/wwan/cc-wwan-device.c:1050
 msgid "2G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 4G (Қалаулы), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1052
 msgid "2G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G (Қалаулы), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
-msgstr ""
+msgstr "2G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 5G (Қалаулы)"
 
 #: panels/wwan/cc-wwan-device.c:1063
 msgid "2G, 3G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G (Қалаулы), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1065
 msgid "2G (Preferred), 3G, 5G"
-msgstr ""
+msgstr "2G (Қалаулы), 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
-msgstr ""
+msgstr "2G, 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1073
 msgid "3G, 4G (Preferred)"
@@ -3707,39 +3708,39 @@ msgstr "2G, 3G"
 
 #: panels/wwan/cc-wwan-device.c:1103
 msgid "2G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 5G (Қалаулы)"
 
 #: panels/wwan/cc-wwan-device.c:1105
 msgid "2G (Preferred), 5G"
-msgstr ""
+msgstr "2G (Қалаулы), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
-msgstr ""
+msgstr "2G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 5G (Қалаулы)"
 
 #: panels/wwan/cc-wwan-device.c:1115
 msgid "3G (Preferred), 5G"
-msgstr ""
+msgstr "3G (Қалаулы), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
-msgstr ""
+msgstr "3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
-msgstr ""
+msgstr "4G, 5G (Қалаулы)"
 
 #: panels/wwan/cc-wwan-device.c:1125
 msgid "4G (Preferred), 5G"
-msgstr ""
+msgstr "4G (Қалаулы), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
-msgstr ""
+msgstr "4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
@@ -3829,7 +3830,7 @@ msgstr "PIN коды 4-8 цифрлық сан болуы тиіс"
 
 #: panels/wwan/cc-wwan-device-page.c:317
 msgid "Unlocking…"
-msgstr ""
+msgstr "Құлпын ашу…"
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.c:230
 #: panels/wwan/cc-wwan-mode-dialog.ui.h:3
@@ -4088,15 +4089,17 @@ msgstr "Уақытша файлдарды _тазарту"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "Файлдар тарихын тазарту керек пе?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
 msgstr ""
+"Тазартылғаннан кейін жақында қолданылған файлдар тізімдері бос болып "
+"көрінеді."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "Тарихты та_зарту"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -4156,7 +4159,7 @@ msgstr "Жекелік"
 #: shell/cc-window.c:314 shell/cc-window.c:1205 shell/cc-window.ui.h:1
 #: shell/org.buddiesofbudgie.ControlCenter.desktop.in.in:2
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Budgie басқару орталығы"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -4403,11 +4406,11 @@ msgstr "Ешбір қолданба Орналасуға қатынау рұқс
 
 #: panels/introduction/cc-introduction.ui.h:1
 msgid "Quick Start"
-msgstr ""
+msgstr "Жылдам бастау"
 
 #: panels/introduction/cc-introduction.ui.h:2
 msgid "Additional Settings"
-msgstr ""
+msgstr "Қосымша параметрлер"
 
 #: panels/wacom/wacom-stylus-page.ui.h:1 panels/mouse/cc-mouse-panel.ui.h:11
 msgid "Default"
@@ -4576,12 +4579,12 @@ msgstr "15 минут"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:4
 msgid "20 minutes"
-msgstr ""
+msgstr "20 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:6
 msgid "25 minutes"
-msgstr ""
+msgstr "25 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
@@ -4594,7 +4597,7 @@ msgstr "30 минут"
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:10
 msgid "45 minutes"
-msgstr ""
+msgstr "45 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
@@ -4604,27 +4607,27 @@ msgstr ""
 #: panels/power/cc-power-panel.ui.h:12 panels/usage/cc-usage-panel.ui.h:14
 #: panels/lock/cc-lock-panel.ui.h:21
 msgid "1 hour"
-msgstr ""
+msgstr "1 сағат"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:14
 msgid "80 minutes"
-msgstr ""
+msgstr "80 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:16
 msgid "90 minutes"
-msgstr ""
+msgstr "90 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:18
 msgid "100 minutes"
-msgstr ""
+msgstr "100 минут"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:20
 msgid "2 hours"
-msgstr ""
+msgstr "2 сағат"
 
 #: panels/power/cc-power-panel.ui.h:23
 msgid "Power Mode"
@@ -4933,7 +4936,7 @@ msgstr "Кең түсті палитралы LCD (RGB LED жарықтануы)"
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:34
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "Жоғары"
 
 #: panels/color/cc-color-panel.ui.h:54
 msgid "40 minutes"
@@ -4941,13 +4944,13 @@ msgstr "40 минут"
 
 #: panels/color/cc-color-panel.ui.h:55
 msgid "Medium"
-msgstr ""
+msgstr "Орташа"
 
 #: panels/color/cc-color-panel.ui.h:57
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:33
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:35
 msgid "Low"
-msgstr ""
+msgstr "Төмен"
 
 #: panels/color/cc-color-panel.ui.h:59
 msgid "Native to display"
@@ -5028,7 +5031,7 @@ msgstr "Bluetooth іске қосу үшін ұшақтағы режимді с�
 
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Style"
-msgstr ""
+msgstr "Мәнер"
 
 #: panels/background/cc-background-panel.ui.h:2
 msgid "Add Picture…"
@@ -5076,7 +5079,7 @@ msgstr "Жұйелік дыбыс"
 
 #: panels/sound/cc-sound-panel.ui.h:2
 msgid "Over-Amplification"
-msgstr ""
+msgstr "Шамадан тыс күшейту"
 
 #: panels/sound/cc-sound-panel.ui.h:4
 #, no-c-format
@@ -5084,6 +5087,9 @@ msgid ""
 "Allows raising the volume above 100%. This can result in a loss of audio "
 "quality; it is better to increase application volume settings, if possible."
 msgstr ""
+"Дыбыс деңгейін 100%-дан жоғары көтеруге мүмкіндік береді. Бұл дыбыс "
+"сапасының төмендеуіне әкелуі мүмкін; мүмкін болса, қолданбаның дыбыс деңгейі"
+" параметрлерін арттырған дұрыс."
 
 #: panels/sound/cc-sound-panel.ui.h:5
 msgid "Volume Levels"
@@ -5167,7 +5173,7 @@ msgstr "Жарлықтарды қарау және баптау"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.ui.h:1
 msgid "Use layout default"
-msgstr ""
+msgstr "Жайманың әдепкі мәнін пайдалану"
 
 #: panels/keyboard/cc-input-chooser.ui.h:1
 msgid "Add an Input Source"
@@ -5636,11 +5642,11 @@ msgstr "Қ_алыңдығы:"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "Жіңішке"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "Жуан"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5678,11 +5684,11 @@ msgstr "_Контраст:"
 #. The contrast scale goes from Color to None (grayscale)
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:30
 msgid "Co_lor"
-msgstr ""
+msgstr "Тү_с"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:32
 msgid "Full"
-msgstr ""
+msgstr "Толық"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:37
 msgid "Color Effects:"
@@ -5731,7 +5737,7 @@ msgstr "Қа_былдау кідірісі:"
 #: panels/universal-access/cc-pointing-dialog.ui.h:5
 #: panels/universal-access/cc-pointing-dialog.ui.h:11
 msgid "Short"
-msgstr ""
+msgstr "Қысқа"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:10
 msgid "Slow keys typing delay"
@@ -5742,7 +5748,7 @@ msgstr "Баяу пернелер теру кідірісі"
 #: panels/universal-access/cc-pointing-dialog.ui.h:7
 #: panels/universal-access/cc-pointing-dialog.ui.h:12
 msgid "Long"
-msgstr ""
+msgstr "Ұзын"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:12
 msgid "Beep when a key is pr_essed"
@@ -5832,11 +5838,11 @@ msgstr "Жылжудың _табалдырықты мәні:"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "Кішкентай"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "Үлкен"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -6199,7 +6205,7 @@ msgstr "_Файлдармен бөлісу"
 
 #: panels/sharing/cc-sharing-panel.ui.h:3
 msgid "Remote _Desktop"
-msgstr ""
+msgstr "Қашықтағы _жұмыс үстелі"
 
 #: panels/sharing/cc-sharing-panel.ui.h:4
 msgid "_Media Sharing"
@@ -6227,38 +6233,44 @@ msgstr "Қашықтан кіру"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "Қашықтағы жұмыс үстелі"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
 "Remote desktop allows viewing and controlling your desktop from another "
 "computer."
 msgstr ""
+"Қашықтағы жұмыс үстелі жұмыс үстеліңізді басқа компьютерден көруге және "
+"басқаруға мүмкіндік береді."
 
 #: panels/sharing/cc-sharing-panel.ui.h:13
 msgid "Enable or disable remote desktop connections to this computer."
 msgstr ""
+"Осы компьютерге қашықтағы жұмыс үстелі қосылымдарын іске қосу немесе "
+"сөндіру."
 
 #: panels/sharing/cc-sharing-panel.ui.h:14
 msgid "Enable Legacy VNC Protocol"
-msgstr ""
+msgstr "Ескі VNC хаттамасын іске қосу"
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
-msgstr ""
+msgstr "Қашықтан басқару"
 
 #: panels/sharing/cc-sharing-panel.ui.h:16
 msgid "Allows remote connections to control the screen."
-msgstr ""
+msgstr "Экранды басқару үшін қашықтан қосылуға мүмкіндік береді."
 
 #: panels/sharing/cc-sharing-panel.ui.h:17
 msgid "How to Connect"
-msgstr ""
+msgstr "Қалай қосылуға болады"
 
 #: panels/sharing/cc-sharing-panel.ui.h:18
 msgid ""
 "Connect to this computer using the device name or remote desktop address."
 msgstr ""
+"Құрылғы атауын немесе қашықтағы жұмыс үстелінің адресін пайдаланып осы "
+"компьютерге қосылыңыз."
 
 #: panels/sharing/cc-sharing-panel.ui.h:19
 #: panels/info-overview/cc-info-overview-panel.ui.h:1
@@ -6267,37 +6279,39 @@ msgstr "Құрылғы атауы"
 
 #: panels/sharing/cc-sharing-panel.ui.h:20
 msgid "Remote Desktop Address"
-msgstr ""
+msgstr "Қашықтағы жұмыс үстелінің адресі"
 
 #: panels/sharing/cc-sharing-panel.ui.h:21
 msgid "VNC Address"
-msgstr ""
+msgstr "VNC адресі"
 
 #: panels/sharing/cc-sharing-panel.ui.h:22
 msgid "Authentication"
-msgstr ""
+msgstr "Аутентификация"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
-msgstr ""
+msgstr "Осы компьютерге қосылу үшін пайдаланушы аты мен пароль қажет."
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "Пайдаланушы аты"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
-msgstr ""
+msgstr "Шифрлеуді тексеру"
 
 #: panels/sharing/cc-sharing-panel.ui.h:27
 msgid "Encryption Fingerprint"
-msgstr ""
+msgstr "Шифрлеудің саусақ ізі"
 
 #: panels/sharing/cc-sharing-panel.ui.h:28
 msgid ""
 "The encryption fingerprint can be seen in connecting clients and should be "
 "identical"
 msgstr ""
+"Шифрлеудің саусақ ізі қосылатын клиенттерде көрінеді және бірдей болуы "
+"керек."
 
 #: panels/sharing/cc-sharing-panel.ui.h:29
 msgid "Media Sharing"
@@ -6448,7 +6462,7 @@ msgstr ""
 
 #: panels/region/cc-format-chooser.ui.h:6
 msgid "Search locales…"
-msgstr ""
+msgstr "Локальдарды іздеу…"
 
 #: panels/region/cc-format-chooser.ui.h:7
 msgid "Common Formats"
@@ -6560,7 +6574,7 @@ msgstr "ОЖ атауы"
 #. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
 msgid "OS Build ID"
-msgstr ""
+msgstr "ОЖ құрастыру идентификаторы"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
@@ -6576,7 +6590,7 @@ msgstr "Виртуализация"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
 msgid "Kernel Version"
-msgstr ""
+msgstr "Ядро нұсқасы"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
@@ -7002,7 +7016,7 @@ msgstr "Желі атауы"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Security type"
-msgstr ""
+msgstr "Қауіпсіздік түрі"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Turn Wi-Fi off"
@@ -7452,12 +7466,12 @@ msgstr "Б_локтау экранының хабарламалары"
 #. This is the per application switch for message tray usage.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:2
 msgid "_Notifications"
-msgstr ""
+msgstr "_Хабарландырулар"
 
 #. This is the setting to configure sounds associated with notifications.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:4
 msgid "Sound _Alerts"
-msgstr ""
+msgstr "Дыбыстық _ескертулер"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:5
 msgid "Notification _Popups"
@@ -7475,11 +7489,11 @@ msgstr ""
 #. screen.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:8
 msgid "Show Message _Content in Popups"
-msgstr ""
+msgstr "Қалқымалы терезелерде хабар _мазмұнын көрсету"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:10
 msgid "Show Message C_ontent on Lock Screen"
-msgstr ""
+msgstr "Құлыптаулы экранда хабар м_азмұнын көрсету"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:1
 msgid "_Web"
@@ -7487,7 +7501,7 @@ msgstr "В_еб"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "_Файлдар"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"
@@ -7599,19 +7613,19 @@ msgstr "Қос шерту кідірісі"
 
 #: panels/mouse/cc-mouse-panel.ui.h:9
 msgid "Acceleration Profile"
-msgstr ""
+msgstr "Үдету профилі"
 
 #: panels/mouse/cc-mouse-panel.ui.h:10
 msgid "How the pointer moves when you move the mouse."
-msgstr ""
+msgstr "Тышқанды қозғалтқан кезде курсор қалай қозғалады."
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "Жалпақ"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "Бейімделгіш"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7629,7 +7643,7 @@ msgstr "Тачпад"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
 msgid "Disable Touchpad While Typing"
-msgstr ""
+msgstr "Теру кезінде сенсорлық тақтаны сөндіру"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
@@ -7637,28 +7651,29 @@ msgstr "Тачпад жылдамдығы"
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
-msgstr ""
+msgstr "Сенсорлық тақтаның шерту әдісі"
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
+"Таңдалған әрекетті пайдаланып батырма әрекетін (сол, орталық және оң) жасау."
 
 #: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
-msgstr ""
+msgstr "Тачпадтың әдепкі мәнін пайдалану"
 
 #: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
-msgstr ""
+msgstr "Ешқандай батырма жасалмаған"
 
 #: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
-msgstr ""
+msgstr "Сол, орталық және оң аймақтар"
 
 #: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
-msgstr ""
+msgstr "Бір, екі және үш саусақ"
 
 #: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
@@ -7744,71 +7759,73 @@ msgstr "Уақытша файлдарды ө_шіру…"
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:16 panels/usage/cc-usage-panel.ui.h:34
 msgid "1 day"
-msgstr ""
+msgstr "1 күн"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:18
 msgid "2 days"
-msgstr ""
+msgstr "2 күн"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:20
 msgid "3 days"
-msgstr ""
+msgstr "3 күн"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:22
 msgid "4 days"
-msgstr ""
+msgstr "4 күн"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:24
 msgid "5 days"
-msgstr ""
+msgstr "5 күн"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:26
 msgid "6 days"
-msgstr ""
+msgstr "6 күн"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:28 panels/usage/cc-usage-panel.ui.h:36
 msgid "7 days"
-msgstr ""
+msgstr "7 күн"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:30
 msgid "14 days"
-msgstr ""
+msgstr "14 күн"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:32 panels/usage/cc-usage-panel.ui.h:38
 msgid "30 days"
-msgstr ""
+msgstr "30 күн"
 
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:40
 msgid "Forever"
-msgstr ""
+msgstr "Мәңгі"
 
 #: panels/lock/cc-lock-panel.ui.h:1
 #: panels/lock/budgie-lock-panel.desktop.in.in:2
 msgid "Screen Lock"
-msgstr ""
+msgstr "Экранды құлыптау"
 
 #: panels/lock/cc-lock-panel.ui.h:2
 msgid "Configure when the screen locks automatically to protect your privacy."
 msgstr ""
+"Жекелігіңізді қорғау үшін экранның автоматты түрде қашан құлыптанатынын "
+"баптаңыз."
 
 #: panels/lock/cc-lock-panel.ui.h:3
 msgid "Automatic Screen _Lock"
@@ -7828,37 +7845,37 @@ msgstr ""
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:7
 msgid "Screen Turns Off"
-msgstr ""
+msgstr "Экран өшеді"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:9
 msgid "30 seconds"
-msgstr ""
+msgstr "30 секунд"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:11
 msgid "1 minute"
-msgstr ""
+msgstr "1 минут"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:13
 msgid "2 minutes"
-msgstr ""
+msgstr "2 минут"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:15
 msgid "3 minutes"
-msgstr ""
+msgstr "3 минут"
 
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/lock/cc-lock-panel.ui.h:17
 msgid "5 minutes"
-msgstr ""
+msgstr "5 минут"
 
 #: panels/online-accounts/online-accounts.ui.h:2
 msgid "Connect to your data in the cloud"
@@ -7884,15 +7901,15 @@ msgstr "Шығу"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "Панельдер"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
-msgstr ""
+msgstr "Алдыңғы панельге оралу"
 
 #: shell/help-overlay.ui.h:6
 msgid "Cancel search"
-msgstr ""
+msgstr "Іздеуді болдырмау"
 
 #: shell/cc-window.ui.h:2
 msgid "All Settings"
@@ -7954,16 +7971,18 @@ msgstr ""
 
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:2
 msgid "Introduction"
-msgstr ""
+msgstr "Кіріспе"
 
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:3
 msgid "Get started with Budgie Desktop"
-msgstr ""
+msgstr "Budgie Desktop-пен жұмысты бастау"
 
 #. Translators: Search terms to find the Introduction panel
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:13
 msgid "welcome;getting started;tour;first time;setup;guide;"
 msgstr ""
+"welcome;getting started;tour;first time;setup;guide;қош "
+"келдіңіз;бастау;шолу;бірінші рет;орнату;нұсқаулық;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
@@ -8170,13 +8189,15 @@ msgstr ""
 
 #: panels/night-light/budgie-night-light-panel.desktop.in.in:3
 msgid "Configure night light settings"
-msgstr ""
+msgstr "Түнгі жарық параметрлерін баптау"
 
 #. Translators: Search terms to find the Night Light panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/night-light/budgie-night-light-panel.desktop.in.in:14
 msgid "night;light;blue;redshift;color;sunset;sunrise;warm;screen;display;"
 msgstr ""
+"night;light;blue;redshift;color;sunset;sunrise;warm;screen;display;түн;жарық;көк;қызыл"
+" ауысу;түс;күн батуы;күн шығуы;жылы;экран;дисплей;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:2
 msgid "Region & Language"
@@ -8356,13 +8377,14 @@ msgstr "Із қалдырмау"
 
 #: panels/lock/budgie-lock-panel.desktop.in.in:3
 msgid "Configure screen lock settings"
-msgstr ""
+msgstr "Экранды құлыптау параметрлерін баптау"
 
 #. Translators: Search terms to find the Screen Lock panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/lock/budgie-lock-panel.desktop.in.in:14
 msgid "screen;lock;privacy;security;automatic;delay;"
 msgstr ""
+"screen;lock;privacy;security;automatic;delay;экран;құлыптау;жекелік;қауіпсіздік;автоматты;кешігу;"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:2
 msgid "Online Accounts"
@@ -8434,19 +8456,19 @@ msgstr "Алдыңғы кіріс көзіне ауысу"
 
 #: panels/keyboard/01-raven.xml.in:2
 msgid "Raven"
-msgstr ""
+msgstr "Raven"
 
 #: panels/keyboard/01-raven.xml.in:4
 msgid "Raven Applets"
-msgstr ""
+msgstr "Raven шағын қолданбалары"
 
 #: panels/keyboard/01-raven.xml.in:6
 msgid "Raven Notifications"
-msgstr ""
+msgstr "Raven хабарландырулары"
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"
-msgstr ""
+msgstr "Хабарландыруларды тазалау"
 
 #: panels/keyboard/01-launchers.xml.in:2
 msgid "Launchers"
@@ -8547,7 +8569,7 @@ msgstr "Жүйелік"
 
 #: panels/keyboard/01-budgie.xml.in:4
 msgid "Show the Power Dialog"
-msgstr ""
+msgstr "Қуат сұхбат терезесін көрсету"
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"

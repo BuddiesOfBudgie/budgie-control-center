@@ -5373,7 +5373,7 @@ msgstr "S'ha de tornar a iniciar la sessió perquè els canvis tinguin efecte"
 
 #: panels/user-accounts/cc-user-panel.ui.h:4
 msgid "Restart Now"
-msgstr "Reinicia ara"
+msgstr "Reinicia't ara"
 
 #: panels/user-accounts/cc-user-panel.ui.h:5
 msgid "User Icon"
@@ -5406,7 +5406,7 @@ msgstr "Obre l'aplicació de controls parentals."
 #: panels/user-accounts/cc-user-panel.ui.h:11
 #: panels/region/cc-region-panel.ui.h:5
 msgid "_Language"
-msgstr "_Idioma"
+msgstr "_Llengua"
 
 #: panels/user-accounts/cc-user-panel.ui.h:12
 msgid "Authentication & Login"
@@ -6489,7 +6489,7 @@ msgstr "La cerca no ha retornat resultats"
 
 #: panels/region/cc-format-chooser.ui.h:10
 msgid "Searches can be for countries or languages."
-msgstr "Es pot cerca per països o idiomes."
+msgstr "La cerca es pot fer per països o llengües."
 
 #: panels/region/cc-format-chooser.ui.h:11
 msgid "Preview"
@@ -6505,7 +6505,7 @@ msgstr "Pantalla d'inici de sessió"
 
 #: panels/region/cc-region-panel.ui.h:3
 msgid "Language"
-msgstr "Idioma"
+msgstr "Llengua"
 
 #: panels/region/cc-region-panel.ui.h:4
 msgid "The language used for text in windows and web pages."
@@ -6625,7 +6625,7 @@ msgstr "_Canvia el nom"
 
 #: panels/common/cc-language-chooser.ui.h:1
 msgid "Select Language"
-msgstr "Seleccioneu un idioma"
+msgstr "Seleccioneu una llengua"
 
 #: panels/common/cc-language-chooser.ui.h:2
 msgid "_Select"
@@ -6633,7 +6633,7 @@ msgstr "_Selecciona"
 
 #: panels/common/cc-language-chooser.ui.h:4
 msgid "No languages found"
-msgstr "No s'ha trobat cap idioma"
+msgstr "No s'ha trobat cap llengua."
 
 #: panels/common/cc-permission-infobar.ui.h:1
 msgid "Unlock…"
@@ -7824,7 +7824,7 @@ msgstr "Sempre"
 #: panels/lock/cc-lock-panel.ui.h:1
 #: panels/lock/budgie-lock-panel.desktop.in.in:2
 msgid "Screen Lock"
-msgstr "Blocatge de pantalla"
+msgstr "Blocatge de la pantalla"
 
 #: panels/lock/cc-lock-panel.ui.h:2
 msgid "Configure when the screen locks automatically to protect your privacy."
@@ -7895,7 +7895,7 @@ msgstr ""
 
 #: panels/online-accounts/online-accounts.ui.h:4
 msgid "Add an account"
-msgstr "Afegeix un compte"
+msgstr "Afegeix-hi un compte"
 
 #: panels/online-accounts/online-accounts.ui.h:5
 msgid "Remove Account"
@@ -8199,18 +8199,18 @@ msgstr ""
 
 #: panels/region/budgie-region-panel.desktop.in.in:2
 msgid "Region & Language"
-msgstr "Regió i idioma"
+msgstr "Regió i llengua"
 
 #: panels/region/budgie-region-panel.desktop.in.in:3
 msgid "Select your display language and formats"
-msgstr "Seleccioneu l'idioma a mostrar i els formats"
+msgstr "Seleccioneu la llengua a mostrar i els formats"
 
 #. Translators: Search terms to find the Region and Language panel. Do NOT
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
 #: panels/region/budgie-region-panel.desktop.in.in:14
 msgid "Language;Layout;Keyboard;Input;"
-msgstr "Idioma;Disposició;Teclat;Entrada;"
+msgstr "Idioma;Llengua;Disposició;Teclat;Entrada;"
 
 #: panels/info-overview/budgie-info-overview-panel.desktop.in.in:2
 msgid "About"
