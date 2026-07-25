@@ -239,7 +239,7 @@ config_h.set('BUILD_WWAN', host_is_linux,
 config_h.set('HAVE_WWAN', host_is_linux,
              description: 'Define to 1 if WWan is available')
 
-if host_is_linux_not_s390
+if 1==0 # host_is_linux_not_s390 - disable building wacom
   libwacom_dep = dependency('libwacom', version: '>= 0.7')
 
   wacom_deps = [
@@ -252,10 +252,14 @@ else
   message('Thunderbolt panel will not be built (not supported on this platform)')
 endif
 
-config_h.set('BUILD_WACOM', host_is_linux_not_s390,
+#config_h.set('BUILD_WACOM', host_is_linux_not_s390,
+#             description: 'Define to 1 to build the Wacom panel')
+#config_h.set('HAVE_WACOM', host_is_linux_not_s390,
+#             description: 'Define to 1 if Wacom is supportted')
+config_h.set('BUILD_WACOM', false,
              description: 'Define to 1 to build the Wacom panel')
-config_h.set('HAVE_WACOM', host_is_linux_not_s390,
-             description: 'Define to 1 if Wacom is supportted')
+config_h.set('HAVE_WACOM', false,
+             description: 'Define to 1 if Wacom is supported')
 config_h.set('BUILD_THUNDERBOLT', host_is_linux_not_s390,
              description: 'Define to 1 to build the Thunderbolt panel')
 

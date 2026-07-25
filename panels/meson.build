@@ -3,8 +3,6 @@ subdir('common')
 panels = [
   'applications',
   'background',
-  'camera',
-  'color',
   'datetime',
   'default-apps',
   'diagnostics',
@@ -37,7 +35,7 @@ endif
 if host_is_linux_not_s390
   panels += [
     'thunderbolt',
-    'wacom'
+    #'wacom'
   ]
 endif
 

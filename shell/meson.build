@@ -115,9 +115,9 @@ shell_deps = common_deps + [
   libshell_dep,
 ]
 
-if host_is_linux_not_s390
-  shell_deps += wacom_deps
-endif
+#if host_is_linux_not_s390
+#  shell_deps += wacom_deps
+#endif
 
 executable(
   meson.project_name(),

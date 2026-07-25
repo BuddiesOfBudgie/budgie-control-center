@@ -33,7 +33,6 @@
 /* Extension points */
 extern GType cc_applications_panel_get_type (void);
 extern GType cc_background_panel_get_type (void);
-//extern GType cc_color_panel_get_type (void);
 extern GType cc_date_time_panel_get_type (void);
 extern GType cc_default_apps_panel_get_type (void);
 extern GType cc_info_overview_panel_get_type (void);
@@ -99,8 +98,6 @@ static CcPanelLoaderVtable default_panels[] =
 {
   PANEL_TYPE("applications",     cc_applications_panel_get_type,         NULL),
   PANEL_TYPE("background",       cc_background_panel_get_type,           NULL),
-  //PANEL_TYPE("camera",           cc_camera_panel_get_type,               NULL),
-  //PANEL_TYPE("color",            cc_color_panel_get_type,                NULL),
   PANEL_TYPE("datetime",         cc_date_time_panel_get_type,            NULL),
   PANEL_TYPE("default-apps",     cc_default_apps_panel_get_type,         NULL),
   //PANEL_TYPE("diagnostics",      cc_diagnostics_panel_get_type,          cc_diagnostics_panel_static_init_func),
@@ -118,7 +115,6 @@ static CcPanelLoaderVtable default_panels[] =
   PANEL_TYPE("wifi",             cc_wifi_panel_get_type,                 cc_wifi_panel_static_init_func),
 #endif
   PANEL_TYPE("notifications",    cc_notifications_panel_get_type,        NULL),
-  //PANEL_TYPE("online-accounts",  cc_goa_panel_get_type,                  NULL),
   PANEL_TYPE("power",            cc_power_panel_get_type,                NULL),
   PANEL_TYPE("printers",         cc_printers_panel_get_type,             NULL),
   PANEL_TYPE("region",           cc_region_panel_get_type,               NULL),
