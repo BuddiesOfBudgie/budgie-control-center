@@ -59,7 +59,7 @@ struct _CcShellInterface
                                            GtkPositionType  position);
 };
 
-GType           cc_shell_get_type                 (void) G_GNUC_CONST;
+GType           cc_shell_get_type                 (void);
 
 CcPanel *       cc_shell_get_active_panel         (CcShell      *shell);
 void            cc_shell_set_active_panel         (CcShell      *shell,
