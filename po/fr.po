@@ -5,7 +5,7 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
-# Patrice Genieys, 2024
+# Patrice Genieys, 2026
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-17 21:26+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Patrice Genieys, 2024\n"
+"Last-Translator: Patrice Genieys, 2026\n"
 "Language-Team: French (https://app.transifex.com/buddiesofbudgie/teams/129844/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1257,27 +1257,27 @@ msgstr "Arrière-plan actuel"
 #. Centered
 #: panels/background/cc-background-panel.c:255
 msgid "Centered"
-msgstr ""
+msgstr "Centré"
 
 #. Scaled
 #: panels/background/cc-background-panel.c:267
 msgid "Scaled"
-msgstr ""
+msgstr "Mise à l'échelle"
 
 #. Stretched
 #: panels/background/cc-background-panel.c:279
 msgid "Stretched"
-msgstr ""
+msgstr "Étiré"
 
 #. Zoom
 #: panels/background/cc-background-panel.c:291
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #. Wallpaper
 #: panels/background/cc-background-panel.c:303
 msgid "Wallpaper"
-msgstr ""
+msgstr "Fond d'écran"
 
 #: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
@@ -4452,11 +4452,11 @@ msgstr "Aucune application n’a demandé l’accès à votre emplacement"
 
 #: panels/introduction/cc-introduction.ui.h:1
 msgid "Quick Start"
-msgstr ""
+msgstr "Démarrage rapide"
 
 #: panels/introduction/cc-introduction.ui.h:2
 msgid "Additional Settings"
-msgstr ""
+msgstr "Paramètres supplémentaires"
 
 #: panels/wacom/wacom-stylus-page.ui.h:1 panels/mouse/cc-mouse-panel.ui.h:11
 msgid "Default"
@@ -5081,7 +5081,7 @@ msgstr "Désactivez le mode avion pour activer le Bluetooth."
 
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Style"
-msgstr ""
+msgstr "Style"
 
 #: panels/background/cc-background-panel.ui.h:2
 msgid "Add Picture…"
@@ -7886,11 +7886,13 @@ msgstr "Pour toujours"
 #: panels/lock/cc-lock-panel.ui.h:1
 #: panels/lock/budgie-lock-panel.desktop.in.in:2
 msgid "Screen Lock"
-msgstr ""
+msgstr "Écran verrouillé"
 
 #: panels/lock/cc-lock-panel.ui.h:2
 msgid "Configure when the screen locks automatically to protect your privacy."
 msgstr ""
+"Configurez le délai avant le verrouillage automatique de l'écran pour "
+"protéger votre vie privée"
 
 #: panels/lock/cc-lock-panel.ui.h:3
 msgid "Automatic Screen _Lock"
@@ -8035,16 +8037,16 @@ msgstr ""
 
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:2
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:3
 msgid "Get started with Budgie Desktop"
-msgstr ""
+msgstr "Débuter avec le bureau Budgie"
 
 #. Translators: Search terms to find the Introduction panel
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:13
 msgid "welcome;getting started;tour;first time;setup;guide;"
-msgstr ""
+msgstr "bienvenue;pour commencer;tour;première fois;configuration;guide;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
@@ -8245,13 +8247,15 @@ msgstr ""
 
 #: panels/night-light/budgie-night-light-panel.desktop.in.in:3
 msgid "Configure night light settings"
-msgstr ""
+msgstr "Configurer les paramètres de lumière nocturne"
 
 #. Translators: Search terms to find the Night Light panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/night-light/budgie-night-light-panel.desktop.in.in:14
 msgid "night;light;blue;redshift;color;sunset;sunrise;warm;screen;display;"
 msgstr ""
+"nuit;lumière;bleu;décalage vers le rouge;couleur;coucher de soleil;lever de "
+"soleil;chaud;écran;affichage;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:2
 msgid "Region & Language"
@@ -8425,13 +8429,13 @@ msgstr "Ne laisser aucune trace"
 
 #: panels/lock/budgie-lock-panel.desktop.in.in:3
 msgid "Configure screen lock settings"
-msgstr ""
+msgstr "Configurer les paramètres de l'écran de verrouillage"
 
 #. Translators: Search terms to find the Screen Lock panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/lock/budgie-lock-panel.desktop.in.in:14
 msgid "screen;lock;privacy;security;automatic;delay;"
-msgstr ""
+msgstr "écran;verrouillage;vie privée;sécurité;automatique;delai;"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:2
 msgid "Online Accounts"
