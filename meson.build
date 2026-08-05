@@ -116,6 +116,22 @@ if not libhandy_dep.found()
   libhandy_dep = libhandy.get_variable('libhandy_dep')
 endif
 
+tecla_dep = dependency(
+  'tecla',
+  version: '>=47.0',
+  required: false
+)
+
+tecla_is_subproject = not tecla_dep.found()
+if tecla_is_subproject
+  tecla = subproject(
+    'tecla',
+    default_options: [
+      'werror=false',
+    ],
+  )
+endif
+
 #goa_req_version = '>= 3.25.3'
 pulse_req_version = '>= 2.0'
 
