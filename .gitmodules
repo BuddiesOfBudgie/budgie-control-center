@@ -1,3 +1,6 @@
 [submodule "subprojects/gvc"]
 	path = subprojects/gvc
 	url = https://gitlab.gnome.org/GNOME/libgnome-volume-control.git
+[submodule "subprojects/tecla"]
+	path = subprojects/tecla
+	url = https://gitlab.gnome.org/GNOME/tecla.git

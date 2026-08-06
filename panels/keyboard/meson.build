@@ -81,12 +81,20 @@ if enable_ibus
   deps += ibus_dep
 endif
 
+if tecla_is_subproject
+  keyboard_previewer_exec = get_option('prefix') / get_option('bindir') / 'tecla'
+else
+  keyboard_previewer_exec = tecla_dep.get_variable('app')
+endif
+
 panels_libs += static_library(
   cappletname,
   sources: sources,
   include_directories: [top_inc, common_inc],
   dependencies: deps,
-  c_args: cflags
+  c_args: cflags + [
+    '-DKEYBOARD_PREVIEWER_EXEC="@0@"'.format(keyboard_previewer_exec)
+  ]
 )
 
 subdir('icons')
