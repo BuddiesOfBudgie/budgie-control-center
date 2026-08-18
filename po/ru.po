@@ -7,6 +7,7 @@
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
 # Victor, 2023
 # Yaroslav Popkov, 2025
+# Andrei Stepanov, 2026
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-17 21:26+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: Yaroslav Popkov, 2025\n"
+"Last-Translator: Andrei Stepanov, 2026\n"
 "Language-Team: Russian (https://app.transifex.com/buddiesofbudgie/teams/129844/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1258,27 +1259,27 @@ msgstr "Текущий фон"
 #. Centered
 #: panels/background/cc-background-panel.c:255
 msgid "Centered"
-msgstr ""
+msgstr "По центру"
 
 #. Scaled
 #: panels/background/cc-background-panel.c:267
 msgid "Scaled"
-msgstr ""
+msgstr "С масштабированием"
 
 #. Stretched
 #: panels/background/cc-background-panel.c:279
 msgid "Stretched"
-msgstr ""
+msgstr "Растянутая"
 
 #. Zoom
 #: panels/background/cc-background-panel.c:291
 msgid "Zoom"
-msgstr ""
+msgstr "С увеличением"
 
 #. Wallpaper
 #: panels/background/cc-background-panel.c:303
 msgid "Wallpaper"
-msgstr ""
+msgstr "Обои"
 
 #: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
@@ -4448,11 +4449,11 @@ msgstr "Нет приложений запросивших доступ к ме�
 
 #: panels/introduction/cc-introduction.ui.h:1
 msgid "Quick Start"
-msgstr ""
+msgstr "Быстрый старт"
 
 #: panels/introduction/cc-introduction.ui.h:2
 msgid "Additional Settings"
-msgstr ""
+msgstr "Дополнительные настройки"
 
 #: panels/wacom/wacom-stylus-page.ui.h:1 panels/mouse/cc-mouse-panel.ui.h:11
 msgid "Default"
@@ -5075,7 +5076,7 @@ msgstr "Для включения Bluetooth выключите режим для
 
 #: panels/background/cc-background-panel.ui.h:1
 msgid "Style"
-msgstr ""
+msgstr "Стиль"
 
 #: panels/background/cc-background-panel.ui.h:2
 msgid "Add Picture…"
@@ -7859,15 +7860,16 @@ msgstr "Никогда"
 #: panels/lock/cc-lock-panel.ui.h:1
 #: panels/lock/budgie-lock-panel.desktop.in.in:2
 msgid "Screen Lock"
-msgstr ""
+msgstr "Блокировка экрана"
 
 #: panels/lock/cc-lock-panel.ui.h:2
 msgid "Configure when the screen locks automatically to protect your privacy."
 msgstr ""
+"Настройка автоматической блокировки экрана для защиты конфиденциальности."
 
 #: panels/lock/cc-lock-panel.ui.h:3
 msgid "Automatic Screen _Lock"
-msgstr "Автоматическая _блокировка экрана"
+msgstr "_Автоматическая блокировка экрана"
 
 #: panels/lock/cc-lock-panel.ui.h:4
 msgid "Automatic _Screen Lock Delay"
@@ -8004,16 +8006,16 @@ msgstr ""
 
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:2
 msgid "Introduction"
-msgstr ""
+msgstr "Введение"
 
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:3
 msgid "Get started with Budgie Desktop"
-msgstr ""
+msgstr "Начало работы с рабочим столом Budgie"
 
 #. Translators: Search terms to find the Introduction panel
 #: panels/introduction/budgie-introduction-panel.desktop.in.in:13
 msgid "welcome;getting started;tour;first time;setup;guide;"
-msgstr ""
+msgstr "приветствие;первые шаги;обзор;впервые;настройка;руководство;"
 
 #: panels/wacom/budgie-wacom-panel.desktop.in.in:3
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
@@ -8205,13 +8207,14 @@ msgstr ""
 
 #: panels/night-light/budgie-night-light-panel.desktop.in.in:3
 msgid "Configure night light settings"
-msgstr ""
+msgstr "Настройка параметров ночного освещения"
 
 #. Translators: Search terms to find the Night Light panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/night-light/budgie-night-light-panel.desktop.in.in:14
 msgid "night;light;blue;redshift;color;sunset;sunrise;warm;screen;display;"
 msgstr ""
+"night;light;blue;redshift;color;sunset;sunrise;warm;screen;display;ночь;свет;синий;redshift;цвет;закат;восход;тёплый;экран;дисплей;"
 
 #: panels/region/budgie-region-panel.desktop.in.in:2
 msgid "Region & Language"
@@ -8279,7 +8282,8 @@ msgstr "Настроить телефонию и соединения для м�
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: panels/wwan/budgie-wwan-panel.desktop.in.in:15
 msgid "cellular;wwan;telephony;sim;mobile;"
-msgstr "сотовый;мобильник;мобильный;мобильная;wwan;телефония;телефон;sim;сим;"
+msgstr ""
+"cellular;wwan;telephony;sim;mobile;сотовый;мобильник;мобильный;мобильная;wwan;телефония;телефон;sim;сим;"
 
 #: panels/datetime/budgie-datetime-panel.desktop.in.in:3
 msgid "Change the date and time, including time zone"
@@ -8302,7 +8306,7 @@ msgstr "Защитите ваши изображения"
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
-"экран;блокировка;диагностика;сбой;личный;приватный;недавние;временные;tmp;индекс;имя;сеть;идентификация;"
+"screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;экран;блокировка;диагностика;сбой;личный;приватный;недавние;временные;tmp;индекс;имя;сеть;идентификация;"
 
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:3
 msgid "Control which notifications are displayed and what they show"
@@ -8312,7 +8316,8 @@ msgstr "Управление отображением и содержанием 
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/notifications/budgie-notifications-panel.desktop.in.in:14
 msgid "Notifications;Banner;Message;Tray;Popup;"
-msgstr "Уведомления;Всплывающее;Сообщение;Лоток;Всплывающее;"
+msgstr ""
+"Notifications;Banner;Message;Tray;Popup;Уведомления;Всплывающее;Сообщение;Лоток;Всплывающее;"
 
 #: panels/default-apps/budgie-default-apps-panel.desktop.in.in:2
 msgid "Default Applications"
@@ -8364,7 +8369,8 @@ msgstr ""
 #. semicolon!
 #: panels/mouse/budgie-mouse-panel.desktop.in.in:14
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
-msgstr "Трэкпад;Указатель;Щелчок;Нажатие;Двойной;Кнопка;Трэкбол;Прокрутка;"
+msgstr ""
+"Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;Трекпад;Указатель;Щелчок;Нажатие;Двойной;Кнопка;Трекбол;Прокрутка;"
 
 #: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:2
 msgid "Diagnostics"
@@ -8384,13 +8390,14 @@ msgstr "Не оставлять следов"
 
 #: panels/lock/budgie-lock-panel.desktop.in.in:3
 msgid "Configure screen lock settings"
-msgstr ""
+msgstr "Настройка параметров блокировки экрана"
 
 #. Translators: Search terms to find the Screen Lock panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
 #: panels/lock/budgie-lock-panel.desktop.in.in:14
 msgid "screen;lock;privacy;security;automatic;delay;"
 msgstr ""
+"screen;lock;privacy;security;automatic;delay;экран;блокировка;конфиденциальность;безопасность;автоматическая;задержка;"
 
 #: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:2
 msgid "Online Accounts"
@@ -8416,11 +8423,11 @@ msgstr ""
 #. localize the semicolons! The list MUST also end with a semicolon!
 #: shell/org.buddiesofbudgie.ControlCenter.desktop.in.in:12
 msgid "Preferences;Settings;"
-msgstr "Предпочтения;Настройки;"
+msgstr "Preferences;Settings;Предпочтения;Настройки;Параметры;"
 
 #: panels/keyboard/50-accessibility.xml.in:4
 msgid "Turn zoom on or off"
-msgstr "Включить или выключить увеличение"
+msgstr "Включить или отключить увеличение"
 
 #: panels/keyboard/50-accessibility.xml.in:6
 msgid "Zoom in"
