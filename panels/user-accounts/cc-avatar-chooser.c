@@ -46,7 +46,6 @@ struct _CcAvatarChooser {
         GtkWidget *crop_area;
         GtkWidget *user_flowbox;
         GtkWidget *flowbox;
-        GtkWidget *take_picture_button;
 
         GnomeDesktopThumbnailFactory *thumb_factory;
         GListStore *faces;
@@ -188,7 +187,7 @@ update_preview (GtkFileChooser               *chooser,
                                                                                      NULL,
                                                                                      &error);
                        if (error) {
-                                g_warning("could not general thumbnail %s (%s) %s\n", uri, mime_type, error->message);
+                                g_debug ("could not generate thumbnail %s (%s): %s", uri, mime_type, error->message);
                                 g_clear_error(&error);
                        }
 #else
@@ -196,6 +195,14 @@ update_preview (GtkFileChooser               *chooser,
                                                                                      uri,
                                                                                      mime_type);
 #endif
+                }
+
+                /* Thumbnailing fails when no thumbnailer for the mime type is installed */
+                if (pixbuf == NULL && mime_type != NULL) {
+                        g_autofree gchar *path = g_file_get_path (file);
+
+                        if (path != NULL)
+                                pixbuf = gdk_pixbuf_new_from_file_at_size (path, 128, 128, NULL);
                 }
 
                 gtk_dialog_set_response_sensitive (GTK_DIALOG (chooser),
@@ -382,7 +389,7 @@ add_faces_from_dirs (GListStore *faces, GStrv facesdirs, gboolean add_all)
                                 continue;
                         }
 
-                        target = g_file_info_get_symlink_target (info);
+                        target = g_file_info_get_is_symlink (info) ? g_file_info_get_symlink_target (info) : NULL;
                         if (target != NULL && g_str_has_prefix (target , "legacy/")) {
                                 continue;
                         }
@@ -499,7 +506,6 @@ cc_avatar_chooser_class_init (CcAvatarChooserClass *klass)
 
         gtk_widget_class_bind_template_child (wclass, CcAvatarChooser, user_flowbox);
         gtk_widget_class_bind_template_child (wclass, CcAvatarChooser, flowbox);
-        gtk_widget_class_bind_template_child (wclass, CcAvatarChooser, take_picture_button);
 
         gtk_widget_class_bind_template_callback (wclass, cc_avatar_chooser_select_file);
 

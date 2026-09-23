@@ -325,8 +325,6 @@ cc_background_panel_constructed (GObject *object)
   self = CC_BACKGROUND_PANEL (object);
   shell = cc_panel_get_shell (CC_PANEL (self));
 
-  cc_shell_embed_widget_in_header (shell, GTK_WIDGET (self->add_picture_button), GTK_POS_RIGHT);
-
   /* Create style button */
   popover = create_style_popover (self);
   gtk_menu_button_set_popover (self->style_button, popover);

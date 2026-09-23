@@ -456,7 +456,7 @@ enhance_introduction_panel_keywords (CcWindow *self)
     }
 
   /* Load the introduction panel to get its apps */
-  panel = cc_panel_loader_load_by_name (CC_SHELL (self), "introduction", NULL);
+  panel = g_object_ref_sink (cc_panel_loader_load_by_name (CC_SHELL (self), "introduction", NULL));
   if (!panel || !CC_IS_INTRODUCTION_PANEL (panel))
     {
       g_debug ("Failed to load introduction panel");

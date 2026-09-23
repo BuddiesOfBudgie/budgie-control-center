@@ -34,13 +34,6 @@
             <property name="border-width">10</property>
             <property name="spacing">10</property>
             <child>
-              <object class="GtkButton" id="take_picture_button">
-                <property name="visible">True</property>
-                <property name="label" translatable="yes">Take a Picture…</property>
-                <signal name="clicked" handler="webcam_icon_selected" swapped="yes"/>
-              </object>
-            </child>
-            <child>
               <object class="GtkButton">
                 <property name="visible">True</property>
                 <property name="label" translatable="yes">Select a File…</property>
