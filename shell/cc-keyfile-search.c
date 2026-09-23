@@ -49,8 +49,7 @@ gboolean initialize_keyfile(void) {
                 if (error && !g_error_matches(error, G_FILE_ERROR, G_FILE_ERROR_NOENT)) {
                     g_warning("Could not load key file: %s", error->message);
                 }
-                g_clear_object(&keyfile);
-                keyfile = NULL;
+                g_clear_pointer(&keyfile, g_key_file_unref);
             }
         }
         process++;
@@ -66,7 +65,7 @@ gboolean initialize_keyfile(void) {
 
 // Public function to cleanup the keyfile
 void cleanup_keyfile(void) {
-    g_clear_object(&keyfile);
+    g_clear_pointer(&keyfile, g_key_file_unref);
 }
 
 // Convenience function to confirm if the search for the object should be declared visible

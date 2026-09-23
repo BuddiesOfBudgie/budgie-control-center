@@ -50,6 +50,7 @@ sort_cb (GtkListBoxRow *row1,
 {
   CcStreamListBox *self = user_data;
   GvcMixerStream *stream1, *stream2, *event_sink;
+  const gchar *raw_name1, *raw_name2;
   g_autofree gchar *name1 = NULL;
   g_autofree gchar *name2 = NULL;
 
@@ -63,8 +64,12 @@ sort_cb (GtkListBoxRow *row1,
   else if (stream2 == event_sink)
     return 1;
 
-  name1 = g_utf8_casefold (gvc_mixer_stream_get_name (stream1), -1);
-  name2 = g_utf8_casefold (gvc_mixer_stream_get_name (stream2), -1);
+  raw_name1 = gvc_mixer_stream_get_name (stream1);
+  raw_name2 = gvc_mixer_stream_get_name (stream2);
+  if (raw_name1 != NULL)
+    name1 = g_utf8_casefold (raw_name1, -1);
+  if (raw_name2 != NULL)
+    name2 = g_utf8_casefold (raw_name2, -1);
 
   return g_strcmp0 (name1, name2);
 }
