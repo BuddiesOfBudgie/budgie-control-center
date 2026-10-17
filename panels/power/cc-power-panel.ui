@@ -169,6 +169,24 @@
               </object>
             </child>
             <child>
+              <object class="HdyActionRow" id="dimming_delay_row">
+                <property name="visible">True</property>
+                <property name="title" translatable="yes">Dimming _Delay</property>
+                <property name="subtitle" translatable="yes">Seconds of inactivity before the screen dims.</property>
+                <property name="use_underline">True</property>
+                <property name="activatable_widget">dimming_delay_spin</property>
+                <child>
+                  <object class="GtkSpinButton" id="dimming_delay_spin">
+                    <property name="visible">True</property>
+                    <property name="valign">center</property>
+                    <property name="numeric">True</property>
+                    <property name="adjustment">dimming_delay_adjustment</property>
+                    <signal name="value-changed" handler="dimming_delay_spin_changed_cb" object="CcPowerPanel" swapped="yes"/>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
               <object class="HdyComboRow" id="blank_screen_row">
                 <property name="visible">True</property>
                 <property name="title" translatable="yes">Screen _Blank</property>
@@ -242,6 +260,12 @@
       </object>
     </child>
   </template>
+  <object class="GtkAdjustment" id="dimming_delay_adjustment">
+    <property name="lower">0</property>
+    <property name="upper">1800</property>
+    <property name="step_increment">30</property>
+    <property name="page_increment">300</property>
+  </object>
   <object class="GtkSizeGroup" id="battery_row_sizegroup">
     <property name="mode">vertical</property>
   </object>
@@ -255,6 +279,7 @@
     <widgets>
       <widget name="als_row"/>
       <widget name="dim_screen_row"/>
+      <widget name="dimming_delay_row"/>
       <widget name="blank_screen_row"/>
       <widget name="automatic_suspend_row"/>
       <widget name="power_button_row"/>
