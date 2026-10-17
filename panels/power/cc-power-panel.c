@@ -73,6 +73,8 @@ struct _CcPowerPanel
   HdyPreferencesGroup *device_section;
   GtkListBoxRow     *dim_screen_row;
   GtkSwitch         *dim_screen_switch;
+  HdyActionRow      *dimming_delay_row;
+  GtkSpinButton     *dimming_delay_spin;
   HdyPreferencesGroup *general_section;
   GtkSizeGroup      *level_sizegroup;
   HdyComboRow       *power_button_row;
@@ -93,6 +95,7 @@ struct _CcPowerPanel
   GSettings     *gsd_settings;
   GSettings     *session_settings;
   GSettings     *interface_settings;
+  GSettings     *wm_settings;
   UpClient      *up_client;
   GPtrArray     *devices;
   gboolean       has_batteries;
@@ -126,6 +129,7 @@ cc_power_panel_dispose (GObject *object)
   g_clear_object (&self->gsd_settings);
   g_clear_object (&self->session_settings);
   g_clear_object (&self->interface_settings);
+  g_clear_object (&self->wm_settings);
   g_clear_pointer ((GtkWidget **) &self->automatic_suspend_dialog, gtk_widget_destroy);
   g_clear_pointer (&self->devices, g_ptr_array_unref);
   g_clear_object (&self->up_client);
@@ -930,35 +934,64 @@ can_suspend_or_hibernate (CcPowerPanel *self,
   return g_strcmp0 (s, "yes") == 0;
 }
 
-static void
-got_brightness_cb (GObject      *source_object,
-                   GAsyncResult *res,
-                   gpointer      user_data)
-{
-  g_autoptr(GVariant) result = NULL;
-  g_autoptr(GError) error = NULL;
-  gint32 brightness = -1.0;
-  CcPowerPanel *self;
+#define BRIGHTNESS_HELPER "budgie-brightness-helper"
 
-  result = g_dbus_connection_call_finish (G_DBUS_CONNECTION (source_object), res, &error);
-  if (!result)
+static void
+brightness_query_done_cb (GObject      *source_object,
+                          GAsyncResult *res,
+                          gpointer      user_data)
+{
+  GSubprocess *subprocess = G_SUBPROCESS (source_object);
+  g_autoptr(GError) error = NULL;
+  CcPowerPanel *self;
+  gboolean available = FALSE;
+
+  if (!g_subprocess_wait_finish (subprocess, res, &error))
     {
-      g_debug ("Failed to get Brightness property: %s", error->message);
       if (g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED))
         return;
+      g_debug ("Failed to wait for %s: %s", BRIGHTNESS_HELPER, error->message);
     }
   else
     {
-      g_autoptr(GVariant) v = NULL;
-      g_variant_get (result, "(v)", &v);
-      brightness = v ? g_variant_get_int32 (v) : -1.0;
+      available = g_subprocess_get_if_exited (subprocess) &&
+                  g_subprocess_get_exit_status (subprocess) == 0;
     }
 
   self = user_data;
-  self->has_brightness = brightness >= 0.0;
+  self->has_brightness = available;
 
   gtk_widget_set_visible (GTK_WIDGET (self->dim_screen_row), self->has_brightness);
   als_enabled_state_changed (self);
+}
+
+/* Ask budgie-brightness-helper whether brightness control is available.
+ * --query exits 0 if it is available
+ */
+static void
+setup_brightness (CcPowerPanel *self)
+{
+  g_autoptr(GSubprocess) subprocess = NULL;
+  g_autoptr(GError) error = NULL;
+
+  self->has_brightness = FALSE;
+  gtk_widget_set_visible (GTK_WIDGET (self->dim_screen_row), FALSE);
+  als_enabled_state_changed (self);
+
+  subprocess = g_subprocess_new (G_SUBPROCESS_FLAGS_STDOUT_SILENCE |
+                                 G_SUBPROCESS_FLAGS_STDERR_SILENCE,
+                                 &error,
+                                 BRIGHTNESS_HELPER, "--query", NULL);
+  if (subprocess == NULL)
+    {
+      g_debug ("Could not run %s: %s", BRIGHTNESS_HELPER, error->message);
+      return;
+    }
+
+  g_subprocess_wait_async (subprocess,
+                           cc_panel_get_cancellable (CC_PANEL (self)),
+                           brightness_query_done_cb,
+                           self);
 }
 
 static void
@@ -992,11 +1025,88 @@ populate_blank_screen_row (HdyComboRow *combo_row)
                                  NULL, NULL);
 }
 
+#define DIMMING_DELAY_KEY      "dimming-delay"
+#define DIMMING_DELAY_MIN      30
+#define DIMMING_DELAY_STEP     30
+#define DIMMING_DELAY_MAX      1800
+
+// 0 means no dimming delay. Round any entered value to the nearest step
+static guint
+validate_dimming_delay (guint value)
+{
+  if (value == 0)
+    return 0;
+
+  if (value < DIMMING_DELAY_MIN)
+    return DIMMING_DELAY_MIN;
+
+  value = ((value + DIMMING_DELAY_STEP / 2) / DIMMING_DELAY_STEP) * DIMMING_DELAY_STEP;
+
+  return MIN (value, DIMMING_DELAY_MAX);
+}
+
+static void
+dimming_delay_spin_changed_cb (CcPowerPanel *self)
+{
+  guint value, fixed;
+
+  if (self->wm_settings == NULL)
+    return;
+
+  value = (guint) gtk_spin_button_get_value_as_int (self->dimming_delay_spin);
+  fixed = validate_dimming_delay (value);
+
+  if (fixed != value)
+    {
+      /* Re-enters this callback with the corrected value */
+      gtk_spin_button_set_value (self->dimming_delay_spin, fixed);
+      return;
+    }
+
+  if (g_settings_get_uint (self->wm_settings, DIMMING_DELAY_KEY) != fixed)
+    g_settings_set_uint (self->wm_settings, DIMMING_DELAY_KEY, fixed);
+}
+
+static void
+dimming_delay_setting_changed (CcPowerPanel *self)
+{
+  guint value = validate_dimming_delay (g_settings_get_uint (self->wm_settings, DIMMING_DELAY_KEY));
+
+  g_signal_handlers_block_by_func (self->dimming_delay_spin, dimming_delay_spin_changed_cb, self);
+  gtk_spin_button_set_value (self->dimming_delay_spin, value);
+  g_signal_handlers_unblock_by_func (self->dimming_delay_spin, dimming_delay_spin_changed_cb, self);
+}
+
+static void
+setup_dimming_delay (CcPowerPanel *self)
+{
+  GSettingsSchemaSource *source = g_settings_schema_source_get_default ();
+  g_autoptr(GSettingsSchema) schema = NULL;
+
+  if (source != NULL)
+    schema = g_settings_schema_source_lookup (source, "com.solus-project.budgie-wm", TRUE);
+
+  if (schema == NULL || !g_settings_schema_has_key (schema, DIMMING_DELAY_KEY))
+    {
+      gtk_widget_set_no_show_all (GTK_WIDGET (self->dimming_delay_row), TRUE);
+      gtk_widget_hide (GTK_WIDGET (self->dimming_delay_row));
+      return;
+    }
+
+  self->wm_settings = g_settings_new_full (schema, NULL, NULL);
+  g_signal_connect_object (self->wm_settings, "changed::" DIMMING_DELAY_KEY,
+                           G_CALLBACK (dimming_delay_setting_changed), self, G_CONNECT_SWAPPED);
+  dimming_delay_setting_changed (self);
+
+  // The delay only has an effect while dimming is enabled
+  g_object_bind_property (self->dim_screen_switch, "active",
+                          self->dimming_delay_row, "sensitive",
+                          G_BINDING_SYNC_CREATE);
+}
+
 static void
 setup_power_saving (CcPowerPanel *self)
 {
-  g_autoptr(GDBusConnection) connection = NULL;
-  g_autoptr(GError) error = NULL;
   int value;
 
   /* ambient light sensor */
@@ -1010,36 +1120,13 @@ setup_power_saving (CcPowerPanel *self)
   g_signal_connect_object (self->gsd_settings, "changed",
                            G_CALLBACK (als_enabled_setting_changed), self, G_CONNECT_SWAPPED);
 
-  connection = g_bus_get_sync (G_BUS_TYPE_SESSION,
-                               cc_panel_get_cancellable (CC_PANEL (self)),
-                               &error);
-  if (connection)
-    {
-      g_dbus_connection_call (connection,
-                              "org.gnome.SettingsDaemon.Power",
-                              "/org/gnome/SettingsDaemon/Power",
-                              "org.freedesktop.DBus.Properties",
-                              "Get",
-                              g_variant_new ("(ss)",
-                                             "org.gnome.SettingsDaemon.Power.Screen",
-                                             "Brightness"),
-                              NULL,
-                              G_DBUS_CALL_FLAGS_NONE,
-                              -1,
-                              cc_panel_get_cancellable (CC_PANEL (self)),
-                              got_brightness_cb,
-                              self);
-    }
-  else
-    {
-      if (!g_error_matches (error, G_IO_ERROR, G_IO_ERROR_CANCELLED))
-        g_warning ("session bus not available: %s", error->message);
-    }
-
+  setup_brightness (self);
 
   g_settings_bind (self->gsd_settings, "idle-dim",
                    self->dim_screen_switch, "active",
                    G_SETTINGS_BIND_DEFAULT);
+
+  setup_dimming_delay (self);
 
   g_signal_handlers_block_by_func (self->blank_screen_row, blank_screen_row_changed_cb, self);
   populate_blank_screen_row (self->blank_screen_row);
@@ -1579,6 +1666,8 @@ cc_power_panel_class_init (CcPowerPanelClass *klass)
   gtk_widget_class_bind_template_child (widget_class, CcPowerPanel, device_section);
   gtk_widget_class_bind_template_child (widget_class, CcPowerPanel, dim_screen_row);
   gtk_widget_class_bind_template_child (widget_class, CcPowerPanel, dim_screen_switch);
+  gtk_widget_class_bind_template_child (widget_class, CcPowerPanel, dimming_delay_row);
+  gtk_widget_class_bind_template_child (widget_class, CcPowerPanel, dimming_delay_spin);
   gtk_widget_class_bind_template_child (widget_class, CcPowerPanel, general_section);
   gtk_widget_class_bind_template_child (widget_class, CcPowerPanel, level_sizegroup);
   gtk_widget_class_bind_template_child (widget_class, CcPowerPanel, power_button_row);
@@ -1599,6 +1688,7 @@ cc_power_panel_class_init (CcPowerPanelClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, als_switch_changed_cb);
   gtk_widget_class_bind_template_callback (widget_class, automatic_suspend_label_mnemonic_activate_cb);
   gtk_widget_class_bind_template_callback (widget_class, blank_screen_row_changed_cb);
+  gtk_widget_class_bind_template_callback (widget_class, dimming_delay_spin_changed_cb);
   gtk_widget_class_bind_template_callback (widget_class, keynav_failed_cb);
   gtk_widget_class_bind_template_callback (widget_class, power_button_row_changed_cb);
   gtk_widget_class_bind_template_callback (widget_class, power_profiles_row_activated_cb);
